@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import {
-	Send,
 	Phone,
 	Mail,
 	MapPin,
@@ -32,6 +31,31 @@ type FormData = {
 	details: string;
 };
 
+const contactItems = [
+	{
+		icon: Phone,
+		label: "Phone",
+		value: "(916) 508-6272",
+		href: "tel:+19165086272",
+	},
+	{
+		icon: Mail,
+		label: "Email",
+		value: "hello@structawa.com",
+		href: "mailto:hello@structawa.com",
+	},
+	{
+		icon: MapPin,
+		label: "Service Area",
+		value: "Greater Vancouver, WA and surrounding areas",
+	},
+	{
+		icon: Clock,
+		label: "Response Time",
+		value: "Typically within 1 business day",
+	},
+];
+
 export default function ContactPage() {
 	const [formData, setFormData] = useState<FormData>({
 		name: "",
@@ -56,11 +80,8 @@ export default function ContactPage() {
 
 		setIsSubmitting(false);
 
-		if (res.ok) {
-			setIsSubmitted(true);
-		} else {
-			alert("Something went wrong. Please try again.");
-		}
+		if (res.ok) setIsSubmitted(true);
+		else alert("Something went wrong. Please try again.");
 	};
 
 	const projectTypes = [
@@ -81,93 +102,57 @@ export default function ContactPage() {
 		<div className="overflow-hidden">
 			{/* HERO */}
 			<section className="relative pt-32 pb-24 lg:pt-40 lg:pb-32 bg-[#2C3E3A]">
-				<div className="absolute inset-0 opacity-10">
-					<div
-						className="absolute inset-0"
-						style={{
-							backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23F8F6F3' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E")`,
-						}}
-					/>
-				</div>
-
 				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
 					<motion.span
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 0.6 }}
 						className="inline-flex items-center gap-2 px-4 py-2 bg-[#4A7C59]/30 rounded-full text-[#F8F6F3]/90 text-sm font-medium mb-8"
 					>
 						<TreePine className="w-4 h-4" />
 						Let's Talk
 					</motion.span>
 
-					<motion.h1
-						initial={{ opacity: 0, y: 30 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 0.8, delay: 0.1 }}
-						className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#F8F6F3] mb-6"
-					>
+					<h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#F8F6F3] mb-6">
 						Start Your Project
-					</motion.h1>
+					</h1>
 
-					<motion.p
-						initial={{ opacity: 0, y: 30 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 0.8, delay: 0.2 }}
-						className="text-xl text-[#F8F6F3]/80 max-w-3xl mx-auto"
-					>
+					<p className="text-xl text-[#F8F6F3]/80 max-w-3xl mx-auto">
 						Tell us about your project and we'll get back to you with a free
 						estimate. No pressure — just an honest conversation.
-					</motion.p>
+					</p>
 				</div>
 			</section>
 
 			<section className="py-24 lg:py-32 bg-[#F8F6F3]">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-3 gap-16">
 					{/* INFO */}
-					<motion.div
-						initial={{ opacity: 0, x: -30 }}
-						whileInView={{ opacity: 1, x: 0 }}
-						viewport={{ once: true }}
-						transition={{ duration: 0.8 }}
-					>
+					<div>
 						<h2 className="text-2xl font-semibold text-[#2C3E3A] mb-8">
 							Get in Touch
 						</h2>
 
 						<div className="space-y-6 mb-12">
-							{[
-								{
-									icon: Phone,
-									label: "Phone",
-									value: "(916) 508-6272",
-								},
-								{
-									icon: Mail,
-									label: "Email",
-									value: "hello@structawa.com",
-								},
-								{
-									icon: MapPin,
-									label: "Service Area",
-									value: "Greater Vancouver, WA and surrounding areas",
-								},
-								{
-									icon: Clock,
-									label: "Response Time",
-									value: "Typically within 1 business day",
-								},
-							].map((item) => (
-								<div key={item.label} className="flex gap-4">
-									<div className="w-12 h-12 bg-[#2D5A3D]/10 rounded-xl flex items-center justify-center">
-										<item.icon className="w-5 h-5 text-[#2D5A3D]" />
-									</div>
-									<div>
-										<p className="font-medium text-[#2C3E3A]">{item.label}</p>
-										<p className="text-[#2C3E3A]/70">{item.value}</p>
-									</div>
-								</div>
-							))}
+							{contactItems.map((item) => {
+								const Wrapper = item.href ? "a" : "div";
+
+								return (
+									<Wrapper
+										key={item.label}
+										href={item.href}
+										className={`flex gap-4 items-start rounded-xl p-2 -m-2 transition ${
+											item.href ? "hover:bg-[#2D5A3D]/5 cursor-pointer" : ""
+										}`}
+									>
+										<div className="w-12 h-12 bg-[#2D5A3D]/10 rounded-xl flex items-center justify-center shrink-0">
+											<item.icon className="w-5 h-5 text-[#2D5A3D]" />
+										</div>
+										<div>
+											<p className="font-medium text-[#2C3E3A]">{item.label}</p>
+											<p className="text-[#2C3E3A]/70">{item.value}</p>
+										</div>
+									</Wrapper>
+								);
+							})}
 						</div>
 
 						<div className="p-6 bg-[#E8E4DE] rounded-2xl">
@@ -191,36 +176,24 @@ export default function ContactPage() {
 								))}
 							</ul>
 						</div>
-					</motion.div>
+					</div>
 
 					{/* FORM */}
-					<motion.div
-						initial={{ opacity: 0, x: 30 }}
-						whileInView={{ opacity: 1, x: 0 }}
-						viewport={{ once: true }}
-						transition={{ duration: 0.8 }}
-						className="lg:col-span-2"
-					>
+					<div className="lg:col-span-2">
 						{isSubmitted ? (
-							<motion.div
-								initial={{ opacity: 0, scale: 0.95 }}
-								animate={{ opacity: 1, scale: 1 }}
-								className="bg-white rounded-2xl p-12 border border-[#E8E4DE] text-center"
-							>
-								<div className="w-20 h-20 bg-[#2D5A3D]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-									<CheckCircle2 className="w-10 h-10 text-[#2D5A3D]" />
-								</div>
-								<h3 className="text-2xl font-semibold text-[#2C3E3A] mb-4">
+							<div className="bg-white rounded-2xl p-12 border text-center">
+								<CheckCircle2 className="w-12 h-12 text-[#2D5A3D] mx-auto mb-4" />
+								<h3 className="text-2xl font-semibold text-[#2C3E3A] mb-2">
 									Thank You!
 								</h3>
-								<p className="text-[#2C3E3A]/70 max-w-md mx-auto">
+								<p className="text-[#2C3E3A]/70">
 									We've received your message and will be in touch shortly.
 								</p>
-							</motion.div>
+							</div>
 						) : (
 							<form
 								onSubmit={handleSubmit}
-								className="bg-white rounded-2xl p-8 lg:p-12 border border-[#E8E4DE]"
+								className="bg-white rounded-2xl p-8 lg:p-12 border"
 							>
 								<h3 className="text-xl font-semibold text-[#2C3E3A] mb-8">
 									Project Details
@@ -267,21 +240,13 @@ export default function ContactPage() {
 											onValueChange={(value) =>
 												setFormData({ ...formData, projectType: value })
 											}
-											required
 										>
 											<SelectTrigger>
-												<SelectValue
-													placeholder="Select project type"
-													className="bg-white text-black"
-												/>
+												<SelectValue placeholder="Select project type" />
 											</SelectTrigger>
-											<SelectContent className="bg-white text-black">
+											<SelectContent>
 												{projectTypes.map((type) => (
-													<SelectItem
-														className="hover:bg-gray-300"
-														key={type}
-														value={type}
-													>
+													<SelectItem key={type} value={type}>
 														{type}
 													</SelectItem>
 												))}
@@ -311,7 +276,7 @@ export default function ContactPage() {
 								</Button>
 							</form>
 						)}
-					</motion.div>
+					</div>
 				</div>
 			</section>
 		</div>
