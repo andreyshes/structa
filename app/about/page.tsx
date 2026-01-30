@@ -10,7 +10,6 @@ import {
 	ArrowRight,
 	Mountain,
 	Users,
-	Clock,
 } from "lucide-react";
 
 import SectionHeader from "@/app/components/SectionHeader";
@@ -21,33 +20,33 @@ export default function AboutPage() {
 			icon: Heart,
 			title: "Pride in the Details",
 			description:
-				"We take genuine pride in our work — from the smallest repair to the final finish. If it’s not something we’d put our name on, it doesn’t leave the job site.",
+				"Every repair, upgrade, and finish detail is handled with care. If it’s not something we’d be proud to stand behind, it doesn’t leave the job site.",
 		},
 		{
 			icon: Compass,
 			title: "Clear Communication",
 			description:
-				"No jargon, no surprises. You’ll always know what’s happening, why it matters, and what comes next.",
+				"We believe homeowners deserve clarity. You’ll always know what’s happening, why it matters, and what to expect next.",
 		},
 		{
 			icon: Award,
 			title: "Built to Last",
 			description:
-				"We focus on long-term solutions, not quick fixes. Our goal is work that holds up — structurally and visually.",
+				"We focus on long-term solutions — not shortcuts. Our work is designed to hold up structurally, visually, and functionally.",
 		},
 		{
 			icon: Users,
 			title: "Respect for Your Home",
 			description:
-				"We treat every home like it’s lived in — because it is. Clean spaces, careful work, and professionalism throughout.",
+				"We work cleanly, protect your space, and treat every home with respect — because it’s lived in.",
 		},
 	];
 
 	const stats = [
-		{ value: "10+", label: "Years of Experience" },
-		{ value: "500+", label: "Projects Completed" },
+		{ value: "5+", label: "Years of Experience" },
+		{ value: "250+", label: "Projects Completed" },
 		{ value: "100%", label: "Detail-Driven" },
-		{ value: "PNW", label: "Locally Rooted" },
+		{ value: "Vancouver, WA", label: "Locally Based" },
 	];
 
 	return (
@@ -57,7 +56,7 @@ export default function AboutPage() {
 				<div className="absolute inset-0">
 					<img
 						src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=2000&q=80"
-						alt="Architectural wood detail"
+						alt="Craftsmanship-focused home services in Vancouver WA"
 						className="w-full h-full object-cover"
 					/>
 					<div className="absolute inset-0 bg-linear-to-br from-[#2C3E3A]/90 via-[#2C3E3A]/85 to-[#2D5A3D]/70" />
@@ -72,7 +71,7 @@ export default function AboutPage() {
 							className="inline-flex items-center gap-2 px-4 py-2 bg-[#4A7C59]/25 backdrop-blur-sm rounded-full text-[#F8F6F3]/90 text-sm font-medium mb-8 border border-[#F8F6F3]/10"
 						>
 							<TreePine className="w-4 h-4" />
-							Our Story
+							About Structa Homes
 						</motion.span>
 
 						<motion.h1
@@ -81,9 +80,9 @@ export default function AboutPage() {
 							transition={{ duration: 0.8, delay: 0.1 }}
 							className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#F8F6F3] leading-tight mb-6"
 						>
-							Built on Craftsmanship,
+							A Local Home Services Company
 							<br className="hidden sm:block" />
-							Rooted in the Northwest
+							Built on Craftsmanship
 						</motion.h1>
 
 						<motion.p
@@ -92,8 +91,9 @@ export default function AboutPage() {
 							transition={{ duration: 0.8, delay: 0.2 }}
 							className="text-xl text-[#F8F6F3]/80 leading-relaxed"
 						>
-							Structa Homes is built on a simple idea — do the work right,
-							respect the home, and stand behind the result.
+							Based in Vancouver, WA, Structa Homes provides reliable home
+							repair, improvement, and finish services with a focus on quality,
+							honesty, and respect for your home.
 						</motion.p>
 					</div>
 				</div>
@@ -111,28 +111,33 @@ export default function AboutPage() {
 						<span className="text-sm font-medium tracking-wider uppercase text-[#4A7C59] mb-4 block">
 							Who We Are
 						</span>
+
 						<h2 className="text-3xl md:text-4xl font-semibold text-[#2C3E3A] mb-6">
-							A Different Kind of Home Services Company
+							Trusted Home Services in Vancouver, WA
 						</h2>
 
 						<div className="space-y-6 text-[#2C3E3A]/70 leading-relaxed">
 							<p>
-								Structa Homes was created to offer homeowners something better —
-								thoughtful craftsmanship, honest communication, and work that
-								doesn’t cut corners.
+								Structa Homes was founded to provide homeowners in Vancouver, WA
+								and surrounding Clark County communities with dependable home
+								services done the right way.
 							</p>
+
 							<p>
-								We’re not focused on being the biggest operation in the region.
-								We’re focused on being the one clients trust when the work
-								matters.
+								We specialize in a wide range of work — from small repairs and
+								finish carpentry to thoughtful home improvements — all delivered
+								with careful planning and clear communication.
 							</p>
+
 							<p>
-								From small repairs to larger remodels, every project gets the
-								same level of care, planning, and attention to detail.
+								Rather than rushing through jobs, we focus on doing fewer
+								projects better. That means cleaner work, better results, and a
+								smoother experience for homeowners.
 							</p>
+
 							<p className="font-medium text-[#2C3E3A]">
-								Because the goal isn’t just to finish a project — it’s to earn
-								your confidence.
+								Our goal isn’t just to complete projects — it’s to become the
+								home services company you trust and recommend.
 							</p>
 						</div>
 					</motion.div>
@@ -147,7 +152,7 @@ export default function AboutPage() {
 						<div className="aspect-4/5 rounded-2xl overflow-hidden">
 							<img
 								src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=80"
-								alt="Craft-focused interior detail"
+								alt="Finish carpentry and interior home upgrades in Vancouver WA"
 								className="w-full h-full object-cover"
 							/>
 						</div>
@@ -158,8 +163,10 @@ export default function AboutPage() {
 									<Mountain className="w-6 h-6 text-[#2D5A3D]" />
 								</div>
 								<div>
-									<p className="text-2xl font-bold text-[#2C3E3A]">PNW</p>
-									<p className="text-sm text-[#2C3E3A]/60">Born & Based</p>
+									<p className="text-2xl font-bold text-[#2C3E3A]">
+										Vancouver, WA
+									</p>
+									<p className="text-sm text-[#2C3E3A]/60">Locally Based</p>
 								</div>
 							</div>
 						</div>
@@ -194,7 +201,7 @@ export default function AboutPage() {
 					<SectionHeader
 						eyebrow="Our Values"
 						title="What Guides Our Work"
-						description="These principles shape every project we take on."
+						description="The principles behind every Structa Homes project."
 					/>
 
 					<div className="grid md:grid-cols-2 gap-8">
@@ -232,12 +239,12 @@ export default function AboutPage() {
 						transition={{ duration: 0.8 }}
 						className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#F8F6F3] mb-6"
 					>
-						Let’s Build Something Solid
+						Let’s Improve Your Home
 					</motion.h2>
 
 					<p className="text-xl text-[#F8F6F3]/70 mb-10 max-w-2xl mx-auto">
-						If you’re looking for thoughtful work and dependable results, we’d
-						love to hear about your project.
+						If you’re looking for a reliable home services company in Vancouver,
+						WA, we’d love to hear about your project.
 					</p>
 
 					<Link
