@@ -118,9 +118,10 @@ export default function HomePage() {
 						alt="Home repair and finish carpentry in Vancouver WA"
 						fill
 						priority
-						className="object-cover"
+						className="object-cover contrast-110 saturate-105"
 					/>
-					<div className="absolute inset-0 bg-linear-to-br from-[#1F2E2B]/90 via-[#243A35]/80 to-[#2D5A3D]/70" />
+
+					<div className="absolute inset-0 bg-linear-to-br from-[#1F2E2B]/70 via-[#243A35]/55 to-[#2D5A3D]/45" />
 				</div>
 
 				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32">

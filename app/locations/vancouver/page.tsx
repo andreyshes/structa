@@ -186,6 +186,72 @@ export default function VancouverLocationPage() {
 						</ul>
 					</div>
 				</section>
+				{/* FAQ */}
+				<section className="py-24 bg-[#E8E4DE]">
+					<div className="max-w-5xl mx-auto px-6">
+						<h2 className="text-3xl md:text-4xl font-semibold text-[#2C3E3A] mb-10 text-center">
+							Frequently Asked Questions About Home Services in Vancouver, WA
+						</h2>
+
+						<div className="space-y-8">
+							<div>
+								<h3 className="text-xl font-semibold text-[#2C3E3A] mb-2">
+									What home services do you offer in Vancouver, WA?
+								</h3>
+								<p className="text-[#2C3E3A]/80 leading-relaxed">
+									Structa Homes provides handyman services, home repairs,
+									drywall repair, finish carpentry, door and window repair,
+									flooring repairs, and kitchen and bathroom updates for
+									homeowners throughout Vancouver, Washington.
+								</p>
+							</div>
+
+							<div>
+								<h3 className="text-xl font-semibold text-[#2C3E3A] mb-2">
+									Do you offer free estimates for home repair projects?
+								</h3>
+								<p className="text-[#2C3E3A]/80 leading-relaxed">
+									Yes. We offer free estimates for home repair and improvement
+									projects in Vancouver. We’ll review your project, discuss
+									options, and provide clear recommendations before any work
+									begins.
+								</p>
+							</div>
+
+							<div>
+								<h3 className="text-xl font-semibold text-[#2C3E3A] mb-2">
+									Are you licensed and insured in Washington?
+								</h3>
+								<p className="text-[#2C3E3A]/80 leading-relaxed">
+									Yes. Structa Homes is properly licensed and insured to perform
+									home repair and improvement services in Washington State.
+								</p>
+							</div>
+
+							<div>
+								<h3 className="text-xl font-semibold text-[#2C3E3A] mb-2">
+									What areas around Vancouver do you serve?
+								</h3>
+								<p className="text-[#2C3E3A]/80 leading-relaxed">
+									In addition to Vancouver, we regularly serve Hazel Dell,
+									Salmon Creek, Five Corners, Brush Prairie, Camas, and nearby
+									Clark County communities.
+								</p>
+							</div>
+
+							<div>
+								<h3 className="text-xl font-semibold text-[#2C3E3A] mb-2">
+									Do you handle small jobs and punch lists?
+								</h3>
+								<p className="text-[#2C3E3A]/80 leading-relaxed">
+									Absolutely. We regularly help homeowners with small repairs,
+									punch lists, and ongoing maintenance projects that larger
+									contractors often avoid.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
 
 				{/* CTA */}
 				<section className="py-28 bg-[#2C3E3A] text-center">
