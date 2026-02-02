@@ -9,6 +9,10 @@ import {
 	Shield,
 	Ruler,
 	Home,
+	Star,
+	Maximize,
+	PenTool,
+	Layers,
 } from "lucide-react";
 
 import SectionHeader from "@/app/components/SectionHeader";
@@ -16,10 +20,10 @@ import SectionHeader from "@/app/components/SectionHeader";
 export default function FinishCarpentryPage() {
 	return (
 		<div className="overflow-hidden">
-			{/* HERO */}
+			{/* HERO SECTION */}
 			<section className="relative pt-32 pb-24 lg:pt-40 lg:pb-32 bg-[#2C3E3A]">
 				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-					<div className="max-w-3xl">
+					<div className="max-w-4xl">
 						<motion.span
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
@@ -27,146 +31,174 @@ export default function FinishCarpentryPage() {
 							className="inline-flex items-center gap-2 px-4 py-2 bg-[#4A7C59]/30 rounded-full text-[#F8F6F3]/90 text-sm font-medium mb-8"
 						>
 							<Hammer className="w-4 h-4" />
-							Finish Carpentry
+							Custom Trim & Millwork
 						</motion.span>
 
 						<motion.h1
 							initial={{ opacity: 0, y: 30 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.8, delay: 0.1 }}
-							className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#F8F6F3] mb-6"
+							className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#F8F6F3] mb-6 leading-tight"
 						>
-							Trim and Finish Carpentry in Vancouver, WA
+							Finish Carpentry & Custom Trim in Vancouver, WA
 						</motion.h1>
 
 						<motion.p
 							initial={{ opacity: 0, y: 30 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.8, delay: 0.2 }}
-							className="text-xl text-[#F8F6F3]/80"
+							className="text-xl text-[#F8F6F3]/80 leading-relaxed max-w-2xl"
 						>
-							Precision trim work and interior carpentry that elevates your
-							home’s look and feel. Serving Vancouver and surrounding Clark
-							County communities.
+							Transform your interior with precision-crafted millwork. We
+							specialize in elevating Clark County homes through expert crown
+							moulding, baseboards, and custom architectural details.
 						</motion.p>
 					</div>
 				</div>
 			</section>
 
-			{/* INTRO */}
+			{/* CRAFTSMANSHIP INTRO */}
 			<section className="py-24 bg-[#F8F6F3]">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
-					<div className="max-w-3xl">
-						<h2 className="text-3xl md:text-4xl font-semibold text-[#2C3E3A] mb-6">
-							Detail-Driven Finish Carpentry
-						</h2>
-
-						<div className="space-y-6 text-[#2C3E3A]/70 leading-relaxed">
-							<p>
-								Structa Homes provides professional finish carpentry services in
-								Vancouver, WA for homeowners who care about clean lines, tight
-								reveals, and lasting results.
-							</p>
-
-							<p>
-								Whether you’re upgrading trim, completing a remodel, or adding
-								architectural detail to your space, our approach is careful,
-								precise, and never rushed.
-							</p>
+					<div className="grid lg:grid-cols-2 gap-12 items-start">
+						<div>
+							<h2 className="text-3xl md:text-4xl font-semibold text-[#2C3E3A] mb-6">
+								Interior Details That Define Your Home
+							</h2>
+							<div className="space-y-6 text-[#2C3E3A]/70 leading-relaxed text-lg">
+								<p>
+									Finish carpentry is where construction meets art. At Structa
+									Homes, we believe the difference between a "house" and a
+									"home" is found in the details. We provide{" "}
+									<strong>
+										professional finish carpentry in Vancouver, WA
+									</strong>
+									for homeowners who demand tight miters, seamless joints, and
+									perfect reveals.
+								</p>
+								<p>
+									From historic home restorations in downtown Vancouver to
+									modern upgrades in Camas, we bring an eye for design and a
+									steady hand to every piece of wood we touch. We don't just
+									"install trim"—we increase your property's value and
+									character.
+								</p>
+							</div>
+						</div>
+						<div className="bg-[#E8E4DE] p-8 rounded-2xl border border-[#DCD7D0] relative overflow-hidden">
+							<Star className="absolute -right-4 -top-4 w-24 h-24 text-[#4A7C59]/10" />
+							<h3 className="text-xl font-bold text-[#2C3E3A] mb-4">
+								The Structa Standard
+							</h3>
+							<ul className="space-y-4">
+								<li className="flex gap-3 items-start text-[#2C3E3A]/70">
+									<CheckCircle2 className="w-6 h-6 text-[#4A7C59] shrink-0" />
+									<span>
+										<strong>Mitered Perfection:</strong> No gaps, no excessive
+										wood filler—just clean, professional joints.
+									</span>
+								</li>
+								<li className="flex gap-3 items-start text-[#2C3E3A]/70">
+									<CheckCircle2 className="w-6 h-6 text-[#4A7C59] shrink-0" />
+									<span>
+										<strong>Material Expertise:</strong> Whether it's MDF, solid
+										oak, or hemlock, we know how to handle every grain.
+									</span>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			{/* SERVICES LIST */}
+			{/* DETAILED SERVICES GRID */}
 			<section className="py-24 bg-[#E8E4DE]">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
 					<SectionHeader
-						eyebrow="What We Offer"
-						title="Finish Carpentry Services"
-						description="Interior carpentry work completed with accuracy and attention to detail."
+						eyebrow="Specialized Services"
+						title="Professional Millwork Installation"
+						description="Our finish carpentry services are designed to add elegance and sophistication to every room."
 					/>
 
-					<div className="grid md:grid-cols-2 gap-6 max-w-4xl">
-						{[
-							"Baseboard installation & replacement",
-							"Crown molding installation",
-							"Door & window casing",
-							"Wainscoting & wall paneling",
-							"Custom built-ins & shelving",
-							"Mantel installation",
-							"Trim repair & upgrades",
-							"Interior wood detailing",
-						].map((item) => (
-							<div key={item} className="flex items-center gap-3">
-								<CheckCircle2 className="w-5 h-5 text-[#4A7C59]" />
-								<span className="text-[#2C3E3A]/80">{item}</span>
-							</div>
-						))}
-					</div>
-				</div>
-			</section>
-
-			{/* WHY US */}
-			<section className="py-24 bg-[#F8F6F3]">
-				<div className="max-w-7xl mx-auto px-6 lg:px-8">
-					<SectionHeader
-						eyebrow="Why Structa Homes"
-						title="Carpentry That Shows in the Details"
-						description="Clean execution makes all the difference."
-					/>
-
-					<div className="grid md:grid-cols-3 gap-8">
+					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
 						{[
 							{
-								icon: Ruler,
-								title: "Precision Work",
-								text: "Accurate measurements, clean cuts, and tight joints throughout.",
+								title: "Crown & Baseboards",
+								desc: "Upgrade standard builder-grade trim to bold, elegant baseboards and crown moulding that anchors your rooms.",
+								icon: Maximize,
 							},
 							{
-								icon: Shield,
-								title: "Built to Last",
-								text: "Proper installation methods that hold up over time.",
+								title: "Window & Door Casing",
+								desc: "Framing your openings with precision. We handle everything from standard casings to elaborate pediments.",
+								icon: PenTool,
 							},
 							{
+								title: "Wainscoting & Paneling",
+								desc: "Add depth with board and batten, picture frame moulding, or traditional beadboard installations.",
+								icon: Layers,
+							},
+							{
+								title: "Custom Built-ins",
+								desc: "Functional beauty including fireplace mantels, custom closet shelving, and integrated bookcases.",
 								icon: Home,
-								title: "Respect for Your Space",
-								text: "Careful work, protected surfaces, and a clean job site.",
 							},
-						].map((item) => (
+							{
+								title: "Interior Door Upgrades",
+								desc: "Replacing dated hollow-core doors with solid, well-fitted interior doors that improve sound dampening.",
+								icon: Shield,
+							},
+							{
+								title: "Trim Repair & Matching",
+								desc: "Expertly matching existing profiles in older homes to ensure repairs are historically accurate and seamless.",
+								icon: Ruler,
+							},
+						].map((service, i) => (
 							<div
-								key={item.title}
-								className="bg-white rounded-2xl p-8 border border-[#E8E4DE]"
+								key={i}
+								className="bg-[#F8F6F3] p-8 rounded-xl shadow-sm border border-transparent hover:border-[#4A7C59] transition-all group"
 							>
-								<div className="w-12 h-12 bg-[#2D5A3D]/10 rounded-xl flex items-center justify-center mb-6">
-									<item.icon className="w-6 h-6 text-[#2D5A3D]" />
-								</div>
+								<service.icon className="w-10 h-10 text-[#2D5A3D] mb-4 group-hover:scale-110 transition-transform" />
 								<h3 className="text-xl font-semibold text-[#2C3E3A] mb-3">
-									{item.title}
+									{service.title}
 								</h3>
-								<p className="text-[#2C3E3A]/70">{item.text}</p>
+								<p className="text-[#2C3E3A]/70 leading-relaxed text-sm">
+									{service.desc}
+								</p>
 							</div>
 						))}
 					</div>
 				</div>
 			</section>
 
-			{/* SERVICE AREA */}
-			<section className="py-24 bg-[#E8E4DE]">
+			{/* LOCALIZED SEO SECTION */}
+			<section className="py-24 bg-[#F8F6F3]">
 				<div className="max-w-4xl mx-auto px-6 lg:px-8">
-					<h2 className="text-3xl font-semibold text-[#2C3E3A] mb-6">
-						Finish Carpentry Near You
-					</h2>
-					<p className="text-[#2C3E3A]/70 leading-relaxed">
-						We provide finish carpentry services throughout Vancouver, WA and
-						nearby areas including Five Corners, Brush Prairie, Hazel Dell, and
-						Salmon Creek. If you’re looking for professional finish carpentry
-						near you, we’re ready to help.
-					</p>
+					<div className="text-center mb-12">
+						<h2 className="text-3xl font-semibold text-[#2C3E3A]">
+							Your Local Finish Carpentry Experts
+						</h2>
+					</div>
+					<div className="grid md:grid-cols-2 gap-8 items-center">
+						<p className="text-[#2C3E3A]/70 leading-relaxed">
+							We understand the architectural styles prevalent in{" "}
+							<strong>Clark County</strong>. From the craftsmen-style homes in
+							<strong>Washougal</strong> to the contemporary builds in{" "}
+							<strong>Ridgefield</strong>, our carpentry work is tailored to
+							match the aesthetic of your specific neighborhood.
+						</p>
+						<ul className="grid grid-cols-2 gap-2 text-[#4A7C59] font-medium">
+							<li>• Vancouver</li>
+							<li>• Camas</li>
+							<li>• Battle Ground</li>
+							<li>• Salmon Creek</li>
+							<li>• Hazel Dell</li>
+							<li>• Orchard</li>
+						</ul>
+					</div>
 				</div>
 			</section>
 
-			{/* CTA */}
+			{/* CTA SECTION */}
 			<section className="py-24 bg-[#2C3E3A]">
 				<div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
 					<motion.h2
@@ -176,18 +208,19 @@ export default function FinishCarpentryPage() {
 						transition={{ duration: 0.8 }}
 						className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#F8F6F3] mb-6"
 					>
-						Upgrade Your Home With Finish Carpentry
+						Ready to Elevate Your Interior?
 					</motion.h2>
 
 					<p className="text-xl text-[#F8F6F3]/70 mb-10">
-						Get a free estimate for finish carpentry in Vancouver, WA.
+						Contact Structa Homes today for a professional carpentry
+						consultation in Vancouver, WA.
 					</p>
 
 					<Link
 						href="/contact"
-						className="inline-flex items-center gap-2 px-10 py-5 bg-[#2D5A3D] text-white rounded-xl hover:bg-[#4A7C59] transition shadow-xl"
+						className="inline-flex items-center gap-2 px-10 py-5 bg-[#2D5A3D] text-white rounded-xl hover:bg-[#4A7C59] transition shadow-xl font-semibold"
 					>
-						Request a Free Estimate
+						Get Your Free Estimate
 						<ArrowRight className="w-5 h-5" />
 					</Link>
 				</div>

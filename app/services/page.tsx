@@ -14,21 +14,22 @@ import {
 	ClipboardCheck,
 	ArrowRight,
 	CheckCircle2,
+	type LucideIcon,
 } from "lucide-react";
 
-import SectionHeader from "@/app/components/SectionHeader";
-
 type ServiceCategory = {
-	icon: any;
+	id: string;
+	icon: LucideIcon;
 	title: string;
 	description: string;
 	items: string[];
-	href?: string;
+	href: string;
 };
 
 export default function ServicesPage() {
 	const serviceCategories: ServiceCategory[] = [
 		{
+			id: "handyman",
 			icon: Wrench,
 			title: "Handyman & General Home Repairs",
 			href: "/services/handyman",
@@ -44,6 +45,7 @@ export default function ServicesPage() {
 			],
 		},
 		{
+			id: "drywall",
 			icon: Layers,
 			title: "Drywall & Wall Repair Services",
 			href: "/services/drywall-repair",
@@ -59,6 +61,7 @@ export default function ServicesPage() {
 			],
 		},
 		{
+			id: "finish-carpentry",
 			icon: Hammer,
 			title: "Trim & Finish Carpentry",
 			href: "/services/finish-carpentry",
@@ -74,6 +77,7 @@ export default function ServicesPage() {
 			],
 		},
 		{
+			id: "doors-windows",
 			icon: DoorOpen,
 			title: "Door & Window Repair",
 			href: "/services/door-window",
@@ -89,6 +93,7 @@ export default function ServicesPage() {
 			],
 		},
 		{
+			id: "kitchen-bath",
 			icon: Paintbrush,
 			title: "Kitchen & Bathroom Updates",
 			href: "/services/kitchen-bath",
@@ -104,8 +109,10 @@ export default function ServicesPage() {
 			],
 		},
 		{
+			id: "lighting",
 			icon: Lightbulb,
 			title: "Lighting & Fixture Installation",
+			href: "/services/lighting",
 			description:
 				"Safe, clean installation of lighting, fans, and home fixtures.",
 			items: [
@@ -118,6 +125,7 @@ export default function ServicesPage() {
 			],
 		},
 		{
+			id: "flooring",
 			icon: Home,
 			title: "Flooring Repairs & Small Installations",
 			href: "/services/flooring",
@@ -133,6 +141,7 @@ export default function ServicesPage() {
 			],
 		},
 		{
+			id: "property-maintenance",
 			icon: ClipboardCheck,
 			title: "Punch Lists & Property Maintenance",
 			href: "/services/home-repair",
@@ -179,9 +188,8 @@ export default function ServicesPage() {
 						transition={{ duration: 0.8, delay: 0.2 }}
 						className="text-xl text-[#F8F6F3]/80 max-w-3xl mx-auto"
 					>
-						From everyday home repairs to detailed upgrades, we provide
-						reliable, high-quality home services for homeowners across Vancouver
-						and surrounding Clark County communities.
+						From everyday repairs to detailed upgrades, Structa Homes delivers
+						reliable, high-quality service across Vancouver and Clark County.
 					</motion.p>
 				</div>
 			</section>
@@ -189,14 +197,14 @@ export default function ServicesPage() {
 			{/* SERVICES GRID */}
 			<section className="py-24 lg:py-32 bg-[#F8F6F3]">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8 grid gap-8">
-					{serviceCategories.map((service, index) => {
-						const Card = (
+					{serviceCategories.map((service, index) => (
+						<Link key={service.id} href={service.href} className="block">
 							<motion.div
 								initial={{ opacity: 0, y: 30 }}
 								whileInView={{ opacity: 1, y: 0 }}
 								viewport={{ once: true, margin: "-50px" }}
 								transition={{ duration: 0.6, delay: index * 0.05 }}
-								className="group bg-white rounded-2xl p-8 lg:p-10 border border-[#E8E4DE] hover:shadow-xl hover:shadow-[#2D5A3D]/5 transition-all cursor-pointer"
+								className="group bg-white rounded-2xl p-8 lg:p-10 border border-[#E8E4DE] hover:shadow-xl hover:shadow-[#2D5A3D]/5 transition-all"
 							>
 								<div className="grid lg:grid-cols-3 gap-8">
 									<div>
@@ -211,7 +219,10 @@ export default function ServicesPage() {
 
 									<div className="lg:col-span-2 grid sm:grid-cols-2 gap-3">
 										{service.items.map((item) => (
-											<div key={item} className="flex items-center gap-3">
+											<div
+												key={`${service.id}-${item}`}
+												className="flex items-center gap-3"
+											>
 												<CheckCircle2 className="w-5 h-5 text-[#4A7C59]" />
 												<span className="text-[#2C3E3A]/80">{item}</span>
 											</div>
@@ -219,16 +230,8 @@ export default function ServicesPage() {
 									</div>
 								</div>
 							</motion.div>
-						);
-
-						return service.href ? (
-							<Link key={service.title} href={service.href} className="block">
-								{Card}
-							</Link>
-						) : (
-							<div key={service.title}>{Card}</div>
-						);
-					})}
+						</Link>
+					))}
 				</div>
 			</section>
 

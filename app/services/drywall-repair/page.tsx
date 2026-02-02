@@ -9,6 +9,9 @@ import {
 	Shield,
 	Home,
 	Clock,
+	Droplets,
+	Zap,
+	Brush,
 } from "lucide-react";
 
 import SectionHeader from "@/app/components/SectionHeader";
@@ -19,7 +22,7 @@ export default function DrywallRepairPage() {
 			{/* HERO */}
 			<section className="relative pt-32 pb-24 lg:pt-40 lg:pb-32 bg-[#2C3E3A]">
 				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-					<div className="max-w-3xl">
+					<div className="max-w-4xl">
 						<motion.span
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
@@ -27,27 +30,27 @@ export default function DrywallRepairPage() {
 							className="inline-flex items-center gap-2 px-4 py-2 bg-[#4A7C59]/30 rounded-full text-[#F8F6F3]/90 text-sm font-medium mb-8"
 						>
 							<Layers className="w-4 h-4" />
-							Drywall Repair Services
+							Expert Drywall Repair & Patching
 						</motion.span>
 
 						<motion.h1
 							initial={{ opacity: 0, y: 30 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.8, delay: 0.1 }}
-							className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#F8F6F3] mb-6"
+							className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#F8F6F3] mb-6 leading-tight"
 						>
-							Drywall Repair in Vancouver, WA
+							Seamless Drywall Repair & Texture Matching in Vancouver, WA
 						</motion.h1>
 
 						<motion.p
 							initial={{ opacity: 0, y: 30 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.8, delay: 0.2 }}
-							className="text-xl text-[#F8F6F3]/80"
+							className="text-xl text-[#F8F6F3]/80 leading-relaxed max-w-2xl"
 						>
-							Seamless drywall repair for holes, cracks, and water damage.
-							Serving Vancouver, Five Corners, Brush Prairie, Hazel Dell, and
-							surrounding Clark County areas.
+							Don’t settle for visible patches. We specialize in clean, nearly
+							invisible drywall repairs, water damage restoration, and precise
+							texture matching for homes across Clark County.
 						</motion.p>
 					</div>
 				</div>
@@ -56,55 +59,116 @@ export default function DrywallRepairPage() {
 			{/* INTRO */}
 			<section className="py-24 bg-[#F8F6F3]">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
-					<div className="max-w-3xl">
-						<h2 className="text-3xl md:text-4xl font-semibold text-[#2C3E3A] mb-6">
-							Clean, Professional Drywall Repairs
-						</h2>
+					<div className="grid lg:grid-cols-2 gap-16 items-center">
+						<div className="space-y-6 text-[#2C3E3A]/70 leading-relaxed text-lg">
+							<h2 className="text-3xl md:text-4xl font-semibold text-[#2C3E3A]">
+								The Art of Invisible Drywall Repair
+							</h2>
 
-						<div className="space-y-6 text-[#2C3E3A]/70 leading-relaxed">
 							<p>
-								Structa Homes provides professional drywall repair services in
-								Vancouver, WA for homeowners who want clean results — not
-								visible patches or uneven textures.
+								Anyone can apply joint compound, but it takes experience and
+								precision to make a drywall repair truly disappear. Your walls
+								play a major role in how your home looks and feels, and even
+								small imperfections can draw the eye.
 							</p>
 
 							<p>
-								Whether it’s damage from plumbing work, accidental holes,
-								cracks, or moisture issues, we restore your walls to a smooth,
-								paint-ready finish that blends seamlessly with the surrounding
-								area.
+								Whether you’re dealing with{" "}
+								<strong>
+									settlement cracks, doorknob holes, ceiling damage, or the
+									aftermath of a plumbing leak
+								</strong>
+								, we deliver a smooth, level finish that blends seamlessly into
+								the surrounding surface and is ready for paint.
 							</p>
+
+							<p>
+								Serving <strong>Vancouver, WA</strong> and surrounding areas, we
+								prioritize cleanliness and dust control. Our process is designed
+								to protect your home while delivering professional results.
+							</p>
+						</div>
+
+						<div className="grid grid-cols-1 gap-4">
+							{[
+								{
+									title: "Stress Cracks",
+									desc: "Repairing ceiling and corner cracks caused by settling and seasonal movement.",
+								},
+								{
+									title: "Water Damage",
+									desc: "Removal of compromised drywall and replacement with moisture-resistant materials.",
+								},
+								{
+									title: "Texture Matching",
+									desc: "Accurate matching of orange peel, knockdown, and smooth wall finishes.",
+								},
+							].map((item, i) => (
+								<div
+									key={i}
+									className="bg-white p-6 rounded-xl border border-[#E8E4DE] shadow-sm"
+								>
+									<h4 className="font-semibold text-[#2C3E3A] mb-1">
+										{item.title}
+									</h4>
+									<p className="text-sm text-[#2C3E3A]/60">{item.desc}</p>
+								</div>
+							))}
 						</div>
 					</div>
 				</div>
 			</section>
 
-			{/* SERVICES LIST */}
+			{/* SERVICES */}
 			<section className="py-24 bg-[#E8E4DE]">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
 					<SectionHeader
-						eyebrow="What We Repair"
-						title="Drywall Repair Services We Offer"
-						description="From minor cosmetic fixes to more involved repairs."
+						eyebrow="Our Capabilities"
+						title="Comprehensive Drywall Services"
+						description="From small repairs to larger restorations, each project receives the same attention to detail."
 					/>
 
-					<div className="grid md:grid-cols-2 gap-6 max-w-4xl">
+					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
 						{[
-							"Drywall hole patching",
-							"Crack and seam repair",
-							"Water-damaged drywall repair",
-							"Ceiling drywall repair",
-							"Texture matching",
-							"Drywall finishing & sanding",
-							"Drywall installation for small areas",
-							"Paint-ready surface preparation",
-						].map((item) => (
-							<div key={item} className="flex items-center gap-3">
-								<CheckCircle2 className="w-5 h-5 text-[#4A7C59]" />
-								<span className="text-[#2C3E3A]/80">{item}</span>
+							{
+								icon: Zap,
+								title: "Hole & Impact Repair",
+								text: "Repairing everything from nail pops to larger accidental damage while restoring wall strength.",
+							},
+							{
+								icon: Droplets,
+								title: "Water Damage Repair",
+								text: "Careful removal of damaged drywall and treatment of affected areas to help prevent mold.",
+							},
+							{
+								icon: Layers,
+								title: "Ceiling Drywall Repair",
+								text: "Professional overhead repairs for sagging drywall, cracks, and leak damage.",
+							},
+							{
+								icon: Brush,
+								title: "Finish Sanding",
+								text: "HEPA-filtered sanding for a smooth, paint-ready surface with minimal dust.",
+							},
+						].map((item, i) => (
+							<div
+								key={i}
+								className="bg-[#F8F6F3] p-8 rounded-2xl border border-[#DCD7D0]"
+							>
+								<item.icon className="w-8 h-8 text-[#4A7C59] mb-4" />
+								<h3 className="font-semibold text-[#2C3E3A] mb-2">
+									{item.title}
+								</h3>
+								<p className="text-sm text-[#2C3E3A]/70">{item.text}</p>
 							</div>
 						))}
 					</div>
+
+					<p className="max-w-3xl mt-12 text-[#2C3E3A]/70">
+						Many drywall repairs are completed alongside trim work, painting
+						preparation, or general handyman services to ensure a complete,
+						finished result.
+					</p>
 				</div>
 			</section>
 
@@ -112,32 +176,32 @@ export default function DrywallRepairPage() {
 			<section className="py-24 bg-[#F8F6F3]">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
 					<SectionHeader
-						eyebrow="Why Structa Homes"
-						title="Drywall Repairs That Actually Disappear"
-						description="Attention to detail makes the difference."
+						eyebrow="The Structa Difference"
+						title="Why Our Drywall Repairs Last"
+						description="We focus on proper preparation, quality materials, and proven techniques."
 					/>
 
 					<div className="grid md:grid-cols-3 gap-8">
 						{[
 							{
 								icon: Shield,
-								title: "Seamless Finishes",
-								text: "We take the time to blend repairs properly so patches don’t stand out.",
+								title: "Licensed, Bonded & Insured",
+								text: "Professional credentials and coverage that protect your home and give you confidence.",
 							},
 							{
 								icon: Clock,
-								title: "Efficient & Organized",
-								text: "Clean work, minimal disruption, and realistic timelines.",
+								title: "Efficient Turnaround",
+								text: "Strategic use of fast-setting compounds allows most repairs to be completed in fewer visits.",
 							},
 							{
 								icon: Home,
-								title: "Respect for Your Space",
-								text: "We protect floors, furniture, and leave your home clean.",
+								title: "Dust-Controlled Process",
+								text: "Careful containment and vacuum-assisted sanding to maintain clean indoor air quality.",
 							},
 						].map((item) => (
 							<div
 								key={item.title}
-								className="bg-white rounded-2xl p-8 border border-[#E8E4DE]"
+								className="bg-white rounded-2xl p-8 border border-[#E8E4DE] hover:border-[#4A7C59] transition-colors"
 							>
 								<div className="w-12 h-12 bg-[#2D5A3D]/10 rounded-xl flex items-center justify-center mb-6">
 									<item.icon className="w-6 h-6 text-[#2D5A3D]" />
@@ -145,7 +209,7 @@ export default function DrywallRepairPage() {
 								<h3 className="text-xl font-semibold text-[#2C3E3A] mb-3">
 									{item.title}
 								</h3>
-								<p className="text-[#2C3E3A]/70">{item.text}</p>
+								<p className="text-[#2C3E3A]/70 leading-relaxed">{item.text}</p>
 							</div>
 						))}
 					</div>
@@ -154,15 +218,15 @@ export default function DrywallRepairPage() {
 
 			{/* SERVICE AREA */}
 			<section className="py-24 bg-[#E8E4DE]">
-				<div className="max-w-4xl mx-auto px-6 lg:px-8">
+				<div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
 					<h2 className="text-3xl font-semibold text-[#2C3E3A] mb-6">
-						Drywall Repair Near You
+						Trusted Drywall Repair in Vancouver, WA
 					</h2>
-					<p className="text-[#2C3E3A]/70 leading-relaxed">
-						We provide drywall repair services throughout Vancouver, WA and
-						nearby communities including Five Corners, Brush Prairie, Hazel
-						Dell, and Salmon Creek. If you’re searching for drywall repair near
-						you, we’re ready to help.
+					<p className="text-[#2C3E3A]/70 leading-relaxed text-lg">
+						Structa Homes proudly serves homeowners in{" "}
+						<strong>Hazel Dell, Felida, Salmon Creek, and Camas</strong>. If you
+						need a drywall repair professional in the 98660, 98661, or 98683 zip
+						codes, we’re ready to help.
 					</p>
 				</div>
 			</section>
@@ -177,18 +241,19 @@ export default function DrywallRepairPage() {
 						transition={{ duration: 0.8 }}
 						className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#F8F6F3] mb-6"
 					>
-						Need Drywall Repair in Vancouver, WA?
+						Ready to Restore Your Walls?
 					</motion.h2>
 
 					<p className="text-xl text-[#F8F6F3]/70 mb-10">
-						Get a free estimate and let’s make those wall repairs disappear.
+						Request a free estimate today. Many minor drywall repairs can be
+						quoted from photos.
 					</p>
 
 					<Link
 						href="/contact"
-						className="inline-flex items-center gap-2 px-10 py-5 bg-[#2D5A3D] text-white rounded-xl hover:bg-[#4A7C59] transition shadow-xl"
+						className="inline-flex items-center gap-2 px-10 py-5 bg-[#2D5A3D] text-white rounded-xl hover:bg-[#4A7C59] transition shadow-xl font-semibold"
 					>
-						Request a Free Estimate
+						Get My Drywall Fixed
 						<ArrowRight className="w-5 h-5" />
 					</Link>
 				</div>
