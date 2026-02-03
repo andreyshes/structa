@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
@@ -31,55 +31,33 @@ export default function Navigation() {
 				transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
 				className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
 					isScrolled
-						? "bg-[#F8F6F3]/95 backdrop-blur-md shadow-sm"
-						: "bg-transparent"
+						? "bg-[#F8F6F3]/95 backdrop-blur-md shadow-sm h-20"
+						: "bg-transparent h-28"
 				}`}
 			>
-				<div className="max-w-7xl mx-auto px-6 lg:px-8">
-					<div className="flex items-center justify-between h-20">
-						{/* Logo */}
-						<Link href="/" className="flex items-center gap-3">
+				<div className="max-w-7xl mx-auto px-6 lg:px-8 h-full">
+					<div className="flex items-center justify-between h-full">
+						{/* Larger Logo - Text Removed */}
+						{/* Jumbo Logo Section */}
+						<Link href="/" className="relative flex items-center group">
 							<div
-								className={`transition-colors duration-500 ${
-									isScrolled ? "text-[#1a3a2f]" : "text-white"
+								className={`relative transition-all duration-500 transform ${
+									isScrolled
+										? "w-20 h-20" // Size when scrolled
+										: "w-40 h-40 scale-125 translate-y-2"
 								}`}
 							>
-								<svg
-									width="40"
-									height="40"
-									viewBox="0 0 40 40"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										d="M20 4L8 16V36H32V16L20 4Z"
-										stroke="currentColor"
-										strokeWidth="2"
-									/>
-									<path d="M20 4L20 12" stroke="currentColor" strokeWidth="2" />
-									<path
-										d="M14 36V24H26V36"
-										stroke="currentColor"
-										strokeWidth="2"
-									/>
-								</svg>
-							</div>
-
-							<div className="flex flex-col">
-								<span
-									className={`text-sm tracking-[0.3em] font-light transition-colors duration-500 ${
-										isScrolled ? "text-[#1a3a2f]" : "text-white"
+								<Image
+									src="/NORBILT.png"
+									alt="Norbilt Logo"
+									fill
+									priority
+									className={`object-contain transition-all duration-500 ${
+										isScrolled
+											? "brightness-100"
+											: "brightness-0 invert drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]"
 									}`}
-								>
-									STRUCTA
-								</span>
-								<span
-									className={`text-xs tracking-[0.2em] transition-colors duration-500 ${
-										isScrolled ? "text-[#1a3a2f]/70" : "text-white/70"
-									}`}
-								>
-									HOMES
-								</span>
+								/>
 							</div>
 						</Link>
 
@@ -110,14 +88,14 @@ export default function Navigation() {
 						{/* Mobile Toggle */}
 						<button
 							onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-							className={`lg:hidden p-2 rounded-lg ${
+							className={`lg:hidden p-2 rounded-lg transition-colors ${
 								isScrolled ? "text-[#2C3E3A]" : "text-[#F8F6F3]"
 							}`}
 						>
 							{isMobileMenuOpen ? (
-								<X className="w-6 h-6" />
+								<X className="w-8 h-8" />
 							) : (
-								<Menu className="w-6 h-6" />
+								<Menu className="w-8 h-8" />
 							)}
 						</button>
 					</div>
@@ -128,10 +106,9 @@ export default function Navigation() {
 			<AnimatePresence>
 				{isMobileMenuOpen && (
 					<motion.div
-						initial={{ opacity: 0, y: -20 }}
-						animate={{ opacity: 1, y: 0 }}
-						exit={{ opacity: 0, y: -20 }}
-						transition={{ duration: 0.3 }}
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						exit={{ opacity: 0 }}
 						className="fixed inset-0 z-40 lg:hidden"
 					>
 						<div
@@ -146,7 +123,7 @@ export default function Navigation() {
 							transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
 							className="absolute right-0 top-0 bottom-0 w-80 bg-[#F8F6F3] shadow-2xl"
 						>
-							<div className="p-6 pt-24 space-y-2">
+							<div className="p-6 pt-32 space-y-2">
 								{navLinks.map((link, index) => (
 									<motion.div
 										key={link.href}
@@ -157,7 +134,7 @@ export default function Navigation() {
 										<Link
 											href={link.href}
 											onClick={() => setIsMobileMenuOpen(false)}
-											className="block px-4 py-3 text-[#2C3E3A] font-medium rounded-lg hover:bg-[#2D5A3D]/10"
+											className="block px-4 py-4 text-lg text-[#2C3E3A] font-medium rounded-lg hover:bg-[#2D5A3D]/10"
 										>
 											{link.name}
 										</Link>
@@ -167,7 +144,7 @@ export default function Navigation() {
 								<Link
 									href="/contact"
 									onClick={() => setIsMobileMenuOpen(false)}
-									className="block w-full text-center mt-4 px-6 py-3 bg-[#2D5A3D] text-[#F8F6F3] font-medium rounded-lg hover:bg-[#4A7C59]"
+									className="block w-full text-center mt-6 px-6 py-4 bg-[#2D5A3D] text-[#F8F6F3] font-bold rounded-xl hover:bg-[#4A7C59] shadow-lg"
 								>
 									Request a Quote
 								</Link>

@@ -71,7 +71,7 @@ export default function AboutPage() {
 							className="inline-flex items-center gap-2 px-4 py-2 bg-[#4A7C59]/25 backdrop-blur-sm rounded-full text-[#F8F6F3]/90 text-sm font-medium mb-8 border border-[#F8F6F3]/10"
 						>
 							<TreePine className="w-4 h-4" />
-							About Structa Homes
+							About Norbilt
 						</motion.span>
 
 						<motion.h1
@@ -91,9 +91,9 @@ export default function AboutPage() {
 							transition={{ duration: 0.8, delay: 0.2 }}
 							className="text-xl text-[#F8F6F3]/80 leading-relaxed"
 						>
-							Based in Vancouver, WA, Structa Homes provides reliable home
-							repair, improvement, and finish services with a focus on quality,
-							honesty, and respect for your home.
+							Based in Vancouver, WA, Norbilt provides reliable home repair,
+							improvement, and finish services with a focus on quality, honesty,
+							and respect for your home.
 						</motion.p>
 					</div>
 				</div>
@@ -118,8 +118,8 @@ export default function AboutPage() {
 
 						<div className="space-y-6 text-[#2C3E3A]/70 leading-relaxed">
 							<p>
-								Structa Homes was founded to provide homeowners in Vancouver, WA
-								and surrounding Clark County communities with dependable home
+								Norbilt was founded to provide homeowners in Vancouver, WA and
+								surrounding Clark County communities with dependable home
 								services done the right way.
 							</p>
 

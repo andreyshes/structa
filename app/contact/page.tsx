@@ -41,8 +41,8 @@ const contactItems = [
 	{
 		icon: Mail,
 		label: "Email",
-		value: "hello@structawa.com",
-		href: "mailto:hello@structawa.com",
+		value: "hello@norbuilt.com",
+		href: "mailto:hello@norbuilt.com",
 	},
 	{
 		icon: MapPin,
