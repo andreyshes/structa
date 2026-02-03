@@ -4,8 +4,11 @@ import Navigation from "@/app/components/Navigation";
 import Footer from "@/app/components/Footer";
 
 export const metadata: Metadata = {
-	title: "Structa Homes",
+	title: "Norbilt Homes",
 	description: "Expert hands. Exceptional results.",
+	icons: {
+		icon: "/icon-v3.png",
+	},
 };
 
 export default function RootLayout({

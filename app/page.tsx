@@ -200,7 +200,7 @@ export default function HomePage() {
 				<div className="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
 					<div>
 						<SectionHeader
-							eyebrow="Why Structa Homes"
+							eyebrow="Why Norbilt"
 							title="A Better Standard for Home Repairs"
 							description="Local, reliable, and detail-focused work you can trust."
 							centered={false}
