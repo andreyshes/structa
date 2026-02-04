@@ -65,7 +65,7 @@ export default function HomePage() {
 			name: "Daniel R.",
 			location: "Vancouver, WA",
 			rating: 5,
-			text: "Structa Homes handled several repairs and finish details in our Vancouver home. Everything was done with care and professionalism.",
+			text: "Norbilt handled several repairs and finish details in our Vancouver home. Everything was done with care and professionalism.",
 		},
 		{
 			name: "Melissa K.",
@@ -83,7 +83,7 @@ export default function HomePage() {
 			name: "Rebecca S.",
 			location: "Hazel Dell, WA",
 			rating: 5,
-			text: "Reliable, detail-driven, and respectful of our home. We’ll absolutely use Structa Homes again.",
+			text: "Reliable, detail-driven, and respectful of our home. We’ll absolutely use Norbilt again.",
 		},
 	];
 
