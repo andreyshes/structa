@@ -176,7 +176,7 @@ export default function DrywallRepairPage() {
 			<section className="py-24 bg-[#F8F6F3]">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
 					<SectionHeader
-						eyebrow="The Structa Difference"
+						eyebrow="The Norbilt Difference"
 						title="Why Our Drywall Repairs Last"
 						description="We focus on proper preparation, quality materials, and proven techniques."
 					/>
@@ -223,7 +223,7 @@ export default function DrywallRepairPage() {
 						Trusted Drywall Repair in Vancouver, WA
 					</h2>
 					<p className="text-[#2C3E3A]/70 leading-relaxed text-lg">
-						Structa Homes proudly serves homeowners in{" "}
+						Norbilt proudly serves homeowners in{" "}
 						<strong>Hazel Dell, Felida, Salmon Creek, and Camas</strong>. If you
 						need a drywall repair professional in the 98660, 98661, or 98683 zip
 						codes, we’re ready to help.

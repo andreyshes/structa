@@ -69,7 +69,7 @@ export default function HandymanPage() {
 							<div className="space-y-6 text-[#2C3E3A]/80 leading-relaxed text-lg">
 								<p>
 									Finding a dependable handyman in Vancouver, WA shouldn’t feel
-									like a gamble. Structa Homes bridges the gap between casual
+									like a gamble. Norbilt Homes bridges the gap between casual
 									handyman work and large general contractors by providing
 									professional, detail-focused service for everyday home needs.
 								</p>
@@ -187,7 +187,7 @@ export default function HandymanPage() {
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
 					<div className="text-center max-w-2xl mx-auto mb-16">
 						<h2 className="text-3xl md:text-4xl font-semibold text-[#2C3E3A] mb-4">
-							Why Homeowners Choose Structa Homes
+							Why Homeowners Choose Norbilt Homes
 						</h2>
 						<p className="text-[#2C3E3A]/70">
 							Professional standards applied to everyday home work.
@@ -237,7 +237,7 @@ export default function HandymanPage() {
 					</h2>
 
 					<p className="text-[#2C3E3A]/70 leading-relaxed text-lg mb-6">
-						Structa Homes provides handyman services throughout Vancouver, WA
+						Norbilt Homes provides handyman services throughout Vancouver, WA
 						and nearby Clark County communities including Salmon Creek, Felida,
 						Cascade Park, Camas, Ridgefield, and Brush Prairie.
 					</p>

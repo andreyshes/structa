@@ -52,7 +52,7 @@ export default function CamasLocationPage() {
 					</p>
 
 					<p className="text-lg leading-relaxed">
-						Structa Homes helps Camas homeowners with repairs, interior
+						Norbilt Homes helps Camas homeowners with repairs, interior
 						upgrades, and ongoing maintenance — from finish carpentry and
 						drywall repair to dependable general home services.
 					</p>

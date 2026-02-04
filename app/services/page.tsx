@@ -188,7 +188,7 @@ export default function ServicesPage() {
 						transition={{ duration: 0.8, delay: 0.2 }}
 						className="text-xl text-[#F8F6F3]/80 max-w-3xl mx-auto"
 					>
-						From everyday repairs to detailed upgrades, Structa Homes delivers
+						From everyday repairs to detailed upgrades, Norbilt Homes delivers
 						reliable, high-quality service across Vancouver and Clark County.
 					</motion.p>
 				</div>

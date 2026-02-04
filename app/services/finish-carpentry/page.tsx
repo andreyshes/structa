@@ -67,7 +67,7 @@ export default function FinishCarpentryPage() {
 							</h2>
 							<div className="space-y-6 text-[#2C3E3A]/70 leading-relaxed text-lg">
 								<p>
-									Finish carpentry is where construction meets art. At Structa
+									Finish carpentry is where construction meets art. At Norbilt
 									Homes, we believe the difference between a "house" and a
 									"home" is found in the details. We provide{" "}
 									<strong>
@@ -88,7 +88,7 @@ export default function FinishCarpentryPage() {
 						<div className="bg-[#E8E4DE] p-8 rounded-2xl border border-[#DCD7D0] relative overflow-hidden">
 							<Star className="absolute -right-4 -top-4 w-24 h-24 text-[#4A7C59]/10" />
 							<h3 className="text-xl font-bold text-[#2C3E3A] mb-4">
-								The Structa Standard
+								The Norbilt Standard
 							</h3>
 							<ul className="space-y-4">
 								<li className="flex gap-3 items-start text-[#2C3E3A]/70">
@@ -212,7 +212,7 @@ export default function FinishCarpentryPage() {
 					</motion.h2>
 
 					<p className="text-xl text-[#F8F6F3]/70 mb-10">
-						Contact Structa Homes today for a professional carpentry
+						Contact Norbilt Homes today for a professional carpentry
 						consultation in Vancouver, WA.
 					</p>
 

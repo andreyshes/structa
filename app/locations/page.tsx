@@ -75,7 +75,7 @@ export default function LocationsIndexPage() {
 						transition={{ duration: 0.8, delay: 0.2 }}
 						className="text-xl md:text-2xl text-[#F8F6F3]/80 max-w-3xl mx-auto"
 					>
-						Structa Homes provides professional home repair, handyman, and
+						Norbilt Homes provides professional home repair, handyman, and
 						improvement services throughout Vancouver, Washington and
 						surrounding Clark County communities.
 					</motion.p>

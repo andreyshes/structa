@@ -53,7 +53,7 @@ export default function SalmonCreekLocationPage() {
 
 					<p className="text-lg leading-relaxed">
 						Whether you need small repairs, interior upgrades, or ongoing home
-						maintenance, Structa Homes provides dependable service tailored to
+						maintenance, Norbilt Homes provides dependable service tailored to
 						your home.
 					</p>
 

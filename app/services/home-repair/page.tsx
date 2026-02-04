@@ -65,7 +65,7 @@ export default function HomeRepairPage() {
 
 							<p>
 								When something breaks in your home, a temporary fix isn’t
-								enough. Structa Homes provides{" "}
+								enough. Norbilt Homes provides{" "}
 								<strong>
 									professional home repair services in Vancouver, WA
 								</strong>{" "}

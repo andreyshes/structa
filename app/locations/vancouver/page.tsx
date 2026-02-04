@@ -22,9 +22,9 @@ export default function VancouverLocationPage() {
 					__html: JSON.stringify({
 						"@context": "https://schema.org",
 						"@type": "LocalBusiness",
-						name: "Structa Homes",
-						url: "https://www.structawa.com",
-						telephone: "+1-XXX-XXX-XXXX",
+						name: "Norbilt Homes",
+						url: "https://www.norbilt.com",
+						telephone: "+1-916-508-6272",
 						address: {
 							"@type": "PostalAddress",
 							addressLocality: "Vancouver",
@@ -48,7 +48,7 @@ export default function VancouverLocationPage() {
 							"Door & Window Repair",
 							"Flooring Repair",
 						],
-						sameAs: ["https://www.instagram.com/structawa"],
+						sameAs: ["https://www.instagram.com/norbiltwa"],
 					}),
 				}}
 			/>
@@ -81,7 +81,7 @@ export default function VancouverLocationPage() {
 							transition={{ duration: 0.8, delay: 0.2 }}
 							className="text-xl md:text-2xl text-[#F8F6F3]/80 max-w-3xl mx-auto"
 						>
-							Structa Homes provides dependable home repairs, finish carpentry,
+							Norbilt Homes provides dependable home repairs, finish carpentry,
 							and interior improvement services for homeowners throughout
 							Vancouver, Washington — with clean work, clear communication, and
 							long-lasting results.
@@ -103,7 +103,7 @@ export default function VancouverLocationPage() {
 						</p>
 
 						<p className="text-lg leading-relaxed">
-							Structa Homes works with homeowners across Vancouver — including
+							Norbilt Homes works with homeowners across Vancouver — including
 							Hazel Dell, Salmon Creek, Five Corners, and surrounding Clark
 							County neighborhoods — providing skilled workmanship without the
 							stress of juggling multiple contractors.
@@ -175,7 +175,7 @@ export default function VancouverLocationPage() {
 				<section className="py-24 bg-[#F8F6F3]">
 					<div className="max-w-5xl mx-auto px-6 text-center">
 						<h2 className="text-3xl md:text-4xl font-semibold text-[#2C3E3A] mb-10">
-							Why Vancouver Homeowners Choose Structa Homes
+							Why Vancouver Homeowners Choose Norbilt Homes
 						</h2>
 
 						<ul className="space-y-4 text-lg text-[#2C3E3A]/80 max-w-3xl mx-auto text-left">
@@ -199,7 +199,7 @@ export default function VancouverLocationPage() {
 									What home services do you offer in Vancouver, WA?
 								</h3>
 								<p className="text-[#2C3E3A]/80 leading-relaxed">
-									Structa Homes provides handyman services, home repairs,
+									Norbilt Homes provides handyman services, home repairs,
 									drywall repair, finish carpentry, door and window repair,
 									flooring repairs, and kitchen and bathroom updates for
 									homeowners throughout Vancouver, Washington.
@@ -223,7 +223,7 @@ export default function VancouverLocationPage() {
 									Are you licensed and insured in Washington?
 								</h3>
 								<p className="text-[#2C3E3A]/80 leading-relaxed">
-									Yes. Structa Homes is properly licensed and insured to perform
+									Yes. Norbilt Homes is properly licensed and insured to perform
 									home repair and improvement services in Washington State.
 								</p>
 							</div>

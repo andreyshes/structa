@@ -68,7 +68,7 @@ export default function KitchenBathPage() {
 							<div className="space-y-6 text-[#2C3E3A]/70 leading-relaxed text-lg">
 								<p>
 									You don’t always need a full renovation to improve how your
-									home looks and functions. Structa Homes provides{" "}
+									home looks and functions. Norbilt Homes provides{" "}
 									<strong>
 										kitchen and bathroom refresh services in Vancouver, WA
 									</strong>{" "}
@@ -170,7 +170,7 @@ export default function KitchenBathPage() {
 			<section className="py-24 bg-[#F8F6F3]">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
 					<SectionHeader
-						eyebrow="Why Structa Homes"
+						eyebrow="Why Norbilt Homes"
 						title="Professional Results Without the Remodel Chaos"
 						description="Thoughtful work, clean execution, and clear communication."
 					/>

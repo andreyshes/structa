@@ -68,7 +68,7 @@ export default function FlooringPage() {
 								<p>
 									Damaged flooring is more than a cosmetic issue — it can become
 									a trip hazard, allow moisture intrusion, or signal problems
-									below the surface. Structa Homes provides{" "}
+									below the surface. Norbilt Homes provides{" "}
 									<strong>professional flooring repair in Vancouver, WA</strong>
 									, focused on solving the issue correctly instead of pushing
 									unnecessary replacements.
@@ -180,7 +180,7 @@ export default function FlooringPage() {
 			<section className="py-24 bg-[#F8F6F3]">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
 					<SectionHeader
-						eyebrow="The Structa Standard"
+						eyebrow="The Norbilt Standard"
 						title="Why Homeowners Trust Our Flooring Repairs"
 						description="Focused on longevity, safety, and proper installation."
 					/>
@@ -227,7 +227,7 @@ export default function FlooringPage() {
 						Flooring Repair Services Near You
 					</h2>
 					<p className="text-[#2C3E3A]/70 leading-relaxed text-lg">
-						Structa Homes provides flooring repair services throughout{" "}
+						Norbilt Homes provides flooring repair services throughout{" "}
 						<strong>Vancouver, WA</strong> and nearby Clark County communities,
 						including Five Corners, Brush Prairie, Hazel Dell, and Salmon Creek.
 					</p>

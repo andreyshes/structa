@@ -17,7 +17,7 @@ export async function POST(req: Request) {
 		}
 
 		await resend.emails.send({
-			from: "Structa Homes <hello@structawa.com>",
+			from: "Norbuilt <hello@structawa.com>",
 			to: ["hello@structawa.com"],
 			replyTo: email,
 			subject: `New Project Inquiry — ${projectType}`,

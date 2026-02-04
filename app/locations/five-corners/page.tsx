@@ -51,7 +51,7 @@ export default function FiveCornersLocationPage() {
 					</p>
 
 					<p className="text-lg leading-relaxed">
-						Structa Homes helps homeowners address everything from small repairs
+						Norbilt Homes helps homeowners address everything from small repairs
 						to interior improvements, with attention to detail and respect for
 						the home.
 					</p>

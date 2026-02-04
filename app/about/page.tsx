@@ -201,7 +201,7 @@ export default function AboutPage() {
 					<SectionHeader
 						eyebrow="Our Values"
 						title="What Guides Our Work"
-						description="The principles behind every Structa Homes project."
+						description="The principles behind every Norbilt Homes project."
 					/>
 
 					<div className="grid md:grid-cols-2 gap-8">

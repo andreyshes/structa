@@ -68,7 +68,7 @@ export default function DoorWindowPage() {
 							<p>
 								In the Pacific Northwest, seasonal moisture and natural settling
 								often lead to doors that won’t close properly and windows that
-								allow heat to escape. Structa Homes provides{" "}
+								allow heat to escape. Norbilt provides{" "}
 								<strong>
 									professional door and window repair in Vancouver, WA
 								</strong>{" "}

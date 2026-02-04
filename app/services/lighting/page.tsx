@@ -66,7 +66,7 @@ export default function LightingFixturesPage() {
 
 							<p>
 								Updating lighting and fixtures is one of the most effective ways
-								to improve the look and functionality of your home. Structa
+								to improve the look and functionality of your home. Norbilt
 								Homes provides{" "}
 								<strong>
 									professional lighting and fixture installation in Vancouver,

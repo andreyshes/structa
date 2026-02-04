@@ -36,7 +36,7 @@ export default function BrushPrairieLocationPage() {
 					</p>
 
 					<p className="text-lg leading-relaxed">
-						As a Vancouver-based company, Structa Homes regularly serves Brush
+						As a Vancouver-based company, Norbilt Homes regularly serves Brush
 						Prairie and understands the needs of homes throughout the area.
 					</p>
 				</div>
