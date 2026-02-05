@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -20,7 +21,6 @@ import {
 } from "lucide-react";
 
 import ServiceCard from "@/app/components/ServiceCard";
-import TestimonialCard from "@/app/components/TestimonialCard";
 import SectionHeader from "@/app/components/SectionHeader";
 
 export default function HomePage() {
@@ -95,19 +95,19 @@ export default function HomePage() {
 			icon: Shield,
 			title: "Licensed, Bonded & Insured",
 			description:
-				"We are a fully registered Washington contractor, providing full professional accountability and peace of mind on every project.",
+				"We are a fully registered Washington contractor, providing full professional accountability and peace of mind.",
 		},
 		{
 			icon: Heart,
 			title: "Local Vancouver Craftsmanship",
 			description:
-				"Based in Vancouver and serving all of Clark County with transparent pricing and dependable, local service you can trust.",
+				"Based in Vancouver and serving all of Clark County with transparent pricing and dependable local service.",
 		},
 		{
 			icon: Sparkles,
 			title: "Clean & Detail-Oriented",
 			description:
-				"We respect your living space with strict dust control, tidy job sites, and precision finishes that stand the test of time.",
+				"We respect your living space with strict dust control, tidy job sites, and precision finishes.",
 		},
 	];
 
@@ -139,7 +139,7 @@ export default function HomePage() {
 						</div>
 
 						<h1 className="text-5xl md:text-7xl font-extrabold text-white leading-[1.05] tracking-tight">
-							Interior Remodeling &amp;{" "}
+							Interior Remodeling &{" "}
 							<span className="text-[#A7C4B5]">Home Improvements</span>
 						</h1>
 
@@ -185,19 +185,18 @@ export default function HomePage() {
 				</div>
 			</section>
 
-			{/* WHY CHOOSE US - ELEVATED VERSION */}
+			{/* WHY CHOOSE US */}
 			<section className="py-28 bg-white">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-20 items-center">
 					<div className="relative">
 						<div className="relative aspect-4/5 rounded-3xl overflow-hidden shadow-2xl">
 							<Image
 								src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
-								alt="Precision interior remodeling work in Vancouver Washington"
+								alt="Precision interior remodeling work"
 								fill
 								className="object-cover"
 							/>
 						</div>
-						{/* Aesthetic Badge Overlay */}
 						<div className="absolute -bottom-6 -right-6 bg-[#2D5A3D] p-8 rounded-2xl shadow-xl hidden md:block">
 							<p className="text-white font-bold text-2xl">5.0</p>
 							<div className="flex gap-1 my-1">
@@ -247,6 +246,72 @@ export default function HomePage() {
 							))}
 						</div>
 					</div>
+				</div>
+			</section>
+
+			{/* AUTO-MOVING CAROUSEL SECTION */}
+			<section className="py-28 bg-[#1F2E2B] overflow-hidden">
+				<div className="max-w-7xl mx-auto px-6 lg:px-8 mb-16">
+					<SectionHeader
+						eyebrow="Local Reputation"
+						title="Trusted by Clark County Homeowners"
+						light
+					/>
+				</div>
+
+				<div className="relative flex">
+					<motion.div
+						className="flex gap-6 pr-6"
+						animate={{
+							x: ["0%", "-50%"],
+						}}
+						transition={{
+							x: {
+								repeat: Infinity,
+								repeatType: "loop",
+								duration: 30, // Adjust speed here (higher = slower)
+								ease: "linear",
+							},
+						}}
+					>
+						{/* Double the testimonials to create a seamless loop */}
+						{[...testimonials, ...testimonials, ...testimonials].map((t, i) => (
+							<div
+								key={i}
+								className="min-w-[320px] md:min-w-112.5 bg-white/5 backdrop-blur-md p-10 rounded-3xl border border-white/10 flex flex-col justify-between"
+							>
+								<div>
+									<div className="flex gap-1 mb-6">
+										{[...Array(t.rating)].map((_, star) => (
+											<Star
+												key={star}
+												className="w-4 h-4 fill-[#A7C4B5] text-[#A7C4B5]"
+											/>
+										))}
+									</div>
+									<p className="text-xl text-white/90 italic leading-relaxed mb-8">
+										"{t.text}"
+									</p>
+								</div>
+
+								<div className="flex items-center gap-4">
+									<div className="w-12 h-12 bg-[#2D5A3D] rounded-full flex items-center justify-center text-white font-bold">
+										{t.name.charAt(0)}
+									</div>
+									<div>
+										<h4 className="text-white font-bold text-lg">{t.name}</h4>
+										<p className="text-[#A7C4B5] text-sm uppercase tracking-wider font-medium">
+											{t.location}
+										</p>
+									</div>
+								</div>
+							</div>
+						))}
+					</motion.div>
+
+					{/* Side Fades for the "infinite" look */}
+					<div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-linear-to-r from-[#1F2E2B] to-transparent z-10" />
+					<div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-linear-to-l from-[#1F2E2B] to-transparent z-10" />
 				</div>
 			</section>
 
@@ -312,124 +377,6 @@ export default function HomePage() {
 				</div>
 			</section>
 
-			{/* PROJECT TYPES SECTION */}
-			<section className="py-28 bg-[#F8F6F3]">
-				<div className="max-w-7xl mx-auto px-6 lg:px-8">
-					<SectionHeader
-						eyebrow="Specialized Services"
-						title="High-Value Interior Improvements"
-						description="The finishing touches and essential repairs that define your home's character."
-					/>
-
-					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
-						{[
-							{
-								category: "Kitchen & Bath",
-								items: [
-									"Custom Tile Backsplashes",
-									"Fixture & Hardware Swaps",
-									"Vanity & Mirror Installs",
-								],
-								icon: Sparkles,
-							},
-							{
-								category: "Finish Carpentry",
-								items: [
-									"Crown Molding & Baseboards",
-									"Custom Window Trim",
-									"Accent Walls & Shiplap",
-								],
-								icon: Hammer,
-							},
-							{
-								category: "Walls & Repairs",
-								items: [
-									"Expert Drywall Restoration",
-									"Texturing & Patchwork",
-									"Interior Painting Prep",
-								],
-								icon: Paintbrush,
-							},
-							{
-								category: "Doors & Windows",
-								items: [
-									"Interior Door Replacement",
-									"Handle & Lock Upgrades",
-									"Window Sill Repairs",
-								],
-								icon: Home,
-							},
-							{
-								category: "Electrical & Plumbing",
-								items: [
-									"Ceiling Fan Installation",
-									"Recessed Lighting Upgrades",
-									"Faucet & Sink Services",
-								],
-								icon: Lightbulb,
-							},
-							{
-								category: "Real Estate Prep",
-								items: [
-									"Pre-Sale Refresh Projects",
-									"Punch-List Completion",
-									"Rental Property Maintenance",
-								],
-								icon: Shield,
-							},
-						].map((group, i) => (
-							<motion.div
-								key={group.category}
-								initial={{ opacity: 0, y: 20 }}
-								whileInView={{ opacity: 1, y: 0 }}
-								viewport={{ once: true }}
-								transition={{ delay: i * 0.1 }}
-								className="group p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col h-full bg-white transition-all duration-300 hover:bg-[#2D5A3D] hover:shadow-xl hover:-translate-y-1"
-							>
-								{/* Header Area */}
-								<div className="flex items-center gap-3 mb-6">
-									<div className="p-2.5 rounded-xl bg-[#2D5A3D]/10 text-[#2D5A3D] transition-colors duration-300 group-hover:bg-white/20 group-hover:text-white">
-										<group.icon className="w-5 h-5" />
-									</div>
-									<h3 className="font-bold text-lg text-[#1F2E2B] transition-colors duration-300 group-hover:text-white">
-										{group.category}
-									</h3>
-								</div>
-
-								{/* Items List */}
-								<ul className="space-y-4 grow">
-									{group.items.map((item) => (
-										<li
-											key={item}
-											className="flex items-start gap-3 text-sm font-medium text-gray-600 transition-colors duration-300 group-hover:text-white/90"
-										>
-											<CheckCircle2 className="w-4 h-4 mt-0.5 shrink-0 text-[#2D5A3D] transition-colors duration-300 group-hover:text-[#A7C4B5]" />
-											{item}
-										</li>
-									))}
-								</ul>
-							</motion.div>
-						))}
-					</div>
-				</div>
-			</section>
-
-			{/* TESTIMONIALS */}
-			<section className="py-28 bg-[#1F2E2B]">
-				<div className="max-w-7xl mx-auto px-6 lg:px-8">
-					<SectionHeader
-						eyebrow="Local Reputation"
-						title="Trusted by Clark County Homeowners"
-						light
-					/>
-					<div className="grid md:grid-cols-2 gap-8 mt-12">
-						{testimonials.map((t, i) => (
-							<TestimonialCard key={t.name} {...t} index={i} />
-						))}
-					</div>
-				</div>
-			</section>
-
 			{/* FAQ SECTION */}
 			<section className="py-28 bg-white">
 				<div className="max-w-4xl mx-auto px-6 lg:px-8">
@@ -438,7 +385,7 @@ export default function HomePage() {
 						title="Common Questions"
 						description="Everything you need to know about remodeling in Vancouver, WA."
 					/>
-					<div className="mt-16 grid gap-12 md:gap-16">
+					<div className="mt-16 grid gap-12">
 						{[
 							{
 								q: "Do you handle small interior repairs?",
@@ -449,18 +396,13 @@ export default function HomePage() {
 								a: "Absolutely. Norbilt is a fully licensed, bonded, and insured general contractor in the state of Washington.",
 							},
 							{
-								q: "How do I get a free estimate?",
-								a: "Click our 'Request Estimate' button to provide project details, and we'll schedule a time for a transparent, upfront quote.",
-							},
-							{
 								q: "How do you handle dust and cleanliness?",
-								a: "We utilize dust containment systems and a 'clean-as-we-go' philosophy to ensure your home remains livable during the project.",
+								a: "We utilize dust containment systems and a 'clean-as-we-go' philosophy to ensure your home remains livable.",
 							},
 						].map((item, i) => (
-							<div key={i}>
-								<h4 className="text-xl font-bold text-[#1F2E2B] flex items-center gap-3 mb-4">
-									<span className="text-[#A7C4B5] text-2xl">0{i + 1}</span>
-									{item.q}
+							<div key={i} className="border-b border-gray-100 pb-8">
+								<h4 className="text-xl font-bold text-[#1F2E2B] mb-4 flex gap-4">
+									<span className="text-[#A7C4B5]">0{i + 1}</span> {item.q}
 								</h4>
 								<p className="text-gray-600 leading-relaxed pl-10">{item.a}</p>
 							</div>
@@ -469,10 +411,10 @@ export default function HomePage() {
 				</div>
 			</section>
 
-			{/* FOOTER TRUST STRIP */}
+			{/* FOOTER STRIP */}
 			<section className="py-16 bg-[#F8F6F3] text-center text-sm font-semibold text-gray-600 border-t border-gray-100">
-				Licensed Washington Contractor • Bonded & Insured • 5-Star Local Reviews
-				• Serving Vancouver & Clark County
+				Licensed Washington Contractor • Bonded & Insured • Serving Vancouver &
+				Clark County
 			</section>
 		</div>
 	);
