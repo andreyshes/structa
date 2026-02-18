@@ -27,7 +27,7 @@ export default function HomePage() {
 	const services = [
 		{
 			icon: Hammer,
-			title: "Finish Carpentry & Trim Work",
+			title: "Finish Carpentry & Mill Work",
 			description:
 				"Premium installation of baseboards, crown molding, and custom wainscoting throughout Vancouver, WA.",
 		},
@@ -84,7 +84,7 @@ export default function HomePage() {
 		},
 		{
 			name: "Rebecca S.",
-			location: "Hazel Dell, WA",
+			location: "Camas, WA",
 			rating: 5,
 			text: "Respectful, organized, and highly skilled. Our go-to interior contractor.",
 		},
@@ -118,7 +118,7 @@ export default function HomePage() {
 				<div className="absolute inset-0">
 					<Image
 						src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop"
-						alt="Interior remodeling and home improvement contractor in Vancouver WA"
+						alt="Licensed interior remodeling contractor performing home improvements in Vancouver WA Clark County"
 						fill
 						priority
 						className="object-cover"
@@ -140,7 +140,8 @@ export default function HomePage() {
 
 						<h1 className="text-5xl md:text-7xl font-extrabold text-white leading-[1.05] tracking-tight">
 							Interior Remodeling &{" "}
-							<span className="text-[#A7C4B5]">Home Improvements</span>
+							<span className="text-[#A7C4B5]">Home Improvements</span> <br />
+							<span>in Vancovuer WA</span>
 						</h1>
 
 						<p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl">
@@ -269,7 +270,7 @@ export default function HomePage() {
 							x: {
 								repeat: Infinity,
 								repeatType: "loop",
-								duration: 30, // Adjust speed here (higher = slower)
+								duration: 30,
 								ease: "linear",
 							},
 						}}
@@ -396,8 +397,8 @@ export default function HomePage() {
 								a: "Absolutely. Norbilt is a fully licensed, bonded, and insured general contractor in the state of Washington.",
 							},
 							{
-								q: "How do you handle dust and cleanliness?",
-								a: "We utilize dust containment systems and a 'clean-as-we-go' philosophy to ensure your home remains livable.",
+								q: "What areas of Clark County do you serve?",
+								a: "We provide interior remodeling and handyman services throughout Vancouver, Camas, Washougal, Ridgefield, and Battle Ground, WA.",
 							},
 						].map((item, i) => (
 							<div key={i} className="border-b border-gray-100 pb-8">

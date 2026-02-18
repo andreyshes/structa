@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
 	Lightbulb,
@@ -11,98 +12,123 @@ import {
 	Clock,
 	Zap,
 	Fan,
+	MapPin,
+	Sparkles,
 } from "lucide-react";
 
 import SectionHeader from "@/app/components/SectionHeader";
 
 export default function LightingFixturesPage() {
 	return (
-		<div className="overflow-hidden">
-			{/* HERO */}
-			<section className="relative pt-32 pb-24 lg:pt-40 lg:pb-32 bg-[#2C3E3A]">
-				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-					<div className="max-w-4xl">
+		<div className="overflow-hidden bg-[#FDFCFB]">
+			{/* HERO SECTION - AMBIANCE & VISIBILITY */}
+			<section className="relative min-h-[80vh] flex items-center">
+				<div className="absolute inset-0 z-0">
+					<Image
+						src="https://t4.ftcdn.net/jpg/05/97/21/69/240_F_597216964_c5DHjT4wtRbypQBHvv7cmBXhOVsMc0WQ.jpg"
+						alt="Modern designer lighting installation in Vancouver WA"
+						fill
+						priority
+						className="object-cover"
+					/>
+					{/* Overlay adjusted for maximum warmth and legibility */}
+					<div className="absolute inset-0 bg-[#1F2E2B]/45 lg:bg-linear-to-r lg:from-[#1F2E2B]/85 lg:via-[#1F2E2B]/40 lg:to-transparent" />
+				</div>
+
+				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32">
+					<div className="max-w-4xl [text-shadow:_0_2px_10px_rgb(0_0_0_/_30%)]">
 						<motion.span
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.6 }}
-							className="inline-flex items-center gap-2 px-4 py-2 bg-[#4A7C59]/30 rounded-full text-[#F8F6F3]/90 text-sm font-medium mb-8"
+							className="inline-flex items-center gap-2 px-4 py-2 bg-[#2D5A3D] rounded-full text-white text-xs font-bold uppercase tracking-widest border border-white/20 mb-8 shadow-xl"
 						>
 							<Lightbulb className="w-4 h-4" />
-							Lighting & Fixture Installation
+							Professional Fixture Mounting
 						</motion.span>
 
 						<motion.h1
 							initial={{ opacity: 0, y: 30 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.8, delay: 0.1 }}
-							className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#F8F6F3] mb-6 leading-tight"
+							className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white mb-6 leading-[1.1] tracking-tight"
 						>
-							Lighting & Fixture Installation in Vancouver, WA
+							Lighting & Fixture <br />
+							<span className="text-[#A7C4B5]">Installation Vancouver</span>
 						</motion.h1>
 
 						<motion.p
 							initial={{ opacity: 0, y: 30 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.8, delay: 0.2 }}
-							className="text-xl text-[#F8F6F3]/80 leading-relaxed max-w-2xl"
+							className="text-xl text-white font-medium leading-relaxed max-w-2xl mb-10"
 						>
-							Safe, clean installation of lighting, ceiling fans, and home
-							fixtures. Upgrade your space with professional workmanship you can
-							trust.
+							Transform your home's atmosphere with safe, professional fixture
+							installation. From designer chandeliers to high-performance
+							ceiling fans, we ensure every mount is secure, level, and clean.
 						</motion.p>
+
+						<motion.div
+							initial={{ opacity: 0, y: 30 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ delay: 0.2 }}
+						>
+							<Link
+								href="/contact"
+								className="inline-flex items-center gap-3 px-10 py-5 bg-[#2D5A3D] text-white font-bold rounded-xl hover:bg-[#3a6d4b] transition-all shadow-2xl hover:scale-105"
+							>
+								Get a Free Estimate
+								<ArrowRight className="w-5 h-5" />
+							</Link>
+						</motion.div>
 					</div>
 				</div>
 			</section>
 
-			{/* INTRO */}
-			<section className="py-24 bg-[#F8F6F3]">
+			{/* INTRO - STYLE & SAFETY FOCUS */}
+			<section className="py-24 bg-white">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
 					<div className="grid lg:grid-cols-2 gap-16 items-center">
-						<div className="space-y-6 text-[#2C3E3A]/70 leading-relaxed text-lg">
-							<h2 className="text-3xl md:text-4xl font-semibold text-[#2C3E3A]">
-								Brighten Your Home with Professional Installation
+						<div className="space-y-6 text-gray-600 leading-relaxed text-lg">
+							<h2 className="text-3xl md:text-4xl font-bold text-[#1F2E2B] mb-8 leading-tight">
+								Modern Lighting <br />
+								<span className="text-[#2D5A3D]">Done the Right Way</span>
 							</h2>
 
 							<p>
-								Updating lighting and fixtures is one of the most effective ways
-								to improve the look and functionality of your home. Norbilt
-								Homes provides{" "}
-								<strong>
-									professional lighting and fixture installation in Vancouver,
-									WA
-								</strong>{" "}
-								for homeowners who want clean results and safe execution.
+								Updating your lighting is the single most effective way to
+								modernize your interior. Norbilt provides **professional
+								lighting installation throughout Clark County**, ensuring your
+								designer pieces are installed with structural integrity and
+								electrical precision.
 							</p>
 
 							<p>
-								Whether you’re replacing outdated fixtures, installing ceiling
-								fans, or upgrading bathroom ventilation, we ensure every install
-								is secure, level, and code-conscious — without the mess or
-								guesswork.
+								Whether you’re swapping builder-grade fixtures for modern
+								pendants or upgrading bathroom ventilation to protect against
+								PNW moisture, we handle the technical details so you can enjoy
+								the results.
 							</p>
 						</div>
 
-						<div className="bg-[#E8E4DE] p-8 rounded-2xl border border-[#DCD7D0]">
-							<h3 className="text-xl font-semibold text-[#2C3E3A] mb-4">
+						<div className="bg-[#F8F6F3] p-10 rounded-3xl border border-gray-100 shadow-sm relative overflow-hidden">
+							<Sparkles className="absolute -right-4 -top-4 w-24 h-24 text-[#2D5A3D]/5" />
+							<h3 className="text-2xl font-bold text-[#1F2E2B] mb-6">
 								Common Requests
 							</h3>
-
 							<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 								{[
-									"Light fixture replacement",
-									"Ceiling fan installation",
-									"Bathroom exhaust fans",
-									"Dimmer switch upgrades",
-									"TV mounting",
-									"Accessory mounting",
+									"Designer Chandeliers",
+									"Kitchen Pendant Lights",
+									"Ceiling Fan Mounting",
+									"Bath Exhaust Fans",
+									"Smart Dimmer Switches",
+									"TV Wall Mounting",
+									"Recessed LED Retrofits",
+									"Vanity Lighting",
 								].map((item) => (
-									<div
-										key={item}
-										className="flex items-center gap-2 text-[#2C3E3A]/80"
-									>
-										<CheckCircle2 className="w-5 h-5 text-[#4A7C59]" />
-										<span className="text-sm font-medium">{item}</span>
+									<div key={item} className="flex items-center gap-3">
+										<CheckCircle2 className="w-5 h-5 text-[#2D5A3D] shrink-0" />
+										<span className="text-sm font-semibold text-gray-700">
+											{item}
+										</span>
 									</div>
 								))}
 							</div>
@@ -111,93 +137,51 @@ export default function LightingFixturesPage() {
 				</div>
 			</section>
 
-			{/* SERVICES */}
-			<section className="py-24 bg-[#E8E4DE]">
+			{/* SERVICES GRID */}
+			<section className="py-24 bg-[#F1F5F2]">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
 					<SectionHeader
-						eyebrow="Our Services"
-						title="Lighting & Fixture Solutions"
-						description="Focused installations that enhance comfort, safety, and style."
+						eyebrow="Capabilities"
+						title="Professional Mounting Solutions"
+						description="Focused installations that enhance the comfort, style, and utility of every room."
 					/>
 
-					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
 						{[
 							{
 								icon: Lightbulb,
-								title: "Light Fixtures",
-								text: "Replacing ceiling lights, pendants, chandeliers, and wall sconces with clean, secure mounting.",
+								title: "Interior Lighting",
+								text: "Clean installation of pendants, sconces, and chandeliers with precise, level alignment.",
 							},
 							{
 								icon: Fan,
 								title: "Ceiling Fans",
-								text: "Proper fan installation, balancing, and secure mounting to reduce wobble and noise.",
+								text: "Structural mounting and balancing to ensure wobble-free, quiet operation year-round.",
 							},
 							{
 								icon: Zap,
-								title: "Switches & Dimmers",
-								text: "Installing dimmer switches and upgrading standard switches for better lighting control.",
+								title: "Smart Controls",
+								text: "Installation of smart dimmers and Wi-Fi enabled switches for modern home automation.",
 							},
 							{
 								icon: Home,
-								title: "Accessory Mounting",
-								text: "Mounting towel bars, mirrors, TVs, and other fixtures securely into studs or anchors.",
+								title: "Wall Mounting",
+								text: "Secure mounting for heavy TVs, large mirrors, and artwork into wood or metal studs.",
 							},
 						].map((service, i) => (
 							<div
 								key={i}
-								className="bg-[#F8F6F3] p-8 rounded-xl border border-[#DCD7D0] hover:border-[#4A7C59] transition-colors"
+								className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-[#2D5A3D] group"
 							>
-								<service.icon className="w-8 h-8 text-[#2D5A3D] mb-4" />
-								<h3 className="text-lg font-semibold text-[#2C3E3A] mb-2">
+								<div className="w-12 h-12 bg-[#F8F6F3] rounded-xl flex items-center justify-center mb-6">
+									<service.icon className="w-6 h-6 text-[#2D5A3D] group-hover:scale-110 transition-transform" />
+								</div>
+								<h3 className="text-lg font-bold text-[#1F2E2B] mb-2">
 									{service.title}
 								</h3>
-								<p className="text-sm text-[#2C3E3A]/70 leading-relaxed">
+								<p className="text-sm text-gray-600 leading-relaxed">
 									{service.text}
 								</p>
-							</div>
-						))}
-					</div>
-
-					<p className="max-w-3xl mt-12 text-[#2C3E3A]/70">
-						Lighting and fixture installations are often paired with kitchen and
-						bathroom refreshes, drywall repair, or general home maintenance
-						services.
-					</p>
-				</div>
-			</section>
-
-			{/* WHY US */}
-			<section className="py-24 bg-[#F8F6F3]">
-				<div className="max-w-7xl mx-auto px-6 lg:px-8">
-					<div className="grid md:grid-cols-3 gap-8">
-						{[
-							{
-								icon: Shield,
-								title: "Licensed, Bonded & Insured",
-								text: "Professional installation completed with proper coverage and peace of mind.",
-							},
-							{
-								icon: Clock,
-								title: "Efficient Scheduling",
-								text: "Most installations are completed quickly with minimal disruption to your home.",
-							},
-							{
-								icon: Home,
-								title: "Clean, Careful Work",
-								text: "We protect surfaces, handle fixtures carefully, and leave your space clean.",
-							},
-						].map((item) => (
-							<div
-								key={item.title}
-								className="bg-white rounded-2xl p-8 border border-[#E8E4DE] shadow-sm"
-							>
-								<div className="w-12 h-12 bg-[#2D5A3D]/10 rounded-xl flex items-center justify-center mb-6">
-									<item.icon className="w-6 h-6 text-[#2D5A3D]" />
-								</div>
-								<h3 className="text-xl font-semibold text-[#2C3E3A] mb-3">
-									{item.title}
-								</h3>
-								<p className="text-[#2C3E3A]/70">{item.text}</p>
 							</div>
 						))}
 					</div>
@@ -205,43 +189,54 @@ export default function LightingFixturesPage() {
 			</section>
 
 			{/* SERVICE AREA */}
-			<section className="py-24 bg-[#E8E4DE]">
+			<section className="py-24 bg-white border-y border-gray-100">
 				<div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-					<h2 className="text-3xl font-semibold text-[#2C3E3A] mb-6">
-						Lighting Installation in Vancouver, WA
+					<div className="inline-flex items-center gap-2 text-[#2D5A3D] font-bold uppercase tracking-widest text-sm mb-6">
+						<MapPin className="w-4 h-4" /> Serving Vancouver & Camas
+					</div>
+					<h2 className="text-3xl md:text-4xl font-bold text-[#1F2E2B] mb-8">
+						Brighten Your Home Today
 					</h2>
-
-					<p className="text-[#2C3E3A]/70 leading-relaxed text-lg">
-						We serve homeowners throughout Vancouver and surrounding Clark
-						County communities, including Camas, Hazel Dell, Salmon Creek, and
-						Five Corners.
+					<p className="text-gray-600 leading-relaxed text-lg mb-10">
+						We provide reliable fixture updates throughout **Hazel Dell, Salmon
+						Creek, Felida, and Battle Ground**. We respect your home's
+						cleanliness and your family's schedule.
 					</p>
+					<div className="flex flex-wrap justify-center gap-6 font-bold text-[#1F2E2B]">
+						{["98660", "98683", "98607", "98642", "98685"].map((zip) => (
+							<span
+								key={zip}
+								className="px-4 py-2 bg-[#F1F5F2] rounded-lg text-sm"
+							>
+								{zip}
+							</span>
+						))}
+					</div>
 				</div>
 			</section>
 
 			{/* CTA */}
-			<section className="py-24 bg-[#2C3E3A]">
-				<div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+			<section className="py-24 bg-[#1F2E2B] relative overflow-hidden">
+				<div className="max-w-4xl mx-auto px-6 lg:px-8 text-center relative z-10">
 					<motion.h2
 						initial={{ opacity: 0, y: 30 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
-						transition={{ duration: 0.8 }}
-						className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#F8F6F3] mb-6"
+						className="text-3xl md:text-5xl font-extrabold text-white mb-8 tracking-tight"
 					>
-						Ready to Upgrade Your Lighting?
+						Ready for a Brighter Home?
 					</motion.h2>
 
-					<p className="text-xl text-[#F8F6F3]/70 mb-10">
-						Request a free estimate and get your fixtures installed safely and
-						professionally.
+					<p className="text-[#A7C4B5] text-xl mb-12 max-w-2xl mx-auto">
+						Get your new fixtures installed safely and professionally. Request a
+						free estimate and let's get your project on the calendar.
 					</p>
 
 					<Link
 						href="/contact"
-						className="inline-flex items-center gap-2 px-10 py-5 bg-[#2D5A3D] text-white rounded-xl hover:bg-[#4A7C59] transition shadow-xl font-semibold"
+						className="inline-flex items-center gap-3 px-12 py-6 bg-[#2D5A3D] text-white font-bold rounded-2xl hover:bg-[#3a6d4b] transition-all shadow-2xl hover:scale-105"
 					>
-						Request a Free Estimate
+						Get My Free Estimate
 						<ArrowRight className="w-5 h-5" />
 					</Link>
 				</div>

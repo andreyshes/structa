@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image"; // Added for optimized images
 import { motion } from "framer-motion";
 import {
 	Wrench,
@@ -9,13 +10,14 @@ import {
 	DoorOpen,
 	Lightbulb,
 	Layers,
-	Home,
-	Ruler,
-	ClipboardCheck,
 	ArrowRight,
 	CheckCircle2,
+	ShieldCheck,
+	MapPin,
 	type LucideIcon,
 } from "lucide-react";
+
+import SectionHeader from "@/app/components/SectionHeader";
 
 type ServiceCategory = {
 	id: string;
@@ -34,7 +36,7 @@ export default function ServicesPage() {
 			title: "Handyman & General Home Repairs",
 			href: "/services/handyman",
 			description:
-				"Professional home repair services in Vancouver, WA for everyday issues and ongoing maintenance.",
+				"Licensed professional home repair services in Vancouver, WA for structural maintenance and daily household issues.",
 			items: [
 				"General home repairs",
 				"Plumbing fixture repairs",
@@ -47,217 +49,229 @@ export default function ServicesPage() {
 		{
 			id: "drywall",
 			icon: Layers,
-			title: "Drywall & Wall Repair Services",
+			title: "Drywall Repair & Texture Matching",
 			href: "/services/drywall-repair",
 			description:
-				"Clean, seamless drywall repairs that restore walls to like-new condition.",
+				"Seamless drywall repairs and expert texture matching that restores your Vancouver home's walls to like-new condition.",
 			items: [
 				"Hole patching & drywall repair",
-				"Water damage repair",
-				"Texture matching",
-				"Crack repair",
+				"Water damage restoration",
+				"Popcorn ceiling removal",
+				"Stress crack repair",
 				"Drywall installation",
-				"Finishing & sanding",
+				"Sheetrock finishing & sanding",
 			],
 		},
 		{
 			id: "finish-carpentry",
 			icon: Hammer,
-			title: "Trim & Finish Carpentry",
+			title: "Custom Trim & Finish Carpentry",
 			href: "/services/finish-carpentry",
 			description:
-				"Detail-focused trim work that elevates interiors and adds long-term value.",
+				"High-end millwork and trim installation that elevates your interior and adds significant property value.",
 			items: [
 				"Baseboards & crown molding",
 				"Window & door casing",
-				"Wainscoting installation",
-				"Built-in shelving",
-				"Mantel installation",
-				"Custom millwork",
+				"Wainscoting & accent walls",
+				"Built-in shelving units",
+				"Fireplace mantel installation",
+				"Custom interior millwork",
 			],
 		},
 		{
 			id: "doors-windows",
 			icon: DoorOpen,
-			title: "Door & Window Repair",
+			title: "Interior Door & Window Services",
 			href: "/services/door-window",
 			description:
-				"Door and window services that improve security, efficiency, and daily use.",
+				"Repair and installation services to improve home security, energy efficiency, and ease of use in Clark County.",
 			items: [
-				"Door installation & repair",
-				"Hardware replacement",
-				"Weatherstripping",
-				"Window repair",
-				"Screen replacement",
-				"Lock installation",
+				"Pre-hung door installation",
+				"Hardware & hinge replacement",
+				"Weatherstripping upgrades",
+				"Window sash & trim repair",
+				"Sliding door adjustments",
+				"Smart lock installation",
 			],
 		},
 		{
 			id: "kitchen-bath",
 			icon: Paintbrush,
-			title: "Kitchen & Bathroom Updates",
+			title: "Kitchen & Bathroom Refreshes",
 			href: "/services/kitchen-bath",
 			description:
-				"Smart kitchen and bathroom upgrades without the cost or disruption of a full remodel.",
+				"Modernize your high-traffic spaces with smart upgrades without the cost of a full-scale renovation.",
 			items: [
-				"Cabinet hardware updates",
-				"Faucet & fixture replacement",
-				"Backsplash installation",
-				"Vanity installation",
-				"Toilet replacement",
-				"Accessory mounting",
+				"Cabinet hardware refreshes",
+				"Faucet & luxury fixture installs",
+				"Tile backsplash installation",
+				"Vanity & mirror mounting",
+				"Toilet replacement & repair",
+				"Custom bathroom accessories",
 			],
 		},
 		{
 			id: "lighting",
 			icon: Lightbulb,
-			title: "Lighting & Fixture Installation",
+			title: "Electrical Fixtures & Lighting",
 			href: "/services/lighting",
 			description:
-				"Safe, clean installation of lighting, fans, and home fixtures.",
+				"Clean, code-compliant installation of lighting, ceiling fans, and modern smart home fixtures.",
 			items: [
-				"Light fixture installation",
-				"Ceiling fan installation",
-				"Dimmer switches",
-				"Bathroom exhaust fans",
-				"Towel bars & accessories",
-				"TV mounting",
-			],
-		},
-		{
-			id: "flooring",
-			icon: Home,
-			title: "Flooring Repairs & Small Installations",
-			href: "/services/flooring",
-			description:
-				"Repairs and targeted flooring updates to keep your home looking its best.",
-			items: [
-				"Hardwood repair",
-				"Tile repair & replacement",
-				"Laminate installation",
-				"Threshold installation",
-				"Squeaky floor fixes",
-				"Baseboard transitions",
-			],
-		},
-		{
-			id: "property-maintenance",
-			icon: ClipboardCheck,
-			title: "Punch Lists & Property Maintenance",
-			href: "/services/home-repair",
-			description:
-				"Pre-sale prep, move-in services, and ongoing property care for homeowners and landlords.",
-			items: [
-				"Pre-listing repairs",
-				"Move-in punch lists",
-				"Seasonal maintenance",
-				"Property inspections",
-				"Rental turnovers",
-				"Ongoing care plans",
+				"Designer light fixture install",
+				"Ceiling fan mounting",
+				"Dimmer switch installation",
+				"Bath exhaust fan replacement",
+				"Smart doorbell & camera setup",
+				"Professional TV wall mounting",
 			],
 		},
 	];
 
 	return (
 		<div className="overflow-hidden">
-			{/* HERO */}
-			<section className="relative pt-32 pb-24 lg:pt-40 lg:pb-32 bg-[#2C3E3A]">
+			{/* HERO SECTION WITH IMAGE BACKGROUND */}
+			<section className="relative min-h-[60vh] flex items-center pt-32 pb-24 lg:pt-40 lg:pb-32 overflow-hidden">
+				{/* Background Image Container */}
+				<div className="absolute inset-0 z-0">
+					<Image
+						src="https://t4.ftcdn.net/jpg/01/92/64/69/240_F_192646911_TeOJ5hmbwtSDko3LyvH2zpvL6kQKwRtF.jpg"
+						alt="Beautifully renovated home interior in Vancouver, WA"
+						fill
+						priority
+						className="object-cover"
+					/>
+					{/* Multi-layered overlay for better text contrast */}
+					<div className="absolute inset-0 bg-[#1F2E2B]/80 mix-blend-multiply" />
+					<div className="absolute inset-0 bg-gradient-to-t from-[#1F2E2B] via-transparent to-transparent" />
+				</div>
+
 				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
-					<motion.span
+					<motion.div
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 0.6 }}
-						className="inline-flex items-center gap-2 px-4 py-2 bg-[#4A7C59]/30 rounded-full text-[#F8F6F3]/90 text-sm font-medium mb-8"
+						className="flex flex-col items-center gap-4 mb-8"
 					>
-						<Ruler className="w-4 h-4" />
-						Home Services
-					</motion.span>
+						<span className="inline-flex items-center gap-2 px-4 py-2 bg-[#2D5A3D]/60 backdrop-blur-md rounded-full text-[#A7C4B5] text-sm font-bold uppercase tracking-widest border border-white/10">
+							<ShieldCheck className="w-4 h-4" />
+							Licensed · Bonded · Insured
+						</span>
+					</motion.div>
 
 					<motion.h1
 						initial={{ opacity: 0, y: 30 }}
 						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 0.8, delay: 0.1 }}
-						className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#F8F6F3] mb-6"
+						className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-[#F8F6F3] mb-6 tracking-tight drop-shadow-sm"
 					>
-						Complete Home Services in Vancouver, WA
+						Interior Remodeling <br className="hidden md:block" />&{" "}
+						<span className="text-[#A7C4B5]">Home Improvements</span>
 					</motion.h1>
 
 					<motion.p
 						initial={{ opacity: 0, y: 30 }}
 						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 0.8, delay: 0.2 }}
-						className="text-xl text-[#F8F6F3]/80 max-w-3xl mx-auto"
+						className="text-xl text-[#F8F6F3]/90 max-w-3xl mx-auto leading-relaxed font-medium"
 					>
-						From everyday repairs to detailed upgrades, Norbilt Homes delivers
-						reliable, high-quality service across Vancouver and Clark County.
+						Professional repairs, high-end carpentry, and detail-driven upgrades
+						for homeowners throughout{" "}
+						<span className="text-white font-bold border-b-2 border-[#2D5A3D]">
+							Vancouver, Camas, and Clark County.
+						</span>
 					</motion.p>
 				</div>
 			</section>
 
+			{/* ... rest of the component (Services Grid, Footer Strip, CTA) remains the same */}
+
 			{/* SERVICES GRID */}
 			<section className="py-24 lg:py-32 bg-[#F8F6F3]">
-				<div className="max-w-7xl mx-auto px-6 lg:px-8 grid gap-8">
-					{serviceCategories.map((service, index) => (
-						<Link key={service.id} href={service.href} className="block">
-							<motion.div
-								initial={{ opacity: 0, y: 30 }}
-								whileInView={{ opacity: 1, y: 0 }}
-								viewport={{ once: true, margin: "-50px" }}
-								transition={{ duration: 0.6, delay: index * 0.05 }}
-								className="group bg-white rounded-2xl p-8 lg:p-10 border border-[#E8E4DE] hover:shadow-xl hover:shadow-[#2D5A3D]/5 transition-all"
-							>
-								<div className="grid lg:grid-cols-3 gap-8">
-									<div>
-										<div className="w-14 h-14 bg-[#2D5A3D]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#2D5A3D] transition">
-											<service.icon className="w-7 h-7 text-[#2D5A3D] group-hover:text-[#F8F6F3] transition" />
-										</div>
-										<h2 className="text-2xl font-semibold text-[#2C3E3A] mb-3">
-											{service.title}
-										</h2>
-										<p className="text-[#2C3E3A]/70">{service.description}</p>
-									</div>
+				<div className="max-w-7xl mx-auto px-6 lg:px-8">
+					<div className="mb-20">
+						<SectionHeader
+							eyebrow="Expertise"
+							title="Home Improvement Solutions"
+							description="Tailored interior services designed to increase home value and daily livability."
+						/>
+					</div>
 
-									<div className="lg:col-span-2 grid sm:grid-cols-2 gap-3">
-										{service.items.map((item) => (
-											<div
-												key={`${service.id}-${item}`}
-												className="flex items-center gap-3"
-											>
-												<CheckCircle2 className="w-5 h-5 text-[#4A7C59]" />
-												<span className="text-[#2C3E3A]/80">{item}</span>
+					<div className="grid gap-10">
+						{serviceCategories.map((service, index) => (
+							<Link
+								key={service.id}
+								href={service.href}
+								className="block group"
+							>
+								<motion.div
+									initial={{ opacity: 0, y: 30 }}
+									whileInView={{ opacity: 1, y: 0 }}
+									viewport={{ once: true, margin: "-50px" }}
+									className="bg-white rounded-3xl p-8 lg:p-12 border border-gray-100 shadow-sm group-hover:shadow-2xl group-hover:border-[#A7C4B5]/30 transition-all duration-500"
+								>
+									<div className="grid lg:grid-cols-12 gap-12 items-start">
+										<div className="lg:col-span-5">
+											<div className="w-16 h-16 bg-[#F1F5F2] rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#2D5A3D] group-hover:text-white transition-colors duration-300">
+												<service.icon className="w-8 h-8 text-[#2D5A3D] group-hover:text-white" />
 											</div>
-										))}
+											<h2 className="text-3xl font-bold text-[#1F2E2B] mb-4">
+												{service.title}
+											</h2>
+											<p className="text-gray-600 text-lg leading-relaxed mb-6">
+												{service.description}
+											</p>
+											<div className="inline-flex items-center text-[#2D5A3D] font-bold gap-2 group-hover:translate-x-2 transition-transform">
+												Learn More <ArrowRight className="w-4 h-4" />
+											</div>
+										</div>
+
+										<div className="lg:col-span-7 bg-[#F8F6F3]/50 rounded-2xl p-8 grid sm:grid-cols-2 gap-4 border border-gray-50">
+											{service.items.map((item) => (
+												<div key={item} className="flex items-center gap-3">
+													<CheckCircle2 className="w-5 h-5 text-[#2D5A3D]" />
+													<span className="text-[#1F2E2B] font-medium">
+														{item}
+													</span>
+												</div>
+											))}
+										</div>
 									</div>
-								</div>
-							</motion.div>
-						</Link>
-					))}
+								</motion.div>
+							</Link>
+						))}
+					</div>
 				</div>
 			</section>
 
-			{/* CTA */}
+			<section className="py-12 bg-white border-y border-gray-100">
+				<div className="max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-x-12 gap-y-6 text-sm font-bold text-gray-400 uppercase tracking-widest">
+					<span className="flex items-center gap-2">
+						<MapPin className="w-4 h-4" /> Vancouver, WA
+					</span>
+					<span className="flex items-center gap-2">
+						<MapPin className="w-4 h-4" /> Camas, WA
+					</span>
+					<span className="flex items-center gap-2">
+						<MapPin className="w-4 h-4" /> Ridgefield, WA
+					</span>
+					<span className="flex items-center gap-2">
+						<MapPin className="w-4 h-4" /> Battle Ground, WA
+					</span>
+				</div>
+			</section>
+
 			<section className="py-24 lg:py-32 bg-[#F8F6F3]">
-				<div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-					<motion.h2
-						initial={{ opacity: 0, y: 30 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true }}
-						transition={{ duration: 0.8 }}
-						className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#2C3E3A] mb-6"
-					>
-						Let’s Talk About Your Project
-					</motion.h2>
-
-					<p className="text-xl text-[#2C3E3A]/70 mb-10">
-						Get a free estimate for home services in Vancouver, WA — no
-						pressure.
+				<div className="max-w-4xl mx-auto px-6 lg:px-8 text-center bg-[#1F2E2B] py-20 rounded-[3rem] shadow-2xl">
+					<h2 className="text-3xl md:text-5xl font-bold text-white mb-8">
+						Start Your Home <br /> Upgrade Today
+					</h2>
+					<p className="text-[#A7C4B5] text-xl mb-12 max-w-xl mx-auto">
+						Contact Vancouver’s detail-oriented contractor for a free,
+						no-obligation estimate.
 					</p>
-
 					<Link
 						href="/contact"
-						className="inline-flex items-center gap-2 px-10 py-5 bg-[#2D5A3D] text-white rounded-xl hover:bg-[#4A7C59] transition shadow-xl"
+						className="inline-flex items-center gap-3 px-12 py-6 bg-[#2D5A3D] text-white font-bold rounded-2xl hover:scale-105 transition-all shadow-xl"
 					>
-						Request a Free Estimate
+						Get My Free Estimate
 						<ArrowRight className="w-5 h-5" />
 					</Link>
 				</div>

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
 	DoorOpen,
@@ -12,111 +13,128 @@ import {
 	Lock,
 	Maximize,
 	AlertTriangle,
+	MapPin,
 } from "lucide-react";
 
 import SectionHeader from "@/app/components/SectionHeader";
 
 export default function DoorWindowPage() {
 	return (
-		<div className="overflow-hidden">
-			{/* HERO */}
-			<section className="relative pt-32 pb-24 lg:pt-40 lg:pb-32 bg-[#2C3E3A]">
-				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-					<div className="max-w-4xl">
+		<div className="overflow-hidden bg-[#FDFCFB]">
+			{/* HERO SECTION - HIGH VISIBILITY IMAGE */}
+			<section className="relative min-h-[80vh] flex items-center">
+				<div className="absolute inset-0 z-0">
+					<Image
+						src="https://t3.ftcdn.net/jpg/17/23/25/44/240_F_1723254432_wPlLS36tIF1dChcencQBJmN7dN177aXG.jpg"
+						alt="Professional door and window repair services in Vancouver WA"
+						fill
+						priority
+						className="object-cover"
+					/>
+					{/* Overlay adjusted to 40% for better image visibility while protecting text legibility */}
+					<div className="absolute inset-0 bg-[#1F2E2B]/40 lg:bg-linear-to-r lg:from-[#1F2E2B]/80 lg:via-[#1F2E2B]/40 lg:to-transparent" />
+				</div>
+
+				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32">
+					<div className="max-w-4xl [text-shadow:_0_2px_10px_rgb(0_0_0_/_30%)]">
 						<motion.span
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.6 }}
-							className="inline-flex items-center gap-2 px-4 py-2 bg-[#4A7C59]/30 rounded-full text-[#F8F6F3]/90 text-sm font-medium mb-8"
+							className="inline-flex items-center gap-2 px-4 py-2 bg-[#2D5A3D] rounded-full text-white text-xs font-bold uppercase tracking-widest border border-white/20 mb-8 shadow-xl"
 						>
 							<DoorOpen className="w-4 h-4" />
-							Door & Window Repair Specialists
+							Vancouver's Repair Specialists
 						</motion.span>
 
 						<motion.h1
 							initial={{ opacity: 0, y: 30 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.8, delay: 0.1 }}
-							className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#F8F6F3] mb-6 leading-tight"
+							className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white mb-6 leading-[1.1] tracking-tight"
 						>
-							Door & Window Repair in Vancouver, WA
+							Door & Window Repair <br />
+							<span className="text-[#A7C4B5]">Expert Vancouver, WA</span>
 						</motion.h1>
 
 						<motion.p
 							initial={{ opacity: 0, y: 30 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.8, delay: 0.2 }}
-							className="text-xl text-[#F8F6F3]/80 leading-relaxed max-w-2xl"
+							className="text-xl text-white font-medium leading-relaxed max-w-2xl mb-10"
 						>
-							Restore security, reduce drafts, and improve everyday usability.
-							We repair sticking doors and malfunctioning windows throughout
-							Clark County — without pushing full replacements.
+							Stop the drafts and fix the stick. We restore security and energy
+							efficiency to your home through professional hardware adjustments
+							and weather sealing across Clark County.
 						</motion.p>
+
+						<motion.div
+							initial={{ opacity: 0, y: 30 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ delay: 0.2 }}
+						>
+							<Link
+								href="/contact"
+								className="inline-flex items-center gap-3 px-10 py-5 bg-[#2D5A3D] text-white font-bold rounded-xl hover:bg-[#3a6d4b] transition-all shadow-2xl hover:scale-105"
+							>
+								Get a Free Estimate
+								<ArrowRight className="w-5 h-5" />
+							</Link>
+						</motion.div>
 					</div>
 				</div>
 			</section>
 
-			{/* INTRO */}
-			<section className="py-24 bg-[#F8F6F3]">
+			{/* INTRO - REPAIR VS REPLACEMENT FOCUS */}
+			<section className="py-24 bg-white">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
 					<div className="grid lg:grid-cols-2 gap-16 items-center">
-						<div className="space-y-6 text-[#2C3E3A]/70 leading-relaxed text-lg">
-							<h2 className="text-3xl md:text-4xl font-semibold text-[#2C3E3A]">
-								Practical Repairs That Extend the Life of Your Home
+						<div className="space-y-6 text-gray-600 leading-relaxed text-lg">
+							<h2 className="text-3xl md:text-4xl font-bold text-[#1F2E2B] mb-8 leading-tight">
+								Practical Repairs That <br />
+								<span className="text-[#2D5A3D]">Save You Money</span>
 							</h2>
 
 							<p>
-								In the Pacific Northwest, seasonal moisture and natural settling
-								often lead to doors that won’t close properly and windows that
-								allow heat to escape. Norbilt provides{" "}
-								<strong>
-									professional door and window repair in Vancouver, WA
-								</strong>{" "}
-								to correct these issues at the source.
+								In the Pacific Northwest, seasonal moisture and natural home
+								settling lead to doors that stick and windows that leak heat.
+								Norbilt provides **professional door and window repair** to
+								correct these issues without the high cost of full replacements.
 							</p>
 
 							<p>
-								Rather than recommending costly replacements, we focus on{" "}
-								<strong>
-									precise adjustments, hardware upgrades, weather sealing, and
-									targeted repairs
-								</strong>
-								. Our goal is to make your existing doors and windows function
-								smoothly, securely, and efficiently again.
+								We focus on **precise hardware adjustments, weatherstripping
+								upgrades, and structural sills**. Our goal is to make your
+								existing fixtures function like new—smoothly, securely, and
+								efficiently.
 							</p>
 						</div>
 
-						<div className="bg-[#E8E4DE] p-10 rounded-3xl border border-[#DCD7D0]">
-							<h3 className="text-xl font-semibold text-[#2C3E3A] mb-6">
-								Performance & Security Evaluation
+						<div className="bg-[#F8F6F3] p-10 rounded-3xl border border-gray-100 shadow-sm">
+							<h3 className="text-2xl font-bold text-[#1F2E2B] mb-6">
+								Performance Evaluation
 							</h3>
-
-							<ul className="space-y-4">
+							<ul className="space-y-6">
 								{[
 									{
-										title: "Air Leaks",
-										desc: "Improving comfort and energy efficiency with updated weatherstripping and sealing.",
+										title: "Energy Efficiency",
+										desc: "Replacing failed weatherstripping and sealing to noticeably reduce drafts.",
 									},
 									{
-										title: "Security",
-										desc: "Reinforcing strike plates, hinges, and lock hardware where needed.",
+										title: "Home Security",
+										desc: "Reinforcing strike plates and lock hardware for peace of mind.",
 									},
 									{
-										title: "Operation",
-										desc: "Correcting sagging doors, misalignment, and binding issues.",
+										title: "Ease of Use",
+										desc: "Correcting sagging hinges and misaligned frames for effortless operation.",
 									},
 								].map((item, i) => (
 									<li key={i} className="flex gap-4 items-start">
-										<div className="mt-1 bg-[#4A7C59] rounded-full p-1">
-											<CheckCircle2 className="w-4 h-4 text-white" />
+										<div className="bg-[#2D5A3D] p-1 rounded-full shrink-0">
+											<CheckCircle2 className="w-5 h-5 text-white" />
 										</div>
 										<div>
-											<span className="block font-semibold text-[#2C3E3A]">
+											<span className="block font-bold text-[#1F2E2B]">
 												{item.title}
 											</span>
-											<span className="text-sm text-[#2C3E3A]/70">
-												{item.desc}
-											</span>
+											<span className="text-sm text-gray-600">{item.desc}</span>
 										</div>
 									</li>
 								))}
@@ -126,100 +144,59 @@ export default function DoorWindowPage() {
 				</div>
 			</section>
 
-			{/* SERVICES */}
-			<section className="py-24 bg-[#E8E4DE]">
+			{/* SERVICES GRID */}
+			<section className="py-24 bg-[#F1F5F2]">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
 					<SectionHeader
-						eyebrow="Our Services"
-						title="Door & Window Repair Solutions"
-						description="Focused repairs that improve comfort, safety, and long-term performance."
+						eyebrow="Capabilities"
+						title="Comprehensive Repair Solutions"
+						description="Focused on extending the life and performance of your home's exterior and interior openings."
 					/>
 
-					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
 						{[
 							{
-								title: "Door Alignment & Adjustment",
-								desc: "Correcting doors that rub, stick, or won’t latch properly due to settling or wear.",
+								title: "Door Alignment",
+								desc: "Correcting rubbing, sticking, or latching issues caused by home settling or worn hinges.",
 								icon: Maximize,
 							},
 							{
-								title: "Locks & Hardware Replacement",
-								desc: "Upgrading worn or outdated handles, deadbolts, smart locks, and hinges.",
+								title: "Hardware Upgrades",
+								desc: "Expert installation of deadbolts, smart locks, handlesets, and high-performance hinges.",
 								icon: Lock,
 							},
 							{
-								title: "Draft Sealing & Weatherproofing",
-								desc: "Installing quality sweeps, seals, and caulking to block wind and moisture.",
+								title: "Draft & Weather Sealing",
+								desc: "Installing high-quality sweeps and seals to protect against Vancouver's wind and moisture.",
 								icon: Wind,
 							},
 							{
-								title: "Sliding Door Repair",
-								desc: "Cleaning tracks and replacing rollers for smooth, quiet operation.",
+								title: "Sliding Door Restoration",
+								desc: "Cleaning tracks and replacing rollers to restore smooth, one-finger operation.",
 								icon: Home,
 							},
 							{
-								title: "Screen Repair & Replacement",
-								desc: "Repairing or replacing window and sliding door screens for ventilation without pests.",
+								title: "Screen Services",
+								desc: "Professional rescreening for window and door units to allow airflow without the pests.",
 								icon: Shield,
 							},
 							{
-								title: "Rot & Trim Repair",
-								desc: "Addressing early wood rot in exterior trim and sills before damage spreads.",
+								title: "Sill & Trim Repair",
+								desc: "Addressing early wood rot in exterior casing and sills before structural damage occurs.",
 								icon: AlertTriangle,
 							},
 						].map((service, i) => (
 							<div
 								key={i}
-								className="bg-[#F8F6F3] p-8 rounded-xl shadow-sm hover:shadow-md transition-all border-b-4 border-transparent hover:border-[#4A7C59]"
+								className="bg-white p-10 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100 group"
 							>
-								<service.icon className="w-10 h-10 text-[#2D5A3D] mb-4" />
-								<h3 className="text-xl font-semibold text-[#2C3E3A] mb-3">
+								<service.icon className="w-12 h-12 text-[#2D5A3D] mb-6 group-hover:scale-110 transition-transform" />
+								<h3 className="text-xl font-bold text-[#1F2E2B] mb-4">
 									{service.title}
 								</h3>
-								<p className="text-[#2C3E3A]/70 leading-relaxed text-sm">
+								<p className="text-gray-600 leading-relaxed text-sm">
 									{service.desc}
 								</p>
-							</div>
-						))}
-					</div>
-
-					<p className="max-w-3xl mt-12 text-[#2C3E3A]/70">
-						Door and window repairs are often completed alongside trim
-						adjustments, drywall patching, or general handyman services to
-						deliver a fully finished result.
-					</p>
-				</div>
-			</section>
-
-			{/* WHY US */}
-			<section className="py-24 bg-[#F8F6F3]">
-				<div className="max-w-7xl mx-auto px-6 lg:px-8">
-					<div className="grid md:grid-cols-3 gap-8">
-						{[
-							{
-								icon: Shield,
-								title: "Licensed, Bonded & Insured",
-								text: "Professional standards and coverage that protect your home and investment.",
-							},
-							{
-								icon: Wind,
-								title: "Efficiency Focused",
-								text: "Proper sealing and alignment can noticeably reduce heating and cooling loss.",
-							},
-							{
-								icon: Home,
-								title: "Clean, Precise Work",
-								text: "Careful adjustments, protected surfaces, and a tidy workspace at every visit.",
-							},
-						].map((item) => (
-							<div key={item.title} className="text-center p-6">
-								<div className="w-16 h-16 bg-[#2D5A3D]/10 rounded-full flex items-center justify-center mb-6 mx-auto">
-									<item.icon className="w-8 h-8 text-[#2D5A3D]" />
-								</div>
-								<h3 className="text-xl font-semibold text-[#2C3E3A] mb-3">
-									{item.title}
-								</h3>
-								<p className="text-[#2C3E3A]/70">{item.text}</p>
 							</div>
 						))}
 					</div>
@@ -227,43 +204,55 @@ export default function DoorWindowPage() {
 			</section>
 
 			{/* SERVICE AREA */}
-			<section className="py-24 bg-[#E8E4DE]">
+			<section className="py-24 bg-white border-y border-gray-100">
 				<div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-					<h2 className="text-3xl font-semibold text-[#2C3E3A] mb-6">
-						Local Door & Window Repair in Vancouver, WA
+					<div className="inline-flex items-center gap-2 text-[#2D5A3D] font-bold uppercase tracking-widest text-sm mb-6">
+						<MapPin className="w-4 h-4" /> Serving Clark County
+					</div>
+					<h2 className="text-3xl md:text-4xl font-bold text-[#1F2E2B] mb-8">
+						Vancouver's Trusted Door & Window Pros
 					</h2>
-					<p className="text-[#2C3E3A]/70 leading-relaxed text-lg">
-						Based in Vancouver, we serve homeowners throughout{" "}
-						<strong>Clark County</strong>, including Battle Ground, Camas,
-						Ridgefield, and Washougal. We understand the unique challenges local
-						weather places on doors and windows.
+					<p className="text-gray-600 leading-relaxed text-lg mb-10">
+						From the historic homes in **Hough and Arnada** to new builds in
+						**Ridgefield**, we understand how local weather impacts your home's
+						openings. We proudly serve Vancouver, Camas, Washougal, and Battle
+						Ground, and surronding areas.
 					</p>
+					<div className="flex flex-wrap justify-center gap-6 font-bold text-[#1F2E2B]">
+						{["98660", "98661", "98683", "98604", "98607"].map((zip) => (
+							<span
+								key={zip}
+								className="px-4 py-2 bg-[#F1F5F2] rounded-lg text-sm"
+							>
+								{zip}
+							</span>
+						))}
+					</div>
 				</div>
 			</section>
 
 			{/* CTA */}
-			<section className="py-24 bg-[#2C3E3A]">
-				<div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+			<section className="py-24 bg-[#1F2E2B] relative overflow-hidden">
+				<div className="max-w-4xl mx-auto px-6 lg:px-8 text-center relative z-10">
 					<motion.h2
 						initial={{ opacity: 0, y: 30 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
-						transition={{ duration: 0.8 }}
-						className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#F8F6F3] mb-6"
+						className="text-3xl md:text-5xl font-extrabold text-white mb-8 tracking-tight"
 					>
 						Ready to Fix Your Doors or Windows?
 					</motion.h2>
 
-					<p className="text-xl text-[#F8F6F3]/70 mb-10">
-						Request a free estimate today. Many door and window adjustments can
-						be quoted quickly with a brief description or photos.
+					<p className="text-[#A7C4B5] text-xl mb-12 max-w-2xl mx-auto">
+						Stop struggling with sticking doors. Request a free estimate
+						today—most minor repairs can be quoted with a simple photo.
 					</p>
 
 					<Link
 						href="/contact"
-						className="inline-flex items-center gap-2 px-10 py-5 bg-[#2D5A3D] text-white rounded-xl hover:bg-[#4A7C59] transition shadow-xl font-semibold"
+						className="inline-flex items-center gap-3 px-12 py-6 bg-[#2D5A3D] text-white font-bold rounded-2xl hover:bg-[#3a6d4b] transition-all shadow-2xl hover:scale-105"
 					>
-						Request a Free Estimate
+						Request My Free Estimate
 						<ArrowRight className="w-5 h-5" />
 					</Link>
 				</div>

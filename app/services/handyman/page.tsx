@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
 	Wrench,
@@ -13,102 +14,129 @@ import {
 	Settings,
 	Paintbrush,
 	Lightbulb,
+	MapPin,
 } from "lucide-react";
 
 import SectionHeader from "@/app/components/SectionHeader";
 
 export default function HandymanPage() {
 	return (
-		<div className="overflow-hidden">
-			{/* HERO */}
-			<section className="relative pt-32 pb-24 lg:pt-40 lg:pb-32 bg-[#2C3E3A]">
-				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+		<div className="overflow-hidden bg-[#FDFCFB]">
+			{/* HERO WITH BACKGROUND IMAGE */}
+			<section className="relative min-h-[80vh] flex items-center">
+				{/* Background Image Container */}
+				<div className="absolute inset-0 z-0">
+					<Image
+						src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?q=80&w=2000&auto=format&fit=crop"
+						alt="Professional handyman service tools in Vancouver WA"
+						fill
+						priority
+						className="object-cover"
+					/>
+					{/* SEO/Readability Overlay: Darkens the image so white text pops */}
+					<div className="absolute inset-0 bg-[#1F2E2B]/85 lg:bg-linear-to-r lg:from-[#1F2E2B] lg:via-[#1F2E2B]/90 lg:to-transparent" />
+				</div>
+
+				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32">
 					<div className="max-w-3xl">
-						<motion.span
+						<motion.div
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.6 }}
-							className="inline-flex items-center gap-2 px-4 py-2 bg-[#4A7C59]/30 rounded-full text-[#F8F6F3]/90 text-sm font-medium mb-8"
+							className="flex flex-wrap gap-3 mb-8"
 						>
-							<Wrench className="w-4 h-4" />
-							Licensed, Bonded & Insured Handyman
-						</motion.span>
+							<span className="inline-flex items-center gap-2 px-4 py-2 bg-[#2D5A3D]/40 backdrop-blur-md rounded-full text-[#A7C4B5] text-xs font-bold uppercase tracking-widest border border-[#2D5A3D]/50">
+								<Shield className="w-4 h-4" />
+								Licensed · Bonded · Insured
+							</span>
+						</motion.div>
 
 						<motion.h1
 							initial={{ opacity: 0, y: 30 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.8, delay: 0.1 }}
-							className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#F8F6F3] mb-6 leading-tight"
+							className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white mb-6 leading-[1.1] tracking-tight"
 						>
-							Professional Handyman & Home Repair Services in Vancouver, WA
+							Professional Handyman <br />
+							<span className="text-[#A7C4B5]">& Home Repairs</span>
 						</motion.h1>
 
 						<motion.p
 							initial={{ opacity: 0, y: 30 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.8, delay: 0.2 }}
-							className="text-xl text-[#F8F6F3]/80 leading-relaxed"
+							className="text-xl text-white/80 leading-relaxed max-w-2xl mb-10"
 						>
-							Dependable handyman services for homeowners who want quality work
-							done right the first time. Proudly serving Vancouver, WA and
-							surrounding Clark County communities.
+							Expert residential maintenance for Vancouver and Clark County. We
+							handle your home "to-do" list with professional precision and
+							licensed accountability.
 						</motion.p>
+
+						<motion.div
+							initial={{ opacity: 0, y: 30 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ delay: 0.2 }}
+						>
+							<Link
+								href="/contact"
+								className="inline-flex items-center gap-3 px-8 py-4 bg-[#2D5A3D] text-white font-bold rounded-xl hover:bg-[#3a6d4b] transition-all shadow-2xl"
+							>
+								Request a Free Estimate
+								<ArrowRight className="w-5 h-5" />
+							</Link>
+						</motion.div>
 					</div>
 				</div>
 			</section>
 
-			{/* INTRO */}
-			<section className="py-24 bg-[#F8F6F3]">
+			{/* INTRO SECTION */}
+			<section className="py-24 bg-white">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
-					<div className="grid lg:grid-cols-2 gap-12 items-center">
+					<div className="grid lg:grid-cols-2 gap-16 items-center">
 						<div>
-							<h2 className="text-3xl md:text-4xl font-semibold text-[#2C3E3A] mb-6">
-								Reliable Home Repairs and Maintenance You Can Count On
+							<h2 className="text-3xl md:text-4xl font-bold text-[#1F2E2B] mb-8 leading-tight">
+								Reliable Residential Maintenance <br />
+								<span className="text-[#2D5A3D]">Serving Clark County, WA</span>
 							</h2>
-
-							<div className="space-y-6 text-[#2C3E3A]/80 leading-relaxed text-lg">
+							<div className="space-y-6 text-gray-600 leading-relaxed text-lg">
 								<p>
-									Finding a dependable handyman in Vancouver, WA shouldn’t feel
-									like a gamble. Norbilt Homes bridges the gap between casual
-									handyman work and large general contractors by providing
-									professional, detail-focused service for everyday home needs.
+									Finding a **dependable handyman in Vancouver, WA** shouldn’t
+									be a gamble. Norbilt provides professional, detail-focused
+									service that bridges the gap between casual labor and
+									large-scale remodeling.
 								</p>
-
 								<p>
-									From repairing damaged drywall to upgrading fixtures and
-									hardware, we focus on doing the work correctly and
-									communicating clearly throughout the process. Our approach
-									helps protect your home’s value while saving you time and
-									frustration.
-								</p>
-
-								<p>
-									Many homeowners reach out when small issues start piling up.
-									Our goal is to take those tasks off your list and keep your
-									home functioning the way it should.
+									We specialize in the "to-do" lists that protect your home's
+									value. Whether it's sealing out the PNW moisture, repairing
+									drywall damage, or installing modern fixtures, our work is
+									rooted in construction expertise.
 								</p>
 							</div>
 						</div>
 
-						<div className="bg-[#E8E4DE] p-8 rounded-2xl border border-[#DCD7D0]">
-							<h3 className="text-xl font-semibold text-[#2C3E3A] mb-4">
-								Peace of Mind for Vancouver Homeowners
+						{/* Legitimacy Card */}
+						<div className="bg-[#F8F6F3] p-10 rounded-3xl border border-gray-100 shadow-sm">
+							<h3 className="text-2xl font-bold text-[#1F2E2B] mb-6">
+								The Norbilt Advantage
 							</h3>
-
-							<ul className="space-y-4">
-								<li className="flex gap-3 items-start text-[#2C3E3A]/70">
-									<CheckCircle2 className="w-6 h-6 text-[#4A7C59] shrink-0" />
+							<ul className="space-y-6">
+								<li className="flex gap-4 items-start">
+									<div className="bg-[#2D5A3D] p-1 rounded-full shrink-0">
+										<CheckCircle2 className="w-5 h-5 text-white" />
+									</div>
 									<span>
-										<strong>Thoughtful problem-solving:</strong> We look beyond
-										surface fixes to address the underlying issue whenever
-										possible.
+										<strong className="text-[#1F2E2B]">
+											Licensed Accountability:
+										</strong>{" "}
+										As a registered WA General Contractor, we provide
+										professional peace of mind.
 									</span>
 								</li>
-								<li className="flex gap-3 items-start text-[#2C3E3A]/70">
-									<CheckCircle2 className="w-6 h-6 text-[#4A7C59] shrink-0" />
+								<li className="flex gap-4 items-start">
+									<div className="bg-[#2D5A3D] p-1 rounded-full shrink-0">
+										<CheckCircle2 className="w-5 h-5 text-white" />
+									</div>
 									<span>
-										<strong>Respect for your home:</strong> Clean work areas,
-										careful handling, and professional conduct at every visit.
+										<strong className="text-[#1F2E2B]">Local Expertise:</strong>{" "}
+										We understand PNW home challenges, from moisture control to
+										structural settling.
 									</span>
 								</li>
 							</ul>
@@ -117,162 +145,101 @@ export default function HandymanPage() {
 				</div>
 			</section>
 
-			{/* SERVICES */}
-			<section className="py-24 bg-[#E8E4DE]">
+			{/* SERVICES GRID */}
+			<section className="py-24 bg-[#F1F5F2]">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
 					<SectionHeader
-						eyebrow="Our Services"
-						title="Handyman Solutions for Everyday Home Needs"
-						description="Practical repairs and improvements completed with care and attention to detail."
+						eyebrow="Solutions"
+						title="Common Home Repair Services"
+						description="Professional results for the repairs and upgrades that keep your home running smoothly."
 					/>
 
-					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
 						{[
 							{
 								icon: Hammer,
-								title: "General Home Repairs",
-								desc: "Drywall patching, minor structural fixes, and repairs that help keep your home in good working order.",
+								title: "Drywall & Wall Repair",
+								desc: "Expert patching, stress crack repair, and texture matching to restore seamless wall surfaces.",
 							},
 							{
 								icon: Lightbulb,
-								title: "Fixtures & Hardware",
-								desc: "Installation and replacement of light fixtures, ceiling fans, door hardware, and smart home accessories.",
+								title: "Fixtures & Smart Home",
+								desc: "Installation of ceiling fans, designer lighting, smart locks, and Ring doorbells.",
 							},
 							{
 								icon: Paintbrush,
-								title: "Sealing & Touch-Ups",
-								desc: "Caulking and weather-sealing to improve durability, comfort, and moisture protection.",
+								title: "Caulking & Sealing",
+								desc: "Kitchen and bath re-caulking, weather-stripping, and moisture protection for PNW homes.",
 							},
 							{
 								icon: Settings,
 								title: "Assembly & Mounting",
-								desc: "TV mounting, furniture assembly, shelving installation, and secure wall hangings.",
+								desc: "Professional TV wall mounting, floating shelves, and complex furniture assembly.",
 							},
 							{
 								icon: Home,
-								title: "Exterior Maintenance",
-								desc: "Minor deck repairs, fence fixes, and exterior adjustments to maintain curb appeal.",
+								title: "Interior Trim & Doors",
+								desc: "Repairing stuck doors, replacing hinges, and fixing damaged baseboards or casings.",
 							},
 							{
 								icon: Shield,
-								title: "Punch List Completion",
-								desc: "Finishing small tasks after a move, renovation, or before listing a home for sale.",
+								title: "Punch List Support",
+								desc: "Efficient completion of 'honey-do' lists for homeowners and property managers.",
 							},
 						].map((service) => (
 							<div
 								key={service.title}
-								className="bg-[#F8F6F3] p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow"
+								className="bg-white p-10 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-50"
 							>
-								<service.icon className="w-10 h-10 text-[#2D5A3D] mb-4" />
-								<h3 className="text-xl font-semibold text-[#2C3E3A] mb-3">
+								<div className="w-12 h-12 bg-[#F8F6F3] rounded-xl flex items-center justify-center mb-6">
+									<service.icon className="w-6 h-6 text-[#2D5A3D]" />
+								</div>
+								<h3 className="text-xl font-bold text-[#1F2E2B] mb-4">
 									{service.title}
 								</h3>
-								<p className="text-[#2C3E3A]/70 leading-relaxed">
-									{service.desc}
-								</p>
+								<p className="text-gray-600 leading-relaxed">{service.desc}</p>
 							</div>
 						))}
 					</div>
-
-					<p className="max-w-3xl mt-12 text-[#2C3E3A]/70">
-						Many homeowners who contact us for handyman services also ask about
-						drywall repair, trim and finish carpentry, and bathroom refresh
-						projects.
-					</p>
 				</div>
 			</section>
 
-			{/* WHY US */}
-			<section className="py-24 bg-[#F8F6F3]">
-				<div className="max-w-7xl mx-auto px-6 lg:px-8">
-					<div className="text-center max-w-2xl mx-auto mb-16">
-						<h2 className="text-3xl md:text-4xl font-semibold text-[#2C3E3A] mb-4">
-							Why Homeowners Choose Norbilt Homes
-						</h2>
-						<p className="text-[#2C3E3A]/70">
-							Professional standards applied to everyday home work.
-						</p>
+			{/* SERVICE AREA STRIP */}
+			<section className="py-16 bg-white border-y border-gray-100">
+				<div className="max-w-5xl mx-auto px-6 text-center">
+					<div className="inline-flex items-center gap-2 text-[#2D5A3D] font-bold uppercase tracking-widest text-sm mb-6">
+						<MapPin className="w-4 h-4" /> Serving All Clark County
 					</div>
-
-					<div className="grid md:grid-cols-3 gap-8">
+					<div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-gray-500 font-medium">
 						{[
-							{
-								icon: Shield,
-								title: "Licensed, Bonded & Insured",
-								text: "Proper credentials and coverage to protect your home and give you peace of mind.",
-							},
-							{
-								icon: Clock,
-								title: "Reliable Scheduling",
-								text: "Clear timelines, dependable arrival times, and straightforward communication.",
-							},
-							{
-								icon: Home,
-								title: "Construction Experience",
-								text: "A solid understanding of residential systems for safer, longer-lasting repairs.",
-							},
-						].map((item) => (
-							<div
-								key={item.title}
-								className="bg-white rounded-2xl p-8 border border-[#E8E4DE] text-center"
-							>
-								<div className="w-14 h-14 bg-[#2D5A3D]/10 rounded-full flex items-center justify-center mb-6 mx-auto">
-									<item.icon className="w-7 h-7 text-[#2D5A3D]" />
-								</div>
-								<h3 className="text-xl font-semibold text-[#2C3E3A] mb-3">
-									{item.title}
-								</h3>
-								<p className="text-[#2C3E3A]/70">{item.text}</p>
-							</div>
+							"Vancouver",
+							"Camas",
+							"Ridgefield",
+							"Battle Ground",
+							"Salmon Creek",
+							"Washougal",
+						].map((city) => (
+							<span key={city}>{city}, WA</span>
 						))}
 					</div>
 				</div>
 			</section>
 
-			{/* SERVICE AREA */}
-			<section className="py-24 bg-[#E8E4DE]">
-				<div className="max-w-4xl mx-auto px-6 lg:px-8">
-					<h2 className="text-3xl font-semibold text-[#2C3E3A] mb-6">
-						Serving Vancouver, WA and Surrounding Areas
+			{/* CTA SECTION */}
+			<section className="py-24 bg-[#1F2E2B] relative overflow-hidden">
+				<div className="max-w-4xl mx-auto px-6 lg:px-8 text-center relative z-10">
+					<h2 className="text-3xl md:text-5xl font-bold text-white mb-8">
+						Ready to Clear Your Home <br /> To-Do List?
 					</h2>
-
-					<p className="text-[#2C3E3A]/70 leading-relaxed text-lg mb-6">
-						Norbilt Homes provides handyman services throughout Vancouver, WA
-						and nearby Clark County communities including Salmon Creek, Felida,
-						Cascade Park, Camas, Ridgefield, and Brush Prairie.
+					<p className="text-[#A7C4B5] text-xl mb-12">
+						Get a free, transparent estimate from Vancouver’s trusted local
+						handyman.
 					</p>
-
-					<p className="text-[#2C3E3A]/70 leading-relaxed text-lg">
-						From older homes to newer builds, we understand the maintenance
-						challenges common in the Pacific Northwest and tailor our work
-						accordingly.
-					</p>
-				</div>
-			</section>
-
-			{/* CTA */}
-			<section className="py-24 bg-[#2C3E3A]">
-				<div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-					<motion.h2
-						initial={{ opacity: 0, y: 30 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true }}
-						transition={{ duration: 0.8 }}
-						className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#F8F6F3] mb-6"
-					>
-						Ready to Take Care of Your Home To-Do List?
-					</motion.h2>
-
-					<p className="text-xl text-[#F8F6F3]/70 mb-10">
-						Request a free estimate and get reliable handyman service you can
-						trust.
-					</p>
-
 					<Link
 						href="/contact"
-						className="inline-flex items-center gap-2 px-10 py-5 bg-[#2D5A3D] text-white rounded-xl hover:bg-[#4A7C59] transition shadow-xl font-medium"
+						className="inline-flex items-center gap-3 px-12 py-6 bg-[#2D5A3D] text-white font-bold rounded-2xl hover:scale-105 transition-all shadow-2xl"
 					>
-						Request a Free Estimate
+						Get My Free Estimate
 						<ArrowRight className="w-5 h-5" />
 					</Link>
 				</div>
