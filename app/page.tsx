@@ -117,7 +117,7 @@ export default function HomePage() {
 			<section className="relative min-h-[95vh] flex items-center">
 				<div className="absolute inset-0">
 					<Image
-						src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop"
+						src="/bathroom.jpg.png"
 						alt="Licensed interior remodeling contractor performing home improvements in Vancouver WA Clark County"
 						fill
 						priority
@@ -141,7 +141,7 @@ export default function HomePage() {
 						<h1 className="text-5xl md:text-7xl font-extrabold text-white leading-[1.05] tracking-tight">
 							Interior Remodeling &{" "}
 							<span className="text-[#A7C4B5]">Home Improvements</span> <br />
-							<span>in Vancovuer WA</span>
+							<span>in Vancouver WA</span>
 						</h1>
 
 						<p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl">
@@ -192,7 +192,7 @@ export default function HomePage() {
 					<div className="relative">
 						<div className="relative aspect-4/5 rounded-3xl overflow-hidden shadow-2xl">
 							<Image
-								src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+								src="https://images.unsplash.com/photo-1618832515490-e181c4794a45?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 								alt="Precision interior remodeling work"
 								fill
 								className="object-cover"
