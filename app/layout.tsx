@@ -4,7 +4,7 @@ import Navigation from "@/app/components/Navigation";
 import Footer from "@/app/components/Footer";
 
 export const metadata: Metadata = {
-	title: "Norbilt Homes",
+	title: "Norbilt",
 	description: "Expert hands. Exceptional results.",
 	icons: {
 		icon: "/icon-v3.png",
