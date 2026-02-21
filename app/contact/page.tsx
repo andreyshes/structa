@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import {
 	Phone,
@@ -57,6 +58,8 @@ const contactItems = [
 ];
 
 export default function ContactPage() {
+	const router = useRouter();
+
 	const [formData, setFormData] = useState<FormData>({
 		name: "",
 		email: "",
@@ -65,23 +68,29 @@ export default function ContactPage() {
 		details: "",
 	});
 
-	const [isSubmitted, setIsSubmitted] = useState(false);
 	const [isSubmitting, setIsSubmitting] = useState(false);
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		setIsSubmitting(true);
 
-		const res = await fetch("/api/contact", {
-			method: "POST",
-			headers: { "Content-Type": "application/json" },
-			body: JSON.stringify(formData),
-		});
+		try {
+			const res = await fetch("/api/contact", {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify(formData),
+			});
 
-		setIsSubmitting(false);
-
-		if (res.ok) setIsSubmitted(true);
-		else alert("Something went wrong. Please try again.");
+			if (res.ok) {
+				router.push("/thank-you"); // ✅ Redirect for conversion tracking
+			} else {
+				alert("Something went wrong. Please try again.");
+			}
+		} catch (error) {
+			alert("Network error. Please try again.");
+		} finally {
+			setIsSubmitting(false);
+		}
 	};
 
 	const projectTypes = [
@@ -117,15 +126,16 @@ export default function ContactPage() {
 					</h1>
 
 					<p className="text-xl text-[#F8F6F3]/80 max-w-3xl mx-auto">
-						Tell us about your project and we'll get back to you with a free
+						Tell us about your project and we’ll get back to you with a free
 						estimate. No pressure — just an honest conversation.
 					</p>
 				</div>
 			</section>
 
+			{/* CONTENT */}
 			<section className="py-24 lg:py-32 bg-[#F8F6F3]">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-3 gap-16">
-					{/* INFO */}
+					{/* INFO COLUMN */}
 					<div>
 						<h2 className="text-2xl font-semibold text-[#2C3E3A] mb-8">
 							Get in Touch
@@ -178,104 +188,98 @@ export default function ContactPage() {
 						</div>
 					</div>
 
-					{/* FORM */}
+					{/* FORM COLUMN */}
 					<div className="lg:col-span-2">
-						{isSubmitted ? (
-							<div className="bg-white rounded-2xl p-12 border text-center">
-								<CheckCircle2 className="w-12 h-12 text-[#2D5A3D] mx-auto mb-4" />
-								<h3 className="text-2xl font-semibold text-[#2C3E3A] mb-2">
-									Thank You!
-								</h3>
-								<p className="text-[#2C3E3A]/70">
-									We've received your message and will be in touch shortly.
-								</p>
-							</div>
-						) : (
-							<form
-								onSubmit={handleSubmit}
-								className="bg-white rounded-2xl p-8 lg:p-12 border"
-							>
-								<h3 className="text-xl font-semibold text-[#2C3E3A] mb-8">
-									Project Details
-								</h3>
+						<form
+							onSubmit={handleSubmit}
+							className="bg-white rounded-2xl p-8 lg:p-12 border"
+						>
+							<h3 className="text-xl font-semibold text-[#2C3E3A] mb-8">
+								Project Details
+							</h3>
 
-								<div className="grid md:grid-cols-2 gap-6 mb-6">
-									<div>
-										<Label>Full Name *</Label>
-										<Input
-											required
-											value={formData.name}
-											onChange={(e) =>
-												setFormData({ ...formData, name: e.target.value })
-											}
-										/>
-									</div>
-									<div>
-										<Label>Email *</Label>
-										<Input
-											type="email"
-											required
-											value={formData.email}
-											onChange={(e) =>
-												setFormData({ ...formData, email: e.target.value })
-											}
-										/>
-									</div>
-								</div>
-
-								<div className="grid md:grid-cols-2 gap-6 mb-6">
-									<div>
-										<Label>Phone</Label>
-										<Input
-											value={formData.phone}
-											onChange={(e) =>
-												setFormData({ ...formData, phone: e.target.value })
-											}
-										/>
-									</div>
-									<div>
-										<Label>Project Type *</Label>
-										<Select
-											value={formData.projectType}
-											onValueChange={(value) =>
-												setFormData({ ...formData, projectType: value })
-											}
-										>
-											<SelectTrigger>
-												<SelectValue placeholder="Select project type" />
-											</SelectTrigger>
-											<SelectContent>
-												{projectTypes.map((type) => (
-													<SelectItem key={type} value={type}>
-														{type}
-													</SelectItem>
-												))}
-											</SelectContent>
-										</Select>
-									</div>
-								</div>
-
-								<div className="mb-8">
-									<Label>Project Details *</Label>
-									<Textarea
+							<div className="grid md:grid-cols-2 gap-6 mb-6">
+								<div>
+									<Label>Full Name *</Label>
+									<Input
 										required
-										value={formData.details}
+										value={formData.name}
 										onChange={(e) =>
-											setFormData({ ...formData, details: e.target.value })
+											setFormData({ ...formData, name: e.target.value })
 										}
-										className="min-h-40"
 									/>
 								</div>
 
-								<Button
-									type="submit"
-									disabled={isSubmitting}
-									className="w-full h-14 bg-[#2D5A3D] hover:bg-[#4A7C59]"
-								>
-									{isSubmitting ? "Sending…" : "Start Your Project"}
-								</Button>
-							</form>
-						)}
+								<div>
+									<Label>Email *</Label>
+									<Input
+										type="email"
+										required
+										value={formData.email}
+										onChange={(e) =>
+											setFormData({ ...formData, email: e.target.value })
+										}
+									/>
+								</div>
+							</div>
+
+							<div className="grid md:grid-cols-2 gap-6 mb-6">
+								<div>
+									<Label>Phone</Label>
+									<Input
+										value={formData.phone}
+										onChange={(e) =>
+											setFormData({ ...formData, phone: e.target.value })
+										}
+									/>
+								</div>
+
+								<div>
+									<Label>Project Type *</Label>
+									<Select
+										value={formData.projectType}
+										onValueChange={(value) =>
+											setFormData({ ...formData, projectType: value })
+										}
+									>
+										<SelectTrigger>
+											<SelectValue placeholder="Select project type" />
+										</SelectTrigger>
+										<SelectContent className="bg-white">
+											{projectTypes.map((type) => (
+												<SelectItem
+													key={type}
+													value={type}
+													className="hover:bg-gray-200"
+												>
+													{type}
+												</SelectItem>
+											))}
+										</SelectContent>
+									</Select>
+								</div>
+							</div>
+
+							<div className="mb-8">
+								<Label>Project Details *</Label>
+								<Textarea
+									required
+									value={formData.details}
+									onChange={(e) =>
+										setFormData({ ...formData, details: e.target.value })
+									}
+									className="min-h-40"
+								/>
+							</div>
+
+							<Button
+								type="submit"
+								disabled={isSubmitting}
+								className="w-full h-14 bg-[#2D5A3D] hover:bg-[#4A7C59]"
+							>
+								{isSubmitting ? "Sending…" : "Start Your Project"}
+							</Button>
+						</form>
 					</div>
 				</div>
 			</section>
