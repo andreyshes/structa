@@ -1,9 +1,8 @@
-"use client";
-
 import Link from "next/link";
 import Script from "next/script";
 import { CheckCircle2, Phone, ArrowRight } from "lucide-react";
 
+// ✅ Metadata works here because this is a Server Component
 export const metadata = {
 	title: "Thank You | Norbilt",
 	description:
@@ -19,10 +18,10 @@ export default function ThankYouPage() {
 			{/* Google Ads Conversion Event */}
 			<Script id="google-ads-conversion" strategy="afterInteractive">
 				{`
-					gtag('event', 'conversion', {
-						'send_to': 'AW-17966936255/ZWrACLjd3PwbEL_hpvdC'
-					});
-				`}
+          gtag('event', 'conversion', {
+            'send_to': 'AW-17966936255/ZWrACLjd3PwbEL_hpvdC'
+          });
+        `}
 			</Script>
 
 			<div className="min-h-screen bg-[#F8F6F3] flex items-center justify-center px-6">
@@ -37,7 +36,6 @@ export default function ThankYouPage() {
 
 					<p className="text-gray-600 mb-6 leading-relaxed">
 						Our team will review your project details and contact you shortly.
-						If your request is urgent, feel free to call us directly.
 					</p>
 
 					<div className="flex flex-col sm:flex-row gap-4 justify-center">
