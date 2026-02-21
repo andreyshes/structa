@@ -119,32 +119,32 @@ export default function CamasLocationPage() {
 							{
 								name: "Professional Handyman",
 								desc: "Expert solutions for high-end home maintenance and specialized repair tasks.",
-								href: "/services/handyman",
+								href: "/locations/camas/handyman",
 							},
 							{
 								name: "Drywall & Texture Matching",
 								desc: "Flawless repairs for water damage, cracks, or layout changes with perfect matching.",
-								href: "/services/drywall-repair",
+								href: "/locations/camas/drywall-repair",
 							},
 							{
 								name: "Finish Carpentry & Trim",
 								desc: "Installation of custom crown molding, baseboards, and decorative wall treatments.",
-								href: "/services/finish-carpentry",
+								href: "/locations/camas/finish-carpentry",
 							},
 							{
 								name: "Window & Door Repair",
 								desc: "Ensuring energy efficiency and smooth operation for all interior and exterior doors.",
-								href: "/services/door-window",
+								href: "/locations/camas/door-window",
 							},
 							{
 								name: "Kitchen & Bath Updates",
 								desc: "Modernizing fixtures, hardware, and surfaces for a refreshed aesthetic.",
-								href: "/services/kitchen-bath",
+								href: "/locations/camas/kitchen-bath",
 							},
 							{
 								name: "Flooring Repairs",
 								desc: "Specialized repairs for hardwoods, luxury vinyl, and high-traffic flooring areas.",
-								href: "/services/flooring",
+								href: "/locations/camas/flooring",
 							},
 						].map((service) => (
 							<Link

@@ -21,30 +21,28 @@ export default function VancouverLocationPage() {
 				dangerouslySetInnerHTML={{
 					__html: JSON.stringify({
 						"@context": "https://schema.org",
-						"@type": "LocalBusiness",
+						"@type": "HomeAndConstructionBusiness",
 						name: "Norbilt Homes",
-						url: "https://www.norbilt.com",
+						url: "https://www.norbilt.com/locations/vancouver",
 						telephone: "+1-916-508-6272",
+						priceRange: "$$",
 						address: {
 							"@type": "PostalAddress",
 							addressLocality: "Vancouver",
 							addressRegion: "WA",
 							addressCountry: "US",
 						},
-						areaServed: [
-							{ "@type": "Place", name: "Vancouver, WA" },
-							{ "@type": "Place", name: "Hazel Dell, WA" },
-							{ "@type": "Place", name: "Salmon Creek, WA" },
-							{ "@type": "Place", name: "Five Corners, WA" },
-							{ "@type": "Place", name: "Brush Prairie, WA" },
-							{ "@type": "Place", name: "Camas, WA" },
-						],
+						areaServed: {
+							"@type": "AdministrativeArea",
+							name: "Clark County, WA",
+						},
 						serviceType: [
 							"Handyman Services",
 							"Home Repair",
 							"Drywall Repair",
 							"Finish Carpentry",
-							"Kitchen & Bathroom Updates",
+							"Kitchen Remodeling",
+							"Bathroom Updates",
 							"Door & Window Repair",
 							"Flooring Repair",
 						],
@@ -52,6 +50,7 @@ export default function VancouverLocationPage() {
 					}),
 				}}
 			/>
+
 			<div className="overflow-hidden">
 				{/* HERO */}
 				<section className="pt-32 pb-28 bg-[#2C3E3A]">
@@ -69,44 +68,53 @@ export default function VancouverLocationPage() {
 						<motion.h1
 							initial={{ opacity: 0, y: 30 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.8, delay: 0.1 }}
+							transition={{ duration: 0.8 }}
 							className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#F8F6F3] mb-6"
 						>
-							Professional Home Repair & Handyman Services in Vancouver, WA
+							Vancouver WA Handyman & Home Repair Contractor
 						</motion.h1>
 
 						<motion.p
 							initial={{ opacity: 0, y: 30 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.8, delay: 0.2 }}
+							transition={{ duration: 0.8 }}
 							className="text-xl md:text-2xl text-[#F8F6F3]/80 max-w-3xl mx-auto"
 						>
-							Norbilt Homes provides dependable home repairs, finish carpentry,
-							and interior improvement services for homeowners throughout
-							Vancouver, Washington — with clean work, clear communication, and
-							long-lasting results.
+							Norbilt Homes provides professional handyman services, drywall
+							repair, finish carpentry, and interior improvement solutions for
+							homeowners throughout Vancouver, WA and surrounding Clark County
+							communities.
 						</motion.p>
 					</div>
 				</section>
 
 				{/* INTRO */}
 				<section className="py-24 bg-[#F8F6F3]">
-					<div className="max-w-5xl mx-auto px-6 text-center space-y-8 text-[#2C3E3A]/80">
-						<h2 className="text-3xl md:text-4xl font-semibold text-[#2C3E3A]">
-							Reliable Home Services for Vancouver Homeowners
+					<div className="max-w-5xl mx-auto px-6 space-y-8 text-[#2C3E3A]/80">
+						<h2 className="text-3xl md:text-4xl font-semibold text-[#2C3E3A] text-center">
+							Reliable Home Repair Services in Vancouver, WA
 						</h2>
 
 						<p className="text-lg leading-relaxed">
-							Owning a home in Vancouver means staying ahead of repairs,
-							maintenance, and interior upgrades that protect your investment
-							and keep your space functional.
+							Homes in Vancouver face seasonal moisture, temperature shifts, and
+							natural settling common throughout the Pacific Northwest. These
+							conditions often lead to drywall cracks, trim separation, sticking
+							doors, flooring movement, and interior wear that require
+							professional attention.
 						</p>
 
 						<p className="text-lg leading-relaxed">
-							Norbilt Homes works with homeowners across Vancouver — including
-							Hazel Dell, Salmon Creek, Five Corners, and surrounding Clark
-							County neighborhoods — providing skilled workmanship without the
-							stress of juggling multiple contractors.
+							Norbilt Homes works with homeowners across Hazel Dell, Salmon
+							Creek, Five Corners, Brush Prairie, Orchards, Felida, and Camas —
+							delivering detail-driven craftsmanship with clean job sites and
+							clear communication from start to finish.
+						</p>
+
+						<p className="text-lg leading-relaxed">
+							Whether you need small handyman repairs, drywall patching,
+							precision finish carpentry, or targeted kitchen and bathroom
+							updates, we provide dependable solutions tailored specifically for
+							Vancouver homes.
 						</p>
 					</div>
 				</section>
@@ -122,33 +130,33 @@ export default function VancouverLocationPage() {
 							{[
 								{
 									icon: Hammer,
-									title: "Handyman & Home Repairs",
-									href: "/services/handyman",
+									title: "Vancouver WA Handyman Services",
+									href: "/locations/vancouver/handyman",
 								},
 								{
 									icon: Layers,
-									title: "Drywall Repair",
-									href: "/services/drywall-repair",
+									title: "Drywall Repair in Vancouver WA",
+									href: "/locations/vancouver/drywall-repair",
 								},
 								{
 									icon: Home,
-									title: "Finish Carpentry",
-									href: "/services/finish-carpentry",
+									title: "Finish Carpentry in Vancouver",
+									href: "/locations/vancouver/finish-carpentry",
 								},
 								{
 									icon: DoorOpen,
-									title: "Door & Window Repair",
-									href: "/services/door-window",
+									title: "Door & Window Repair in Vancouver",
+									href: "/locations/vancouver/door-window",
 								},
 								{
 									icon: Home,
-									title: "Flooring Repairs",
-									href: "/services/flooring",
+									title: "Flooring Repair & Interior Updates",
+									href: "/locations/vancouver/flooring",
 								},
 								{
 									icon: Hammer,
 									title: "Kitchen & Bathroom Updates",
-									href: "/services/kitchen-bath",
+									href: "/locations/vancouver/kitchen-bath",
 								},
 							].map((service) => (
 								<Link
@@ -163,7 +171,7 @@ export default function VancouverLocationPage() {
 										{service.title}
 									</h3>
 									<p className="text-[#2C3E3A]/70">
-										Tailored solutions for Vancouver homes and homeowners.
+										Professional home repair solutions for Vancouver homeowners.
 									</p>
 								</Link>
 							))}
@@ -179,77 +187,12 @@ export default function VancouverLocationPage() {
 						</h2>
 
 						<ul className="space-y-4 text-lg text-[#2C3E3A]/80 max-w-3xl mx-auto text-left">
+							<li>• Licensed & insured in Washington State</li>
 							<li>• Detail-driven craftsmanship on every project</li>
 							<li>• Clear communication and honest recommendations</li>
-							<li>• Respect for your home and clean job sites</li>
-							<li>• Locally based with knowledge of Vancouver homes</li>
+							<li>• Respectful, clean job sites</li>
+							<li>• Experienced working in Vancouver-area homes</li>
 						</ul>
-					</div>
-				</section>
-				{/* FAQ */}
-				<section className="py-24 bg-[#E8E4DE]">
-					<div className="max-w-5xl mx-auto px-6">
-						<h2 className="text-3xl md:text-4xl font-semibold text-[#2C3E3A] mb-10 text-center">
-							Frequently Asked Questions About Home Services in Vancouver, WA
-						</h2>
-
-						<div className="space-y-8">
-							<div>
-								<h3 className="text-xl font-semibold text-[#2C3E3A] mb-2">
-									What home services do you offer in Vancouver, WA?
-								</h3>
-								<p className="text-[#2C3E3A]/80 leading-relaxed">
-									Norbilt Homes provides handyman services, home repairs,
-									drywall repair, finish carpentry, door and window repair,
-									flooring repairs, and kitchen and bathroom updates for
-									homeowners throughout Vancouver, Washington.
-								</p>
-							</div>
-
-							<div>
-								<h3 className="text-xl font-semibold text-[#2C3E3A] mb-2">
-									Do you offer free estimates for home repair projects?
-								</h3>
-								<p className="text-[#2C3E3A]/80 leading-relaxed">
-									Yes. We offer free estimates for home repair and improvement
-									projects in Vancouver. We’ll review your project, discuss
-									options, and provide clear recommendations before any work
-									begins.
-								</p>
-							</div>
-
-							<div>
-								<h3 className="text-xl font-semibold text-[#2C3E3A] mb-2">
-									Are you licensed and insured in Washington?
-								</h3>
-								<p className="text-[#2C3E3A]/80 leading-relaxed">
-									Yes. Norbilt Homes is properly licensed and insured to perform
-									home repair and improvement services in Washington State.
-								</p>
-							</div>
-
-							<div>
-								<h3 className="text-xl font-semibold text-[#2C3E3A] mb-2">
-									What areas around Vancouver do you serve?
-								</h3>
-								<p className="text-[#2C3E3A]/80 leading-relaxed">
-									In addition to Vancouver, we regularly serve Hazel Dell,
-									Salmon Creek, Five Corners, Brush Prairie, Camas, and nearby
-									Clark County communities.
-								</p>
-							</div>
-
-							<div>
-								<h3 className="text-xl font-semibold text-[#2C3E3A] mb-2">
-									Do you handle small jobs and punch lists?
-								</h3>
-								<p className="text-[#2C3E3A]/80 leading-relaxed">
-									Absolutely. We regularly help homeowners with small repairs,
-									punch lists, and ongoing maintenance projects that larger
-									contractors often avoid.
-								</p>
-							</div>
-						</div>
 					</div>
 				</section>
 
@@ -260,7 +203,8 @@ export default function VancouverLocationPage() {
 					</h2>
 
 					<p className="text-xl text-[#F8F6F3]/70 mb-12 max-w-2xl mx-auto">
-						Tell us about your project and we’ll help you plan the next step.
+						Contact Norbilt Homes today to discuss your project and receive a
+						clear, professional estimate.
 					</p>
 
 					<Link

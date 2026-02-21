@@ -101,32 +101,32 @@ export default function FiveCornersLocationPage() {
 							{
 								name: "Handyman & Home Repairs",
 								desc: "Efficient solutions for your home maintenance to-do list.",
-								href: "/services/handyman",
+								href: "/locations/five-corners/handyman",
 							},
 							{
 								name: "Drywall Repair & Texture",
 								desc: "Seamless wall and ceiling repairs for a flawless finish.",
-								href: "/services/drywall-repair",
+								href: "/locations/five-corners/drywall-repair",
 							},
 							{
 								name: "Custom Finish Carpentry",
 								desc: "Expert trim, crown molding, and decorative wood accents.",
-								href: "/services/finish-carpentry",
+								href: "/locations/five-corners/finish-carpentry",
 							},
 							{
 								name: "Door & Window Solutions",
 								desc: "Improve energy efficiency and security with expert repairs.",
-								href: "/services/door-window",
+								href: "/locations/five-corners/door-window",
 							},
 							{
 								name: "Kitchen & Bath Updates",
 								desc: "Modernizing your most-used spaces without the full remodel cost.",
-								href: "/services/kitchen-bath",
+								href: "/locations/five-corners/kitchen-bath",
 							},
 							{
 								name: "Flooring Repair & Install",
 								desc: "Durable flooring repairs that stand up to PNW life.",
-								href: "/services/flooring",
+								href: "/locations/five-corners/flooring",
 							},
 						].map((service) => (
 							<Link

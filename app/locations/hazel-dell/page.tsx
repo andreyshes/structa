@@ -137,32 +137,32 @@ export default function HazelDellLocationPage() {
 							{
 								name: "Expert Handyman Repairs",
 								desc: "Solving the 'honey-do' list with professional tools and experience.",
-								href: "/services/handyman",
+								href: "/locations/hazel-dell/handyman",
 							},
 							{
 								name: "Drywall & Texture",
 								desc: "From ceiling leaks to wall holes, we provide seamless repair and matching.",
-								href: "/services/drywall-repair",
+								href: "/locations/hazel-dell/drywall-repair",
 							},
 							{
 								name: "Interior Carpentry",
 								desc: "Enhancing rooms with new baseboards, casing, and custom shelving.",
-								href: "/services/finish-carpentry",
+								href: "/locations/hazel-dell/finish-carpentry",
 							},
 							{
 								name: "Door & Window Service",
 								desc: "Fixing alignment, replacing hardware, and sealing drafts.",
-								href: "/services/door-window",
+								href: "/locations/hazel-dell/door-window",
 							},
 							{
 								name: "Kitchen & Bath Updates",
 								desc: "Refreshing your space with new fixtures, backsplashes, and vanity installs.",
-								href: "/services/kitchen-bath",
+								href: "/locations/hazel-dell/kitchen-bath",
 							},
 							{
 								name: "Flooring & Trim",
 								desc: "Repairing damaged planks and installing beautiful transitions.",
-								href: "/services/flooring",
+								href: "/locations/hazel-dell/flooring",
 							},
 						].map((service) => (
 							<Link

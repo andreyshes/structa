@@ -88,32 +88,32 @@ export default function BrushPrairieLocationPage() {
 						{[
 							{
 								name: "Professional Handyman Services",
-								href: "/services/handyman",
+								href: "/locations/brush-prairie/handyman",
 								desc: "Reliable fixes for your to-do list.",
 							},
 							{
 								name: "Expert Drywall Repair",
-								href: "/services/drywall-repair",
+								href: "/locations/brush-prairie/drywall-repair",
 								desc: "Seamless patching and texture matching.",
 							},
 							{
 								name: "Custom Finish Carpentry",
-								href: "/services/finish-carpentry",
+								href: "/locations/brush-prairie/finish-carpentry",
 								desc: "Crown molding, trim, and built-ins.",
 							},
 							{
 								name: "Door & Window Solutions",
-								href: "/services/door-window",
+								href: "/locations/brush-prairie/door-window",
 								desc: "Installation and weather-proofing.",
 							},
 							{
 								name: "Kitchen & Bath Updates",
-								href: "/services/kitchen-bath",
+								href: "/locations/brush-prairie/kitchen-bath",
 								desc: "Modernize your most used spaces.",
 							},
 							{
 								name: "Flooring Installation",
-								href: "/services/flooring",
+								href: "/locations/brush-prairie/flooring",
 								desc: "Hardwood, LVP, and tile repair.",
 							},
 						].map((service) => (

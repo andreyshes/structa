@@ -102,32 +102,32 @@ export default function SalmonCreekLocationPage() {
 							{
 								name: "Handyman & Maintenance",
 								desc: "Solving complex home issues and routine maintenance for busy Salmon Creek families.",
-								href: "/services/handyman",
+								href: "/locations/salmon-creek/handyman",
 							},
 							{
 								name: "Seamless Drywall Repair",
 								desc: "Professional patching and ceiling repairs with perfect texture matching.",
-								href: "/services/drywall-repair",
+								href: "/locations/salmon-creek/drywall-repair",
 							},
 							{
 								name: "Custom Finish Carpentry",
 								desc: "High-end crown molding, wainscoting, and decorative trim installations.",
-								href: "/services/finish-carpentry",
+								href: "/locations/salmon-creek/finish-carpentry",
 							},
 							{
 								name: "Door & Window Service",
 								desc: "Precision alignment and weatherproofing for security and energy efficiency.",
-								href: "/services/door-window",
+								href: "/locations/salmon-creek/door-window",
 							},
 							{
 								name: "Modern Kitchen & Bath",
 								desc: "Value-boosting updates including backsplash, vanities, and hardware.",
-								href: "/services/kitchen-bath",
+								href: "/locations/salmon-creek/kitchen-bath",
 							},
 							{
 								name: "Flooring Excellence",
 								desc: "Repairing high-traffic flooring and installing premium LVP and hardwoods.",
-								href: "/services/flooring",
+								href: "/locations/salmon-creek/flooring",
 							},
 						].map((service) => (
 							<Link
