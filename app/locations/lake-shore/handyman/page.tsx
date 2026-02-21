@@ -31,7 +31,7 @@ export const metadata = {
 	},
 };
 
-export default function Lake ShoreHandymanPage() {
+export default function LakeShoreHandymanPage() {
 	return (
 		<div className="overflow-hidden bg-[#F8F6F3] text-[#2C3E3A]">
 			{/* HERO */}

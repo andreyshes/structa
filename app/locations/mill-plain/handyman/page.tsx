@@ -31,7 +31,7 @@ export const metadata = {
 	},
 };
 
-export default function Mill PlainHandymanPage() {
+export default function MillPlainHandymanPage() {
 	return (
 		<div className="overflow-hidden bg-[#F8F6F3] text-[#2C3E3A]">
 			{/* HERO */}
