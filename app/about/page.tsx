@@ -10,8 +10,8 @@ import {
 	ArrowRight,
 	Mountain,
 	Users,
-	ShieldCheck, // Added for trust signal
-	Map, // Added for local signal
+	ShieldCheck,
+	Map,
 } from "lucide-react";
 
 import SectionHeader from "@/app/components/SectionHeader";
@@ -20,7 +20,7 @@ export default function AboutPage() {
 	const values = [
 		{
 			icon: Heart,
-			title: "Precision & Detail", // SEO: Stronger than "Pride"
+			title: "Precision & Detail",
 			description:
 				"Every repair, upgrade, and finish detail is handled with care. If it’s not something we’d be proud to stand behind, it doesn’t leave the job site.",
 		},
@@ -47,7 +47,7 @@ export default function AboutPage() {
 	const stats = [
 		{ value: "5+", label: "Years of Experience" },
 		{ value: "250+", label: "Projects Completed" },
-		{ value: "Licensed", label: "WA Contractor" }, // SEO: Highlighting legal status
+		{ value: "Licensed", label: "WA Contractor" },	
 		{ value: "Vancouver", label: "Locally Based" },
 	];
 
