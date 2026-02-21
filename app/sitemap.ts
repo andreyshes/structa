@@ -24,6 +24,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'five-corners',
     'camas',
     'brush-prairie',
+    'battle-ground',
+    'ridgefield',
+    'washougal',
+    'felida',
+    'lake-shore',
+    'orchards',
+    'mill-plain',
   ]
 
   // Core pages
@@ -95,6 +102,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         'five-corners': ['kitchen-bath', 'handyman', 'flooring', 'finish-carpentry', 'drywall-repair', 'door-window'],
         'camas': ['kitchen-bath', 'handyman', 'flooring', 'finish-carpentry', 'drywall-repair', 'door-window'],
         'brush-prairie': ['handyman', 'door-window', 'drywall-repair', 'finish-carpentry', 'kitchen-bath', 'flooring'],
+        'battle-ground': ['handyman', 'drywall-repair', 'finish-carpentry', 'door-window', 'kitchen-bath', 'flooring'],
+        'ridgefield': ['handyman', 'drywall-repair', 'finish-carpentry', 'door-window', 'kitchen-bath', 'flooring'],
+        'washougal': ['handyman', 'drywall-repair', 'finish-carpentry', 'door-window', 'kitchen-bath', 'flooring'],
+        'felida': ['handyman', 'drywall-repair', 'finish-carpentry', 'door-window', 'kitchen-bath', 'flooring'],
+        'lake-shore': ['handyman', 'drywall-repair', 'finish-carpentry', 'door-window', 'kitchen-bath', 'flooring'],
+        'orchards': ['handyman', 'drywall-repair', 'finish-carpentry', 'door-window', 'kitchen-bath', 'flooring'],
+        'mill-plain': ['handyman', 'drywall-repair', 'finish-carpentry', 'door-window', 'kitchen-bath', 'flooring'],
       }
 
       const validServices = locationServiceCombinations[location as keyof typeof locationServiceCombinations]

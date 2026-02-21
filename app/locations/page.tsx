@@ -43,6 +43,48 @@ export default function LocationsIndexPage() {
 			description:
 				"Detail-focused home repair and improvement services for homes in Camas.",
 		},
+		{
+			name: "Battle Ground, WA",
+			href: "/locations/battle-ground",
+			description:
+				"Expert home repair and carpentry services for Battle Ground and surrounding communities.",
+		},
+		{
+			name: "Ridgefield, WA",
+			href: "/locations/ridgefield",
+			description:
+				"Premium home maintenance and improvement services for Ridgefield homeowners.",
+		},
+		{
+			name: "Washougal, WA",
+			href: "/locations/washougal",
+			description:
+				"Professional handyman and home repair services for Washougal and the Columbia River Gorge area.",
+		},
+		{
+			name: "Felida, WA",
+			href: "/locations/felida",
+			description:
+				"Quality home services and skilled craftsmanship for Felida residents.",
+		},
+		{
+			name: "Lake Shore, WA",
+			href: "/locations/lake-shore",
+			description:
+				"Reliable home repair and maintenance services for Lake Shore and nearby areas.",
+		},
+		{
+			name: "Orchards, WA",
+			href: "/locations/orchards",
+			description:
+				"Trusted home improvement and handyman services for the Orchards community.",
+		},
+		{
+			name: "Mill Plain, WA",
+			href: "/locations/mill-plain",
+			description:
+				"Professional home repair and carpentry services for Mill Plain neighborhoods.",
+		},
 	];
 
 	return (
