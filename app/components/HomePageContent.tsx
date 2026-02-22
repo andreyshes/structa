@@ -139,7 +139,7 @@ export default function HomePageContent() {
 					<div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/60 to-transparent" />
 				</div>
 
-				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-40">
+				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-64 md:pb-40">
 					<div className="max-w-4xl space-y-6">
 						<motion.div
 							initial={{ opacity: 0, y: 20 }}
