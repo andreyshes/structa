@@ -14,15 +14,50 @@ import {
 	Maximize,
 	AlertTriangle,
 	MapPin,
+	ShieldCheck,
+	Phone,
 } from "lucide-react";
 
 import SectionHeader from "@/app/components/SectionHeader";
 
 export default function DoorWindowPage() {
+	const services = [
+		{
+			title: "Precision Door Alignment",
+			desc: "Correcting rubbing, sticking, or latching issues caused by home settling or worn-out hinge sets.",
+			icon: Maximize,
+		},
+		{
+			title: "Security Hardware",
+			desc: "Installation of high-security deadbolts, smart locks, and reinforced strike plates for total peace of mind.",
+			icon: Lock,
+		},
+		{
+			title: "Draft & Weather Sealing",
+			desc: "High-performance sweeps and perimeter seals designed to withstand the Pacific Northwest's driving rain.",
+			icon: Wind,
+		},
+		{
+			title: "Sliding Door Restoration",
+			desc: "Professional track cleaning and roller replacement to restore effortless, one-finger operation.",
+			icon: Home,
+		},
+		{
+			title: "Screen & Mesh Repair",
+			desc: "Custom rescreening for window and door units to allow ventilation while keeping pests out.",
+			icon: Shield,
+		},
+		{
+			title: "Sill & Trim Restoration",
+			desc: "Structural repair of exterior casing and sills to stop wood rot before it enters your wall framing.",
+			icon: AlertTriangle,
+		},
+	];
+
 	return (
 		<div className="overflow-hidden bg-[#FDFCFB]">
-			{/* HERO SECTION - HIGH VISIBILITY IMAGE */}
-			<section className="relative min-h-[80vh] flex items-center">
+			{/* HERO SECTION - BILLBOARD STYLE */}
+			<section className="relative min-h-[75vh] flex items-center overflow-hidden">
 				<div className="absolute inset-0 z-0">
 					<Image
 						src="https://t3.ftcdn.net/jpg/17/23/25/44/240_F_1723254432_wPlLS36tIF1dChcencQBJmN7dN177aXG.jpg"
@@ -31,48 +66,48 @@ export default function DoorWindowPage() {
 						priority
 						className="object-cover"
 					/>
-					{/* Overlay adjusted to 40% for better image visibility while protecting text legibility */}
-					<div className="absolute inset-0 bg-[#1F2E2B]/40 lg:bg-linear-to-r lg:from-[#1F2E2B]/80 lg:via-[#1F2E2B]/40 lg:to-transparent" />
+					<div className="absolute inset-0 bg-gradient-to-r from-[#14201D] via-[#14201D]/80 to-transparent" />
 				</div>
 
 				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32">
-					<div className="max-w-4xl [text-shadow:_0_2px_10px_rgb(0_0_0_/_30%)]">
-						<motion.span
-							initial={{ opacity: 0, y: 20 }}
+					<div className="max-w-4xl space-y-6">
+						<motion.div
+							initial={{ opacity: 0, y: 10 }}
 							animate={{ opacity: 1, y: 0 }}
-							className="inline-flex items-center gap-2 px-4 py-2 bg-[#2D5A3D] rounded-full text-white text-xs font-bold uppercase tracking-widest border border-white/20 mb-8 shadow-xl"
+							className="flex items-center gap-3"
 						>
-							<DoorOpen className="w-4 h-4" />
-							Vancouver's Repair Specialists
-						</motion.span>
+							<span className="px-4 py-1 bg-[#FFB800] text-black text-xs font-black uppercase tracking-widest rounded">
+								Licensed Specialist
+							</span>
+						</motion.div>
 
 						<motion.h1
-							initial={{ opacity: 0, y: 30 }}
-							animate={{ opacity: 1, y: 0 }}
-							className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white mb-6 leading-[1.1] tracking-tight"
+							initial={{ opacity: 0, x: -20 }}
+							animate={{ opacity: 1, x: 0 }}
+							className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tighter uppercase"
 						>
-							Door & Window Repair <br />
-							<span className="text-[#A7C4B5]">Expert Vancouver, WA</span>
+							Door & Window <br />
+							<span className="text-[#FFB800]">Restoration</span>
 						</motion.h1>
 
 						<motion.p
-							initial={{ opacity: 0, y: 30 }}
+							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
-							className="text-xl text-white font-medium leading-relaxed max-w-2xl mb-10"
+							className="text-xl text-white/90 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6"
 						>
 							Stop the drafts and fix the stick. We restore security and energy
-							efficiency to your home through professional hardware adjustments
-							and weather sealing across Clark County.
+							efficiency to your Vancouver home through professional hardware
+							adjustments and high-performance weather sealing.
 						</motion.p>
 
 						<motion.div
-							initial={{ opacity: 0, y: 30 }}
+							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ delay: 0.2 }}
+							className="pt-4"
 						>
 							<Link
 								href="/contact"
-								className="inline-flex items-center gap-3 px-10 py-5 bg-[#2D5A3D] text-white font-bold rounded-xl hover:bg-[#3a6d4b] transition-all shadow-2xl hover:scale-105"
+								className="inline-flex items-center gap-3 px-10 py-5 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-2xl"
 							>
 								Get a Free Estimate
 								<ArrowRight className="w-5 h-5" />
@@ -82,119 +117,120 @@ export default function DoorWindowPage() {
 				</div>
 			</section>
 
-			{/* INTRO - REPAIR VS REPLACEMENT FOCUS */}
-			<section className="py-24 bg-white">
+			{/* TRUST STRIP */}
+			<section className="py-8 bg-[#1F2E2B] border-y-4 border-[#FFB800]/20">
+				<div className="max-w-7xl mx-auto px-6 flex flex-wrap justify-center md:justify-between items-center gap-6">
+					<div className="flex items-center gap-3">
+						<ShieldCheck className="text-[#FFB800] w-5 h-5" />
+						<span className="text-[#A7C4B5] font-black text-xs uppercase tracking-[0.2em]">
+							Hardware & Lock Specialist
+						</span>
+					</div>
+					<div className="flex items-center gap-3 text-white">
+						<MapPin className="text-[#FFB800] w-5 h-5" />
+						<span className="text-[#A7C4B5] font-black text-xs uppercase tracking-[0.2em]">
+							Serving All Clark County
+						</span>
+					</div>
+				</div>
+			</section>
+
+			{/* VALUE PROP - REPAIR VS REPLACEMENT */}
+			<section className="py-24 lg:py-32 bg-white">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
-					<div className="grid lg:grid-cols-2 gap-16 items-center">
-						<div className="space-y-6 text-gray-600 leading-relaxed text-lg">
-							<h2 className="text-3xl md:text-4xl font-bold text-[#1F2E2B] mb-8 leading-tight">
-								Practical Repairs That <br />
-								<span className="text-[#2D5A3D]">Save You Money</span>
+					<div className="grid lg:grid-cols-2 gap-20 items-center">
+						<div className="space-y-8">
+							<h2 className="text-4xl lg:text-5xl font-black text-[#1F2E2B] uppercase tracking-tighter leading-none">
+								Don't Replace— <br />
+								<span className="text-[#2D5A3D]">Let Us Restore It</span>
 							</h2>
 
-							<p>
+							<p className="text-gray-600 text-lg font-medium leading-relaxed">
 								In the Pacific Northwest, seasonal moisture and natural home
 								settling lead to doors that stick and windows that leak heat.
-								Norbilt provides **professional door and window repair** to
-								correct these issues without the high cost of full replacements.
+								Norbilt provides professional restoration to correct these
+								issues without the high cost of full replacements.
 							</p>
 
-							<p>
-								We focus on **precise hardware adjustments, weatherstripping
-								upgrades, and structural sills**. Our goal is to make your
-								existing fixtures function like new—smoothly, securely, and
-								efficiently.
-							</p>
+							<div className="grid sm:grid-cols-2 gap-4 pt-4">
+								{[
+									"90% Cost Savings",
+									"1-Day Turnaround",
+									"Enhanced Security",
+									"Energy Efficiency",
+								].map((tag) => (
+									<div key={tag} className="flex items-center gap-2">
+										<CheckCircle2 className="text-[#FFB800] w-5 h-5" />
+										<span className="font-black text-xs uppercase tracking-widest text-[#1F2E2B]">
+											{tag}
+										</span>
+									</div>
+								))}
+							</div>
 						</div>
 
-						<div className="bg-[#F8F6F3] p-10 rounded-3xl border border-gray-100 shadow-sm">
-							<h3 className="text-2xl font-bold text-[#1F2E2B] mb-6">
-								Performance Evaluation
-							</h3>
-							<ul className="space-y-6">
-								{[
-									{
-										title: "Energy Efficiency",
-										desc: "Replacing failed weatherstripping and sealing to noticeably reduce drafts.",
-									},
-									{
-										title: "Home Security",
-										desc: "Reinforcing strike plates and lock hardware for peace of mind.",
-									},
-									{
-										title: "Ease of Use",
-										desc: "Correcting sagging hinges and misaligned frames for effortless operation.",
-									},
-								].map((item, i) => (
-									<li key={i} className="flex gap-4 items-start">
-										<div className="bg-[#2D5A3D] p-1 rounded-full shrink-0">
-											<CheckCircle2 className="w-5 h-5 text-white" />
-										</div>
-										<div>
-											<span className="block font-bold text-[#1F2E2B]">
-												{item.title}
+						<div className="relative group">
+							<div className="absolute -inset-4 bg-[#F8F6F3] rounded-[3rem] -rotate-2 group-hover:rotate-0 transition-transform duration-500" />
+							<div className="relative bg-[#1F2E2B] p-10 lg:p-14 rounded-[2.5rem] shadow-2xl border-b-[8px] border-[#FFB800]">
+								<h3 className="text-2xl font-black text-white uppercase tracking-tighter mb-8">
+									Performance Checklist
+								</h3>
+								<div className="space-y-8">
+									{[
+										{
+											t: "Mechanical Alignment",
+											d: "Squaring frames and tightening hinges for smooth operation.",
+										},
+										{
+											t: "Thermal Protection",
+											d: "Replacing brittle seals with high-density weatherstripping.",
+										},
+										{
+											t: "Structural Integrity",
+											d: "Inspecting and repairing sills to prevent moisture intrusion.",
+										},
+									].map((item, i) => (
+										<div
+											key={i}
+											className="space-y-2 border-l-2 border-[#FFB800]/30 pl-6"
+										>
+											<span className="block font-black text-[#FFB800] text-xs uppercase tracking-widest">
+												{item.t}
 											</span>
-											<span className="text-sm text-gray-600">{item.desc}</span>
+											<p className="text-[#A7C4B5] text-sm font-medium">
+												{item.d}
+											</p>
 										</div>
-									</li>
-								))}
-							</ul>
+									))}
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
 			{/* SERVICES GRID */}
-			<section className="py-24 bg-[#F1F5F2]">
+			<section className="py-24 lg:py-32 bg-[#F8F6F3]">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
 					<SectionHeader
 						eyebrow="Capabilities"
-						title="Comprehensive Repair Solutions"
-						description="Focused on extending the life and performance of your home's exterior and interior openings."
+						title="Complete Repair Solutions"
+						description="Expert technical service for every opening in your home."
 					/>
 
-					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
-						{[
-							{
-								title: "Door Alignment",
-								desc: "Correcting rubbing, sticking, or latching issues caused by home settling or worn hinges.",
-								icon: Maximize,
-							},
-							{
-								title: "Hardware Upgrades",
-								desc: "Expert installation of deadbolts, smart locks, handlesets, and high-performance hinges.",
-								icon: Lock,
-							},
-							{
-								title: "Draft & Weather Sealing",
-								desc: "Installing high-quality sweeps and seals to protect against Vancouver's wind and moisture.",
-								icon: Wind,
-							},
-							{
-								title: "Sliding Door Restoration",
-								desc: "Cleaning tracks and replacing rollers to restore smooth, one-finger operation.",
-								icon: Home,
-							},
-							{
-								title: "Screen Services",
-								desc: "Professional rescreening for window and door units to allow airflow without the pests.",
-								icon: Shield,
-							},
-							{
-								title: "Sill & Trim Repair",
-								desc: "Addressing early wood rot in exterior casing and sills before structural damage occurs.",
-								icon: AlertTriangle,
-							},
-						].map((service, i) => (
+					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
+						{services.map((service, i) => (
 							<div
 								key={i}
-								className="bg-white p-10 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100 group"
+								className="bg-white p-10 rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)] transition-all border-b-4 border-transparent hover:border-[#FFB800] group"
 							>
-								<service.icon className="w-12 h-12 text-[#2D5A3D] mb-6 group-hover:scale-110 transition-transform" />
-								<h3 className="text-xl font-bold text-[#1F2E2B] mb-4">
+								<div className="w-16 h-16 bg-[#F8F6F3] rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#1F2E2B] transition-colors">
+									<service.icon className="w-8 h-8 text-[#2D5A3D] group-hover:text-[#FFB800]" />
+								</div>
+								<h3 className="text-xl font-black text-[#1F2E2B] uppercase tracking-tight mb-4 leading-none">
 									{service.title}
 								</h3>
-								<p className="text-gray-600 leading-relaxed text-sm">
+								<p className="text-gray-600 font-medium leading-relaxed text-sm">
 									{service.desc}
 								</p>
 							</div>
@@ -203,58 +239,47 @@ export default function DoorWindowPage() {
 				</div>
 			</section>
 
-			{/* SERVICE AREA */}
-			<section className="py-24 bg-white border-y border-gray-100">
-				<div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-					<div className="inline-flex items-center gap-2 text-[#2D5A3D] font-bold uppercase tracking-widest text-sm mb-6">
-						<MapPin className="w-4 h-4" /> Serving Clark County
-					</div>
-					<h2 className="text-3xl md:text-4xl font-bold text-[#1F2E2B] mb-8">
-						Vancouver's Trusted Door & Window Pros
-					</h2>
-					<p className="text-gray-600 leading-relaxed text-lg mb-10">
-						From the historic homes in **Hough and Arnada** to new builds in
-						**Ridgefield**, we understand how local weather impacts your home's
-						openings. We proudly serve Vancouver, Camas, Washougal, and Battle
-						Ground, and surronding areas.
-					</p>
-					<div className="flex flex-wrap justify-center gap-6 font-bold text-[#1F2E2B]">
-						{["98660", "98661", "98683", "98604", "98607"].map((zip) => (
-							<span
-								key={zip}
-								className="px-4 py-2 bg-[#F1F5F2] rounded-lg text-sm"
-							>
-								{zip}
-							</span>
-						))}
+			{/* FINAL CTA - BILLBOARD STYLE */}
+			<section className="py-24 lg:py-40">
+				<div className="max-w-7xl mx-auto px-6">
+					<div className="bg-[#1F2E2B] rounded-[3rem] p-12 lg:p-24 text-center relative overflow-hidden border-b-[12px] border-[#FFB800] shadow-2xl">
+						<div className="relative z-10 max-w-3xl mx-auto space-y-8">
+							<h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none">
+								Fix Your Doors <br />{" "}
+								<span className="text-[#FFB800]">Before Winter</span>
+							</h2>
+							<p className="text-[#A7C4B5] text-xl font-medium max-w-xl mx-auto">
+								Stop fighting with sticking doors and losing heat. Most minor
+								repairs can be quoted with a simple photo.
+							</p>
+
+							<div className="flex flex-col sm:flex-row gap-6 justify-center pt-4">
+								<Link
+									href="/contact"
+									className="px-12 py-6 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-xl"
+								>
+									Free Estimate
+								</Link>
+								<Link
+									href="tel:+19165086272"
+									className="px-12 py-6 border-2 border-white/20 text-white font-black uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-3"
+								>
+									<Phone className="w-5 h-5" /> 916.508.6272
+								</Link>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
 
-			{/* CTA */}
-			<section className="py-24 bg-[#1F2E2B] relative overflow-hidden">
-				<div className="max-w-4xl mx-auto px-6 lg:px-8 text-center relative z-10">
-					<motion.h2
-						initial={{ opacity: 0, y: 30 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true }}
-						className="text-3xl md:text-5xl font-extrabold text-white mb-8 tracking-tight"
-					>
-						Ready to Fix Your Doors or Windows?
-					</motion.h2>
-
-					<p className="text-[#A7C4B5] text-xl mb-12 max-w-2xl mx-auto">
-						Stop struggling with sticking doors. Request a free estimate
-						today—most minor repairs can be quoted with a simple photo.
-					</p>
-
-					<Link
-						href="/contact"
-						className="inline-flex items-center gap-3 px-12 py-6 bg-[#2D5A3D] text-white font-bold rounded-2xl hover:bg-[#3a6d4b] transition-all shadow-2xl hover:scale-105"
-					>
-						Request My Free Estimate
-						<ArrowRight className="w-5 h-5" />
-					</Link>
+			{/* SERVICE AREA FOOTER STRIP */}
+			<section className="py-12 bg-white border-t border-gray-100">
+				<div className="max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-x-10 gap-y-4 text-[10px] md:text-xs font-black text-gray-400 uppercase tracking-[0.4em]">
+					<span>VANCOUVER</span>
+					<span>CAMAS</span>
+					<span>RIDGEFIELD</span>
+					<span>BATTLE GROUND</span>
+					<span>WASHOUGAL</span>
 				</div>
 			</section>
 		</div>

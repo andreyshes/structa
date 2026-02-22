@@ -14,67 +14,104 @@ import {
 	Fan,
 	MapPin,
 	Sparkles,
+	ShieldCheck,
+	Phone,
+	Layout,
 } from "lucide-react";
 
 import SectionHeader from "@/app/components/SectionHeader";
 
 export default function LightingFixturesPage() {
+	const commonRequests = [
+		"Designer Chandeliers",
+		"Kitchen Pendant Lights",
+		"Ceiling Fan Mounting",
+		"Bath Exhaust Fans",
+		"Smart Dimmer Switches",
+		"TV Wall Mounting",
+		"Recessed LED Retrofits",
+		"Vanity Lighting",
+	];
+
+	const mainServices = [
+		{
+			icon: Lightbulb,
+			title: "Interior Lighting",
+			text: "Clean installation of pendants, sconces, and chandeliers with precise, level alignment and zero-mess finish.",
+		},
+		{
+			icon: Fan,
+			title: "Ceiling Fans",
+			text: "Structural mounting and balancing to ensure wobble-free, quiet operation for year-round comfort.",
+		},
+		{
+			icon: Zap,
+			title: "Smart Controls",
+			text: "Installation of smart dimmers and Wi-Fi enabled switches for modern, automated home control.",
+		},
+		{
+			icon: Layout,
+			title: "Wall Mounting",
+			text: "Secure mounting for heavy TVs, mirrors, and galleries into wood or metal studs with hidden wiring options.",
+		},
+	];
+
 	return (
 		<div className="overflow-hidden bg-[#FDFCFB]">
-			{/* HERO SECTION - AMBIANCE & VISIBILITY */}
-			<section className="relative min-h-[80vh] flex items-center">
+			{/* HERO SECTION - AMBIANCE FOCUS */}
+			<section className="relative min-h-[80vh] flex items-center overflow-hidden">
 				<div className="absolute inset-0 z-0">
 					<Image
-						src="https://t4.ftcdn.net/jpg/05/97/21/69/240_F_597216964_c5DHjT4wtRbypQBHvv7cmBXhOVsMc0WQ.jpg"
+						src="https://images.unsplash.com/photo-1584521104351-cfad34547581?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlnaHQlMjBmaXh0dXJlfGVufDB8fDB8fHww"
 						alt="Modern designer lighting installation in Vancouver WA"
 						fill
 						priority
 						className="object-cover"
 					/>
-					{/* Overlay adjusted for maximum warmth and legibility */}
-					<div className="absolute inset-0 bg-[#1F2E2B]/45 lg:bg-linear-to-r lg:from-[#1F2E2B]/85 lg:via-[#1F2E2B]/40 lg:to-transparent" />
+					<div className="absolute inset-0 bg-gradient-to-r from-[#14201D] via-[#14201D]/85 to-transparent" />
 				</div>
 
 				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32">
-					<div className="max-w-4xl [text-shadow:_0_2px_10px_rgb(0_0_0_/_30%)]">
-						<motion.span
-							initial={{ opacity: 0, y: 20 }}
+					<div className="max-w-4xl space-y-6">
+						<motion.div
+							initial={{ opacity: 0, y: 10 }}
 							animate={{ opacity: 1, y: 0 }}
-							className="inline-flex items-center gap-2 px-4 py-2 bg-[#2D5A3D] rounded-full text-white text-xs font-bold uppercase tracking-widest border border-white/20 mb-8 shadow-xl"
+							className="flex items-center gap-3"
 						>
-							<Lightbulb className="w-4 h-4" />
-							Professional Fixture Mounting
-						</motion.span>
+							<span className="px-4 py-1 bg-[#FFB800] text-black text-xs font-black uppercase tracking-widest rounded">
+								Master Fixture Installation
+							</span>
+						</motion.div>
 
 						<motion.h1
-							initial={{ opacity: 0, y: 30 }}
-							animate={{ opacity: 1, y: 0 }}
-							className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white mb-6 leading-[1.1] tracking-tight"
+							initial={{ opacity: 0, x: -20 }}
+							animate={{ opacity: 1, x: 0 }}
+							className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tighter uppercase"
 						>
-							Lighting & Fixture <br />
-							<span className="text-[#A7C4B5]">Installation Vancouver</span>
+							Lighting & <br />
+							<span className="text-[#FFB800]">Fixtures</span>
 						</motion.h1>
 
 						<motion.p
-							initial={{ opacity: 0, y: 30 }}
+							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
-							className="text-xl text-white font-medium leading-relaxed max-w-2xl mb-10"
+							className="text-xl text-white/90 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6"
 						>
-							Transform your home's atmosphere with safe, professional fixture
-							installation. From designer chandeliers to high-performance
-							ceiling fans, we ensure every mount is secure, level, and clean.
+							Transform your atmosphere with safe, professional fixture
+							installation. From designer chandeliers to high-performance fans,
+							we ensure every mount is level, secure, and clean.
 						</motion.p>
 
 						<motion.div
-							initial={{ opacity: 0, y: 30 }}
+							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ delay: 0.2 }}
+							className="pt-4"
 						>
 							<Link
 								href="/contact"
-								className="inline-flex items-center gap-3 px-10 py-5 bg-[#2D5A3D] text-white font-bold rounded-xl hover:bg-[#3a6d4b] transition-all shadow-2xl hover:scale-105"
+								className="inline-flex items-center gap-3 px-10 py-5 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-2xl"
 							>
-								Get a Free Estimate
+								Get A Free Estimate
 								<ArrowRight className="w-5 h-5" />
 							</Link>
 						</motion.div>
@@ -82,55 +119,77 @@ export default function LightingFixturesPage() {
 				</div>
 			</section>
 
-			{/* INTRO - STYLE & SAFETY FOCUS */}
-			<section className="py-24 bg-white">
+			{/* TRUST STRIP */}
+			<section className="py-8 bg-[#1F2E2B] border-y-4 border-[#FFB800]/20 text-white">
+				<div className="max-w-7xl mx-auto px-6 flex flex-wrap justify-center md:justify-between items-center gap-6">
+					<div className="flex items-center gap-3">
+						<ShieldCheck className="text-[#FFB800] w-5 h-5" />
+						<span className="text-[#A7C4B5] font-black text-xs uppercase tracking-[0.2em]">
+							Licensed General Contractor
+						</span>
+					</div>
+					<div className="flex items-center gap-3">
+						<Zap className="text-[#FFB800] w-5 h-5" />
+						<span className="text-[#A7C4B5] font-black text-xs uppercase tracking-[0.2em]">
+							Secure Structural Mounting
+						</span>
+					</div>
+				</div>
+			</section>
+
+			{/* CORE CAPABILITIES */}
+			<section className="py-24 lg:py-32 bg-white">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
-					<div className="grid lg:grid-cols-2 gap-16 items-center">
-						<div className="space-y-6 text-gray-600 leading-relaxed text-lg">
-							<h2 className="text-3xl md:text-4xl font-bold text-[#1F2E2B] mb-8 leading-tight">
+					<div className="grid lg:grid-cols-2 gap-20 items-center">
+						<div className="space-y-8">
+							<h2 className="text-4xl lg:text-5xl font-black text-[#1F2E2B] uppercase tracking-tighter leading-none">
 								Modern Lighting <br />
-								<span className="text-[#2D5A3D]">Done the Right Way</span>
+								<span className="text-[#2D5A3D]">Done The Right Way</span>
 							</h2>
 
-							<p>
+							<p className="text-gray-600 text-lg font-medium leading-relaxed">
 								Updating your lighting is the single most effective way to
-								modernize your interior. Norbilt provides **professional
-								lighting installation throughout Clark County**, ensuring your
-								designer pieces are installed with structural integrity and
-								electrical precision.
+								modernize your interior. Norbilt provides professional
+								installation throughout Clark County, ensuring your designer
+								pieces are installed with structural integrity and electrical
+								precision.
 							</p>
 
-							<p>
-								Whether you’re swapping builder-grade fixtures for modern
-								pendants or upgrading bathroom ventilation to protect against
-								PNW moisture, we handle the technical details so you can enjoy
-								the results.
-							</p>
-						</div>
-
-						<div className="bg-[#F8F6F3] p-10 rounded-3xl border border-gray-100 shadow-sm relative overflow-hidden">
-							<Sparkles className="absolute -right-4 -top-4 w-24 h-24 text-[#2D5A3D]/5" />
-							<h3 className="text-2xl font-bold text-[#1F2E2B] mb-6">
-								Common Requests
-							</h3>
-							<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+							<div className="grid sm:grid-cols-2 gap-4">
 								{[
-									"Designer Chandeliers",
-									"Kitchen Pendant Lights",
-									"Ceiling Fan Mounting",
-									"Bath Exhaust Fans",
-									"Smart Dimmer Switches",
-									"TV Wall Mounting",
-									"Recessed LED Retrofits",
-									"Vanity Lighting",
+									"Level Alignment",
+									"Heavy Load Mounting",
+									"Smart Dimmer Setup",
+									"Wobble-Free Fans",
 								].map((item) => (
-									<div key={item} className="flex items-center gap-3">
-										<CheckCircle2 className="w-5 h-5 text-[#2D5A3D] shrink-0" />
-										<span className="text-sm font-semibold text-gray-700">
+									<div key={item} className="flex items-center gap-2">
+										<CheckCircle2 className="text-[#FFB800] w-5 h-5" />
+										<span className="font-black text-[10px] uppercase tracking-widest text-[#1F2E2B]">
 											{item}
 										</span>
 									</div>
 								))}
+							</div>
+						</div>
+
+						<div className="relative group">
+							<div className="absolute -inset-4 bg-[#F8F6F3] rounded-[3rem] rotate-1 group-hover:rotate-0 transition-transform duration-500" />
+							<div className="relative bg-[#1F2E2B] p-10 lg:p-14 rounded-[2.5rem] shadow-2xl border-b-[8px] border-[#FFB800]">
+								<h3 className="text-2xl font-black text-white uppercase tracking-tighter mb-8 italic text-center sm:text-left">
+									Common Requests
+								</h3>
+								<div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6">
+									{commonRequests.map((item) => (
+										<div
+											key={item}
+											className="flex items-center gap-3 border-l border-[#FFB800]/30 pl-4"
+										>
+											<span className="text-[#A7C4B5] text-xs font-bold uppercase tracking-wider">
+												{item}
+											</span>
+										</div>
+									))}
+								</div>
 							</div>
 						</div>
 					</div>
@@ -138,48 +197,27 @@ export default function LightingFixturesPage() {
 			</section>
 
 			{/* SERVICES GRID */}
-			<section className="py-24 bg-[#F1F5F2]">
-				<div className="max-w-7xl mx-auto px-6 lg:px-8">
+			<section className="py-24 lg:py-32 bg-[#F8F6F3]">
+				<div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
 					<SectionHeader
-						eyebrow="Capabilities"
-						title="Professional Mounting Solutions"
-						description="Focused installations that enhance the comfort, style, and utility of every room."
+						eyebrow="Solutions"
+						title="Professional Mounting"
+						description="Installations focused on enhancing the style and utility of every room."
 					/>
 
-					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
-						{[
-							{
-								icon: Lightbulb,
-								title: "Interior Lighting",
-								text: "Clean installation of pendants, sconces, and chandeliers with precise, level alignment.",
-							},
-							{
-								icon: Fan,
-								title: "Ceiling Fans",
-								text: "Structural mounting and balancing to ensure wobble-free, quiet operation year-round.",
-							},
-							{
-								icon: Zap,
-								title: "Smart Controls",
-								text: "Installation of smart dimmers and Wi-Fi enabled switches for modern home automation.",
-							},
-							{
-								icon: Home,
-								title: "Wall Mounting",
-								text: "Secure mounting for heavy TVs, large mirrors, and artwork into wood or metal studs.",
-							},
-						].map((service, i) => (
+					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
+						{mainServices.map((service, i) => (
 							<div
 								key={i}
-								className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-[#2D5A3D] group"
+								className="bg-white p-10 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all group border-b-4 border-transparent hover:border-[#FFB800]"
 							>
-								<div className="w-12 h-12 bg-[#F8F6F3] rounded-xl flex items-center justify-center mb-6">
-									<service.icon className="w-6 h-6 text-[#2D5A3D] group-hover:scale-110 transition-transform" />
+								<div className="w-14 h-14 bg-[#F8F6F3] rounded-2xl flex items-center justify-center mb-8 mx-auto group-hover:bg-[#1F2E2B] transition-colors">
+									<service.icon className="w-7 h-7 text-[#2D5A3D] group-hover:text-[#FFB800]" />
 								</div>
-								<h3 className="text-lg font-bold text-[#1F2E2B] mb-2">
+								<h3 className="font-black text-[#1F2E2B] uppercase tracking-tight mb-4 leading-none text-lg">
 									{service.title}
 								</h3>
-								<p className="text-sm text-gray-600 leading-relaxed">
+								<p className="text-gray-600 font-medium leading-relaxed text-sm">
 									{service.text}
 								</p>
 							</div>
@@ -188,57 +226,48 @@ export default function LightingFixturesPage() {
 				</div>
 			</section>
 
-			{/* SERVICE AREA */}
-			<section className="py-24 bg-white border-y border-gray-100">
-				<div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-					<div className="inline-flex items-center gap-2 text-[#2D5A3D] font-bold uppercase tracking-widest text-sm mb-6">
-						<MapPin className="w-4 h-4" /> Serving Vancouver & Camas
-					</div>
-					<h2 className="text-3xl md:text-4xl font-bold text-[#1F2E2B] mb-8">
-						Brighten Your Home Today
-					</h2>
-					<p className="text-gray-600 leading-relaxed text-lg mb-10">
-						We provide reliable fixture updates throughout **Hazel Dell, Salmon
-						Creek, Felida, and Battle Ground**. We respect your home's
-						cleanliness and your family's schedule.
-					</p>
-					<div className="flex flex-wrap justify-center gap-6 font-bold text-[#1F2E2B]">
-						{["98660", "98683", "98607", "98642", "98685"].map((zip) => (
-							<span
-								key={zip}
-								className="px-4 py-2 bg-[#F1F5F2] rounded-lg text-sm"
-							>
-								{zip}
-							</span>
-						))}
+			{/* FINAL CTA - BILLBOARD STYLE */}
+			<section className="py-24 lg:py-40">
+				<div className="max-w-7xl mx-auto px-6">
+					<div className="bg-[#1F2E2B] rounded-[3rem] p-12 lg:p-24 text-center relative overflow-hidden border-b-[12px] border-[#FFB800] shadow-2xl">
+						<div className="relative z-10 max-w-3xl mx-auto space-y-8">
+							<h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none">
+								Ready for a <br />{" "}
+								<span className="text-[#FFB800]">Brighter Home?</span>
+							</h2>
+							<p className="text-[#A7C4B5] text-xl font-medium max-w-xl mx-auto">
+								Get your new fixtures installed safely and professionally.
+								Request a free estimate and let's get your project on the
+								calendar.
+							</p>
+
+							<div className="flex flex-col sm:flex-row gap-6 justify-center pt-4">
+								<Link
+									href="/contact"
+									className="px-12 py-6 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-xl"
+								>
+									Free Estimate
+								</Link>
+								<Link
+									href="tel:+19165086272"
+									className="px-12 py-6 border-2 border-white/20 text-white font-black uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-3"
+								>
+									<Phone className="w-5 h-5" /> 916.508.6272
+								</Link>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
 
-			{/* CTA */}
-			<section className="py-24 bg-[#1F2E2B] relative overflow-hidden">
-				<div className="max-w-4xl mx-auto px-6 lg:px-8 text-center relative z-10">
-					<motion.h2
-						initial={{ opacity: 0, y: 30 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true }}
-						className="text-3xl md:text-5xl font-extrabold text-white mb-8 tracking-tight"
-					>
-						Ready for a Brighter Home?
-					</motion.h2>
-
-					<p className="text-[#A7C4B5] text-xl mb-12 max-w-2xl mx-auto">
-						Get your new fixtures installed safely and professionally. Request a
-						free estimate and let's get your project on the calendar.
-					</p>
-
-					<Link
-						href="/contact"
-						className="inline-flex items-center gap-3 px-12 py-6 bg-[#2D5A3D] text-white font-bold rounded-2xl hover:bg-[#3a6d4b] transition-all shadow-2xl hover:scale-105"
-					>
-						Get My Free Estimate
-						<ArrowRight className="w-5 h-5" />
-					</Link>
+			{/* SEO FOOTER STRIP */}
+			<section className="py-12 bg-white border-t border-gray-100">
+				<div className="max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-x-10 gap-y-4 text-[10px] md:text-xs font-black text-gray-400 uppercase tracking-[0.4em]">
+					<span>VANCOUVER</span>
+					<span>CAMAS</span>
+					<span>RIDGEFIELD</span>
+					<span>HAZEL DELL</span>
+					<span>FELIDA</span>
 				</div>
 			</section>
 		</div>

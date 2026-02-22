@@ -18,6 +18,7 @@ import {
 	Phone,
 	type LucideIcon,
 	Star,
+	Square,
 } from "lucide-react";
 
 import SectionHeader from "@/app/components/SectionHeader";
@@ -63,6 +64,22 @@ export default function ServicesPage() {
 				"Vanity mounting",
 				"Luxury accessory setup",
 				"Toilet replacement",
+			],
+		},
+		{
+			id: "flooring",
+			icon: Square,
+			title: "Flooring & Repair Work",
+			href: "/services/flooring",
+			description:
+				"Specialized repairs and small installations for LVP, laminate, and tile—saving you the cost of full replacement.",
+			items: [
+				"Individual plank replacement",
+				"Subfloor squeak repair",
+				"Transition & threshold install",
+				"Grout & tile repair",
+				"Baseboard integration",
+				"LVP & Laminate repairs",
 			],
 		},
 		{
@@ -133,7 +150,7 @@ export default function ServicesPage() {
 
 	return (
 		<div className="overflow-hidden bg-[#FDFCFB]">
-			{/* HERO SECTION - AD STYLE */}
+			{/* HERO SECTION - BILLBOARD STYLE */}
 			<section className="relative min-h-[65vh] flex items-center overflow-hidden">
 				<div className="absolute inset-0">
 					<Image
@@ -257,11 +274,10 @@ export default function ServicesPage() {
 				</div>
 			</section>
 
-			{/* FINAL CTA - Billboard Style */}
+			{/* FINAL CTA */}
 			<section className="py-24 lg:py-40">
 				<div className="max-w-7xl mx-auto px-6">
 					<div className="bg-[#1F2E2B] rounded-[3rem] p-12 lg:p-24 text-center relative overflow-hidden border-b-[12px] border-[#FFB800] shadow-2xl">
-						{/* Background Texture/Accent */}
 						<div className="absolute top-0 right-0 w-64 h-64 bg-[#FFB800]/5 rounded-full -mr-32 -mt-32 blur-3xl" />
 
 						<div className="relative z-10 max-w-3xl mx-auto space-y-8">
