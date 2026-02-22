@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { useRef, useEffect } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import {
 	Wrench,
 	Hammer,
@@ -25,6 +26,41 @@ import SectionHeader from "@/app/components/SectionHeader";
 import HomeFaqSection from "@/app/components/HomeFaqSection";
 
 export default function HomePageContent() {
+	// SCROLL LOGIC: Monitor scroll progress to show button after Hero
+	const { scrollY } = useScroll();
+	const heroRef = useRef<HTMLElement>(null);
+	const heroEndRef = useRef(800);
+
+	useEffect(() => {
+		const updateHeroEnd = () => {
+			if (heroRef.current) {
+				heroEndRef.current = heroRef.current.offsetHeight;
+			}
+		};
+		updateHeroEnd();
+		window.addEventListener("resize", updateHeroEnd);
+		return () => window.removeEventListener("resize", updateHeroEnd);
+	}, []);
+
+	// buttonOpacity: Starts at 0, becomes 1 after scrolling past hero
+	const buttonOpacity = useTransform(scrollY, (value) => {
+		const h = heroEndRef.current;
+		if (value < h) return 0;
+		if (value > h + 200) return 1;
+		return (value - h) / 200;
+	});
+	// buttonScale: Starts at 0.8, becomes 1 for a "pop-in" effect
+	const buttonScale = useTransform(scrollY, (value) => {
+		const h = heroEndRef.current;
+		if (value < h) return 0.8;
+		if (value > h + 200) return 1;
+		return 0.8 + 0.2 * ((value - h) / 200);
+	});
+	// pointerEvents: Ensures the button isn't clickable while invisible
+	const pointerEvents = useTransform(scrollY, (value) =>
+		value > heroEndRef.current ? "auto" : "none",
+	);
+
 	const services = [
 		{
 			icon: Hammer,
@@ -114,19 +150,28 @@ export default function HomePageContent() {
 
 	return (
 		<div className="overflow-hidden bg-[#FDFCFB]">
-			{/* MOBILE STICKY CALL-TO-ACTION (High Conversion Addition) */}
-			<div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[90%] md:hidden transition-transform active:scale-95">
+			<motion.div
+				initial={{ opacity: 0 }}
+				style={{
+					opacity: buttonOpacity,
+					scale: buttonScale,
+					pointerEvents: pointerEvents as any,
+					left: "50%",
+					x: "-50%",
+				}}
+				className="fixed bottom-6 z-50 w-[90%] md:hidden"
+			>
 				<Link
 					href="/contact"
-					className="flex items-center justify-center gap-3 bg-[#FFB800] text-black font-black py-4 rounded-full shadow-[0_10px_30px_rgba(255,184,0,0.4)] border-2 border-white uppercase text-sm tracking-widest"
+					className="flex items-center justify-center gap-3 bg-[#FFB800] text-black font-black py-4 rounded-full shadow-[0_10px_40px_rgba(0,0,0,0.3)] border-2 border-white uppercase text-sm tracking-widest"
 				>
 					<Phone className="w-4 h-4" />
 					Get A Free Estimate
 				</Link>
-			</div>
+			</motion.div>
 
 			{/* HERO SECTION - FLASHY AD STYLE */}
-			<section className="relative min-h-screen flex items-center overflow-hidden">
+			<section ref={heroRef} className="relative min-h-screen flex items-center overflow-hidden">
 				<div className="absolute inset-0">
 					<Image
 						src="/bathroom.jpg.png"
@@ -135,7 +180,6 @@ export default function HomePageContent() {
 						priority
 						className="object-cover"
 					/>
-					{/* Aggressive gradient for text readability */}
 					<div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/60 to-transparent" />
 				</div>
 
@@ -198,7 +242,7 @@ export default function HomePageContent() {
 					</div>
 				</div>
 
-				{/* FLOATING TRUST BAR (As seen in reference image) */}
+				{/* FLOATING TRUST BAR */}
 				<div className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-[#14201D] to-[#1F2E2B] border-t-4 border-[#FFB800]/50 py-8 z-20">
 					<div className="max-w-7xl mx-auto px-6 flex flex-wrap justify-between items-center gap-8">
 						<div className="flex items-center gap-4">
@@ -260,7 +304,7 @@ export default function HomePageContent() {
 				</div>
 			</section>
 
-			{/* WHY CHOOSE US - WITH FLASHY RATING BADGE */}
+			{/* WHY CHOOSE US */}
 			<section className="py-32 bg-white">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-20 items-center">
 					<div className="relative">
@@ -272,8 +316,6 @@ export default function HomePageContent() {
 								className="object-cover"
 							/>
 						</div>
-
-						{/* Flashy 5.0 Rating Badge (Synced with your 50 review schema) */}
 						<div className="absolute -bottom-8 -right-8 bg-[#1F2E2B] p-10 rounded-2xl shadow-2xl border-b-8 border-[#FFB800]">
 							<div className="flex items-center gap-2 mb-2">
 								<p className="text-[#FFB800] font-black text-6xl">5.0</p>
@@ -292,15 +334,13 @@ export default function HomePageContent() {
 							</p>
 						</div>
 					</div>
-
 					<div>
 						<SectionHeader
 							eyebrow="The Norbilt Standard"
 							title="A Better Remodeling Experience"
-							description="One skilled professional. Clean execution. Reliable results. We believe home improvements should be seamless."
+							description="One skilled professional. Clean execution. Reliable results."
 							centered={false}
 						/>
-
 						<div className="space-y-10 mt-12">
 							{whyChoose.map((item, i) => (
 								<motion.div
@@ -329,7 +369,7 @@ export default function HomePageContent() {
 				</div>
 			</section>
 
-			{/* TESTIMONIAL CAROUSEL */}
+			{/* TESTIMONIALS */}
 			<section className="py-32 bg-[#1F2E2B] overflow-hidden">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8 mb-16">
 					<SectionHeader
@@ -338,7 +378,6 @@ export default function HomePageContent() {
 						light
 					/>
 				</div>
-
 				<div className="relative flex">
 					<motion.div
 						className="flex gap-6 pr-6"
@@ -370,7 +409,6 @@ export default function HomePageContent() {
 										"{t.text}"
 									</p>
 								</div>
-
 								<div className="flex items-center gap-4 border-t border-white/10 pt-6">
 									<div className="w-14 h-14 bg-[#FFB800] rounded-full flex items-center justify-center text-black font-black text-xl">
 										{t.name.charAt(0)}
