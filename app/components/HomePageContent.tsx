@@ -278,10 +278,6 @@ export default function HomePageContent() {
 							<div className="flex items-center gap-2 mb-2">
 								<p className="text-[#FFB800] font-black text-6xl">5.0</p>
 								<div className="h-12 w-[2px] bg-white/20 mx-2" />
-								<div className="text-white font-bold text-sm leading-tight uppercase">
-									50+ <br />
-									Reviews
-								</div>
 							</div>
 							<div className="flex gap-1 mb-2">
 								{[...Array(5)].map((_, i) => (
