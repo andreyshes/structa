@@ -39,19 +39,19 @@ export default function ServicePageClient({
 	const Icon = iconMap[serviceSlug] || Hammer;
 	const cityNameShort = city.name.split(",")[0];
 
-	// Audit Fix: Simplified FAQ answers for better "Readability" scores
+	// Simplified FAQ for maximum Readability score
 	const faqs = [
 		{
 			q: `How long does ${service.title} take in ${cityNameShort}?`,
-			a: `Most ${cityNameShort} projects finish in 1-2 days. We keep our workspace clean and work fast to minimize home disruption.`,
+			a: `Most ${cityNameShort} projects finish in 1 to 2 days. We work fast and keep our workspace clean to minimize home disruption.`,
 		},
 		{
 			q: `Are you a licensed general contractor in ${cityNameShort}?`,
-			a: `Yes. Norbilt is a fully licensed, bonded, and insured general contractor. We serve homeowners throughout ${cityNameShort} and Clark County.`,
+			a: `Yes. Norbilt is a licensed, bonded, and insured general contractor. We serve homeowners in ${cityNameShort} and Clark County.`,
 		},
 		{
 			q: `Do you provide free estimates for ${service.title}?`,
-			a: `We do. Contact us to schedule a walkthrough. We provide clear, transparent pricing for all ${cityNameShort} residents.`,
+			a: `Yes. Contact us for a walkthrough. We provide clear, honest pricing for all ${cityNameShort} residents.`,
 		},
 	];
 
@@ -72,7 +72,7 @@ export default function ServicePageClient({
 				}}
 			/>
 
-			{/* HERO SECTION - Optimized for Heading Hierarchy */}
+			{/* HERO SECTION - Keyword Optimized */}
 			<section className="pt-32 pb-24 bg-[#14201D] text-white relative overflow-hidden">
 				<div className="absolute inset-0 opacity-5 bg-[radial-gradient(#FFB800_1px,transparent_1px)] bg-[size:40px_40px]" />
 				<div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -83,19 +83,22 @@ export default function ServicePageClient({
 						<div className="flex items-center gap-3 text-[#FFB800] mb-6">
 							<Icon className="w-6 h-6" />
 							<span className="font-black uppercase tracking-widest text-xs">
-								Top-Rated ${cityNameShort} General Contractor
+								Expert {cityNameShort} General Contractor
 							</span>
 						</div>
-						{/* Audit Fix: H1 now contains the absolute primary keyword + location */}
+
 						<h1 className="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-8 leading-[0.85]">
 							{service.title} <br />
 							<span className="text-[#FFB800]">in {cityNameShort}, WA</span>
 						</h1>
-						<p className="max-w-2xl text-xl text-white/70 border-l-4 border-[#FFB800] pl-6 mb-10 font-medium">
-							Norbilt delivers professional ${service.title.toLowerCase()} for
-							homeowners. Our team ensures high-quality results and precision on
-							every project.
+
+						<p className="max-w-2xl text-xl text-white/70 border-l-4 border-[#FFB800] pl-6 mb-10 font-medium leading-relaxed">
+							Norbilt provides expert {service.title.toLowerCase()} for local
+							homeowners. Our team delivers high-quality results on every
+							project. We are the trusted choice for home repairs in{" "}
+							{cityNameShort}.
 						</p>
+
 						<Link
 							href="/contact"
 							className="inline-flex items-center gap-4 bg-[#FFB800] text-black px-10 py-5 rounded-2xl font-black uppercase tracking-widest hover:scale-105 transition-all shadow-xl"
@@ -118,13 +121,13 @@ export default function ServicePageClient({
 					<div>
 						<p className="text-3xl font-black">100%</p>
 						<p className="text-[10px] uppercase font-black text-gray-400">
-							Licensed/Bonded
+							Licensed & Bonded
 						</p>
 					</div>
 					<div>
-						<p className="text-3xl font-black">CLEAN</p>
+						<p className="text-3xl font-black">FAST</p>
 						<p className="text-[10px] uppercase font-black text-gray-400">
-							Project Sites
+							Project Completion
 						</p>
 					</div>
 					<div>
@@ -136,18 +139,22 @@ export default function ServicePageClient({
 				</div>
 			</section>
 
-			{/* CONTENT & SIDEBAR - Simplified Readability */}
+			{/* CONTENT & SIDEBAR */}
 			<section className="py-24 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20">
 				<div className="space-y-8">
 					<h2 className="text-4xl font-black text-[#1F2E2B] uppercase tracking-tight">
-						Local ${service.title} <br />
-						<span className="text-[#2D5A3D]">Experts in {cityNameShort}</span>
+						Professional {service.title} <br />
+						<span className="text-[#2D5A3D]">
+							for {cityNameShort} Properties
+						</span>
 					</h2>
+
 					<p className="text-gray-600 font-medium text-lg leading-relaxed">
-						Norbilt sets professional standards for every home project. We
-						understand local home styles. Our team provides efficient, clean
-						results that last for years.
+						Norbilt sets high standards for home projects. We understand Pacific
+						Northwest home styles. Our team provides clean, reliable results
+						that last for years. We handle every detail with professional care.
 					</p>
+
 					<div className="grid gap-4">
 						{service.features.map((feature: string) => (
 							<div
@@ -175,11 +182,11 @@ export default function ServicePageClient({
 						</p>
 						<div className="space-y-4 mb-10 text-sm font-bold uppercase">
 							<div className="flex items-center gap-3">
-								<Clock className="w-4 h-4 text-[#FFB800]" /> Prompt Service
+								<Clock className="w-4 h-4 text-[#FFB800]" /> Reliable Scheduling
 							</div>
 							<div className="flex items-center gap-3">
-								<MapPin className="w-4 h-4 text-[#FFB800]" /> {cityNameShort} &
-								Clark County
+								<MapPin className="w-4 h-4 text-[#FFB800]" /> {cityNameShort},
+								WA
 							</div>
 						</div>
 						<Link

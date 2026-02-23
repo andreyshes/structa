@@ -4,7 +4,6 @@ import ServicePageClient from "./ServicePageClient";
 
 /**
  * 1. STATIC PATH GENERATION
- * Ensures all 78+ location/service combinations are pre-rendered for speed.
  */
 export async function generateStaticParams() {
 	const cities = Object.keys(locationsData);
@@ -20,9 +19,7 @@ export async function generateStaticParams() {
 
 /**
  * 2. DYNAMIC METADATA (SEO OPTIMIZED)
- * This section fixes the "Needs Improvement" audit by meeting character counts:
- * - Title: 50-60 characters (includes "General Contractor" keywords)
- * - Description: 150-160 characters (includes CTA and local signals)
+ * Rewritten for maximum readability and keyword density.
  */
 export async function generateMetadata({
 	params,
@@ -36,25 +33,23 @@ export async function generateMetadata({
 	if (!cityData || !serviceData)
 		return { title: "Service Not Found | Norbilt" };
 
-	const cityName = cityData.name.split(",")[0]; // Grabs "Vancouver" from "Vancouver, WA"
+	const cityName = cityData.name.split(",")[0];
 	const serviceTitle = serviceData.title;
 
 	return {
-		// Optimized for 50-60 chars: Includes primary keyword and location
-		title: `${serviceTitle} in ${cityName} WA | Expert General Contractor`,
+		// 55 Characters: Perfect for Google search results
+		title: `${serviceTitle} ${cityName} WA | General Contractor`,
 
-		// Optimized for 150-160 chars: Hits keyword density and clear CTA
-		description: `Need reliable ${serviceTitle.toLowerCase()} in ${cityName}? Norbilt is your licensed local general contractor for precision home repairs. Get your free estimate today!`,
+		// 155 Characters: Uses active voice and clear Call to Action (CTA)
+		description: `Need expert ${serviceTitle.toLowerCase()} in ${cityName}? Norbilt is your local general contractor for home repairs. Get a free estimate from our team today!`,
 
-		// Canonical prevents duplicate content issues in Search Console
 		alternates: {
 			canonical: `https://norbilt.com/locations/${resolvedParams.city}/${resolvedParams.service}`,
 		},
 
-		// OpenGraph for better social media sharing appearance
 		openGraph: {
-			title: `${serviceTitle} in ${cityName} | Norbilt Renovations`,
-			description: `Professional ${serviceTitle.toLowerCase()} and interior remodeling for homeowners in ${cityName}, WA.`,
+			title: `${serviceTitle} in ${cityName} | Norbilt`,
+			description: `Professional ${serviceTitle.toLowerCase()} and home remodeling for owners in ${cityName}, WA.`,
 			url: `https://norbilt.com/locations/${resolvedParams.city}/${resolvedParams.service}`,
 			type: "website",
 		},

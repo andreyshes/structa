@@ -14,79 +14,79 @@ export const locationsData: Record<string, CityData> = {
 	vancouver: {
 		name: "Vancouver, WA",
 		description:
-			"Our central hub for professional home repair and precision finish carpentry in the heart of Clark County.",
+			"We provide expert home repairs and precision carpentry in Vancouver. Our team is the top choice for quality work in Clark County.",
 		neighborhoods: ["Downtown", "Uptown", "Cascade Park", "Fishers Landing"],
 	},
 	camas: {
 		name: "Camas, WA",
 		description:
-			"High-end interior improvements and detail-focused repairs for Camas and Prune Hill homeowners.",
+			"Norbilt offers high-end interior updates and repairs for Camas homes. We focus on quality results for every Prune Hill homeowner.",
 		neighborhoods: ["Prune Hill", "Deer Creek", "Grass Valley", "Fern Prairie"],
 	},
 	ridgefield: {
 		name: "Ridgefield, WA",
 		description:
-			"Expert trim installation and modernization services for the rapidly growing Ridgefield community.",
+			"We install expert trim and modern interior updates in Ridgefield. Trust our team for professional service in this growing community.",
 		neighborhoods: ["Union Ridge", "Bellwood", "Hillhurst"],
 	},
 	"battle-ground": {
 		name: "Battle Ground, WA",
 		description:
-			"Reliable handyman services and licensed interior renovations for residential properties in North County.",
+			"Get reliable handyman services and licensed renovations in Battle Ground. We help maintain and upgrade your North County home.",
 		neighborhoods: ["Daybreak", "Cherry Grove", "Lewisville"],
 	},
 	washougal: {
 		name: "Washougal, WA",
 		description:
-			"Professional structural maintenance and interior updates for the Gateway to the Gorge.",
+			"Norbilt provides home maintenance and interior updates in Washougal. We serve as the expert choice for your local property needs.",
 		neighborhoods: ["Downtown Washougal", "River's Edge", "Lookout Ridge"],
 	},
 	"brush-prairie": {
 		name: "Brush Prairie, WA",
 		description:
-			"Full-service interior improvements and custom carpentry for acreage estates and local homes.",
+			"We offer custom carpentry and interior improvements in Brush Prairie. Our team works on both local homes and large acreage estates.",
 		neighborhoods: ["Hockinson", "Meadow Glade", "Curtin Creek"],
 	},
 	felida: {
 		name: "Felida, WA",
 		description:
-			"Detail-oriented home improvements and fixture installations for the Felida community.",
+			"Norbilt delivers detail-oriented home improvements in Felida. We handle fixture installs and professional updates for your home.",
 		neighborhoods: ["Felida Overlook", "Lakeshore Park", "Erickson Farms"],
 	},
 	"hazel-dell": {
 		name: "Hazel Dell, WA",
 		description:
-			"Trusted local repairs and bathroom fixture upgrades across Hazel Dell North and South.",
+			"We provide trusted repairs and bathroom updates in Hazel Dell. Count on our local team for fast and reliable home service.",
 		neighborhoods: ["Starcrest", "Northeast Hazel Dell", "West Hazel Dell"],
 	},
 	"salmon-creek": {
 		name: "Salmon Creek, WA",
 		description:
-			"Quality drywall matching and interior painting prep for Salmon Creek residential properties.",
+			"Norbilt offers drywall matching and interior painting prep in Salmon Creek. We ensure your home looks great with quality finishes.",
 		neighborhoods: ["Mount Vista", "Salmon Creek Estates", "Clineline"],
 	},
 	"five-corners": {
 		name: "Five Corners, WA",
 		description:
-			"Dependable interior carpentry and handyman solutions for the Five Corners area.",
+			"We offer dependable carpentry and handyman solutions in Five Corners. Our experts handle small fixes and larger interior tasks.",
 		neighborhoods: ["Sunnyside", "Covington", "Orchards"],
 	},
 	orchards: {
 		name: "Orchards, WA",
 		description:
-			"Efficient home maintenance and door/window casing repairs in the Orchards neighborhood.",
+			"Norbilt provides efficient home maintenance and repairs in Orchards. We specialize in door and window casing for local houses.",
 		neighborhoods: ["Burnt Bridge Creek", "Sifton", "Heritage"],
 	},
 	"mill-plain": {
 		name: "Mill Plain, WA",
 		description:
-			"Modernizing Mill Plain interiors with custom trim and flooring transition updates.",
+			"Modernize your Mill Plain home with custom trim and flooring updates. Our team delivers professional interior results you will love.",
 		neighborhoods: ["Cimarron", "Landover", "Bennington"],
 	},
 	"lake-shore": {
 		name: "Lake Shore, WA",
 		description:
-			"Specialized interior repairs and carpentry for the Lake Shore and Vancouver Lake area.",
+			"We provide specialized interior repairs and carpentry in Lake Shore. Our experts help maintain beautiful homes near Vancouver Lake.",
 		neighborhoods: ["Lakeview Heights", "Lakeshore Dr", "Northwest Lake Shore"],
 	},
 };
@@ -95,7 +95,7 @@ export const servicesData: Record<string, ServiceData> = {
 	"handyman-services": {
 		title: "Handyman Services",
 		description:
-			"Professional, reliable home repair solutions for local homeowners. No job is too small for our expert team.",
+			"We offer reliable home repair solutions for local owners. No job is too small for our expert team of professionals.",
 		features: [
 			"General Home Repairs",
 			"Fixture Installation",
@@ -106,7 +106,7 @@ export const servicesData: Record<string, ServiceData> = {
 	"drywall-repair": {
 		title: "Drywall Repair",
 		description:
-			"Seamless hole patching and texture matching that makes your walls look brand new again.",
+			"We provide seamless hole patching and texture matching. Our team makes your home walls look brand new again.",
 		features: [
 			"Patching & Sanding",
 			"Texture Matching",
@@ -117,7 +117,7 @@ export const servicesData: Record<string, ServiceData> = {
 	"finish-carpentry": {
 		title: "Finish Carpentry",
 		description:
-			"Precision trim work, baseboards, and crown molding that adds a touch of elegance to every room.",
+			"Get precision trim work and crown molding for your home. We add a touch of elegance to every room in your house.",
 		features: [
 			"Crown Molding",
 			"Baseboard Install",
@@ -128,7 +128,7 @@ export const servicesData: Record<string, ServiceData> = {
 	"door-window-repair": {
 		title: "Door & Window Repair",
 		description:
-			"Expert adjustments and repairs to ensure your doors and windows operate smoothly and securely.",
+			"Our team handles repairs to keep your doors and windows secure. We ensure everything operates smoothly and correctly.",
 		features: [
 			"Door Realignment",
 			"Weather Stripping",
@@ -139,7 +139,7 @@ export const servicesData: Record<string, ServiceData> = {
 	"flooring-repair-interior-updates": {
 		title: "Flooring Repair & Interior Updates",
 		description:
-			"Modernizing your home's interior with flooring fixes and aesthetic upgrades that increase value.",
+			"Modernize your interior with flooring fixes and updates. We offer upgrades that increase the value of your local home.",
 		features: [
 			"Flooring Transitions",
 			"Minor Tile Repair",
@@ -150,7 +150,7 @@ export const servicesData: Record<string, ServiceData> = {
 	"kitchen-bathroom-updates": {
 		title: "Kitchen & Bathroom Updates",
 		description:
-			"Refreshing your most used spaces with modern fixtures, hardware, and surface updates.",
+			"Refresh your kitchen and bathroom with modern fixtures. We update hardware and surfaces to give your space a new look.",
 		features: [
 			"Cabinet Hardware",
 			"Faucet Installation",

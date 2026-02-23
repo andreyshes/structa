@@ -33,18 +33,19 @@ export default function CityLandingClient({ city, citySlug }: any) {
 	const [openFaq, setOpenFaq] = useState<number | null>(null);
 	const cityNameShort = city.name.split(",")[0];
 
+	// Simplified FAQs for better readability scores
 	const faqs = [
 		{
 			q: `Do you provide home repairs in ${cityNameShort}?`,
-			a: `Yes. Norbilt serves all ${cityNameShort} homeowners. We handle everything from small handyman tasks to full interior remodeling projects.`,
+			a: `Yes. Norbilt serves all ${cityNameShort} homeowners. We handle small handyman tasks and full interior remodeling.`,
 		},
 		{
 			q: `Are you a licensed general contractor in ${cityNameShort}, WA?`,
-			a: `Yes. Norbilt is a fully licensed, bonded, and insured general contractor. We provide professional repair services with total integrity.`,
+			a: `Yes. Norbilt is a licensed, bonded, and insured general contractor. We provide professional repair services with integrity.`,
 		},
 		{
 			q: `Which neighborhoods in ${cityNameShort} do you visit?`,
-			a: `We serve the entire region. This includes ${city.neighborhoods.slice(0, 3).join(", ")} and nearby Clark County communities.`,
+			a: `We serve the whole region. This includes ${city.neighborhoods.slice(0, 3).join(", ")} and nearby Clark County towns.`,
 		},
 	];
 
@@ -79,7 +80,7 @@ export default function CityLandingClient({ city, citySlug }: any) {
 				}}
 			/>
 
-			{/* HERO SECTION - Includes Internal Linking "Spiderweb" */}
+			{/* HERO SECTION - Optimized for Flesch Reading Score */}
 			<section className="pt-32 pb-24 bg-[#14201D] text-white relative overflow-hidden">
 				<div className="absolute top-0 right-0 w-1/3 h-full bg-[#FFB800]/5 -skew-x-12 translate-x-1/2" />
 				<div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -98,28 +99,28 @@ export default function CityLandingClient({ city, citySlug }: any) {
 							<span className="text-[#FFB800]">in {cityNameShort}, WA</span>
 						</h1>
 						<p className="text-xl text-white/70 max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6 leading-relaxed mb-10">
-							{city.description} As a leading{" "}
+							Norbilt offers expert home remodeling and repair. As a leading{" "}
 							<Link
 								href={`/locations/${citySlug}`}
 								className="text-[#FFB800] hover:underline underline-offset-8"
 							>
 								General Contractor in {cityNameShort}
 							</Link>
-							, we specialize in everything from{" "}
+							, we specialize in{" "}
 							<Link
 								href={`/locations/${citySlug}/drywall-repair`}
 								className="hover:text-white transition-colors underline decoration-[#FFB800]/30"
 							>
 								Drywall Repair
 							</Link>{" "}
-							to{" "}
+							and{" "}
 							<Link
 								href={`/locations/${citySlug}/finish-carpentry`}
 								className="hover:text-white transition-colors underline decoration-[#FFB800]/30"
 							>
 								Finish Carpentry
 							</Link>
-							.
+							. We deliver quality work for every homeowner.
 						</p>
 						<div className="flex flex-wrap gap-4">
 							<Link
@@ -156,16 +157,16 @@ export default function CityLandingClient({ city, citySlug }: any) {
 				</div>
 			</div>
 
-			{/* SERVICE GRID */}
+			{/* SERVICE GRID - Simplified Text */}
 			<section className="py-24 max-w-7xl mx-auto px-6">
 				<div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
 					<div className="max-w-xl">
 						<h2 className="text-4xl font-black text-[#1F2E2B] uppercase tracking-tighter mb-4">
-							Local Craftsmanship
+							Local Expert Services
 						</h2>
 						<p className="text-gray-500 font-medium leading-relaxed">
-							Explore our specialized services for {cityNameShort} homeowners.
-							We handle everything from minor repairs to interior updates.
+							We provide professional repairs for {cityNameShort} homes. Our
+							team handles everything from small fixes to interior updates.
 						</p>
 					</div>
 					<div className="flex items-center gap-2 bg-[#F8F6F3] px-6 py-3 rounded-2xl border border-gray-100 font-black uppercase tracking-widest text-[10px] text-[#1F2E2B]">
@@ -196,7 +197,7 @@ export default function CityLandingClient({ city, citySlug }: any) {
 									</h3>
 									<p className="text-gray-500 text-sm font-medium mb-8 leading-relaxed">
 										Professional {service.title.toLowerCase()} results for your
-										residential property.
+										home.
 									</p>
 									<div className="inline-flex items-center gap-2 bg-[#1F2E2B] text-white px-5 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest group-hover:bg-[#FFB800] group-hover:text-black transition-colors">
 										View Service <ArrowRight className="w-4 h-4" />
@@ -220,7 +221,7 @@ export default function CityLandingClient({ city, citySlug }: any) {
 						</h2>
 						<p className="text-[#A7C4B5] mb-10 font-medium text-lg leading-relaxed">
 							We bring our mobile workshop to your door. Our team serves the
-							entire region, including:
+							entire area, including:
 						</p>
 						<div className="grid grid-cols-2 gap-y-4">
 							{city.neighborhoods.map((n: string) => (
@@ -250,7 +251,7 @@ export default function CityLandingClient({ city, citySlug }: any) {
 				</div>
 			</section>
 
-			{/* LOCAL PROOF & MAP SECTION - New Change #2 */}
+			{/* LOCAL PROOF & MAP SECTION */}
 			<section className="py-24 bg-white">
 				<div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
 					<div>
@@ -283,9 +284,9 @@ export default function CityLandingClient({ city, citySlug }: any) {
 								</div>
 							</div>
 							<p className="text-gray-500 italic text-sm leading-relaxed">
-								Norbilt is a mobile-first service provider. We bring high-end
-								craftsmanship directly to your home in {cityNameShort}. Our
-								estimates are transparent and our work is guaranteed.
+								Norbilt is a mobile service provider. We bring high-end
+								craftsmanship to your home in {cityNameShort}. Our estimates are
+								clear and our work is guaranteed.
 							</p>
 						</div>
 					</div>
@@ -302,7 +303,6 @@ export default function CityLandingClient({ city, citySlug }: any) {
 							referrerPolicy="no-referrer-when-downgrade"
 							className="grayscale group-hover:grayscale-0 transition-all duration-700"
 						></iframe>
-
 						<div className="absolute inset-0 pointer-events-none border-[1px] border-black/5 rounded-[3rem]"></div>
 					</div>
 				</div>
