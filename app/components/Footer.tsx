@@ -13,7 +13,6 @@ export default function Footer() {
 					{/* Brand Column */}
 					<div>
 						<div className="flex items-center mb-6">
-							{/* Jumbo Footer Logo */}
 							<div className="relative w-32 h-32 -ml-4">
 								<Image
 									src="/NORBILT.png"
@@ -25,18 +24,18 @@ export default function Footer() {
 						</div>
 
 						<p className="text-[#F8F6F3]/70 text-sm leading-relaxed mb-6">
-							Expert hands delivering exceptional results across the Pacific
-							Northwest. Thoughtful craftsmanship and respect for your home.
+							Expert home repairs and quality service for local owners. We treat
+							your house with care and respect.
 						</p>
 
 						<div className="flex items-center gap-2 text-sm">
-							<span className="px-3 py-1 bg-[#4A7C59]/30 text-[#F8F6F3] rounded-full text-[12px] font-medium">
+							<span className="px-3 py-1 bg-[#4A7C59]/30 text-[#F8F6F3] rounded-full text-[12px] font-bold">
 								Licensed
 							</span>
-							<span className="px-3 py-1 bg-[#4A7C59]/30 text-[#F8F6F3] rounded-full text-[12px] font-medium">
+							<span className="px-3 py-1 bg-[#4A7C59]/30 text-[#F8F6F3] rounded-full text-[12px] font-bold">
 								Bonded
 							</span>
-							<span className="px-3 py-1 bg-[#4A7C59]/30 text-[#F8F6F3] rounded-full text-[12px] font-medium">
+							<span className="px-3 py-1 bg-[#4A7C59]/30 text-[#F8F6F3] rounded-full text-[12px] font-bold">
 								Insured
 							</span>
 						</div>
@@ -44,13 +43,13 @@ export default function Footer() {
 
 					{/* Quick Links */}
 					<div>
-						<h4 className="text-sm font-semibold uppercase tracking-wider mb-6 text-[#F8F6F3]/90">
-							Quick Links
+						<h4 className="text-sm font-bold uppercase tracking-wider mb-6 text-[#F8F6F3]/90">
+							Information
 						</h4>
 						<ul className="space-y-3">
 							{[
 								{ name: "Home", href: "/" },
-								{ name: "About", href: "/about" },
+								{ name: "About Us", href: "/about" },
 								{ name: "Services", href: "/services" },
 								{ name: "Locations", href: "/locations" },
 								{ name: "Contact", href: "/contact" },
@@ -69,23 +68,23 @@ export default function Footer() {
 
 					{/* Services */}
 					<div>
-						<h4 className="text-sm font-semibold uppercase tracking-wider mb-6 text-[#F8F6F3]/90">
+						<h4 className="text-sm font-bold uppercase tracking-wider mb-6 text-[#F8F6F3]/90">
 							Services
 						</h4>
 						<ul className="space-y-3 text-sm text-[#F8F6F3]/60">
-							<li>General Repairs</li>
+							<li>Home Repairs</li>
 							<li>Finish Carpentry</li>
-							<li>Bathroom Refreshes</li>
-							<li>Kitchen Updates</li>
-							<li>Property Improvements</li>
+							<li>Bathroom Updates</li>
+							<li>Kitchen Remodeling</li>
+							<li>Drywall Patching</li>
 							<li>Custom Projects</li>
 						</ul>
 					</div>
 
 					{/* Contact Info */}
 					<div>
-						<h4 className="text-sm font-semibold uppercase tracking-wider mb-6 text-[#F8F6F3]/90">
-							Get in Touch
+						<h4 className="text-sm font-bold uppercase tracking-wider mb-6 text-[#F8F6F3]/90">
+							Contact Us
 						</h4>
 						<ul className="space-y-4">
 							<li className="flex items-center gap-3">
@@ -111,7 +110,7 @@ export default function Footer() {
 									<MapPin className="w-4 h-4 text-[#4A7C59]" />
 								</div>
 								<span className="text-sm text-[#F8F6F3]/70">
-									Vancouver, WA & Surrounding Areas
+									Vancouver, WA & Clark County
 								</span>
 							</li>
 						</ul>
@@ -121,13 +120,13 @@ export default function Footer() {
 
 			{/* Bottom Bar */}
 			<div className="border-t border-[#F8F6F3]/10">
-				<div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
+				<div className="max-w-7xl mx-auto px-6 lg:px-8 py-6 text-center md:text-left">
 					<div className="flex flex-col md:flex-row justify-between items-center gap-4">
 						<p className="text-sm text-[#F8F6F3]/50">
-							© {currentYear} Norbilt. All rights reserved.
+							© {currentYear} Norbilt.
 						</p>
 						<p className="text-sm text-[#F8F6F3]/50">
-							Proudly serving the Pacific Northwest
+							General Contractor in Vancouver, WA
 						</p>
 					</div>
 				</div>

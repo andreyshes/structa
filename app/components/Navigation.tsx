@@ -37,19 +37,19 @@ export default function Navigation() {
 			>
 				<div className="max-w-7xl mx-auto px-6 lg:px-8 h-full">
 					<div className="flex items-center justify-between h-full">
-						{/* Larger Logo - Text Removed */}
-						{/* Jumbo Logo Section */}
+						{/* Logo Section with Hidden Text for SEO */}
 						<Link href="/" className="relative flex items-center group">
+							<span className="sr-only">
+								Norbilt General Contractor Vancouver WA
+							</span>
 							<div
 								className={`relative transition-all duration-500 transform ${
-									isScrolled
-										? "w-20 h-20" // Size when scrolled
-										: "w-40 h-40 scale-125 translate-y-2"
+									isScrolled ? "w-20 h-20" : "w-40 h-40 scale-125 translate-y-2"
 								}`}
 							>
 								<Image
 									src="/NORBILT.png"
-									alt="Norbilt Logo"
+									alt="Norbilt Home Repairs Logo"
 									fill
 									priority
 									className={`object-contain transition-all duration-500 ${
@@ -67,7 +67,7 @@ export default function Navigation() {
 								<Link
 									key={link.href}
 									href={link.href}
-									className={`px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-[#2D5A3D]/10 ${
+									className={`px-4 py-2 text-sm font-bold transition-all duration-300 rounded-lg hover:bg-[#2D5A3D]/10 ${
 										isScrolled
 											? "text-[#2C3E3A] hover:text-[#2D5A3D]"
 											: "text-[#F8F6F3]/90 hover:text-[#F8F6F3]"
@@ -79,9 +79,9 @@ export default function Navigation() {
 
 							<Link
 								href="/contact"
-								className="ml-4 px-6 py-2.5 bg-[#2D5A3D] text-[#F8F6F3] text-sm font-medium rounded-lg hover:bg-[#4A7C59] transition-all duration-300 shadow-lg shadow-[#2D5A3D]/20"
+								className="ml-4 px-6 py-2.5 bg-[#2D5A3D] text-[#F8F6F3] text-sm font-bold rounded-lg hover:bg-[#4A7C59] transition-all duration-300 shadow-lg"
 							>
-								Request a Quote
+								Get Free Estimate
 							</Link>
 						</div>
 
@@ -91,6 +91,7 @@ export default function Navigation() {
 							className={`lg:hidden p-2 rounded-lg transition-colors ${
 								isScrolled ? "text-[#2C3E3A]" : "text-[#F8F6F3]"
 							}`}
+							aria-label="Toggle Menu"
 						>
 							{isMobileMenuOpen ? (
 								<X className="w-8 h-8" />
@@ -134,7 +135,7 @@ export default function Navigation() {
 										<Link
 											href={link.href}
 											onClick={() => setIsMobileMenuOpen(false)}
-											className="block px-4 py-4 text-lg text-[#2C3E3A] font-medium rounded-lg hover:bg-[#2D5A3D]/10"
+											className="block px-4 py-4 text-lg text-[#2C3E3A] font-bold rounded-lg hover:bg-[#2D5A3D]/10"
 										>
 											{link.name}
 										</Link>
@@ -144,9 +145,9 @@ export default function Navigation() {
 								<Link
 									href="/contact"
 									onClick={() => setIsMobileMenuOpen(false)}
-									className="block w-full text-center mt-6 px-6 py-4 bg-[#2D5A3D] text-[#F8F6F3] font-bold rounded-xl hover:bg-[#4A7C59] shadow-lg"
+									className="block w-full text-center mt-6 px-6 py-4 bg-[#2D5A3D] text-[#F8F6F3] font-black uppercase tracking-widest rounded-xl hover:bg-[#4A7C59] shadow-lg"
 								>
-									Request a Quote
+									Get Free Estimate
 								</Link>
 							</div>
 						</motion.div>

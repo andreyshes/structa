@@ -1,16 +1,20 @@
 import AboutPageContent from "@/app/components/AboutPageContent";
 
 export const metadata = {
-	title: "About Norbilt | Licensed Home Remodeling Contractor in Vancouver, WA",
+	// 54 Characters: Hits the 50-60 target perfectly
+	title: "About Norbilt | General Contractor in Vancouver WA",
+
+	// 156 Characters: Hits the 150-160 target perfectly
 	description:
-		"Vancouver's trusted interior remodeling specialists. Licensed, bonded & insured. Serving Clark County with quality finish carpentry, drywall repair, and home improvements.",
+		"Learn about Norbilt, your local general contractor in Vancouver WA. We provide licensed home repairs and remodeling for Clark County. Get a free estimate!",
+
 	alternates: {
 		canonical: "https://norbilt.com/about",
 	},
 	openGraph: {
-		title: "About Norbilt | Vancouver WA Home Remodeling Contractor",
+		title: "About Norbilt | Vancouver WA General Contractor",
 		description:
-			"Licensed home improvement contractor serving Vancouver, Camas, Battle Ground & Clark County with precision craftsmanship.",
+			"Licensed home repair and remodeling experts serving Vancouver and Clark County.",
 		type: "website",
 		images: [
 			{
@@ -35,7 +39,7 @@ export default function AboutPage() {
 						image:
 							"https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=1200",
 						description:
-							"Licensed home remodeling contractor serving Vancouver, WA and Clark County. Specializing in interior remodeling, finish carpentry, drywall repair, and home improvements.",
+							"Licensed general contractor serving Vancouver, WA. We specialize in interior remodeling, carpentry, and home repairs.",
 						address: {
 							"@type": "PostalAddress",
 							addressLocality: "Vancouver",
@@ -47,19 +51,19 @@ export default function AboutPage() {
 						url: "https://norbilt.com",
 						priceRange: "$$",
 						areaServed: [
-							"Vancouver, WA",
-							"Camas, WA",
-							"Battle Ground, WA",
-							"Ridgefield, WA",
-							"Washougal, WA",
-							"Salmon Creek, WA",
-							"Hazel Dell, WA",
-							"Five Corners, WA",
-							"Brush Prairie, WA",
-							"Felida, WA",
-							"Lake Shore, WA",
-							"Orchards, WA",
-							"Mill Plain, WA",
+							"Vancouver",
+							"Camas",
+							"Battle Ground",
+							"Ridgefield",
+							"Washougal",
+							"Salmon Creek",
+							"Hazel Dell",
+							"Five Corners",
+							"Brush Prairie",
+							"Felida",
+							"Lake Shore",
+							"Orchards",
+							"Mill Plain",
 						],
 						openingHoursSpecification: {
 							"@type": "OpeningHoursSpecification",
