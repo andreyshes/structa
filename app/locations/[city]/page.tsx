@@ -13,31 +13,27 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 	const { city } = await params;
 	const cityData = locationsData[city];
 
-	// SAFETY CHECK: Prevents the "split of undefined" Vercel crash
+	// SAFETY CHECK: Prevents build crash if city name is missing
 	if (!cityData || !cityData.name) {
 		return { title: "Local Home Repair Contractor | Norbilt" };
 	}
 
-	// SAFE SPLIT: Handles the data safely
 	const cityName = cityData.name?.split(",")[0] || "Local";
-
-	// SHORT TITLE: Keeps audit green (under 60 chars)
 	const shortTitle = `General Contractor ${cityName} WA | Norbilt`;
 	const fullDesc = `Looking for a general contractor in ${cityName}? Norbilt provides licensed home repairs and remodeling for ${cityData.neighborhoods?.slice(0, 2).join(" and ") || "local"} residents.`;
+	const pageUrl = `https://norbilt.com/locations/${city}`;
 
 	return {
 		title: shortTitle,
 		description: fullDesc,
-
 		alternates: {
-			canonical: `https://norbilt.com/locations/${city}`,
+			canonical: pageUrl,
 		},
-
-		// Fills those empty audit boxes for Social Media
+		// Fills all social/Facebook audit boxes
 		openGraph: {
 			title: shortTitle,
 			description: fullDesc,
-			url: `https://norbilt.com/locations/${city}`,
+			url: pageUrl,
 			siteName: "Norbilt",
 			locale: "en_US",
 			type: "website",
@@ -50,7 +46,6 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 				},
 			],
 		},
-
 		twitter: {
 			card: "summary_large_image",
 			title: shortTitle,

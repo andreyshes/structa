@@ -3,9 +3,6 @@ import { notFound } from "next/navigation";
 import ServicePageClient from "./ServicePageClient";
 import { Metadata } from "next";
 
-/**
- * 1. STATIC PATH GENERATION
- */
 export async function generateStaticParams() {
 	const cities = Object.keys(locationsData);
 	const services = Object.keys(servicesData);
@@ -18,10 +15,6 @@ export async function generateStaticParams() {
 	);
 }
 
-/**
- * 2. DYNAMIC METADATA (SEO OPTIMIZED)
- * Fixed to prevent 'split' errors and shortened to avoid 'Title Too Long' audit flags.
- */
 export async function generateMetadata({
 	params,
 }: {
@@ -31,34 +24,30 @@ export async function generateMetadata({
 	const cityData = locationsData[resolvedParams.city];
 	const serviceData = servicesData[resolvedParams.service];
 
-	// SAFETY CHECK: Prevents build crash if data is missing
+	// SAFETY CHECK: Prevents build crash
 	if (!cityData || !serviceData || !cityData.name) {
 		return { title: "Home Repair Services | Norbilt" };
 	}
 
-	// SAFE SPLIT: Uses optional chaining to handle city name safely
 	const cityName = cityData.name?.split(",")[0] || "Local";
 
-	// LOGIC TO SHORTEN TITLES: Keeps them under 60 chars
-	// "Flooring Repair & Interior Updates" -> "Flooring Repair"
+	// SHORTENING LOGIC: Removes extra text like "& Interior Updates" to fix title length
 	const serviceTitle = serviceData.title.split(" &")[0].split(" and")[0];
-
 	const shortTitle = `${serviceTitle} in ${cityName} WA | Norbilt`;
 	const fullDesc = `Need expert ${serviceTitle.toLowerCase()} in ${cityName}? Norbilt is your local general contractor for home repairs. Get a free estimate today!`;
+	const pageUrl = `https://norbilt.com/locations/${resolvedParams.city}/${resolvedParams.service}`;
 
 	return {
 		title: shortTitle,
 		description: fullDesc,
-
 		alternates: {
-			canonical: `https://norbilt.com/locations/${resolvedParams.city}/${resolvedParams.service}`,
+			canonical: pageUrl,
 		},
-
-		// Fills the empty Facebook/Social Metadata boxes in your audit
+		// Fills "OG URL Missing" and "Facebook Metadata" boxes
 		openGraph: {
 			title: shortTitle,
 			description: fullDesc,
-			url: `https://norbilt.com/locations/${resolvedParams.city}/${resolvedParams.service}`,
+			url: pageUrl,
 			siteName: "Norbilt",
 			locale: "en_US",
 			type: "website",
@@ -71,7 +60,6 @@ export async function generateMetadata({
 				},
 			],
 		},
-
 		twitter: {
 			card: "summary_large_image",
 			title: shortTitle,
@@ -81,9 +69,6 @@ export async function generateMetadata({
 	};
 }
 
-/**
- * 3. SERVER-SIDE PAGE LOGIC
- */
 export default async function Page({
 	params,
 }: {
