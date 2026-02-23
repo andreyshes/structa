@@ -1,67 +1,43 @@
-import { locationsData } from "@/app/locations/data";
+import { locationsData } from "../data";
 import { notFound } from "next/navigation";
-import ServiceLandingClient from "./[service]/ServicePageClient";
+import CityLandingClient from "./CityLandingClient";
 import { Metadata } from "next";
 
 export async function generateStaticParams() {
-	const params: { city: string; service: string }[] = [];
-
-	Object.keys(locationsData).forEach((city) => {
-		// Assuming each city object has a 'services' keys or you iterate common services
-		const services = [
-			"handyman",
-			"drywall-repair",
-			"finish-carpentry",
-			"door-window",
-			"flooring",
-			"kitchen-bath",
-			"lighting",
-		];
-		services.forEach((service) => {
-			params.push({ city, service });
-		});
-	});
-
-	return params;
+	return Object.keys(locationsData).map((city) => ({
+		city: city,
+	}));
 }
 
 export async function generateMetadata({ params }: any): Promise<Metadata> {
-	const { city, service } = await params;
+	const { city } = await params;
 	const cityData = locationsData[city];
 
-	if (!cityData) return { title: "Location Not Found" };
+	// SAFETY CHECK: Prevents the "split of undefined" Vercel crash
+	if (!cityData || !cityData.name) {
+		return { title: "Local Home Repair Contractor | Norbilt" };
+	}
 
-	const cityName = cityData.name.split(",")[0];
+	// SAFE SPLIT: Handles the data safely
+	const cityName = cityData.name?.split(",")[0] || "Local";
 
-	// LOGIC TO FIX "TITLE TOO LONG"
-	// This takes "Flooring Repair & Interior Updates" and turns it into "Flooring Repair"
-	// keeping the total character count around 40-50 chars.
-	const rawServiceName = service
-		.split("-")
-		.map((word: string) => word.charAt(0).toUpperCase() + word.slice(1))
-		.join(" ");
-	const shortServiceName = rawServiceName
-		.split(" Repair")[0]
-		.split(" &")[0]
-		.split(" Updates")[0];
-
-	const shortTitle = `${shortServiceName} in ${cityName} WA | Norbilt`;
-	const fullDesc = `Expert ${rawServiceName.toLowerCase()} in ${cityName}, WA. Norbilt provides professional home repairs and licensed contracting for your local neighborhood.`;
+	// SHORT TITLE: Keeps audit green (under 60 chars)
+	const shortTitle = `General Contractor ${cityName} WA | Norbilt`;
+	const fullDesc = `Looking for a general contractor in ${cityName}? Norbilt provides licensed home repairs and remodeling for ${cityData.neighborhoods?.slice(0, 2).join(" and ") || "local"} residents.`;
 
 	return {
 		title: shortTitle,
 		description: fullDesc,
 
-		// Fixes the "Canonical mismatch"
 		alternates: {
-			canonical: `https://norbilt.com/locations/${city}/${service}`,
+			canonical: `https://norbilt.com/locations/${city}`,
 		},
 
-		// Fills those "Empty Boxes" in the HeyTony Audit
+		// Fills those empty audit boxes for Social Media
 		openGraph: {
 			title: shortTitle,
 			description: fullDesc,
-			url: `https://norbilt.com/locations/${city}/${service}`,
+			url: `https://norbilt.com/locations/${city}`,
 			siteName: "Norbilt",
 			locale: "en_US",
 			type: "website",
@@ -70,7 +46,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 					url: "https://norbilt.com/og-image.jpg",
 					width: 1200,
 					height: 630,
-					alt: `${shortServiceName} Services in ${cityName}`,
+					alt: `Norbilt Services in ${cityName} WA`,
 				},
 			],
 		},
@@ -85,16 +61,10 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 }
 
 export default async function Page({ params }: any) {
-	const { city: citySlug, service: serviceSlug } = await params;
+	const { city: citySlug } = await params;
 	const city = locationsData[citySlug];
 
 	if (!city) return notFound();
 
-	return (
-		<ServiceLandingClient
-			city={city}
-			citySlug={citySlug}
-			serviceSlug={serviceSlug}
-		/>
-	);
+	return <CityLandingClient city={city} citySlug={citySlug} />;
 }

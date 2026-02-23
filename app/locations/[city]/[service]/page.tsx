@@ -1,6 +1,7 @@
 import { locationsData, servicesData } from "../../data";
 import { notFound } from "next/navigation";
 import ServicePageClient from "./ServicePageClient";
+import { Metadata } from "next";
 
 /**
  * 1. STATIC PATH GENERATION
@@ -19,39 +20,63 @@ export async function generateStaticParams() {
 
 /**
  * 2. DYNAMIC METADATA (SEO OPTIMIZED)
- * Rewritten for maximum readability and keyword density.
+ * Fixed to prevent 'split' errors and shortened to avoid 'Title Too Long' audit flags.
  */
 export async function generateMetadata({
 	params,
 }: {
 	params: Promise<{ city: string; service: string }> | any;
-}) {
+}): Promise<Metadata> {
 	const resolvedParams = await params;
 	const cityData = locationsData[resolvedParams.city];
 	const serviceData = servicesData[resolvedParams.service];
 
-	if (!cityData || !serviceData)
-		return { title: "Service Not Found | Norbilt" };
+	// SAFETY CHECK: Prevents build crash if data is missing
+	if (!cityData || !serviceData || !cityData.name) {
+		return { title: "Home Repair Services | Norbilt" };
+	}
 
-	const cityName = cityData.name.split(",")[0];
-	const serviceTitle = serviceData.title;
+	// SAFE SPLIT: Uses optional chaining to handle city name safely
+	const cityName = cityData.name?.split(",")[0] || "Local";
+
+	// LOGIC TO SHORTEN TITLES: Keeps them under 60 chars
+	// "Flooring Repair & Interior Updates" -> "Flooring Repair"
+	const serviceTitle = serviceData.title.split(" &")[0].split(" and")[0];
+
+	const shortTitle = `${serviceTitle} in ${cityName} WA | Norbilt`;
+	const fullDesc = `Need expert ${serviceTitle.toLowerCase()} in ${cityName}? Norbilt is your local general contractor for home repairs. Get a free estimate today!`;
 
 	return {
-		// 55 Characters: Perfect for Google search results
-		title: `${serviceTitle} ${cityName} WA | General Contractor`,
-
-		// 155 Characters: Uses active voice and clear Call to Action (CTA)
-		description: `Need expert ${serviceTitle.toLowerCase()} in ${cityName}? Norbilt is your local general contractor for home repairs. Get a free estimate from our team today!`,
+		title: shortTitle,
+		description: fullDesc,
 
 		alternates: {
 			canonical: `https://norbilt.com/locations/${resolvedParams.city}/${resolvedParams.service}`,
 		},
 
+		// Fills the empty Facebook/Social Metadata boxes in your audit
 		openGraph: {
-			title: `${serviceTitle} in ${cityName} | Norbilt`,
-			description: `Professional ${serviceTitle.toLowerCase()} and home remodeling for owners in ${cityName}, WA.`,
+			title: shortTitle,
+			description: fullDesc,
 			url: `https://norbilt.com/locations/${resolvedParams.city}/${resolvedParams.service}`,
+			siteName: "Norbilt",
+			locale: "en_US",
 			type: "website",
+			images: [
+				{
+					url: "https://norbilt.com/og-image.jpg",
+					width: 1200,
+					height: 630,
+					alt: `${serviceTitle} in ${cityName} WA`,
+				},
+			],
+		},
+
+		twitter: {
+			card: "summary_large_image",
+			title: shortTitle,
+			description: fullDesc,
+			images: ["https://norbilt.com/og-image.jpg"],
 		},
 	};
 }
