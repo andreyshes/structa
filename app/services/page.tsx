@@ -17,6 +17,7 @@ import {
 	type LucideIcon,
 	Star,
 	Square,
+	ChevronRight,
 } from "lucide-react";
 
 import SectionHeader from "@/app/components/SectionHeader";
@@ -242,9 +243,14 @@ export default function ServicesPage() {
 											<div className="w-20 h-20 bg-[#1F2E2B] rounded-2xl flex items-center justify-center">
 												<service.icon className="w-10 h-10 text-[#FFB800]" />
 											</div>
-											<h2 className="text-3xl lg:text-5xl font-black text-[#1F2E2B] uppercase tracking-tighter">
-												{service.title}
-											</h2>
+											<Link
+												href={service.href}
+												className="hover:text-[#FFB800] transition-colors"
+											>
+												<h2 className="text-3xl lg:text-5xl font-black text-[#1F2E2B] uppercase tracking-tighter">
+													{service.title}
+												</h2>
+											</Link>
 										</div>
 										<p className="text-gray-700 text-xl font-medium leading-relaxed">
 											{service.longDesc}
@@ -265,7 +271,10 @@ export default function ServicesPage() {
 									</div>
 
 									<div className="lg:col-span-5 flex flex-col justify-center">
-										<div className="relative aspect-square rounded-[2rem] overflow-hidden shadow-2xl">
+										<Link
+											href={service.href}
+											className="relative aspect-square rounded-[2rem] overflow-hidden shadow-2xl block"
+										>
 											<Image
 												src={service.image}
 												alt={`${service.title} repair and setup in Vancouver WA`}
@@ -273,13 +282,22 @@ export default function ServicesPage() {
 												sizes="(max-width: 768px) 100vw, 50vw"
 												className="object-cover group-hover:scale-110 transition-transform duration-700"
 											/>
-										</div>
-										<Link
-											href="/contact"
-											className="mt-8 inline-flex items-center justify-center gap-4 py-6 bg-[#1F2E2B] text-white font-black uppercase tracking-widest rounded-2xl hover:bg-[#FFB800] hover:text-black transition-all"
-										>
-											Request a Quote <ArrowRight className="w-5 h-5" />
 										</Link>
+
+										<div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+											<Link
+												href={service.href}
+												className="inline-flex items-center justify-center gap-2 py-6 border-2 border-[#1F2E2B] text-[#1F2E2B] font-black uppercase tracking-widest rounded-2xl hover:bg-[#F8F6F3] transition-all"
+											>
+												Learn More <ChevronRight className="w-4 h-4" />
+											</Link>
+											<Link
+												href="/contact"
+												className="inline-flex items-center justify-center gap-4 py-6 bg-[#1F2E2B] text-white font-black uppercase tracking-widest rounded-2xl hover:bg-[#FFB800] hover:text-black transition-all"
+											>
+												Get Quote <ArrowRight className="w-5 h-5" />
+											</Link>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -321,16 +339,18 @@ export default function ServicesPage() {
 
 			{/* SERVICE AREA FOOTER STRIP */}
 			<section className="py-12 bg-white border-t border-gray-100">
-				<div className="max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-x-10 gap-y-4 text-[10px] md:text-xs font-black text-gray-400 uppercase tracking-[0.3em]">
-					<span>Vancouver</span>
-					<span className="text-[#FFB800]">•</span>
-					<span>Camas</span>
-					<span className="text-[#FFB800]">•</span>
-					<span>Washougal</span>
-					<span className="text-[#FFB800]">•</span>
-					<span>Battle Ground</span>
-					<span className="text-[#FFB800]">•</span>
-					<span>Ridgefield</span>
+				<div className="max-w-7xl mx-auto px-6">
+					<div className="flex flex-wrap justify-center gap-x-10 gap-y-4 text-[10px] md:text-xs font-black text-gray-400 uppercase tracking-[0.3em]">
+						<span>Vancouver</span>
+						<span className="text-[#FFB800]">•</span>
+						<span>Camas</span>
+						<span className="text-[#FFB800]">•</span>
+						<span>Washougal</span>
+						<span className="text-[#FFB800]">•</span>
+						<span>Battle Ground</span>
+						<span className="text-[#FFB800]">•</span>
+						<span>Ridgefield</span>
+					</div>
 				</div>
 			</section>
 		</div>

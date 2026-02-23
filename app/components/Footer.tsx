@@ -68,16 +68,31 @@ export default function Footer() {
 
 					{/* Services */}
 					<div>
-						<h4 className="text-sm font-bold uppercase tracking-wider mb-6 text-[#F8F6F3]/90">
+						<h4 className="text-sm font-black uppercase tracking-[0.2em] mb-8 text-white">
 							Services
 						</h4>
-						<ul className="space-y-3 text-sm text-[#F8F6F3]/60">
-							<li>Home Repairs</li>
-							<li>Finish Carpentry</li>
-							<li>Bathroom Updates</li>
-							<li>Kitchen Remodeling</li>
-							<li>Drywall Patching</li>
-							<li>Custom Projects</li>
+						<ul className="space-y-4">
+							{[
+								{ name: "Home Repairs", href: "/services/handyman" },
+								{
+									name: "Finish Carpentry",
+									href: "/services/finish-carpentry",
+								},
+								{ name: "Bathroom Updates", href: "/services/kitchen-bath" },
+								{ name: "Kitchen Remodeling", href: "/services/kitchen-bath" },
+								{ name: "Drywall Patching", href: "/services/drywall-repair" },
+								{ name: "Custom Projects", href: "/contact" },
+							].map((link) => (
+								<li key={link.name}>
+									<Link
+										href={link.href}
+										className="text-sm font-medium text-[#A7C4B5] hover:text-[#FFB800] transition-colors duration-300 flex items-center group"
+									>
+										<span className="w-0 group-hover:w-2 h-px bg-[#FFB800] mr-0 group-hover:mr-2 transition-all duration-300"></span>
+										{link.name}
+									</Link>
+								</li>
+							))}
 						</ul>
 					</div>
 
