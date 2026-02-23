@@ -21,12 +21,12 @@ import {
 import Link from "next/link";
 
 const iconMap: Record<string, any> = {
-	"handyman-services": HardHat,
+	"handyman": HardHat,
 	"drywall-repair": Wrench,
 	"finish-carpentry": Hammer,
-	"door-window-repair": DoorOpen,
-	"flooring-repair-interior-updates": Paintbrush,
-	"kitchen-bathroom-updates": Lightbulb,
+	"door-window": DoorOpen,
+	"flooring": Paintbrush,
+	"kitchen-bath": Lightbulb,
 };
 
 export default function ServicePageClient({
