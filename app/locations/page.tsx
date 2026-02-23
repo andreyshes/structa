@@ -32,7 +32,7 @@ export default function LocationsIndexPage() {
 					name: "Vancouver, WA",
 					href: "/locations/vancouver",
 					description:
-						"Our main shop offers licensed contractor work and kitchen updates. In addition, we provide clean wood trim for homes across the city.",
+						"Our main hub for general contractor work in Clark County. We handle kitchen updates, wood trim, drywall repair, and all home repairs across Vancouver.",
 					tags: ["Main Hub", "Full Service"],
 					primary: true,
 				},
@@ -45,7 +45,7 @@ export default function LocationsIndexPage() {
 					name: "Camas, WA",
 					href: "/locations/camas",
 					description:
-						"We provide quality home updates and high-end wood trim. Because of this, we are the top choice for local houses in the Camas area.",
+						"Licensed general contractor for Camas homes. We do high-end wood trim, home repairs, and interior updates for local homeowners.",
 					tags: ["Interior Trim", "Updates"],
 					primary: false,
 				},
@@ -53,8 +53,8 @@ export default function LocationsIndexPage() {
 					name: "Washougal, WA",
 					href: "/locations/washougal",
 					description:
-						"Our team offers pro home repairs and house care. Additionally, we serve the Washougal area and local hills.",
-					tags: ["Home Repair", "Maintenace"],
+						"Trusted home repair contractor in Washougal. Our team handles general repairs, maintenance, and interior fixes for local homes.",
+					tags: ["Home Repair", "Maintenance"],
 					primary: false,
 				},
 			],
@@ -66,7 +66,7 @@ export default function LocationsIndexPage() {
 					name: "Ridgefield, WA",
 					href: "/locations/ridgefield",
 					description:
-						"We handle clean drywall repair and trim setup. Therefore, we are ready to help with home updates for new Ridgefield houses.",
+						"General contractor for new and older Ridgefield homes. We provide drywall repair, trim work, and home updates you can count on.",
 					tags: ["New Work", "Drywall"],
 					primary: false,
 				},
@@ -74,7 +74,7 @@ export default function LocationsIndexPage() {
 					name: "Battle Ground, WA",
 					href: "/locations/battle-ground",
 					description:
-						"Get fast handyman help and licensed home work. In addition, we offer quality fixes for local houses in Battle Ground.",
+						"Licensed contractor in Battle Ground for home repairs and handyman work. Fast, reliable service for local homeowners.",
 					tags: ["General Repairs", "Fixes"],
 					primary: false,
 				},
@@ -82,7 +82,7 @@ export default function LocationsIndexPage() {
 					name: "Brush Prairie, WA",
 					href: "/locations/brush-prairie",
 					description:
-						"Our crew does full home fixes and wood work. Furthermore, we serve large local lots and farms in Brush Prairie.",
+						"Home repair contractor serving Brush Prairie. We handle carpentry, general fixes, and interior work for houses and rural properties.",
 					tags: ["Wood Work", "Licensed Pro"],
 					primary: false,
 				},
@@ -95,7 +95,7 @@ export default function LocationsIndexPage() {
 					name: "Felida, WA",
 					href: "/locations/felida",
 					description:
-						"We offer top quality home fixes. Additionally, we handle fixture setup for all Felida homes.",
+						"Local home repair contractor for Felida. We do fixture installs, general repairs, and interior updates for your home.",
 					tags: ["Local Service"],
 					primary: false,
 				},
@@ -103,7 +103,7 @@ export default function LocationsIndexPage() {
 					name: "Salmon Creek, WA",
 					href: "/locations/salmon-creek",
 					description:
-						"Our team does clean drywall matching. As a result, we provide great interior prep for Salmon Creek houses.",
+						"Home repair and drywall contractor in Salmon Creek. We match wall textures and prep interiors for a clean finish.",
 					tags: ["Local Service"],
 					primary: false,
 				},
@@ -111,7 +111,7 @@ export default function LocationsIndexPage() {
 					name: "Hazel Dell, WA",
 					href: "/locations/hazel-dell",
 					description:
-						"We provide local repairs and bath updates. Therefore, we are the go-to pro across the Hazel Dell area.",
+						"Your go-to contractor in Hazel Dell for home repairs and bath updates. Licensed, bonded, and ready to help.",
 					tags: ["Local Service"],
 					primary: false,
 				},
@@ -119,7 +119,7 @@ export default function LocationsIndexPage() {
 					name: "Orchards, WA",
 					href: "/locations/orchards",
 					description:
-						"Get fast home care and trim repairs. In addition, we serve the Orchards area with reliable work.",
+						"Reliable home repair contractor in Orchards. We handle trim work, general fixes, and fast maintenance calls.",
 					tags: ["Local Service"],
 					primary: false,
 				},
@@ -127,7 +127,7 @@ export default function LocationsIndexPage() {
 					name: "Mill Plain, WA",
 					href: "/locations/mill-plain",
 					description:
-						"We lead new Mill Plain home updates. Because of this, we offer custom trim and floor work for every room.",
+						"General contractor for Mill Plain homes. We do custom trim, flooring repair, and interior updates for every room.",
 					tags: ["Local Service"],
 					primary: false,
 				},
@@ -135,7 +135,7 @@ export default function LocationsIndexPage() {
 					name: "Five Corners, WA",
 					href: "/locations/five-corners",
 					description:
-						"Our shop offers good wood work. Furthermore, we provide handyman help for homes in Five Corners.",
+						"Home repair and handyman contractor in Five Corners. We provide carpentry and general fixes for local homeowners.",
 					tags: ["Local Service"],
 					primary: false,
 				},
@@ -169,14 +169,14 @@ export default function LocationsIndexPage() {
 							animate={{ opacity: 1, x: 0 }}
 							className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tighter uppercase"
 						>
-							Where We <br />
-							<span className="text-[#FFB800]">Build & Repair</span>
+							Areas We <br />
+							<span className="text-[#FFB800]">Serve</span>
 						</motion.h1>
 
 						<p className="text-xl text-white/80 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6">
-							Norbilt offers clean home updates and licensed home repairs.
-							Additionally, we serve Vancouver and all local towns nearby.
-							Therefore, we are the top choice for quality work in Clark County.
+							Norbilt is a licensed general contractor serving Vancouver and
+							all of Clark County, WA. We provide home repairs, interior
+							remodeling, and quality contractor work you can trust.
 						</p>
 					</div>
 				</div>

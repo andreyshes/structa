@@ -12,7 +12,24 @@ export const metadata: Metadata = {
 		description:
 			"Get a free estimate from Norbilt, your licensed general contractor in Vancouver WA. We handle home repairs and interior remodeling.",
 		url: "https://norbilt.com/contact",
+		siteName: "Norbilt",
+		locale: "en_US",
 		type: "website",
+		images: [
+			{
+				url: "https://norbilt.com/og-image.jpg",
+				width: 1200,
+				height: 630,
+				alt: "Contact Norbilt General Contractor Vancouver WA",
+			},
+		],
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Contact Norbilt | Free Estimate Vancouver WA",
+		description:
+			"Get a free estimate from Norbilt, your licensed general contractor in Vancouver WA. We handle home repairs and interior remodeling.",
+		images: ["https://norbilt.com/og-image.jpg"],
 	},
 };
 

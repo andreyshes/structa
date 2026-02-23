@@ -13,6 +13,23 @@ export const metadata: Metadata = {
 			"Licensed handyman services for home repairs and maintenance in Vancouver and Clark County WA.",
 		url: "https://norbilt.com/services/handyman",
 		type: "website",
+		siteName: "Norbilt",
+		locale: "en_US",
+		images: [
+			{
+				url: "https://norbilt.com/og-image.jpg",
+				width: 1200,
+				height: 630,
+				alt: "Handyman Services Vancouver WA | Norbilt",
+			},
+		],
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Handyman Services Vancouver WA | Norbilt",
+		description:
+			"Licensed handyman services for home repairs and maintenance in Vancouver and Clark County WA.",
+		images: ["https://norbilt.com/og-image.jpg"],
 	},
 };
 

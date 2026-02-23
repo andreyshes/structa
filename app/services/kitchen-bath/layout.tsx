@@ -13,6 +13,23 @@ export const metadata: Metadata = {
 			"Professional kitchen and bathroom fixture installation and updates in Vancouver and Clark County WA.",
 		url: "https://norbilt.com/services/kitchen-bath",
 		type: "website",
+		siteName: "Norbilt",
+		locale: "en_US",
+		images: [
+			{
+				url: "https://norbilt.com/og-image.jpg",
+				width: 1200,
+				height: 630,
+				alt: "Kitchen & Bath Updates Vancouver WA | Norbilt",
+			},
+		],
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Kitchen & Bath Updates Vancouver WA | Norbilt",
+		description:
+			"Professional kitchen and bathroom fixture installation and updates in Vancouver and Clark County WA.",
+		images: ["https://norbilt.com/og-image.jpg"],
 	},
 };
 

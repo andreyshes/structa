@@ -12,7 +12,24 @@ export const metadata: Metadata = {
 		description:
 			"Licensed contractor offering carpentry, drywall, flooring, kitchen and bath updates, and handyman services in Clark County.",
 		url: "https://norbilt.com/services",
+		siteName: "Norbilt",
+		locale: "en_US",
 		type: "website",
+		images: [
+			{
+				url: "https://norbilt.com/og-image.jpg",
+				width: 1200,
+				height: 630,
+				alt: "Norbilt Home Repair Services Vancouver WA",
+			},
+		],
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Home Repair Services | Norbilt Vancouver WA",
+		description:
+			"Licensed contractor offering carpentry, drywall, flooring, kitchen and bath updates, and handyman services in Clark County.",
+		images: ["https://norbilt.com/og-image.jpg"],
 	},
 };
 
