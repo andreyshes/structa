@@ -19,6 +19,8 @@ import {
 	type LucideIcon,
 	Star,
 	Square,
+	Construction,
+	TrendingUp,
 } from "lucide-react";
 
 import SectionHeader from "@/app/components/SectionHeader";
@@ -30,6 +32,8 @@ type ServiceCategory = {
 	description: string;
 	items: string[];
 	href: string;
+	longDesc: string;
+	image: string; // The specific image for this service
 };
 
 export default function ServicesPage() {
@@ -39,47 +43,39 @@ export default function ServicesPage() {
 			icon: Hammer,
 			title: "Custom Trim & Finish Carpentry",
 			href: "/services/finish-carpentry",
+			image:
+				"https://plus.unsplash.com/premium_photo-1683131426576-af8167f436f6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJhc2Vib2FyZHxlbnwwfHwwfHx8MA%3D%3D", // Replace with your trim work photo
 			description:
-				"Precision millwork and trim installation that adds immediate character and property value to your interior.",
+				"Precision millwork and trim installation that adds character and property value.",
+			longDesc:
+				"Our finish carpentry services focus on the architectural details that define a home. From crown molding installation to custom wainscoting and baseboard replacement, we ensure every mitered corner is gap-free. For Vancouver homeowners, high-quality millwork is a top-tier way to increase property value.",
 			items: [
-				"Baseboards & crown molding",
-				"Wainscoting & accent walls",
-				"Window & door casing",
-				"Built-in shelving",
-				"Fireplace mantels",
-				"Custom millwork",
+				"Baseboards & Crown Molding",
+				"Wainscoting & Accent Walls",
+				"Window & Door Casing",
+				"Custom Built-in Shelving",
+				"Fireplace Mantel Install",
+				"Precision Millwork Repairs",
 			],
 		},
 		{
 			id: "kitchen-bath",
 			icon: Paintbrush,
-			title: "Kitchen & Bathroom Refreshes",
+			title: "Kitchen & Bathroom Remodeling",
 			href: "/services/kitchen-bath",
+			image:
+				"https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2000",
 			description:
-				"Modernize your most important spaces with high-impact upgrades without the full renovation price tag.",
+				"High-impact upgrades and professional fixture installation.",
+			longDesc:
+				"As a specialized general contractor, we handle the technical aspects of kitchen and bath refreshes. We provide the expertise of a full-scale remodeling firm with the efficiency of a local specialist, ensuring your most used rooms are both functional and beautiful.",
 			items: [
-				"Tile backsplashes",
-				"Cabinet hardware updates",
-				"Fixture & faucet installs",
-				"Vanity mounting",
-				"Luxury accessory setup",
-				"Toilet replacement",
-			],
-		},
-		{
-			id: "flooring",
-			icon: Square,
-			title: "Flooring & Repair Work",
-			href: "/services/flooring",
-			description:
-				"Specialized repairs and small installations for LVP, laminate, and tile—saving you the cost of full replacement.",
-			items: [
-				"Individual plank replacement",
-				"Subfloor squeak repair",
-				"Transition & threshold install",
-				"Grout & tile repair",
-				"Baseboard integration",
-				"LVP & Laminate repairs",
+				"Kitchen Backsplash Tile",
+				"Cabinet Hardware Replacement",
+				"Vanity & Sink Installation",
+				"Luxury Fixture Upgrades",
+				"Shower Hardware Refreshes",
+				"Toilet & Faucet Installation",
 			],
 		},
 		{
@@ -87,75 +83,91 @@ export default function ServicesPage() {
 			icon: Layers,
 			title: "Drywall Repair & Texture Matching",
 			href: "/services/drywall-repair",
+			image:
+				"https://plus.unsplash.com/premium_photo-1661322610748-32b33eada183?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZHJ5d2FsbHxlbnwwfHwwfHx8MA%3D%3D", // Replace with your drywall repair photo
 			description:
-				"Seamless repairs and expert texture matching that restores your walls to a flawless, like-new condition.",
+				"Seamless repairs and expert texture matching for a flawless finish.",
+			longDesc:
+				"Wall damage can detract from your home's value. Our drywall repair services go beyond simple patching. We specialize in seamless texture matching—including orange peel and knockdown—to ensure that repairs are invisible to the naked eye.",
 			items: [
-				"Hole patching",
-				"Water damage repair",
-				"Texture matching",
-				"Popcorn removal",
-				"Stress crack repair",
-				"Sheetrock finishing",
+				"Large Hole Patching",
+				"Water Damage Restoration",
+				"Professional Texture Matching",
+				"Popcorn Ceiling Removal",
+				"Stress Crack Repair",
+				"Sheetrock Finishing",
 			],
 		},
 		{
-			id: "handyman",
-			icon: Wrench,
-			title: "Professional Handyman Services",
-			href: "/services/handyman",
+			id: "flooring",
+			icon: Square,
+			title: "LVP & Tile Flooring Repairs",
+			href: "/services/flooring",
+			image:
+				"https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=2000", // Replace with your flooring photo
 			description:
-				"Reliable, licensed professional repairs for structural maintenance and those nagging household tasks.",
+				"Specialized flooring installation and structural plank repairs.",
+			longDesc:
+				"Floor damage doesn't always require a total replacement. We offer targeted flooring repair for Luxury Vinyl Plank (LVP), laminate, and tile. From replacing individual damaged planks to fixing subfloor squeaks, we help Vancouver homeowners extend the life of their floors.",
 			items: [
-				"General home repairs",
-				"Plumbing fixtures",
-				"Minor electrical",
-				"Appliance install",
-				"Furniture assembly",
-				"Weatherproofing",
+				"Individual Plank Replacement",
+				"Subfloor Squeak Repair",
+				"Transition & Threshold Install",
+				"Grout Repair & Re-caulking",
+				"LVP & Laminate Installation",
+				"Baseboard & Trim Integration",
 			],
 		},
 		{
 			id: "doors-windows",
 			icon: DoorOpen,
-			title: "Interior Doors & Windows",
+			title: "Interior Door & Window Services",
 			href: "/services/door-window",
+			image:
+				"https://images.unsplash.com/photo-1527352774566-e4916e36c645?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2luZG93fGVufDB8fDB8fHww", // Replace with your door/window photo
 			description:
-				"Installation and repair services to improve aesthetics, security, and energy efficiency in your home.",
+				"Installation and repair of interior doors and window casings.",
+			longDesc:
+				"Properly installed doors and windows are essential for privacy and energy efficiency. We provide professional installation for pre-hung interior doors and sliding door tuning. Our window services focus on casing repair and trim installation for a consistent interior look.",
 			items: [
-				"Pre-hung door install",
-				"Hardware replacement",
-				"Weatherstripping",
-				"Window trim repair",
-				"Sliding door tuning",
-				"Smart lock setup",
+				"Pre-hung Door Installation",
+				"Door Hardware & Lock Setup",
+				"Weatherstripping & Sealing",
+				"Window Trim & Casing Repair",
+				"Sliding Door Alignment",
+				"Smart Lock Installation",
 			],
 		},
 		{
-			id: "lighting",
-			icon: Lightbulb,
-			title: "Electrical Fixtures & Lighting",
-			href: "/services/lighting",
+			id: "handyman",
+			icon: Wrench,
+			title: "Structural Home Maintenance",
+			href: "/services/handyman",
+			image:
+				"https://plus.unsplash.com/premium_photo-1664298827256-04eb817aa0ba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG9tZSUyMHJlcGFpcnN8ZW58MHx8MHx8fDA%3D",
 			description:
-				"Clean, code-compliant installation of designer lighting, ceiling fans, and smart home technology.",
+				"Licensed general contractor services for reliable home maintenance.",
+			longDesc:
+				"Maintaining a home in the Pacific Northwest requires a proactive approach. Our professional handyman services cover everything from selective exterior wood-rot repair to interior structural maintenance. As a licensed Washington contractor, we provide total accountability.",
 			items: [
-				"Designer lighting",
-				"Ceiling fan mounting",
-				"Dimmer switches",
-				"Bath exhaust fans",
-				"Smart doorbells",
-				"TV wall mounting",
+				"General Home Repair",
+				"Selective Siding Repair",
+				"Deck & Wood-Rot Work",
+				"Furniture & Art Mounting",
+				"Weatherproofing Services",
+				"Safety Grab Bar Install",
 			],
 		},
 	];
 
 	return (
 		<div className="overflow-hidden bg-[#FDFCFB]">
-			{/* HERO SECTION - BILLBOARD STYLE */}
-			<section className="relative min-h-[65vh] flex items-center overflow-hidden">
+			{/* HERO SECTION */}
+			<section className="relative min-h-[70vh] flex items-center overflow-hidden">
 				<div className="absolute inset-0">
 					<Image
 						src="https://t4.ftcdn.net/jpg/01/92/64/69/240_F_192646911_TeOJ5hmbwtSDko3LyvH2zpvL6kQKwRtF.jpg"
-						alt="Interior remodeling and home improvement services in Vancouver WA"
+						alt="Interior remodeling and professional contractor services in Vancouver WA"
 						fill
 						priority
 						className="object-cover"
@@ -171,7 +183,7 @@ export default function ServicesPage() {
 							className="flex items-center gap-3"
 						>
 							<span className="px-4 py-1 bg-[#FFB800] text-black text-xs font-black uppercase tracking-widest rounded">
-								Licensed Specialist
+								General Contractor • Vancouver, WA
 							</span>
 						</motion.div>
 
@@ -181,13 +193,14 @@ export default function ServicesPage() {
 							className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tighter uppercase"
 						>
 							Interior <br />
-							<span className="text-[#FFB800]">Remodeling</span> & <br />
-							Home Improvements
+							<span className="text-[#FFB800]">Construction</span> & <br />
+							Home Repairs
 						</motion.h1>
 
 						<p className="text-xl text-white/80 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6">
-							Precision carpentry, flawless repairs, and expert upgrades for
-							homeowners in Vancouver, Camas, and throughout Clark County.
+							Norbilt provides the precision remodeling and high-quality home
+							repair services Vancouver homeowners trust. Licensed, bonded, and
+							local.
 						</p>
 					</div>
 				</div>
@@ -218,57 +231,68 @@ export default function ServicesPage() {
 			</section>
 
 			{/* SERVICES GRID */}
-			<section className="py-24 lg:py-32">
+			<section className="py-24 bg-[#E8E4DE]/30">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
 					<SectionHeader
-						eyebrow="Our Expertise"
-						title="Professional Home Solutions"
-						description="High-quality interior services tailored to your vision and budget."
+						eyebrow="Our Core Services"
+						title="Professional Contractor Solutions"
+						description="Comprehensive interior construction, remodeling, and repair services for your residential property."
 					/>
 
-					<div className="grid gap-12 mt-20">
-						{serviceCategories.map((service, index) => (
-							<Link
+					<div className="grid gap-16 mt-20">
+						{serviceCategories.map((service) => (
+							<div
 								key={service.id}
-								href={service.href}
-								className="group block"
+								className="group bg-white rounded-[2.5rem] p-8 lg:p-16 shadow-xl border-b-8 border-transparent hover:border-[#FFB800] transition-all duration-500"
 							>
-								<motion.div
-									initial={{ opacity: 0, y: 30 }}
-									whileInView={{ opacity: 1, y: 0 }}
-									viewport={{ once: true }}
-									className="bg-white rounded-[2rem] p-8 lg:p-14 border-b-8 border-transparent hover:border-[#FFB800] shadow-[0_10px_50px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_70px_rgba(0,0,0,0.08)] transition-all duration-500"
-								>
-									<div className="grid lg:grid-cols-12 gap-12 items-center">
-										<div className="lg:col-span-5 space-y-6">
-											<div className="w-20 h-20 bg-[#F8F6F3] rounded-2xl flex items-center justify-center group-hover:bg-[#1F2E2B] transition-colors duration-300">
-												<service.icon className="w-10 h-10 text-[#2D5A3D] group-hover:text-[#FFB800]" />
+								<div className="grid lg:grid-cols-12 gap-12">
+									<div className="lg:col-span-7 space-y-8">
+										<div className="flex items-center gap-6">
+											<div className="w-20 h-20 bg-[#1F2E2B] rounded-2xl flex items-center justify-center">
+												<service.icon className="w-10 h-10 text-[#FFB800]" />
 											</div>
-											<h2 className="text-3xl lg:text-4xl font-black text-[#1F2E2B] uppercase tracking-tighter leading-none">
+											<h2 className="text-3xl lg:text-5xl font-black text-[#1F2E2B] uppercase tracking-tighter">
 												{service.title}
 											</h2>
-											<p className="text-gray-600 text-lg font-medium leading-relaxed">
-												{service.description}
-											</p>
-											<div className="inline-flex items-center gap-3 text-[#2D5A3D] font-black uppercase tracking-widest text-sm group-hover:gap-5 transition-all">
-												View Details{" "}
-												<ArrowRight className="w-5 h-5 text-[#FFB800]" />
-											</div>
 										</div>
-
-										<div className="lg:col-span-7 bg-[#F8F6F3] rounded-[1.5rem] p-8 lg:p-10 grid sm:grid-cols-2 gap-6 border border-gray-100">
+										<p className="text-gray-700 text-xl font-medium leading-relaxed">
+											{service.longDesc}
+										</p>
+										<div className="grid sm:grid-cols-2 gap-4">
 											{service.items.map((item) => (
-												<div key={item} className="flex items-center gap-3">
+												<div
+													key={item}
+													className="flex items-center gap-3 bg-[#F8F6F3] p-4 rounded-xl"
+												>
 													<CheckCircle2 className="w-5 h-5 text-[#FFB800] shrink-0" />
-													<span className="text-[#1F2E2B] font-bold text-sm uppercase tracking-tight">
+													<span className="text-[#1F2E2B] font-bold text-sm uppercase">
 														{item}
 													</span>
 												</div>
 											))}
 										</div>
 									</div>
-								</motion.div>
-							</Link>
+
+									{/* DYNAMIC IMAGE SECTION */}
+									<div className="lg:col-span-5 flex flex-col justify-center">
+										<div className="relative aspect-square rounded-[2rem] overflow-hidden shadow-2xl">
+											<Image
+												src={service.image}
+												alt={`${service.title} specialized repair and installation in Vancouver WA`}
+												fill
+												sizes="(max-width: 768px) 100vw, 50vw"
+												className="object-cover group-hover:scale-110 transition-transform duration-700"
+											/>
+										</div>
+										<Link
+											href="/contact"
+											className="mt-8 inline-flex items-center justify-center gap-4 py-6 bg-[#1F2E2B] text-white font-black uppercase tracking-widest rounded-2xl hover:bg-[#FFB800] hover:text-black transition-all"
+										>
+											Request This Service <ArrowRight className="w-5 h-5" />
+										</Link>
+									</div>
+								</div>
+							</div>
 						))}
 					</div>
 				</div>
@@ -278,16 +302,13 @@ export default function ServicesPage() {
 			<section className="py-24 lg:py-40">
 				<div className="max-w-7xl mx-auto px-6">
 					<div className="bg-[#1F2E2B] rounded-[3rem] p-12 lg:p-24 text-center relative overflow-hidden border-b-[12px] border-[#FFB800] shadow-2xl">
-						<div className="absolute top-0 right-0 w-64 h-64 bg-[#FFB800]/5 rounded-full -mr-32 -mt-32 blur-3xl" />
-
 						<div className="relative z-10 max-w-3xl mx-auto space-y-8">
 							<h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none">
-								Start Your Next <br />{" "}
-								<span className="text-[#FFB800]">Home Improvement</span>
+								Start Your <span className="text-[#FFB800]">Home Remodel</span>
 							</h2>
 							<p className="text-[#A7C4B5] text-xl font-medium max-w-xl mx-auto">
-								Get a transparent, professional estimate from Vancouver’s choice
-								for precision interior work.
+								Connect with Vancouver's expert general contractor for a
+								transparent, professional estimate on your interior project.
 							</p>
 							<div className="flex flex-col sm:flex-row gap-6 justify-center pt-4">
 								<Link
@@ -297,7 +318,7 @@ export default function ServicesPage() {
 									Free Estimate
 								</Link>
 								<Link
-									href="tel:+19165086272"
+									href="tel:+13600000000"
 									className="px-12 py-6 border-2 border-white/20 text-white font-black uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-3"
 								>
 									<Phone className="w-5 h-5" /> Call Now

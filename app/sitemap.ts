@@ -1,128 +1,77 @@
-import { MetadataRoute } from 'next'
+import { MetadataRoute } from "next";
+import { locationsData, servicesData } from "./locations/data"; // Verify this path matches your file structure
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://norbilt.com'
-  const lastModified = new Date()
+	const baseUrl = "https://norbilt.com";
+	const lastModified = new Date();
 
-  // Define all services
-  const services = [
-    'handyman',
-    'home-repair',
-    'drywall-repair',
-    'finish-carpentry',
-    'door-window',
-    'kitchen-bath',
-    'lighting',
-    'flooring',
-  ]
+	// 1. Define your Core Routes
+	const routes: MetadataRoute.Sitemap = [
+		{
+			url: baseUrl,
+			lastModified,
+			changeFrequency: "weekly",
+			priority: 1.0,
+		},
+		{
+			url: `${baseUrl}/about`,
+			lastModified,
+			changeFrequency: "monthly",
+			priority: 0.8,
+		},
+		{
+			url: `${baseUrl}/contact`,
+			lastModified,
+			changeFrequency: "monthly",
+			priority: 0.8,
+		},
+		{
+			url: `${baseUrl}/services`,
+			lastModified,
+			changeFrequency: "weekly",
+			priority: 0.9,
+		},
+		{
+			url: `${baseUrl}/locations`,
+			lastModified,
+			changeFrequency: "weekly",
+			priority: 0.9,
+		},
+	];
 
-  // Define all locations
-  const locations = [
-    'vancouver',
-    'salmon-creek',
-    'hazel-dell',
-    'five-corners',
-    'camas',
-    'brush-prairie',
-    'battle-ground',
-    'ridgefield',
-    'washougal',
-    'felida',
-    'lake-shore',
-    'orchards',
-    'mill-plain',
-  ]
+	// 2. Add Dynamic Location Landing Pages (e.g., /locations/vancouver)
+	const locationKeys = Object.keys(locationsData);
+	const serviceKeys = Object.keys(servicesData);
 
-  // Core pages
-  const routes: MetadataRoute.Sitemap = [
-    {
-      url: baseUrl,
-      lastModified,
-      changeFrequency: 'weekly',
-      priority: 1.0,
-    },
-    {
-      url: `${baseUrl}/about`,
-      lastModified,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/thank-you`,
-      lastModified,
-      changeFrequency: 'yearly',
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/services`,
-      lastModified,
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/locations`,
-      lastModified,
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-  ]
+	locationKeys.forEach((location) => {
+		routes.push({
+			url: `${baseUrl}/locations/${location}`,
+			lastModified,
+			changeFrequency: "weekly",
+			priority: 0.8,
+		});
 
-  // Add all service pages
-  services.forEach((service) => {
-    routes.push({
-      url: `${baseUrl}/services/${service}`,
-      lastModified,
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    })
-  })
+		// 3. Add Dynamic City + Service Pages (e.g., /locations/vancouver/drywall-repair)
+		// Now that you use dynamic routes, every service is valid for every location
+		serviceKeys.forEach((service) => {
+			routes.push({
+				url: `${baseUrl}/locations/${location}/${service}`,
+				lastModified,
+				changeFrequency: "weekly",
+				priority: 0.7,
+			});
+		});
+	});
 
-  // Add all location pages
-  locations.forEach((location) => {
-    routes.push({
-      url: `${baseUrl}/locations/${location}`,
-      lastModified,
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    })
+	// 4. Add Main Service Pages (e.g., /services/drywall-repair)
+	serviceKeys.forEach((service) => {
+		routes.push({
+			url: `${baseUrl}/services/${service}`,
+			lastModified,
+			changeFrequency: "weekly",
+			priority: 0.8,
+		});
+	});
 
-    // Add location-specific service pages
-    services.forEach((service) => {
-      // Skip services that don't exist for certain locations based on the files found
-      const locationServiceCombinations = {
-        'vancouver': ['handyman', 'flooring', 'door-window', 'finish-carpentry', 'drywall-repair', 'kitchen-bath'],
-        'salmon-creek': ['door-window', 'drywall-repair', 'finish-carpentry', 'flooring', 'handyman', 'kitchen-bath'],
-        'hazel-dell': ['handyman', 'kitchen-bath', 'finish-carpentry', 'door-window', 'drywall-repair', 'flooring'],
-        'five-corners': ['kitchen-bath', 'handyman', 'flooring', 'finish-carpentry', 'drywall-repair', 'door-window'],
-        'camas': ['kitchen-bath', 'handyman', 'flooring', 'finish-carpentry', 'drywall-repair', 'door-window'],
-        'brush-prairie': ['handyman', 'door-window', 'drywall-repair', 'finish-carpentry', 'kitchen-bath', 'flooring'],
-        'battle-ground': ['handyman', 'drywall-repair', 'finish-carpentry', 'door-window', 'kitchen-bath', 'flooring'],
-        'ridgefield': ['handyman', 'drywall-repair', 'finish-carpentry', 'door-window', 'kitchen-bath', 'flooring'],
-        'washougal': ['handyman', 'drywall-repair', 'finish-carpentry', 'door-window', 'kitchen-bath', 'flooring'],
-        'felida': ['handyman', 'drywall-repair', 'finish-carpentry', 'door-window', 'kitchen-bath', 'flooring'],
-        'lake-shore': ['handyman', 'drywall-repair', 'finish-carpentry', 'door-window', 'kitchen-bath', 'flooring'],
-        'orchards': ['handyman', 'drywall-repair', 'finish-carpentry', 'door-window', 'kitchen-bath', 'flooring'],
-        'mill-plain': ['handyman', 'drywall-repair', 'finish-carpentry', 'door-window', 'kitchen-bath', 'flooring'],
-      }
-
-      const validServices = locationServiceCombinations[location as keyof typeof locationServiceCombinations]
-
-      if (validServices && validServices.includes(service)) {
-        routes.push({
-          url: `${baseUrl}/locations/${location}/${service}`,
-          lastModified,
-          changeFrequency: 'weekly',
-          priority: 0.7,
-        })
-      }
-    })
-  })
-
-  return routes
+	return routes;
 }

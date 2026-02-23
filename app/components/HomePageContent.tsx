@@ -19,6 +19,9 @@ import {
 	MapPin,
 	Star,
 	Phone,
+	Construction,
+	Award,
+	Clock,
 } from "lucide-react";
 
 import ServiceCard from "@/app/components/ServiceCard";
@@ -26,7 +29,6 @@ import SectionHeader from "@/app/components/SectionHeader";
 import HomeFaqSection from "@/app/components/HomeFaqSection";
 
 export default function HomePageContent() {
-	// SCROLL LOGIC: Monitor scroll progress to show button after Hero
 	const { scrollY } = useScroll();
 	const heroRef = useRef<HTMLElement>(null);
 	const heroEndRef = useRef(800);
@@ -42,21 +44,20 @@ export default function HomePageContent() {
 		return () => window.removeEventListener("resize", updateHeroEnd);
 	}, []);
 
-	// buttonOpacity: Starts at 0, becomes 1 after scrolling past hero
 	const buttonOpacity = useTransform(scrollY, (value) => {
 		const h = heroEndRef.current;
 		if (value < h) return 0;
 		if (value > h + 200) return 1;
 		return (value - h) / 200;
 	});
-	// buttonScale: Starts at 0.8, becomes 1 for a "pop-in" effect
+
 	const buttonScale = useTransform(scrollY, (value) => {
 		const h = heroEndRef.current;
 		if (value < h) return 0.8;
 		if (value > h + 200) return 1;
 		return 0.8 + 0.2 * ((value - h) / 200);
 	});
-	// pointerEvents: Ensures the button isn't clickable while invisible
+
 	const pointerEvents = useTransform(scrollY, (value) =>
 		value > heroEndRef.current ? "auto" : "none",
 	);
@@ -64,92 +65,45 @@ export default function HomePageContent() {
 	const services = [
 		{
 			icon: Hammer,
-			title: "Finish Carpentry & Mill Work",
+			title: "Custom Finish Carpentry",
 			description:
-				"Premium installation of baseboards, crown molding, and custom wainscoting throughout Vancouver, WA.",
+				"Premium installation of baseboards, crown molding, and wainscoting. Our carpentry services enhance the structural beauty of your Vancouver home.",
 		},
 		{
 			icon: Wrench,
-			title: "Handyman & Interior Repairs",
+			title: "Home Repair & Maintenance",
 			description:
-				"Drywall repair, door adjustments, hardware installs, and punch-list completion handled professionally.",
+				"Expert drywall repair, door adjustments, and hardware installation. We handle the small repairs and major maintenance tasks that other contractors overlook.",
 		},
 		{
 			icon: Paintbrush,
-			title: "Kitchen & Bathroom Upgrades",
+			title: "Kitchen & Bath Remodeling",
 			description:
-				"Backsplashes, cabinet hardware refreshes, and fixture upgrades that add value without full remodels.",
+				"Full kitchen and bathroom upgrades, including backsplash installation, fixture replacement, and cabinet hardware refreshes to increase home value.",
 		},
 		{
 			icon: Home,
-			title: "Doors & Windows",
+			title: "Door & Window Installation",
 			description:
-				"Interior door installation, trim replacement, and weather-sealing for Clark County homes.",
+				"Professional installation of interior doors, custom trim replacement, and weather-sealing services for residential properties in Clark County.",
 		},
 		{
 			icon: Lightbulb,
-			title: "Fixtures & Lighting",
+			title: "Electrical & Plumbing Fixtures",
 			description:
-				"Ceiling fans, lighting, plumbing fixtures, and smart upgrades installed cleanly and correctly.",
+				"Safe installation of ceiling fans, modern lighting, and plumbing fixtures. We ensure all home upgrades are installed cleanly and meet local safety codes.",
 		},
 		{
-			icon: TreeDeciduous,
-			title: "Selective Exterior Repairs",
+			icon: Construction,
+			title: "Interior Construction Repairs",
 			description:
-				"Exterior repairs such as siding, deck, and wood-rot work related to interior protection and home integrity.",
-		},
-	];
-
-	const testimonials = [
-		{
-			name: "Daniel R.",
-			location: "Vancouver, WA",
-			rating: 5,
-			text: "Norbilt handled our trim, drywall, and repairs flawlessly. Clean, professional, and detail-driven.",
-		},
-		{
-			name: "Melissa K.",
-			location: "Brush Prairie, WA",
-			rating: 5,
-			text: "Having one professional handle everything made our kitchen refresh stress-free.",
-		},
-		{
-			name: "Aaron L.",
-			location: "Five Corners, WA",
-			rating: 5,
-			text: "Excellent craftsmanship. The finish work completely elevated our space.",
-		},
-		{
-			name: "Rebecca S.",
-			location: "Camas, WA",
-			rating: 5,
-			text: "Respectful, organized, and highly skilled. Our go-to interior contractor.",
-		},
-	];
-
-	const whyChoose = [
-		{
-			icon: Shield,
-			title: "Licensed, Bonded & Insured",
-			description:
-				"A fully registered Washington contractor providing professional accountability and total peace of mind.",
-		},
-		{
-			icon: Heart,
-			title: "Local Vancouver Craftsmanship",
-			description:
-				"Based in Vancouver and serving all of Clark County with transparent pricing and dependable local service.",
-		},
-		{
-			icon: Sparkles,
-			title: "Clean & Detail-Oriented",
-			description:
-				"We respect your living space with strict dust control, tidy job sites, and precision finishes.",
+				"Addressing structural integrity through siding repair, deck restoration, and specialized wood-rot repair to protect your interior investment.",
 		},
 	];
 
 	return (
 		<div className="overflow-hidden bg-[#FDFCFB]">
+			{/* Mobile Fixed CTA */}
 			<motion.div
 				initial={{ opacity: 0 }}
 				style={{
@@ -166,16 +120,19 @@ export default function HomePageContent() {
 					className="flex items-center justify-center gap-3 bg-[#FFB800] text-black font-black py-4 rounded-full shadow-[0_10px_40px_rgba(0,0,0,0.3)] border-2 border-white uppercase text-sm tracking-widest"
 				>
 					<Phone className="w-4 h-4" />
-					Get A Free Estimate
+					Call For Free Estimate
 				</Link>
 			</motion.div>
 
-			{/* HERO SECTION - FLASHY AD STYLE */}
-			<section ref={heroRef} className="relative min-h-screen flex items-center overflow-hidden">
+			{/* HERO SECTION */}
+			<section
+				ref={heroRef}
+				className="relative min-h-screen flex items-center overflow-hidden"
+			>
 				<div className="absolute inset-0">
 					<Image
 						src="/bathroom.jpg.png"
-						alt="Vancouver WA Home Remodeling Contractor performing interior renovations"
+						alt="Licensed General Contractor in Vancouver WA performing home repairs and kitchen remodeling"
 						fill
 						priority
 						className="object-cover"
@@ -191,11 +148,11 @@ export default function HomePageContent() {
 							className="flex flex-wrap items-center gap-4"
 						>
 							<span className="inline-flex items-center px-4 py-1.5 rounded-md bg-[#FFB800] text-black text-xs font-black uppercase tracking-[0.2em] shadow-lg">
-								Verified Specialist
+								Verified General Contractor
 							</span>
 							<span className="inline-flex items-center gap-2 text-white font-bold text-sm drop-shadow-md">
 								<MapPin className="w-5 h-5 text-[#FFB800]" />
-								VANCOUVER & CLARK COUNTY, WA
+								SERVING VANCOUVER, CAMAS & CLARK COUNTY
 							</span>
 						</motion.div>
 
@@ -204,10 +161,9 @@ export default function HomePageContent() {
 							animate={{ opacity: 1, x: 0 }}
 							className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tighter uppercase drop-shadow-2xl"
 						>
-							Licensed General Contractor <br />
-							in{" "}
-							<span className="text-[#FFB800]">Vancouver & Clark County</span>,
-							WA
+							Your Trusted{" "}
+							<span className="text-[#FFB800]">General Contractor</span> <br />
+							in Vancouver, WA
 						</motion.h1>
 
 						<motion.h2
@@ -216,12 +172,14 @@ export default function HomePageContent() {
 							transition={{ delay: 0.2 }}
 							className="text-2xl md:text-4xl font-extrabold text-white tracking-tight border-l-8 border-[#FFB800] pl-6 py-2 drop-shadow-lg"
 						>
-							QUALITY REMODELS & RELIABLE SERVICE
+							EXPERT HOME REMODELING & INTERIOR REPAIR
 						</motion.h2>
 
 						<p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl font-medium drop-shadow-md">
-							Norbilt is your licensed local expert for precision interior work.
-							We specialize in the details that make your home feel new again.
+							Norbilt provides high-quality home repair, professional
+							installation, and comprehensive remodeling services. As a licensed
+							Washington contractor, we bring precision to every renovation
+							project.
 						</p>
 
 						<div className="flex flex-col sm:flex-row gap-5 pt-8">
@@ -229,60 +187,76 @@ export default function HomePageContent() {
 								href="/contact"
 								className="group relative inline-flex items-center justify-center gap-3 px-10 py-6 bg-gradient-to-b from-[#FFD700] to-[#CC9900] text-[#1F2E2B] rounded-xl font-black uppercase tracking-widest shadow-[0_20px_40px_rgba(0,0,0,0.5)] hover:scale-105 transition-all border-b-4 border-[#997300]"
 							>
-								Get A Free Quote
+								Get Your Free Estimate
 								<ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-2" />
-							</Link>
-							<Link
-								href="/services"
-								className="inline-flex items-center justify-center px-10 py-6 rounded-xl bg-white/10 backdrop-blur-md border-2 border-white/30 text-white font-bold uppercase tracking-widest hover:bg-white/20 transition-all"
-							>
-								Our Services
 							</Link>
 						</div>
 					</div>
 				</div>
+			</section>
 
-				{/* FLOATING TRUST BAR */}
-				<div className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-[#14201D] to-[#1F2E2B] border-t-4 border-[#FFB800]/50 py-8 z-20">
-					<div className="max-w-7xl mx-auto px-6 flex flex-wrap justify-between items-center gap-8">
-						<div className="flex items-center gap-4">
-							<div className="p-3 bg-[#FFB800]/10 rounded-lg border border-[#FFB800]/20">
-								<Home className="w-8 h-8 text-[#FFB800]" />
-							</div>
-							<div>
-								<p className="text-white font-black text-xl leading-none uppercase tracking-tight">
-									Licensed & Bonded
-								</p>
-								<p className="text-[#A7C4B5] font-bold text-sm uppercase tracking-widest italic">
-									WA General Contractor
-								</p>
-							</div>
+			{/* SEO DEPTH SECTION: THE AUTHORITY BLOCK */}
+			<section className="py-24 bg-white border-b border-gray-100">
+				<div className="max-w-7xl mx-auto px-6 lg:px-8">
+					<div className="grid lg:grid-cols-3 gap-12 items-start">
+						<div className="lg:col-span-2 space-y-6">
+							<h2 className="text-4xl font-black text-[#1F2E2B] uppercase tracking-tighter">
+								Vancouver's Premier Choice for Home Improvement
+							</h2>
+							<p className="text-lg text-gray-700 leading-relaxed">
+								When searching for a{" "}
+								<strong>general contractor in Vancouver, WA</strong>, homeowners
+								need a partner who understands the specific structural needs of
+								Pacific Northwest homes. At Norbilt, we specialize in{" "}
+								<strong>interior remodeling</strong> and{" "}
+								<strong>structural home repairs</strong> that protect your
+								investment. Whether you are dealing with drywall damage,
+								outdated kitchen fixtures, or need a complete finish carpentry
+								overhaul, our team delivers licensed, bonded, and insured
+								expertise.
+							</p>
+							<p className="text-lg text-gray-700 leading-relaxed">
+								Our approach to <strong>construction and remodeling</strong> is
+								built on transparency. Unlike large-scale firms that lose track
+								of the details, Norbilt focuses on precision{" "}
+								<strong>installation</strong>
+								and high-quality <strong>home repairs</strong>. We handle
+								everything from <strong>window replacement</strong>
+								to <strong>bathroom renovations</strong>, ensuring that every
+								project meets the highest standards of local craftsmanship in
+								Clark County.
+							</p>
 						</div>
-
-						<div className="hidden xl:flex items-center gap-12 text-white/20 font-black italic text-3xl tracking-tighter">
-							<span className="hover:text-white transition-colors">
-								DEPENDABLE
-							</span>
-							<span className="text-[#FFB800]">•</span>
-							<span className="hover:text-white transition-colors">
-								DETAILED
-							</span>
-							<span className="text-[#FFB800]">•</span>
-							<span className="hover:text-white transition-colors">LOCAL</span>
-						</div>
-
-						<div className="flex items-center gap-4">
-							<div className="text-right">
-								<p className="text-white font-black text-2xl leading-none tracking-tighter">
-									NORBILT
-								</p>
-								<p className="text-[#A7C4B5] font-bold text-sm uppercase tracking-widest">
-									Renovations
-								</p>
-							</div>
-							<div className="w-12 h-12 border-2 border-[#FFB800] rounded-lg flex items-center justify-center bg-[#FFB800]/5">
-								<CheckCircle2 className="w-7 h-7 text-[#FFB800]" />
-							</div>
+						<div className="bg-[#F8F6F3] p-8 rounded-3xl border-2 border-[#FFB800]/20">
+							<h3 className="text-xl font-black mb-4 uppercase">
+								Core Service Areas
+							</h3>
+							<ul className="space-y-3 font-bold text-gray-600">
+								<li className="flex items-center gap-2">
+									<CheckCircle2 className="w-5 h-5 text-[#FFB800]" /> Kitchen
+									Remodeling
+								</li>
+								<li className="flex items-center gap-2">
+									<CheckCircle2 className="w-5 h-5 text-[#FFB800]" /> Bathroom
+									Updates
+								</li>
+								<li className="flex items-center gap-2">
+									<CheckCircle2 className="w-5 h-5 text-[#FFB800]" /> Finish
+									Carpentry
+								</li>
+								<li className="flex items-center gap-2">
+									<CheckCircle2 className="w-5 h-5 text-[#FFB800]" /> Drywall &
+									Interior Repair
+								</li>
+								<li className="flex items-center gap-2">
+									<CheckCircle2 className="w-5 h-5 text-[#FFB800]" /> Door &
+									Window Install
+								</li>
+								<li className="flex items-center gap-2">
+									<CheckCircle2 className="w-5 h-5 text-[#FFB800]" /> Custom
+									Mill Work
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -292,13 +266,106 @@ export default function HomePageContent() {
 			<section className="py-32 bg-[#E8E4DE]/50">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
 					<SectionHeader
-						eyebrow="What We Do"
-						title="Professional Interior Services"
-						description="From high-end finish carpentry to kitchen refreshes, we deliver clean, precise results."
+						eyebrow="Our Expertise"
+						title="General Contractor Services"
+						description="Specializing in home repairs, custom installations, and high-end remodeling for residential properties."
 					/>
 					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
 						{services.map((s, i) => (
 							<ServiceCard key={s.title} {...s} index={i} />
+						))}
+					</div>
+				</div>
+			</section>
+
+			<section className="py-24 bg-white">
+				<div className="max-w-7xl mx-auto px-6 lg:px-8">
+					<div className="bg-[#1F2E2B] rounded-[3rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+						<div className="lg:w-1/2 relative h-96 lg:h-auto">
+							{/* RECOMMENDED: Replace with your actual project photo */}
+							<Image
+								src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2669"
+								alt="Precision finish carpentry and interior repair in Vancouver WA"
+								fill
+								className="object-cover"
+							/>
+							{/* Visual Badge to make the image feel purposeful */}
+							<div className="absolute top-6 left-6 bg-[#FFB800] text-black font-black px-4 py-2 rounded-lg text-xs uppercase tracking-widest shadow-xl">
+								The Norbilt Standard
+							</div>
+						</div>
+						<div className="lg:w-1/2 p-12 md:p-20 flex flex-col justify-center">
+							<h2 className="text-3xl md:text-5xl font-black text-white uppercase leading-none mb-8">
+								Precision <span className="text-[#FFB800]">Repair</span> &
+								Quality <span className="text-[#FFB800]">Installation</span>
+							</h2>
+							<p className="text-[#A7C4B5] text-lg leading-relaxed mb-6">
+								Home maintenance is more than just fixing what's broken; it's
+								about enhancing your living space. As a local{" "}
+								<strong>Vancouver general contractor</strong>, we specialize in
+								identifying the root cause of <strong>home damage</strong> and
+								providing long-term
+								<strong>repair solutions</strong>.
+							</p>
+							<div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 border-t border-white/10">
+								<div className="space-y-2">
+									<h4 className="text-[#FFB800] font-black uppercase text-sm flex items-center gap-2">
+										<Wrench className="w-4 h-4" /> Repair Services
+									</h4>
+									<p className="text-white/70 text-sm">
+										Expert drywall patching, texture matching, and structural
+										wood-rot repair.
+									</p>
+								</div>
+								<div className="space-y-2">
+									<h4 className="text-[#FFB800] font-black uppercase text-sm flex items-center gap-2">
+										<Hammer className="w-4 h-4" /> New Installation
+									</h4>
+									<p className="text-white/70 text-sm">
+										Modernizing your home with custom flooring, trim, and
+										premium fixtures.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* LOCAL REACH SECTION */}
+			<section className="py-24 bg-[#FDFCFB]">
+				<div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+					<SectionHeader
+						eyebrow="Vancouver & Beyond"
+						title="Serving All of Clark County"
+						centered
+					/>
+					<p className="max-w-3xl mx-auto text-gray-600 mb-12 text-lg">
+						We are proud to be the preferred <strong>contractor</strong> for
+						homeowners throughout Southwest Washington. Our service area covers{" "}
+						<strong>
+							Vancouver, Camas, Washougal, Ridgefield, Battle Ground, and La
+							Center
+						</strong>
+						. Whether you need a <strong>remodeling expert</strong>
+						in Cascade Park or a <strong>handyman</strong> in Felida, Norbilt is
+						ready to help.
+					</p>
+					<div className="flex flex-wrap justify-center gap-4">
+						{[
+							"Camas",
+							"Ridgefield",
+							"Washougal",
+							"Battle Ground",
+							"Salmon Creek",
+							"Minnehaha",
+						].map((city) => (
+							<span
+								key={city}
+								className="px-6 py-2 bg-white border border-gray-200 rounded-full text-sm font-bold text-gray-500 shadow-sm"
+							>
+								{city}, WA
+							</span>
 						))}
 					</div>
 				</div>
@@ -310,8 +377,8 @@ export default function HomePageContent() {
 					<div className="relative">
 						<div className="relative aspect-4/5 rounded-3xl overflow-hidden shadow-2xl border-8 border-[#FDFCFB]">
 							<Image
-								src="https://images.unsplash.com/photo-1618832515490-e181c4794a45?q=80&w=2670&auto=format&fit=crop"
-								alt="Precision interior remodeling work"
+								src="https://images.unsplash.com/photo-1618832515490-e181c4794a45?q=80&w=2670"
+								alt="High-quality construction and interior remodel in Vancouver"
 								fill
 								className="object-cover"
 							/>
@@ -330,19 +397,38 @@ export default function HomePageContent() {
 								))}
 							</div>
 							<p className="text-white/60 text-[10px] uppercase tracking-[0.3em] font-black italic">
-								Vancouver Top Rated
+								Clark County's Top Rated
 							</p>
 						</div>
 					</div>
 					<div>
 						<SectionHeader
-							eyebrow="The Norbilt Standard"
-							title="A Better Remodeling Experience"
-							description="One skilled professional. Clean execution. Reliable results."
+							eyebrow="The Norbilt Difference"
+							title="A Better Construction Experience"
+							description="Hiring a general contractor should be simple. We provide clear communication and master-level craftsmanship."
 							centered={false}
 						/>
 						<div className="space-y-10 mt-12">
-							{whyChoose.map((item, i) => (
+							{[
+								{
+									icon: Shield,
+									title: "Licensed & Accountable",
+									description:
+										"As a fully licensed, bonded, and insured Washington general contractor, we protect you and your home.",
+								},
+								{
+									icon: Award,
+									title: "Precision Craftsmanship",
+									description:
+										"We specialize in the high-end details that typical repair services miss, from millwork to flawless paint prep.",
+								},
+								{
+									icon: Clock,
+									title: "Reliable Scheduling",
+									description:
+										"We respect your time. Our projects are completed on schedule with clear daily progress updates.",
+								},
+							].map((item, i) => (
 								<motion.div
 									key={item.title}
 									initial={{ opacity: 0, x: 20 }}
@@ -369,135 +455,13 @@ export default function HomePageContent() {
 				</div>
 			</section>
 
-			{/* TESTIMONIALS */}
-			<section className="py-32 bg-[#1F2E2B] overflow-hidden">
-				<div className="max-w-7xl mx-auto px-6 lg:px-8 mb-16">
-					<SectionHeader
-						eyebrow="Local Reputation"
-						title="Trusted by Clark County Homeowners"
-						light
-					/>
-				</div>
-				<div className="relative flex">
-					<motion.div
-						className="flex gap-6 pr-6"
-						animate={{ x: ["0%", "-50%"] }}
-						transition={{
-							x: {
-								repeat: Infinity,
-								repeatType: "loop",
-								duration: 40,
-								ease: "linear",
-							},
-						}}
-					>
-						{[...testimonials, ...testimonials].map((t, i) => (
-							<div
-								key={i}
-								className="min-w-[350px] md:min-w-[450px] bg-white/5 backdrop-blur-md p-10 rounded-3xl border border-white/10 flex flex-col justify-between"
-							>
-								<div>
-									<div className="flex gap-1 mb-6">
-										{[...Array(t.rating)].map((_, star) => (
-											<Star
-												key={star}
-												className="w-5 h-5 fill-[#FFB800] text-[#FFB800]"
-											/>
-										))}
-									</div>
-									<p className="text-xl text-white font-medium italic leading-relaxed mb-8">
-										"{t.text}"
-									</p>
-								</div>
-								<div className="flex items-center gap-4 border-t border-white/10 pt-6">
-									<div className="w-14 h-14 bg-[#FFB800] rounded-full flex items-center justify-center text-black font-black text-xl">
-										{t.name.charAt(0)}
-									</div>
-									<div>
-										<h4 className="text-white font-black text-lg uppercase tracking-tight">
-											{t.name}
-										</h4>
-										<p className="text-[#A7C4B5] text-xs uppercase tracking-[0.2em] font-bold">
-											{t.location}
-										</p>
-									</div>
-								</div>
-							</div>
-						))}
-					</motion.div>
-				</div>
-			</section>
-
-			{/* PROCESS SECTION */}
-			<section className="py-32 bg-[#FDFCFB] relative">
-				<div className="max-w-7xl mx-auto px-6 lg:px-8">
-					<SectionHeader
-						eyebrow="The Norbilt Method"
-						title="Our Seamless Interior Process"
-						description="We've refined our workflow to ensure your project is stress-free."
-					/>
-					<div className="grid md:grid-cols-3 gap-8 mt-20">
-						{[
-							{
-								step: "01",
-								title: "Initial Consultation",
-								text: "Schedule your free estimate to discuss your vision and take precise measurements.",
-								keywords: "Site Visit & Assessment",
-							},
-							{
-								step: "02",
-								title: "Detailed Proposal",
-								text: "Receive a transparent, fixed-price quote with a clear scope of work and no hidden fees.",
-								keywords: "Transparent Pricing",
-							},
-							{
-								step: "03",
-								title: "Precision Execution",
-								text: "We complete your remodel with meticulous detail and a strict clean-as-we-go philosophy.",
-								keywords: "Final Walkthrough",
-							},
-						].map((item, i) => (
-							<motion.div
-								key={item.step}
-								initial={{ opacity: 0, y: 20 }}
-								whileInView={{ opacity: 1, y: 0 }}
-								viewport={{ once: true }}
-								transition={{ delay: i * 0.2 }}
-								className="relative p-10 bg-white border-2 border-gray-50 rounded-3xl shadow-xl hover:border-[#FFB800]/30 transition-all group"
-							>
-								<span className="absolute top-4 right-6 text-7xl font-black text-gray-100 group-hover:text-[#FFB800]/10 transition-colors">
-									{item.step}
-								</span>
-								<div className="relative z-10">
-									<div className="w-14 h-14 bg-[#1F2E2B] rounded-xl flex items-center justify-center mb-6 shadow-lg">
-										<span className="text-[#FFB800] font-black text-xl">
-											{item.step}
-										</span>
-									</div>
-									<h3 className="text-2xl font-black text-[#1F2E2B] mb-4 uppercase tracking-tighter">
-										{item.title}
-									</h3>
-									<p className="text-gray-600 leading-relaxed mb-6 font-medium">
-										{item.text}
-									</p>
-									<div className="pt-6 border-t border-gray-100 flex items-center gap-2 text-[#2D5A3D] font-black text-xs uppercase tracking-widest">
-										<CheckCircle2 className="w-5 h-5 text-[#FFB800]" />
-										{item.keywords}
-									</div>
-								</div>
-							</motion.div>
-						))}
-					</div>
-				</div>
-			</section>
-
 			{/* FAQ SECTION */}
 			<HomeFaqSection />
 
 			{/* FOOTER STRIP */}
 			<section className="py-12 bg-[#14201D] text-center text-xs md:text-sm font-black text-[#A7C4B5] uppercase tracking-[0.4em] px-4">
-				Licensed Washington Contractor • Bonded & Insured • Serving Vancouver,
-				Camas & Clark County
+				Licensed Washington General Contractor #NORBIR**741CS • Bonded & Insured
+				• Serving Vancouver & Camas
 			</section>
 		</div>
 	);
