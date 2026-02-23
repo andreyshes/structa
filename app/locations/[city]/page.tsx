@@ -13,23 +13,25 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 	const { city } = await params;
 	const cityData = locationsData[city];
 
-	// SAFETY CHECK: Prevents build crash if city name is missing
 	if (!cityData || !cityData.name) {
-		return { title: "Local Home Repair Contractor | Norbilt" };
+		return {
+			title: "Local Home Repair Contractor | Norbilt",
+			description:
+				"Norbilt provides expert home repairs and general contracting services. Contact our licensed team for professional remodeling and maintenance today.",
+		};
 	}
 
 	const cityName = cityData.name?.split(",")[0] || "Local";
 	const shortTitle = `General Contractor ${cityName} WA | Norbilt`;
-	const fullDesc = `Looking for a general contractor in ${cityName}? Norbilt provides licensed home repairs and remodeling for ${cityData.neighborhoods?.slice(0, 2).join(" and ") || "local"} residents.`;
+
+	// FIXED LENGTH: ~145 Characters (Perfect for Audit)
+	const fullDesc = `Expert general contractor in ${cityName}, WA. Norbilt provides licensed home repairs and remodeling for local residents. Get a free estimate today!`;
 	const pageUrl = `https://norbilt.com/locations/${city}`;
 
 	return {
 		title: shortTitle,
 		description: fullDesc,
-		alternates: {
-			canonical: pageUrl,
-		},
-		// Fills all social/Facebook audit boxes
+		alternates: { canonical: pageUrl },
 		openGraph: {
 			title: shortTitle,
 			description: fullDesc,
@@ -58,8 +60,6 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 export default async function Page({ params }: any) {
 	const { city: citySlug } = await params;
 	const city = locationsData[citySlug];
-
 	if (!city) return notFound();
-
 	return <CityLandingClient city={city} citySlug={citySlug} />;
 }

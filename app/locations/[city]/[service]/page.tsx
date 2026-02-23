@@ -6,44 +6,32 @@ import { Metadata } from "next";
 export async function generateStaticParams() {
 	const cities = Object.keys(locationsData);
 	const services = Object.keys(servicesData);
-
 	return cities.flatMap((city) =>
-		services.map((service) => ({
-			city: city,
-			service: service,
-		})),
+		services.map((service) => ({ city, service })),
 	);
 }
 
-export async function generateMetadata({
-	params,
-}: {
-	params: Promise<{ city: string; service: string }> | any;
-}): Promise<Metadata> {
+export async function generateMetadata({ params }: any): Promise<Metadata> {
 	const resolvedParams = await params;
 	const cityData = locationsData[resolvedParams.city];
 	const serviceData = servicesData[resolvedParams.service];
 
-	// SAFETY CHECK: Prevents build crash
 	if (!cityData || !serviceData || !cityData.name) {
 		return { title: "Home Repair Services | Norbilt" };
 	}
 
 	const cityName = cityData.name?.split(",")[0] || "Local";
-
-	// SHORTENING LOGIC: Removes extra text like "& Interior Updates" to fix title length
 	const serviceTitle = serviceData.title.split(" &")[0].split(" and")[0];
 	const shortTitle = `${serviceTitle} in ${cityName} WA | Norbilt`;
-	const fullDesc = `Need expert ${serviceTitle.toLowerCase()} in ${cityName}? Norbilt is your local general contractor for home repairs. Get a free estimate today!`;
+
+	// FIXED LENGTH: ~140 Characters (Audit Safe)
+	const fullDesc = `Need expert ${serviceTitle.toLowerCase()} in ${cityName}? Norbilt offers professional home repairs and licensed contracting. Get a free estimate today!`;
 	const pageUrl = `https://norbilt.com/locations/${resolvedParams.city}/${resolvedParams.service}`;
 
 	return {
 		title: shortTitle,
 		description: fullDesc,
-		alternates: {
-			canonical: pageUrl,
-		},
-		// Fills "OG URL Missing" and "Facebook Metadata" boxes
+		alternates: { canonical: pageUrl },
 		openGraph: {
 			title: shortTitle,
 			description: fullDesc,
@@ -69,11 +57,7 @@ export async function generateMetadata({
 	};
 }
 
-export default async function Page({
-	params,
-}: {
-	params: Promise<{ city: string; service: string }> | any;
-}) {
+export default async function Page({ params }: any) {
 	const resolvedParams = await params;
 	const city = locationsData[resolvedParams.city];
 	const service = servicesData[resolvedParams.service];
