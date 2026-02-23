@@ -166,7 +166,7 @@ export default function ServicesPage() {
 			<section className="relative min-h-[70vh] flex items-center overflow-hidden">
 				<div className="absolute inset-0">
 					<Image
-						src="https://t4.ftcdn.net/jpg/01/92/64/69/240_F_192646911_TeOJ5hmbwtSDko3LyvH2zpvL6kQKwRtF.jpg"
+						src="https://plus.unsplash.com/premium_photo-1664303816628-2c3f28be369d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2l0Y2hlbiUyMHJlbW9kZWx8ZW58MHx8MHx8fDA%3D"
 						alt="Interior remodeling and professional contractor services in Vancouver WA"
 						fill
 						priority

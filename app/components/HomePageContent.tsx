@@ -261,7 +261,7 @@ export default function HomePageContent() {
 					<div className="bg-[#1F2E2B] rounded-[3rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row">
 						<div className="lg:w-1/2 relative h-96 lg:h-auto">
 							<Image
-								src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2669"
+								src="https://plus.unsplash.com/premium_photo-1682370889632-f5eda67b0305?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fFByb2Zlc3Npb25hbCUyMGNhcnBlbnRlciUyMGluc3RhbGxpbmclMjBjYWJpbmV0c3xlbnwwfHwwfHx8MA%3D%3D"
 								alt="Professional carpentry in Vancouver WA"
 								fill
 								className="object-cover"
