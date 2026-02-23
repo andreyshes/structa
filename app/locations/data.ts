@@ -92,7 +92,7 @@ export const locationsData: Record<string, CityData> = {
 };
 
 export const servicesData: Record<string, ServiceData> = {
-	"handyman-services": {
+	"handyman": {
 		title: "Handyman Services",
 		description:
 			"We offer reliable home repair solutions for local owners. No job is too small for our expert team of professionals.",
@@ -125,7 +125,7 @@ export const servicesData: Record<string, ServiceData> = {
 			"Door & Window Casing",
 		],
 	},
-	"door-window-repair": {
+	"door-window": {
 		title: "Door & Window Repair",
 		description:
 			"Our team handles repairs to keep your doors and windows secure. We ensure everything operates smoothly and correctly.",
@@ -136,7 +136,7 @@ export const servicesData: Record<string, ServiceData> = {
 			"Window Screen Repair",
 		],
 	},
-	"flooring-repair-interior-updates": {
+	"flooring": {
 		title: "Flooring Repair & Interior Updates",
 		description:
 			"Modernize your interior with flooring fixes and updates. We offer upgrades that increase the value of your local home.",
@@ -147,7 +147,7 @@ export const servicesData: Record<string, ServiceData> = {
 			"Interior Paint Prep",
 		],
 	},
-	"kitchen-bathroom-updates": {
+	"kitchen-bath": {
 		title: "Kitchen & Bathroom Updates",
 		description:
 			"Refresh your kitchen and bathroom with modern fixtures. We update hardware and surfaces to give your space a new look.",

@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-import { locationsData, servicesData } from "./locations/data"; // Verify this path matches your file structure
+import { locationsData, servicesData } from "./locations/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
 	const baseUrl = "https://norbilt.com";

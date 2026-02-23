@@ -1,10 +1,8 @@
 import HomePageContent from "@/app/components/HomePageContent";
 
 export const metadata = {
-	// 56 Characters: Hits the 30-60 range & includes exact target keyword first
 	title: "General Contractor Vancouver WA | Norbilt Home Repairs",
 
-	// 155 Characters: Hits 50-160 range & includes "General Contractor" + CTA
 	description:
 		"Looking for a licensed general contractor in Vancouver WA? Norbilt provides expert home repairs and interior remodeling. Get a free estimate today!",
 
