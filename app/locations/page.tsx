@@ -32,7 +32,7 @@ export default function LocationsIndexPage() {
 					name: "Vancouver, WA",
 					href: "/locations/vancouver",
 					description:
-						"Our main shop offers licensed contractor work, kitchen updates, and clean wood trim across the city.",
+						"Our main shop offers licensed contractor work and kitchen updates. In addition, we provide clean wood trim for homes across the city.",
 					tags: ["Main Hub", "Full Service"],
 					primary: true,
 				},
@@ -45,7 +45,7 @@ export default function LocationsIndexPage() {
 					name: "Camas, WA",
 					href: "/locations/camas",
 					description:
-						"Quality home updates and high-end wood trim for local houses in the Camas area.",
+						"We provide quality home updates and high-end wood trim. Because of this, we are the top choice for local houses in the Camas area.",
 					tags: ["Interior Trim", "Updates"],
 					primary: false,
 				},
@@ -53,7 +53,7 @@ export default function LocationsIndexPage() {
 					name: "Washougal, WA",
 					href: "/locations/washougal",
 					description:
-						"Pro home repairs and house care for the Washougal area and local hills.",
+						"Our team offers pro home repairs and house care. Additionally, we serve the Washougal area and local hills.",
 					tags: ["Home Repair", "Maintenace"],
 					primary: false,
 				},
@@ -66,7 +66,7 @@ export default function LocationsIndexPage() {
 					name: "Ridgefield, WA",
 					href: "/locations/ridgefield",
 					description:
-						"Clean drywall repair, trim setup, and home updates for new Ridgefield homes.",
+						"We handle clean drywall repair and trim setup. Therefore, we are ready to help with home updates for new Ridgefield houses.",
 					tags: ["New Work", "Drywall"],
 					primary: false,
 				},
@@ -74,7 +74,7 @@ export default function LocationsIndexPage() {
 					name: "Battle Ground, WA",
 					href: "/locations/battle-ground",
 					description:
-						"Fast handyman help and licensed home work for local houses in Battle Ground.",
+						"Get fast handyman help and licensed home work. In addition, we offer quality fixes for local houses in Battle Ground.",
 					tags: ["General Repairs", "Fixes"],
 					primary: false,
 				},
@@ -82,7 +82,7 @@ export default function LocationsIndexPage() {
 					name: "Brush Prairie, WA",
 					href: "/locations/brush-prairie",
 					description:
-						"Full home fixes and wood work for large local lots and farms in Brush Prairie.",
+						"Our crew does full home fixes and wood work. Furthermore, we serve large local lots and farms in Brush Prairie.",
 					tags: ["Wood Work", "Licensed Pro"],
 					primary: false,
 				},
@@ -95,7 +95,7 @@ export default function LocationsIndexPage() {
 					name: "Felida, WA",
 					href: "/locations/felida",
 					description:
-						"Top quality home fixes and fixture setup for Felida homes.",
+						"We offer top quality home fixes. Additionally, we handle fixture setup for all Felida homes.",
 					tags: ["Local Service"],
 					primary: false,
 				},
@@ -103,7 +103,7 @@ export default function LocationsIndexPage() {
 					name: "Salmon Creek, WA",
 					href: "/locations/salmon-creek",
 					description:
-						"Clean drywall matching and interior prep for Salmon Creek houses.",
+						"Our team does clean drywall matching. As a result, we provide great interior prep for Salmon Creek houses.",
 					tags: ["Local Service"],
 					primary: false,
 				},
@@ -111,7 +111,7 @@ export default function LocationsIndexPage() {
 					name: "Hazel Dell, WA",
 					href: "/locations/hazel-dell",
 					description:
-						"Local repairs and bath fixture updates across the Hazel Dell area.",
+						"We provide local repairs and bath updates. Therefore, we are the go-to pro across the Hazel Dell area.",
 					tags: ["Local Service"],
 					primary: false,
 				},
@@ -119,7 +119,7 @@ export default function LocationsIndexPage() {
 					name: "Orchards, WA",
 					href: "/locations/orchards",
 					description:
-						"Fast home care and door/window trim repairs in the Orchards area.",
+						"Get fast home care and trim repairs. In addition, we serve the Orchards area with reliable work.",
 					tags: ["Local Service"],
 					primary: false,
 				},
@@ -127,7 +127,7 @@ export default function LocationsIndexPage() {
 					name: "Mill Plain, WA",
 					href: "/locations/mill-plain",
 					description:
-						"New Mill Plain home updates with custom trim and floor work.",
+						"We lead new Mill Plain home updates. Because of this, we offer custom trim and floor work for every room.",
 					tags: ["Local Service"],
 					primary: false,
 				},
@@ -135,7 +135,7 @@ export default function LocationsIndexPage() {
 					name: "Five Corners, WA",
 					href: "/locations/five-corners",
 					description:
-						"Good wood work and handyman help for homes in Five Corners.",
+						"Our shop offers good wood work. Furthermore, we provide handyman help for homes in Five Corners.",
 					tags: ["Local Service"],
 					primary: false,
 				},
@@ -174,9 +174,9 @@ export default function LocationsIndexPage() {
 						</motion.h1>
 
 						<p className="text-xl text-white/80 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6">
-							Norbilt offers <strong>clean home updates</strong> and
-							<strong> licensed home repairs</strong>. We serve Vancouver and
-							all local towns nearby.
+							Norbilt offers clean home updates and licensed home repairs.
+							Additionally, we serve Vancouver and all local towns nearby.
+							Therefore, we are the top choice for quality work in Clark County.
 						</p>
 					</div>
 				</div>
@@ -279,7 +279,7 @@ export default function LocationsIndexPage() {
 									Get Free Estimate
 								</Link>
 								<Link
-									href="tel:+13600000000"
+									href="tel:+19165086272"
 									className="px-12 py-6 border-2 border-black/20 text-black font-black uppercase tracking-widest rounded-xl flex items-center justify-center gap-3"
 								>
 									<Phone className="w-5 h-5" /> Call Now

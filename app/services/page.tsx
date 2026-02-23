@@ -8,7 +8,6 @@ import {
 	Hammer,
 	Paintbrush,
 	DoorOpen,
-	Lightbulb,
 	Layers,
 	ArrowRight,
 	CheckCircle2,
@@ -45,7 +44,7 @@ export default function ServicesPage() {
 			description:
 				"Clean wood trim and work that adds value to your local home.",
 			longDesc:
-				"Our wood work focuses on the small details that make a home look great. We install crown molding, baseboards, and wall trim. For Vancouver owners, new wood trim is a top way to add value to your house. We make sure every corner is clean and tight.",
+				"Our wood work focuses on the small details that make a home look great. We install crown molding, baseboards, and wall trim. Furthermore, for Vancouver owners, new wood trim is a top way to add value to your house. We make sure every corner is clean and tight.",
 			items: [
 				"Baseboards & Trim",
 				"Accent Walls",
@@ -64,7 +63,7 @@ export default function ServicesPage() {
 				"https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2000",
 			description: "Fast home updates and new fixture setup.",
 			longDesc:
-				"As a local contractor, we handle the tech side of kitchen and bath fixes. We bring the skill of a big firm with the speed of a local pro. We make sure the rooms you use most are both useful and look great.",
+				"As a local contractor, we handle the tech side of kitchen and bath fixes. We bring the skill of a big firm with the speed of a local pro. In addition, we make sure the rooms you use most are both useful and look great.",
 			items: [
 				"Kitchen Backsplash",
 				"New Cabinet Handles",
@@ -84,7 +83,7 @@ export default function ServicesPage() {
 			description:
 				"Clean wall repairs and texture matching for a smooth finish.",
 			longDesc:
-				"Wall damage can hurt the value of your home. Our drywall work goes past simple patches. We match your wall texture so the fix looks like it was never there. We handle everything from small holes to water damage.",
+				"Wall damage can hurt the value of your home. Our drywall work goes past simple patches. Because of this, we match your wall texture so the fix looks like it was never there. We handle everything from small holes to water damage.",
 			items: [
 				"Wall Hole Patching",
 				"Water Damage Fixes",
@@ -103,7 +102,7 @@ export default function ServicesPage() {
 				"https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=2000",
 			description: "Local floor setup and plank repair jobs.",
 			longDesc:
-				"Floor damage does not always mean you need a new floor. We offer fast floor repair for LVP, tile, and wood. From fixing one bad plank to stopping floor squeaks, we help Vancouver owners keep their floors longer.",
+				"Floor damage does not always mean you need a new floor. We offer fast floor repair for LVP, tile, and wood. Therefore, we help Vancouver owners keep their floors longer by fixing individual bad planks and stopping squeaks.",
 			items: [
 				"Plank Replacement",
 				"Floor Squeak Repair",
@@ -122,7 +121,7 @@ export default function ServicesPage() {
 				"https://images.unsplash.com/photo-1527352774566-e4916e36c645?w=900&auto=format&fit=crop",
 			description: "Setup and repair for home doors and windows.",
 			longDesc:
-				"Good doors and windows are key for a quiet, warm home. We set up new interior doors and fix old ones. Our window work focuses on the trim and seals to keep your home looking and feeling its best.",
+				"Good doors and windows are key for a quiet, warm home. We set up new interior doors and fix old ones. Additionally, our window work focuses on the trim and seals to keep your home looking and feeling its best.",
 			items: [
 				"Interior Door Setup",
 				"New Door Locks",
@@ -141,7 +140,7 @@ export default function ServicesPage() {
 				"https://plus.unsplash.com/premium_photo-1664298827256-04eb817aa0ba?w=900&auto=format&fit=crop",
 			description: "Licensed contractor help for home care and repairs.",
 			longDesc:
-				"Caring for a home in the Northwest takes work. Our pro handyman help covers wood-rot repair and home care. As a licensed Washington contractor, we stand behind our work and show up on time.",
+				"Caring for a home in the Northwest takes work. Our pro handyman help covers wood-rot repair and home care. As a result of being a licensed Washington contractor, we stand behind our work and show up on time.",
 			items: [
 				"General Home Repair",
 				"Siding Fixes",
