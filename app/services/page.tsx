@@ -12,15 +12,12 @@ import {
 	Layers,
 	ArrowRight,
 	CheckCircle2,
-	ShieldCheck,
 	MapPin,
 	Shield,
 	Phone,
 	type LucideIcon,
 	Star,
 	Square,
-	Construction,
-	TrendingUp,
 } from "lucide-react";
 
 import SectionHeader from "@/app/components/SectionHeader";
@@ -33,7 +30,7 @@ type ServiceCategory = {
 	items: string[];
 	href: string;
 	longDesc: string;
-	image: string; // The specific image for this service
+	image: string;
 };
 
 export default function ServicesPage() {
@@ -41,121 +38,117 @@ export default function ServicesPage() {
 		{
 			id: "finish-carpentry",
 			icon: Hammer,
-			title: "Custom Trim & Finish Carpentry",
+			title: "Wood Trim & Carpentry",
 			href: "/services/finish-carpentry",
 			image:
-				"https://plus.unsplash.com/premium_photo-1683131426576-af8167f436f6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJhc2Vib2FyZHxlbnwwfHwwfHx8MA%3D%3D", // Replace with your trim work photo
+				"https://plus.unsplash.com/premium_photo-1683131426576-af8167f436f6?w=900&auto=format&fit=crop",
 			description:
-				"Precision millwork and trim installation that adds character and property value.",
+				"Clean wood trim and work that adds value to your local home.",
 			longDesc:
-				"Our finish carpentry services focus on the architectural details that define a home. From crown molding installation to custom wainscoting and baseboard replacement, we ensure every mitered corner is gap-free. For Vancouver homeowners, high-quality millwork is a top-tier way to increase property value.",
+				"Our wood work focuses on the small details that make a home look great. We install crown molding, baseboards, and wall trim. For Vancouver owners, new wood trim is a top way to add value to your house. We make sure every corner is clean and tight.",
 			items: [
-				"Baseboards & Crown Molding",
-				"Wainscoting & Accent Walls",
-				"Window & Door Casing",
-				"Custom Built-in Shelving",
-				"Fireplace Mantel Install",
-				"Precision Millwork Repairs",
+				"Baseboards & Trim",
+				"Accent Walls",
+				"Door & Window Trim",
+				"Built-in Shelves",
+				"Fireplace Mantels",
+				"Small Wood Repairs",
 			],
 		},
 		{
 			id: "kitchen-bath",
 			icon: Paintbrush,
-			title: "Kitchen & Bathroom Remodeling",
+			title: "Kitchen & Bath Updates",
 			href: "/services/kitchen-bath",
 			image:
 				"https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2000",
-			description:
-				"High-impact upgrades and professional fixture installation.",
+			description: "Fast home updates and new fixture setup.",
 			longDesc:
-				"As a specialized general contractor, we handle the technical aspects of kitchen and bath refreshes. We provide the expertise of a full-scale remodeling firm with the efficiency of a local specialist, ensuring your most used rooms are both functional and beautiful.",
+				"As a local contractor, we handle the tech side of kitchen and bath fixes. We bring the skill of a big firm with the speed of a local pro. We make sure the rooms you use most are both useful and look great.",
 			items: [
-				"Kitchen Backsplash Tile",
-				"Cabinet Hardware Replacement",
-				"Vanity & Sink Installation",
-				"Luxury Fixture Upgrades",
-				"Shower Hardware Refreshes",
-				"Toilet & Faucet Installation",
+				"Kitchen Backsplash",
+				"New Cabinet Handles",
+				"Sink Installation",
+				"Light & Bath Fixtures",
+				"Shower Hardware",
+				"Toilet & Faucet Setup",
 			],
 		},
 		{
 			id: "drywall",
 			icon: Layers,
-			title: "Drywall Repair & Texture Matching",
+			title: "Drywall Repair & Fixes",
 			href: "/services/drywall-repair",
 			image:
-				"https://plus.unsplash.com/premium_photo-1661322610748-32b33eada183?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZHJ5d2FsbHxlbnwwfHwwfHx8MA%3D%3D", // Replace with your drywall repair photo
+				"https://plus.unsplash.com/premium_photo-1661322610748-32b33eada183?w=900&auto=format&fit=crop",
 			description:
-				"Seamless repairs and expert texture matching for a flawless finish.",
+				"Clean wall repairs and texture matching for a smooth finish.",
 			longDesc:
-				"Wall damage can detract from your home's value. Our drywall repair services go beyond simple patching. We specialize in seamless texture matching—including orange peel and knockdown—to ensure that repairs are invisible to the naked eye.",
+				"Wall damage can hurt the value of your home. Our drywall work goes past simple patches. We match your wall texture so the fix looks like it was never there. We handle everything from small holes to water damage.",
 			items: [
-				"Large Hole Patching",
-				"Water Damage Restoration",
-				"Professional Texture Matching",
-				"Popcorn Ceiling Removal",
+				"Wall Hole Patching",
+				"Water Damage Fixes",
+				"Texture Matching",
+				"Popcorn Ceiling Work",
 				"Stress Crack Repair",
-				"Sheetrock Finishing",
+				"Sheetrock Finish",
 			],
 		},
 		{
 			id: "flooring",
 			icon: Square,
-			title: "LVP & Tile Flooring Repairs",
+			title: "LVP & Tile Floor Repairs",
 			href: "/services/flooring",
 			image:
-				"https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=2000", // Replace with your flooring photo
-			description:
-				"Specialized flooring installation and structural plank repairs.",
+				"https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=2000",
+			description: "Local floor setup and plank repair jobs.",
 			longDesc:
-				"Floor damage doesn't always require a total replacement. We offer targeted flooring repair for Luxury Vinyl Plank (LVP), laminate, and tile. From replacing individual damaged planks to fixing subfloor squeaks, we help Vancouver homeowners extend the life of their floors.",
+				"Floor damage does not always mean you need a new floor. We offer fast floor repair for LVP, tile, and wood. From fixing one bad plank to stopping floor squeaks, we help Vancouver owners keep their floors longer.",
 			items: [
-				"Individual Plank Replacement",
-				"Subfloor Squeak Repair",
-				"Transition & Threshold Install",
-				"Grout Repair & Re-caulking",
-				"LVP & Laminate Installation",
-				"Baseboard & Trim Integration",
+				"Plank Replacement",
+				"Floor Squeak Repair",
+				"Threshold Install",
+				"Grout & Caulk Repair",
+				"LVP Floor Setup",
+				"New Baseboard Trim",
 			],
 		},
 		{
 			id: "doors-windows",
 			icon: DoorOpen,
-			title: "Interior Door & Window Services",
+			title: "Door & Window Services",
 			href: "/services/door-window",
 			image:
-				"https://images.unsplash.com/photo-1527352774566-e4916e36c645?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2luZG93fGVufDB8fDB8fHww", // Replace with your door/window photo
-			description:
-				"Installation and repair of interior doors and window casings.",
+				"https://images.unsplash.com/photo-1527352774566-e4916e36c645?w=900&auto=format&fit=crop",
+			description: "Setup and repair for home doors and windows.",
 			longDesc:
-				"Properly installed doors and windows are essential for privacy and energy efficiency. We provide professional installation for pre-hung interior doors and sliding door tuning. Our window services focus on casing repair and trim installation for a consistent interior look.",
+				"Good doors and windows are key for a quiet, warm home. We set up new interior doors and fix old ones. Our window work focuses on the trim and seals to keep your home looking and feeling its best.",
 			items: [
-				"Pre-hung Door Installation",
-				"Door Hardware & Lock Setup",
-				"Weatherstripping & Sealing",
-				"Window Trim & Casing Repair",
-				"Sliding Door Alignment",
-				"Smart Lock Installation",
+				"Interior Door Setup",
+				"New Door Locks",
+				"Door Seals",
+				"Window Trim Fixes",
+				"Sliding Door Work",
+				"Smart Lock Setup",
 			],
 		},
 		{
 			id: "handyman",
 			icon: Wrench,
-			title: "Structural Home Maintenance",
+			title: "Home Help & Maintenance",
 			href: "/services/handyman",
 			image:
-				"https://plus.unsplash.com/premium_photo-1664298827256-04eb817aa0ba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG9tZSUyMHJlcGFpcnN8ZW58MHx8MHx8fDA%3D",
-			description:
-				"Licensed general contractor services for reliable home maintenance.",
+				"https://plus.unsplash.com/premium_photo-1664298827256-04eb817aa0ba?w=900&auto=format&fit=crop",
+			description: "Licensed contractor help for home care and repairs.",
 			longDesc:
-				"Maintaining a home in the Pacific Northwest requires a proactive approach. Our professional handyman services cover everything from selective exterior wood-rot repair to interior structural maintenance. As a licensed Washington contractor, we provide total accountability.",
+				"Caring for a home in the Northwest takes work. Our pro handyman help covers wood-rot repair and home care. As a licensed Washington contractor, we stand behind our work and show up on time.",
 			items: [
 				"General Home Repair",
-				"Selective Siding Repair",
-				"Deck & Wood-Rot Work",
-				"Furniture & Art Mounting",
-				"Weatherproofing Services",
-				"Safety Grab Bar Install",
+				"Siding Fixes",
+				"Wood Rot Work",
+				"Art & TV Mounting",
+				"Home Weatherproofing",
+				"Safety Bar Install",
 			],
 		},
 	];
@@ -166,7 +159,7 @@ export default function ServicesPage() {
 			<section className="relative min-h-[70vh] flex items-center overflow-hidden">
 				<div className="absolute inset-0">
 					<Image
-						src="https://plus.unsplash.com/premium_photo-1664303816628-2c3f28be369d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2l0Y2hlbiUyMHJlbW9kZWx8ZW58MHx8MHx8fDA%3D"
+						src="https://plus.unsplash.com/premium_photo-1664303816628-2c3f28be369d?w=900&auto=format&fit=crop"
 						alt="Interior remodeling and professional contractor services in Vancouver WA"
 						fill
 						priority
@@ -183,7 +176,7 @@ export default function ServicesPage() {
 							className="flex items-center gap-3"
 						>
 							<span className="px-4 py-1 bg-[#FFB800] text-black text-xs font-black uppercase tracking-widest rounded">
-								General Contractor • Vancouver, WA
+								Licensed Contractor • Vancouver, WA
 							</span>
 						</motion.div>
 
@@ -193,14 +186,13 @@ export default function ServicesPage() {
 							className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tighter uppercase"
 						>
 							Interior <br />
-							<span className="text-[#FFB800]">Construction</span> & <br />
+							<span className="text-[#FFB800]">Work</span> & <br />
 							Home Repairs
 						</motion.h1>
 
 						<p className="text-xl text-white/80 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6">
-							Norbilt provides the precision remodeling and high-quality home
-							repair services Vancouver homeowners trust. Licensed, bonded, and
-							local.
+							Norbilt provides the quality home repair jobs Vancouver owners
+							need. Licensed, bonded, and local.
 						</p>
 					</div>
 				</div>
@@ -212,19 +204,19 @@ export default function ServicesPage() {
 					<div className="flex items-center gap-3">
 						<Shield className="text-[#FFB800] w-5 h-5" />
 						<span className="text-[#A7C4B5] font-black text-xs uppercase tracking-[0.2em]">
-							Fully Licensed & Bonded
+							Licensed & Bonded
 						</span>
 					</div>
 					<div className="flex items-center gap-3">
 						<Star className="text-[#FFB800] w-5 h-5 fill-[#FFB800]" />
 						<span className="text-[#A7C4B5] font-black text-xs uppercase tracking-[0.2em]">
-							5-Star Local Craftsmanship
+							5-Star Local Work
 						</span>
 					</div>
 					<div className="flex items-center gap-3">
 						<MapPin className="text-[#FFB800] w-5 h-5" />
 						<span className="text-[#A7C4B5] font-black text-xs uppercase tracking-[0.2em]">
-							Serving All Clark County
+							Serving Clark County
 						</span>
 					</div>
 				</div>
@@ -234,9 +226,9 @@ export default function ServicesPage() {
 			<section className="py-24 bg-[#E8E4DE]/30">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
 					<SectionHeader
-						eyebrow="Our Core Services"
-						title="Professional Contractor Solutions"
-						description="Comprehensive interior construction, remodeling, and repair services for your residential property."
+						eyebrow="Our Core Jobs"
+						title="Local Contractor Help"
+						description="Quality interior work and home repair jobs for your house."
 					/>
 
 					<div className="grid gap-16 mt-20">
@@ -273,12 +265,11 @@ export default function ServicesPage() {
 										</div>
 									</div>
 
-									{/* DYNAMIC IMAGE SECTION */}
 									<div className="lg:col-span-5 flex flex-col justify-center">
 										<div className="relative aspect-square rounded-[2rem] overflow-hidden shadow-2xl">
 											<Image
 												src={service.image}
-												alt={`${service.title} specialized repair and installation in Vancouver WA`}
+												alt={`${service.title} repair and setup in Vancouver WA`}
 												fill
 												sizes="(max-width: 768px) 100vw, 50vw"
 												className="object-cover group-hover:scale-110 transition-transform duration-700"
@@ -288,7 +279,7 @@ export default function ServicesPage() {
 											href="/contact"
 											className="mt-8 inline-flex items-center justify-center gap-4 py-6 bg-[#1F2E2B] text-white font-black uppercase tracking-widest rounded-2xl hover:bg-[#FFB800] hover:text-black transition-all"
 										>
-											Request This Service <ArrowRight className="w-5 h-5" />
+											Request a Quote <ArrowRight className="w-5 h-5" />
 										</Link>
 									</div>
 								</div>
@@ -304,11 +295,11 @@ export default function ServicesPage() {
 					<div className="bg-[#1F2E2B] rounded-[3rem] p-12 lg:p-24 text-center relative overflow-hidden border-b-[12px] border-[#FFB800] shadow-2xl">
 						<div className="relative z-10 max-w-3xl mx-auto space-y-8">
 							<h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none">
-								Start Your <span className="text-[#FFB800]">Home Remodel</span>
+								Start Your <span className="text-[#FFB800]">Home Update</span>
 							</h2>
 							<p className="text-[#A7C4B5] text-xl font-medium max-w-xl mx-auto">
-								Connect with Vancouver's expert general contractor for a
-								transparent, professional estimate on your interior project.
+								Talk with Vancouver's local contractor for a fair, clear
+								estimate on your next project.
 							</p>
 							<div className="flex flex-col sm:flex-row gap-6 justify-center pt-4">
 								<Link
