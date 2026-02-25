@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
 	title: "General Contractor Service Areas | Vancouver WA | Norbilt",
 	description:
-		"Norbilt is a licensed general contractor serving Vancouver, Camas, Washougal, Battle Ground, and Ridgefield WA. We handle home repairs and remodeling across Clark County.",
+		"Norbilt is a licensed general contractor serving Vancouver, Camas, Washougal, Battle Ground, and Ridgefield WA. We handle home repairs across Clark County.",
 	alternates: {
 		canonical: "https://norbilt.com/locations",
 	},

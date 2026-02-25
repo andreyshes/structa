@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
 	title: "Drywall Repair Vancouver WA | Norbilt Contractor",
 	description:
-		"Expert drywall repair in Vancouver WA. Norbilt fixes wall holes, water damage, texture matching, and stress cracks. Licensed general contractor in Clark County.",
+		"Expert drywall repair in Vancouver WA. Norbilt fixes wall holes, water damage, texture matching, and stress cracks. Licensed contractor in Clark County.",
 	alternates: {
 		canonical: "https://norbilt.com/services/drywall-repair",
 	},

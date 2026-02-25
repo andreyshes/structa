@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
 	title: "Home Repair Services Vancouver WA | Norbilt Contractor",
 	description:
-		"Explore Norbilt's home repair services in Vancouver WA. From finish carpentry and drywall to handyman work, we handle all interior repairs. Get a free estimate!",
+		"Explore Norbilt's home repair services in Vancouver WA. From finish carpentry and drywall to handyman work, we handle all interior repairs. Free estimate!",
 	alternates: {
 		canonical: "https://norbilt.com/services",
 	},
