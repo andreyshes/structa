@@ -21,10 +21,9 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 	}
 
 	const cityName = cityData.name?.split(",")[0] || "Local";
-	const serviceTitle = serviceData.title.split(" &")[0].split(" and")[0];
+	const serviceTitle = serviceData.title;
 	const shortTitle = `${serviceTitle} in ${cityName} WA | Norbilt`;
 
-	// FIXED LENGTH: ~140 Characters (Audit Safe)
 	const fullDesc = `Need expert ${serviceTitle.toLowerCase()} in ${cityName}? Norbilt offers professional home repairs and licensed contracting. Get a free estimate today!`;
 	const pageUrl = `https://norbilt.com/locations/${resolvedParams.city}/${resolvedParams.service}`;
 
