@@ -276,17 +276,17 @@ export default function HomePageContent() {
 							</p>
 							<div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 border-t border-white/10">
 								<div className="space-y-2">
-									<h4 className="text-[#FFB800] font-black uppercase text-sm flex items-center gap-2">
+									<h3 className="text-[#FFB800] font-black uppercase text-sm flex items-center gap-2">
 										<Wrench className="w-4 h-4" /> Repairs
-									</h4>
+									</h3>
 									<p className="text-white/70 text-sm">
 										Drywall patching and wood rot fixes.
 									</p>
 								</div>
 								<div className="space-y-2">
-									<h4 className="text-[#FFB800] font-black uppercase text-sm flex items-center gap-2">
+									<h3 className="text-[#FFB800] font-black uppercase text-sm flex items-center gap-2">
 										<Hammer className="w-4 h-4" /> Install
-									</h4>
+									</h3>
 									<p className="text-white/70 text-sm">
 										New floors, trim, and lights.
 									</p>

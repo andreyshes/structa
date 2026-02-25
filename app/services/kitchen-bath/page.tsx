@@ -154,9 +154,9 @@ export default function KitchenBathPage() {
 
 						<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
 							<div className="bg-[#F8F6F3] p-10 rounded-[2.5rem] border border-gray-100 shadow-sm">
-								<h4 className="font-black text-[#1F2E2B] uppercase tracking-tight text-xl mb-6 flex items-center gap-2">
+								<h3 className="font-black text-[#1F2E2B] uppercase tracking-tight text-xl mb-6 flex items-center gap-2">
 									<Layout className="w-5 h-5 text-[#2D5A3D]" /> Kitchen
-								</h4>
+								</h3>
 								<ul className="space-y-4">
 									{[
 										"Custom Backsplashes",
@@ -177,9 +177,9 @@ export default function KitchenBathPage() {
 
 							<div className="bg-[#1F2E2B] p-10 rounded-[2.5rem] text-white shadow-2xl relative overflow-hidden">
 								<Droplets className="absolute -right-4 -bottom-4 w-24 h-24 text-white/5" />
-								<h4 className="font-black text-[#FFB800] uppercase tracking-tight text-xl mb-6 flex items-center gap-2">
+								<h3 className="font-black text-[#FFB800] uppercase tracking-tight text-xl mb-6 flex items-center gap-2">
 									<Waves className="w-5 h-5" /> Bathroom
-								</h4>
+								</h3>
 								<ul className="space-y-4">
 									{[
 										"Vanity & Mirror Sets",

@@ -73,9 +73,9 @@ export default function DynamicFaq({
 									<span className="text-[#FFB800] font-black text-xl shrink-0 mt-1">
 										0{i + 1}
 									</span>
-									<h4 className="text-xl font-black text-[#1F2E2B] tracking-tight flex-1 pr-4">
+									<h3 className="text-xl font-black text-[#1F2E2B] tracking-tight flex-1 pr-4">
 										{item.q}
-									</h4>
+									</h3>
 								</div>
 								<ChevronDown
 									className={`w-6 h-6 text-[#FFB800] shrink-0 transition-transform duration-300 mt-1 ${

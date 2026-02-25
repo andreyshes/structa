@@ -180,9 +180,9 @@ export default function DrywallRepairPage() {
 									key={i}
 									className="bg-[#F8F6F3] p-8 rounded-[2rem] border-l-8 border-[#FFB800] shadow-sm"
 								>
-									<h4 className="font-black text-[#1F2E2B] uppercase tracking-tight text-xl mb-2">
+									<h3 className="font-black text-[#1F2E2B] uppercase tracking-tight text-xl mb-2">
 										{item.t}
-									</h4>
+									</h3>
 									<p className="text-gray-600 text-sm font-medium">{item.d}</p>
 								</div>
 							))}

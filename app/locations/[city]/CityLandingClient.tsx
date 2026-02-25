@@ -333,9 +333,9 @@ export default function CityLandingClient({ city, citySlug }: any) {
 										<span className="text-[#FFB800] font-black text-xl">
 											0{i + 1}
 										</span>
-										<h4 className="text-xl font-black text-[#1F2E2B] tracking-tight">
+										<h3 className="text-xl font-black text-[#1F2E2B] tracking-tight">
 											{item.q}
-										</h4>
+										</h3>
 									</div>
 									<ChevronDown
 										className={`w-6 h-6 text-[#FFB800] transition-transform ${openFaq === i ? "rotate-180" : ""}`}

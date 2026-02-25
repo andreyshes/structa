@@ -166,9 +166,9 @@ export default function ContactPage() {
 								{item.step}
 							</span>
 							<div>
-								<h4 className="font-black text-[#1F2E2B] uppercase text-sm tracking-widest">
+								<h3 className="font-black text-[#1F2E2B] uppercase text-sm tracking-widest">
 									{item.title}
-								</h4>
+								</h3>
 								<p className="text-gray-500 text-sm font-medium">{item.desc}</p>
 							</div>
 						</div>
