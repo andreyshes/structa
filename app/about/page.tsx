@@ -15,12 +15,25 @@ export const metadata = {
 		title: "About Norbilt | Vancouver WA General Contractor",
 		description:
 			"Licensed home repair and remodeling experts serving Vancouver and Clark County.",
+		url: "https://norbilt.com/about",
+		siteName: "Norbilt",
+		locale: "en_US",
 		type: "website",
 		images: [
 			{
 				url: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=1200",
+				width: 1200,
+				height: 630,
+				alt: "About Norbilt General Contractor Vancouver WA",
 			},
 		],
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "About Norbilt | Vancouver WA General Contractor",
+		description:
+			"Licensed home repair and remodeling experts serving Vancouver and Clark County.",
+		images: ["https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=1200"],
 	},
 };
 
