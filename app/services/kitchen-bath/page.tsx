@@ -1,8 +1,5 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import {
 	Paintbrush,
 	CheckCircle2,
@@ -55,6 +52,7 @@ export default function KitchenBathPage() {
 						alt="Modern kitchen and bathroom refresh services in Vancouver WA"
 						fill
 						priority
+						sizes="100vw"
 						className="object-cover"
 					/>
 					<div className="absolute inset-0 bg-gradient-to-r from-[#14201D] via-[#14201D]/85 to-transparent" />
@@ -62,40 +60,24 @@ export default function KitchenBathPage() {
 
 				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32">
 					<div className="max-w-4xl space-y-6">
-						<motion.div
-							initial={{ opacity: 0, y: 10 }}
-							animate={{ opacity: 1, y: 0 }}
-							className="flex items-center gap-3"
-						>
+						<div className="flex items-center gap-3 animate-fade-in-up">
 							<span className="px-4 py-1 bg-[#FFB800] text-black text-xs font-black uppercase tracking-widest rounded">
 								High-Impact Refreshes
 							</span>
-						</motion.div>
+						</div>
 
-						<motion.h1
-							initial={{ opacity: 0, x: -20 }}
-							animate={{ opacity: 1, x: 0 }}
-							className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tighter uppercase"
-						>
+						<h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tighter uppercase animate-fade-in-left animate-delay-100">
 							Kitchen & <br />
 							<span className="text-[#FFB800]">Bath Refresh</span>
-						</motion.h1>
+						</h1>
 
-						<motion.p
-							initial={{ opacity: 0, y: 20 }}
-							animate={{ opacity: 1, y: 0 }}
-							className="text-xl text-white/90 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6"
-						>
+						<p className="text-xl text-white/90 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6 animate-fade-in-up animate-delay-200">
 							Modernize your most important spaces without the disruption of a
 							full remodel. Professional tile, fixture, and vanity upgrades that
 							transform your home in days, not months.
-						</motion.p>
+						</p>
 
-						<motion.div
-							initial={{ opacity: 0, y: 20 }}
-							animate={{ opacity: 1, y: 0 }}
-							className="pt-4"
-						>
+						<div className="pt-4 animate-fade-in-up animate-delay-300">
 							<Link
 								href="/contact"
 								className="inline-flex items-center gap-3 px-10 py-5 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-2xl"
@@ -103,7 +85,7 @@ export default function KitchenBathPage() {
 								Request My Refresh Quote
 								<ArrowRight className="w-5 h-5" />
 							</Link>
-						</motion.div>
+						</div>
 					</div>
 				</div>
 			</section>

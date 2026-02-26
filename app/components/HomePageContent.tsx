@@ -130,6 +130,7 @@ export default function HomePageContent() {
 				<div className="absolute inset-0">
 					<Image
 						src="/bathroom.jpg.png"
+						sizes="100vw"
 						alt="General Contractor in Vancouver WA doing home repairs"
 						fill
 						priority
@@ -258,6 +259,7 @@ export default function HomePageContent() {
 								src="https://plus.unsplash.com/premium_photo-1682370889632-f5eda67b0305?w=900&auto=format&fit=crop"
 								alt="Expert wood work in Vancouver WA"
 								fill
+								sizes="(max-width: 1024px) 100vw, 50vw"
 								className="object-cover"
 							/>
 							<div className="absolute top-6 left-6 bg-[#FFB800] text-black font-black px-4 py-2 rounded-lg text-xs uppercase tracking-widest shadow-xl">
@@ -340,6 +342,7 @@ export default function HomePageContent() {
 								src="https://images.unsplash.com/photo-1618832515490-e181c4794a45?q=80&w=2670"
 								alt="General contractor interior fix"
 								fill
+								sizes="(max-width: 1024px) 100vw, 50vw"
 								className="object-cover"
 							/>
 						</div>

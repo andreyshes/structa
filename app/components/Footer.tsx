@@ -18,6 +18,7 @@ export default function Footer() {
 									src="/NORBILT.png"
 									alt="Norbilt Logo"
 									fill
+									sizes="128px"
 									className="object-contain brightness-0 invert opacity-90"
 								/>
 							</div>

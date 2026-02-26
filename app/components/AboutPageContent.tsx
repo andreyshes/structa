@@ -58,6 +58,7 @@ export default function AboutPageContent() {
 						alt="General contractor in Vancouver WA doing home repairs"
 						fill
 						priority
+						sizes="100vw"
 						className="object-cover"
 					/>
 					<div className="absolute inset-0 bg-gradient-to-r from-[#14201D] via-[#14201D]/85 to-transparent" />
@@ -119,6 +120,7 @@ export default function AboutPageContent() {
 								src="https://plus.unsplash.com/premium_photo-1733514433307-f337be80b0f4?w=900&auto=format&fit=crop"
 								alt="Interior remodeling in Vancouver"
 								fill
+								sizes="(max-width: 1024px) 100vw, 50vw"
 								className="object-cover"
 							/>
 						</div>

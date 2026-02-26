@@ -1,7 +1,4 @@
-"use client";
-
 import Link from "next/link";
-import { motion } from "framer-motion";
 import {
 	MapPin,
 	ArrowRight,
@@ -151,27 +148,19 @@ export default function LocationsIndexPage() {
 
 				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
 					<div className="max-w-4xl space-y-6">
-						<motion.div
-							initial={{ opacity: 0, y: 10 }}
-							animate={{ opacity: 1, y: 0 }}
-							className="flex items-center gap-3"
-						>
+						<div className="flex items-center gap-3 animate-fade-in-up">
 							<span className="px-4 py-1 bg-[#FFB800] text-black text-xs font-black uppercase tracking-widest rounded">
 								Serving SW Washington
 							</span>
 							<span className="text-[#A7C4B5] font-bold text-sm uppercase tracking-widest">
 								Clark County Licensed Contractor
 							</span>
-						</motion.div>
+						</div>
 
-						<motion.h1
-							initial={{ opacity: 0, x: -20 }}
-							animate={{ opacity: 1, x: 0 }}
-							className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tighter uppercase"
-						>
+						<h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tighter uppercase animate-fade-in-left animate-delay-100">
 							Areas We <br />
 							<span className="text-[#FFB800]">Serve</span>
-						</motion.h1>
+						</h1>
 
 						<p className="text-xl text-white/80 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6">
 							Norbilt is a licensed general contractor serving Vancouver and
@@ -215,13 +204,7 @@ export default function LocationsIndexPage() {
 
 								<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 									{region.cities.map((location, index) => (
-										<motion.div
-											key={location.name}
-											initial={{ opacity: 0, y: 20 }}
-											whileInView={{ opacity: 1, y: 0 }}
-											viewport={{ once: true }}
-											transition={{ delay: index * 0.05 }}
-										>
+										<div key={location.name}>
 											<Link
 												href={location.href}
 												className={`group relative flex flex-col h-full rounded-3xl p-10 transition-all duration-500 border-b-8 shadow-sm ${
@@ -253,7 +236,7 @@ export default function LocationsIndexPage() {
 													<ArrowRight className="w-4 h-4" />
 												</div>
 											</Link>
-										</motion.div>
+										</div>
 									))}
 								</div>
 							</div>

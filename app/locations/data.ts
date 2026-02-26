@@ -137,7 +137,7 @@ export const servicesData: Record<string, ServiceData> = {
 		],
 	},
 	"flooring": {
-		title: "Flooring Repair & Interior Updates",
+		title: "Flooring Repair & Updates",
 		description:
 			"Modernize your interior with flooring fixes and updates. We offer upgrades that increase the value of your local home.",
 		features: [

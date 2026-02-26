@@ -1,7 +1,4 @@
-"use client";
-
 import Link from "next/link";
-import { motion } from "framer-motion";
 import {
 	Wrench,
 	CheckCircle2,
@@ -21,35 +18,20 @@ export default function HomeRepairPage() {
 			<section className="relative pt-32 pb-24 lg:pt-40 lg:pb-32 bg-[#2C3E3A]">
 				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
 					<div className="max-w-4xl">
-						<motion.span
-							initial={{ opacity: 0, y: 20 }}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.6 }}
-							className="inline-flex items-center gap-2 px-4 py-2 bg-[#4A7C59]/30 rounded-full text-[#F8F6F3]/90 text-sm font-medium mb-8"
-						>
+						<span className="inline-flex items-center gap-2 px-4 py-2 bg-[#4A7C59]/30 rounded-full text-[#F8F6F3]/90 text-sm font-medium mb-8 animate-fade-in-up">
 							<Wrench className="w-4 h-4" />
 							Residential Repair & Maintenance
-						</motion.span>
+						</span>
 
-						<motion.h1
-							initial={{ opacity: 0, y: 30 }}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.8, delay: 0.1 }}
-							className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#F8F6F3] mb-6 leading-tight"
-						>
+						<h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#F8F6F3] mb-6 leading-tight animate-fade-in-up animate-delay-100">
 							Professional Home Repair & Maintenance in Vancouver, WA
-						</motion.h1>
+						</h1>
 
-						<motion.p
-							initial={{ opacity: 0, y: 30 }}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.8, delay: 0.2 }}
-							className="text-xl text-[#F8F6F3]/80 leading-relaxed max-w-2xl"
-						>
+						<p className="text-xl text-[#F8F6F3]/80 leading-relaxed max-w-2xl animate-fade-in-up animate-delay-200">
 							Reliable residential repairs completed with construction-grade
 							standards. We help homeowners protect their property, safety, and
 							long-term value throughout Clark County.
-						</motion.p>
+						</p>
 					</div>
 				</div>
 			</section>
@@ -222,15 +204,9 @@ export default function HomeRepairPage() {
 			{/* CTA */}
 			<section className="py-24 bg-[#2C3E3A]">
 				<div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-					<motion.h2
-						initial={{ opacity: 0, y: 30 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true }}
-						transition={{ duration: 0.8 }}
-						className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#F8F6F3] mb-6"
-					>
+					<h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#F8F6F3] mb-6">
 						Ready to Take Care of Your Home?
-					</motion.h2>
+					</h2>
 
 					<p className="text-xl text-[#F8F6F3]/70 mb-10">
 						Request a free estimate and get professional repairs handled the

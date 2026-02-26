@@ -1,8 +1,5 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import {
 	Wrench,
 	Hammer,
@@ -163,6 +160,7 @@ export default function ServicesPage() {
 						alt="Interior remodeling and professional contractor services in Vancouver WA"
 						fill
 						priority
+						sizes="100vw"
 						className="object-cover"
 					/>
 					<div className="absolute inset-0 bg-gradient-to-r from-[#14201D] via-[#14201D]/85 to-transparent" />
@@ -170,25 +168,17 @@ export default function ServicesPage() {
 
 				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-20">
 					<div className="max-w-4xl space-y-6">
-						<motion.div
-							initial={{ opacity: 0, y: 10 }}
-							animate={{ opacity: 1, y: 0 }}
-							className="flex items-center gap-3"
-						>
+						<div className="flex items-center gap-3 animate-fade-in-up">
 							<span className="px-4 py-1 bg-[#FFB800] text-black text-xs font-black uppercase tracking-widest rounded">
 								Licensed Contractor • Vancouver, WA
 							</span>
-						</motion.div>
+						</div>
 
-						<motion.h1
-							initial={{ opacity: 0, x: -20 }}
-							animate={{ opacity: 1, x: 0 }}
-							className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tighter uppercase"
-						>
+						<h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tighter uppercase animate-fade-in-left animate-delay-100">
 							Interior <br />
 							<span className="text-[#FFB800]">Work</span> & <br />
 							Home Repairs
-						</motion.h1>
+						</h1>
 
 						<p className="text-xl text-white/80 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6">
 							Norbilt provides the quality home repair jobs Vancouver owners
