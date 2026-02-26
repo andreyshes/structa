@@ -17,7 +17,7 @@ export const metadata = {
 		url: "https://norbilt.com",
 		images: [
 			{
-				url: "/bathroom.jpg.png",
+				url: "https://norbilt.com/og-image.jpg",
 				width: 1200,
 				height: 630,
 				alt: "Norbilt General Contractor Vancouver WA",
