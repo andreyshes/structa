@@ -74,14 +74,11 @@ export default function Footer() {
 						<ul className="space-y-4">
 							{[
 								{ name: "Home Repairs", href: "/services/handyman" },
-								{
-									name: "Finish Carpentry",
-									href: "/services/finish-carpentry",
-								},
-								{ name: "Bathroom Updates", href: "/services/kitchen-bath" },
-								{ name: "Kitchen Remodeling", href: "/services/kitchen-bath" },
-								{ name: "Drywall Patching", href: "/services/drywall-repair" },
-								{ name: "Custom Projects", href: "/contact" },
+								{ name: "Finish Carpentry", href: "/services/finish-carpentry" },
+								{ name: "Kitchen & Bath", href: "/services/kitchen-bath" },
+								{ name: "Drywall Repair", href: "/services/drywall-repair" },
+								{ name: "Lighting & Fixtures", href: "/services/lighting" },
+								{ name: "Interior Updates", href: "/services/home-repair" },
 							].map((link) => (
 								<li key={link.name}>
 									<Link

@@ -73,5 +73,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		});
 	});
 
+	// 5. Add standalone service pages not in servicesData
+	routes.push(
+		{
+			url: `${baseUrl}/services/home-repair`,
+			lastModified,
+			changeFrequency: "weekly",
+			priority: 0.8,
+		},
+		{
+			url: `${baseUrl}/services/lighting`,
+			lastModified,
+			changeFrequency: "weekly",
+			priority: 0.8,
+		},
+	);
+
 	return routes;
 }
