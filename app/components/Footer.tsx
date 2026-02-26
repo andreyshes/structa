@@ -9,7 +9,7 @@ export default function Footer() {
 		<footer className="bg-[#2C3E3A] text-[#F8F6F3]">
 			{/* Main Footer */}
 			<div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
 					{/* Brand Column */}
 					<div>
 						<div className="flex items-center mb-6">
@@ -82,6 +82,34 @@ export default function Footer() {
 								{ name: "Kitchen Remodeling", href: "/services/kitchen-bath" },
 								{ name: "Drywall Patching", href: "/services/drywall-repair" },
 								{ name: "Custom Projects", href: "/contact" },
+							].map((link) => (
+								<li key={link.name}>
+									<Link
+										href={link.href}
+										className="text-sm font-medium text-[#A7C4B5] hover:text-[#FFB800] transition-colors duration-300 flex items-center group"
+									>
+										<span className="w-0 group-hover:w-2 h-px bg-[#FFB800] mr-0 group-hover:mr-2 transition-all duration-300"></span>
+										{link.name}
+									</Link>
+								</li>
+							))}
+						</ul>
+					</div>
+
+					{/* Service Areas */}
+					<div>
+						<h4 className="text-sm font-black uppercase tracking-[0.2em] mb-8 text-white">
+							Service Areas
+						</h4>
+						<ul className="space-y-4">
+							{[
+								{ name: "Vancouver, WA", href: "/locations/vancouver" },
+								{ name: "Camas, WA", href: "/locations/camas" },
+								{ name: "Ridgefield, WA", href: "/locations/ridgefield" },
+								{ name: "Battle Ground, WA", href: "/locations/battle-ground" },
+								{ name: "Washougal, WA", href: "/locations/washougal" },
+								{ name: "Salmon Creek, WA", href: "/locations/salmon-creek" },
+								{ name: "Hazel Dell, WA", href: "/locations/hazel-dell" },
 							].map((link) => (
 								<li key={link.name}>
 									<Link
