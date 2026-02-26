@@ -5,10 +5,14 @@ import Footer from "@/app/components/Footer";
 import Script from "next/script";
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://norbilt.com"),
 	title: "Norbilt",
 	description: "Expert hands. Exceptional results.",
 	icons: {
 		icon: "/icon-v3.png",
+	},
+	alternates: {
+		canonical: "https://norbilt.com",
 	},
 };
 
