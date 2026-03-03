@@ -27,7 +27,7 @@ export default function Navigation() {
 		<>
 			<motion.nav
 				initial={false}
-				className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+				className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 will-change-transform ${
 					isScrolled
 						? "bg-[#F8F6F3]/95 backdrop-blur-md shadow-sm h-20"
 						: "bg-transparent h-28"
@@ -41,9 +41,13 @@ export default function Navigation() {
 								Norbilt General Contractor Vancouver WA
 							</span>
 							<div
-								className={`relative transition-all duration-500 transform ${
-									isScrolled ? "w-20 h-20" : "w-40 h-40 scale-125 translate-y-2"
-								}`}
+								className="relative w-20 h-20 transition-transform duration-500 will-change-transform"
+								style={{
+									transform: isScrolled
+										? "scale(1) translateY(0px)"
+										: "scale(2) translateY(4px)",
+									transformOrigin: "left center",
+								}}
 							>
 								<Image
 									src="/NORBILT.png"
