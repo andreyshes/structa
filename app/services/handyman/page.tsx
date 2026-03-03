@@ -60,7 +60,7 @@ export default function HandymanPage() {
 				<div className="absolute inset-0 z-0">
 					<Image
 						src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?q=80&w=2000"
-						alt="Professional handyman service tools in Vancouver WA"
+						alt="Home repair tools and equipment in Vancouver WA"
 						fill
 						priority
 						sizes="100vw"
@@ -192,7 +192,7 @@ export default function HandymanPage() {
 					<SectionHeader
 						eyebrow="Solutions"
 						title="Handyman Repair Services"
-						description="Expert handyman results for the repairs and upgrades that keep your home running smoothly."
+						description="Expert results for the repairs and upgrades that keep your home running smoothly."
 					/>
 
 					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
@@ -222,25 +222,25 @@ export default function HandymanPage() {
 				<SectionHeader
 					eyebrow="FAQ"
 					title="Handyman Services FAQ"
-					description="Common questions about our handyman services in Vancouver WA."
+					description="Common questions about our services in Vancouver WA."
 				/>
 				<div className="mt-16 space-y-6">
 					{[
 						{
 							q: "What does a handyman service include?",
-							a: "Our handyman service covers a wide range of home repairs. For example, we handle drywall patching, fixture installation, door repairs, caulking, TV mounting, and furniture assembly. Additionally, we help homeowners and property managers work through punch lists and ongoing home maintenance tasks.",
+							a: "We cover a wide range of home repairs. For example, we handle drywall patching, fixture installation, door repairs, caulking, TV mounting, and furniture assembly. Additionally, we help homeowners and property managers work through punch lists and routine maintenance.",
 						},
 						{
 							q: "Do I need a licensed handyman in Vancouver WA?",
-							a: "In Washington State, handyman work above a certain dollar threshold requires a licensed contractor. As a result, hiring a registered WA General Contractor like Norbilt protects you legally and ensures the work meets code. In fact, unlicensed handyman work can affect your home insurance claims and future resale value.",
+							a: "In Washington State, repair work above a set dollar amount requires a licensed contractor. As a result, hiring a registered WA General Contractor like Norbilt protects you legally and ensures the work meets code. In fact, unlicensed repair work can affect your home insurance and future resale value.",
 						},
 						{
 							q: "How much does handyman service cost in Vancouver WA?",
-							a: "Handyman service costs depend on the scope of work. We provide free, transparent estimates before we start, so there are no surprises. Our rates are competitive for licensed, insured handyman work throughout Vancouver, Camas, and Clark County.",
+							a: "Our service costs depend on the scope of work. We give free, clear estimates before we start, so there are no surprises. Our rates are fair for licensed, insured repair work throughout Vancouver, Camas, and Clark County.",
 						},
 						{
 							q: "What areas do you serve?",
-							a: "We offer handyman services throughout Clark County WA. Therefore, whether you are in central Vancouver, Camas, Washougal, Battle Ground, or Ridgefield, our team is available for your home repair and maintenance needs.",
+							a: "We serve homeowners throughout Clark County WA. Therefore, whether you are in central Vancouver, Camas, Washougal, Battle Ground, or Ridgefield, our team is ready for your home repair and maintenance needs.",
 						},
 					].map((item, i) => (
 						<div
