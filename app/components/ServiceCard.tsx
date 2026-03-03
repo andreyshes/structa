@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import type { LucideIcon } from "lucide-react";
 
@@ -7,6 +8,7 @@ type ServiceCardProps = {
 	icon: LucideIcon;
 	title: string;
 	description: string;
+	href?: string;
 	index?: number;
 };
 
@@ -14,21 +16,14 @@ export default function ServiceCard({
 	icon: Icon,
 	title,
 	description,
+	href,
 	index = 0,
 }: ServiceCardProps) {
-	return (
-		<motion.div
-			initial={{ opacity: 0, y: 30 }}
-			whileInView={{ opacity: 1, y: 0 }}
-			viewport={{ once: true, margin: "-50px" }}
-			transition={{
-				duration: 0.6,
-				delay: index * 0.1,
-				ease: [0.22, 1, 0.36, 1],
-			}}
-			className="group relative bg-[#F8F6F3] rounded-2xl p-8 hover:shadow-xl hover:shadow-[#2D5A3D]/10 transition-all duration-500 border border-[#E8E4DE]"
-		>
-			{/* Subtle gradient overlay on hover */}
+	const cardClass =
+		"group relative bg-[#F8F6F3] rounded-2xl p-8 hover:shadow-xl hover:shadow-[#2D5A3D]/10 transition-all duration-500 border border-[#E8E4DE] block";
+
+	const inner = (
+		<>
 			<div className="absolute inset-0 bg-linear-to-br from-[#2D5A3D]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
 
 			<div className="relative">
@@ -43,7 +38,34 @@ export default function ServiceCard({
 				<p className="text-[#2C3E3A]/70 leading-relaxed text-sm">
 					{description}
 				</p>
+
+				{href && (
+					<span className="inline-flex items-center gap-1 mt-4 text-xs font-black uppercase tracking-widest text-[#2D5A3D] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+						Learn More →
+					</span>
+				)}
 			</div>
+		</>
+	);
+
+	return (
+		<motion.div
+			initial={{ opacity: 0, y: 30 }}
+			whileInView={{ opacity: 1, y: 0 }}
+			viewport={{ once: true, margin: "-50px" }}
+			transition={{
+				duration: 0.6,
+				delay: index * 0.1,
+				ease: [0.22, 1, 0.36, 1],
+			}}
+		>
+			{href ? (
+				<Link href={href} className={cardClass}>
+					{inner}
+				</Link>
+			) : (
+				<div className={cardClass}>{inner}</div>
+			)}
 		</motion.div>
 	);
 }

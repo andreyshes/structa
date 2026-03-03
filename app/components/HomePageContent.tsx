@@ -59,43 +59,48 @@ export default function HomePageContent() {
 		value > heroEndRef.current ? "auto" : "none",
 	);
 
-	// STRIPPED: Simplified descriptions for Word Complexity score
 	const services = [
 		{
-			icon: Hammer,
-			title: "Wood Trim",
+			icon: Wrench,
+			title: "Handyman Services",
+			href: "/services/handyman",
 			description:
-				"We install new trim and baseboards. Our team makes your local home look great with clean wood work.",
+				"Drywall patching, door adjustments, TV mounting, and general home repairs. We handle the fixes that keep your home in good shape.",
 		},
 		{
-			icon: Wrench,
-			title: "Home Fixes",
+			icon: Hammer,
+			title: "Finish Carpentry",
+			href: "/services/finish-carpentry",
 			description:
-				"We fix drywall and adjust doors. Our team handles the small jobs that other pros skip.",
+				"Custom baseboards, crown molding, and interior trim installation. Clean, precise woodwork that adds real value to every room.",
 		},
 		{
 			icon: Paintbrush,
-			title: "Bath & Kitchen",
+			title: "Kitchen & Bath Updates",
+			href: "/services/kitchen-bath",
 			description:
-				"Update your home with new tile and sinks. We refresh your space to add more value to your house.",
+				"Tile, backsplash, vanity installs, and fixture upgrades. Refresh your kitchen or bathroom without a full remodel.",
 		},
 		{
 			icon: Home,
-			title: "Doors & Trim",
+			title: "Door & Window",
+			href: "/services/door-window",
 			description:
-				"We set up new interior doors. Our team offers fast service for all homes in Clark County.",
+				"Interior and exterior door installation, weatherstripping, and window repair to improve comfort and curb appeal.",
 		},
 		{
 			icon: Lightbulb,
-			title: "New Fixtures",
+			title: "Lighting & Fixtures",
+			href: "/services/lighting",
 			description:
-				"We put in new fans and lights. We make sure every home update is safe and clean.",
+				"Ceiling fans, recessed lighting, and fixture swaps. We upgrade your home lighting safely and leave the space clean.",
 		},
 		{
 			icon: Construction,
-			title: "Interior Work",
+			title: "Flooring Repair",
+			href: "/services/flooring",
 			description:
-				"We fix wood rot and siding to keep your home safe. Our team keeps your house in top shape.",
+				"Wood rot repair, subfloor fixes, and flooring updates. We protect and restore your floors for the long term.",
 		},
 	];
 
@@ -316,18 +321,19 @@ export default function HomePageContent() {
 					</p>
 					<div className="flex flex-wrap justify-center gap-4">
 						{[
-							"Camas",
-							"Ridgefield",
-							"Washougal",
-							"Battle Ground",
-							"Salmon Creek",
+							{ name: "Camas", slug: "camas" },
+							{ name: "Ridgefield", slug: "ridgefield" },
+							{ name: "Washougal", slug: "washougal" },
+							{ name: "Battle Ground", slug: "battle-ground" },
+							{ name: "Salmon Creek", slug: "salmon-creek" },
 						].map((city) => (
-							<span
-								key={city}
-								className="px-6 py-2 bg-white border border-gray-200 rounded-full text-sm font-bold text-gray-500"
+							<Link
+								key={city.slug}
+								href={`/locations/${city.slug}`}
+								className="px-6 py-2 bg-white border border-gray-200 rounded-full text-sm font-bold text-gray-500 hover:border-[#2D5A3D] hover:text-[#2D5A3D] transition-colors duration-300"
 							>
-								{city}, WA
-							</span>
+								{city.name}, WA
+							</Link>
 						))}
 					</div>
 				</div>
