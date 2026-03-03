@@ -6,6 +6,7 @@ import {
 	Paintbrush,
 	DoorOpen,
 	Layers,
+	Lightbulb,
 	ArrowRight,
 	CheckCircle2,
 	MapPin,
@@ -35,14 +36,14 @@ export default function ServicesPage() {
 		{
 			id: "finish-carpentry",
 			icon: Hammer,
-			title: "Wood Trim & Carpentry",
+			title: "Finish Carpentry",
 			href: "/services/finish-carpentry",
 			image:
 				"https://plus.unsplash.com/premium_photo-1683131426576-af8167f436f6?w=900&auto=format&fit=crop",
 			description:
-				"Clean wood trim and work that adds value to your local home.",
+				"Crown molding, baseboards, and interior trim that give your home a polished, finished look.",
 			longDesc:
-				"Our wood work focuses on the small details that make a home look great. We install crown molding, baseboards, and wall trim. Furthermore, for Vancouver owners, new wood trim is a top way to add value to your house. We make sure every corner is clean and tight.",
+				"Good trim work is the difference between a house and a finished home. We install crown molding, baseboards, wainscoting, and door casing with tight joints and clean lines. For Vancouver homeowners, finish carpentry is one of the highest-value upgrades you can make without a full renovation.",
 			items: [
 				"Baseboards & Trim",
 				"Accent Walls",
@@ -59,9 +60,10 @@ export default function ServicesPage() {
 			href: "/services/kitchen-bath",
 			image:
 				"https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2000",
-			description: "Fast home updates and new fixture setup.",
+			description:
+				"Tile, fixtures, and hardware upgrades that refresh your kitchen or bathroom without a full remodel.",
 			longDesc:
-				"As a local contractor, we handle the tech side of kitchen and bath fixes. We bring the skill of a big firm with the speed of a local pro. In addition, we make sure the rooms you use most are both useful and look great.",
+				"You don't need a full gut renovation to see a major improvement. We handle the updates that make the biggest visual difference — new backsplash, vanity installs, hardware swaps, and fixture replacements. Fast turnaround, clean work, and results that hold up.",
 			items: [
 				"Kitchen Backsplash",
 				"New Cabinet Handles",
@@ -79,9 +81,9 @@ export default function ServicesPage() {
 			image:
 				"https://plus.unsplash.com/premium_photo-1661322610748-32b33eada183?w=900&auto=format&fit=crop",
 			description:
-				"Clean wall repairs and texture matching for a smooth finish.",
+				"Seamless wall repairs and texture matching that leave no trace of the original damage.",
 			longDesc:
-				"Wall damage can hurt the value of your home. Our drywall work goes past simple patches. Because of this, we match your wall texture so the fix looks like it was never there. We handle everything from small holes to water damage.",
+				"Wall damage lowers the feel and value of your home. We go beyond simple patching — we match your existing wall texture so the repair blends in completely. Whether it's a small screw hole or a large water-damaged section, we bring walls back to like-new condition.",
 			items: [
 				"Wall Hole Patching",
 				"Water Damage Fixes",
@@ -98,9 +100,10 @@ export default function ServicesPage() {
 			href: "/services/flooring",
 			image:
 				"https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=2000",
-			description: "Local floor setup and plank repair jobs.",
+			description:
+				"Floor repair and installation for LVP, tile, and hardwood — protecting your floors for the long term.",
 			longDesc:
-				"Floor damage does not always mean you need a new floor. We offer fast floor repair for LVP, tile, and wood. Therefore, we help Vancouver owners keep their floors longer by fixing individual bad planks and stopping squeaks.",
+				"Floor damage doesn't always mean replacing the whole floor. We repair individual planks, fix squeaks, replace damaged tile, and install new flooring throughout Clark County. We also handle subfloor repair and wood rot — the work other contractors often skip.",
 			items: [
 				"Plank Replacement",
 				"Floor Squeak Repair",
@@ -117,9 +120,10 @@ export default function ServicesPage() {
 			href: "/services/door-window",
 			image:
 				"https://images.unsplash.com/photo-1527352774566-e4916e36c645?w=900&auto=format&fit=crop",
-			description: "Setup and repair for home doors and windows.",
+			description:
+				"Door installation, weatherstripping, and window work that improves comfort and curb appeal.",
 			longDesc:
-				"Good doors and windows are key for a quiet, warm home. We set up new interior doors and fix old ones. Additionally, our window work focuses on the trim and seals to keep your home looking and feeling its best.",
+				"Well-fitted doors and windows make your home quieter, more efficient, and easier to sell. We install interior and exterior doors, fix sticking frames, replace worn weatherstripping, and clean up window trim. Every job is done with care and left clean.",
 			items: [
 				"Interior Door Setup",
 				"New Door Locks",
@@ -130,15 +134,36 @@ export default function ServicesPage() {
 			],
 		},
 		{
+			id: "lighting",
+			icon: Lightbulb,
+			title: "Lighting & Fixtures",
+			href: "/services/lighting",
+			image:
+				"https://images.unsplash.com/photo-1584521104351-cfad34547581?w=900&auto=format&fit=crop&q=60",
+			description:
+				"Ceiling fan mounting, recessed lighting, and fixture installation done safely and cleanly.",
+			longDesc:
+				"Updating your lighting is one of the fastest ways to modernize a room. We install chandeliers, pendant lights, ceiling fans, recessed LEDs, vanity lighting, and smart dimmers throughout Clark County. Every install is level, secure, and left without a mess.",
+			items: [
+				"Designer Chandeliers",
+				"Ceiling Fan Mounting",
+				"Recessed LED Retrofits",
+				"Vanity Lighting",
+				"Smart Dimmer Switches",
+				"Pendant Lights",
+			],
+		},
+		{
 			id: "handyman",
 			icon: Wrench,
-			title: "Home Help & Maintenance",
+			title: "Handyman Services",
 			href: "/services/handyman",
 			image:
 				"https://plus.unsplash.com/premium_photo-1664298827256-04eb817aa0ba?w=900&auto=format&fit=crop",
-			description: "Licensed contractor help for home care and repairs.",
+			description:
+				"Licensed handyman services for general home repairs and maintenance across Clark County.",
 			longDesc:
-				"Caring for a home in the Northwest takes work. Our pro handyman help covers wood-rot repair and home care. As a result of being a licensed Washington contractor, we stand behind our work and show up on time.",
+				"From drywall patching and TV mounting to wood rot repair and weatherproofing, we handle the full range of home maintenance that keeps your property in top condition. As a licensed Washington contractor, we stand behind our work and show up when we say we will.",
 			items: [
 				"General Home Repair",
 				"Siding Fixes",
@@ -316,10 +341,10 @@ export default function ServicesPage() {
 									Free Estimate
 								</Link>
 								<Link
-									href="tel:+13600000000"
+									href="tel:+19165086272"
 									className="px-12 py-6 border-2 border-white/20 text-white font-black uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-3"
 								>
-									<Phone className="w-5 h-5" /> Call Now
+									<Phone className="w-5 h-5" /> (916) 508-6272
 								</Link>
 							</div>
 						</div>
