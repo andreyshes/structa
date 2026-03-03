@@ -217,7 +217,7 @@ export default function PortfolioPage() {
 							</div>
 
 							{/* Photo grid */}
-							<div className=`grid ${(cat as any).gridCols ?? "grid-cols-2 lg:grid-cols-3"} gap-4`>
+							<div className={`grid ${(cat as any).gridCols ?? "grid-cols-2 lg:grid-cols-3"} gap-4`}>
 								{cat.projects.map((project) => (
 									<div
 										key={project.src}
