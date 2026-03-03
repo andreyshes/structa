@@ -48,12 +48,12 @@ export default function KitchenBathPage() {
 			<section className="relative min-h-[80vh] flex items-center overflow-hidden">
 				<div className="absolute inset-0 z-0">
 					<Image
-						src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2000"
+						src="/remodel-images/IMG_7646.jpg"
 						alt="Modern kitchen and bathroom refresh services in Vancouver WA"
 						fill
 						priority
 						sizes="100vw"
-						className="object-cover"
+						className="object-cover object-center"
 					/>
 					<div className="absolute inset-0 bg-gradient-to-r from-[#14201D] via-[#14201D]/85 to-transparent" />
 				</div>

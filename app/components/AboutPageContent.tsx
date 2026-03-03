@@ -54,8 +54,8 @@ export default function AboutPageContent() {
 			<section className="relative min-h-[75vh] flex items-center overflow-hidden">
 				<div className="absolute inset-0">
 					<Image
-						src="https://images.unsplash.com/photo-1682888813913-e13f18692019?w=900&auto=format&fit=crop&q=60"
-						alt="General contractor in Vancouver WA doing home repairs"
+						src="/remodel-images/IMG_6433.jpg"
+						alt="Outdoor project by Norbilt general contractor Vancouver WA"
 						fill
 						priority
 						sizes="100vw"
@@ -117,8 +117,8 @@ export default function AboutPageContent() {
 					<div className="relative order-2 lg:order-1">
 						<div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl border-8 border-[#F8F6F3]">
 							<Image
-								src="https://plus.unsplash.com/premium_photo-1733514433307-f337be80b0f4?w=900&auto=format&fit=crop"
-								alt="Interior remodeling in Vancouver"
+								src="/remodel-images/IMG_7646.jpg"
+								alt="Kitchen remodel by Norbilt in Vancouver WA"
 								fill
 								sizes="(max-width: 1024px) 100vw, 50vw"
 								className="object-cover"

@@ -1,18 +1,18 @@
 import HomePageContent from "@/app/components/HomePageContent";
 
 export const metadata = {
-	title: "General Contractor Vancouver WA | Norbilt Home Repairs",
+	title: "Clark County Home Repairs & Remodeling | Licensed | Norbilt",
 
 	description:
-		"Looking for a licensed general contractor in Vancouver WA? Norbilt provides expert home repairs and interior remodeling. Get a free estimate today!",
+		"Expert home repairs & remodeling across Clark County WA. Licensed, bonded & insured. Serving Vancouver, Battle Ground, Camas & more. Free estimate!",
 
 	alternates: {
 		canonical: "https://norbilt.com",
 	},
 	openGraph: {
-		title: "General Contractor Vancouver WA | Norbilt",
+		title: "Clark County Home Repairs & Remodeling | Norbilt",
 		description:
-			"Licensed general contractor serving Vancouver, WA. We specialize in quality interior renovations and home repairs.",
+			"Licensed general contractor serving all of Clark County WA. Expert home repairs, remodeling, and interior updates. Free estimates.",
 		type: "website",
 		url: "https://norbilt.com",
 		images: [

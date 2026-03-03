@@ -89,5 +89,53 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		},
 	);
 
+	// 6. Reviews, Pricing, Portfolio pages
+	routes.push({
+		url: `${baseUrl}/pricing`,
+		lastModified,
+		changeFrequency: "monthly",
+		priority: 0.8,
+	});
+	routes.push({
+		url: `${baseUrl}/portfolio`,
+		lastModified,
+		changeFrequency: "monthly",
+		priority: 0.8,
+	});
+	routes.push({
+		url: `${baseUrl}/reviews`,
+		lastModified,
+		changeFrequency: "monthly",
+		priority: 0.8,
+	});
+
+	// 7. Blog index + articles
+	routes.push(
+		{
+			url: `${baseUrl}/blog`,
+			lastModified,
+			changeFrequency: "weekly",
+			priority: 0.8,
+		},
+		{
+			url: `${baseUrl}/blog/bathroom-remodel-cost-ridgefield-wa`,
+			lastModified,
+			changeFrequency: "monthly",
+			priority: 0.7,
+		},
+		{
+			url: `${baseUrl}/blog/battle-ground-handyman-what-to-expect`,
+			lastModified,
+			changeFrequency: "monthly",
+			priority: 0.7,
+		},
+		{
+			url: `${baseUrl}/blog/clark-county-home-repair-checklist`,
+			lastModified,
+			changeFrequency: "monthly",
+			priority: 0.7,
+		},
+	);
+
 	return routes;
 }

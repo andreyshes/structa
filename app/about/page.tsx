@@ -21,7 +21,7 @@ export const metadata = {
 		type: "website",
 		images: [
 			{
-				url: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=1200",
+				url: "https://norbilt.com/og-image.jpg",
 				width: 1200,
 				height: 630,
 				alt: "About Norbilt General Contractor Vancouver WA",
@@ -33,7 +33,7 @@ export const metadata = {
 		title: "About Norbilt | Vancouver WA General Contractor",
 		description:
 			"Licensed home repair and remodeling experts serving Vancouver and Clark County.",
-		images: ["https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=1200"],
+		images: ["https://norbilt.com/og-image.jpg"],
 	},
 };
 
@@ -50,7 +50,7 @@ export default function AboutPage() {
 						"@id": "https://norbilt.com",
 						name: "Norbilt Homes",
 						image:
-							"https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=1200",
+							"https://norbilt.com/og-image.jpg",
 						description:
 							"Licensed general contractor serving Vancouver, WA. We specialize in interior remodeling, carpentry, and home repairs.",
 						address: {

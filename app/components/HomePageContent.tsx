@@ -382,8 +382,8 @@ export default function HomePageContent() {
 					<div className="bg-[#1F2E2B] rounded-[3rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row">
 						<div className="lg:w-1/2 relative h-96 lg:h-auto">
 							<Image
-								src="https://plus.unsplash.com/premium_photo-1682370889632-f5eda67b0305?w=900&auto=format&fit=crop"
-								alt="Expert wood work in Vancouver WA"
+								src="/remodel-images/IMG_7646.jpg"
+								alt="Kitchen remodel by Norbilt in Vancouver WA"
 								fill
 								sizes="(max-width: 1024px) 100vw, 50vw"
 								className="object-cover"
@@ -466,11 +466,11 @@ export default function HomePageContent() {
 					<div className="relative">
 						<div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
 							<Image
-								src="https://images.unsplash.com/photo-1618832515490-e181c4794a45?q=80&w=2670"
-								alt="General contractor interior fix"
+								src="/remodel-images/IMG_1897%202.jpg"
+								alt="Bathroom remodel by Norbilt in Vancouver WA"
 								fill
 								sizes="(max-width: 1024px) 100vw, 50vw"
-								className="object-cover"
+								className="object-cover object-top"
 							/>
 						</div>
 						<div className="absolute -bottom-8 -right-8 bg-[#1F2E2B] p-10 rounded-2xl shadow-2xl border-b-8 border-[#FFB800]">
@@ -530,8 +530,108 @@ export default function HomePageContent() {
 				</div>
 			</section>
 
-			{/* TESTIMONIALS */}
-			<section className="py-32 bg-[#1F2E2B] overflow-hidden">
+			{/* PROJECT GALLERY */}
+			<section className="py-24 bg-[#F8F6F3]">
+				<div className="max-w-7xl mx-auto px-6 lg:px-8">
+					<SectionHeader
+						eyebrow="Real Projects"
+						title="Our Work in Clark County"
+						description="Every photo is a real completed job — no stock images, no staging."
+						centered
+					/>
+
+					{/* BEFORE / AFTER FEATURED */}
+					<div className="mt-16 rounded-3xl overflow-hidden shadow-2xl">
+						<div className="relative w-full aspect-16/7">
+							<Image
+								src="/remodel-images/Untitled%20design%20(2).jpg"
+								alt="Bathroom vanity before and after remodel by Norbilt Vancouver WA"
+								fill
+								sizes="100vw"
+								className="object-cover"
+							/>
+						</div>
+						<div className="bg-[#1F2E2B] px-8 py-5 flex items-center justify-between flex-wrap gap-4">
+							<p className="text-white font-black uppercase tracking-widest text-sm">
+								Master Bathroom Vanity Remodel — Vancouver, WA
+							</p>
+							<Link
+								href="/services/kitchen-bath"
+								className="text-[#FFB800] text-xs font-black uppercase tracking-widest flex items-center gap-2 hover:gap-3 transition-all"
+							>
+								See Kitchen & Bath Work <ArrowRight className="w-4 h-4" />
+							</Link>
+						</div>
+					</div>
+
+					{/* PROJECT GRID */}
+					<div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+						{[
+							{
+								src: "/remodel-images/IMG_7645.jpg",
+								alt: "Kitchen cabinet and backsplash remodel Vancouver WA",
+								label: "Kitchen Remodel",
+							},
+							{
+								src: "/remodel-images/IMG_1897%202.jpg",
+								alt: "Marble tile shower remodel by Norbilt Clark County WA",
+								label: "Bathroom Tile & Shower",
+							},
+							{
+								src: "/remodel-images/IMG_6433.jpg",
+								alt: "Cedar fence and stamped concrete patio Vancouver WA",
+								label: "Fence & Outdoor",
+							},
+							{
+								src: "/remodel-images/IMG_7649.jpg",
+								alt: "Full kitchen remodel with gray cabinets Vancouver WA",
+								label: "Kitchen Remodel",
+							},
+							{
+								src: "/remodel-images/IMG_6429.jpg",
+								alt: "Cedar privacy fence installation Clark County WA",
+								label: "Fence Installation",
+							},
+							{
+								src: "/remodel-images/IMG_6432.jpg",
+								alt: "Stamped concrete and cedar fence backyard Vancouver WA",
+								label: "Fence & Patio",
+							},
+						].map((photo) => (
+							<div
+								key={photo.src}
+								className="relative aspect-square rounded-2xl overflow-hidden group"
+							>
+								<Image
+									src={photo.src}
+									alt={photo.alt}
+									fill
+									sizes="(max-width: 768px) 50vw, 33vw"
+									className="object-cover group-hover:scale-105 transition-transform duration-500"
+								/>
+								<div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300" />
+								<div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+									<span className="text-[10px] font-black uppercase tracking-widest text-white bg-[#FFB800] px-3 py-1 rounded-full">
+										{photo.label}
+									</span>
+								</div>
+							</div>
+						))}
+					</div>
+				<div className="mt-8 text-center">
+					<Link
+						href="/portfolio"
+						className="inline-flex items-center gap-3 px-8 py-4 bg-[#1F2E2B] text-white font-black uppercase tracking-widest rounded-xl hover:bg-[#2D5A3D] transition-all shadow-lg"
+					>
+						View All Projects
+						<ArrowRight className="w-5 h-5" />
+					</Link>
+				</div>
+			</div>
+		</section>
+
+		{/* TESTIMONIALS */}
+		<section className="py-32 bg-[#1F2E2B] overflow-hidden">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8 mb-16">
 					<SectionHeader
 						eyebrow="Customer Reviews"

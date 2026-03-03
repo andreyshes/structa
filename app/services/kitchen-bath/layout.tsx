@@ -1,16 +1,16 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Kitchen & Bath Updates Vancouver WA | Norbilt Contractor",
+	title: "Bathroom Remodel & Kitchen Updates Clark County WA | Norbilt",
 	description:
-		"Kitchen and bathroom updates in Vancouver WA. Norbilt installs backsplash, cabinet hardware, faucets, and fixtures. Licensed general contractor.",
+		"Bathroom remodels & kitchen updates in Vancouver, Brush Prairie, Felida & Clark County WA. Tile, vanity, fixtures. Licensed contractor. Free estimate!",
 	alternates: {
 		canonical: "https://norbilt.com/services/kitchen-bath",
 	},
 	openGraph: {
-		title: "Kitchen & Bath Updates Vancouver WA | Norbilt",
+		title: "Bathroom Remodel & Kitchen Updates Clark County WA | Norbilt",
 		description:
-			"Professional kitchen and bathroom fixture installation and updates in Vancouver and Clark County WA.",
+			"Bathroom remodels & kitchen updates across Clark County WA. Tile, vanity, faucets & fixtures. Licensed contractor.",
 		url: "https://norbilt.com/services/kitchen-bath",
 		type: "website",
 		siteName: "Norbilt",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Kitchen & Bath Updates Vancouver WA | Norbilt",
+		title: "Bathroom Remodel & Kitchen Updates Clark County WA | Norbilt",
 		description:
-			"Professional kitchen and bathroom fixture installation and updates in Vancouver and Clark County WA.",
+			"Bathroom remodels & kitchen updates across Clark County WA. Tile, vanity, faucets & fixtures. Licensed contractor.",
 		images: ["https://norbilt.com/og-image.jpg"],
 	},
 };
