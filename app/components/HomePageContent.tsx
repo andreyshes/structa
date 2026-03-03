@@ -239,6 +239,53 @@ export default function HomePageContent() {
 				</div>
 			</section>
 
+			{/* HOW IT WORKS */}
+			<section className="py-24 bg-[#F8F6F3] border-b border-gray-100">
+				<div className="max-w-7xl mx-auto px-6 lg:px-8">
+					<SectionHeader
+						eyebrow="Simple Process"
+						title="How It Works"
+						description="Getting quality home repairs in Vancouver WA should be straightforward."
+						centered
+					/>
+					<div className="grid md:grid-cols-3 gap-10 mt-16">
+						{[
+							{
+								step: "01",
+								icon: Phone,
+								title: "Free Estimate",
+								desc: "Call or message us to describe your project. We visit your home and give you a clear, no-surprise quote before any work begins.",
+							},
+							{
+								step: "02",
+								icon: Clock,
+								title: "We Schedule",
+								desc: "We confirm a date that works for you. Our team shows up on time, communicates clearly, and respects your home throughout the job.",
+							},
+							{
+								step: "03",
+								icon: CheckCircle2,
+								title: "Done Right",
+								desc: "We complete the work to a high standard. Your home is left clean and the job is finished the way it was quoted — no surprises.",
+							},
+						].map((item) => (
+							<div key={item.step} className="relative flex flex-col items-start">
+								<span className="text-7xl font-black text-[#FFB800]/20 leading-none mb-4">
+									{item.step}
+								</span>
+								<div className="w-12 h-12 bg-[#2D5A3D] rounded-xl flex items-center justify-center mb-4">
+									<item.icon className="w-6 h-6 text-white" />
+								</div>
+								<h3 className="text-xl font-black text-[#1F2E2B] uppercase mb-2">
+									{item.title}
+								</h3>
+								<p className="text-gray-600 leading-relaxed">{item.desc}</p>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
+
 			{/* SERVICES SECTION */}
 			<section className="py-32 bg-[#E8E4DE]/50">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -251,6 +298,49 @@ export default function HomePageContent() {
 						{services.map((s, i) => (
 							<ServiceCard key={s.title} {...s} index={i} />
 						))}
+					</div>
+
+					{/* EXTENDED SERVICE LIST */}
+					<div className="mt-16 border border-[#E8E4DE] rounded-2xl p-8 bg-white">
+						<h3 className="text-sm font-black uppercase tracking-widest text-[#2D5A3D] mb-6">
+							More Services We Handle
+						</h3>
+						<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+							{[
+								"Drywall Patching",
+								"TV Mounting",
+								"Caulking & Sealing",
+								"Furniture Assembly",
+								"Crown Molding",
+								"Wainscoting",
+								"Window Trim",
+								"Door Casing",
+								"Tile & Grout",
+								"Backsplash Install",
+								"Vanity Replacement",
+								"Faucet & Sink Install",
+								"Cabinet Hardware",
+								"Ceiling Fan Install",
+								"Recessed Lighting",
+								"Under-Cabinet Lighting",
+								"Fence Staining",
+								"Soffit & Fascia Repair",
+								"Wood Rot Repair",
+								"Deck Repair",
+								"LVP / Hardwood Install",
+								"Subfloor Repair",
+								"Weatherstripping",
+								"Property Punch Lists",
+							].map((service) => (
+								<div
+									key={service}
+									className="flex items-center gap-2 text-sm text-gray-600 font-medium"
+								>
+									<CheckCircle2 className="w-4 h-4 text-[#FFB800] shrink-0" />
+									{service}
+								</div>
+							))}
+						</div>
 					</div>
 				</div>
 			</section>
@@ -405,6 +495,76 @@ export default function HomePageContent() {
 								</div>
 							))}
 						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* TESTIMONIALS */}
+			<section className="py-32 bg-[#1F2E2B]">
+				<div className="max-w-7xl mx-auto px-6 lg:px-8">
+					<SectionHeader
+						eyebrow="Customer Reviews"
+						title="What Vancouver Homeowners Say"
+						description="Real feedback from real customers across Clark County, WA."
+						centered
+					/>
+					<div className="grid md:grid-cols-2 gap-8 mt-16">
+						{[
+							{
+								quote:
+									"We had a positive experience with Norbilt here in Vancouver, WA. I worked with Andrey, who was courteous, professional, efficient, and delivered high-quality work in a timely manner. It's hard to find reliable help these days, and I truly appreciated his attention to detail and expertise.",
+								name: "M. Taylor",
+								location: "Vancouver, WA",
+								service: "Home Repairs",
+							},
+							{
+								quote:
+									"I hired Norbilt to stain my fence at my home in Vancouver, WA and they did an excellent job. Communication was clear, they showed up on time, and the quality of the work really shows. The stain came out even, clean, and professional — it completely refreshed the look of our yard.",
+								name: "Angelo",
+								location: "Vancouver, WA",
+								service: "Fence Staining",
+							},
+							{
+								quote:
+									"Norbilt was awesome to work with. They transformed my outdated bathroom to something modern and I love it! Great company to work with and I am in love with my bathroom once again.",
+								name: "David",
+								location: "Vancouver, WA",
+								service: "Bathroom Remodel",
+							},
+							{
+								quote:
+									"They did an excellent job installing my flooring — professional, efficient, and the final result looks amazing. The quality of work and attention to detail really stood out. Highly recommend them for any home projects!",
+								name: "Mike",
+								location: "Vancouver, WA",
+								service: "Flooring Installation",
+							},
+						].map((review, i) => (
+							<div
+								key={i}
+								className="bg-white/5 border border-white/10 rounded-2xl p-8 flex flex-col gap-4 hover:border-[#FFB800]/30 transition-colors duration-300"
+							>
+								<div className="flex items-center justify-between">
+									<div className="flex gap-1">
+										{[...Array(5)].map((_, j) => (
+											<Star
+												key={j}
+												className="w-4 h-4 fill-[#FFB800] text-[#FFB800]"
+											/>
+										))}
+									</div>
+									<span className="text-[#FFB800] text-xs font-black uppercase tracking-widest">
+										{review.service}
+									</span>
+								</div>
+								<p className="text-white/80 leading-relaxed flex-1 italic">
+									&ldquo;{review.quote}&rdquo;
+								</p>
+								<div>
+									<p className="font-black text-white">{review.name}</p>
+									<p className="text-[#A7C4B5] text-sm">{review.location}</p>
+								</div>
+							</div>
+						))}
 					</div>
 				</div>
 			</section>
