@@ -210,7 +210,7 @@ export default function ReviewsPage() {
 								find trusted help.
 							</p>
 							<a
-								href="https://g.page/r/norbilt/review"
+								href="https://g.page/r/CVvJsm11DrccEBM/review"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="inline-flex items-center gap-3 px-10 py-5 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl shadow-2xl hover:scale-105 transition-all"
