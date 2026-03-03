@@ -38,6 +38,52 @@ export default function RootLayout({
 						gtag('config', 'AW-17966936255');
 					`}
 				</Script>
+				{/* LocalBusiness Structured Data */}
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify({
+							"@context": "https://schema.org",
+							"@type": "GeneralContractor",
+							"name": "Norbilt",
+							"description": "Licensed general contractor offering handyman services, finish carpentry, drywall repair, kitchen and bath updates, lighting, and flooring in Vancouver WA and Clark County.",
+							"url": "https://norbilt.com",
+							"telephone": "+19165086272",
+							"email": "hello@norbilt.com",
+							"image": "https://norbilt.com/og-image.jpg",
+							"address": {
+								"@type": "PostalAddress",
+								"addressLocality": "Vancouver",
+								"addressRegion": "WA",
+								"addressCountry": "US",
+							},
+							"areaServed": [
+								{ "@type": "City", "name": "Vancouver" },
+								{ "@type": "City", "name": "Camas" },
+								{ "@type": "City", "name": "Ridgefield" },
+								{ "@type": "City", "name": "Battle Ground" },
+								{ "@type": "City", "name": "Washougal" },
+								{ "@type": "City", "name": "Salmon Creek" },
+								{ "@type": "City", "name": "Hazel Dell" },
+								{ "@type": "City", "name": "Brush Prairie" },
+								{ "@type": "City", "name": "Mill Plain" },
+								{ "@type": "City", "name": "Lake Shore" },
+							],
+							"hasOfferCatalog": {
+								"@type": "OfferCatalog",
+								"name": "Home Repair & Contractor Services",
+								"itemListElement": [
+									{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Handyman Services", "url": "https://norbilt.com/services/handyman" } },
+									{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Finish Carpentry", "url": "https://norbilt.com/services/finish-carpentry" } },
+									{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drywall Repair", "url": "https://norbilt.com/services/drywall-repair" } },
+									{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kitchen & Bathroom Updates", "url": "https://norbilt.com/services/kitchen-bath" } },
+									{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lighting & Fixtures", "url": "https://norbilt.com/services/lighting" } },
+									{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Flooring Repair & Updates", "url": "https://norbilt.com/services/flooring" } },
+								],
+							},
+						}),
+					}}
+				/>
 			</head>
 
 			<body className="bg-[#F8F6F3] antialiased">
