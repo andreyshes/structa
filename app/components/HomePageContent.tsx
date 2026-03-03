@@ -104,6 +104,37 @@ export default function HomePageContent() {
 		},
 	];
 
+	const reviews = [
+		{
+			quote:
+				"We had a positive experience with Norbilt here in Vancouver, WA. I worked with Andrey, who was courteous, professional, efficient, and delivered high-quality work in a timely manner. It's hard to find reliable help these days, and I truly appreciated his attention to detail and expertise.",
+			name: "M. Taylor",
+			location: "Vancouver, WA",
+			service: "Home Repairs",
+		},
+		{
+			quote:
+				"I hired Norbilt to stain my fence at my home in Vancouver, WA and they did an excellent job. Communication was clear, they showed up on time, and the quality of the work really shows. The stain came out even, clean, and professional — it completely refreshed the look of our yard.",
+			name: "Angelo",
+			location: "Vancouver, WA",
+			service: "Fence Staining",
+		},
+		{
+			quote:
+				"Norbilt was awesome to work with. They transformed my outdated bathroom to something modern and I love it! Great company to work with and I am in love with my bathroom once again.",
+			name: "David",
+			location: "Vancouver, WA",
+			service: "Bathroom Remodel",
+		},
+		{
+			quote:
+				"They did an excellent job installing my flooring — professional, efficient, and the final result looks amazing. The quality of work and attention to detail really stood out. Highly recommend them for any home projects!",
+			name: "Mike",
+			location: "Vancouver, WA",
+			service: "Flooring Installation",
+		},
+	];
+
 	return (
 		<div className="overflow-hidden bg-[#FDFCFB]">
 			{/* Mobile Fixed CTA */}
@@ -500,48 +531,22 @@ export default function HomePageContent() {
 			</section>
 
 			{/* TESTIMONIALS */}
-			<section className="py-32 bg-[#1F2E2B]">
-				<div className="max-w-7xl mx-auto px-6 lg:px-8">
+			<section className="py-32 bg-[#1F2E2B] overflow-hidden">
+				<div className="max-w-7xl mx-auto px-6 lg:px-8 mb-16">
 					<SectionHeader
 						eyebrow="Customer Reviews"
 						title="What Vancouver Homeowners Say"
 						description="Real feedback from real customers across Clark County, WA."
 						centered
+						light
 					/>
-					<div className="grid md:grid-cols-2 gap-8 mt-16">
-						{[
-							{
-								quote:
-									"We had a positive experience with Norbilt here in Vancouver, WA. I worked with Andrey, who was courteous, professional, efficient, and delivered high-quality work in a timely manner. It's hard to find reliable help these days, and I truly appreciated his attention to detail and expertise.",
-								name: "M. Taylor",
-								location: "Vancouver, WA",
-								service: "Home Repairs",
-							},
-							{
-								quote:
-									"I hired Norbilt to stain my fence at my home in Vancouver, WA and they did an excellent job. Communication was clear, they showed up on time, and the quality of the work really shows. The stain came out even, clean, and professional — it completely refreshed the look of our yard.",
-								name: "Angelo",
-								location: "Vancouver, WA",
-								service: "Fence Staining",
-							},
-							{
-								quote:
-									"Norbilt was awesome to work with. They transformed my outdated bathroom to something modern and I love it! Great company to work with and I am in love with my bathroom once again.",
-								name: "David",
-								location: "Vancouver, WA",
-								service: "Bathroom Remodel",
-							},
-							{
-								quote:
-									"They did an excellent job installing my flooring — professional, efficient, and the final result looks amazing. The quality of work and attention to detail really stood out. Highly recommend them for any home projects!",
-								name: "Mike",
-								location: "Vancouver, WA",
-								service: "Flooring Installation",
-							},
-						].map((review, i) => (
+				</div>
+				<div className="overflow-hidden">
+					<div className="flex gap-6 animate-marquee">
+						{[...reviews, ...reviews].map((review, i) => (
 							<div
 								key={i}
-								className="bg-white/5 border border-white/10 rounded-2xl p-8 flex flex-col gap-4 hover:border-[#FFB800]/30 transition-colors duration-300"
+								className="shrink-0 w-[380px] bg-white/5 border border-white/10 rounded-2xl p-8 flex flex-col gap-4"
 							>
 								<div className="flex items-center justify-between">
 									<div className="flex gap-1">
@@ -556,7 +561,7 @@ export default function HomePageContent() {
 										{review.service}
 									</span>
 								</div>
-								<p className="text-white/80 leading-relaxed flex-1 italic">
+								<p className="text-white/80 leading-relaxed flex-1 italic text-sm">
 									&ldquo;{review.quote}&rdquo;
 								</p>
 								<div>

@@ -8,12 +8,18 @@
 	from { opacity: 0; transform: translateX(-20px); }
 	to   { opacity: 1; transform: translateX(0); }
 }
+@keyframes marquee {
+	from { transform: translateX(0); }
+	to   { transform: translateX(-50%); }
+}
 
 .animate-fade-in-up   { animation: fadeInUp  0.5s ease-out both; will-change: transform; }
 .animate-fade-in-left { animation: fadeInLeft 0.5s ease-out both; will-change: transform; }
 .animate-delay-100    { animation-delay: 100ms; }
 .animate-delay-200    { animation-delay: 200ms; }
 .animate-delay-300    { animation-delay: 300ms; }
+.animate-marquee      { animation: marquee 28s linear infinite; will-change: transform; }
+.animate-marquee:hover { animation-play-state: paused; }
 
 @layer base {
 	:root {
