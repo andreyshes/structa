@@ -78,13 +78,14 @@ export default function HandymanPage() {
 						</div>
 
 						<h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tighter uppercase animate-fade-in-left animate-delay-100">
-							Professional <br />
-							<span className="text-[#FFB800]">Home Repairs</span>
+							Expert Handyman <br />
+							<span className="text-[#FFB800]">Services Vancouver WA</span>
 						</h1>
 
 						<p className="text-xl text-white/90 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6 animate-fade-in-up animate-delay-200">
-							Expert residential maintenance for Vancouver and Clark County. We
-							handle your "to-do" list with professional precision and licensed
+							Vancouver WA&apos;s trusted handyman for home repairs and
+							maintenance in Clark County. Our licensed handyman team handles
+							your entire to-do list with professional precision and full
 							accountability.
 						</p>
 
@@ -190,8 +191,8 @@ export default function HandymanPage() {
 				<div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
 					<SectionHeader
 						eyebrow="Solutions"
-						title="Professional Repair Services"
-						description="Expert results for the upgrades that keep your home running smoothly."
+						title="Handyman Repair Services"
+						description="Expert handyman results for the repairs and upgrades that keep your home running smoothly."
 					/>
 
 					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
@@ -215,7 +216,50 @@ export default function HandymanPage() {
 				</div>
 			</section>
 
-			{/* FINAL CTA - BILLBOARD STYLE */}
+			{/* FAQ SECTION */}
+		<section className="py-24 bg-white">
+			<div className="max-w-4xl mx-auto px-6 lg:px-8">
+				<SectionHeader
+					eyebrow="FAQ"
+					title="Handyman Services FAQ"
+					description="Common questions about our handyman services in Vancouver WA."
+				/>
+				<div className="mt-16 space-y-6">
+					{[
+						{
+							q: "What does a handyman service include?",
+							a: "Our handyman service covers a wide range of home repairs. For example, we handle drywall patching, fixture installation, door repairs, caulking, TV mounting, and furniture assembly. Additionally, we help homeowners and property managers work through punch lists and ongoing home maintenance tasks.",
+						},
+						{
+							q: "Do I need a licensed handyman in Vancouver WA?",
+							a: "In Washington State, handyman work above a certain dollar threshold requires a licensed contractor. As a result, hiring a registered WA General Contractor like Norbilt protects you legally and ensures the work meets code. In fact, unlicensed handyman work can affect your home insurance claims and future resale value.",
+						},
+						{
+							q: "How much does handyman service cost in Vancouver WA?",
+							a: "Handyman service costs depend on the scope of work. We provide free, transparent estimates before we start, so there are no surprises. Our rates are competitive for licensed, insured handyman work throughout Vancouver, Camas, and Clark County.",
+						},
+						{
+							q: "What areas do you serve?",
+							a: "We offer handyman services throughout Clark County WA. Therefore, whether you are in central Vancouver, Camas, Washougal, Battle Ground, or Ridgefield, our team is available for your home repair and maintenance needs.",
+						},
+					].map((item, i) => (
+						<div
+							key={i}
+							className="border border-gray-100 rounded-2xl p-8 bg-[#FDFCFB]"
+						>
+							<h3 className="text-lg font-black text-[#1F2E2B] mb-3">
+								{item.q}
+							</h3>
+							<p className="text-gray-600 font-medium leading-relaxed">
+								{item.a}
+							</p>
+						</div>
+					))}
+				</div>
+			</div>
+		</section>
+
+		{/* FINAL CTA - BILLBOARD STYLE */}
 			<section className="py-24 lg:py-40">
 				<div className="max-w-7xl mx-auto px-6">
 					<div className="bg-[#1F2E2B] rounded-[3rem] p-12 lg:p-24 text-center relative overflow-hidden border-b-[12px] border-[#FFB800] shadow-2xl">
@@ -225,8 +269,8 @@ export default function HandymanPage() {
 								<span className="text-[#FFB800]">To-Do List</span>
 							</h2>
 							<p className="text-[#A7C4B5] text-xl font-medium max-w-xl mx-auto">
-								Get a free, transparent estimate from Vancouver’s trusted local
-								professional. Let us handle the details while you relax.
+								Get a free, transparent estimate from Vancouver&apos;s trusted
+								handyman service. Let us handle the details while you relax.
 							</p>
 
 							<div className="flex flex-col sm:flex-row gap-6 justify-center pt-4">
