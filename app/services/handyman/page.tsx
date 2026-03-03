@@ -24,32 +24,32 @@ export default function HandymanPage() {
 		{
 			icon: Hammer,
 			title: "Drywall & Wall Repair",
-			desc: "Expert patching, stress crack repair, and texture matching to restore seamless wall surfaces.",
+			desc: "We patch holes, fix stress cracks, and match textures for a clean, smooth finish.",
 		},
 		{
 			icon: Lightbulb,
 			title: "Fixtures & Smart Home",
-			desc: "Professional installation of designer lighting, smart locks, and home security devices.",
+			desc: "We install light fixtures, smart locks, and home security devices quickly and cleanly.",
 		},
 		{
 			icon: Paintbrush,
 			title: "Caulking & Sealing",
-			desc: "Kitchen and bath re-caulking and weather-stripping to protect against PNW moisture.",
+			desc: "We re-caulk kitchens and baths and add weather-stripping to keep moisture out.",
 		},
 		{
 			icon: Settings,
 			title: "Assembly & Mounting",
-			desc: "Precision TV wall mounting, floating shelf installation, and complex furniture assembly.",
+			desc: "We mount TVs, hang floating shelves, and assemble furniture of all sizes.",
 		},
 		{
 			icon: Home,
 			title: "Interior Trim & Doors",
-			desc: "Repairing sticking doors, replacing hinges, and fixing damaged baseboards or casings.",
+			desc: "We fix sticking doors, swap out hinges, and repair baseboards and door casings.",
 		},
 		{
 			icon: Construction,
 			title: "Punch List Support",
-			desc: "Efficient completion of detailed 'to-do' lists for homeowners and property managers.",
+			desc: "We work through your home to-do list fast, for both homeowners and property managers.",
 		},
 	];
 
@@ -131,9 +131,9 @@ export default function HandymanPage() {
 							</h2>
 
 							<p className="text-gray-600 text-lg font-medium leading-relaxed">
-								Finding a dependable handyman shouldn’t be a gamble. Norbilt
-								provides professional, detail-focused service that bridges the
-								gap between casual labor and large-scale remodeling.
+								Finding a good handyman should not be a gamble. Norbilt
+								handles all the small and mid-size jobs your home needs. We
+								fill the gap between casual labor and a full remodel.
 							</p>
 
 							<div className="grid sm:grid-cols-2 gap-4">
@@ -165,8 +165,8 @@ export default function HandymanPage() {
 											General Contractor Status
 										</span>
 										<p className="text-[#A7C4B5] text-sm font-medium">
-											Unlike casual handymen, we are a registered WA General
-											Contractor, ensuring every small job meets structural
+											Unlike casual handymen, we are a licensed WA General
+											Contractor. Every job meets state code and safety
 											standards.
 										</p>
 									</div>
@@ -175,8 +175,8 @@ export default function HandymanPage() {
 											Home Value Protection
 										</span>
 										<p className="text-[#A7C4B5] text-sm font-medium">
-											We specialize in the "to-do" lists that prevent minor
-											issues from becoming expensive structural failures.
+											Small fixes now stop big repair bills later. We tackle
+											the items that protect your home and its value.
 										</p>
 									</div>
 								</div>
