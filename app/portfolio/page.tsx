@@ -93,6 +93,44 @@ const categories = [
 			},
 		],
 	},
+	{
+		id: "flooring",
+		gridCols: "grid-cols-2 lg:grid-cols-2",
+		label: "Flooring",
+		href: "/services/flooring",
+		description:
+			"Wide-plank hardwood and LVP flooring installations across Clark County homes.",
+		projects: [
+			{
+				src: "/remodel-images/remodel-0.jpg",
+				alt: "Wide plank hardwood flooring installation open living room Vancouver WA",
+				caption: "Wide-Plank Hardwood Install",
+				location: "Vancouver, WA",
+				wide: true,
+			},
+			{
+				src: "/remodel-images/remodel-1.jpg",
+				alt: "Hardwood flooring living room with stone fireplace Clark County WA",
+				caption: "Hardwood Flooring — Living Room",
+				location: "Clark County, WA",
+				wide: false,
+			},
+			{
+				src: "/remodel-images/remodel-2.jpg",
+				alt: "LVP flooring installation living room brick fireplace Vancouver WA",
+				caption: "LVP Flooring Install",
+				location: "Vancouver, WA",
+				wide: false,
+			},
+			{
+				src: "/remodel-images/remodel-3.jpg",
+				alt: "Wide plank hardwood flooring upper landing staircase Clark County WA",
+				caption: "Hardwood — Upper Landing",
+				location: "Clark County, WA",
+				wide: false,
+			},
+		],
+	},
 ];
 
 export default function PortfolioPage() {
@@ -135,7 +173,7 @@ export default function PortfolioPage() {
 								surrounding Clark County area. No stock images, no staging.
 							</p>
 							<div className="flex flex-wrap gap-4 pt-2">
-								{["Bathroom Remodels", "Kitchen Updates", "Fence & Outdoor"].map(
+								{["Bathroom Remodels", "Kitchen Updates", "Fence & Outdoor", "Flooring"].map(
 									(cat) => (
 										<a
 											key={cat}
@@ -179,7 +217,7 @@ export default function PortfolioPage() {
 							</div>
 
 							{/* Photo grid */}
-							<div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+							<div className=`grid ${(cat as any).gridCols ?? "grid-cols-2 lg:grid-cols-3"} gap-4`>
 								{cat.projects.map((project) => (
 									<div
 										key={project.src}
