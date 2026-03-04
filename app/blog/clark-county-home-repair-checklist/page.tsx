@@ -111,7 +111,7 @@ export default function ClarkCountyChecklist() {
 						"@context": "https://schema.org",
 						"@type": "Article",
 						headline: "Clark County Home Repair Checklist: 10 Things to Fix Before They Get Expensive",
-						author: { "@type": "Organization", name: "Norbilt" },
+						author: { "@type": "Person", name: "Andrey Norbilt" },
 						publisher: {
 							"@type": "Organization",
 							name: "Norbilt",

@@ -7,6 +7,7 @@ export interface CityData {
 export interface ServiceData {
 	title: string;
 	description: string;
+	process: string;
 	features: string[];
 }
 

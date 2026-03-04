@@ -30,7 +30,7 @@ export default function BattleGroundHandyman() {
 						"@context": "https://schema.org",
 						"@type": "Article",
 						headline: "Hiring a Handyman in Battle Ground, WA: What to Expect & What It Costs",
-						author: { "@type": "Organization", name: "Norbilt" },
+						author: { "@type": "Person", name: "Andrey Norbilt" },
 						publisher: {
 							"@type": "Organization",
 							name: "Norbilt",

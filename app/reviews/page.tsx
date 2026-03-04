@@ -81,7 +81,7 @@ export default function ReviewsPage() {
 								bestRating: "5",
 							},
 							reviewBody: r.quote,
-							datePublished: "2025-01-01",
+							
 						})),
 					}),
 				}}

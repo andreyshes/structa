@@ -30,7 +30,7 @@ export default function BathroomRemodel() {
 						"@context": "https://schema.org",
 						"@type": "Article",
 						headline: "How Much Does a Bathroom Remodel Cost in Ridgefield, WA?",
-						author: { "@type": "Organization", name: "Norbilt" },
+						author: { "@type": "Person", name: "Andrey Norbilt" },
 						publisher: {
 							"@type": "Organization",
 							name: "Norbilt",

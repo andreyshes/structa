@@ -69,6 +69,9 @@ export default function RootLayout({
 								{ "@type": "City", "name": "Brush Prairie" },
 								{ "@type": "City", "name": "Mill Plain" },
 								{ "@type": "City", "name": "Lake Shore" },
+								{ "@type": "City", "name": "Five Corners" },
+								{ "@type": "City", "name": "Orchards" },
+								{ "@type": "City", "name": "Felida" },
 							],
 							"hasOfferCatalog": {
 								"@type": "OfferCatalog",
