@@ -3,14 +3,14 @@ import { ArrowRight, AlertTriangle, CheckCircle2, MapPin, Phone } from "lucide-r
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Clark County Home Repair Checklist: 10 Things to Fix Before They Get Expensive",
+	title: "Home Repair Checklist | Clark County WA | Norbilt",
 	description:
 		"The 10 most common home repair problems in Clark County WA — and when to call a licensed contractor before small issues become big bills.",
 	alternates: {
 		canonical: "https://norbilt.com/blog/clark-county-home-repair-checklist",
 	},
 	openGraph: {
-		title: "Clark County Home Repair Checklist | Norbilt",
+		title: "Home Repair Checklist | Clark County | Norbilt",
 		description:
 			"10 home repair issues Clark County homeowners should fix before they become expensive. From a licensed local contractor.",
 		url: "https://norbilt.com/blog/clark-county-home-repair-checklist",
@@ -25,7 +25,7 @@ const repairs = [
 		number: "01",
 		title: "Failing Caulk Around Tubs & Showers",
 		urgency: "High",
-		body: "Cracked or missing caulk is the #1 source of hidden water damage in Clark County homes. Water seeps behind tile, rots the subfloor and framing, and you won't see the damage until it's already expensive. Re-caulking costs $100–250. Ignoring it can lead to $3,000–10,000 in rot remediation.",
+		body: "Cracked or missing caulk is the top cause of hidden water damage. Water gets behind tile and rots the subfloor. You won't see it until it's already expensive. Re-caulking costs $100–250. Ignoring it can lead to $3,000–10,000 in rot repairs.",
 		fix: "Re-caulk immediately. If tile is already loose or grout is crumbling, inspect for moisture damage behind the wall.",
 	},
 	{
@@ -39,14 +39,14 @@ const repairs = [
 		number: "03",
 		title: "Doors That Don't Latch or Stick Seasonally",
 		urgency: "Medium",
-		body: "Clark County's wet winters cause door frames to swell. If a door sticks badly or won't latch, it's often a hinge or strike plate adjustment — a 30-minute fix. Left alone, the door can warp permanently and require full replacement.",
+		body: "Wet winters cause door frames to swell. If a door sticks or won't latch, it's usually a hinge or strike plate fix — takes 30 minutes. Left alone, the door can warp and need full replacement.",
 		fix: "Adjust hinges or plane the door edge. Check weatherstripping at the same time.",
 	},
 	{
 		number: "04",
 		title: "Gaps in Window or Door Caulking",
 		urgency: "Medium",
-		body: "Gaps around window and door frames let in moisture, cold air, and insects. In newer Ridgefield and Battle Ground construction, this often shows up within 3–5 years as the house settles. A tube of caulk costs $8. The heat loss over a Clark County winter can cost hundreds in utility bills.",
+		body: "Gaps around window and door frames let in moisture, cold air, and insects. In newer homes, this shows up within 3–5 years as the house settles. A tube of caulk costs $8. The heat loss over winter can cost hundreds in utility bills.",
 		fix: "Re-caulk all exterior window and door perimeters annually before the rainy season.",
 	},
 	{
@@ -74,21 +74,21 @@ const repairs = [
 		number: "08",
 		title: "Exterior Wood Rot (Fascia, Soffits, Window Sills)",
 		urgency: "High",
-		body: "Clark County's rain and humidity make exterior wood rot one of the most common — and most ignored — home repair issues. Fascia and soffit rot lets water into the roof structure. Window sill rot leads to structural frame damage. Catching it early is a $200–500 repair. Missing it leads to $2,000–8,000 in structural remediation.",
+		body: "Rain and humidity make exterior wood rot one of the most common home repair issues here. Fascia rot lets water into the roof. Window sill rot leads to frame damage. Catching it early costs $200–500. Missing it costs $2,000–8,000.",
 		fix: "Inspect exterior wood annually. Paint peeling off wood trim is a warning sign that moisture is getting in.",
 	},
 	{
 		number: "09",
 		title: "Running Toilets",
 		urgency: "Low",
-		body: "A running toilet in Vancouver WA can waste 200 gallons of water per day. At Clark County water rates, that's $50–100/month in wasted water. A flapper replacement is a $10–20 part. If the toilet is older or the fill valve needs replacement, a handyman visit runs $100–200.",
+		body: "A running toilet wastes 200 gallons of water per day. At local rates, that's $50–100 per month. A flapper replacement is a $10–20 part. If the fill valve needs replacement too, a handyman visit runs $100–200.",
 		fix: "Replace the flapper first. If it still runs, replace the fill valve. Both are quick fixes.",
 	},
 	{
 		number: "10",
 		title: "Missing or Damaged Weatherstripping",
 		urgency: "Low–Medium",
-		body: "Weatherstripping on exterior doors and garage doors fails over time. You'll notice drafts, cold floors near doors, or insects getting in. This is a cheap fix ($20–50 in materials) that directly impacts your heating bill during Clark County winters.",
+		body: "Weatherstripping on exterior doors fails over time. You'll notice drafts, cold floors, or insects getting in. It's a cheap fix — $20–50 in materials — and it cuts your heating bill directly.",
 		fix: "Replace weatherstripping on all exterior doors. Check the threshold seal at the same time.",
 	},
 ];
@@ -110,7 +110,7 @@ export default function ClarkCountyChecklist() {
 					__html: JSON.stringify({
 						"@context": "https://schema.org",
 						"@type": "Article",
-						headline: "Clark County Home Repair Checklist: 10 Things to Fix Before They Get Expensive",
+						headline: "Home Repair Checklist: 10 Things to Fix Before They Get Expensive",
 						author: { "@type": "Person", name: "Andrey Norbilt" },
 						publisher: {
 							"@type": "Organization",
@@ -142,11 +142,11 @@ export default function ClarkCountyChecklist() {
 							</span>
 						</div>
 						<h1 className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tighter uppercase">
-							Clark County Home Repair{" "}
+							Home Repair Checklist{" "}
 							<span className="text-[#FFB800]">Checklist</span>
 						</h1>
 						<p className="text-xl text-white/70 leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">
-							10 things Clark County homeowners should fix before small problems
+							10 things to fix before small problems
 							turn into expensive ones. From a licensed local contractor who
 							sees these every week.
 						</p>
@@ -215,7 +215,7 @@ export default function ClarkCountyChecklist() {
 								</h2>
 							</div>
 							<p className="text-[#A7C4B5] leading-relaxed text-lg">
-								Almost every expensive home repair we do in Clark County could
+								Almost every expensive home repair could
 								have been caught earlier for a fraction of the cost. Water is
 								always the common thread — caulk failure, grout failure, rot,
 								subfloor damage. If you see water stains, soft spots, peeling
@@ -263,7 +263,7 @@ export default function ClarkCountyChecklist() {
 						</h2>
 						<p className="text-black/70 text-lg font-medium">
 							Don't wait. Contact Norbilt for a free estimate on any home
-							repair across Clark County — we'll tell you exactly what it needs
+							— we'll tell you exactly what it needs
 							and what it costs.
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">

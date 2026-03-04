@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle2, MapPin, Phone, Shield } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Hiring a Handyman in Battle Ground WA: Costs & What to Expect | Norbilt",
+	title: "Handyman Services Battle Ground WA | Norbilt",
 	description:
 		"What does handyman service cost in Battle Ground, WA? Learn what's included, what to watch out for, and how to find a licensed contractor in North Clark County.",
 	alternates: {

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Home Repair & Remodeling Tips | Norbilt Blog | Clark County WA",
+	title: "Home Repair Tips Clark County WA | Norbilt Blog",
 	description:
 		"Expert home repair and remodeling advice for Clark County homeowners. Costs, tips, and guides for Vancouver, Battle Ground, Camas, Ridgefield & more.",
 	alternates: {

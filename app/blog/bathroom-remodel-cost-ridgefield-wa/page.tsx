@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle2, MapPin, Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Bathroom Remodel Cost in Ridgefield WA | 2025 Price Guide | Norbilt",
+	title: "Bathroom Remodel Cost Ridgefield WA | Norbilt",
 	description:
 		"How much does a bathroom remodel cost in Ridgefield, WA? Real price ranges for tile, vanity, fixtures & more from a licensed Clark County contractor.",
 	alternates: {
