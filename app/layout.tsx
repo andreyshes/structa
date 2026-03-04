@@ -6,8 +6,8 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://norbilt.com"),
-	title: "Norbilt",
-	description: "Expert hands. Exceptional results.",
+	title: "Licensed General Contractor Vancouver WA | Norbilt",
+	description: "Norbilt is a licensed, bonded, and insured general contractor serving Vancouver WA and Clark County. Home repairs, carpentry, drywall, and remodeling. Free estimates.",
 	icons: {
 		icon: "/icon-v3.png",
 	},

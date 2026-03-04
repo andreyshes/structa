@@ -37,7 +37,7 @@ export default function BattleGroundHandyman() {
 							logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" },
 						},
 						datePublished: "2025-03-01",
-						dateModified: "2025-03-01",
+						dateModified: "2026-03-04",
 						description:
 							"A practical guide to hiring handyman services in Battle Ground and North Clark County, WA.",
 						mainEntityOfPage: "https://norbilt.com/blog/battle-ground-handyman-what-to-expect",

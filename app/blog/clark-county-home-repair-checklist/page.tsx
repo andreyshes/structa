@@ -118,7 +118,7 @@ export default function ClarkCountyChecklist() {
 							logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" },
 						},
 						datePublished: "2025-03-01",
-						dateModified: "2025-03-01",
+						dateModified: "2026-03-04",
 						description:
 							"The 10 most common home repair issues Clark County WA homeowners face, and when to call a contractor before they become expensive.",
 						mainEntityOfPage: "https://norbilt.com/blog/clark-county-home-repair-checklist",

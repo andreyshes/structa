@@ -3,37 +3,36 @@ import { locationsData, servicesData } from "./locations/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
 	const baseUrl = "https://norbilt.com";
-	const lastModified = new Date();
 
 	// 1. Define your Core Routes
 	const routes: MetadataRoute.Sitemap = [
 		{
 			url: baseUrl,
-			lastModified,
+			lastModified: new Date("2026-03-03"),
 			changeFrequency: "weekly",
 			priority: 1.0,
 		},
 		{
 			url: `${baseUrl}/about`,
-			lastModified,
+			lastModified: new Date("2026-02-26"),
 			changeFrequency: "monthly",
 			priority: 0.8,
 		},
 		{
 			url: `${baseUrl}/contact`,
-			lastModified,
+			lastModified: new Date("2026-02-26"),
 			changeFrequency: "monthly",
 			priority: 0.8,
 		},
 		{
 			url: `${baseUrl}/services`,
-			lastModified,
+			lastModified: new Date("2026-03-03"),
 			changeFrequency: "weekly",
 			priority: 0.9,
 		},
 		{
 			url: `${baseUrl}/locations`,
-			lastModified,
+			lastModified: new Date("2026-03-04"),
 			changeFrequency: "weekly",
 			priority: 0.9,
 		},
@@ -46,18 +45,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
 	locationKeys.forEach((location) => {
 		routes.push({
 			url: `${baseUrl}/locations/${location}`,
-			lastModified,
-			changeFrequency: "weekly",
+			lastModified: new Date("2026-03-04"),
+			changeFrequency: "monthly",
 			priority: 0.8,
 		});
 
 		// 3. Add Dynamic City + Service Pages (e.g., /locations/vancouver/drywall-repair)
-		// Now that you use dynamic routes, every service is valid for every location
 		serviceKeys.forEach((service) => {
 			routes.push({
 				url: `${baseUrl}/locations/${location}/${service}`,
-				lastModified,
-				changeFrequency: "weekly",
+				lastModified: new Date("2026-03-04"),
+				changeFrequency: "monthly",
 				priority: 0.7,
 			});
 		});
@@ -67,8 +65,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 	serviceKeys.forEach((service) => {
 		routes.push({
 			url: `${baseUrl}/services/${service}`,
-			lastModified,
-			changeFrequency: "weekly",
+			lastModified: new Date("2026-03-03"),
+			changeFrequency: "monthly",
 			priority: 0.8,
 		});
 	});
@@ -77,67 +75,69 @@ export default function sitemap(): MetadataRoute.Sitemap {
 	routes.push(
 		{
 			url: `${baseUrl}/services/home-repair`,
-			lastModified,
-			changeFrequency: "weekly",
+			lastModified: new Date("2026-03-03"),
+			changeFrequency: "monthly",
 			priority: 0.8,
 		},
 		{
 			url: `${baseUrl}/services/lighting`,
-			lastModified,
-			changeFrequency: "weekly",
+			lastModified: new Date("2026-03-03"),
+			changeFrequency: "monthly",
 			priority: 0.8,
 		},
 	);
 
 	// 6. Reviews, Pricing, Portfolio, FAQ pages
-	routes.push({
-		url: `${baseUrl}/faq`,
-		lastModified,
-		changeFrequency: "monthly",
-		priority: 0.8,
-	});
-	routes.push({
-		url: `${baseUrl}/pricing`,
-		lastModified,
-		changeFrequency: "monthly",
-		priority: 0.8,
-	});
-	routes.push({
-		url: `${baseUrl}/portfolio`,
-		lastModified,
-		changeFrequency: "monthly",
-		priority: 0.8,
-	});
-	routes.push({
-		url: `${baseUrl}/reviews`,
-		lastModified,
-		changeFrequency: "monthly",
-		priority: 0.8,
-	});
+	routes.push(
+		{
+			url: `${baseUrl}/faq`,
+			lastModified: new Date("2026-03-04"),
+			changeFrequency: "monthly",
+			priority: 0.8,
+		},
+		{
+			url: `${baseUrl}/pricing`,
+			lastModified: new Date("2026-03-03"),
+			changeFrequency: "monthly",
+			priority: 0.8,
+		},
+		{
+			url: `${baseUrl}/portfolio`,
+			lastModified: new Date("2026-03-03"),
+			changeFrequency: "monthly",
+			priority: 0.8,
+		},
+		{
+			url: `${baseUrl}/reviews`,
+			lastModified: new Date("2026-03-03"),
+			changeFrequency: "monthly",
+			priority: 0.7,
+		},
+	);
 
 	// 7. Blog index + articles
 	routes.push(
 		{
 			url: `${baseUrl}/blog`,
-			lastModified,
+			lastModified: new Date("2026-03-03"),
 			changeFrequency: "weekly",
 			priority: 0.8,
 		},
 		{
 			url: `${baseUrl}/blog/bathroom-remodel-cost-ridgefield-wa`,
-			lastModified,
+			lastModified: new Date("2026-03-04"),
 			changeFrequency: "monthly",
 			priority: 0.7,
 		},
 		{
 			url: `${baseUrl}/blog/battle-ground-handyman-what-to-expect`,
-			lastModified,
+			lastModified: new Date("2026-03-04"),
 			changeFrequency: "monthly",
 			priority: 0.7,
 		},
 		{
 			url: `${baseUrl}/blog/clark-county-home-repair-checklist`,
-			lastModified,
+			lastModified: new Date("2026-03-04"),
 			changeFrequency: "monthly",
 			priority: 0.7,
 		},

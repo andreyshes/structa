@@ -37,7 +37,7 @@ export default function BathroomRemodel() {
 							logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" },
 						},
 						datePublished: "2025-03-01",
-						dateModified: "2025-03-01",
+						dateModified: "2026-03-04",
 						description:
 							"A real cost breakdown for bathroom remodels in Ridgefield and Clark County WA.",
 						mainEntityOfPage: "https://norbilt.com/blog/bathroom-remodel-cost-ridgefield-wa",
