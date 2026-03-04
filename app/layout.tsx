@@ -45,6 +45,7 @@ export default function RootLayout({
 						__html: JSON.stringify({
 							"@context": "https://schema.org",
 							"@type": "GeneralContractor",
+							"@id": "https://norbilt.com/#business",
 							"name": "Norbilt",
 							"description": "Licensed general contractor offering handyman services, finish carpentry, drywall repair, kitchen and bath updates, lighting, and flooring in Vancouver WA and Clark County.",
 							"url": "https://norbilt.com",

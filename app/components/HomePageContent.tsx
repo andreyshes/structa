@@ -691,6 +691,41 @@ export default function HomePageContent() {
 
 			<HomeFaqSection />
 
+			{/* FROM THE BLOG */}
+			<section className="py-24 bg-white border-t border-gray-100">
+				<div className="max-w-7xl mx-auto px-6 lg:px-8">
+					<div className="flex items-end justify-between mb-12">
+						<div>
+							<p className="text-[#FFB800] font-black uppercase tracking-[0.3em] text-[10px] mb-3">Clark County Resources</p>
+							<h2 className="text-3xl font-black text-[#1F2E2B] uppercase tracking-tighter">From the Blog</h2>
+						</div>
+						<Link href="/blog" className="text-sm font-black uppercase tracking-widest text-[#2D5A3D] hover:text-[#FFB800] transition-colors hidden sm:block">
+							All Articles →
+						</Link>
+					</div>
+					<div className="grid md:grid-cols-3 gap-8">
+						<Link href="/blog/bathroom-remodel-cost-ridgefield-wa" className="group bg-[#F8F6F3] rounded-3xl p-8 border border-gray-100 hover:border-[#FFB800] hover:shadow-lg transition-all">
+							<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-4">Cost Guide</p>
+							<h3 className="text-lg font-black text-[#1F2E2B] leading-snug mb-3 group-hover:text-[#2D5A3D] transition-colors">Bathroom Remodel Cost in Ridgefield WA</h3>
+							<p className="text-sm text-gray-500 leading-relaxed">Real price ranges for tile, vanity, and fixtures from a licensed Clark County contractor.</p>
+							<p className="mt-6 text-[10px] font-black uppercase tracking-widest text-[#FFB800]">Read Article →</p>
+						</Link>
+						<Link href="/blog/battle-ground-handyman-what-to-expect" className="group bg-[#F8F6F3] rounded-3xl p-8 border border-gray-100 hover:border-[#FFB800] hover:shadow-lg transition-all">
+							<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-4">Hiring Guide</p>
+							<h3 className="text-lg font-black text-[#1F2E2B] leading-snug mb-3 group-hover:text-[#2D5A3D] transition-colors">Battle Ground Handyman: What to Expect</h3>
+							<p className="text-sm text-gray-500 leading-relaxed">How to hire a licensed handyman in North Clark County and what the process looks like.</p>
+							<p className="mt-6 text-[10px] font-black uppercase tracking-widest text-[#FFB800]">Read Article →</p>
+						</Link>
+						<Link href="/blog/clark-county-home-repair-checklist" className="group bg-[#F8F6F3] rounded-3xl p-8 border border-gray-100 hover:border-[#FFB800] hover:shadow-lg transition-all">
+							<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-4">Checklist</p>
+							<h3 className="text-lg font-black text-[#1F2E2B] leading-snug mb-3 group-hover:text-[#2D5A3D] transition-colors">Clark County Home Repair Checklist</h3>
+							<p className="text-sm text-gray-500 leading-relaxed">The maintenance tasks Clark County homeowners should handle before they become costly repairs.</p>
+							<p className="mt-6 text-[10px] font-black uppercase tracking-widest text-[#FFB800]">Read Article →</p>
+						</Link>
+					</div>
+				</div>
+			</section>
+
 			<section className="py-12 bg-[#14201D] text-center text-xs md:text-sm font-black text-[#A7C4B5] uppercase tracking-[0.4em] px-4">
 				WA General Contractor #NORBIR**741CS • Serving Vancouver & Camas
 			</section>

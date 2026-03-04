@@ -167,6 +167,10 @@ export default function ServicePageClient({
 						{service.description}
 					</p>
 
+					<p className="text-gray-500 text-base leading-relaxed">
+						{service.process}
+					</p>
+
 					<div className="grid gap-4">
 						{service.features.map((feature: string) => (
 							<div

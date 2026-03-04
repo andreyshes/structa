@@ -68,7 +68,8 @@ export default function CityLandingClient({ city, citySlug }: any) {
 							},
 							{
 								"@type": "LocalBusiness",
-								name: `Norbilt ${cityNameShort}`,
+								"@id": "https://norbilt.com/#business",
+								name: "Norbilt",
 								telephone: "+19165086272",
 								areaServed: city.neighborhoods.map((n: string) => ({
 									"@type": "Place",

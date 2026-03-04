@@ -40,60 +40,6 @@ export const metadata = {
 export default function AboutPage() {
 	return (
 		<>
-			{/* Schema Markup for Local Business */}
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify({
-						"@context": "https://schema.org",
-						"@type": "LocalBusiness",
-						"@id": "https://norbilt.com",
-						name: "Norbilt Homes",
-						image:
-							"https://norbilt.com/og-image.jpg",
-						description:
-							"Licensed general contractor serving Vancouver, WA. We specialize in interior remodeling, carpentry, and home repairs.",
-						address: {
-							"@type": "PostalAddress",
-							addressLocality: "Vancouver",
-							addressRegion: "WA",
-							postalCode: "98686",
-							addressCountry: "US",
-						},
-						telephone: "+1-916-508-6272",
-						url: "https://norbilt.com",
-						priceRange: "$$",
-						areaServed: [
-							"Vancouver",
-							"Camas",
-							"Battle Ground",
-							"Ridgefield",
-							"Washougal",
-							"Salmon Creek",
-							"Hazel Dell",
-							"Five Corners",
-							"Brush Prairie",
-							"Felida",
-							"Lake Shore",
-							"Orchards",
-							"Mill Plain",
-						],
-						openingHoursSpecification: {
-							"@type": "OpeningHoursSpecification",
-							dayOfWeek: [
-								"Monday",
-								"Tuesday",
-								"Wednesday",
-								"Thursday",
-								"Friday",
-							],
-							opens: "08:00",
-							closes: "17:00",
-						},
-					}),
-				}}
-			/>
-
 			<AboutPageContent />
 		</>
 	);
