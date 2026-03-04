@@ -63,8 +63,19 @@ export default function ServicePageClient({
 				dangerouslySetInnerHTML={{
 					__html: JSON.stringify({
 						"@context": "https://schema.org",
-						"@type": "FAQPage",
-						mainEntity: faqs.map((f) => ({
+						"@graph": [
+							{
+								"@type": "BreadcrumbList",
+								itemListElement: [
+									{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+									{ "@type": "ListItem", position: 2, name: "Locations", item: "https://norbilt.com/locations" },
+									{ "@type": "ListItem", position: 3, name: city.name, item: `https://norbilt.com/locations/${citySlug}` },
+									{ "@type": "ListItem", position: 4, name: service.title, item: `https://norbilt.com/locations/${citySlug}/${serviceSlug}` },
+								],
+							},
+							{
+								"@type": "FAQPage",
+								mainEntity: faqs.map((f) => ({
 							"@type": "Question",
 							name: f.q,
 							acceptedAnswer: { "@type": "Answer", text: f.a },

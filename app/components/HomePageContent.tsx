@@ -452,6 +452,7 @@ export default function HomePageContent() {
 							{ name: "Five Corners", slug: "five-corners" },
 							{ name: "Orchards", slug: "orchards" },
 							{ name: "Mill Plain", slug: "mill-plain" },
+							{ name: "Lake Shore", slug: "lake-shore" },
 						].map((city) => (
 							<Link
 								key={city.slug}

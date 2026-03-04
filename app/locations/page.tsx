@@ -136,6 +136,14 @@ export default function LocationsIndexPage() {
 					tags: ["Local Service"],
 					primary: false,
 				},
+				{
+					name: "Lake Shore, WA",
+					href: "/locations/lake-shore",
+					description:
+						"Specialized interior repairs and carpentry near Vancouver Lake. We help maintain beautiful Lake Shore homes.",
+					tags: ["Local Service"],
+					primary: false,
+				},
 			],
 		},
 	];

@@ -59,6 +59,14 @@ export default function CityLandingClient({ city, citySlug }: any) {
 						"@context": "https://schema.org",
 						"@graph": [
 							{
+								"@type": "BreadcrumbList",
+								itemListElement: [
+									{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+									{ "@type": "ListItem", position: 2, name: "Locations", item: "https://norbilt.com/locations" },
+									{ "@type": "ListItem", position: 3, name: city.name, item: `https://norbilt.com/locations/${citySlug}` },
+								],
+							},
+							{
 								"@type": "LocalBusiness",
 								name: `Norbilt ${cityNameShort}`,
 								telephone: "+19165086272",
