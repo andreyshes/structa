@@ -426,36 +426,50 @@ export default function HomePageContent() {
 			</section>
 
 			{/* SERVICE AREA */}
+			{/* SERVICE AREAS */}
 			<section className="py-24 bg-[#FDFCFB]">
-				<div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-					<SectionHeader
-						eyebrow="Local Service"
-						title="Serving Clark County"
-						centered
-					/>
-					<p className="max-w-3xl mx-auto text-gray-600 mb-12 text-lg">
-						We are a top <strong>contractor</strong> for Southwest Washington.
-						We serve{" "}
-						<strong>Vancouver, Camas, Ridgefield, and Battle Ground</strong>.
-						Contact us if you need a <strong>fixing expert</strong> or a{" "}
-						<strong>handyman</strong>.
-					</p>
-					<div className="flex flex-wrap justify-center gap-4">
+				<div className="max-w-7xl mx-auto px-6 lg:px-8">
+					<div className="text-center mb-12">
+						<span className="text-[#FFB800] font-black uppercase tracking-[0.3em] text-xs">Licensed General Contractor</span>
+						<h2 className="text-3xl md:text-4xl font-black text-[#1F2E2B] uppercase tracking-tighter mt-2 mb-4">
+							Serving All of Clark County, WA
+						</h2>
+						<p className="max-w-2xl mx-auto text-gray-600 text-lg">
+							Norbilt is a licensed, bonded contractor serving Vancouver and every surrounding community in Clark County. Select your city for local pricing and availability.
+						</p>
+					</div>
+					<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
 						{[
+							{ name: "Vancouver", slug: "vancouver" },
 							{ name: "Camas", slug: "camas" },
 							{ name: "Ridgefield", slug: "ridgefield" },
-							{ name: "Washougal", slug: "washougal" },
 							{ name: "Battle Ground", slug: "battle-ground" },
+							{ name: "Washougal", slug: "washougal" },
+							{ name: "Brush Prairie", slug: "brush-prairie" },
+							{ name: "Felida", slug: "felida" },
+							{ name: "Hazel Dell", slug: "hazel-dell" },
 							{ name: "Salmon Creek", slug: "salmon-creek" },
+							{ name: "Five Corners", slug: "five-corners" },
+							{ name: "Orchards", slug: "orchards" },
+							{ name: "Mill Plain", slug: "mill-plain" },
 						].map((city) => (
 							<Link
 								key={city.slug}
 								href={`/locations/${city.slug}`}
-								className="px-6 py-2 bg-white border border-gray-200 rounded-full text-sm font-bold text-gray-500 hover:border-[#2D5A3D] hover:text-[#2D5A3D] transition-colors duration-300"
+								className="flex items-center gap-2 px-5 py-4 bg-white border border-gray-200 rounded-2xl text-sm font-bold text-gray-600 hover:border-[#FFB800] hover:text-[#1F2E2B] hover:shadow-md transition-all duration-200 group"
 							>
+								<MapPin className="w-4 h-4 text-[#FFB800] shrink-0" />
 								{city.name}, WA
 							</Link>
 						))}
+					</div>
+					<div className="text-center mt-8">
+						<Link
+							href="/locations"
+							className="inline-flex items-center gap-2 text-[#2D5A3D] font-black text-sm uppercase tracking-widest hover:gap-3 transition-all"
+						>
+							View All Service Areas <ArrowRight className="w-4 h-4" />
+						</Link>
 					</div>
 				</div>
 			</section>

@@ -19,6 +19,7 @@ import {
 	ChevronDown,
 } from "lucide-react";
 import Link from "next/link";
+import { locationsData } from "../../data";
 
 const iconMap: Record<string, any> = {
 	"handyman": HardHat,
@@ -199,7 +200,43 @@ export default function ServicePageClient({
 				</div>
 			</section>
 
-			{/* FAQ SECTION */}
+			{/* CITY CONTEXT + NEARBY AREAS */}
+		<section className="py-16 bg-white border-t border-gray-100">
+			<div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12">
+				<div>
+					<h2 className="text-2xl font-black text-[#1F2E2B] uppercase tracking-tighter mb-4">
+						{service.title} in {cityNameShort}: What to Expect
+					</h2>
+					<p className="text-gray-600 leading-relaxed mb-4">{city.description}</p>
+					<p className="text-gray-600 leading-relaxed">
+						We serve all neighborhoods in {cityNameShort}, including{" "}
+						{city.neighborhoods.slice(0, 3).join(", ")}. Free estimates for all {cityNameShort} homeowners — no obligation.
+					</p>
+				</div>
+				<div>
+					<p className="text-sm font-black text-[#2D5A3D] uppercase tracking-widest mb-4">
+						Also Serving Nearby Areas
+					</p>
+					<div className="flex flex-wrap gap-2">
+						{Object.entries(locationsData)
+							.filter(([slug]) => slug !== citySlug)
+							.slice(0, 6)
+							.map(([slug, data]) => (
+								<Link
+									key={slug}
+									href={`/locations/${slug}/${serviceSlug}`}
+									className="flex items-center gap-1 px-4 py-2 bg-[#F8F6F3] rounded-full text-sm font-bold text-gray-600 border border-gray-200 hover:border-[#2D5A3D] hover:text-[#2D5A3D] transition-colors"
+								>
+									<MapPin className="w-3 h-3" />
+									{data.name.split(",")[0]}, WA
+								</Link>
+							))}
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{/* FAQ SECTION */}
 			<section className="py-24 bg-[#F8F6F3]">
 				<div className="max-w-4xl mx-auto px-6">
 					<h2 className="text-4xl font-black text-center text-[#1F2E2B] uppercase mb-16">
