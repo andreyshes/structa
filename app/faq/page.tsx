@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { ArrowRight, Phone, ShieldCheck, DollarSign, MapPin } from "lucide-react";
-import { Metadata } from "next";
 
 const faqs = [
 	{
@@ -39,7 +38,9 @@ const faqs = [
 		questions: [
 			{
 				q: "Is Norbilt a licensed contractor in Washington State?",
-				a: "Yes. Norbilt is a licensed, bonded, and insured general contractor in Washington State. Our WA contractor license number is NORBIR**741CS. You can verify it at verify.contractors.wa.gov. We carry general liability insurance on every job.",
+				a: "Yes. Norbilt is a licensed, bonded, and insured general contractor in Washington State. Our WA contractor license number is NORBIR**741CS. We carry general liability insurance on every job.",
+				verifyLink: "https://lni.wa.gov/licensing-permits/contractors/verify-a-contractor/",
+				verifyText: "Verify our license at Washington State L&I →",
 			},
 			{
 				q: "Why does licensing matter for home repair in WA?",
@@ -196,6 +197,16 @@ export default function FAQPage() {
 												{item.q}
 											</h3>
 											<p className="text-gray-600 leading-relaxed">{item.a}</p>
+											{item.verifyLink && (
+												<a
+													href={item.verifyLink}
+													target="_blank"
+													rel="noopener noreferrer"
+													className="inline-block mt-3 text-sm font-bold text-[#2D5A3D] hover:text-[#FFB800] transition-colors"
+												>
+													{item.verifyText}
+												</a>
+											)}
 										</div>
 									))}
 								</div>

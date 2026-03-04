@@ -113,6 +113,12 @@ export default function Footer() {
 								{ name: "Washougal, WA", href: "/locations/washougal" },
 								{ name: "Salmon Creek, WA", href: "/locations/salmon-creek" },
 								{ name: "Hazel Dell, WA", href: "/locations/hazel-dell" },
+								{ name: "Brush Prairie, WA", href: "/locations/brush-prairie" },
+								{ name: "Felida, WA", href: "/locations/felida" },
+								{ name: "Five Corners, WA", href: "/locations/five-corners" },
+								{ name: "Orchards, WA", href: "/locations/orchards" },
+								{ name: "Mill Plain, WA", href: "/locations/mill-plain" },
+								{ name: "Lake Shore, WA", href: "/locations/lake-shore" },
 							].map((link) => (
 								<li key={link.name}>
 									<Link
