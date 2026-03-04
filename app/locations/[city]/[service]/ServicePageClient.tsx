@@ -164,9 +164,7 @@ export default function ServicePageClient({
 					</h2>
 
 					<p className="text-gray-600 font-medium text-lg leading-relaxed">
-						Norbilt sets high standards for home projects. We understand Pacific
-						Northwest home styles. Our team provides clean, reliable results
-						that last for years. We handle every detail with professional care.
+						{service.description}
 					</p>
 
 					<div className="grid gap-4">
