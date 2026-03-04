@@ -39,7 +39,7 @@ const faqs = [
 			{
 				q: "Is Norbilt a licensed contractor in Washington State?",
 				a: "Yes. Norbilt is a licensed, bonded, and insured general contractor in Washington State. Our WA contractor license number is NORBIR**741CS. We carry general liability insurance on every job.",
-				verifyLink: "https://lni.wa.gov/licensing-permits/contractors/verify-a-contractor/",
+				verifyLink: "https://secure.lni.wa.gov/verify/",
 				verifyText: "Verify our license at Washington State L&I →",
 			},
 			{
