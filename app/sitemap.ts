@@ -89,7 +89,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		},
 	);
 
-	// 6. Reviews, Pricing, Portfolio pages
+	// 6. Reviews, Pricing, Portfolio, FAQ pages
+	routes.push({
+		url: `${baseUrl}/faq`,
+		lastModified,
+		changeFrequency: "monthly",
+		priority: 0.8,
+	});
 	routes.push({
 		url: `${baseUrl}/pricing`,
 		lastModified,
