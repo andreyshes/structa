@@ -202,8 +202,8 @@ export default function HomePageContent() {
 						</motion.h1>
 
 						<p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl font-medium drop-shadow-md border-l-8 border-[#FFB800] pl-6">
-							Norbilt provides expert home repairs. We are a licensed Washington
-							contractor. Our team brings quality work to every local job.
+							Norbilt provides expert home repairs. Also, we are a licensed Washington
+							contractor. Furthermore, our team brings quality work to every local job.
 						</p>
 
 						<div className="pt-8">
@@ -276,7 +276,7 @@ export default function HomePageContent() {
 					<SectionHeader
 						eyebrow="Simple Process"
 						title="How It Works"
-						description="Finding a trusted general contractor in Vancouver WA should be straightforward."
+						description="Finding a trusted general contractor in Vancouver WA should be simple."
 						centered
 					/>
 					<div className="grid md:grid-cols-3 gap-10 mt-16">
@@ -291,13 +291,13 @@ export default function HomePageContent() {
 								step: "02",
 								icon: Clock,
 								title: "We Schedule",
-								desc: "We confirm a date that works for you. Our team shows up on time, communicates clearly, and respects your home throughout the job.",
+								desc: "We confirm a date that works for you. Then, our team shows up on time and respects your home. We also communicate clearly throughout the job.",
 							},
 							{
 								step: "03",
 								icon: CheckCircle2,
 								title: "Done Right",
-								desc: "We complete the work to a high standard. Your home is left clean and the job is finished the way it was quoted — no surprises.",
+								desc: "Finally, we complete the work to a high standard. Your home is left clean. The job is done the way it was quoted — no surprises.",
 							},
 						].map((item) => (
 							<div key={item.step} className="relative flex flex-col items-start">
@@ -400,7 +400,7 @@ export default function HomePageContent() {
 							<p className="text-[#A7C4B5] text-lg leading-relaxed mb-6">
 								Good home care makes your house better. As a{" "}
 								<strong>Vancouver general contractor</strong>, we fix home
-								damage fast. We provide long-term fixes for every owner.
+								damage fast. In addition, we provide lasting fixes for every owner.
 							</p>
 							<div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 border-t border-white/10">
 								<div className="space-y-2">
@@ -435,7 +435,7 @@ export default function HomePageContent() {
 							Serving All of Clark County, WA
 						</h2>
 						<p className="max-w-2xl mx-auto text-gray-600 text-lg">
-							Norbilt is a licensed, bonded general contractor serving Vancouver and every surrounding community in Clark County. Select your city for local pricing and availability.
+							Norbilt is a licensed, bonded general contractor serving Vancouver and all Clark County communities. Therefore, select your city below for local rates and service info.
 						</p>
 					</div>
 					<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
@@ -520,12 +520,12 @@ export default function HomePageContent() {
 								{
 									icon: Award,
 									title: "Quality",
-									desc: "We focus on the small things that others miss.",
+									desc: "Also, we focus on the small details that others miss.",
 								},
 								{
 									icon: Clock,
 									title: "Reliable",
-									desc: "We finish jobs on time and respect your home.",
+									desc: "Furthermore, we finish every job on time and respect your home.",
 								},
 							].map((item, i) => (
 								<div key={item.title} className="flex gap-6 group">
