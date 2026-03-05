@@ -1,16 +1,16 @@
 import HomePageContent from "@/app/components/HomePageContent";
 
 export const metadata = {
-	title: "Clark County Home Repairs & Remodeling | Licensed | Norbilt",
+	title: "Licensed General Contractor Clark County WA | Norbilt",
 
 	description:
-		"Expert home repairs & remodeling across Clark County WA. Licensed, bonded & insured. Serving Vancouver, Battle Ground, Camas & more. Free estimate!",
+		"Norbilt is a licensed general contractor in Clark County WA. Home repairs, remodeling & interior updates. Serving Vancouver, Battle Ground, Camas & more.",
 
 	alternates: {
 		canonical: "https://norbilt.com",
 	},
 	openGraph: {
-		title: "Clark County Home Repairs & Remodeling | Norbilt",
+		title: "Licensed General Contractor Clark County WA | Norbilt",
 		description:
 			"Licensed general contractor serving all of Clark County WA. Expert home repairs, remodeling, and interior updates. Free estimates.",
 		type: "website",
@@ -92,11 +92,6 @@ export default function HomePage() {
 							],
 							opens: "08:00",
 							closes: "17:00",
-						},
-						aggregateRating: {
-							"@type": "AggregateRating",
-							ratingValue: "5.0",
-							reviewCount: "50",
 						},
 					}),
 				}}
