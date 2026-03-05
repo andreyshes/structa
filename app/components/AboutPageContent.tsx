@@ -19,25 +19,25 @@ export default function AboutPageContent() {
 			icon: Hammer,
 			title: "Quality Finish",
 			description:
-				"We handle every repair with expert care. From mitered corners to drywall patches, we treat your home like our own.",
+				"We handle every repair with expert care. Also, from drywall patches to trim corners, we treat your home like our own.",
 		},
 		{
 			icon: Shield,
 			title: "Licensed Contractor",
 			description:
-				"Norbilt is a registered Washington contractor. We provide insurance and professional management for every project.",
+				"Norbilt is a registered Washington contractor. Furthermore, we provide full insurance and direct management for every project.",
 		},
 		{
 			icon: Sparkles,
 			title: "Clean Job Sites",
 			description:
-				"We respect your space. Our team cleans up daily to ensure your home stays livable during your remodel.",
+				"We respect your space. Therefore, our team cleans up daily so your home stays usable during the project.",
 		},
 		{
 			icon: Heart,
 			title: "Local Vancouver Focus",
 			description:
-				"Norbilt is a local family business. We are dedicated to improving homes across Vancouver and Clark County.",
+				"Norbilt is a local family business. Also, we are dedicated to improving homes across Vancouver and Clark County.",
 		},
 	];
 
@@ -85,9 +85,9 @@ export default function AboutPageContent() {
 						</motion.h1>
 
 						<p className="text-xl text-white/80 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6">
-							Norbilt offers professional remodeling and home repair. We are the
+							Norbilt offers professional remodeling and home repair. Also, we are the
 							trusted choice for quality work in Vancouver, WA. Our team focuses
-							on honest service and great results.
+							Furthermore, our team focuses on honest service and great results.
 						</p>
 					</div>
 				</div>
@@ -147,20 +147,20 @@ export default function AboutPageContent() {
 								homeowners. We knew people needed a{" "}
 								<strong>general contractor</strong> who was honest and skilled.
 								We handle <strong>interior remodeling</strong> and{" "}
-								<strong>home repairs</strong>. Our team makes sure every project
+								<strong>home repairs</strong>. Therefore, our team makes sure every project
 								is built to last.
 							</p>
 							<p>
-								We focus on the final details of your home. Many companies rush,
-								but we take our time with <strong>trim and cabinets</strong>.
+								We focus on the final details of your home. However, many companies rush,
+								so we take our time with <strong>trim and cabinets</strong>.
 								Whether you need a <strong>kitchen update</strong> or{" "}
 								<strong>drywall repair</strong>, we deliver a perfect finish
 								every time.
 							</p>
 							<p>
-								Your home is a big investment. That is why Norbilt is a{" "}
-								<strong>licensed and insured contractor</strong>. We offer clear
-								pricing and professional care for every local client.
+								Your home is a big investment. Therefore, Norbilt is a{" "}
+								<strong>licensed and insured contractor</strong>. In addition, we offer clear
+								pricing and honest care for every local client.
 							</p>
 						</div>
 
@@ -234,7 +234,7 @@ export default function AboutPageContent() {
 								Serving Southwest Washington
 							</h2>
 							<p className="text-[#A7C4B5] text-lg leading-relaxed mb-8">
-								We provide <strong>interior remodeling</strong> and{" "}
+								Furthermore, we provide <strong>interior remodeling</strong> and{" "}
 								<strong>handyman repairs</strong> in Clark County. Whether you
 								are in Vancouver or Camas, our team understands local home
 								styles.
