@@ -202,8 +202,11 @@ export default function HomePageContent() {
 						</motion.h1>
 
 						<p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl font-medium drop-shadow-md border-l-8 border-[#FFB800] pl-6">
-							Norbilt provides expert home repairs. Also, we are a licensed Washington
-							contractor. Furthermore, our team brings quality work to every local job.
+							Norbilt is a licensed Washington contractor providing expert home
+							repair, handyman services, and interior remodeling in Vancouver,
+							WA and throughout Clark County. Our team is committed to
+							delivering reliable service and high-quality craftsmanship on
+							every job.
 						</p>
 
 						<div className="pt-8">
@@ -300,7 +303,10 @@ export default function HomePageContent() {
 								desc: "Finally, we complete the work to a high standard. Your home is left clean. The job is done the way it was quoted — no surprises.",
 							},
 						].map((item) => (
-							<div key={item.step} className="relative flex flex-col items-start">
+							<div
+								key={item.step}
+								className="relative flex flex-col items-start"
+							>
 								<span className="text-7xl font-black text-[#FFB800]/20 leading-none mb-4">
 									{item.step}
 								</span>
@@ -400,7 +406,8 @@ export default function HomePageContent() {
 							<p className="text-[#A7C4B5] text-lg leading-relaxed mb-6">
 								Good home care makes your house better. As a{" "}
 								<strong>Vancouver general contractor</strong>, we fix home
-								damage fast. In addition, we provide lasting fixes for every owner.
+								damage fast. In addition, we provide lasting fixes for every
+								owner.
 							</p>
 							<div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 border-t border-white/10">
 								<div className="space-y-2">
@@ -430,12 +437,16 @@ export default function HomePageContent() {
 			<section className="py-24 bg-[#FDFCFB]">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
 					<div className="text-center mb-12">
-						<span className="text-[#FFB800] font-black uppercase tracking-[0.3em] text-xs">Licensed General Contractor</span>
+						<span className="text-[#FFB800] font-black uppercase tracking-[0.3em] text-xs">
+							Licensed General Contractor
+						</span>
 						<h2 className="text-3xl md:text-4xl font-black text-[#1F2E2B] uppercase tracking-tighter mt-2 mb-4">
 							Serving All of Clark County, WA
 						</h2>
 						<p className="max-w-2xl mx-auto text-gray-600 text-lg">
-							Norbilt is a licensed, bonded general contractor serving Vancouver and all Clark County communities. Therefore, select your city below for local rates and service info.
+							Norbilt is a licensed, bonded general contractor serving Vancouver
+							and all Clark County communities. Therefore, select your city
+							below for local rates and service info.
 						</p>
 					</div>
 					<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
@@ -633,20 +644,20 @@ export default function HomePageContent() {
 							</div>
 						))}
 					</div>
-				<div className="mt-8 text-center">
-					<Link
-						href="/portfolio"
-						className="inline-flex items-center gap-3 px-8 py-4 bg-[#1F2E2B] text-white font-black uppercase tracking-widest rounded-xl hover:bg-[#2D5A3D] transition-all shadow-lg"
-					>
-						View All Projects
-						<ArrowRight className="w-5 h-5" />
-					</Link>
+					<div className="mt-8 text-center">
+						<Link
+							href="/portfolio"
+							className="inline-flex items-center gap-3 px-8 py-4 bg-[#1F2E2B] text-white font-black uppercase tracking-widest rounded-xl hover:bg-[#2D5A3D] transition-all shadow-lg"
+						>
+							View All Projects
+							<ArrowRight className="w-5 h-5" />
+						</Link>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		{/* TESTIMONIALS */}
-		<section className="py-32 bg-[#1F2E2B] overflow-hidden">
+			{/* TESTIMONIALS */}
+			<section className="py-32 bg-[#1F2E2B] overflow-hidden">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8 mb-16">
 					<SectionHeader
 						eyebrow="Customer Reviews"
@@ -696,31 +707,74 @@ export default function HomePageContent() {
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
 					<div className="flex items-end justify-between mb-12">
 						<div>
-							<p className="text-[#FFB800] font-black uppercase tracking-[0.3em] text-[10px] mb-3">Clark County Resources</p>
-							<h2 className="text-3xl font-black text-[#1F2E2B] uppercase tracking-tighter">From the Blog</h2>
+							<p className="text-[#FFB800] font-black uppercase tracking-[0.3em] text-[10px] mb-3">
+								Clark County Resources
+							</p>
+							<h2 className="text-3xl font-black text-[#1F2E2B] uppercase tracking-tighter">
+								From the Blog
+							</h2>
 						</div>
-						<Link href="/blog" className="text-sm font-black uppercase tracking-widest text-[#2D5A3D] hover:text-[#FFB800] transition-colors hidden sm:block">
+						<Link
+							href="/blog"
+							className="text-sm font-black uppercase tracking-widest text-[#2D5A3D] hover:text-[#FFB800] transition-colors hidden sm:block"
+						>
 							All Articles →
 						</Link>
 					</div>
 					<div className="grid md:grid-cols-3 gap-8">
-						<Link href="/blog/bathroom-remodel-cost-ridgefield-wa" className="group bg-[#F8F6F3] rounded-3xl p-8 border border-gray-100 hover:border-[#FFB800] hover:shadow-lg transition-all">
-							<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-4">Cost Guide</p>
-							<h3 className="text-lg font-black text-[#1F2E2B] leading-snug mb-3 group-hover:text-[#2D5A3D] transition-colors">Bathroom Remodel Cost in Ridgefield WA</h3>
-							<p className="text-sm text-gray-500 leading-relaxed">Real price ranges for tile, vanity, and fixtures from a licensed Clark County contractor.</p>
-							<p className="mt-6 text-[10px] font-black uppercase tracking-widest text-[#FFB800]">Read Article →</p>
+						<Link
+							href="/blog/bathroom-remodel-cost-ridgefield-wa"
+							className="group bg-[#F8F6F3] rounded-3xl p-8 border border-gray-100 hover:border-[#FFB800] hover:shadow-lg transition-all"
+						>
+							<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-4">
+								Cost Guide
+							</p>
+							<h3 className="text-lg font-black text-[#1F2E2B] leading-snug mb-3 group-hover:text-[#2D5A3D] transition-colors">
+								Bathroom Remodel Cost in Ridgefield WA
+							</h3>
+							<p className="text-sm text-gray-500 leading-relaxed">
+								Real price ranges for tile, vanity, and fixtures from a licensed
+								Clark County contractor.
+							</p>
+							<p className="mt-6 text-[10px] font-black uppercase tracking-widest text-[#FFB800]">
+								Read Article →
+							</p>
 						</Link>
-						<Link href="/blog/battle-ground-handyman-what-to-expect" className="group bg-[#F8F6F3] rounded-3xl p-8 border border-gray-100 hover:border-[#FFB800] hover:shadow-lg transition-all">
-							<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-4">Hiring Guide</p>
-							<h3 className="text-lg font-black text-[#1F2E2B] leading-snug mb-3 group-hover:text-[#2D5A3D] transition-colors">Battle Ground Handyman: What to Expect</h3>
-							<p className="text-sm text-gray-500 leading-relaxed">How to hire a licensed handyman in North Clark County and what the process looks like.</p>
-							<p className="mt-6 text-[10px] font-black uppercase tracking-widest text-[#FFB800]">Read Article →</p>
+						<Link
+							href="/blog/battle-ground-handyman-what-to-expect"
+							className="group bg-[#F8F6F3] rounded-3xl p-8 border border-gray-100 hover:border-[#FFB800] hover:shadow-lg transition-all"
+						>
+							<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-4">
+								Hiring Guide
+							</p>
+							<h3 className="text-lg font-black text-[#1F2E2B] leading-snug mb-3 group-hover:text-[#2D5A3D] transition-colors">
+								Battle Ground Handyman: What to Expect
+							</h3>
+							<p className="text-sm text-gray-500 leading-relaxed">
+								How to hire a licensed handyman in North Clark County and what
+								the process looks like.
+							</p>
+							<p className="mt-6 text-[10px] font-black uppercase tracking-widest text-[#FFB800]">
+								Read Article →
+							</p>
 						</Link>
-						<Link href="/blog/clark-county-home-repair-checklist" className="group bg-[#F8F6F3] rounded-3xl p-8 border border-gray-100 hover:border-[#FFB800] hover:shadow-lg transition-all">
-							<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-4">Checklist</p>
-							<h3 className="text-lg font-black text-[#1F2E2B] leading-snug mb-3 group-hover:text-[#2D5A3D] transition-colors">Clark County Home Repair Checklist</h3>
-							<p className="text-sm text-gray-500 leading-relaxed">The maintenance tasks Clark County homeowners should handle before they become costly repairs.</p>
-							<p className="mt-6 text-[10px] font-black uppercase tracking-widest text-[#FFB800]">Read Article →</p>
+						<Link
+							href="/blog/clark-county-home-repair-checklist"
+							className="group bg-[#F8F6F3] rounded-3xl p-8 border border-gray-100 hover:border-[#FFB800] hover:shadow-lg transition-all"
+						>
+							<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-4">
+								Checklist
+							</p>
+							<h3 className="text-lg font-black text-[#1F2E2B] leading-snug mb-3 group-hover:text-[#2D5A3D] transition-colors">
+								Clark County Home Repair Checklist
+							</h3>
+							<p className="text-sm text-gray-500 leading-relaxed">
+								The maintenance tasks Clark County homeowners should handle
+								before they become costly repairs.
+							</p>
+							<p className="mt-6 text-[10px] font-black uppercase tracking-widest text-[#FFB800]">
+								Read Article →
+							</p>
 						</Link>
 					</div>
 				</div>
