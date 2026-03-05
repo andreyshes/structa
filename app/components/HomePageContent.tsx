@@ -276,7 +276,7 @@ export default function HomePageContent() {
 					<SectionHeader
 						eyebrow="Simple Process"
 						title="How It Works"
-						description="Getting quality home repairs in Vancouver WA should be straightforward."
+						description="Finding a trusted general contractor in Vancouver WA should be straightforward."
 						centered
 					/>
 					<div className="grid md:grid-cols-3 gap-10 mt-16">
@@ -285,7 +285,7 @@ export default function HomePageContent() {
 								step: "01",
 								icon: Phone,
 								title: "Free Estimate",
-								desc: "Call or message us to describe your project. We visit your home and give you a clear, no-surprise quote before any work begins.",
+								desc: "Call or message us to describe your project. Our general contractor team visits your home and gives you a clear, written quote before any work begins.",
 							},
 							{
 								step: "02",
@@ -435,7 +435,7 @@ export default function HomePageContent() {
 							Serving All of Clark County, WA
 						</h2>
 						<p className="max-w-2xl mx-auto text-gray-600 text-lg">
-							Norbilt is a licensed, bonded contractor serving Vancouver and every surrounding community in Clark County. Select your city for local pricing and availability.
+							Norbilt is a licensed, bonded general contractor serving Vancouver and every surrounding community in Clark County. Select your city for local pricing and availability.
 						</p>
 					</div>
 					<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
@@ -515,7 +515,7 @@ export default function HomePageContent() {
 								{
 									icon: Shield,
 									title: "Licensed",
-									desc: "We are a licensed and bonded Washington contractor.",
+									desc: "We are a licensed general contractor, bonded and insured in Washington State.",
 								},
 								{
 									icon: Award,
