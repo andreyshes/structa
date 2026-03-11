@@ -2,30 +2,52 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const navLinks = [
-	{ name: "Home", href: "/" },
-	{ name: "About", href: "/about" },
-	{ name: "Services", href: "/services" },
-	{ name: "Locations", href: "/locations" },
-	{ name: "Reviews", href: "/reviews" },
-	{ name: "Blog", href: "/blog" },
-	{ name: "FAQ", href: "/faq" },
-	{ name: "Pricing", href: "/pricing" },
-	{ name: "Contact", href: "/contact" },
+const serviceLinks = [
+	{ name: "Handyman Services", href: "/services/handyman" },
+	{ name: "Drywall Repair", href: "/services/drywall-repair" },
+	{ name: "Finish Carpentry", href: "/services/finish-carpentry" },
+	{ name: "Door & Window Repair", href: "/services/door-window" },
+	{ name: "Flooring", href: "/services/flooring" },
+	{ name: "Kitchen & Bath Updates", href: "/services/kitchen-bath" },
+	{ name: "Home Repair", href: "/services/home-repair" },
+	{ name: "Lighting & Fixtures", href: "/services/lighting" },
 ];
+
+const locationLinks = [
+	{ name: "Vancouver", href: "/locations/vancouver" },
+	{ name: "Camas", href: "/locations/camas" },
+	{ name: "Ridgefield", href: "/locations/ridgefield" },
+	{ name: "Battle Ground", href: "/locations/battle-ground" },
+	{ name: "Washougal", href: "/locations/washougal" },
+	{ name: "Brush Prairie", href: "/locations/brush-prairie" },
+	{ name: "Felida", href: "/locations/felida" },
+	{ name: "Hazel Dell", href: "/locations/hazel-dell" },
+	{ name: "Salmon Creek", href: "/locations/salmon-creek" },
+	{ name: "Five Corners", href: "/locations/five-corners" },
+	{ name: "Orchards", href: "/locations/orchards" },
+	{ name: "Mill Plain", href: "/locations/mill-plain" },
+	{ name: "Lake Shore", href: "/locations/lake-shore" },
+];
+
 
 export default function Navigation() {
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+	const [hoveredDropdown, setHoveredDropdown] = useState<"services" | "locations" | null>(null);
+	const [mobileExpanded, setMobileExpanded] = useState<"services" | "locations" | null>(null);
 
 	useEffect(() => {
 		const handleScroll = () => setIsScrolled(window.scrollY > 20);
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
+
+	const linkClass = `px-4 py-2 text-sm font-bold transition-all duration-300 rounded-lg hover:bg-[#2D5A3D]/10 flex items-center gap-1 ${
+		isScrolled ? "text-[#2C3E3A] hover:text-[#2D5A3D]" : "text-[#F8F6F3]/90 hover:text-[#F8F6F3]"
+	}`;
 
 	return (
 		<>
@@ -39,11 +61,9 @@ export default function Navigation() {
 			>
 				<div className="max-w-7xl mx-auto px-6 lg:px-8 h-full">
 					<div className="flex items-center justify-between h-full">
-						{/* Logo Section with Hidden Text for SEO */}
+						{/* Logo */}
 						<Link href="/" className="relative flex items-center group">
-							<span className="sr-only">
-								Norbilt General Contractor Vancouver WA
-							</span>
+							<span className="sr-only">Norbilt General Contractor Vancouver WA</span>
 							<div
 								className="relative w-20 h-20 transition-transform duration-500 will-change-transform"
 								style={{
@@ -56,7 +76,7 @@ export default function Navigation() {
 								<Image
 									src="/NORBILT.png"
 									alt="Norbilt Home Repairs Logo"
-							sizes="160px"
+									sizes="160px"
 									fill
 									priority
 									className={`object-contain transition-all duration-500 ${
@@ -70,19 +90,87 @@ export default function Navigation() {
 
 						{/* Desktop Nav */}
 						<div className="hidden lg:flex items-center gap-1">
-							{navLinks.map((link) => (
-								<Link
-									key={link.href}
-									href={link.href}
-									className={`px-4 py-2 text-sm font-bold transition-all duration-300 rounded-lg hover:bg-[#2D5A3D]/10 ${
-										isScrolled
-											? "text-[#2C3E3A] hover:text-[#2D5A3D]"
-											: "text-[#F8F6F3]/90 hover:text-[#F8F6F3]"
-									}`}
-								>
-									{link.name}
+							<Link href="/" className={linkClass}>Home</Link>
+							<Link href="/about" className={linkClass}>About</Link>
+
+							{/* Services Dropdown */}
+							<div
+								className="relative"
+								onMouseEnter={() => setHoveredDropdown("services")}
+								onMouseLeave={() => setHoveredDropdown(null)}
+							>
+								<Link href="/services" className={linkClass}>
+									Services
+									<ChevronDown
+										className={`w-3.5 h-3.5 transition-transform duration-200 ${hoveredDropdown === "services" ? "rotate-180" : ""}`}
+									/>
 								</Link>
-							))}
+								<AnimatePresence>
+									{hoveredDropdown === "services" && (
+										<motion.div
+											initial={{ opacity: 0, y: 6 }}
+											animate={{ opacity: 1, y: 0 }}
+											exit={{ opacity: 0, y: 6 }}
+											transition={{ duration: 0.15 }}
+											className="absolute top-full left-1/2 -translate-x-1/2 pt-2"
+										>
+											<div className="bg-[#F8F6F3] rounded-xl shadow-xl border border-[#2C3E3A]/10 py-2 w-52">
+												{serviceLinks.map((link) => (
+													<Link
+														key={link.href}
+														href={link.href}
+														className="block px-4 py-2.5 text-sm font-semibold text-[#2C3E3A] hover:bg-[#2D5A3D]/10 hover:text-[#2D5A3D] transition-colors"
+													>
+														{link.name}
+													</Link>
+												))}
+											</div>
+										</motion.div>
+									)}
+								</AnimatePresence>
+							</div>
+
+							{/* Locations Dropdown */}
+							<div
+								className="relative"
+								onMouseEnter={() => setHoveredDropdown("locations")}
+								onMouseLeave={() => setHoveredDropdown(null)}
+							>
+								<Link href="/locations" className={linkClass}>
+									Locations
+									<ChevronDown
+										className={`w-3.5 h-3.5 transition-transform duration-200 ${hoveredDropdown === "locations" ? "rotate-180" : ""}`}
+									/>
+								</Link>
+								<AnimatePresence>
+									{hoveredDropdown === "locations" && (
+										<motion.div
+											initial={{ opacity: 0, y: 6 }}
+											animate={{ opacity: 1, y: 0 }}
+											exit={{ opacity: 0, y: 6 }}
+											transition={{ duration: 0.15 }}
+											className="absolute top-full left-1/2 -translate-x-1/2 pt-2"
+										>
+											<div className="bg-[#F8F6F3] rounded-xl shadow-xl border border-[#2C3E3A]/10 py-2 w-44">
+												{locationLinks.map((link) => (
+													<Link
+														key={link.href}
+														href={link.href}
+														className="block px-4 py-2.5 text-sm font-semibold text-[#2C3E3A] hover:bg-[#2D5A3D]/10 hover:text-[#2D5A3D] transition-colors"
+													>
+														{link.name}
+													</Link>
+												))}
+											</div>
+										</motion.div>
+									)}
+								</AnimatePresence>
+							</div>
+
+							<Link href="/reviews" className={linkClass}>Reviews</Link>
+							<Link href="/blog" className={linkClass}>Blog</Link>
+							<Link href="/faq" className={linkClass}>FAQ</Link>
+							<Link href="/pricing" className={linkClass}>Pricing</Link>
 
 							<Link
 								href="/contact"
@@ -100,11 +188,7 @@ export default function Navigation() {
 							}`}
 							aria-label="Toggle Menu"
 						>
-							{isMobileMenuOpen ? (
-								<X className="w-8 h-8" />
-							) : (
-								<Menu className="w-8 h-8" />
-							)}
+							{isMobileMenuOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
 						</button>
 					</div>
 				</div>
@@ -129,25 +213,132 @@ export default function Navigation() {
 							animate={{ x: 0 }}
 							exit={{ x: "100%" }}
 							transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-							className="absolute right-0 top-0 bottom-0 w-80 bg-[#F8F6F3] shadow-2xl"
+							className="absolute right-0 top-0 bottom-0 w-80 bg-[#F8F6F3] shadow-2xl overflow-y-auto"
 						>
-							<div className="p-6 pt-32 space-y-2">
-								{navLinks.map((link, index) => (
-									<motion.div
-										key={link.href}
-										initial={{ opacity: 0, x: 20 }}
-										animate={{ opacity: 1, x: 0 }}
-										transition={{ delay: index * 0.05 }}
+							<div className="p-6 pt-32 space-y-1">
+								<Link
+									href="/"
+									onClick={() => setIsMobileMenuOpen(false)}
+									className="block px-4 py-4 text-lg text-[#2C3E3A] font-bold rounded-lg hover:bg-[#2D5A3D]/10"
+								>
+									Home
+								</Link>
+								<Link
+									href="/about"
+									onClick={() => setIsMobileMenuOpen(false)}
+									className="block px-4 py-4 text-lg text-[#2C3E3A] font-bold rounded-lg hover:bg-[#2D5A3D]/10"
+								>
+									About
+								</Link>
+
+								{/* Mobile Services Accordion */}
+								<div>
+									<button
+										onClick={() => setMobileExpanded(mobileExpanded === "services" ? null : "services")}
+										className="w-full flex items-center justify-between px-4 py-4 text-lg text-[#2C3E3A] font-bold rounded-lg hover:bg-[#2D5A3D]/10"
 									>
-										<Link
-											href={link.href}
-											onClick={() => setIsMobileMenuOpen(false)}
-											className="block px-4 py-4 text-lg text-[#2C3E3A] font-bold rounded-lg hover:bg-[#2D5A3D]/10"
-										>
-											{link.name}
-										</Link>
-									</motion.div>
-								))}
+										Services
+										<ChevronDown className={`w-4 h-4 transition-transform duration-200 ${mobileExpanded === "services" ? "rotate-180" : ""}`} />
+									</button>
+									<AnimatePresence>
+										{mobileExpanded === "services" && (
+											<motion.div
+												initial={{ height: 0, opacity: 0 }}
+												animate={{ height: "auto", opacity: 1 }}
+												exit={{ height: 0, opacity: 0 }}
+												transition={{ duration: 0.2 }}
+												className="overflow-hidden pl-4"
+											>
+												<Link
+													href="/services"
+													onClick={() => setIsMobileMenuOpen(false)}
+													className="block px-4 py-2.5 text-sm text-[#2D5A3D] font-bold rounded-lg hover:bg-[#2D5A3D]/10"
+												>
+													All Services →
+												</Link>
+												{serviceLinks.map((link) => (
+													<Link
+														key={link.href}
+														href={link.href}
+														onClick={() => setIsMobileMenuOpen(false)}
+														className="block px-4 py-2.5 text-sm text-[#2C3E3A] font-semibold rounded-lg hover:bg-[#2D5A3D]/10"
+													>
+														{link.name}
+													</Link>
+												))}
+											</motion.div>
+										)}
+									</AnimatePresence>
+								</div>
+
+								{/* Mobile Locations Accordion */}
+								<div>
+									<button
+										onClick={() => setMobileExpanded(mobileExpanded === "locations" ? null : "locations")}
+										className="w-full flex items-center justify-between px-4 py-4 text-lg text-[#2C3E3A] font-bold rounded-lg hover:bg-[#2D5A3D]/10"
+									>
+										Locations
+										<ChevronDown className={`w-4 h-4 transition-transform duration-200 ${mobileExpanded === "locations" ? "rotate-180" : ""}`} />
+									</button>
+									<AnimatePresence>
+										{mobileExpanded === "locations" && (
+											<motion.div
+												initial={{ height: 0, opacity: 0 }}
+												animate={{ height: "auto", opacity: 1 }}
+												exit={{ height: 0, opacity: 0 }}
+												transition={{ duration: 0.2 }}
+												className="overflow-hidden pl-4"
+											>
+												<Link
+													href="/locations"
+													onClick={() => setIsMobileMenuOpen(false)}
+													className="block px-4 py-2.5 text-sm text-[#2D5A3D] font-bold rounded-lg hover:bg-[#2D5A3D]/10"
+												>
+													All Locations →
+												</Link>
+												{locationLinks.map((link) => (
+													<Link
+														key={link.href}
+														href={link.href}
+														onClick={() => setIsMobileMenuOpen(false)}
+														className="block px-4 py-2.5 text-sm text-[#2C3E3A] font-semibold rounded-lg hover:bg-[#2D5A3D]/10"
+													>
+														{link.name}
+													</Link>
+												))}
+											</motion.div>
+										)}
+									</AnimatePresence>
+								</div>
+
+								<Link
+									href="/reviews"
+									onClick={() => setIsMobileMenuOpen(false)}
+									className="block px-4 py-4 text-lg text-[#2C3E3A] font-bold rounded-lg hover:bg-[#2D5A3D]/10"
+								>
+									Reviews
+								</Link>
+								<Link
+									href="/blog"
+									onClick={() => setIsMobileMenuOpen(false)}
+									className="block px-4 py-4 text-lg text-[#2C3E3A] font-bold rounded-lg hover:bg-[#2D5A3D]/10"
+								>
+									Blog
+								</Link>
+								<Link
+									href="/faq"
+									onClick={() => setIsMobileMenuOpen(false)}
+									className="block px-4 py-4 text-lg text-[#2C3E3A] font-bold rounded-lg hover:bg-[#2D5A3D]/10"
+								>
+									FAQ
+								</Link>
+								<Link
+									href="/pricing"
+									onClick={() => setIsMobileMenuOpen(false)}
+									className="block px-4 py-4 text-lg text-[#2C3E3A] font-bold rounded-lg hover:bg-[#2D5A3D]/10"
+								>
+									Pricing
+								</Link>
 
 								<Link
 									href="/contact"
