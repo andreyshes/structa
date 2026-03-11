@@ -149,13 +149,13 @@ export default function HomePageContent() {
 				}}
 				className="fixed bottom-6 z-50 w-[90%] md:hidden"
 			>
-				<Link
-					href="/contact"
+				<a
+					href="tel:+19165086272"
 					className="flex items-center justify-center gap-3 bg-[#FFB800] text-black font-black py-4 rounded-full shadow-2xl border-2 border-white uppercase text-sm tracking-widest"
 				>
 					<Phone className="w-4 h-4" />
 					Call For Free Estimate
-				</Link>
+				</a>
 			</motion.div>
 
 			{/* HERO SECTION */}
@@ -209,7 +209,7 @@ export default function HomePageContent() {
 							every job.
 						</p>
 
-						<div className="pt-8">
+						<div className="pt-8 flex flex-wrap items-center gap-4">
 							<Link
 								href="/contact"
 								className="group relative inline-flex items-center justify-center gap-3 px-10 py-6 bg-gradient-to-b from-[#FFD700] to-[#CC9900] text-[#1F2E2B] rounded-xl font-black uppercase tracking-widest shadow-2xl hover:scale-105 transition-all"
@@ -217,6 +217,13 @@ export default function HomePageContent() {
 								Get Free Estimate
 								<ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-2" />
 							</Link>
+							<a
+								href="tel:+19165086272"
+								className="inline-flex items-center gap-2 text-white/80 hover:text-white font-bold transition-colors"
+							>
+								<Phone className="w-4 h-4 text-[#FFB800]" />
+								(916) 508-6272
+							</a>
 						</div>
 					</div>
 				</div>

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const serviceLinks = [
@@ -172,9 +172,19 @@ export default function Navigation() {
 							<Link href="/faq" className={linkClass}>FAQ</Link>
 							<Link href="/pricing" className={linkClass}>Pricing</Link>
 
+							<a
+								href="tel:+19165086272"
+								className={`flex items-center gap-2 px-4 py-2 text-sm font-bold transition-all duration-300 rounded-lg hover:bg-[#2D5A3D]/10 ${
+									isScrolled ? 'text-[#2C3E3A] hover:text-[#2D5A3D]' : 'text-[#F8F6F3]/90 hover:text-[#F8F6F3]'
+								}`}
+							>
+								<Phone className="w-3.5 h-3.5" />
+								(916) 508-6272
+							</a>
+
 							<Link
 								href="/contact"
-								className="ml-4 px-6 py-2.5 bg-[#2D5A3D] text-[#F8F6F3] text-sm font-bold rounded-lg hover:bg-[#4A7C59] transition-all duration-300 shadow-lg"
+								className="ml-2 px-6 py-2.5 bg-[#2D5A3D] text-[#F8F6F3] text-sm font-bold rounded-lg hover:bg-[#4A7C59] transition-all duration-300 shadow-lg"
 							>
 								Get Free Estimate
 							</Link>
