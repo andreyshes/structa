@@ -14,7 +14,18 @@ import {
 	MessageSquare,
 	Star,
 	CalendarCheck,
+	Calendar,
 } from "lucide-react";
+import dynamic from "next/dynamic";
+
+const CalendlyEmbed = dynamic(() => import("@/app/components/CalendlyEmbed"), {
+	ssr: false,
+	loading: () => (
+		<div className="h-[700px] flex items-center justify-center text-gray-400 font-bold">
+			Loading scheduler...
+		</div>
+	),
+});
 
 import { Input } from "@/app/components/ui/input";
 import { Textarea } from "@/app/components/ui/textarea";
@@ -64,6 +75,7 @@ const contactItems = [
 
 export default function ContactPage() {
 	const router = useRouter();
+	const [activeTab, setActiveTab] = useState<"form" | "calendly">("form");
 
 	const [formData, setFormData] = useState<FormData>({
 		name: "",
@@ -262,15 +274,27 @@ export default function ContactPage() {
 							viewport={{ once: true }}
 							className="bg-white rounded-[2.5rem] p-8 lg:p-16 shadow-2xl border border-gray-50"
 						>
-							<div className="flex items-center gap-4 mb-10">
-								<div className="w-12 h-12 bg-[#FFB800]/10 rounded-xl flex items-center justify-center">
-									<CalendarCheck className="w-6 h-6 text-[#2D5A3D]" />
-								</div>
-								<h3 className="text-2xl font-black text-[#1F2E2B] uppercase tracking-tighter">
-									Request Quote
-								</h3>
+							{/* TABS */}
+							<div className="flex gap-2 mb-10 p-1.5 bg-[#F8F6F3] rounded-2xl">
+								<button
+									type="button"
+									onClick={() => setActiveTab("form")}
+									className={`flex-1 flex items-center justify-center gap-2 py-3 rounded-xl font-black text-xs uppercase tracking-widest transition-all ${activeTab === "form" ? "bg-[#1F2E2B] text-[#FFB800] shadow-lg" : "text-gray-400 hover:text-[#1F2E2B]"}`}
+								>
+									<CalendarCheck className="w-4 h-4" /> Request Quote
+								</button>
+								<button
+									type="button"
+									onClick={() => setActiveTab("calendly")}
+									className={`flex-1 flex items-center justify-center gap-2 py-3 rounded-xl font-black text-xs uppercase tracking-widest transition-all ${activeTab === "calendly" ? "bg-[#1F2E2B] text-[#FFB800] shadow-lg" : "text-gray-400 hover:text-[#1F2E2B]"}`}
+								>
+									<Calendar className="w-4 h-4" /> Book a Call
+								</button>
 							</div>
 
+							{activeTab === "calendly" ? (
+								<CalendlyEmbed />
+							) : (
 							<form onSubmit={handleSubmit} className="space-y-8">
 								<div className="grid md:grid-cols-2 gap-8">
 									<div className="space-y-3">
@@ -374,6 +398,7 @@ export default function ContactPage() {
 									)}
 								</Button>
 							</form>
+							)}
 						</motion.div>
 					</div>
 				</div>
