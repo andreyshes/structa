@@ -270,7 +270,7 @@ export default function LocationsIndexPage() {
 									Get Free Estimate
 								</Link>
 								<Link
-									href="tel:+19165086272"
+									href="tel:+13602169920"
 									className="px-12 py-6 border-2 border-black/20 text-black font-black uppercase tracking-widest rounded-xl flex items-center justify-center gap-3"
 								>
 									<Phone className="w-5 h-5" /> Call Now

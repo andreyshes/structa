@@ -173,13 +173,13 @@ export default function Navigation() {
 							<Link href="/pricing" className={linkClass}>Pricing</Link>
 
 							<a
-								href="tel:+19165086272"
+								href="tel:+13602169920"
 								className={`flex items-center gap-2 px-4 py-2 text-sm font-bold transition-all duration-300 rounded-lg hover:bg-[#2D5A3D]/10 ${
 									isScrolled ? 'text-[#2C3E3A] hover:text-[#2D5A3D]' : 'text-[#F8F6F3]/90 hover:text-[#F8F6F3]'
 								}`}
 							>
 								<Phone className="w-3.5 h-3.5" />
-								(916) 508-6272
+								(360) 216-9920
 							</a>
 
 							<Link

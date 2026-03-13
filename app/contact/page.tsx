@@ -41,8 +41,8 @@ const contactItems = [
 	{
 		icon: Phone,
 		label: "Direct Line",
-		value: "(916) 508-6272",
-		href: "tel:+19165086272",
+		value: "(360) 216-9920",
+		href: "tel:+13602169920",
 	},
 	{
 		icon: Mail,

@@ -233,11 +233,11 @@ export default function FAQPage() {
 								<ArrowRight className="w-5 h-5" />
 							</Link>
 							<Link
-								href="tel:+19165086272"
+								href="tel:+13602169920"
 								className="inline-flex items-center justify-center gap-3 px-10 py-5 border border-white/20 text-white font-black uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all"
 							>
 								<Phone className="w-5 h-5" />
-								(916) 508-6272
+								(360) 216-9920
 							</Link>
 						</div>
 						<div className="pt-6 flex flex-wrap justify-center gap-4 text-sm">

@@ -98,13 +98,13 @@ export default function ThankYouPage() {
 									Need immediate help?
 								</p>
 								<p className="text-lg font-bold text-[#1F2E2B]">
-									Call us directly at (916) 508-6272
+									Call us directly at (360) 216-9920
 								</p>
 							</div>
 
 							<div className="flex gap-4">
 								<a
-									href="tel:+19165086272"
+									href="tel:+13602169920"
 									className="inline-flex items-center justify-center gap-2 bg-[#1F2E2B] text-[#FFB800] px-8 py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-[#2D5A3D] transition-all shadow-lg"
 								>
 									<Phone className="w-4 h-4" />

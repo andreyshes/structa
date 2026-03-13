@@ -70,7 +70,7 @@ export default function CityLandingClient({ city, citySlug }: any) {
 								"@type": "LocalBusiness",
 								"@id": "https://norbilt.com/#business",
 								name: "Norbilt",
-								telephone: "+19165086272",
+								telephone: "+13602169920",
 								areaServed: city.neighborhoods.map((n: string) => ({
 									"@type": "Place",
 									name: n,
@@ -139,7 +139,7 @@ export default function CityLandingClient({ city, citySlug }: any) {
 								Get Free Estimate
 							</Link>
 							<Link
-								href="tel:+19165086272"
+								href="tel:+13602169920"
 								className="border border-white/20 text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest hover:bg-white/10 transition-colors"
 							>
 								Call Now
@@ -281,10 +281,10 @@ export default function CityLandingClient({ city, citySlug }: any) {
 								</p>
 								<div className="flex flex-col gap-3 font-bold text-[#1F2E2B]">
 									<a
-										href="tel:+19165086272"
+										href="tel:+13602169920"
 										className="flex items-center gap-3 hover:text-[#2D5A3D] transition-colors"
 									>
-										<Phone className="w-5 h-5 text-[#FFB800]" /> (916) 508-6272
+										<Phone className="w-5 h-5 text-[#FFB800]" /> (360) 216-9920
 									</a>
 									<div className="flex items-center gap-3">
 										<MapPin className="w-5 h-5 text-[#FFB800]" />{" "}

@@ -272,11 +272,11 @@ export default function PortfolioPage() {
 										<ArrowRight className="w-5 h-5" />
 									</Link>
 									<Link
-										href="tel:+19165086272"
+										href="tel:+13602169920"
 										className="inline-flex items-center justify-center gap-3 px-8 py-4 border border-white/20 text-white font-black uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all"
 									>
 										<Phone className="w-5 h-5" />
-										(916) 508-6272
+										(360) 216-9920
 									</Link>
 								</div>
 							</div>

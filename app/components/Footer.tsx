@@ -144,7 +144,7 @@ export default function Footer() {
 									<Phone className="w-4 h-4 text-[#4A7C59]" />
 								</div>
 								<span className="text-sm text-[#F8F6F3]/70">
-									(916) 508-6272
+									(360) 216-9920
 								</span>
 							</li>
 

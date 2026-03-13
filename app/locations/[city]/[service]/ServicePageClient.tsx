@@ -206,10 +206,10 @@ export default function ServicePageClient({
 							</div>
 						</div>
 						<Link
-							href="tel:+19165086272"
+							href="tel:+13602169920"
 							className="flex items-center gap-4 text-2xl font-black text-[#FFB800] border-t border-white/10 pt-6"
 						>
-							<Phone className="w-6 h-6" /> (916) 508-6272
+							<Phone className="w-6 h-6" /> (360) 216-9920
 						</Link>
 					</div>
 				</div>

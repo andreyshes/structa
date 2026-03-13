@@ -49,7 +49,7 @@ export default function RootLayout({
 							"name": "Norbilt",
 							"description": "Licensed general contractor offering handyman services, finish carpentry, drywall repair, kitchen and bath updates, lighting, and flooring in Vancouver WA and Clark County.",
 							"url": "https://norbilt.com",
-							"telephone": "+19165086272",
+							"telephone": "+13602169920",
 							"email": "hello@norbilt.com",
 							"image": "https://norbilt.com/og-image.jpg",
 							"address": {

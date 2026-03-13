@@ -392,11 +392,11 @@ export default function PricingPage() {
 								<ArrowRight className="w-5 h-5" />
 							</Link>
 							<Link
-								href="tel:+19165086272"
+								href="tel:+13602169920"
 								className="inline-flex items-center justify-center gap-3 px-10 py-5 border-2 border-black/20 text-black font-black uppercase tracking-widest rounded-xl hover:bg-black/10 transition-all"
 							>
 								<Phone className="w-5 h-5" />
-								(916) 508-6272
+								(360) 216-9920
 							</Link>
 						</div>
 						<div className="flex flex-wrap justify-center gap-6 pt-2 text-sm font-bold text-black/60 uppercase tracking-widest">

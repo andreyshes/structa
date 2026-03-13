@@ -152,7 +152,7 @@ export default function HomePageContent() {
 				className="fixed bottom-6 z-50 w-[90%] md:hidden"
 			>
 				<a
-					href="tel:+19165086272"
+					href="tel:+13602169920"
 					className="flex items-center justify-center gap-3 bg-[#FFB800] text-black font-black py-4 rounded-full shadow-2xl border-2 border-white uppercase text-sm tracking-widest"
 				>
 					<Phone className="w-4 h-4" />
@@ -220,11 +220,11 @@ export default function HomePageContent() {
 								<ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-2" />
 							</Link>
 							<a
-								href="tel:+19165086272"
+								href="tel:+13602169920"
 								className="inline-flex items-center gap-2 text-white/80 hover:text-white font-bold transition-colors"
 							>
 								<Phone className="w-4 h-4 text-[#FFB800]" />
-								(916) 508-6272
+								(360) 216-9920
 							</a>
 						</div>
 					</div>

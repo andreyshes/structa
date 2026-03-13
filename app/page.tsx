@@ -59,7 +59,7 @@ export default function HomePage() {
 							postalCode: "98686",
 							addressCountry: "US",
 						},
-						telephone: "+1-916-508-6272",
+						telephone: "+1-3602169920",
 						priceRange: "$$",
 						areaServed: [
 							"Vancouver",
