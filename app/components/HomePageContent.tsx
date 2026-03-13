@@ -580,11 +580,11 @@ export default function HomePageContent() {
 									{/* BEFORE / AFTER FEATURED */}
 					<div className="mt-16">
 						<BeforeAfterSlider
-							beforeSrc="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=2000"
-							afterSrc="/remodel-images/IMG_7649.jpg"
-							beforeAlt="Outdated kitchen before remodel"
-							afterAlt="Modern kitchen remodel by Norbilt in Vancouver WA"
-							label="Kitchen Remodel — Vancouver, WA"
+							beforeSrc="/before and after backsplash/IMG_7643.jpeg"
+							afterSrc="/before and after backsplash/IMG_7646.jpeg"
+							beforeAlt="Kitchen backsplash before remodel"
+							afterAlt="Kitchen backsplash after remodel by Norbilt in Vancouver WA"
+							label="Kitchen Backsplash Remodel — Vancouver, WA"
 						/>
 					</div>
 
