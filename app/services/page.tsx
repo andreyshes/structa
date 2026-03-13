@@ -200,14 +200,13 @@ export default function ServicesPage() {
 						</div>
 
 						<h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tighter uppercase animate-fade-in-left animate-delay-100">
-							Interior <br />
-							<span className="text-[#FFB800]">Work</span> & <br />
-							Home Repairs
+							Home Repair <br />
+							<span className="text-[#FFB800]">Services</span> <br />
+							Vancouver, WA
 						</h1>
 
 						<p className="text-xl text-white/80 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6">
-							Norbilt provides the quality home repair jobs Vancouver owners
-							need. Licensed, bonded, and local.
+							Norbilt is a licensed general contractor serving Vancouver and all of Clark County. We handle interior repairs, finish carpentry, drywall, flooring, kitchen and bath updates, and full handyman punch lists — all under one roof, with written estimates before any work begins.
 						</p>
 					</div>
 				</div>
@@ -241,9 +240,9 @@ export default function ServicesPage() {
 			<section className="py-24 bg-[#E8E4DE]/30">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
 					<SectionHeader
-						eyebrow="Our Core Jobs"
-						title="Local Contractor Help"
-						description="Quality interior work and home repair jobs for your house."
+						eyebrow="What We Do"
+						title="All Home Repair Services"
+						description="Licensed home repair and interior renovation services for Clark County homeowners. Every job comes with a written estimate and a clean finish."
 					/>
 
 					<div className="grid gap-16 mt-20">
@@ -315,6 +314,46 @@ export default function ServicesPage() {
 										</div>
 									</div>
 								</div>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
+
+			{/* FAQ */}
+			<section className="py-24 bg-white">
+				<div className="max-w-4xl mx-auto px-6 lg:px-8">
+					<SectionHeader
+						eyebrow="FAQ"
+						title="Home Repair Services FAQ"
+						description="Common questions from Clark County homeowners about our work."
+					/>
+					<div className="mt-16 space-y-6">
+						{[
+							{
+								q: "What home repair services does Norbilt offer?",
+								a: "We offer finish carpentry, drywall repair, kitchen and bath updates, flooring repair, door and window services, lighting and fixture installation, and general handyman services. All work is performed by a licensed Washington State general contractor.",
+							},
+							{
+								q: "Do you serve areas outside Vancouver, WA?",
+								a: "Yes. We serve all of Clark County including Camas, Ridgefield, Battle Ground, Washougal, Salmon Creek, Hazel Dell, Mill Plain, Five Corners, Orchards, Felida, Brush Prairie, and Lake Shore.",
+							},
+							{
+								q: "How do I get a price estimate for my project?",
+								a: "Submit your project details through our contact form or call us directly. We provide free, written estimates before any work begins. There are no surprise charges — the price you agree to is the price you pay.",
+							},
+							{
+								q: "Why hire a licensed contractor instead of a handyman?",
+								a: "In Washington State, repair work above a certain dollar threshold legally requires a licensed contractor. A licensed general contractor carries proper insurance, is bonded, and performs work that meets state code — which protects your home value and homeowner's insurance coverage.",
+							},
+							{
+								q: "How long do most home repair jobs take?",
+								a: "Most single-room repairs and updates are completed in one day. Larger projects like full kitchen or bath refreshes typically take two to three days. We give you a realistic timeline with your estimate so you can plan accordingly.",
+							},
+						].map((item, i) => (
+							<div key={i} className="border border-gray-100 rounded-2xl p-8 bg-[#FDFCFB]">
+								<h3 className="text-lg font-black text-[#1F2E2B] mb-3">{item.q}</h3>
+								<p className="text-gray-600 font-medium leading-relaxed">{item.a}</p>
 							</div>
 						))}
 					</div>
