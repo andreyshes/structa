@@ -9,7 +9,7 @@ export async function POST(req: Request) {
 
 		const { name, email, phone, projectType, details } = body;
 
-		if (!name || !email || !projectType || !details) {
+		if (!name || !projectType || !details) {
 			return NextResponse.json(
 				{ error: "Missing required fields" },
 				{ status: 400 },
