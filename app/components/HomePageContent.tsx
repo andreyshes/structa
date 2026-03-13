@@ -24,6 +24,8 @@ import {
 import ServiceCard from "@/app/components/ServiceCard";
 import SectionHeader from "@/app/components/SectionHeader";
 import HomeFaqSection from "@/app/components/HomeFaqSection";
+import StatsBar from "@/app/components/StatsBar";
+import BeforeAfterSlider from "@/app/components/BeforeAfterSlider";
 
 export default function HomePageContent() {
 	const { scrollY } = useScroll();
@@ -330,6 +332,8 @@ export default function HomePageContent() {
 				</div>
 			</section>
 
+			<StatsBar />
+
 			{/* SERVICES SECTION */}
 			<section className="py-32 bg-[#E8E4DE]/50">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -573,28 +577,15 @@ export default function HomePageContent() {
 						centered
 					/>
 
-					{/* BEFORE / AFTER FEATURED */}
-					<div className="mt-16 rounded-3xl overflow-hidden shadow-2xl">
-						<div className="relative w-full aspect-16/7">
-							<Image
-								src="/remodel-images/Untitled%20design%20(2).jpg"
-								alt="Bathroom vanity before and after remodel by Norbilt Vancouver WA"
-								fill
-								sizes="100vw"
-								className="object-cover"
-							/>
-						</div>
-						<div className="bg-[#1F2E2B] px-8 py-5 flex items-center justify-between flex-wrap gap-4">
-							<p className="text-white font-black uppercase tracking-widest text-sm">
-								Master Bathroom Vanity Remodel — Vancouver, WA
-							</p>
-							<Link
-								href="/services/kitchen-bath"
-								className="text-[#FFB800] text-xs font-black uppercase tracking-widest flex items-center gap-2 hover:gap-3 transition-all"
-							>
-								See Kitchen & Bath Work <ArrowRight className="w-4 h-4" />
-							</Link>
-						</div>
+									{/* BEFORE / AFTER FEATURED */}
+					<div className="mt-16">
+						<BeforeAfterSlider
+							beforeSrc="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=2000"
+							afterSrc="/remodel-images/IMG_7649.jpg"
+							beforeAlt="Outdated kitchen before remodel"
+							afterAlt="Modern kitchen remodel by Norbilt in Vancouver WA"
+							label="Kitchen Remodel — Vancouver, WA"
+						/>
 					</div>
 
 					{/* PROJECT GRID */}
