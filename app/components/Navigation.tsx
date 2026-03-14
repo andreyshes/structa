@@ -392,18 +392,10 @@ export default function Navigation() {
 									<Link
 										href="/estimate"
 										onClick={() => setIsMobileMenuOpen(false)}
-										className="flex items-center justify-center gap-2 w-full px-6 py-4 border-2 border-[#FFB800] text-[#FFB800] font-black rounded-xl hover:bg-[#FFB800]/10 transition-all"
+										className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-[#2D5A3D] text-[#F8F6F3] font-black uppercase tracking-widest rounded-xl hover:bg-[#4A7C59] shadow-lg transition-all"
 									>
 										<Sparkles className="w-4 h-4" />
-										Instant Estimate
-									</Link>
-
-									<Link
-										href="/contact"
-										onClick={() => setIsMobileMenuOpen(false)}
-										className="block w-full text-center px-6 py-4 bg-[#2D5A3D] text-[#F8F6F3] font-black uppercase tracking-widest rounded-xl hover:bg-[#4A7C59] shadow-lg"
-									>
-										Get Free Estimate
+										Get Instant Estimate
 									</Link>
 
 									<a
