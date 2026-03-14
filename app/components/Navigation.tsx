@@ -203,7 +203,7 @@ export default function Navigation() {
 								</AnimatePresence>
 							</div>
 
-							{/* AI Estimator — pill button */}
+							{/* Instant Estimate — pill button */}
 							<Link
 								href="/estimate"
 								className={`ml-1 flex items-center gap-1.5 px-3 py-2 text-sm font-bold rounded-lg border transition-all duration-300 ${
@@ -213,7 +213,7 @@ export default function Navigation() {
 								}`}
 							>
 								<Sparkles className="w-3.5 h-3.5" />
-								AI Estimator
+								Instant Estimate
 							</Link>
 
 							<Link
@@ -395,7 +395,7 @@ export default function Navigation() {
 										className="flex items-center justify-center gap-2 w-full px-6 py-4 border-2 border-[#FFB800] text-[#FFB800] font-black rounded-xl hover:bg-[#FFB800]/10 transition-all"
 									>
 										<Sparkles className="w-4 h-4" />
-										AI Estimator
+										Instant Estimate
 									</Link>
 
 									<Link

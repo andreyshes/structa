@@ -210,14 +210,14 @@ export default function EstimatePage() {
 				<div className="max-w-3xl mx-auto px-6 text-center">
 					<div className="inline-flex items-center gap-2 bg-[#FFB800]/20 border border-[#FFB800]/40 rounded-full px-4 py-1.5 mb-6">
 						<Sparkles className="w-4 h-4 text-[#FFB800]" />
-						<span className="text-[#FFB800] text-sm font-bold tracking-wide uppercase">AI-Powered · Instant · Free</span>
+						<span className="text-[#FFB800] text-sm font-bold tracking-wide uppercase">Instant · Detailed · Free</span>
 					</div>
 					<h1 className="text-4xl sm:text-5xl font-black text-[#F8F6F3] leading-tight mb-4">
 						Get Your Instant<br />
 						<span className="text-[#FFB800]">Project Estimate</span>
 					</h1>
 					<p className="text-[#F8F6F3]/70 text-lg max-w-xl mx-auto">
-						Answer a few quick questions and our AI gives you a realistic price range, timeline, and breakdown — in seconds.
+						Answer a few quick questions and get a realistic price range, timeline, and breakdown — in seconds.
 					</p>
 
 					{/* Progress Steps */}
@@ -411,7 +411,7 @@ export default function EstimatePage() {
 
 							{error && (
 								<div className="mt-4 flex items-center gap-2 text-red-600 bg-red-50 border border-red-200 rounded-xl px-4 py-3 text-sm font-medium">
-									<AlertCircle className="w-4 h-4 flex-shrink-0" />
+									<AlertCircle className="w-4 h-4 shrink-0" />
 									{error}
 								</div>
 							)}
@@ -456,7 +456,7 @@ export default function EstimatePage() {
 								>
 									<Sparkles className="w-8 h-8 text-[#FFB800]" />
 								</motion.div>
-								<h2 className="text-3xl font-black text-[#1F2E2B] mb-2">Your AI Estimate is Ready</h2>
+								<h2 className="text-3xl font-black text-[#1F2E2B] mb-2">Your Instant Estimate is Ready</h2>
 								<p className="text-[#2C3E3A]/60">{selectedService} · {contactInfo.city || "Clark County, WA"}</p>
 							</div>
 
@@ -467,7 +467,7 @@ export default function EstimatePage() {
 								transition={{ delay: 0.2 }}
 								className="bg-[#1F2E2B] rounded-2xl p-8 text-center mb-5 relative overflow-hidden"
 							>
-								<div className="absolute inset-0 bg-gradient-to-br from-[#2D5A3D]/40 to-transparent" />
+								<div className="absolute inset-0 bg-linear-to-br from-[#2D5A3D]/40 to-transparent" />
 								<div className="relative">
 									<div className="text-[#FFB800]/70 text-sm font-bold tracking-widest uppercase mb-2">Estimated Project Cost</div>
 									<div className="text-5xl sm:text-6xl font-black text-[#F8F6F3] mb-1">
@@ -503,7 +503,7 @@ export default function EstimatePage() {
 									<ul className="space-y-2.5">
 										{estimate.included.map((item, i) => (
 											<li key={i} className="flex items-start gap-2 text-sm text-[#2C3E3A] font-medium">
-												<div className="w-1.5 h-1.5 rounded-full bg-[#2D5A3D] mt-2 flex-shrink-0" />
+												<div className="w-1.5 h-1.5 rounded-full bg-[#2D5A3D] mt-2 shrink-0" />
 												{item}
 											</li>
 										))}
@@ -524,7 +524,7 @@ export default function EstimatePage() {
 									<ul className="space-y-2.5">
 										{estimate.factors.map((f, i) => (
 											<li key={i} className="flex items-start gap-2 text-sm text-[#2C3E3A] font-medium">
-												<div className="w-1.5 h-1.5 rounded-full bg-[#FFB800] mt-2 flex-shrink-0" />
+												<div className="w-1.5 h-1.5 rounded-full bg-[#FFB800] mt-2 shrink-0" />
 												{f}
 											</li>
 										))}
@@ -540,7 +540,7 @@ export default function EstimatePage() {
 								className="bg-[#2D5A3D]/8 border border-[#2D5A3D]/20 rounded-2xl p-5 mb-5"
 							>
 								<div className="flex items-start gap-3">
-									<div className="w-8 h-8 bg-[#2D5A3D] rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+									<div className="w-8 h-8 bg-[#2D5A3D] rounded-lg flex items-center justify-center shrink-0 mt-0.5">
 										<Star className="w-4 h-4 text-[#FFB800]" />
 									</div>
 									<div>
