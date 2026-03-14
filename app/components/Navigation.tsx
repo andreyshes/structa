@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, ChevronDown, Phone } from "lucide-react";
+import { Menu, X, ChevronDown, Phone, Sparkles } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const serviceLinks = [
@@ -32,12 +32,20 @@ const locationLinks = [
 	{ name: "Lake Shore", href: "/locations/lake-shore" },
 ];
 
+const moreLinks = [
+	{ name: "About", href: "/about" },
+	{ name: "Reviews", href: "/reviews" },
+	{ name: "Portfolio", href: "/portfolio" },
+	{ name: "Pricing", href: "/pricing" },
+	{ name: "Blog", href: "/blog" },
+	{ name: "FAQ", href: "/faq" },
+];
 
 export default function Navigation() {
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-	const [hoveredDropdown, setHoveredDropdown] = useState<"services" | "locations" | null>(null);
-	const [mobileExpanded, setMobileExpanded] = useState<"services" | "locations" | null>(null);
+	const [hoveredDropdown, setHoveredDropdown] = useState<"services" | "locations" | "more" | null>(null);
+	const [mobileExpanded, setMobileExpanded] = useState<"services" | "locations" | "more" | null>(null);
 
 	useEffect(() => {
 		const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -45,7 +53,7 @@ export default function Navigation() {
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 
-	const linkClass = `px-4 py-2 text-sm font-bold transition-all duration-300 rounded-lg hover:bg-[#2D5A3D]/10 flex items-center gap-1 ${
+	const linkClass = `px-3 py-2 text-sm font-bold transition-all duration-300 rounded-lg hover:bg-[#2D5A3D]/10 flex items-center gap-1 ${
 		isScrolled ? "text-[#2C3E3A] hover:text-[#2D5A3D]" : "text-[#F8F6F3]/90 hover:text-[#F8F6F3]"
 	}`;
 
@@ -62,7 +70,7 @@ export default function Navigation() {
 				<div className="max-w-7xl mx-auto px-6 lg:px-8 h-full">
 					<div className="flex items-center justify-between h-full">
 						{/* Logo */}
-						<Link href="/" className="relative flex items-center group">
+						<Link href="/" className="relative flex items-center group shrink-0">
 							<span className="sr-only">Norbilt General Contractor Vancouver WA</span>
 							<div
 								className="relative w-20 h-20 transition-transform duration-500 will-change-transform"
@@ -89,10 +97,7 @@ export default function Navigation() {
 						</Link>
 
 						{/* Desktop Nav */}
-						<div className="hidden lg:flex items-center gap-1">
-							<Link href="/" className={linkClass}>Home</Link>
-							<Link href="/about" className={linkClass}>About</Link>
-
+						<div className="hidden lg:flex items-center gap-0.5">
 							{/* Services Dropdown */}
 							<div
 								className="relative"
@@ -101,9 +106,7 @@ export default function Navigation() {
 							>
 								<Link href="/services" className={linkClass}>
 									Services
-									<ChevronDown
-										className={`w-3.5 h-3.5 transition-transform duration-200 ${hoveredDropdown === "services" ? "rotate-180" : ""}`}
-									/>
+									<ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${hoveredDropdown === "services" ? "rotate-180" : ""}`} />
 								</Link>
 								<AnimatePresence>
 									{hoveredDropdown === "services" && (
@@ -138,9 +141,7 @@ export default function Navigation() {
 							>
 								<Link href="/locations" className={linkClass}>
 									Locations
-									<ChevronDown
-										className={`w-3.5 h-3.5 transition-transform duration-200 ${hoveredDropdown === "locations" ? "rotate-180" : ""}`}
-									/>
+									<ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${hoveredDropdown === "locations" ? "rotate-180" : ""}`} />
 								</Link>
 								<AnimatePresence>
 									{hoveredDropdown === "locations" && (
@@ -167,32 +168,57 @@ export default function Navigation() {
 								</AnimatePresence>
 							</div>
 
-							<Link href="/reviews" className={linkClass}>Reviews</Link>
-							<Link href="/blog" className={linkClass}>Blog</Link>
-							<Link href="/faq" className={linkClass}>FAQ</Link>
-							<Link href="/pricing" className={linkClass}>Pricing</Link>
+							{/* More Dropdown */}
+							<div
+								className="relative"
+								onMouseEnter={() => setHoveredDropdown("more")}
+								onMouseLeave={() => setHoveredDropdown(null)}
+							>
+								<button className={linkClass}>
+									More
+									<ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${hoveredDropdown === "more" ? "rotate-180" : ""}`} />
+								</button>
+								<AnimatePresence>
+									{hoveredDropdown === "more" && (
+										<motion.div
+											initial={{ opacity: 0, y: 6 }}
+											animate={{ opacity: 1, y: 0 }}
+											exit={{ opacity: 0, y: 6 }}
+											transition={{ duration: 0.15 }}
+											className="absolute top-full left-1/2 -translate-x-1/2 pt-2"
+										>
+											<div className="bg-[#F8F6F3] rounded-xl shadow-xl border border-[#2C3E3A]/10 py-2 w-40">
+												{moreLinks.map((link) => (
+													<Link
+														key={link.href}
+														href={link.href}
+														className="block px-4 py-2.5 text-sm font-semibold text-[#2C3E3A] hover:bg-[#2D5A3D]/10 hover:text-[#2D5A3D] transition-colors"
+													>
+														{link.name}
+													</Link>
+												))}
+											</div>
+										</motion.div>
+									)}
+								</AnimatePresence>
+							</div>
 
+							{/* AI Estimator — pill button */}
 							<Link
 								href="/estimate"
-								className="px-4 py-2 text-sm font-bold transition-all duration-300 rounded-lg flex items-center gap-1.5 text-[#FFB800] hover:bg-[#FFB800]/10"
+								className={`ml-1 flex items-center gap-1.5 px-3 py-2 text-sm font-bold rounded-lg border transition-all duration-300 ${
+									isScrolled
+										? "text-[#FFB800] border-[#FFB800]/30 hover:bg-[#FFB800]/10"
+										: "text-[#FFB800] border-[#FFB800]/40 hover:bg-[#FFB800]/10"
+								}`}
 							>
-								<span className="inline-block w-1.5 h-1.5 rounded-full bg-[#FFB800] animate-pulse" />
+								<Sparkles className="w-3.5 h-3.5" />
 								AI Estimator
 							</Link>
 
-							<a
-								href="tel:+13602169920"
-								className={`flex items-center gap-2 px-4 py-2 text-sm font-bold transition-all duration-300 rounded-lg hover:bg-[#2D5A3D]/10 ${
-									isScrolled ? 'text-[#2C3E3A] hover:text-[#2D5A3D]' : 'text-[#F8F6F3]/90 hover:text-[#F8F6F3]'
-								}`}
-							>
-								<Phone className="w-3.5 h-3.5" />
-								(360) 216-9920
-							</a>
-
 							<Link
 								href="/contact"
-								className="ml-2 px-6 py-2.5 bg-[#2D5A3D] text-[#F8F6F3] text-sm font-bold rounded-lg hover:bg-[#4A7C59] transition-all duration-300 shadow-lg"
+								className="ml-2 px-5 py-2.5 bg-[#2D5A3D] text-[#F8F6F3] text-sm font-bold rounded-lg hover:bg-[#4A7C59] transition-all duration-300 shadow-lg whitespace-nowrap"
 							>
 								Get Free Estimate
 							</Link>
@@ -329,51 +355,65 @@ export default function Navigation() {
 									</AnimatePresence>
 								</div>
 
-								<Link
-									href="/reviews"
-									onClick={() => setIsMobileMenuOpen(false)}
-									className="block px-4 py-4 text-lg text-[#2C3E3A] font-bold rounded-lg hover:bg-[#2D5A3D]/10"
-								>
-									Reviews
-								</Link>
-								<Link
-									href="/blog"
-									onClick={() => setIsMobileMenuOpen(false)}
-									className="block px-4 py-4 text-lg text-[#2C3E3A] font-bold rounded-lg hover:bg-[#2D5A3D]/10"
-								>
-									Blog
-								</Link>
-								<Link
-									href="/faq"
-									onClick={() => setIsMobileMenuOpen(false)}
-									className="block px-4 py-4 text-lg text-[#2C3E3A] font-bold rounded-lg hover:bg-[#2D5A3D]/10"
-								>
-									FAQ
-								</Link>
-								<Link
-									href="/pricing"
-									onClick={() => setIsMobileMenuOpen(false)}
-									className="block px-4 py-4 text-lg text-[#2C3E3A] font-bold rounded-lg hover:bg-[#2D5A3D]/10"
-								>
-									Pricing
-								</Link>
+								{/* Mobile More Accordion */}
+								<div>
+									<button
+										onClick={() => setMobileExpanded(mobileExpanded === "more" ? null : "more")}
+										className="w-full flex items-center justify-between px-4 py-4 text-lg text-[#2C3E3A] font-bold rounded-lg hover:bg-[#2D5A3D]/10"
+									>
+										More
+										<ChevronDown className={`w-4 h-4 transition-transform duration-200 ${mobileExpanded === "more" ? "rotate-180" : ""}`} />
+									</button>
+									<AnimatePresence>
+										{mobileExpanded === "more" && (
+											<motion.div
+												initial={{ height: 0, opacity: 0 }}
+												animate={{ height: "auto", opacity: 1 }}
+												exit={{ height: 0, opacity: 0 }}
+												transition={{ duration: 0.2 }}
+												className="overflow-hidden pl-4"
+											>
+												{moreLinks.map((link) => (
+													<Link
+														key={link.href}
+														href={link.href}
+														onClick={() => setIsMobileMenuOpen(false)}
+														className="block px-4 py-2.5 text-sm text-[#2C3E3A] font-semibold rounded-lg hover:bg-[#2D5A3D]/10"
+													>
+														{link.name}
+													</Link>
+												))}
+											</motion.div>
+										)}
+									</AnimatePresence>
+								</div>
 
-								<Link
-									href="/estimate"
-									onClick={() => setIsMobileMenuOpen(false)}
-									className="flex items-center gap-2 px-4 py-4 text-lg text-[#FFB800] font-bold rounded-lg hover:bg-[#FFB800]/10"
-								>
-									<span className="inline-block w-2 h-2 rounded-full bg-[#FFB800] animate-pulse" />
-									AI Estimator
-								</Link>
+								<div className="pt-2 space-y-3">
+									<Link
+										href="/estimate"
+										onClick={() => setIsMobileMenuOpen(false)}
+										className="flex items-center justify-center gap-2 w-full px-6 py-4 border-2 border-[#FFB800] text-[#FFB800] font-black rounded-xl hover:bg-[#FFB800]/10 transition-all"
+									>
+										<Sparkles className="w-4 h-4" />
+										AI Estimator
+									</Link>
 
-								<Link
-									href="/contact"
-									onClick={() => setIsMobileMenuOpen(false)}
-									className="block w-full text-center mt-6 px-6 py-4 bg-[#2D5A3D] text-[#F8F6F3] font-black uppercase tracking-widest rounded-xl hover:bg-[#4A7C59] shadow-lg"
-								>
-									Get Free Estimate
-								</Link>
+									<Link
+										href="/contact"
+										onClick={() => setIsMobileMenuOpen(false)}
+										className="block w-full text-center px-6 py-4 bg-[#2D5A3D] text-[#F8F6F3] font-black uppercase tracking-widest rounded-xl hover:bg-[#4A7C59] shadow-lg"
+									>
+										Get Free Estimate
+									</Link>
+
+									<a
+										href="tel:+13602169920"
+										className="flex items-center justify-center gap-2 w-full px-6 py-3 text-[#2C3E3A] font-bold rounded-xl hover:bg-[#2D5A3D]/10 transition-all"
+									>
+										<Phone className="w-4 h-4" />
+										(360) 216-9920
+									</a>
+								</div>
 							</div>
 						</motion.div>
 					</motion.div>
