@@ -213,10 +213,10 @@ export default function HomePageContent() {
 
 						<div className="pt-8 flex flex-wrap items-center gap-4">
 							<Link
-								href="/contact"
+								href="/estimate"
 								className="group relative inline-flex items-center justify-center gap-3 px-10 py-6 bg-gradient-to-b from-[#FFD700] to-[#CC9900] text-[#1F2E2B] rounded-xl font-black uppercase tracking-widest shadow-2xl hover:scale-105 transition-all"
 							>
-								Get Free Estimate
+								Get Instant Estimate
 								<ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-2" />
 							</Link>
 							<a

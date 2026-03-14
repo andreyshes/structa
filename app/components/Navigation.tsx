@@ -216,12 +216,15 @@ export default function Navigation() {
 								Instant Estimate
 							</Link>
 
-							<Link
-								href="/contact"
-								className="ml-2 px-5 py-2.5 bg-[#2D5A3D] text-[#F8F6F3] text-sm font-bold rounded-lg hover:bg-[#4A7C59] transition-all duration-300 shadow-lg whitespace-nowrap"
+							<a
+								href="tel:+13602169920"
+								className={`ml-2 flex items-center gap-2 px-4 py-2.5 text-sm font-bold transition-all duration-300 rounded-lg hover:bg-[#2D5A3D]/10 whitespace-nowrap ${
+									isScrolled ? "text-[#2C3E3A] hover:text-[#2D5A3D]" : "text-[#F8F6F3]/90 hover:text-[#F8F6F3]"
+								}`}
 							>
-								Get Free Estimate
-							</Link>
+								<Phone className="w-3.5 h-3.5" />
+								(360) 216-9920
+							</a>
 						</div>
 
 						{/* Mobile Toggle */}
