@@ -167,7 +167,7 @@ export default function HomePageContent() {
 			>
 				<div className="absolute inset-0">
 					<Image
-						src="/bathroom.jpg.png"
+						src="/hero.jpg"
 						sizes="100vw"
 						alt="General Contractor in Vancouver WA doing home repairs"
 						fill
