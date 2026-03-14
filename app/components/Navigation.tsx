@@ -172,6 +172,14 @@ export default function Navigation() {
 							<Link href="/faq" className={linkClass}>FAQ</Link>
 							<Link href="/pricing" className={linkClass}>Pricing</Link>
 
+							<Link
+								href="/estimate"
+								className="px-4 py-2 text-sm font-bold transition-all duration-300 rounded-lg flex items-center gap-1.5 text-[#FFB800] hover:bg-[#FFB800]/10"
+							>
+								<span className="inline-block w-1.5 h-1.5 rounded-full bg-[#FFB800] animate-pulse" />
+								AI Estimator
+							</Link>
+
 							<a
 								href="tel:+13602169920"
 								className={`flex items-center gap-2 px-4 py-2 text-sm font-bold transition-all duration-300 rounded-lg hover:bg-[#2D5A3D]/10 ${
@@ -348,6 +356,15 @@ export default function Navigation() {
 									className="block px-4 py-4 text-lg text-[#2C3E3A] font-bold rounded-lg hover:bg-[#2D5A3D]/10"
 								>
 									Pricing
+								</Link>
+
+								<Link
+									href="/estimate"
+									onClick={() => setIsMobileMenuOpen(false)}
+									className="flex items-center gap-2 px-4 py-4 text-lg text-[#FFB800] font-bold rounded-lg hover:bg-[#FFB800]/10"
+								>
+									<span className="inline-block w-2 h-2 rounded-full bg-[#FFB800] animate-pulse" />
+									AI Estimator
 								</Link>
 
 								<Link
