@@ -580,12 +580,12 @@ export default function HomePageContent() {
 									{/* BEFORE / AFTER FEATURED */}
 					<div className="mt-16">
 						<BeforeAfterSlider
-							beforeSrc="/before-after-bath/bathroom_before.png"
-							afterSrc="/before-after-bath/bathroom_after.png"
-							beforeAlt="Kitchen backsplash before remodel"
-							afterAlt="Kitchen backsplash after remodel by Norbilt in Vancouver WA"
+							beforeSrc="/before-after-bath/4B7B4C72-3203-41BA-9B51-E623563332FF_1_201_a.jpeg"
+							afterSrc="/before-after-bath/bathroom.jpg.png"
+							beforeAlt="Bathroom before remodel — dated tile and dark wood vanity"
+							afterAlt="Bathroom after remodel by Norbilt — modern marble and freestanding tub"
 							label="Bathroom Remodel — Vancouver, WA"
-								aspectClass="aspect-[512/559]"
+								aspectClass="aspect-[3/2]"
 						/>
 					</div>
 
