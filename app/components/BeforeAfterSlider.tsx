@@ -10,6 +10,7 @@ interface BeforeAfterSliderProps {
 	beforeAlt: string;
 	afterAlt: string;
 	label?: string;
+	aspectClass?: string;
 }
 
 export default function BeforeAfterSlider({
@@ -18,6 +19,7 @@ export default function BeforeAfterSlider({
 	beforeAlt,
 	afterAlt,
 	label,
+	aspectClass = "aspect-video",
 }: BeforeAfterSliderProps) {
 	const [position, setPosition] = useState(50);
 	const containerRef = useRef<HTMLDivElement>(null);
@@ -69,7 +71,7 @@ export default function BeforeAfterSlider({
 			)}
 			<div
 				ref={containerRef}
-				className="relative aspect-video rounded-3xl overflow-hidden cursor-ew-resize select-none touch-none"
+				className={`relative ${aspectClass} rounded-3xl overflow-hidden cursor-ew-resize select-none touch-none`}
 				onTouchMove={(e) => {
 					e.preventDefault();
 					updatePosition(e.touches[0].clientX);
@@ -92,7 +94,7 @@ export default function BeforeAfterSlider({
 				{/* AFTER (clipped to slider position) */}
 				<div
 					className="absolute inset-0"
-					style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
+					style={{ clipPath: `inset(0 0 0 ${position}%)` }}
 				>
 					<Image
 						src={afterSrc}

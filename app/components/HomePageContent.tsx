@@ -584,7 +584,8 @@ export default function HomePageContent() {
 							afterSrc="/before-after-bath/bathroom_after.png"
 							beforeAlt="Kitchen backsplash before remodel"
 							afterAlt="Kitchen backsplash after remodel by Norbilt in Vancouver WA"
-							label="Kitchen Backsplash Remodel — Vancouver, WA"
+							label="Bathroom Remodel — Vancouver, WA"
+								aspectClass="aspect-[512/559]"
 						/>
 					</div>
 
