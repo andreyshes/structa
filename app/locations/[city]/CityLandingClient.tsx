@@ -18,7 +18,14 @@ import {
 	CheckCircle2,
 	ChevronDown,
 	Phone,
+	Clock,
 } from "lucide-react";
+
+function trackEvent(name: string, params?: Record<string, string | number>) {
+	if (typeof window !== "undefined" && (window as any).gtag) {
+		(window as any).gtag("event", name, params);
+	}
+}
 
 const iconMap: Record<string, any> = {
 	"handyman": HardHat,
@@ -134,16 +141,18 @@ export default function CityLandingClient({ city, citySlug }: any) {
 						<div className="flex flex-wrap gap-4">
 							<Link
 								href="/contact"
+								onClick={() => trackEvent("cta_click", { location: cityNameShort, cta: "hero_estimate" })}
 								className="bg-[#FFB800] text-black px-8 py-4 rounded-xl font-black uppercase tracking-widest hover:bg-white transition-colors shadow-xl"
 							>
 								Get Free Estimate
 							</Link>
-							<Link
+							<a
 								href="tel:+13602169920"
+								onClick={() => trackEvent("phone_click", { location: cityNameShort, cta: "hero_call" })}
 								className="border border-white/20 text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest hover:bg-white/10 transition-colors"
 							>
 								Call Now
-							</Link>
+							</a>
 						</div>
 					</motion.div>
 				</div>
@@ -166,7 +175,24 @@ export default function CityLandingClient({ city, citySlug }: any) {
 				</div>
 			</div>
 
-			{/* SERVICE GRID - Simplified Text */}
+			{/* URGENCY STRIP */}
+		<div className="bg-[#FFB800] py-4">
+			<div className="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+				<div className="flex items-center gap-3 text-black font-black uppercase tracking-widest text-xs">
+					<Clock className="w-4 h-4 shrink-0" />
+					<span>Most estimates in {cityNameShort} scheduled within 48 hours — spots fill fast</span>
+				</div>
+				<a
+					href="tel:+13602169920"
+					onClick={() => trackEvent("phone_click", { location: cityNameShort, cta: "urgency_strip" })}
+					className="shrink-0 bg-black text-[#FFB800] px-6 py-2 rounded-lg font-black uppercase tracking-widest text-xs hover:bg-[#1F2E2B] transition-colors"
+				>
+					Call (360) 216-9920
+				</a>
+			</div>
+		</div>
+
+		{/* SERVICE GRID - Simplified Text */}
 			<section className="py-24 max-w-7xl mx-auto px-6">
 				<div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
 					<div className="max-w-xl">
@@ -282,6 +308,7 @@ export default function CityLandingClient({ city, citySlug }: any) {
 								<div className="flex flex-col gap-3 font-bold text-[#1F2E2B]">
 									<a
 										href="tel:+13602169920"
+										onClick={() => trackEvent("phone_click", { location: cityNameShort, cta: "map_section" })}
 										className="flex items-center gap-3 hover:text-[#2D5A3D] transition-colors"
 									>
 										<Phone className="w-5 h-5 text-[#FFB800]" /> (360) 216-9920

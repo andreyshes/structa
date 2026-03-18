@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, ChevronDown, Phone, Sparkles } from "lucide-react";
+import { Menu, X, ChevronDown, Phone, Sparkles, MessageSquare } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const serviceLinks = [
@@ -225,6 +225,14 @@ export default function Navigation() {
 								<Phone className="w-3.5 h-3.5" />
 								(360) 216-9920
 							</a>
+
+							<a
+								href="sms:+13602169920&body=Hi, I'd like a free estimate."
+								className="ml-1 flex items-center gap-1.5 px-3 py-2.5 text-xs font-black uppercase tracking-widest rounded-lg bg-[#FFB800] text-black hover:bg-amber-400 transition-all whitespace-nowrap"
+							>
+								<MessageSquare className="w-3.5 h-3.5" />
+								Text Us
+							</a>
 						</div>
 
 						{/* Mobile Toggle */}
@@ -407,6 +415,14 @@ export default function Navigation() {
 									>
 										<Phone className="w-4 h-4" />
 										(360) 216-9920
+									</a>
+
+									<a
+										href="sms:+13602169920&body=Hi, I'd like a free estimate."
+										className="flex items-center justify-center gap-2 w-full px-6 py-3 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl hover:bg-amber-400 transition-all"
+									>
+										<MessageSquare className="w-4 h-4" />
+										Text Us
 									</a>
 								</div>
 							</div>

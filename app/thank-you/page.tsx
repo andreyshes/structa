@@ -1,7 +1,7 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
-import Script from "next/script";
 import { motion } from "framer-motion";
 import {
 	CheckCircle2,
@@ -9,11 +9,17 @@ import {
 	ArrowRight,
 	Clock,
 	FileText,
-	CalendarCheck,
 	ShieldCheck,
 } from "lucide-react";
 
 export default function ThankYouPage() {
+	useEffect(() => {
+		if (typeof window !== "undefined" && (window as any).gtag) {
+			(window as any).gtag("event", "conversion", {
+				send_to: "AW-17966936255/ZWrACLjd3PwbEL_hpvdC",
+			});
+		}
+	}, []);
 	const nextSteps = [
 		{
 			icon: Clock,
@@ -34,14 +40,6 @@ export default function ThankYouPage() {
 
 	return (
 		<>
-			<Script id="google-ads-conversion" strategy="afterInteractive">
-				{`
-          gtag('event', 'conversion', {
-            'send_to': 'AW-17966936255/ZWrACLjd3PwbEL_hpvdC'
-          });
-        `}
-			</Script>
-
 			<div className="min-h-screen bg-[#14201D] flex items-center justify-center px-6 py-20 relative overflow-hidden">
 				{/* Decorative Background */}
 				<div className="absolute top-0 right-0 w-1/2 h-full bg-[#1F2E2B] -skew-x-12 translate-x-1/3 z-0 opacity-50" />

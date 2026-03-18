@@ -11,7 +11,6 @@ import {
 	CheckCircle2,
 	Shield,
 	ArrowRight,
-	MessageSquare,
 	Star,
 	CalendarCheck,
 	Calendar,
@@ -21,7 +20,7 @@ import dynamic from "next/dynamic";
 const CalendlyEmbed = dynamic(() => import("@/app/components/CalendlyEmbed"), {
 	ssr: false,
 	loading: () => (
-		<div className="h-[700px] flex items-center justify-center text-gray-400 font-bold">
+		<div className="h-175 flex items-center justify-center text-gray-400 font-bold">
 			Loading scheduler...
 		</div>
 	),
@@ -44,7 +43,7 @@ type FormData = {
 	email: string;
 	phone: string;
 	projectType: string;
-	city: string; // Added for better local qualifying
+	city: string;
 	details: string;
 };
 
@@ -88,7 +87,7 @@ export default function ContactPage() {
 
 	const [isSubmitting, setIsSubmitting] = useState(false);
 
-	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+	const handleSubmit = async (e: React.FormEvent) => {
 		e.preventDefault();
 		setIsSubmitting(true);
 		try {
@@ -98,11 +97,22 @@ export default function ContactPage() {
 				body: JSON.stringify(formData),
 			});
 			if (res.ok) {
+				// Fire GA4 lead event immediately before redirect
+				if (typeof window !== "undefined" && (window as any).gtag) {
+					(window as any).gtag("event", "generate_lead", {
+						event_category: "contact",
+						event_label: formData.projectType || "general",
+						value: 1,
+					});
+					(window as any).gtag("event", "conversion", {
+						send_to: "AW-17966936255/ZWrACLjd3PwbEL_hpvdC",
+					});
+				}
 				router.push("/thank-you");
 			} else {
 				alert("Something went wrong. Please try again.");
 			}
-		} catch (error) {
+		} catch {
 			alert("Network error. Please try again.");
 		} finally {
 			setIsSubmitting(false);
@@ -153,7 +163,7 @@ export default function ContactPage() {
 				</div>
 			</section>
 
-			{/* THREE STEP PROCESS - NEW SECTION */}
+			{/* THREE STEP PROCESS */}
 			<section className="py-12 bg-white border-b border-gray-100">
 				<div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
 					{[
@@ -222,7 +232,7 @@ export default function ContactPage() {
 							</div>
 						</div>
 
-						{/* TESTIMONIAL SNIPPET - NEW ADDITION */}
+						{/* TESTIMONIAL SNIPPET */}
 						<div className="p-8 bg-[#F8F6F3] rounded-3xl border-l-8 border-[#FFB800]">
 							<div className="flex gap-1 mb-4">
 								{[...Array(5)].map((_, i) => (
@@ -295,52 +305,72 @@ export default function ContactPage() {
 							{activeTab === "calendly" ? (
 								<CalendlyEmbed />
 							) : (
-							<form onSubmit={handleSubmit} className="space-y-8">
-								<div className="grid md:grid-cols-2 gap-8">
-									<div className="space-y-3">
-										<Label className="text-xs font-black uppercase tracking-widest text-gray-500">
-											Full Name *
-										</Label>
-										<Input
-											required
-											className="h-14 rounded-xl"
-											value={formData.name}
-											onChange={(e) =>
-												setFormData({ ...formData, name: e.target.value })
-											}
-										/>
+								<form onSubmit={handleSubmit} className="space-y-8">
+									{/* Row 1: Name + Email */}
+									<div className="grid md:grid-cols-2 gap-8">
+										<div className="space-y-3">
+											<Label className="text-xs font-black uppercase tracking-widest text-gray-500">
+												Full Name *
+											</Label>
+											<Input
+												required
+												className="h-14 rounded-xl"
+												value={formData.name}
+												onChange={(e) =>
+													setFormData({ ...formData, name: e.target.value })
+												}
+											/>
+										</div>
+										<div className="space-y-3">
+											<Label className="text-xs font-black uppercase tracking-widest text-gray-500">
+												Email Address *
+											</Label>
+											<Input
+												required
+												type="email"
+												placeholder="you@example.com"
+												className="h-14 rounded-xl"
+												value={formData.email}
+												onChange={(e) =>
+													setFormData({ ...formData, email: e.target.value })
+												}
+											/>
+										</div>
 									</div>
-									<div className="space-y-3">
-										<Label className="text-xs font-black uppercase tracking-widest text-gray-500">
-											Phone Number *
-										</Label>
-										<Input
-											required
-											placeholder="(360) 000-0000"
-											className="h-14 rounded-xl"
-											value={formData.phone}
-											onChange={(e) =>
-												setFormData({ ...formData, phone: e.target.value })
-											}
-										/>
-									</div>
-								</div>
 
-								<div className="grid md:grid-cols-2 gap-8">
-									<div className="space-y-3">
-										<Label className="text-xs font-black uppercase tracking-widest text-gray-500">
-											Project Location (City) *
-										</Label>
-										<Input
-											required
-											placeholder="e.g. Vancouver"
-											className="h-14 rounded-xl"
-											value={formData.city}
-											onChange={(e) =>
-												setFormData({ ...formData, city: e.target.value })
-											}
-										/>
+									{/* Row 2: Phone + City */}
+									<div className="grid md:grid-cols-2 gap-8">
+										<div className="space-y-3">
+											<Label className="text-xs font-black uppercase tracking-widest text-gray-500">
+												Phone Number *
+											</Label>
+											<Input
+												required
+												placeholder="(360) 000-0000"
+												className="h-14 rounded-xl"
+												value={formData.phone}
+												onChange={(e) =>
+													setFormData({ ...formData, phone: e.target.value })
+												}
+											/>
+										</div>
+										<div className="space-y-3">
+											<Label className="text-xs font-black uppercase tracking-widest text-gray-500">
+												Project Location (City) *
+											</Label>
+											<Input
+												required
+												placeholder="e.g. Vancouver"
+												className="h-14 rounded-xl"
+												value={formData.city}
+												onChange={(e) =>
+													setFormData({ ...formData, city: e.target.value })
+												}
+											/>
+										</div>
 									</div>
+
+									{/* Row 3: Project Type */}
 									<div className="space-y-3">
 										<Label className="text-xs font-black uppercase tracking-widest text-gray-500">
 											Project Type *
@@ -367,37 +397,37 @@ export default function ContactPage() {
 											</SelectContent>
 										</Select>
 									</div>
-								</div>
 
-								<div className="space-y-3">
-									<Label className="text-xs font-black uppercase tracking-widest text-gray-500">
-										Project Details *
-									</Label>
-									<Textarea
-										required
-										placeholder="Describe what you need fixed or built..."
-										className="min-h-48 rounded-2xl"
-										value={formData.details}
-										onChange={(e) =>
-											setFormData({ ...formData, details: e.target.value })
-										}
-									/>
-								</div>
+									{/* Row 4: Details */}
+									<div className="space-y-3">
+										<Label className="text-xs font-black uppercase tracking-widest text-gray-500">
+											Project Details *
+										</Label>
+										<Textarea
+											required
+											placeholder="Describe what you need fixed or built..."
+											className="min-h-48 rounded-2xl"
+											value={formData.details}
+											onChange={(e) =>
+												setFormData({ ...formData, details: e.target.value })
+											}
+										/>
+									</div>
 
-								<Button
-									type="submit"
-									disabled={isSubmitting}
-									className="w-full h-16 bg-[#1F2E2B] hover:bg-[#2D5A3D] text-[#FFB800] font-black uppercase tracking-widest rounded-2xl shadow-xl flex items-center justify-center gap-3 transition-all"
-								>
-									{isSubmitting ? (
-										"Processing..."
-									) : (
-										<>
-											Send Request <ArrowRight className="w-5 h-5" />
-										</>
-									)}
-								</Button>
-							</form>
+									<Button
+										type="submit"
+										disabled={isSubmitting}
+										className="w-full h-16 bg-[#1F2E2B] hover:bg-[#2D5A3D] text-[#FFB800] font-black uppercase tracking-widest rounded-2xl shadow-xl flex items-center justify-center gap-3 transition-all"
+									>
+										{isSubmitting ? (
+											"Processing..."
+										) : (
+											<>
+												Send Request <ArrowRight className="w-5 h-5" />
+											</>
+										)}
+									</Button>
+								</form>
 							)}
 						</motion.div>
 					</div>

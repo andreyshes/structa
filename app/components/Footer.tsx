@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, MessageSquare } from "lucide-react";
 
 export default function Footer() {
 	const currentYear = new Date().getFullYear();
@@ -139,31 +139,38 @@ export default function Footer() {
 							Contact Us
 						</h4>
 						<ul className="space-y-4">
-							<li className="flex items-center gap-3">
-								<div className="p-2 bg-[#4A7C59]/20 rounded-lg">
-									<Phone className="w-4 h-4 text-[#4A7C59]" />
-								</div>
-								<span className="text-sm text-[#F8F6F3]/70">
-									(360) 216-9920
-								</span>
+							<li>
+								<a href="tel:+13602169920" className="flex items-center gap-3 hover:text-[#FFB800] transition-colors group">
+									<div className="p-2 bg-[#4A7C59]/20 rounded-lg group-hover:bg-[#FFB800]/20">
+										<Phone className="w-4 h-4 text-[#4A7C59] group-hover:text-[#FFB800]" />
+									</div>
+									<span className="text-sm text-[#F8F6F3]/70 group-hover:text-[#FFB800]">(360) 216-9920</span>
+								</a>
 							</li>
 
-							<li className="flex items-center gap-3">
-								<div className="p-2 bg-[#4A7C59]/20 rounded-lg">
-									<Mail className="w-4 h-4 text-[#4A7C59]" />
-								</div>
-								<span className="text-sm text-[#F8F6F3]/70">
-									hello@norbilt.com
-								</span>
+							<li>
+								<a href="sms:+13602169920&body=Hi, I'd like a free estimate." className="flex items-center gap-3 hover:text-[#FFB800] transition-colors group">
+									<div className="p-2 bg-[#4A7C59]/20 rounded-lg group-hover:bg-[#FFB800]/20">
+										<MessageSquare className="w-4 h-4 text-[#4A7C59] group-hover:text-[#FFB800]" />
+									</div>
+									<span className="text-sm text-[#F8F6F3]/70 group-hover:text-[#FFB800]">Text Us</span>
+								</a>
+							</li>
+
+							<li>
+								<a href="mailto:hello@norbilt.com" className="flex items-center gap-3 hover:text-[#FFB800] transition-colors group">
+									<div className="p-2 bg-[#4A7C59]/20 rounded-lg group-hover:bg-[#FFB800]/20">
+										<Mail className="w-4 h-4 text-[#4A7C59] group-hover:text-[#FFB800]" />
+									</div>
+									<span className="text-sm text-[#F8F6F3]/70 group-hover:text-[#FFB800]">hello@norbilt.com</span>
+								</a>
 							</li>
 
 							<li className="flex items-center gap-3">
 								<div className="p-2 bg-[#4A7C59]/20 rounded-lg">
 									<MapPin className="w-4 h-4 text-[#4A7C59]" />
 								</div>
-								<span className="text-sm text-[#F8F6F3]/70">
-									Vancouver, WA & Clark County
-								</span>
+								<span className="text-sm text-[#F8F6F3]/70">Vancouver, WA & Clark County</span>
 							</li>
 						</ul>
 					</div>

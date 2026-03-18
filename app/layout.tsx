@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navigation from "@/app/components/Navigation";
 import Footer from "@/app/components/Footer";
+import ScrollTracker from "@/app/components/ScrollTracker";
+import StickyMobileCTA from "@/app/components/StickyMobileCTA";
 import Script from "next/script";
 
 export const metadata: Metadata = {
@@ -91,11 +93,13 @@ export default function RootLayout({
 			</head>
 
 			<body className="bg-[#F8F6F3] antialiased">
+				<ScrollTracker />
 				<div className="flex min-h-screen flex-col">
 					<Navigation />
 					<main className="flex-1">{children}</main>
 					<Footer />
 				</div>
+				<StickyMobileCTA />
 			</body>
 		</html>
 	);
