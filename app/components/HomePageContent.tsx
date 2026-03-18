@@ -189,7 +189,7 @@ export default function HomePageContent() {
 							</span>
 							<span className="inline-flex items-center gap-2 text-white font-bold text-sm drop-shadow-md">
 								<MapPin className="w-5 h-5 text-[#FFB800]" />
-								VANCOUVER, CAMAS & CLARK COUNTY
+								VANCOUVER, WASHINGTON
 							</span>
 						</motion.div>
 
@@ -399,8 +399,8 @@ export default function HomePageContent() {
 					<div className="bg-[#1F2E2B] rounded-[3rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row">
 						<div className="lg:w-1/2 relative h-96 lg:h-auto">
 							<Image
-								src="/remodel-images/IMG_7646.jpg"
-								alt="Kitchen remodel by Norbilt in Vancouver WA"
+								src="https://images.unsplash.com/photo-1682888818696-906287d759f5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1vZGVybiUyMGJhdGhyb29tfGVufDB8fDB8fHww"
+								alt="Modern bathroom remodel by Norbilt in Vancouver WA"
 								fill
 								sizes="(max-width: 1024px) 100vw, 50vw"
 								className="object-cover"
@@ -577,7 +577,7 @@ export default function HomePageContent() {
 						centered
 					/>
 
-									{/* BEFORE / AFTER FEATURED */}
+					{/* BEFORE / AFTER FEATURED */}
 					<div className="mt-16">
 						<BeforeAfterSlider
 							beforeSrc="/before-after-bath/4B7B4C72-3203-41BA-9B51-E623563332FF_1_201_a.jpeg"
@@ -585,7 +585,7 @@ export default function HomePageContent() {
 							beforeAlt="Bathroom before remodel — dated tile and dark wood vanity"
 							afterAlt="Bathroom after remodel by Norbilt — modern marble and freestanding tub"
 							label="Bathroom Remodel — Vancouver, WA"
-								aspectClass="aspect-[3/2]"
+							aspectClass="aspect-[3/2]"
 						/>
 					</div>
 
