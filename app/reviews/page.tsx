@@ -41,6 +41,94 @@ const reviews = [
 		service: "Flooring Installation",
 		rating: 5,
 	},
+	{
+		quote:
+			"NorBilt did a great job on my flooring and baseboards in Battle Ground, WA. The work was clean, precise, and finished on time. Everything looks solid and professionally done. Definitely recommend them for quality remodeling work.",
+		name: "David B.",
+		location: "Battle Ground, WA",
+		service: "Flooring & Baseboards",
+		rating: 5,
+	},
+	{
+		quote:
+			"Andrey and his team did an excellent job installing a mini split system. There was a mix up with the material that I ordered and Andrey handled the situation professionally with grace and patience. He communicated every step of the way, was timely and pleasant to work with. I highly recommend Andrey and will definitely work with him again.",
+		name: "Dawn Trano",
+		location: "Vancouver, WA",
+		service: "Mini Split Installation",
+		rating: 5,
+	},
+	{
+		quote:
+			"I had a great experience working with Andrey and his company, NORBILT, here in Vancouver, WA. The interior painting job they did on my home turned out even better than I expected. Andrey was professional, easy to communicate with, and paid close attention to detail throughout the entire process. The quality of the work really shows! Clean lines, smooth finishes, and everything was done on time.",
+		name: "Emmanuel K.",
+		location: "Vancouver, WA",
+		service: "Interior Painting",
+		rating: 5,
+	},
+	{
+		quote:
+			"Norbilt did a great job on flooring project. Andrey was professional, efficient, and made sure everything was installed perfectly. The floors look amazing and completely transformed the space. Very happy with the quality of work and would definitely recommend them.",
+		name: "Roman K.",
+		location: "Vancouver, WA",
+		service: "Flooring Installation",
+		rating: 5,
+	},
+	{
+		quote:
+			"NorBilt did a great job installing doors and windows in my Camas home. Andrey was professional, detail-oriented, and made sure everything was done right. The quality of work really shows — highly recommend!",
+		name: "Joey D.",
+		location: "Camas, WA",
+		service: "Doors & Windows",
+		rating: 5,
+	},
+	{
+		quote:
+			"I couldn't hold back on leaving a review, gotta say I am impressed with their professionalism! Came in, did the job and left a clean site always! I will recommend them to everyone!",
+		name: "Dennis",
+		location: "Vancouver, WA",
+		service: "Home Repairs",
+		rating: 5,
+	},
+	{
+		quote:
+			"Great experience with Norbilt. Andrey and his team were professional, easy to work with, and delivered high-quality work. Everything was smooth from start to finish. Highly recommend!",
+		name: "Sam Y.",
+		location: "Vancouver, WA",
+		service: "Home Repairs",
+		rating: 5,
+	},
+	{
+		quote:
+			"Norbilt has built me my dream bathroom. Andrey was quick to respond to me whenever I had any questions and was very respectful and pleasant to work with. Couldn't have been more happy with the experience!",
+		name: "Ruvim C.",
+		location: "Vancouver, WA",
+		service: "Bathroom Remodel",
+		rating: 5,
+	},
+	{
+		quote:
+			"Did really great job for my tiles in my bathroom came there did a quick and quality job highly recommend.",
+		name: "Moses",
+		location: "Vancouver, WA",
+		service: "Bathroom Tile",
+		rating: 5,
+	},
+	{
+		quote:
+			"I had a great experience working with Norbilt on my remodeling project. From start to finish, their team was professional, detail-oriented, and easy to communicate with. Andrey was especially helpful throughout the process — he made sure everything stayed on track and met my expectations. The quality of work really shows, and the final result turned out even better than I imagined.",
+		name: "Taylor K.",
+		location: "Vancouver, WA",
+		service: "Remodeling",
+		rating: 5,
+	},
+	{
+		quote:
+			"Andre, did a great job! He's very good at listening to the customer, he cares about making sure he gets it done, also he came on time and did with short notice from me the customer. Excellent service, I highly recommend him for any work needed. Five stars!",
+		name: "Susan",
+		location: "Vancouver, WA",
+		service: "Home Repairs",
+		rating: 5,
+	},
 ];
 
 const stats = [
