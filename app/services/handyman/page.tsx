@@ -1,20 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
 import {
-	Wrench,
 	CheckCircle2,
 	ArrowRight,
 	Home,
-	Shield,
 	Clock,
 	Hammer,
 	Settings,
 	Paintbrush,
 	Lightbulb,
-	MapPin,
 	ShieldCheck,
 	Phone,
 	Construction,
+	Star,
+	Quote,
 } from "lucide-react";
 
 import SectionHeader from "@/app/components/SectionHeader";
@@ -89,14 +88,29 @@ export default function HandymanPage() {
 							accountability.
 						</p>
 
-						<div className="pt-4 animate-fade-in-up animate-delay-300">
+						<div className="flex items-center gap-2 animate-fade-in-up animate-delay-200">
+							{[...Array(5)].map((_, i) => (
+								<Star key={i} className="w-5 h-5 fill-[#FFB800] text-[#FFB800]" />
+							))}
+							<span className="text-white font-black text-sm ml-1">5.0</span>
+							<span className="text-white/60 text-sm">· Google Rated</span>
+						</div>
+
+						<div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-in-up animate-delay-300">
 							<Link
 								href="/contact"
-								className="inline-flex items-center gap-3 px-10 py-5 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-2xl"
+								className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-2xl"
 							>
 								Request A Quote
 								<ArrowRight className="w-5 h-5" />
 							</Link>
+							<a
+								href="tel:+13602169920"
+								className="inline-flex items-center justify-center gap-3 px-10 py-5 border-2 border-white/30 text-white font-black uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all"
+							>
+								<Phone className="w-5 h-5" />
+								(360) 216-9920
+							</a>
 						</div>
 					</div>
 				</div>
@@ -253,6 +267,84 @@ export default function HandymanPage() {
 							<p className="text-gray-600 font-medium leading-relaxed">
 								{item.a}
 							</p>
+						</div>
+					))}
+				</div>
+			</div>
+		</section>
+
+		{/* REVIEWS */}
+		<section className="py-24 bg-[#F8F6F3]">
+			<div className="max-w-7xl mx-auto px-6 lg:px-8">
+				<div className="text-center mb-16 space-y-3">
+					<span className="text-[#FFB800] font-black uppercase tracking-[0.3em] text-sm">
+						Real Customers
+					</span>
+					<h2 className="text-3xl md:text-4xl font-black text-[#1F2E2B] uppercase tracking-tighter">
+						What Homeowners Say
+					</h2>
+					<div className="flex justify-center items-center gap-1 pt-1">
+						{[...Array(5)].map((_, i) => (
+							<Star key={i} className="w-5 h-5 fill-[#FFB800] text-[#FFB800]" />
+						))}
+						<span className="text-[#1F2E2B] font-black text-sm ml-2">5.0 on Google</span>
+					</div>
+				</div>
+				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+					{[
+						{
+							quote: "We had a positive experience with Norbilt here in Vancouver, WA. I worked with Andrey, who was courteous, professional, efficient, and delivered high-quality work in a timely manner. It's hard to find reliable help these days, and I truly appreciated his attention to detail and expertise.",
+							name: "M. Taylor",
+							location: "Vancouver, WA",
+						},
+						{
+							quote: "I couldn't hold back on leaving a review, gotta say I am impressed with their professionalism! Came in, did the job and left a clean site always! I will recommend them to everyone!",
+							name: "Dennis",
+							location: "Vancouver, WA",
+						},
+						{
+							quote: "Great experience with Norbilt. Andrey and his team were professional, easy to work with, and delivered high-quality work. Everything was smooth from start to finish. Highly recommend!",
+							name: "Sam Y.",
+							location: "Vancouver, WA",
+						},
+						{
+							quote: "Andre, did a great job! He's very good at listening to the customer, he cares about making sure he gets it done, also he came on time and did with short notice from me the customer. Excellent service, I highly recommend him for any work needed. Five stars!",
+							name: "Susan",
+							location: "Vancouver, WA",
+						},
+						{
+							quote: "I had a great experience working with Norbilt on my remodeling project. From start to finish, their team was professional, detail-oriented, and easy to communicate with. Andrey was especially helpful — he made sure everything stayed on track and met my expectations.",
+							name: "Taylor K.",
+							location: "Vancouver, WA",
+						},
+						{
+							quote: "Andrey and his team did an excellent job. There was a mix up with the material that I ordered and Andrey handled the situation professionally with grace and patience. He communicated every step of the way, was timely and pleasant to work with.",
+							name: "Dawn Trano",
+							location: "Vancouver, WA",
+						},
+					].map((review, i) => (
+						<div
+							key={i}
+							className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 hover:shadow-lg hover:border-[#FFB800]/30 transition-all duration-300 flex flex-col gap-4"
+						>
+							<div className="flex gap-1">
+								{[...Array(5)].map((_, j) => (
+									<Star key={j} className="w-4 h-4 fill-[#FFB800] text-[#FFB800]" />
+								))}
+							</div>
+							<Quote className="w-6 h-6 text-[#FFB800]/30" />
+							<p className="text-gray-700 leading-relaxed text-sm italic flex-1">
+								&ldquo;{review.quote}&rdquo;
+							</p>
+							<div className="flex items-center gap-3 pt-3 border-t border-gray-100">
+								<div className="w-9 h-9 rounded-full bg-[#1F2E2B] flex items-center justify-center text-white font-black text-xs">
+									{review.name[0]}
+								</div>
+								<div>
+									<p className="font-black text-[#1F2E2B] text-sm">{review.name}</p>
+									<p className="text-xs text-gray-400">{review.location}</p>
+								</div>
+							</div>
 						</div>
 					))}
 				</div>
