@@ -98,6 +98,15 @@ export default function FlooringPage() {
 				</div>
 			</section>
 
+			{/* BREADCRUMB */}
+			<div className="bg-[#FDFCFB] border-b border-gray-100">
+				<div className="max-w-7xl mx-auto px-6 lg:px-8 py-3">
+					<Link href="/services" className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-[#2D5A3D] hover:text-[#FFB800] transition-colors">
+						← All Services
+					</Link>
+				</div>
+			</div>
+
 			{/* TRUST STRIP */}
 			<section className="py-8 bg-[#1F2E2B] border-y-4 border-[#FFB800]/20 text-white">
 				<div className="max-w-7xl mx-auto px-6 flex flex-wrap justify-center md:justify-between items-center gap-6">
