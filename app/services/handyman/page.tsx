@@ -230,7 +230,62 @@ export default function HandymanPage() {
 				</div>
 			</section>
 
-			{/* FAQ SECTION */}
+			{/* FULL SERVICE LIST */}
+		<section className="py-24 bg-white">
+			<div className="max-w-7xl mx-auto px-6 lg:px-8">
+				<div className="border border-[#E8E4DE] rounded-2xl p-8 lg:p-12 bg-[#FDFCFB]">
+					<h3 className="text-sm font-black uppercase tracking-widest text-[#2D5A3D] mb-8">
+						Every Handyman Task We Handle
+					</h3>
+					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+						{[
+							"TV Mounting",
+							"Furniture Assembly",
+							"Shelf Hanging",
+							"Picture Hanging",
+							"Caulking & Sealing",
+							"Weatherstripping",
+							"Door Adjustments",
+							"Sticking Door Fixes",
+							"Hinge Replacement",
+							"Smart Lock Install",
+							"Deadbolt Install",
+							"Cabinet Hardware",
+							"Drywall Patching",
+							"Hole Repair",
+							"Texture Matching",
+							"Wood Rot Repair",
+							"Baseboard Repair",
+							"Door Casing Fixes",
+							"Tile Grout Repair",
+							"Caulk Replacement",
+							"Fence Staining",
+							"Deck Repair",
+							"Soffit & Fascia Repair",
+							"Gutter Reattachment",
+							"Safety Bar Install",
+							"Smoke Detector Install",
+							"Storm Door Install",
+							"Window Screen Repair",
+							"Minor Plumbing Fixes",
+							"Faucet Replacement",
+							"Toilet Flapper Fix",
+							"Property Punch Lists",
+						].map((task) => (
+							<div
+								key={task}
+								className="flex items-center gap-2 text-sm text-gray-600 font-medium"
+							>
+								<CheckCircle2 className="w-4 h-4 text-[#FFB800] shrink-0" />
+								{task}
+							</div>
+						))}
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{/* FAQ SECTION */}
 		<section className="py-24 bg-white">
 			<div className="max-w-4xl mx-auto px-6 lg:px-8">
 				<SectionHeader
