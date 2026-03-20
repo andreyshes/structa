@@ -58,7 +58,7 @@ export default function HandymanPage() {
 			<section className="relative min-h-[75vh] flex items-center overflow-hidden">
 				<div className="absolute inset-0 z-0">
 					<Image
-						src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?q=80&w=2000"
+						src="https://images.unsplash.com/photo-1773432114026-25ee626e9e8a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGVjayUyMGJlaW5nJTIwcmVwYWlyZWR8ZW58MHx8MHx8fDA%3D"
 						alt="Home repair tools and equipment in Vancouver WA"
 						fill
 						priority
