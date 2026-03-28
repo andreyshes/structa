@@ -160,6 +160,13 @@ export default function ReviewsPage() {
 						"@type": "LocalBusiness",
 						"@id": "https://norbilt.com",
 						name: "Norbilt Homes",
+						aggregateRating: {
+							"@type": "AggregateRating",
+							ratingValue: "5.0",
+							bestRating: "5",
+							worstRating: "1",
+							ratingCount: reviews.length,
+						},
 						review: reviews.map((r) => ({
 							"@type": "Review",
 							author: { "@type": "Person", name: r.name },
