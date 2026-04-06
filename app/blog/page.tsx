@@ -3,6 +3,51 @@ import { ArrowRight, Clock, MapPin } from "lucide-react";
 
 const posts = [
 	{
+		slug: "home-repairs-before-selling-clark-county-wa",
+		title: "Home Repairs Before Selling in Clark County WA: What's Worth It",
+		excerpt:
+			"Not every repair pays off before a home sale. A licensed Clark County contractor breaks down which fixes move the needle and which ones to skip before you list.",
+		category: "Selling Guide",
+		location: "Clark County, WA",
+		readTime: "6 min read",
+	},
+	{
+		slug: "signs-you-need-bathroom-remodel-vancouver-wa",
+		title: "7 Signs You Need a Bathroom Remodel in Vancouver, WA",
+		excerpt:
+			"Some are obvious, others easy to miss. A licensed contractor walks through the seven warning signs Vancouver homeowners shouldn't ignore in their bathroom.",
+		category: "Home Tips",
+		location: "Vancouver, WA",
+		readTime: "5 min read",
+	},
+	{
+		slug: "drywall-repair-cost-vancouver-wa",
+		title: "How Much Does Drywall Repair Cost in Vancouver, WA?",
+		excerpt:
+			"From nail holes to water damage — real pricing for drywall repair in Clark County, plus what drives the cost up and why texture matching matters.",
+		category: "Cost Guide",
+		location: "Vancouver, WA",
+		readTime: "5 min read",
+	},
+	{
+		slug: "flooring-installation-cost-camas-wa",
+		title: "Flooring Installation Cost in Camas, WA: LVP, Hardwood & Tile",
+		excerpt:
+			"Real price ranges for LVP, engineered hardwood, and tile flooring in Camas and Clark County — plus what hidden costs to watch out for.",
+		category: "Cost Guide",
+		location: "Camas, WA",
+		readTime: "5 min read",
+	},
+	{
+		slug: "licensed-contractor-vs-handyman-washington-state",
+		title: "Licensed Contractor vs. Handyman in Washington State",
+		excerpt:
+			"Washington State law limits unlicensed handymen to jobs under $500. Know the difference before you hire — and what's at stake for your home insurance and resale value.",
+		category: "Hiring Guide",
+		location: "Clark County, WA",
+		readTime: "6 min read",
+	},
+	{
 		slug: "bathroom-remodel-cost-ridgefield-wa",
 		title: "How Much Does a Bathroom Remodel Cost in Ridgefield, WA?",
 		excerpt:

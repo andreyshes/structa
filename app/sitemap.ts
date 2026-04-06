@@ -119,7 +119,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 	routes.push(
 		{
 			url: `${baseUrl}/blog`,
-			lastModified: new Date("2026-03-03"),
+			lastModified: new Date("2026-04-06"),
 			changeFrequency: "weekly",
 			priority: 0.8,
 		},
@@ -138,6 +138,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{
 			url: `${baseUrl}/blog/clark-county-home-repair-checklist`,
 			lastModified: new Date("2026-03-04"),
+			changeFrequency: "monthly",
+			priority: 0.7,
+		},
+		{
+			url: `${baseUrl}/blog/drywall-repair-cost-vancouver-wa`,
+			lastModified: new Date("2026-04-06"),
+			changeFrequency: "monthly",
+			priority: 0.7,
+		},
+		{
+			url: `${baseUrl}/blog/licensed-contractor-vs-handyman-washington-state`,
+			lastModified: new Date("2026-04-06"),
+			changeFrequency: "monthly",
+			priority: 0.7,
+		},
+		{
+			url: `${baseUrl}/blog/signs-you-need-bathroom-remodel-vancouver-wa`,
+			lastModified: new Date("2026-04-06"),
+			changeFrequency: "monthly",
+			priority: 0.7,
+		},
+		{
+			url: `${baseUrl}/blog/flooring-installation-cost-camas-wa`,
+			lastModified: new Date("2026-04-06"),
+			changeFrequency: "monthly",
+			priority: 0.7,
+		},
+		{
+			url: `${baseUrl}/blog/home-repairs-before-selling-clark-county-wa`,
+			lastModified: new Date("2026-04-06"),
 			changeFrequency: "monthly",
 			priority: 0.7,
 		},
