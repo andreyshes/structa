@@ -18,7 +18,7 @@
 .animate-delay-100    { animation-delay: 100ms; }
 .animate-delay-200    { animation-delay: 200ms; }
 .animate-delay-300    { animation-delay: 300ms; }
-.animate-marquee      { animation: marquee 28s linear infinite; will-change: transform; }
+.animate-marquee      { animation: marquee 90s linear infinite; will-change: transform; }
 .animate-marquee:hover { animation-play-state: paused; }
 
 @layer base {
