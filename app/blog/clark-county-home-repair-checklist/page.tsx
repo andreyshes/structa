@@ -161,7 +161,12 @@ export default function ClarkCountyChecklist() {
 				<article className="py-16 lg:py-24">
 					<div className="max-w-3xl mx-auto px-6 lg:px-8 space-y-4">
 
-						<div className="space-y-4 text-gray-700 text-lg leading-relaxed mb-12">
+						{/* CITATION CAPSULE */}
+						<div className="bg-[#FFB800]/10 border-l-4 border-[#FFB800] rounded-r-2xl p-6">
+							<p className="font-black text-[#1F2E2B] text-lg leading-relaxed" dangerouslySetInnerHTML={{ __html: `Small home repairs in Clark County cost an average of <strong>$100–$500 to fix early</strong>. Left unaddressed for 12–24 months, the same problems routinely grow to <strong>$2,000–$15,000</strong> in structural or water damage repairs.` }} />
+						</div>
+
+												<div className="space-y-4 text-gray-700 text-lg leading-relaxed mb-12">
 							<p>
 								Western Washington's climate is hard on homes. The wet winters,
 								mild humidity, and wood construction common across Clark County
@@ -227,7 +232,21 @@ export default function ClarkCountyChecklist() {
 							</p>
 						</div>
 
-						{/* NEARBY */}
+						{/* SERVICE LINK */}
+						<div className="bg-[#2D5A3D]/5 border border-[#2D5A3D]/20 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+							<div>
+								<p className="font-black text-[#1F2E2B] mb-1">Ready to knock out your repair list?</p>
+								<p className="text-gray-600 text-sm">Norbilt handles all the repairs on this checklist — licensed, insured, free estimates across Clark County.</p>
+							</div>
+							<Link
+								href="/services/home-repair"
+								className="inline-flex items-center gap-2 bg-[#2D5A3D] text-white px-6 py-3 rounded-xl font-black text-sm uppercase tracking-widest whitespace-nowrap hover:bg-[#1F2E2B] transition-colors"
+							>
+								View Service <ArrowRight className="w-4 h-4" />
+							</Link>
+						</div>
+
+												{/* NEARBY */}
 						<div className="bg-[#F8F6F3] rounded-2xl p-6">
 							<p className="text-sm font-black text-[#2D5A3D] uppercase tracking-widest mb-3">
 								We Serve All of Clark County

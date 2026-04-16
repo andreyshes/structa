@@ -80,7 +80,12 @@ export default function DrywallRepairCost() {
 				<article className="py-16 lg:py-24">
 					<div className="max-w-3xl mx-auto px-6 lg:px-8 space-y-12">
 
-						{/* INTRO */}
+						{/* CITATION CAPSULE */}
+						<div className="bg-[#FFB800]/10 border-l-4 border-[#FFB800] rounded-r-2xl p-6">
+							<p className="font-black text-[#1F2E2B] text-lg leading-relaxed" dangerouslySetInnerHTML={{ __html: `In Vancouver WA, drywall repair costs <strong>$75–$200 for a small hole</strong> and <strong>$800–$2,500+ for water damage</strong>. Texture matching is the step most DIY patches skip — and the reason they're still visible under paint.` }} />
+						</div>
+
+												{/* INTRO */}
 						<div className="space-y-6 text-gray-700 text-lg leading-relaxed">
 							<p>
 								Drywall damage is one of the most common repair requests we get
@@ -224,7 +229,21 @@ export default function DrywallRepairCost() {
 							</ul>
 						</div>
 
-						{/* NEARBY AREAS */}
+						{/* SERVICE LINK */}
+						<div className="bg-[#2D5A3D]/5 border border-[#2D5A3D]/20 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+							<div>
+								<p className="font-black text-[#1F2E2B] mb-1">Ready to get your drywall repaired?</p>
+								<p className="text-gray-600 text-sm">Licensed, insured drywall repair in Vancouver, WA — free written estimates before any work begins.</p>
+							</div>
+							<Link
+								href="/locations/vancouver/drywall-repair"
+								className="inline-flex items-center gap-2 bg-[#2D5A3D] text-white px-6 py-3 rounded-xl font-black text-sm uppercase tracking-widest whitespace-nowrap hover:bg-[#1F2E2B] transition-colors"
+							>
+								View Service <ArrowRight className="w-4 h-4" />
+							</Link>
+						</div>
+
+												{/* NEARBY AREAS */}
 						<div className="bg-[#F8F6F3] rounded-2xl p-6">
 							<p className="text-sm font-black text-[#2D5A3D] uppercase tracking-widest mb-3">
 								We Also Serve

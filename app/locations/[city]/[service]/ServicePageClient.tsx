@@ -80,8 +80,31 @@ export default function ServicePageClient({
 									name: f.q,
 									acceptedAnswer: { "@type": "Answer", text: f.a },
 								})),
-						},
-					],
+							},
+							{
+								"@type": "LocalBusiness",
+								name: "Norbilt",
+								url: `https://norbilt.com/locations/${citySlug}/${serviceSlug}`,
+								telephone: "+1-3602169920",
+								aggregateRating: {
+									"@type": "AggregateRating",
+									ratingValue: "5.0",
+									reviewCount: "27",
+									bestRating: "5",
+									worstRating: "1",
+								},
+							},
+							{
+								"@type": "ItemList",
+								name: `${service.title} Services`,
+								numberOfItems: service.features.length,
+								itemListElement: service.features.map((feature: string, index: number) => ({
+									"@type": "ListItem",
+									position: index + 1,
+									name: feature,
+								})),
+							},
+						],
 				}),
 				}}
 			/>

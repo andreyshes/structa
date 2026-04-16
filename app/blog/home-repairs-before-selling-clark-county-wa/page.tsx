@@ -80,7 +80,12 @@ export default function RepairsBeforeSelling() {
 				<article className="py-16 lg:py-24">
 					<div className="max-w-3xl mx-auto px-6 lg:px-8 space-y-12">
 
-						{/* INTRO */}
+						{/* CITATION CAPSULE */}
+						<div className="bg-[#FFB800]/10 border-l-4 border-[#FFB800] rounded-r-2xl p-6">
+							<p className="font-black text-[#1F2E2B] text-lg leading-relaxed" dangerouslySetInnerHTML={{ __html: `In the Clark County WA real estate market, <strong>targeted pre-sale repairs return $1.50–$3.00 for every $1.00 spent</strong>. Fresh paint, updated fixtures, and repaired drywall are consistently the highest-ROI fixes before listing.` }} />
+						</div>
+
+												{/* INTRO */}
 						<div className="space-y-6 text-gray-700 text-lg leading-relaxed">
 							<p>
 								We work with Vancouver and Clark County homeowners every year
@@ -207,7 +212,21 @@ export default function RepairsBeforeSelling() {
 							</p>
 						</div>
 
-						{/* NEARBY AREAS */}
+						{/* SERVICE LINK */}
+						<div className="bg-[#2D5A3D]/5 border border-[#2D5A3D]/20 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+							<div>
+								<p className="font-black text-[#1F2E2B] mb-1">Ready to prep your home for sale?</p>
+								<p className="text-gray-600 text-sm">We prioritize the fixes that move the needle and give you a written estimate before starting.</p>
+							</div>
+							<Link
+								href="/services/home-repair"
+								className="inline-flex items-center gap-2 bg-[#2D5A3D] text-white px-6 py-3 rounded-xl font-black text-sm uppercase tracking-widest whitespace-nowrap hover:bg-[#1F2E2B] transition-colors"
+							>
+								View Service <ArrowRight className="w-4 h-4" />
+							</Link>
+						</div>
+
+												{/* NEARBY AREAS */}
 						<div className="bg-[#F8F6F3] rounded-2xl p-6">
 							<p className="text-sm font-black text-[#2D5A3D] uppercase tracking-widest mb-3">
 								Pre-Sale Repairs In

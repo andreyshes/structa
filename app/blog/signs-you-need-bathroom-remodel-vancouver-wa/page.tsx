@@ -80,7 +80,12 @@ export default function BathroomRemodel() {
 				<article className="py-16 lg:py-24">
 					<div className="max-w-3xl mx-auto px-6 lg:px-8 space-y-12">
 
-						{/* INTRO */}
+						{/* CITATION CAPSULE */}
+						<div className="bg-[#FFB800]/10 border-l-4 border-[#FFB800] rounded-r-2xl p-6">
+							<p className="font-black text-[#1F2E2B] text-lg leading-relaxed" dangerouslySetInnerHTML={{ __html: `In Clark County WA, <strong>most bathroom water damage starts with failed caulk or grout</strong> — a $100–$250 fix when caught early. Ignored, the same problem routinely leads to <strong>$3,000–$10,000</strong> in subfloor and wall repairs.` }} />
+						</div>
+
+												{/* INTRO */}
 						<div className="space-y-6 text-gray-700 text-lg leading-relaxed">
 							<p>
 								Vancouver homeowners often put off bathroom updates because they
@@ -197,7 +202,21 @@ export default function BathroomRemodel() {
 							</ul>
 						</div>
 
-						{/* NEARBY AREAS */}
+						{/* SERVICE LINK */}
+						<div className="bg-[#2D5A3D]/5 border border-[#2D5A3D]/20 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+							<div>
+								<p className="font-black text-[#1F2E2B] mb-1">Ready to schedule a bathroom assessment?</p>
+								<p className="text-gray-600 text-sm">We handle kitchen & bathroom updates in Vancouver, WA — free estimates, no obligation.</p>
+							</div>
+							<Link
+								href="/locations/vancouver/kitchen-bath"
+								className="inline-flex items-center gap-2 bg-[#2D5A3D] text-white px-6 py-3 rounded-xl font-black text-sm uppercase tracking-widest whitespace-nowrap hover:bg-[#1F2E2B] transition-colors"
+							>
+								View Service <ArrowRight className="w-4 h-4" />
+							</Link>
+						</div>
+
+												{/* NEARBY AREAS */}
 						<div className="bg-[#F8F6F3] rounded-2xl p-6">
 							<p className="text-sm font-black text-[#2D5A3D] uppercase tracking-widest mb-3">
 								Bathroom Remodeling In

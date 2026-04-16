@@ -93,6 +93,13 @@ export default function HomePage() {
 							opens: "08:00",
 							closes: "17:00",
 						},
+						aggregateRating: {
+							"@type": "AggregateRating",
+							ratingValue: "5.0",
+							reviewCount: "27",
+							bestRating: "5",
+							worstRating: "1",
+						},
 					}),
 				}}
 			/>

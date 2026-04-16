@@ -90,6 +90,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 	// 6. Reviews, Pricing, Portfolio, FAQ pages
 	routes.push(
 		{
+			url: `${baseUrl}/calculator`,
+			lastModified: new Date("2026-04-15"),
+			changeFrequency: "monthly",
+			priority: 0.9,
+		},
+		{
 			url: `${baseUrl}/faq`,
 			lastModified: new Date("2026-03-04"),
 			changeFrequency: "monthly",
@@ -122,6 +128,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			lastModified: new Date("2026-04-06"),
 			changeFrequency: "weekly",
 			priority: 0.8,
+		},
+		{
+			url: `${baseUrl}/blog/bathroom-remodel-cost-clark-county-wa`,
+			lastModified: new Date("2026-04-15"),
+			changeFrequency: "monthly",
+			priority: 0.9,
 		},
 		{
 			url: `${baseUrl}/blog/bathroom-remodel-cost-ridgefield-wa`,

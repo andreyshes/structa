@@ -79,7 +79,12 @@ export default function BattleGroundHandyman() {
 				<article className="py-16 lg:py-24">
 					<div className="max-w-3xl mx-auto px-6 lg:px-8 space-y-12">
 
-						<div className="space-y-6 text-gray-700 text-lg leading-relaxed">
+						{/* CITATION CAPSULE */}
+						<div className="bg-[#FFB800]/10 border-l-4 border-[#FFB800] rounded-r-2xl p-6">
+							<p className="font-black text-[#1F2E2B] text-lg leading-relaxed" dangerouslySetInnerHTML={{ __html: `Handyman services in Battle Ground WA typically run <strong>$75–$150/hour for unlicensed work</strong>. A licensed general contractor — who can legally handle any job size in Washington State — runs <strong>$150–$250/hour</strong> and carries the insurance that protects your home.` }} />
+						</div>
+
+												<div className="space-y-6 text-gray-700 text-lg leading-relaxed">
 							<p>
 								Battle Ground is one of the faster-growing areas in Clark
 								County, and with that growth comes a lot of handyman demand —
@@ -236,7 +241,21 @@ export default function BattleGroundHandyman() {
 							</div>
 						</div>
 
-						{/* NEARBY */}
+						{/* SERVICE LINK */}
+						<div className="bg-[#2D5A3D]/5 border border-[#2D5A3D]/20 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+							<div>
+								<p className="font-black text-[#1F2E2B] mb-1">Looking for licensed handyman service in Battle Ground?</p>
+								<p className="text-gray-600 text-sm">Norbilt provides licensed handyman services in Battle Ground, WA — free estimates, flat-rate pricing.</p>
+							</div>
+							<Link
+								href="/locations/battle-ground/handyman"
+								className="inline-flex items-center gap-2 bg-[#2D5A3D] text-white px-6 py-3 rounded-xl font-black text-sm uppercase tracking-widest whitespace-nowrap hover:bg-[#1F2E2B] transition-colors"
+							>
+								View Service <ArrowRight className="w-4 h-4" />
+							</Link>
+						</div>
+
+												{/* NEARBY */}
 						<div className="bg-[#F8F6F3] rounded-2xl p-6">
 							<p className="text-sm font-black text-[#2D5A3D] uppercase tracking-widest mb-3">
 								We Also Serve Nearby Areas

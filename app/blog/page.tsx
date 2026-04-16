@@ -3,6 +3,15 @@ import { ArrowRight, Clock, MapPin } from "lucide-react";
 
 const posts = [
 	{
+		slug: "bathroom-remodel-cost-clark-county-wa",
+		title: "Bathroom Remodel Cost in Clark County WA: The Complete 2026 Guide",
+		excerpt:
+			"Real price ranges for every scope — from an $800 cosmetic refresh to a $35,000 gut remodel. Cost tables, component-level pricing, city breakdowns, and what drives the price up.",
+		category: "Cost Guide",
+		location: "Clark County, WA",
+		readTime: "10 min read",
+	},
+	{
 		slug: "home-repairs-before-selling-clark-county-wa",
 		title: "Home Repairs Before Selling in Clark County WA: What's Worth It",
 		excerpt:

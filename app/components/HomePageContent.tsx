@@ -165,7 +165,7 @@ export default function HomePageContent() {
 		},
 		{
 			quote:
-				"NorBilt did a great job installing doors and windows in my Camas home. Andrey was professional, detail-oriented, and made sure everything was done right. The quality of work really shows — highly recommend!",
+				"Norbilt did a great job installing doors and windows in my Camas home. Andrey was professional, detail-oriented, and made sure everything was done right. The quality of work really shows — highly recommend!",
 			name: "Joey D.",
 			location: "Camas, WA",
 			service: "Doors & Windows",
@@ -799,18 +799,18 @@ export default function HomePageContent() {
 					</div>
 					<div className="grid md:grid-cols-3 gap-8">
 						<Link
-							href="/blog/bathroom-remodel-cost-ridgefield-wa"
-							className="group bg-[#F8F6F3] rounded-3xl p-8 border border-gray-100 hover:border-[#FFB800] hover:shadow-lg transition-all"
+							href="/blog/bathroom-remodel-cost-clark-county-wa"
+							className="group bg-[#1F2E2B] rounded-3xl p-8 border border-[#2D5A3D] hover:border-[#FFB800] hover:shadow-lg transition-all"
 						>
-							<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-4">
-								Cost Guide
+							<p className="text-[10px] font-black uppercase tracking-widest text-[#FFB800] mb-4">
+								Complete Cost Guide
 							</p>
-							<h3 className="text-lg font-black text-[#1F2E2B] leading-snug mb-3 group-hover:text-[#2D5A3D] transition-colors">
-								Bathroom Remodel Cost in Ridgefield WA
+							<h3 className="text-lg font-black text-white leading-snug mb-3 group-hover:text-[#FFB800] transition-colors">
+								Bathroom Remodel Cost in Clark County WA (2026)
 							</h3>
-							<p className="text-sm text-gray-500 leading-relaxed">
-								Real price ranges for tile, vanity, and fixtures from a licensed
-								Clark County contractor.
+							<p className="text-sm text-[#A7C4B5] leading-relaxed">
+								Real price ranges for every scope — from an $800 refresh to a
+								$35,000 gut remodel. Cost tables, city breakdowns, red flags.
 							</p>
 							<p className="mt-6 text-[10px] font-black uppercase tracking-widest text-[#FFB800]">
 								Read Article →
