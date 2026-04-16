@@ -46,9 +46,8 @@ const SIZE_MULTIPLIER: Record<string, { mult: number; label: string }> = {
 };
 
 function fmt(n: number) {
-	return "$" + Math.round(n / 100) * 100 >= 1000
-		? "$" + (Math.round(n / 100) * 100).toLocaleString()
-		: "$" + Math.round(n / 100) * 100;
+	const rounded = Math.round(n / 100) * 100;
+	return "$" + rounded.toLocaleString();
 }
 
 // ── Component ─────────────────────────────────────────────────────────────────
