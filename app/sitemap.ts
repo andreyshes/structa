@@ -130,6 +130,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			priority: 0.8,
 		},
 		{
+			url: `${baseUrl}/blog/bathtub-to-shower-conversion-cost-clark-county-wa`,
+			lastModified: new Date("2026-04-20"),
+			changeFrequency: "monthly",
+			priority: 0.8,
+		},
+		{
 			url: `${baseUrl}/blog/bathroom-remodel-cost-clark-county-wa`,
 			lastModified: new Date("2026-04-15"),
 			changeFrequency: "monthly",

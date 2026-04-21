@@ -3,6 +3,15 @@ import { ArrowRight, Clock, MapPin } from "lucide-react";
 
 const posts = [
 	{
+		slug: "bathtub-to-shower-conversion-cost-clark-county-wa",
+		title: "Bathtub to Shower Conversion Cost in Clark County WA (2026)",
+		excerpt:
+			"Real price ranges for tub-to-shower conversions in Vancouver, Camas, and Ridgefield — from a $1,500 prefab insert to a $25,000 custom walk-in. What drives the cost and what older homes hide.",
+		category: "Cost Guide",
+		location: "Clark County, WA",
+		readTime: "7 min read",
+	},
+	{
 		slug: "bathroom-remodel-cost-clark-county-wa",
 		title: "Bathroom Remodel Cost in Clark County WA: The Complete 2026 Guide",
 		excerpt:
