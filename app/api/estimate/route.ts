@@ -16,6 +16,67 @@ export async function POST(req: Request) {
 
 		const prompt = `You are an expert estimating assistant for Norbilt, a licensed and bonded general contractor in Vancouver, WA (Clark County). You specialize in interior remodeling, finish carpentry, drywall, kitchen and bath updates, door/window installation, flooring, lighting, and general home repair.
 
+## 2026 Clark County / Vancouver WA Market Rate Reference
+
+Use these verified local rates when building your estimate:
+
+**Labor**
+- Licensed contractor labor: $65–$95/hr (Norbilt rate; unlicensed handymen run $35–$55/hr but can't pull permits)
+- Tile setter: $8–$18/sq ft labor only
+- Flooring installer: $3–$6/sq ft labor (LVP/hardwood); $6–$12/sq ft (tile)
+- Electrician (subcontracted): $85–$120/hr
+- Plumber (subcontracted): $90–$130/hr
+
+**Bathroom Remodel**
+- Cosmetic refresh (paint, hardware, light fixtures, mirror): $800–$2,500
+- Mid-range update (vanity, toilet, tub surround, flooring): $5,000–$12,000
+- Full gut remodel (everything new, layout unchanged): $15,000–$28,000
+- Custom / layout change / high-end finishes: $28,000–$50,000+
+- Tub-to-shower conversion: $1,500–$25,000 depending on scope (prefab insert vs. custom tile walk-in)
+- Walk-in shower tile (labor + materials): $4,500–$12,000
+
+**Kitchen Remodel**
+- Cosmetic (paint, hardware, backsplash): $1,500–$4,000
+- Mid-range (cabinets, countertops, sink, appliances): $15,000–$35,000
+- Full custom remodel: $40,000–$80,000+
+- Cabinet refacing only: $3,000–$8,000
+- Countertop replacement (laminate): $1,200–$2,500; (quartz/granite): $3,500–$7,000
+
+**Drywall**
+- Small hole repair (under 6 in): $150–$300
+- Medium patch (6–12 in): $250–$500
+- Large section (per 4×8 sheet area): $400–$800
+- Full room drywall + texture: $1.50–$3.50/sq ft labor+materials
+- Texture matching (knockdown/orange peel): add $0.50–$1.00/sq ft
+
+**Flooring**
+- LVP (luxury vinyl plank) installed: $4–$8/sq ft total
+- Engineered hardwood installed: $7–$14/sq ft total
+- Tile installed: $10–$22/sq ft total
+- Subfloor repair/leveling: $3–$8/sq ft additional
+- Demo/removal of existing flooring: $1–$2/sq ft
+
+**Doors & Windows**
+- Interior door (prehung, install): $300–$600 per door
+- Exterior door (install only): $500–$1,000
+- Window replacement (standard double-hung): $400–$900 per window installed
+- Sliding glass door: $1,500–$3,500 installed
+
+**Other Services**
+- Lighting fixture swap (per fixture): $150–$350
+- Recessed light install (new, per can): $250–$450
+- Deck repair: $30–$60/sq ft
+- Fence repair: $25–$50/lin ft
+- Clark County building permit: $150–$800 depending on scope (required for structural, electrical, plumbing)
+
+**Key Cost Drivers for Clark County**
+- Pre-1995 homes often have asbestos texture (adds $500–$2,000 for abatement if disturbed)
+- Lead paint common in pre-1978 homes
+- Vancouver's wet climate means moisture damage is common behind tile; budget 10–20% contingency
+- Material costs up ~8% since 2024 due to tariffs on imported goods
+
+---
+
 A homeowner in ${city || "Clark County, WA"} needs an estimate:
 
 SERVICE: ${service}
@@ -23,7 +84,7 @@ PROJECT DETAILS: ${JSON.stringify(details, null, 2)}
 DESIRED TIMELINE: ${timeline || "Flexible"}
 ADDITIONAL NOTES: ${notes || "None"}
 
-Provide a realistic, professional estimate based on 2025 contractor labor rates and material costs in Vancouver, WA / Clark County. Norbilt is a quality (not budget, not luxury) contractor — account for skilled labor, proper materials, and professional finish.
+Provide a realistic, professional estimate based on the 2026 contractor labor rates and material costs above for Vancouver, WA / Clark County. Norbilt is a quality (not budget, not luxury) contractor — account for skilled labor, proper materials, and professional finish. Use the rate sheet above as your primary reference; adjust for project-specific scope.
 
 Respond with ONLY valid JSON in this exact format, no extra text:
 {
@@ -48,7 +109,7 @@ Respond with ONLY valid JSON in this exact format, no extra text:
 }`;
 
 		const message = await client.messages.create({
-			model: "claude-haiku-4-5-20251001",
+			model: "claude-sonnet-4-6",
 			max_tokens: 1024,
 			messages: [{ role: "user", content: prompt }],
 		});
