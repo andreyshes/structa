@@ -4,11 +4,24 @@ export interface CityData {
 	neighborhoods: string[];
 }
 
+export interface ServiceType {
+	name: string;
+	description: string;
+	priceRange: string;
+}
+
+export interface ServiceFaq {
+	q: string;
+	a: string;
+}
+
 export interface ServiceData {
 	title: string;
 	description: string;
 	process: string;
 	features: string[];
+	types?: ServiceType[];
+	faqs?: ServiceFaq[];
 }
 
 export const locationsData: Record<string, CityData> = {
@@ -118,6 +131,60 @@ export const servicesData: Record<string, ServiceData> = {
 			"Stress Crack Repair",
 			"Water Damage Fixes",
 		],
+		types: [
+			{
+				name: "Small Hole Repair",
+				description: "Doorknob punch-throughs, anchor holes, and minor wall damage under 6 inches. Patched, textured, and primed in a single visit.",
+				priceRange: "$150–$300",
+			},
+			{
+				name: "Medium Patch",
+				description: "Holes 6–12 inches from plumbing access, fixture removal, or impact damage. Cut back to studs, backed, mudded, and texture-matched.",
+				priceRange: "$250–$500",
+			},
+			{
+				name: "Water Damage Repair",
+				description: "Moisture-damaged or soft drywall from leaks, condensation, or flooding. We remove the compromised material, verify the source is resolved, and restore the surface.",
+				priceRange: "$400–$1,200",
+			},
+			{
+				name: "Texture Matching",
+				description: "Orange peel, knockdown, skip trowel, smooth, or popcorn — we match your existing finish so repairs blend invisibly after paint.",
+				priceRange: "$200–$600",
+			},
+			{
+				name: "Popcorn Ceiling Removal",
+				description: "Scrape, skim, and retexture popcorn ceilings to a smooth or light knockdown finish. Dramatically modernizes older Clark County homes.",
+				priceRange: "$500–$1,500",
+			},
+			{
+				name: "Full Room Drywall",
+				description: "New drywall hang, tape, mud, sand, and texture for a complete room. Common after renovations, additions, or major water damage events.",
+				priceRange: "$1,500–$4,000",
+			},
+		],
+		faqs: [
+			{
+				q: "Can you match my existing wall texture?",
+				a: "Yes. We match orange peel, knockdown, skip trowel, smooth, and most popcorn textures. Before starting we test on a scrap piece to confirm the match before touching your wall.",
+			},
+			{
+				q: "Do I need to repaint the whole wall after a drywall patch?",
+				a: "Not always. We prime the repair to minimize flash. Whether a spot touch-up blends depends on your existing paint sheen and age. We will tell you honestly before we start.",
+			},
+			{
+				q: "Can you repair water-damaged drywall?",
+				a: "Yes. We remove the compromised material, confirm the moisture source is resolved, and restore the wall with new drywall and matched texture. We do not patch over wet or soft material.",
+			},
+			{
+				q: "How long does drywall repair take to dry before painting?",
+				a: "Joint compound cures in 24–48 hours depending on Clark County humidity. We prime before we leave so the surface is paint-ready the next day in most conditions.",
+			},
+			{
+				q: "Is drywall repair covered under your warranty?",
+				a: "Yes. All Norbilt drywall work is covered by our 1-year workmanship warranty. If a patch cracks, lifts, or the texture mismatches after settling, we come back and fix it at no charge.",
+			},
+		],
 	},
 	"finish-carpentry": {
 		title: "Finish Carpentry",
@@ -169,6 +236,64 @@ export const servicesData: Record<string, ServiceData> = {
 			"Faucet Installation",
 			"Caulking & Grout",
 			"Backsplash Refreshes",
+		],
+		types: [
+			{
+				name: "Cosmetic Refresh",
+				description: "New hardware, faucets, light fixtures, mirror, and fresh caulk. Same layout, dramatically updated look. Minimal disruption — most done in a single day.",
+				priceRange: "$800–$2,500",
+			},
+			{
+				name: "Mid-Range Update",
+				description: "New vanity, toilet, tub surround, tile flooring, and fixtures. Keeps the existing layout but replaces all visible surfaces for a near-new result.",
+				priceRange: "$5,000–$12,000",
+			},
+			{
+				name: "Full Gut Remodel",
+				description: "Everything stripped to the studs and rebuilt — new tile, plumbing fixtures, vanity, lighting, exhaust, and flooring. Layout stays the same; everything else is new.",
+				priceRange: "$15,000–$28,000",
+			},
+			{
+				name: "Tub-to-Shower Conversion",
+				description: "Remove the existing tub and install a walk-in shower — prefab insert or custom tile. Very popular with Clark County homeowners aging in place or maximizing space.",
+				priceRange: "$1,500–$8,000",
+			},
+			{
+				name: "Kitchen Cabinet & Countertop Update",
+				description: "New hardware, cabinet doors, or countertops without replacing the whole kitchen. Quartz, laminate, or butcher block — we measure, order, and install.",
+				priceRange: "$1,200–$7,000",
+			},
+			{
+				name: "Backsplash Installation",
+				description: "Tile, subway, peel-and-stick, or natural stone backsplash installed cleanly behind your range or sink. One of the highest visual-impact updates per dollar spent.",
+				priceRange: "$400–$1,800",
+			},
+		],
+		faqs: [
+			{
+				q: "Do I need a permit for a kitchen or bathroom update in Clark County?",
+				a: "Minor cosmetic updates — hardware, fixtures, caulk, tile — do not require a permit. Permits are required when moving plumbing, electrical, or walls. We pull permits when needed and know Clark County's requirements.",
+			},
+			{
+				q: "What is the difference between a cosmetic update and a full remodel?",
+				a: "A cosmetic update refreshes surfaces and fixtures within the existing layout — typically $800–$5,000. A full remodel strips to the studs and rebuilds everything — $15,000–$28,000+. We help you identify which scope makes sense for your goals and budget.",
+			},
+			{
+				q: "Can you match my existing tile or grout?",
+				a: "We color-match grout before starting any repair or regrout project. For tile, an exact match depends on whether the same tile is still available. We bring samples to the walkthrough so you can confirm the match before we order.",
+			},
+			{
+				q: "How long does a tub-to-shower conversion take?",
+				a: "A prefab insert conversion takes 1–2 days. A custom tile walk-in shower takes 3–5 days including tile cure time. We will confirm the timeline during your free estimate based on the specific scope.",
+			},
+			{
+				q: "Can we do the kitchen and bathroom at the same time?",
+				a: "Yes, and it often saves money on mobilization costs. We schedule both together when possible. The kitchen typically stays usable throughout — bathroom access is limited only during tile cure days.",
+			},
+			{
+				q: "Is your kitchen and bathroom work covered by a warranty?",
+				a: "Yes. All Norbilt kitchen and bathroom work is backed by our 1-year workmanship warranty. If caulk fails, tile lifts, or any installed fixture has a workmanship issue, we return and fix it at no charge within the warranty period.",
+			},
 		],
 	},
 };

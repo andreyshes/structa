@@ -13,10 +13,11 @@ import {
 	Paintbrush,
 	DoorOpen,
 	Lightbulb,
-	Star,
 	MapPin,
 	Clock,
 	ChevronDown,
+	BadgeCheck,
+	DollarSign,
 } from "lucide-react";
 import Link from "next/link";
 import { locationsData } from "../../data";
@@ -40,8 +41,7 @@ export default function ServicePageClient({
 	const Icon = iconMap[serviceSlug] || Hammer;
 	const cityNameShort = city.name.split(",")[0];
 
-	// Simplified FAQ for maximum Readability score
-	const faqs = [
+	const genericFaqs = [
 		{
 			q: `How long does ${service.title} take in ${cityNameShort}?`,
 			a: `Most ${cityNameShort} projects finish in 1 to 2 days. We work fast and keep our workspace clean to minimize home disruption.`,
@@ -51,10 +51,11 @@ export default function ServicePageClient({
 			a: `Yes. Norbilt is a licensed, bonded, and insured general contractor. We serve homeowners in ${cityNameShort} and Clark County.`,
 		},
 		{
-			q: `Do you provide free estimates for ${service.title}?`,
+			q: `Do you provide free estimates for ${service.title} in ${cityNameShort}?`,
 			a: `Yes. Contact us for a walkthrough. We provide clear, honest pricing for all ${cityNameShort} residents.`,
 		},
 	];
+	const faqs = service.faqs ? [...service.faqs, ...genericFaqs] : genericFaqs;
 
 	return (
 		<div className="bg-[#FDFCFB] min-h-screen">
@@ -162,9 +163,9 @@ export default function ServicePageClient({
 						</p>
 					</div>
 					<div>
-						<p className="text-3xl font-black">FAST</p>
+						<p className="text-3xl font-black">1-YR</p>
 						<p className="text-[10px] uppercase font-black text-gray-400">
-							Project Completion
+							Workmanship Warranty
 						</p>
 					</div>
 					<div>
@@ -227,6 +228,9 @@ export default function ServicePageClient({
 								<MapPin className="w-4 h-4 text-[#FFB800]" /> {cityNameShort},
 								WA
 							</div>
+							<div className="flex items-center gap-3">
+								<BadgeCheck className="w-4 h-4 text-[#FFB800]" /> 1-Year Workmanship Warranty
+							</div>
 						</div>
 						<Link
 							href="tel:+13602169920"
@@ -237,6 +241,39 @@ export default function ServicePageClient({
 					</div>
 				</div>
 			</section>
+
+
+			{/* TYPES OF SERVICE */}
+			{service.types && service.types.length > 0 && (
+				<section className="py-24 bg-[#1F2E2B] text-white">
+					<div className="max-w-7xl mx-auto px-6">
+						<h2 className="text-4xl font-black uppercase tracking-tighter mb-4">
+							Types of {service.title}
+						</h2>
+						<p className="text-white/60 font-medium mb-12 max-w-2xl">
+							Every {service.title.toLowerCase()} project is different. Here's how we scope and price the most common types we handle in {cityNameShort}.
+						</p>
+						<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+							{service.types.map((type: any, i: number) => (
+								<div key={i} className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-[#FFB800] transition-colors group">
+									<div className="flex items-center justify-between mb-4">
+										<h3 className="text-lg font-black uppercase tracking-tight group-hover:text-[#FFB800] transition-colors">
+											{type.name}
+										</h3>
+										<span className="flex items-center gap-1 text-[#FFB800] font-black text-sm whitespace-nowrap">
+											<DollarSign className="w-3 h-3" />{type.priceRange}
+										</span>
+									</div>
+									<p className="text-white/60 text-sm leading-relaxed">{type.description}</p>
+								</div>
+							))}
+						</div>
+						<p className="mt-10 text-white/40 text-sm">
+							All prices are estimates for {cityNameShort}, WA based on 2026 Clark County market rates. Final pricing depends on site conditions and material selections. Free written estimate before any work begins.
+						</p>
+					</div>
+				</section>
+			)}
 
 			{/* CITY CONTEXT + NEARBY AREAS */}
 		<section className="py-16 bg-white border-t border-gray-100">
