@@ -3,6 +3,15 @@ import { ArrowRight, Clock, MapPin } from "lucide-react";
 
 const posts = [
 	{
+		slug: "kitchen-remodel-cost-clark-county-wa",
+		title: "Kitchen Remodel Cost in Clark County WA: 2026 Guide",
+		excerpt:
+			"From a $1,500 cosmetic refresh to a $80,000 custom build — real 2026 price ranges for kitchen remodels in Vancouver, Camas, and Ridgefield. Component pricing, city breakdowns, and what drives the cost up.",
+		category: "Cost Guide",
+		location: "Clark County, WA",
+		readTime: "9 min read",
+	},
+	{
 		slug: "bathtub-to-shower-conversion-cost-clark-county-wa",
 		title: "Bathtub to Shower Conversion Cost in Clark County WA (2026)",
 		excerpt:
