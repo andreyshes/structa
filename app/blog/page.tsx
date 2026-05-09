@@ -3,6 +3,15 @@ import { ArrowRight, Clock, MapPin } from "lucide-react";
 
 const posts = [
 	{
+		slug: "flooring-installation-cost-vancouver-wa",
+		title: "Flooring Installation Cost in Vancouver WA & Clark County (2026)",
+		excerpt:
+			"LVP, engineered hardwood, tile, or laminate — real 2026 installed prices for every floor type in Vancouver WA and Clark County. What the subfloor adds, city breakdowns, and how to pick the right floor for your home.",
+		category: "Cost Guide",
+		location: "Vancouver, WA",
+		readTime: "8 min read",
+	},
+	{
 		slug: "kitchen-remodel-cost-clark-county-wa",
 		title: "Kitchen Remodel Cost in Clark County WA: 2026 Guide",
 		excerpt:

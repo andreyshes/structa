@@ -130,6 +130,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			priority: 0.8,
 		},
 		{
+			url: `${baseUrl}/blog/flooring-installation-cost-vancouver-wa`,
+			lastModified: new Date("2026-05-09"),
+			changeFrequency: "monthly",
+			priority: 0.9,
+		},
+		{
 			url: `${baseUrl}/blog/kitchen-remodel-cost-clark-county-wa`,
 			lastModified: new Date("2026-04-28"),
 			changeFrequency: "monthly",
