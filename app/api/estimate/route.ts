@@ -50,7 +50,8 @@ Use these verified local rates as your primary reference for every estimate.
 - Baseboard install (paint-grade): $2–$4/lin ft labor+materials
 - Crown molding install: $5–$10/lin ft labor+materials
 - Door & window casing (per opening): $150–$350
-- Wainscoting (labor + materials): $8–$15/sq ft
+- Wainscoting — MDF/paint-grade panels (labor + materials): $6–$10/sq ft
+- Wainscoting — tile (labor + materials): $10–$18/sq ft
 - Built-in shelving or trim work: $75–$150/lin ft depending on complexity
 - Stair railing repair or replace: $300–$800 per section
 
@@ -81,7 +82,7 @@ Use these verified local rates as your primary reference for every estimate.
 - Wall painting (labor only): $2–$4/sq ft
 - Ceiling painting (labor only): $1–$2/sq ft
 - Trim/baseboard painting (labor only): $1–$2/lin ft
-- Full room paint (labor + materials, avg 200 sq ft): $600–$1,400
+- Full room paint (labor + materials, avg 200 sq ft): $800–$1,800
 - Cabinet painting (labor + materials): $1,500–$4,000 for full kitchen
 
 **Flooring**
@@ -97,8 +98,10 @@ Use these verified local rates as your primary reference for every estimate.
 
 **Doors & Windows**
 - Interior door (prehung, install): $300–$600 per door
-- Exterior door (install only): $500–$1,000
-- Window replacement (standard double-hung, install only): $400–$900 per window
+- Exterior door (door + install, standard): $800–$1,500
+- Exterior door (door + install, fiberglass/steel entry): $1,200–$2,500
+- Window replacement (window + install, standard double-hung): $600–$1,400 per window
+- Window replacement (install only, customer-supplied window): $250–$500 per window
 - Sliding glass door: $1,500–$3,500 installed
 - Barn door (hardware + install): $600–$1,500
 
