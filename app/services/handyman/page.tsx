@@ -101,7 +101,7 @@ export default function HandymanPage() {
 								href="/contact"
 								className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-2xl"
 							>
-								Request A Quote
+								Book a Handyman
 								<ArrowRight className="w-5 h-5" />
 							</Link>
 							<a
@@ -434,7 +434,7 @@ export default function HandymanPage() {
 									href="/contact"
 									className="px-12 py-6 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-xl"
 								>
-									Free Estimate
+									Book a Handyman
 								</Link>
 								<Link
 									href="tel:+13602169920"

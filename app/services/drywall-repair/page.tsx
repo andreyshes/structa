@@ -187,7 +187,7 @@ export default function DrywallRepairPage() {
 								href="/contact"
 								className="inline-flex items-center gap-3 px-10 py-5 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-2xl"
 							>
-								Get Free Estimate
+								Fix My Walls
 								<ArrowRight className="w-5 h-5" />
 							</Link>
 						</div>
@@ -493,7 +493,7 @@ export default function DrywallRepairPage() {
 									href="/contact"
 									className="px-12 py-6 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-xl"
 								>
-									Get A Quote
+									Fix My Walls
 								</Link>
 								<Link
 									href="tel:+13602169920"
