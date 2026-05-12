@@ -9,6 +9,7 @@ type ServiceCardProps = {
 	title: string;
 	description: string;
 	href?: string;
+	cta?: string;
 	index?: number;
 };
 
@@ -17,6 +18,7 @@ export default function ServiceCard({
 	title,
 	description,
 	href,
+	cta,
 	index = 0,
 }: ServiceCardProps) {
 	const cardClass =
@@ -39,9 +41,9 @@ export default function ServiceCard({
 					{description}
 				</p>
 
-				{href && (
-					<span className="inline-flex items-center gap-1 mt-4 text-xs font-black uppercase tracking-widest text-[#2D5A3D] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-						Learn More →
+				{cta && (
+					<span className="inline-flex items-center gap-2 mt-6 px-5 py-2.5 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl text-xs group-hover:scale-105 transition-transform duration-300">
+						{cta} →
 					</span>
 				)}
 			</div>
