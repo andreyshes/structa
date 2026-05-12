@@ -271,6 +271,14 @@ export default function ServicePageClient({
 						<p className="mt-10 text-white/40 text-sm">
 							All prices are estimates for {cityNameShort}, WA based on 2026 Clark County market rates. Final pricing depends on site conditions and material selections. Free written estimate before any work begins.
 						</p>
+						<div className="mt-10 flex flex-col sm:flex-row gap-4">
+							<Link href="/contact" className="inline-flex items-center gap-3 px-8 py-4 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-lg text-sm">
+								Get Free Estimate <ArrowRight className="w-4 h-4" />
+							</Link>
+							<Link href="tel:+13602169920" className="inline-flex items-center gap-3 px-8 py-4 border-2 border-white/20 text-white font-black uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all text-sm">
+								<Phone className="w-4 h-4" /> 360.216.9920
+							</Link>
+						</div>
 					</div>
 				</section>
 			)}
@@ -346,6 +354,26 @@ export default function ServicePageClient({
 								)}
 							</div>
 						))}
+					</div>
+				</div>
+			</section>
+
+			{/* BOTTOM CTA */}
+			<section className="py-16 bg-[#1F2E2B] text-white">
+				<div className="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+					<div>
+						<p className="text-[#FFB800] font-black uppercase tracking-widest text-xs mb-2">Ready to Get Started?</p>
+						<h2 className="text-2xl font-black uppercase tracking-tight">
+							{service.title} in {cityNameShort} — Free Estimate, 1-Year Warranty.
+						</h2>
+					</div>
+					<div className="flex flex-col sm:flex-row gap-4 shrink-0">
+						<Link href="/contact" className="inline-flex items-center gap-3 px-8 py-4 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all text-sm">
+							Free Estimate <ArrowRight className="w-4 h-4" />
+						</Link>
+						<Link href="tel:+13602169920" className="inline-flex items-center gap-3 px-8 py-4 border-2 border-white/20 text-white font-black uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all text-sm">
+							<Phone className="w-4 h-4" /> 360.216.9920
+						</Link>
 					</div>
 				</div>
 			</section>

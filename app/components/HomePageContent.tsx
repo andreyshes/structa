@@ -644,6 +644,23 @@ export default function HomePageContent() {
 				</div>
 			</section>
 
+			{/* CTA STRIP */}
+			<section className="py-12 bg-[#FFB800]">
+				<div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+					<p className="text-[#1F2E2B] font-black text-xl uppercase tracking-tight text-center md:text-left">
+						Licensed. Insured. 1-Year Warranty. Free Estimate.
+					</p>
+					<div className="flex flex-col sm:flex-row gap-4 shrink-0">
+						<Link href="/contact" className="inline-flex items-center gap-3 px-8 py-4 bg-[#1F2E2B] text-white font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all text-sm">
+							Get Free Estimate <ArrowRight className="w-4 h-4" />
+						</Link>
+						<Link href="tel:+13602169920" className="inline-flex items-center gap-3 px-8 py-4 border-2 border-[#1F2E2B] text-[#1F2E2B] font-black uppercase tracking-widest rounded-xl hover:bg-[#1F2E2B] hover:text-white transition-all text-sm">
+							<Phone className="w-4 h-4" /> 360.216.9920
+						</Link>
+					</div>
+				</div>
+			</section>
+
 			{/* PROJECT GALLERY */}
 			<section className="py-24 bg-[#F8F6F3]">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -772,6 +789,27 @@ export default function HomePageContent() {
 								</div>
 							</div>
 						))}
+					</div>
+				</div>
+			</section>
+
+			{/* CTA STRIP — after Testimonials */}
+			<section className="py-16 bg-white border-y border-gray-100">
+				<div className="max-w-4xl mx-auto px-6 text-center space-y-6">
+					<p className="text-[#2D5A3D] font-black uppercase tracking-widest text-xs">27 Five-Star Reviews · Clark County, WA</p>
+					<h2 className="text-3xl font-black text-[#1F2E2B] uppercase tracking-tighter">
+						Ready to Join Them?
+					</h2>
+					<p className="text-gray-500 font-medium max-w-xl mx-auto">
+						Free estimate, honest pricing, and a 1-year warranty on every job. No obligation.
+					</p>
+					<div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
+						<Link href="/contact" className="inline-flex items-center gap-3 px-8 py-4 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-lg">
+							Get Free Estimate <ArrowRight className="w-4 h-4" />
+						</Link>
+						<Link href="tel:+13602169920" className="inline-flex items-center gap-3 px-8 py-4 border-2 border-gray-200 text-[#1F2E2B] font-black uppercase tracking-widest rounded-xl hover:border-[#1F2E2B] transition-all">
+							<Phone className="w-4 h-4" /> 360.216.9920
+						</Link>
 					</div>
 				</div>
 			</section>
