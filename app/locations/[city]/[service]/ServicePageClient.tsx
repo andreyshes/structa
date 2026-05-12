@@ -148,7 +148,7 @@ export default function ServicePageClient({
 							href="/estimate"
 							className="inline-flex items-center gap-2 text-white/70 hover:text-[#FFB800] font-bold text-sm transition-colors"
 						>
-							<Zap className="w-4 h-4" /> or get an instant AI estimate →
+							<Zap className="w-4 h-4" /> Get Your Instant Estimate →
 						</Link>
 					</motion.div>
 				</div>

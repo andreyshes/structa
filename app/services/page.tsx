@@ -220,7 +220,7 @@ export default function ServicesPage() {
 								href="/estimate"
 								className="inline-flex items-center gap-2 px-8 py-4 border-2 border-white/30 text-white font-black uppercase tracking-widest rounded-xl hover:border-[#FFB800] hover:text-[#FFB800] transition-all text-sm"
 							>
-								<Zap className="w-4 h-4" /> Try AI Estimator
+								<Zap className="w-4 h-4" /> Get Instant Estimate
 							</Link>
 						</div>
 					</div>

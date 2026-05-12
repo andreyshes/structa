@@ -30,7 +30,7 @@ export default function StickyMobileCTA() {
 				onClick={() => track("estimator_click", "sticky_mobile")}
 				className="flex-1 flex items-center justify-center gap-2 py-4 bg-[#FFB800] text-black font-black uppercase tracking-widest text-xs active:bg-amber-400"
 			>
-				<Zap className="w-4 h-4" /> AI Estimate
+				<Zap className="w-4 h-4" /> Get Instant Estimate
 			</Link>
 		</div>
 	);
