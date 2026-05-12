@@ -66,6 +66,7 @@ export default function HomePageContent() {
 			icon: Wrench,
 			title: "Handyman Services",
 			href: "/services/handyman",
+			cta: "Book a Handyman",
 			description:
 				"Drywall patching, door adjustments, TV mounting, and general home repairs. We handle the fixes that keep your home in good shape.",
 		},
@@ -73,6 +74,7 @@ export default function HomePageContent() {
 			icon: Hammer,
 			title: "Finish Carpentry",
 			href: "/services/finish-carpentry",
+			cta: "Get Trim Quote",
 			description:
 				"Custom baseboards, crown molding, and interior trim installation. Clean, precise woodwork that adds real value to every room.",
 		},
@@ -80,6 +82,7 @@ export default function HomePageContent() {
 			icon: Paintbrush,
 			title: "Kitchen & Bath Updates",
 			href: "/services/kitchen-bath",
+			cta: "Update Kitchen/Bath",
 			description:
 				"Tile, backsplash, vanity installs, and fixture upgrades. Refresh your kitchen or bathroom without a full remodel.",
 		},
@@ -87,6 +90,7 @@ export default function HomePageContent() {
 			icon: Home,
 			title: "Door & Window",
 			href: "/services/door-window",
+			cta: "Fix My Doors",
 			description:
 				"Interior and exterior door installation, weatherstripping, and window repair to improve comfort and curb appeal.",
 		},
@@ -94,6 +98,7 @@ export default function HomePageContent() {
 			icon: Lightbulb,
 			title: "Lighting & Fixtures",
 			href: "/services/lighting",
+			cta: "Upgrade My Lighting",
 			description:
 				"Ceiling fans, recessed lighting, and fixture swaps. We upgrade your home lighting safely and leave the space clean.",
 		},
@@ -101,6 +106,7 @@ export default function HomePageContent() {
 			icon: Construction,
 			title: "Flooring Repair",
 			href: "/services/flooring",
+			cta: "Fix My Floors",
 			description:
 				"Wood rot repair, subfloor fixes, and flooring updates. We protect and restore your floors for the long term.",
 		},

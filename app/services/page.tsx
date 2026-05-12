@@ -39,7 +39,7 @@ export default function ServicesPage() {
 			id: "finish-carpentry",
 			icon: Hammer,
 			title: "Finish Carpentry",
-			cta: "Start My Trim Work",
+			cta: "Get Trim Quote",
 			href: "/services/finish-carpentry",
 			image:
 				"https://plus.unsplash.com/premium_photo-1683131426576-af8167f436f6?w=900&auto=format&fit=crop",
@@ -60,7 +60,7 @@ export default function ServicesPage() {
 			id: "kitchen-bath",
 			icon: Paintbrush,
 			title: "Kitchen & Bath Updates",
-			cta: "Update My Kitchen or Bath",
+			cta: "Update Kitchen/Bath",
 			href: "/services/kitchen-bath",
 			image:
 				"https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2000",
@@ -123,7 +123,7 @@ export default function ServicesPage() {
 			id: "doors-windows",
 			icon: DoorOpen,
 			title: "Door & Window Services",
-			cta: "Fix My Doors or Windows",
+			cta: "Fix My Doors",
 			href: "/services/door-window",
 			image:
 				"https://images.unsplash.com/photo-1527352774566-e4916e36c645?w=900&auto=format&fit=crop",
