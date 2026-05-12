@@ -16,6 +16,7 @@ import {
 	Star,
 	Square,
 	ChevronRight,
+	Zap,
 } from "lucide-react";
 
 import SectionHeader from "@/app/components/SectionHeader";
@@ -208,6 +209,20 @@ export default function ServicesPage() {
 						<p className="text-xl text-white/80 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6">
 							Norbilt is a licensed general contractor serving Vancouver and all of Clark County. We handle interior repairs, finish carpentry, drywall, flooring, kitchen and bath updates, and full handyman punch lists — all under one roof, with written estimates before any work begins.
 						</p>
+						<div className="flex flex-wrap gap-4 pt-2">
+							<Link
+								href="/contact"
+								className="inline-flex items-center gap-3 px-8 py-4 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-xl text-sm"
+							>
+								Get Free Estimate <ArrowRight className="w-4 h-4" />
+							</Link>
+							<Link
+								href="/estimate"
+								className="inline-flex items-center gap-2 px-8 py-4 border-2 border-white/30 text-white font-black uppercase tracking-widest rounded-xl hover:border-[#FFB800] hover:text-[#FFB800] transition-all text-sm"
+							>
+								<Zap className="w-4 h-4" /> Try AI Estimator
+							</Link>
+						</div>
 					</div>
 				</div>
 			</section>

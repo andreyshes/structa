@@ -18,6 +18,7 @@ import {
 	ChevronDown,
 	BadgeCheck,
 	DollarSign,
+	Zap,
 } from "lucide-react";
 import Link from "next/link";
 import { locationsData } from "../../data";
@@ -142,6 +143,12 @@ export default function ServicePageClient({
 							className="inline-flex items-center gap-4 bg-[#FFB800] text-black px-10 py-5 rounded-2xl font-black uppercase tracking-widest hover:scale-105 transition-all shadow-xl"
 						>
 							Get Free Estimate <ArrowRight className="w-5 h-5" />
+						</Link>
+						<Link
+							href="/estimate"
+							className="inline-flex items-center gap-2 text-white/70 hover:text-[#FFB800] font-bold text-sm transition-colors"
+						>
+							<Zap className="w-4 h-4" /> or get an instant AI estimate →
 						</Link>
 					</motion.div>
 				</div>
