@@ -39,6 +39,7 @@ const moreLinks = [
 	{ name: "Pricing", href: "/pricing" },
 	{ name: "Blog", href: "/blog" },
 	{ name: "FAQ", href: "/faq" },
+	{ name: "Contact", href: "/contact" },
 ];
 
 export default function Navigation() {
