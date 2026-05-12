@@ -30,6 +30,7 @@ type ServiceCategory = {
 	href: string;
 	longDesc: string;
 	image: string;
+	cta: string;
 };
 
 export default function ServicesPage() {
@@ -38,6 +39,7 @@ export default function ServicesPage() {
 			id: "finish-carpentry",
 			icon: Hammer,
 			title: "Finish Carpentry",
+			cta: "Start My Trim Work",
 			href: "/services/finish-carpentry",
 			image:
 				"https://plus.unsplash.com/premium_photo-1683131426576-af8167f436f6?w=900&auto=format&fit=crop",
@@ -58,6 +60,7 @@ export default function ServicesPage() {
 			id: "kitchen-bath",
 			icon: Paintbrush,
 			title: "Kitchen & Bath Updates",
+			cta: "Update My Kitchen or Bath",
 			href: "/services/kitchen-bath",
 			image:
 				"https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2000",
@@ -78,6 +81,7 @@ export default function ServicesPage() {
 			id: "drywall",
 			icon: Layers,
 			title: "Drywall Repair & Fixes",
+			cta: "Fix My Walls",
 			href: "/services/drywall-repair",
 			image:
 				"https://plus.unsplash.com/premium_photo-1661322610748-32b33eada183?w=900&auto=format&fit=crop",
@@ -98,6 +102,7 @@ export default function ServicesPage() {
 			id: "flooring",
 			icon: Square,
 			title: "LVP & Tile Floor Repairs",
+			cta: "Fix My Floors",
 			href: "/services/flooring",
 			image:
 				"https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=2000",
@@ -118,6 +123,7 @@ export default function ServicesPage() {
 			id: "doors-windows",
 			icon: DoorOpen,
 			title: "Door & Window Services",
+			cta: "Fix My Doors or Windows",
 			href: "/services/door-window",
 			image:
 				"https://images.unsplash.com/photo-1527352774566-e4916e36c645?w=900&auto=format&fit=crop",
@@ -138,6 +144,7 @@ export default function ServicesPage() {
 			id: "lighting",
 			icon: Lightbulb,
 			title: "Lighting & Fixtures",
+			cta: "Upgrade My Lighting",
 			href: "/services/lighting",
 			image:
 				"https://images.unsplash.com/photo-1584521104351-cfad34547581?w=900&auto=format&fit=crop&q=60",
@@ -158,6 +165,7 @@ export default function ServicesPage() {
 			id: "handyman",
 			icon: Wrench,
 			title: "Handyman Services",
+			cta: "Book a Handyman",
 			href: "/services/handyman",
 			image:
 				"https://plus.unsplash.com/premium_photo-1664298827256-04eb817aa0ba?w=900&auto=format&fit=crop",
@@ -322,9 +330,9 @@ export default function ServicesPage() {
 											</Link>
 											<Link
 												href="/contact"
-												className="inline-flex items-center justify-center gap-4 py-6 bg-[#1F2E2B] text-white font-black uppercase tracking-widest rounded-2xl hover:bg-[#FFB800] hover:text-black transition-all"
+												className="inline-flex items-center justify-center gap-4 py-6 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-2xl hover:bg-[#1F2E2B] hover:text-white transition-all"
 											>
-												Get Quote <ArrowRight className="w-5 h-5" />
+												{service.cta} <ArrowRight className="w-5 h-5" />
 											</Link>
 										</div>
 									</div>
