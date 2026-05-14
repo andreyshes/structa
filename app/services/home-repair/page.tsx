@@ -16,6 +16,17 @@ import {
 
 import SectionHeader from "@/app/components/SectionHeader";
 
+export const metadata = {
+	title: "Home Repairs Near Me Vancouver WA | Licensed Home Repair | Norbilt",
+	description: "Home repairs near you in Vancouver WA & Clark County. Licensed contractor for drywall, fixtures, doors, weatherization & more. Free written estimates. (360) 216-9920.",
+	alternates: { canonical: "https://norbilt.com/services/home-repair" },
+	openGraph: {
+		title: "Home Repairs Near Me Vancouver WA | Norbilt",
+		description: "Licensed home repair services near you in Vancouver WA & Clark County.",
+		url: "https://norbilt.com/services/home-repair",
+	},
+};
+
 const services = [
 	{
 		icon: Hammer,
@@ -52,6 +63,92 @@ const services = [
 export default function HomeRepairPage() {
 	return (
 		<div className="overflow-hidden bg-[#FDFCFB]">
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						"@context": "https://schema.org",
+						"@graph": [
+							{
+								"@type": "LocalBusiness",
+								"@id": "https://norbilt.com/#business",
+								"name": "Norbilt",
+								"url": "https://norbilt.com",
+								"telephone": "+13602169920",
+								"address": {
+									"@type": "PostalAddress",
+									"addressLocality": "Vancouver",
+									"addressRegion": "WA",
+									"postalCode": "98660",
+									"addressCountry": "US"
+								},
+								"areaServed": ["Vancouver WA", "Camas WA", "Ridgefield WA", "Battle Ground WA", "Washougal WA", "Clark County WA"],
+								"aggregateRating": {
+									"@type": "AggregateRating",
+									"ratingValue": "5.0",
+									"reviewCount": "24",
+									"bestRating": "5"
+								}
+							},
+							{
+								"@type": "Service",
+								"name": "Home Repair Services Vancouver WA",
+								"provider": { "@id": "https://norbilt.com/#business" },
+								"areaServed": "Vancouver WA",
+								"description": "Licensed home repair services near you in Vancouver WA and Clark County including drywall repair, fixture installation, door repairs, caulking, weatherization, and full home punch lists.",
+								"serviceType": "Home Repair Service",
+								"url": "https://norbilt.com/services/home-repair"
+							},
+							{
+								"@type": "FAQPage",
+								"mainEntity": [
+									{
+										"@type": "Question",
+										"name": "How do I find home repair services near me in Vancouver WA?",
+										"acceptedAnswer": {
+											"@type": "Answer",
+											"text": "Norbilt is based in Vancouver WA and serves all of Clark County. We offer same-week estimates and clear, fixed pricing. Call (360) 216-9920 or submit a project request. We handle everything from small fixes to full punch lists — no job is too minor."
+										}
+									},
+									{
+										"@type": "Question",
+										"name": "What home repairs can you do in one visit?",
+										"acceptedAnswer": {
+											"@type": "Answer",
+											"text": "Most standard repairs are completed in a single visit — including drywall patching, fixture swaps, door adjustments, caulking, weatherstripping, TV mounting, shelf installation, and minor plumbing fixes like faucet or toilet flapper replacement. We come prepared with common materials."
+										}
+									},
+									{
+										"@type": "Question",
+										"name": "Do I need a licensed contractor for home repairs in Washington?",
+										"acceptedAnswer": {
+											"@type": "Answer",
+											"text": "In Washington State, repair work above a set dollar threshold requires a licensed contractor. Hiring a registered WA General Contractor like Norbilt protects you legally, ensures work meets code, and keeps your homeowner's insurance intact. Unlicensed repair work can affect both your coverage and future resale value."
+										}
+									},
+									{
+										"@type": "Question",
+										"name": "How much do home repairs cost in Vancouver WA?",
+										"acceptedAnswer": {
+											"@type": "Answer",
+											"text": "Cost depends on the scope of work. We provide free, written estimates before any work begins so there are no surprises. Our pricing is fair for licensed, insured work throughout Vancouver, Camas, and Clark County. Common repairs range from $75 for window screen replacement to $750 for a full punch list."
+										}
+									},
+									{
+										"@type": "Question",
+										"name": "How quickly can you schedule a repair?",
+										"acceptedAnswer": {
+											"@type": "Answer",
+											"text": "We offer same-week estimates for most home repair jobs in Clark County. Once you submit your project details, we'll confirm availability and get a site visit on the calendar as soon as possible."
+										}
+									}
+								]
+							}
+						]
+					})
+				}}
+			/>
+
 			{/* HERO */}
 			<section className="relative min-h-[75vh] flex items-center overflow-hidden">
 				<div className="absolute inset-0 z-0">
@@ -75,8 +172,8 @@ export default function HomeRepairPage() {
 						</div>
 
 						<h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tighter uppercase">
-							Home Repair <br />
-							<span className="text-[#FFB800]">Vancouver, WA</span>
+							Home Repairs <br />
+							<span className="text-[#FFB800]">Near You in Vancouver WA</span>
 						</h1>
 
 						<p className="text-xl text-white/90 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6">
@@ -102,7 +199,7 @@ export default function HomeRepairPage() {
 			<div className="bg-[#FDFCFB] border-b border-gray-100">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8 py-3">
 					<Link href="/services" className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-[#2D5A3D] hover:text-[#FFB800] transition-colors">
-						← All Services
+						&larr; All Services
 					</Link>
 				</div>
 			</div>
@@ -142,9 +239,9 @@ export default function HomeRepairPage() {
 							</h2>
 
 							<p className="text-gray-600 text-lg font-medium leading-relaxed">
-								When something breaks in your home, a temporary fix isn't
+								When something breaks in your home, a temporary fix isn&apos;t
 								enough. Norbilt handles interior and exterior repairs with
-								construction-grade standards — protecting your property, safety,
+								construction-grade standards &mdash; protecting your property, safety,
 								and long-term value.
 							</p>
 
@@ -178,7 +275,7 @@ export default function HomeRepairPage() {
 										</span>
 										<p className="text-[#A7C4B5] text-sm font-medium">
 											Unlike casual handymen, we are a licensed WA General
-											Contractor. Every repair meets state code — which matters
+											Contractor. Every repair meets state code &mdash; which matters
 											for insurance and resale.
 										</p>
 									</div>
@@ -228,6 +325,71 @@ export default function HomeRepairPage() {
 				</div>
 			</section>
 
+			{/* PRICING + NEAR ME SECTION */}
+			<section className="py-24 bg-[#1F2E2B] text-white">
+				<div className="max-w-7xl mx-auto px-6 lg:px-8">
+					<div className="text-center mb-16">
+						<span className="text-[#FFB800] font-black uppercase tracking-[0.3em] text-sm">Transparent Pricing</span>
+						<h2 className="mt-3 text-3xl md:text-4xl font-black uppercase tracking-tighter">
+							Home Repair Cost Near You in Vancouver WA
+						</h2>
+						<p className="mt-4 text-[#A7C4B5] max-w-xl mx-auto font-medium">
+							2026 local rates for licensed home repair work in Clark County. Every job gets a free written estimate before we start.
+						</p>
+					</div>
+					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+						{[
+							{ service: "Drywall Patch (small)", range: "$150\u2013$300", note: "Per patch" },
+							{ service: "Fixture / Hardware", range: "$150\u2013$350", note: "Per fixture" },
+							{ service: "Door Repair", range: "$150\u2013$300", note: "Per door" },
+							{ service: "Weatherstripping", range: "$100\u2013$250", note: "Per door/window" },
+							{ service: "Safety Bar Install", range: "$200\u2013$400", note: "Per bar" },
+							{ service: "Window Screen", range: "$75\u2013$200", note: "Per screen" },
+							{ service: "Caulking", range: "$150\u2013$350", note: "Full perimeter" },
+							{ service: "Full Punch List", range: "$350\u2013$750", note: "Multiple tasks" },
+						].map((item) => (
+							<div key={item.service} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-[#FFB800]/40 transition-colors">
+								<p className="font-black text-white uppercase tracking-wide text-sm">{item.service}</p>
+								<p className="text-[#FFB800] font-black text-xl mt-2">{item.range}</p>
+								<p className="text-[#A7C4B5] text-xs mt-1">{item.note}</p>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
+
+			{/* NEAR ME CITY GRID */}
+			<section className="py-16 bg-[#F8F6F3]">
+				<div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+					<h2 className="text-2xl font-black text-[#1F2E2B] uppercase tracking-tighter mb-4">
+						Home Repair Services Near You &mdash; Clark County WA
+					</h2>
+					<p className="text-gray-500 font-medium mb-10 max-w-xl mx-auto">
+						We serve homeowners across Clark County. Click your city for local service info.
+					</p>
+					<div className="flex flex-wrap justify-center gap-3">
+						{[
+							{ name: "Vancouver", href: "/locations/vancouver/home-repair" },
+							{ name: "Camas", href: "/locations/camas/home-repair" },
+							{ name: "Ridgefield", href: "/locations/ridgefield/home-repair" },
+							{ name: "Battle Ground", href: "/locations/battle-ground/home-repair" },
+							{ name: "Washougal", href: "/locations/washougal/home-repair" },
+							{ name: "Salmon Creek", href: "/locations/salmon-creek/home-repair" },
+							{ name: "Hazel Dell", href: "/locations/hazel-dell/home-repair" },
+							{ name: "Orchards", href: "/locations/orchards/home-repair" },
+						].map((city) => (
+							<Link
+								key={city.name}
+								href={city.href}
+								className="px-5 py-2.5 bg-white border border-[#E8E4DE] rounded-xl text-sm font-black text-[#2C3E3A] hover:border-[#FFB800] hover:text-[#2D5A3D] transition-colors uppercase tracking-wide"
+							>
+								{city.name}
+							</Link>
+						))}
+					</div>
+				</div>
+			</section>
+
 			{/* FAQ */}
 			<section className="py-24 bg-white">
 				<div className="max-w-4xl mx-auto px-6 lg:px-8">
@@ -253,6 +415,14 @@ export default function HomeRepairPage() {
 							{
 								q: "How quickly can you schedule a repair?",
 								a: "We offer same-week estimates for most home repair jobs in Clark County. Once you submit your project details, we'll confirm availability and get a site visit on the calendar as soon as possible.",
+							},
+							{
+								q: "How do I find home repair services near me in Vancouver WA?",
+								a: "Norbilt is based in Vancouver WA and serves all of Clark County. We offer same-week estimates and clear, fixed pricing. Call (360) 216-9920 or submit a project request. We handle everything from small fixes to full punch lists — no job is too minor.",
+							},
+							{
+								q: "What home repairs can you do in one visit?",
+								a: "Most standard repairs are completed in a single visit — including drywall patching, fixture swaps, door adjustments, caulking, weatherstripping, TV mounting, shelf installation, and minor plumbing fixes like faucet or toilet flapper replacement. We come prepared with common materials.",
 							},
 						].map((item, i) => (
 							<div
@@ -281,8 +451,8 @@ export default function HomeRepairPage() {
 								<span className="text-[#FFB800]">Fix It Once.</span>
 							</h2>
 							<p className="text-[#A7C4B5] text-xl font-medium max-w-xl mx-auto">
-								Get a free, transparent estimate from Vancouver's licensed home
-								repair team. We handle the details so you don't have to.
+								Get a free, transparent estimate from Vancouver&apos;s licensed home
+								repair team. We handle the details so you don&apos;t have to.
 							</p>
 
 							<div className="flex flex-col sm:flex-row gap-6 justify-center pt-4">
