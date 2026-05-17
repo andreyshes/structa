@@ -140,18 +140,20 @@ export default function ServicePageClient({
 							{cityNameShort}.
 						</p>
 
-						<Link
-							href="/contact"
-							className="inline-flex items-center gap-4 bg-[#FFB800] text-black px-10 py-5 rounded-2xl font-black uppercase tracking-widest hover:scale-105 transition-all shadow-xl"
-						>
-							Get Free Estimate <ArrowRight className="w-5 h-5" />
-						</Link>
-						<Link
-							href="/estimate"
-							className="inline-flex items-center gap-2 text-white/70 hover:text-[#FFB800] font-bold text-sm transition-colors"
-						>
-							<Zap className="w-4 h-4" /> Get Your Instant Estimate →
-						</Link>
+						<div className="flex flex-col sm:flex-row gap-4 pt-2">
+							<Link
+								href="/estimate"
+								className="inline-flex items-center justify-center gap-3 bg-[#FFB800] text-black px-10 py-5 rounded-2xl font-black uppercase tracking-widest hover:scale-105 transition-all shadow-xl"
+							>
+								<Zap className="w-5 h-5" /> Get Instant Estimate
+							</Link>
+							<a
+								href="tel:+13602169920"
+								className="inline-flex items-center justify-center gap-3 border-2 border-white/30 text-white px-10 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-white/10 transition-all"
+							>
+								<Phone className="w-5 h-5" /> (360) 216-9920
+							</a>
+						</div>
 					</motion.div>
 				</div>
 			</section>
@@ -282,7 +284,7 @@ export default function ServicePageClient({
 						</p>
 						<div className="mt-10 flex flex-col sm:flex-row gap-4">
 							<Link href="/contact" className="inline-flex items-center gap-3 px-8 py-4 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-lg text-sm">
-								Get Free Estimate <ArrowRight className="w-4 h-4" />
+								Get Instant Estimate <ArrowRight className="w-4 h-4" />
 							</Link>
 							<Link href="tel:+13602169920" className="inline-flex items-center gap-3 px-8 py-4 border-2 border-white/20 text-white font-black uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all text-sm">
 								<Phone className="w-4 h-4" /> 360.216.9920
