@@ -10,6 +10,7 @@ import {
 	ArrowRight,
 	Wrench,
 	HardHat,
+	Home,
 	Paintbrush,
 	DoorOpen,
 	Lightbulb,
@@ -30,6 +31,7 @@ const iconMap: Record<string, any> = {
 	"door-window": DoorOpen,
 	"flooring": Paintbrush,
 	"kitchen-bath": Lightbulb,
+	"home-repair": Home,
 };
 
 export default function ServicePageClient({

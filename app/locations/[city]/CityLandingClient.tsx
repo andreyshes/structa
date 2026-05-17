@@ -20,6 +20,7 @@ import {
 	ChevronDown,
 	Phone,
 	Clock,
+	Zap,
 } from "lucide-react";
 
 function trackEvent(name: string, params?: Record<string, string | number>) {
@@ -142,18 +143,18 @@ export default function CityLandingClient({ city, citySlug }: any) {
 						</p>
 						<div className="flex flex-wrap gap-4">
 							<Link
-								href="/contact"
-								onClick={() => trackEvent("cta_click", { location: cityNameShort, cta: "hero_estimate" })}
-								className="bg-[#FFB800] text-black px-8 py-4 rounded-xl font-black uppercase tracking-widest hover:bg-white transition-colors shadow-xl"
+								href="/estimate"
+								onClick={() => trackEvent("cta_click", { location: cityNameShort, cta: "hero_instant_estimate" })}
+								className="inline-flex items-center gap-2 bg-[#FFB800] text-black px-8 py-4 rounded-xl font-black uppercase tracking-widest hover:scale-105 transition-all shadow-xl"
 							>
-								Get Free Estimate
+								<Zap className="w-4 h-4" /> Get Instant Estimate
 							</Link>
 							<a
 								href="tel:+13602169920"
 								onClick={() => trackEvent("phone_click", { location: cityNameShort, cta: "hero_call" })}
-								className="border border-white/20 text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest hover:bg-white/10 transition-colors"
+								className="inline-flex items-center gap-2 border border-white/20 text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest hover:bg-white/10 transition-colors"
 							>
-								Call Now
+								<Phone className="w-4 h-4" /> (360) 216-9920
 							</a>
 						</div>
 					</motion.div>
@@ -236,8 +237,8 @@ export default function CityLandingClient({ city, citySlug }: any) {
 										Professional {service.title.toLowerCase()} results for your
 										home.
 									</p>
-									<div className="inline-flex items-center gap-2 bg-[#1F2E2B] text-white px-5 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest group-hover:bg-[#FFB800] group-hover:text-black transition-colors">
-										View Service <ArrowRight className="w-4 h-4" />
+									<div className="inline-flex items-center gap-2 bg-[#FFB800] text-black px-5 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest group-hover:scale-105 transition-all">
+										Get {cityNameShort} Quote <ArrowRight className="w-4 h-4" />
 									</div>
 								</div>
 							</Link>
@@ -246,6 +247,30 @@ export default function CityLandingClient({ city, citySlug }: any) {
 				</div>
 			</section>
 
+
+			{/* MID-PAGE URGENCY CTA */}
+			<section className="py-10 bg-[#FFB800]">
+				<div className="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+					<div>
+						<p className="font-black text-black uppercase tracking-widest text-sm">Don&apos;t wait on repairs — small problems become expensive ones.</p>
+						<p className="text-black/70 font-medium text-sm mt-1">Licensed. Insured. 1-Year Warranty. Free written estimate.</p>
+					</div>
+					<div className="flex gap-3 shrink-0">
+						<Link
+							href="/estimate"
+							className="inline-flex items-center gap-2 bg-black text-[#FFB800] px-6 py-3 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-[#1F2E2B] transition-colors"
+						>
+							<Zap className="w-4 h-4" /> Instant Estimate
+						</Link>
+						<a
+							href="tel:+13602169920"
+							className="inline-flex items-center gap-2 bg-black/10 text-black px-6 py-3 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-black/20 transition-colors"
+						>
+							<Phone className="w-4 h-4" /> Call Now
+						</a>
+					</div>
+				</div>
+			</section>
 			{/* NEIGHBORHOOD SECTION */}
 			<section className="py-24 bg-[#1F2E2B] text-white">
 				<div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
@@ -386,6 +411,45 @@ export default function CityLandingClient({ city, citySlug }: any) {
 								)}
 							</div>
 						))}
+					</div>
+				</div>
+			</section>
+
+			{/* BOTTOM BILLBOARD CTA */}
+			<section className="py-24 lg:py-32">
+				<div className="max-w-7xl mx-auto px-6">
+					<div className="bg-[#1F2E2B] rounded-[3rem] p-12 lg:p-20 text-center relative overflow-hidden border-b-[12px] border-[#FFB800] shadow-2xl">
+						<div className="relative z-10 max-w-3xl mx-auto space-y-6">
+							<span className="inline-block px-4 py-1 bg-[#FFB800]/20 text-[#FFB800] text-xs font-black uppercase tracking-widest rounded-full">
+								Serving {cityNameShort}, WA
+							</span>
+							<h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none">
+								Ready to Fix It? <br />
+								<span className="text-[#FFB800]">Book Today.</span>
+							</h2>
+							<p className="text-[#A7C4B5] text-lg font-medium max-w-xl mx-auto">
+								Norbilt is {cityNameShort}&apos;s licensed, 5-star rated contractor. Free written estimates. 1-year workmanship warranty on every job. Spots fill fast — don&apos;t wait.
+							</p>
+							<div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+								<Link
+									href="/estimate"
+									onClick={() => trackEvent("cta_click", { location: cityNameShort, cta: "bottom_instant_estimate" })}
+									className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-xl"
+								>
+									<Zap className="w-5 h-5" /> Get Instant Estimate
+								</Link>
+								<a
+									href="tel:+13602169920"
+									onClick={() => trackEvent("phone_click", { location: cityNameShort, cta: "bottom_call" })}
+									className="inline-flex items-center justify-center gap-2 px-10 py-5 border-2 border-white/20 text-white font-black uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all"
+								>
+									<Phone className="w-5 h-5" /> (360) 216-9920
+								</a>
+							</div>
+							<p className="text-[#A7C4B5]/60 text-xs font-medium pt-2">
+								Licensed · Bonded · Insured · Clark County WA
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>
