@@ -13,6 +13,7 @@ import {
 	DoorOpen,
 	Lightbulb,
 	HardHat,
+	Home,
 	ShieldCheck,
 	Star,
 	CheckCircle2,
@@ -34,6 +35,7 @@ const iconMap: Record<string, any> = {
 	"door-window": DoorOpen,
 	"flooring": Paintbrush,
 	"kitchen-bath": Lightbulb,
+	"home-repair": Home,
 };
 
 export default function CityLandingClient({ city, citySlug }: any) {

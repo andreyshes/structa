@@ -296,4 +296,72 @@ export const servicesData: Record<string, ServiceData> = {
 			},
 		],
 	},
+
+	"home-repair": {
+		title: "Home Repair",
+		description:
+			"When something breaks or wears out in your home, Norbilt handles it fast and correctly. We cover the full range of interior home repairs — drywall patching, door and window fixes, fixture swaps, caulking, weatherstripping, safety upgrades, and general maintenance. As a licensed WA General Contractor, every repair meets state code, and our work is backed by a 1-year workmanship warranty. No job is too small.",
+		process:
+			"We start with a quick walkthrough of what needs fixing, give you a flat-rate price before any work begins, and complete most repairs in a single visit. We bring the tools and common materials so there's no waiting. When we're done, we clean up completely and walk you through everything that was done.",
+		features: [
+			"Drywall & Wall Repair",
+			"Door & Window Fixes",
+			"Fixture Replacement",
+			"Caulking & Weatherization",
+		],
+		types: [
+			{
+				name: "Drywall & Wall Repair",
+				description: "Holes, stress cracks, water damage, and texture matching. We restore walls to like-new condition with seamless finishes.",
+				priceRange: "$150\u2013$800",
+			},
+			{
+				name: "Door & Window Repairs",
+				description: "Sticking doors, worn weatherstripping, damaged seals, and hardware replacement. We fix the source, not just the symptom.",
+				priceRange: "$100\u2013$400",
+			},
+			{
+				name: "Fixture Replacement",
+				description: "Light fixtures, ceiling fans, faucets, toilets, and cabinet hardware. Fast swaps with clean installs and no mess left behind.",
+				priceRange: "$150\u2013$700",
+			},
+			{
+				name: "Caulking & Sealing",
+				description: "Re-caulk tubs, showers, sinks, and windows. Prevents water damage and moisture intrusion — one of the highest-value small repairs.",
+				priceRange: "$150\u2013$350",
+			},
+			{
+				name: "Safety Repairs",
+				description: "Grab bars, loose railings, broken locks, and unstable fixtures. We prioritize repairs that protect your household.",
+				priceRange: "$150\u2013$500",
+			},
+			{
+				name: "Home Punch List",
+				description: "Multiple small tasks in a single visit. The most cost-effective way to clear your repair backlog — one mobilization fee, multiple jobs done.",
+				priceRange: "$350\u2013$950",
+			},
+		],
+		faqs: [
+			{
+				q: "What home repairs do you handle?",
+				a: "We handle drywall patching, door and window repairs, fixture and hardware replacement, caulking, weatherstripping, safety fixes (grab bars, railings, locks), TV mounting, shelf installation, and full home punch lists. Most repairs are completed in a single visit.",
+			},
+			{
+				q: "Do I need a licensed contractor for home repairs in Washington State?",
+				a: "Washington State requires a licensed contractor for repair work above a set dollar threshold. Hiring an unlicensed handyman above that limit is illegal and can void your homeowner's insurance. As a licensed WA General Contractor, every Norbilt repair is legal, insured, and code-compliant.",
+			},
+			{
+				q: "How much do home repairs cost near me in Clark County?",
+				a: "Small repairs (drywall patch, fixture swap, caulking) run $150\u2013$400. A half-day punch list covering multiple tasks runs $350\u2013$600. We provide flat-rate written estimates before any work begins — no hourly surprises.",
+			},
+			{
+				q: "How quickly can you schedule a home repair in my area?",
+				a: "We offer same-week estimates for most home repair jobs throughout Clark County. Once you submit your project details, we confirm availability and get on the calendar fast.",
+			},
+			{
+				q: "Is your home repair work guaranteed?",
+				a: "Yes. All Norbilt home repair work is backed by our 1-year workmanship warranty. If anything we repaired fails due to workmanship, we return and fix it at no charge.",
+			},
+		],
+	},
 };
