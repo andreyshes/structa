@@ -3,6 +3,15 @@ import { ArrowRight, Clock, MapPin } from "lucide-react";
 
 const posts = [
 	{
+		slug: "handyman-cost-vancouver-wa",
+		title: "How Much Does a Handyman Cost in Vancouver WA? (2026 Rates)",
+		excerpt:
+			"Real 2026 handyman rates in Vancouver WA and Clark County — hourly pricing, job-by-job cost table for 20+ common tasks, and what separates a licensed contractor from an unlicensed handyman.",
+		category: "Cost Guide",
+		location: "Vancouver, WA",
+		readTime: "7 min read",
+	},
+	{
 		slug: "flooring-installation-cost-vancouver-wa",
 		title: "Flooring Installation Cost in Vancouver WA & Clark County (2026)",
 		excerpt:
