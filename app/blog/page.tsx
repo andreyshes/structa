@@ -19,6 +19,14 @@ const posts = [
 		readTime: "7 min read",
 	},
 	{
+		slug: "handyman-services-camas-wa",
+		title: "Handyman Services in Camas WA: 2026 Costs & What to Expect",
+		excerpt: "Looking for a handyman in Camas WA? Real 2026 pricing for home repairs, drywall, fixtures, doors, and punch lists in Camas and east Clark County.",
+		category: "Local Guide",
+		location: "Camas, WA",
+		readTime: "6 min read",
+	},
+	{
 		slug: "battle-ground-handyman-cost",
 		title: "Handyman Services in Battle Ground WA: 2026 Costs & What to Expect",
 		excerpt: "Looking for a handyman in Battle Ground WA? Real 2026 pricing for home repairs, drywall, fixtures, doors, and punch lists in Battle Ground and north Clark County.",

@@ -21,10 +21,31 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 	}
 
 	const cityName = cityData.name?.split(",")[0] || "Local";
-	const serviceTitle = serviceData.title;
-	const shortTitle = `${serviceTitle} in ${cityName} WA | Norbilt`;
+	const serviceSlug = resolvedParams.service;
 
-	const fullDesc = `Need expert ${serviceTitle.toLowerCase()} in ${cityName}? Norbilt offers professional home repairs and licensed contracting. Get a free estimate today!`;
+	// Service-specific title and description patterns for higher CTR
+	const titleMap: Record<string, string> = {
+		"handyman": `Handyman in ${cityName} WA | 5-Star Licensed | Same-Week | Norbilt`,
+		"home-repair": `Home Repair in ${cityName} WA | Licensed & 5-Star Rated | Norbilt`,
+		"drywall-repair": `Drywall Repair in ${cityName} WA | Seamless Patches | Free Estimate | Norbilt`,
+		"finish-carpentry": `Finish Carpentry in ${cityName} WA | Crown Molding & Trim | Norbilt`,
+		"kitchen-bath": `Kitchen & Bath Updates in ${cityName} WA | 5-Star Rated | Norbilt`,
+		"flooring": `Flooring Repair in ${cityName} WA | LVP & Tile | Free Estimate | Norbilt`,
+		"door-window": `Door & Window Repair in ${cityName} WA | Licensed | Free Estimate | Norbilt`,
+	};
+
+	const descMap: Record<string, string> = {
+		"handyman": `5-star rated handyman in ${cityName}, WA. Licensed, bonded & insured. Drywall, fixtures, doors, mounting, punch lists & more. Free same-week estimates. Call (360) 216-9920.`,
+		"home-repair": `Licensed home repair contractor in ${cityName}, WA — 5-star rated. Drywall, fixtures, doors, caulking, safety repairs & more. Free same-week estimates. Call (360) 216-9920.`,
+		"drywall-repair": `Expert drywall repair in ${cityName}, WA. Seamless hole patching, texture matching & water damage repair. Licensed, 1-year warranty. Free estimates. Call (360) 216-9920.`,
+		"finish-carpentry": `Licensed finish carpentry in ${cityName}, WA. Baseboards, crown molding, wainscoting & trim installed right. Free estimates, 1-year warranty. Call (360) 216-9920.`,
+		"kitchen-bath": `Kitchen & bath updates in ${cityName}, WA — 5-star rated. Tile, vanity, backsplash, fixtures & more without a full remodel. Free same-week estimates. Call (360) 216-9920.`,
+		"flooring": `Flooring repair & installation in ${cityName}, WA. LVP, tile, hardwood, subfloor repair. Licensed contractor, free estimates. Call (360) 216-9920.`,
+		"door-window": `Door & window repair in ${cityName}, WA. Installs, weatherstripping, sticking doors & hardware. Licensed, free estimates. Call (360) 216-9920.`,
+	};
+
+	const shortTitle = titleMap[serviceSlug] ?? `${serviceData.title} in ${cityName} WA | Licensed & 5-Star Rated | Norbilt`;
+	const fullDesc = descMap[serviceSlug] ?? `5-star rated ${serviceData.title.toLowerCase()} in ${cityName}, WA. Licensed, bonded & insured. Free same-week estimates. Call (360) 216-9920.`;
 	const pageUrl = `https://norbilt.com/locations/${resolvedParams.city}/${resolvedParams.service}`;
 
 	return {
@@ -43,7 +64,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 					url: "https://norbilt.com/og-image.jpg",
 					width: 1200,
 					height: 630,
-					alt: `${serviceTitle} in ${cityName} WA`,
+					alt: `${serviceData.title} in ${cityName} WA`,
 				},
 			],
 		},
