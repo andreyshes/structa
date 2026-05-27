@@ -287,11 +287,7 @@ export default function HomePageContent() {
 						</motion.h1>
 
 						<p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl font-medium drop-shadow-md border-l-8 border-[#FFB800] pl-6">
-							Norbilt is a licensed Washington contractor providing expert home
-							repair, handyman services, and interior remodeling in Vancouver,
-							WA and throughout Clark County. Our team is committed to
-							delivering reliable service and high-quality craftsmanship on
-							every job.
+							5-star rated on Google. Licensed, bonded & insured in Washington State. We show up on time, do the work right, and back it with a 1-year warranty — serving Vancouver, Camas, Ridgefield & all of Clark County.
 						</p>
 
 						<div className="pt-8 flex flex-wrap items-center gap-4">
