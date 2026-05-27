@@ -3,6 +3,15 @@ import { ArrowRight, Clock, MapPin } from "lucide-react";
 
 const posts = [
 	{
+		slug: "finish-carpentry-cost-vancouver-wa",
+		title: "Finish Carpentry Cost in Vancouver WA: 2026 Pricing Guide",
+		excerpt:
+			"Real 2026 price ranges for baseboards, crown molding, wainscoting, door casing, and built-ins in Vancouver WA and Clark County — plus what drives the cost and what older homes add.",
+		category: "Cost Guide",
+		location: "Vancouver, WA",
+		readTime: "7 min read",
+	},
+	{
 		slug: "handyman-cost-vancouver-wa",
 		title: "How Much Does a Handyman Cost in Vancouver WA? (2026 Rates)",
 		excerpt:
