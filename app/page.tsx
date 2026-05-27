@@ -1,18 +1,18 @@
 import HomePageContent from "@/app/components/HomePageContent";
 
 export const metadata = {
-	title: "Licensed General Contractor Clark County WA | Norbilt",
+	title: "General Contractor Vancouver WA | 5-Star Rated | Free Estimates | Norbilt",
 
 	description:
-		"Norbilt is a licensed general contractor in Clark County WA. Home repairs, remodeling & interior updates. Serving Vancouver, Battle Ground, Camas & more.",
+		"Vancouver WA's 5-star rated licensed general contractor. Handyman, drywall, finish carpentry, kitchen & bath, flooring & more. Free same-week estimates. Call (360) 216-9920.",
 
 	alternates: {
 		canonical: "https://norbilt.com",
 	},
 	openGraph: {
-		title: "Licensed General Contractor Clark County WA | Norbilt",
+		title: "General Contractor Vancouver WA | 5-Star Rated | Free Estimates | Norbilt",
 		description:
-			"Licensed general contractor serving all of Clark County WA. Expert home repairs, remodeling, and interior updates. Free estimates.",
+			"Vancouver WA's 5-star rated licensed general contractor. Handyman, drywall, finish carpentry, kitchen & bath, flooring & more. Free same-week estimates.",
 		type: "website",
 		url: "https://norbilt.com",
 		images: [

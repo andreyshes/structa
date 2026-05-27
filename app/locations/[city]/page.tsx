@@ -22,10 +22,9 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 	}
 
 	const cityName = cityData.name?.split(",")[0] || "Local";
-	const shortTitle = `General Contractor ${cityName} WA | Norbilt`;
+	const shortTitle = `#1 Contractor in ${cityName} WA | 5-Star Rated & Licensed | Norbilt`;
 
-	// FIXED LENGTH: ~145 Characters (Perfect for Audit)
-	const fullDesc = `Expert general contractor in ${cityName}, WA. Norbilt provides licensed home repairs and remodeling for local residents. Get a free estimate today!`;
+	const fullDesc = `5-star rated licensed contractor in ${cityName}, WA. Handyman, drywall, finish carpentry, kitchen & bath updates, flooring & more. Free same-week estimates. Call (360) 216-9920.`;
 	const pageUrl = `https://norbilt.com/locations/${city}`;
 
 	return {

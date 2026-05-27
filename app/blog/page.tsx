@@ -3,6 +3,30 @@ import { ArrowRight, Clock, MapPin } from "lucide-react";
 
 const posts = [
 	{
+		slug: "kitchen-remodel-cost-camas-wa",
+		title: "Kitchen Remodel Cost in Camas WA: 2026 Pricing Guide",
+		excerpt: "How much does a kitchen remodel cost in Camas WA? Real 2026 price ranges for every scope — cosmetic refresh to full custom build — plus Camas-specific pricing factors.",
+		category: "Cost Guide",
+		location: "Camas, WA",
+		readTime: "7 min read",
+	},
+	{
+		slug: "home-remodeling-camas-wa",
+		title: "Home Remodeling in Camas WA: 2026 Cost Guide & What to Expect",
+		excerpt: "Planning a home remodel in Camas WA? Real 2026 costs for kitchen, bathroom, flooring, finish carpentry, and whole-home updates — plus what Camas homeowners actually spend.",
+		category: "Cost Guide",
+		location: "Camas, WA",
+		readTime: "7 min read",
+	},
+	{
+		slug: "battle-ground-handyman-cost",
+		title: "Handyman Services in Battle Ground WA: 2026 Costs & What to Expect",
+		excerpt: "Looking for a handyman in Battle Ground WA? Real 2026 pricing for home repairs, drywall, fixtures, doors, and punch lists in Battle Ground and north Clark County.",
+		category: "Local Guide",
+		location: "Battle Ground, WA",
+		readTime: "6 min read",
+	},
+	{
 		slug: "finish-carpentry-cost-vancouver-wa",
 		title: "Finish Carpentry Cost in Vancouver WA: 2026 Pricing Guide",
 		excerpt:
