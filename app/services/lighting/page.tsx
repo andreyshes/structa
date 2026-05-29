@@ -217,6 +217,51 @@ export default function LightingFixturesPage() {
 				</div>
 			</section>
 
+
+			{/* FAQ SECTION */}
+			<section className="py-24 bg-[#F8F6F3]">
+				<div className="max-w-4xl mx-auto px-6">
+					<div className="text-center mb-16">
+						<span className="text-xs font-black uppercase tracking-widest text-[#2D5A3D]">FAQ</span>
+						<h2 className="text-4xl md:text-5xl font-black text-[#1F2E2B] uppercase tracking-tighter mt-2">Lighting & Fixtures FAQ</h2>
+						<p className="text-gray-500 mt-4">Common questions about lighting installation in Vancouver WA.</p>
+					</div>
+					<div className="space-y-6">
+						{[
+							{
+								q: "How much does light fixture installation cost in Vancouver WA?",
+								a: "Based on 2026 Clark County rates: single fixture swap runs $100–$250, ceiling fan installation $150–$350, recessed lighting (per can) $150–$300, under-cabinet lighting $200–$500, and full room lighting upgrades $400–$1,200+. We provide a free written estimate before any work starts.",
+							},
+							{
+								q: "Do I need an electrician or a handyman for fixture installation?",
+								a: "For straightforward fixture swaps — replacing an existing fixture at an existing box — a licensed general contractor like Norbilt handles it legally and safely. For new circuits, panel work, or moving electrical, we refer to a licensed electrician. We'll tell you honestly which applies to your project.",
+							},
+							{
+								q: "Can you install ceiling fans where there's currently just a light fixture?",
+								a: "Yes, if the existing electrical box is rated for a fan. We check the box rating first — standard light boxes are not fan-rated and must be swapped before installation. We handle the box upgrade and fan install in the same visit.",
+							},
+							{
+								q: "Can you install recessed lighting in existing ceilings?",
+								a: "Yes. We install IC-rated recessed cans in existing drywall ceilings without major demo. The scope depends on attic access and distance from the existing switch. We assess during the free estimate and confirm what's feasible before scheduling.",
+							},
+							{
+								q: "How long does lighting installation take?",
+								a: "A single fixture swap takes 30–90 minutes. A ceiling fan with a box upgrade takes 2–3 hours. A multi-can recessed lighting project takes a full day. We confirm exact timelines during your free estimate.",
+							},
+							{
+								q: "Is your lighting work covered by a warranty?",
+								a: "Yes. All Norbilt lighting and fixture installations are backed by a 1-year workmanship warranty. If a fixture loosens, a connection fails, or any installation issue arises within the warranty period, we return and fix it at no charge.",
+							},
+						].map((item, i) => (
+							<div key={i} className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+								<h3 className="text-lg font-black text-[#1F2E2B] mb-3">{item.q}</h3>
+								<p className="text-gray-600 leading-relaxed">{item.a}</p>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
+
 			{/* FINAL CTA - BILLBOARD STYLE */}
 			<section className="py-24 lg:py-40">
 				<div className="max-w-7xl mx-auto px-6">

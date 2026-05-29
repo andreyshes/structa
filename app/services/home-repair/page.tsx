@@ -410,7 +410,7 @@ export default function HomeRepairPage() {
 							},
 							{
 								q: "How much do home repairs cost in Vancouver WA?",
-								a: "Cost depends on the scope of work. We provide free, written estimates before any work begins so there are no surprises. Our pricing is fair for licensed, insured work throughout Vancouver, Camas, and Clark County.",
+								a: "Based on 2026 Clark County rates: minor repairs (faucet, toilet, caulking, hardware) run $150–$400, mid-scope repairs (door replacement, drywall water damage, fixture upgrade) $300–$800, and larger repair punch lists $500–$1,500+. We provide a free written estimate before any work starts — no surprises.",
 							},
 							{
 								q: "How quickly can you schedule a repair?",

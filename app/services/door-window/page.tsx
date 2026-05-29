@@ -230,6 +230,51 @@ export default function DoorWindowPage() {
 				</div>
 			</section>
 
+
+			{/* FAQ SECTION */}
+			<section className="py-24 bg-[#F8F6F3]">
+				<div className="max-w-4xl mx-auto px-6">
+					<div className="text-center mb-16">
+						<span className="text-xs font-black uppercase tracking-widest text-[#2D5A3D]">FAQ</span>
+						<h2 className="text-4xl md:text-5xl font-black text-[#1F2E2B] uppercase tracking-tighter mt-2">Door & Window FAQ</h2>
+						<p className="text-gray-500 mt-4">Common questions about door and window work in Vancouver WA.</p>
+					</div>
+					<div className="space-y-6">
+						{[
+							{
+								q: "How much does door repair or replacement cost in Vancouver WA?",
+								a: "Based on 2026 Clark County rates: door adjustments and weatherstripping run $150–$350, interior door replacement $300–$700 installed, exterior door replacement $600–$1,800 installed, and sliding glass door repair $200–$600. We provide a free written estimate before any work starts.",
+							},
+							{
+								q: "Why is my door sticking or not closing properly?",
+								a: "Sticking doors in Clark County are almost always caused by seasonal humidity swelling the wood, or by the house settling and shifting the frame. We diagnose the cause first — if it's humidity, a simple plane and seal fixes it. If it's settling, we re-hang the door to the new frame position.",
+							},
+							{
+								q: "Can you replace just the weatherstripping without replacing the whole door?",
+								a: "Yes — replacing weatherstripping is one of the most cost-effective repairs we do. It stops drafts, reduces heating bills, and usually takes under an hour. Most exterior doors in older Clark County homes need this every 5–7 years.",
+							},
+							{
+								q: "Do you install new exterior doors?",
+								a: "Yes. We supply and install pre-hung exterior doors including entry doors, French doors, and sliding glass doors. We handle framing adjustments, flashing, caulking, and hardware so the install is watertight and code-compliant.",
+							},
+							{
+								q: "How long does door installation take?",
+								a: "A straightforward interior door swap takes 1–2 hours. An exterior pre-hung door installation takes 3–6 hours. If framing work is needed, we'll confirm a timeline during your free estimate.",
+							},
+							{
+								q: "Is your door and window work covered by a warranty?",
+								a: "Yes. All Norbilt door and window installations are backed by a 1-year workmanship warranty. If hardware fails, weatherstripping lifts, or any installation issue arises within the warranty period, we come back and fix it at no charge.",
+							},
+						].map((item, i) => (
+							<div key={i} className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+								<h3 className="text-lg font-black text-[#1F2E2B] mb-3">{item.q}</h3>
+								<p className="text-gray-600 leading-relaxed">{item.a}</p>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
+
 			{/* FINAL CTA - BILLBOARD STYLE */}
 			<section className="py-24 lg:py-40">
 				<div className="max-w-7xl mx-auto px-6">

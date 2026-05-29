@@ -221,6 +221,51 @@ export default function FlooringPage() {
 				</div>
 			</section>
 
+
+			{/* FAQ SECTION */}
+			<section className="py-24 bg-[#F8F6F3]">
+				<div className="max-w-4xl mx-auto px-6">
+					<div className="text-center mb-16">
+						<span className="text-xs font-black uppercase tracking-widest text-[#2D5A3D]">FAQ</span>
+						<h2 className="text-4xl md:text-5xl font-black text-[#1F2E2B] uppercase tracking-tighter mt-2">Flooring FAQ</h2>
+						<p className="text-gray-500 mt-4">Common questions about flooring repair and installation in Vancouver WA.</p>
+					</div>
+					<div className="space-y-6">
+						{[
+							{
+								q: "How much does flooring installation cost in Vancouver WA?",
+								a: "Based on 2026 Clark County rates: LVP installation runs $4–$7 per sq ft installed, engineered hardwood $6–$10, tile $8–$14, laminate $3–$6, and subfloor repair $200–$800+ depending on damage area. We provide a free written estimate before any work starts.",
+							},
+							{
+								q: "Can you repair a section of flooring without replacing the whole floor?",
+								a: "Yes — for most LVP, laminate, and hardwood floors we can replace damaged planks or sections. The key factor is whether matching material is still available. We advise on the best approach during the free estimate.",
+							},
+							{
+								q: "Do you handle subfloor repairs?",
+								a: "Yes. Soft spots, squeaks, and water-damaged subfloor are common in Clark County homes. We assess and repair before installing new flooring — skipping this step leads to floor failure, so we always check.",
+							},
+							{
+								q: "What's the most popular flooring for Clark County homes?",
+								a: "LVP (luxury vinyl plank) is the most requested — it handles Clark County humidity well, is waterproof, and installs over most existing subfloors. For kitchens and baths we often recommend tile. We'll walk through the best option for your specific room and budget.",
+							},
+							{
+								q: "How long does flooring installation take?",
+								a: "A single room takes 1 day. A full main floor takes 2–3 days. Large multi-room projects or those with subfloor work take 3–5 days. We confirm the exact timeline during your free estimate.",
+							},
+							{
+								q: "Is your flooring work covered by a warranty?",
+								a: "Yes. All Norbilt flooring installs are backed by a 1-year workmanship warranty. If planks lift, tiles crack at grout lines, or any installation issue arises, we return and fix it at no charge within the warranty period.",
+							},
+						].map((item, i) => (
+							<div key={i} className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+								<h3 className="text-lg font-black text-[#1F2E2B] mb-3">{item.q}</h3>
+								<p className="text-gray-600 leading-relaxed">{item.a}</p>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
+
 			{/* FINAL CTA - BILLBOARD STYLE */}
 			<section className="py-24 lg:py-40">
 				<div className="max-w-7xl mx-auto px-6">

@@ -29,7 +29,7 @@ export default function Footer() {
 							your house with care and respect.
 						</p>
 
-						<div className="flex items-center gap-2 text-sm">
+						<div className="flex items-center gap-2 text-sm flex-wrap">
 							<span className="px-3 py-1 bg-[#4A7C59]/30 text-[#F8F6F3] rounded-full text-[12px] font-bold">
 								Licensed
 							</span>
@@ -39,6 +39,10 @@ export default function Footer() {
 							<span className="px-3 py-1 bg-[#4A7C59]/30 text-[#F8F6F3] rounded-full text-[12px] font-bold">
 								Insured
 							</span>
+						</div>
+						<div className="mt-4 space-y-1">
+							<p className="text-[#F8F6F3]/50 text-[11px]">WA Lic. <span className="text-[#F8F6F3]/80 font-bold">NORBI**741CS</span></p>
+							<p className="text-[#F8F6F3]/50 text-[11px]">$1,000,000 Liability Insurance</p>
 						</div>
 					</div>
 
@@ -185,7 +189,7 @@ export default function Footer() {
 							© {currentYear} Norbilt.
 						</p>
 						<p className="text-sm text-[#F8F6F3]/50">
-							General Contractor in Vancouver, WA
+							General Contractor in Vancouver, WA · WA Lic. NORBI**741CS
 						</p>
 					</div>
 				</div>

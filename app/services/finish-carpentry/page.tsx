@@ -224,6 +224,51 @@ export default function FinishCarpentryPage() {
 				</div>
 			</section>
 
+
+			{/* FAQ SECTION */}
+			<section className="py-24 bg-[#F8F6F3]">
+				<div className="max-w-4xl mx-auto px-6">
+					<div className="text-center mb-16">
+						<span className="text-xs font-black uppercase tracking-widest text-[#2D5A3D]">FAQ</span>
+						<h2 className="text-4xl md:text-5xl font-black text-[#1F2E2B] uppercase tracking-tighter mt-2">Finish Carpentry FAQ</h2>
+						<p className="text-gray-500 mt-4">Common questions about trim and millwork in Vancouver WA.</p>
+					</div>
+					<div className="space-y-6">
+						{[
+							{
+								q: "How much does finish carpentry cost in Vancouver WA?",
+								a: "Based on 2026 Clark County rates: baseboard installation runs $3–$6 per linear foot installed, crown moulding $6–$14 per linear foot, door casing $150–$350 per door, wainscoting $800–$2,500 per room, and custom mantels $1,200–$4,000+. We provide a free written estimate before any work starts.",
+							},
+							{
+								q: "Do you supply the trim materials or do I?",
+								a: "Either works. We can source and supply all materials — we buy in volume so pricing is competitive — or we can work with trim you've already purchased. We'll advise on profile, wood species, and paint-grade vs. stain-grade options during the estimate.",
+							},
+							{
+								q: "Can you match existing trim profiles in an older home?",
+								a: "Yes. We specialize in historic profile matching for older Clark County homes. We measure existing profiles and source or mill matching material so repairs and additions blend seamlessly with what's already there.",
+							},
+							{
+								q: "Do I need to repaint after trim installation?",
+								a: "We install, caulk, and fill all nail holes so the trim is paint-ready when we leave. Touch-up paint is typically needed — if the existing wall paint is fresh, a spot touch may blend fine. We'll tell you honestly during the walkthrough.",
+							},
+							{
+								q: "How long does trim installation take?",
+								a: "A single room (baseboards + crown) typically takes half a day to a full day. Wainscoting or full-room millwork takes 1–2 days. A whole-home trim upgrade takes 3–5 days depending on scope. We confirm the timeline during your free estimate.",
+							},
+							{
+								q: "Is your carpentry work covered by a warranty?",
+								a: "Yes. All Norbilt finish carpentry is backed by a 1-year workmanship warranty. If joints open, caulk fails at seams, or any installed trim shifts within the warranty period, we return and fix it at no charge.",
+							},
+						].map((item, i) => (
+							<div key={i} className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+								<h3 className="text-lg font-black text-[#1F2E2B] mb-3">{item.q}</h3>
+								<p className="text-gray-600 leading-relaxed">{item.a}</p>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
+
 			{/* FINAL CTA - BILLBOARD STYLE */}
 			<section className="py-24 lg:py-40">
 				<div className="max-w-7xl mx-auto px-6">
