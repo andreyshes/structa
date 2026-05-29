@@ -181,7 +181,7 @@ Use the 2026 Clark County rate sheet in your system instructions. Provide a real
 
 		// Apply 12% markup to low end, rounded to nearest $50
 		if (estimate.priceRange?.low) {
-			estimate.priceRange.low = Math.round((estimate.priceRange.low * 1.12) / 50) * 50;
+			estimate.priceRange.low = Math.round((estimate.priceRange.low * 1.15) / 50) * 50;
 		}
 
 		// Send lead notification to Norbilt

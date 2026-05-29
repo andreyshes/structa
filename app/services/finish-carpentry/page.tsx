@@ -237,7 +237,7 @@ export default function FinishCarpentryPage() {
 						{[
 							{
 								q: "How much does finish carpentry cost in Vancouver WA?",
-								a: "Based on 2026 Clark County rates: baseboard installation runs $3–$6 per linear foot installed, crown moulding $6–$14 per linear foot, door casing $150–$350 per door, wainscoting $800–$2,500 per room, and custom mantels $1,200–$4,000+. We provide a free written estimate before any work starts.",
+								a: "Based on 2026 Clark County rates: baseboard installation runs $3.50–$6 per linear foot installed, crown moulding $7–$14 per linear foot, door casing $175–$350 per door, wainscoting $920–$2,500 per room, and custom mantels $1,400–$4,000+. We provide a free written estimate before any work starts.",
 							},
 							{
 								q: "Do you supply the trim materials or do I?",

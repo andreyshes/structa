@@ -230,7 +230,7 @@ export default function LightingFixturesPage() {
 						{[
 							{
 								q: "How much does light fixture installation cost in Vancouver WA?",
-								a: "Based on 2026 Clark County rates: single fixture swap runs $100–$250, ceiling fan installation $150–$350, recessed lighting (per can) $150–$300, under-cabinet lighting $200–$500, and full room lighting upgrades $400–$1,200+. We provide a free written estimate before any work starts.",
+								a: "Based on 2026 Clark County rates: single fixture swap runs $115–$250, ceiling fan installation $175–$350, recessed lighting (per can) $175–$300, under-cabinet lighting $230–$500, and full room lighting upgrades $460–$1,200+. We provide a free written estimate before any work starts.",
 							},
 							{
 								q: "Do I need an electrician or a handyman for fixture installation?",

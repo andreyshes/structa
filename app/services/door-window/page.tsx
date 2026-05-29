@@ -243,7 +243,7 @@ export default function DoorWindowPage() {
 						{[
 							{
 								q: "How much does door repair or replacement cost in Vancouver WA?",
-								a: "Based on 2026 Clark County rates: door adjustments and weatherstripping run $150–$350, interior door replacement $300–$700 installed, exterior door replacement $600–$1,800 installed, and sliding glass door repair $200–$600. We provide a free written estimate before any work starts.",
+								a: "Based on 2026 Clark County rates: door adjustments and weatherstripping run $175–$350, interior door replacement $345–$700 installed, exterior door replacement $690–$1,800 installed, and sliding glass door repair $230–$600. We provide a free written estimate before any work starts.",
 							},
 							{
 								q: "Why is my door sticking or not closing properly?",

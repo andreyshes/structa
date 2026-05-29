@@ -476,7 +476,7 @@ export default function HandymanPage() {
 							},
 							{
 								q: "How much does handyman service cost in Vancouver WA?",
-								a: "Based on 2026 Clark County rates: small repairs and fixture swaps run $150–$350, door repairs $200–$450, TV mounting $100–$200, drywall patches $150–$400, weatherstripping and caulking $150–$300, and full punch lists $400–$1,200+ depending on item count. We provide a free written estimate before any work starts — no surprises.",
+								a: "Based on 2026 Clark County rates: small repairs and fixture swaps run $175–$350, door repairs $230–$450, TV mounting $115–$200, drywall patches $175–$400, weatherstripping and caulking $175–$300, and full punch lists $460–$1,200+ depending on item count. We provide a free written estimate before any work starts — no surprises.",
 							},
 							{
 								q: "What areas do you serve?",

@@ -234,7 +234,7 @@ export default function FlooringPage() {
 						{[
 							{
 								q: "How much does flooring installation cost in Vancouver WA?",
-								a: "Based on 2026 Clark County rates: LVP installation runs $4–$7 per sq ft installed, engineered hardwood $6–$10, tile $8–$14, laminate $3–$6, and subfloor repair $200–$800+ depending on damage area. We provide a free written estimate before any work starts.",
+								a: "Based on 2026 Clark County rates: LVP installation runs $4.75–$7 per sq ft installed, engineered hardwood $7–$10, tile $9.25–$14, laminate $3.50–$6, and subfloor repair $230–$800+ depending on damage area. We provide a free written estimate before any work starts.",
 							},
 							{
 								q: "Can you repair a section of flooring without replacing the whole floor?",
