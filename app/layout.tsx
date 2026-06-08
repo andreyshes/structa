@@ -115,6 +115,7 @@ export default function RootLayout({
 									"slogan": "5-Star Rated. Licensed, Bonded & Insured. We Show Up.",
 									"sameAs": [
 										"https://www.google.com/maps/place/NORBILT/@45.6933319,-122.5403396,11z/data=!3m1!4b1!4m6!3m5!1s0x6ba3be3e3106abb:0x1cb70e756db2c95b!8m2!3d45.6933319!4d-122.5403396!16s%2Fg%2F11yzz5_myb",
+										"https://www.yelp.com/biz/norbilt-vancouver",
 									],
 								},
 								{
