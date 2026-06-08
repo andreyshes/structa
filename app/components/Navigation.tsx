@@ -11,7 +11,7 @@ const serviceLinks = [
 	{ name: "Finish Carpentry", href: "/services/finish-carpentry" },
 	{ name: "Door & Window Repair", href: "/services/door-window" },
 	{ name: "Flooring", href: "/services/flooring" },
-	{ name: "Kitchen & Bath Updates", href: "/services/kitchen-bath" },
+	{ name: "Kitchen & Bath Remodeling", href: "/services/kitchen-bath" },
 	{ name: "Home Repair", href: "/services/home-repair" },
 	{ name: "Lighting & Fixtures", href: "/services/lighting" },
 ];

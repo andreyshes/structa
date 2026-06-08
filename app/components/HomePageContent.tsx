@@ -80,11 +80,11 @@ export default function HomePageContent() {
 		},
 		{
 			icon: Paintbrush,
-			title: "Kitchen & Bath Updates",
+			title: "Kitchen & Bath Remodeling",
 			href: "/services/kitchen-bath",
-			cta: "Update Kitchen/Bath",
+			cta: "Remodel Kitchen/Bath",
 			description:
-				"Tile, backsplash, vanity installs, and fixture upgrades. Refresh your kitchen or bathroom without a full remodel.",
+				"Full bathroom remodels, tub-to-shower conversions, kitchen updates, tile, backsplash, and vanity installs — every scope from cosmetic refresh to full gut.",
 		},
 		{
 			icon: Home,
@@ -322,14 +322,14 @@ export default function HomePageContent() {
 								First, are you looking for a{" "}
 								<strong>general contractor in Vancouver, WA</strong>? Local
 								owners need a pro who can fix and protect their homes. Next,
-								Norbilt handles <strong>interior updates</strong> and{" "}
+								Norbilt handles <strong>kitchen & bathroom remodeling</strong> and{" "}
 								<strong>home repairs</strong>. We fix drywall, update sinks, and
 								install new trim. Our team is licensed, bonded, and insured.
 							</p>
 							<p className="text-lg text-gray-700 leading-relaxed">
 								Also, we focus on quality work and fair pricing. Norbilt handles
 								everything from <strong>window repair</strong> to{" "}
-								<strong>bathroom updates</strong>. We serve all people in Clark
+								<strong>bathroom remodeling</strong>. We serve all people in Clark
 								County with care. Trust our team for your next home project.
 							</p>
 						</div>

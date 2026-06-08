@@ -88,7 +88,7 @@ export default function Footer() {
 								{ name: "Kitchen & Bath", href: "/services/kitchen-bath" },
 								{ name: "Drywall Repair", href: "/services/drywall-repair" },
 								{ name: "Lighting & Fixtures", href: "/services/lighting" },
-								{ name: "Interior Updates", href: "/services/home-repair" },
+								{ name: "Kitchen & Bath Remodeling", href: "/services/home-repair" },
 							].map((link) => (
 								<li key={link.name}>
 									<Link

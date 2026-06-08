@@ -62,6 +62,14 @@ const posts = [
 		readTime: "8 min read",
 	},
 	{
+		slug: "kitchen-remodel-cost-vancouver-wa",
+		title: "Kitchen Remodel Cost in Vancouver WA: 2026 Pricing Guide",
+		excerpt: "How much does a kitchen remodel cost in Vancouver WA? Real 2026 price ranges — from a $1,725 cosmetic refresh to a $100,000 custom build — plus Vancouver neighborhood breakdowns and component pricing.",
+		category: "Cost Guide",
+		location: "Vancouver, WA",
+		readTime: "8 min read",
+	},
+	{
 		slug: "kitchen-remodel-cost-clark-county-wa",
 		title: "Kitchen Remodel Cost in Clark County WA: 2026 Guide",
 		excerpt:

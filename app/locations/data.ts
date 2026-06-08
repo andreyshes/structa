@@ -226,9 +226,9 @@ export const servicesData: Record<string, ServiceData> = {
 		],
 	},
 	"kitchen-bath": {
-		title: "Kitchen & Bathroom Updates",
+		title: "Kitchen & Bathroom Remodeling",
 		description:
-			"Kitchens and bathrooms get the most daily use and show wear the fastest. We update cabinet hardware, install new faucets and fixtures, re-caulk tubs and showers, regrout tile, and refresh backsplash areas. These targeted updates cost a fraction of a full remodel but make a big visible difference in how your home looks and functions. Our team keeps the space usable during the job and finishes with a clean, polished result.",
+			"Kitchens and bathrooms are the two rooms that drive home value the most — and the two rooms Clark County homeowners remodel most often. Norbilt handles the full range of kitchen and bathroom remodeling: full gut remodels, tub-to-shower conversions, vanity and tile replacements, backsplash installs, and targeted cosmetic refreshes. Every scope, every budget, licensed and backed by a 1-year warranty.",
 		process:
 			"We shut off water or power as needed, remove the old fixture or hardware, and install the new one with proper sealing and alignment. Caulking is applied in a single clean bead and tooled smooth. Grout repairs are color-matched to existing tile before we start. Most kitchen and bathroom update visits are completed in a few hours with no overnight disruption to your daily routine.",
 		features: [
@@ -271,12 +271,12 @@ export const servicesData: Record<string, ServiceData> = {
 		],
 		faqs: [
 			{
-				q: "Do I need a permit for a kitchen or bathroom update in Clark County?",
+				q: "Do I need a permit for a kitchen or bathroom remodel in Clark County?",
 				a: "Minor cosmetic updates — hardware, fixtures, caulk, tile — do not require a permit. Permits are required when moving plumbing, electrical, or walls. We pull permits when needed and know Clark County's requirements.",
 			},
 			{
-				q: "What is the difference between a cosmetic update and a full remodel?",
-				a: "A cosmetic update refreshes surfaces and fixtures within the existing layout — typically $800–$5,000. A full remodel strips to the studs and rebuilds everything — $15,000–$28,000+. We help you identify which scope makes sense for your goals and budget.",
+				q: "How much does a kitchen or bathroom remodel cost in Clark County?",
+				a: "Based on 2026 Clark County rates: cosmetic refreshes run $920–$2,500, mid-range bathroom remodels $5,750–$12,000, full gut remodels $17,250–$28,000+, tub-to-shower conversions $1,725–$8,000, kitchen cabinet and countertop updates $1,380–$7,000, and backsplash installs $460–$1,800. We provide a free written estimate before any work starts.",
 			},
 			{
 				q: "Can you match my existing tile or grout?",

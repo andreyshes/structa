@@ -137,9 +137,9 @@ const schema = {
 };
 
 export const metadata = {
-	title: "Kitchen & Bathroom Updates | Vancouver WA | Norbilt",
+	title: "Kitchen & Bathroom Remodeling in Vancouver WA | Licensed Contractor | Norbilt",
 	description:
-		"Licensed kitchen and bathroom contractor in Vancouver WA and Clark County. Cosmetic refreshes to full gut remodels. Free estimates. 1-year workmanship warranty.",
+		"Licensed kitchen and bathroom remodeling contractor in Vancouver WA and Clark County. Full remodels, tub-to-shower conversions, tile, vanity, backsplash & more. Free same-week estimates. 1-year warranty.",
 };
 
 export default function KitchenBathPage() {
@@ -155,7 +155,7 @@ export default function KitchenBathPage() {
 				<div className="absolute inset-0 z-0">
 					<Image
 						src="/remodel-images/IMG_7646.jpg"
-						alt="Modern kitchen and bathroom refresh services in Vancouver WA"
+						alt="Kitchen and bathroom remodeling contractor in Vancouver WA"
 						fill
 						priority
 						sizes="100vw"
@@ -173,14 +173,12 @@ export default function KitchenBathPage() {
 						</div>
 
 						<h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tighter uppercase">
-							Kitchen & <br />
-							<span className="text-[#FFB800]">Bath Updates</span>
+							Kitchen & Bathroom <br />
+							<span className="text-[#FFB800]">Remodeling</span>
 						</h1>
 
 						<p className="text-xl text-white/90 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6">
-							From a $900 fixture swap to a $25,000 full remodel — Norbilt handles
-							every level of kitchen and bathroom work in Clark County. Licensed,
-							insured, and backed by a 1-year workmanship warranty.
+							From a Full gut remodels, tub-to-shower conversions, vanity and tile replacements, kitchen updates, and cosmetic refreshes — Norbilt handles every level of kitchen and bathroom remodeling in Clark County. Licensed WA contractor, backed by a 1-year workmanship warranty.
 						</p>
 
 						<div className="pt-4">
@@ -188,7 +186,7 @@ export default function KitchenBathPage() {
 								href="/contact"
 								className="inline-flex items-center gap-3 px-10 py-5 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-2xl"
 							>
-								Update Kitchen/Bath
+								Remodel Kitchen/Bath
 								<ArrowRight className="w-5 h-5" />
 							</Link>
 						</div>
@@ -237,7 +235,7 @@ export default function KitchenBathPage() {
 				<div className="max-w-4xl mx-auto px-6">
 					<p className="text-base font-bold text-[#1F2E2B] leading-relaxed">
 						<span className="text-[#FFB800] font-black">Clark County 2026:</span>{" "}
-						Kitchen and bathroom updates in Vancouver WA range from{" "}
+						Kitchen and bathroom remodeling in Vancouver WA ranges from{" "}
 						<strong>$800 for a cosmetic refresh</strong> to{" "}
 						<strong>$28,000+ for a full gut remodel</strong>. Licensed contractor
 						labor runs $65–$95/hr. Tub-to-shower conversions average $1,500–$8,000
@@ -253,16 +251,12 @@ export default function KitchenBathPage() {
 					<div className="grid lg:grid-cols-2 gap-20 items-center">
 						<div className="space-y-8">
 							<h2 className="text-4xl lg:text-5xl font-black text-[#1F2E2B] uppercase tracking-tighter leading-none">
-								Smart Updates <br />
-								<span className="text-[#2D5A3D]">Drive Home Value</span>
+								Remodeling That <br />
+								<span className="text-[#2D5A3D]">Drives Home Value</span>
 							</h2>
 
 							<p className="text-gray-600 text-lg font-medium leading-relaxed">
-								You don't always need a full renovation to change the feel of your
-								home. Norbilt specializes in <strong>targeted updates</strong> that
-								modernize your kitchen and bathroom while keeping your daily life
-								intact. We focus on the details that buyers — and your family —
-								notice most.
+								Kitchens and bathrooms drive more home value than any other room — and they're the first places buyers look. Norbilt specializes in <strong>kitchen and bathroom remodeling</strong> at every scope in Clark County: full gut remodels, tub-to-shower conversions, vanity and tile upgrades, and targeted cosmetic refreshes. We focus on what actually moves the needle on home value.
 							</p>
 
 							<p className="text-gray-600 font-medium leading-relaxed">
@@ -499,7 +493,7 @@ export default function KitchenBathPage() {
 									href="/contact"
 									className="px-12 py-6 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-xl"
 								>
-									Update Kitchen/Bath
+									Remodel Kitchen/Bath
 								</Link>
 								<Link
 									href="tel:+13602169920"
