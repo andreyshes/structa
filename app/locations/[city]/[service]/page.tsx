@@ -32,6 +32,9 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 		"kitchen-bath": `Kitchen & Bathroom Remodeling in ${cityName} WA | Licensed Contractor | Norbilt`,
 		"flooring": `Flooring Repair in ${cityName} WA | LVP & Tile | Free Estimate | Norbilt`,
 		"door-window": `Door & Window Repair in ${cityName} WA | Licensed | Free Estimate | Norbilt`,
+		"bathroom-remodel": `Bathroom Remodeling in ${cityName} WA | Licensed Contractor | Norbilt`,
+		"kitchen-remodel": `Kitchen Remodeling in ${cityName} WA | Licensed Contractor | Norbilt`,
+		"lighting": `Lighting & Fixtures in ${cityName} WA | Licensed Installation | Norbilt`,
 	};
 
 	const descMap: Record<string, string> = {
@@ -42,6 +45,9 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 		"kitchen-bath": `Licensed kitchen & bathroom remodeling contractor in ${cityName}, WA. Full remodels, tub-to-shower conversions, tile, vanity, backsplash & more. Free same-week estimates. Call (360) 216-9920.`,
 		"flooring": `Flooring repair & installation in ${cityName}, WA. LVP, tile, hardwood, subfloor repair. Licensed contractor, free estimates. Call (360) 216-9920.`,
 		"door-window": `Door & window repair in ${cityName}, WA. Installs, weatherstripping, sticking doors & hardware. Licensed, free estimates. Call (360) 216-9920.`,
+		"bathroom-remodel": `Licensed bathroom remodeling contractor in ${cityName}, WA. Full gut remodels, tub-to-shower conversions, vanity & tile. Free same-week estimates. Call (360) 216-9920.`,
+		"kitchen-remodel": `Licensed kitchen remodeling contractor in ${cityName}, WA. Full remodels, cabinet replacement, countertops, backsplash & more. Free same-week estimates. Call (360) 216-9920.`,
+		"lighting": `Licensed lighting & fixture installation in ${cityName}, WA. Ceiling fans, recessed lighting, fixture swaps & upgrades. Free estimates. Call (360) 216-9920.`,
 	};
 
 	const shortTitle = titleMap[serviceSlug] ?? `${serviceData.title} in ${cityName} WA | Licensed & 5-Star Rated | Norbilt`;

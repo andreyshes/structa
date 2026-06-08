@@ -61,8 +61,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		});
 	});
 
-	// 4. Add Main Service Pages (e.g., /services/drywall-repair)
-	serviceKeys.forEach((service) => {
+	// 4. Add Main Service Pages — only slugs that have a real /services/[slug]/page.tsx
+	const servicePageSlugs = [
+		"handyman",
+		"home-repair",
+		"drywall-repair",
+		"finish-carpentry",
+		"kitchen-bath",
+		"flooring",
+		"door-window",
+		"lighting",
+	];
+	servicePageSlugs.forEach((service) => {
 		routes.push({
 			url: `${baseUrl}/services/${service}`,
 			lastModified: new Date("2026-03-03"),
@@ -70,22 +80,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			priority: 0.8,
 		});
 	});
-
-	// 5. Add standalone service pages not in servicesData
-	routes.push(
-		{
-			url: `${baseUrl}/services/home-repair`,
-			lastModified: new Date("2026-03-03"),
-			changeFrequency: "monthly",
-			priority: 0.8,
-		},
-		{
-			url: `${baseUrl}/services/lighting`,
-			lastModified: new Date("2026-03-03"),
-			changeFrequency: "monthly",
-			priority: 0.8,
-		},
-	);
 
 	// 6. Reviews, Pricing, Portfolio, FAQ pages
 	routes.push(
@@ -128,6 +122,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			lastModified: new Date("2026-04-06"),
 			changeFrequency: "weekly",
 			priority: 0.8,
+		},
+		{
+			url: `${baseUrl}/blog/flooring-installation-cost-clark-county-wa`,
+			lastModified: new Date("2026-05-26"),
+			changeFrequency: "monthly",
+			priority: 0.9,
+		},
+		{
+			url: `${baseUrl}/blog/drywall-repair-cost-clark-county-wa`,
+			lastModified: new Date("2026-05-26"),
+			changeFrequency: "monthly",
+			priority: 0.9,
+		},
+		{
+			url: `${baseUrl}/blog/bathroom-remodel-cost-battle-ground-wa`,
+			lastModified: new Date("2026-05-26"),
+			changeFrequency: "monthly",
+			priority: 0.9,
+		},
+		{
+			url: `${baseUrl}/blog/kitchen-remodel-cost-battle-ground-wa`,
+			lastModified: new Date("2026-05-26"),
+			changeFrequency: "monthly",
+			priority: 0.9,
+		},
+		{
+			url: `${baseUrl}/blog/kitchen-remodel-cost-ridgefield-wa`,
+			lastModified: new Date("2026-05-26"),
+			changeFrequency: "monthly",
+			priority: 0.9,
+		},
+		{
+			url: `${baseUrl}/blog/bathroom-remodel-cost-camas-wa`,
+			lastModified: new Date("2026-05-26"),
+			changeFrequency: "monthly",
+			priority: 0.9,
 		},
 		{
 			url: `${baseUrl}/blog/kitchen-remodel-cost-camas-wa`,

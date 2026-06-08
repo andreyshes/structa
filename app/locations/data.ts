@@ -297,6 +297,182 @@ export const servicesData: Record<string, ServiceData> = {
 		],
 	},
 
+
+	"bathroom-remodel": {
+		title: "Bathroom Remodeling",
+		description:
+			"Norbilt handles the full range of bathroom remodeling in Clark County — from a quick cosmetic refresh to a full gut remodel. We demo, waterproof, tile, and finish bathrooms that last. Whether you want a tub-to-shower conversion, a new vanity and tile floor, or a complete primary suite gut, our licensed team handles every detail including permits when required.",
+		process:
+			"We start with a detailed walkthrough and give you a flat-rate written quote before any work begins. Demo is clean and contained. We install cement board or equivalent backer on all wet areas, set tile to level, grout, caulk all seams, and install fixtures. We don't cut corners on waterproofing — that's where bathroom remodels fail long-term.",
+		features: [
+			"Full Gut Remodels",
+			"Tub-to-Shower Conversion",
+			"Vanity & Tile Replacement",
+			"Custom Walk-In Showers",
+		],
+		types: [
+			{
+				name: "Cosmetic Refresh",
+				description: "New fixtures, faucet, toilet, mirror, recaulk and paint. Same tile and layout — dramatically updated look in 1–2 days.",
+				priceRange: "\u2013\,500",
+			},
+			{
+				name: "Mid-Range Remodel",
+				description: "New vanity, tile floor, shower surround, lighting, and all fixtures. Layout stays the same, everything visible is new.",
+				priceRange: "\,450–\,500",
+			},
+			{
+				name: "Full Gut Remodel",
+				description: "Everything stripped to the studs — new cement board, tile, plumbing fixtures, vanity, exhaust, and flooring. Built to last.",
+				priceRange: "\,200–\,000",
+			},
+			{
+				name: "Tub-to-Shower Conversion",
+				description: "Remove the tub and install a custom walk-in shower — prefab insert or full custom tile. Popular with aging-in-place and space-maximizing homeowners.",
+				priceRange: "\,725–\,000",
+			},
+			{
+				name: "Primary Suite Remodel",
+				description: "High-end custom tile, freestanding tub, heated floors, and full layout reconfiguration for a true luxury primary bath.",
+				priceRange: "\,750–\,000+",
+			},
+		],
+		faqs: [
+			{
+				q: "How much does a bathroom remodel cost in Clark County WA?",
+				a: "Based on 2026 Clark County rates: cosmetic refreshes run \–\,500, mid-range remodels \,450–\,500, full gut remodels \,200–\,000, tub-to-shower conversions \,725–\,000, and high-end primary suite remodels \,750–\,000+. We provide a free written estimate before any work starts.",
+			},
+			{
+				q: "Do I need a permit for a bathroom remodel?",
+				a: "Cosmetic work — fixture swaps, vanity, tile, paint — typically doesn't require a permit in Clark County. Permits are required for plumbing relocation, structural changes, and electrical panel work. Norbilt (WA Lic. NORBI**741CS) pulls all required permits.",
+			},
+			{
+				q: "How long does a bathroom remodel take?",
+				a: "A cosmetic refresh takes 1–2 days. A mid-range remodel takes 3–5 days. A full gut remodel takes 1–2 weeks. We confirm the exact timeline during your free estimate.",
+			},
+			{
+				q: "Is your bathroom remodel work covered by a warranty?",
+				a: "Yes. All Norbilt bathroom remodeling is backed by a 1-year workmanship warranty. If tile lifts, caulk fails, or any installed fixture has a workmanship issue within the warranty period, we return and fix it at no charge.",
+			},
+		],
+	},
+
+	"kitchen-remodel": {
+		title: "Kitchen Remodeling",
+		description:
+			"Norbilt handles kitchen remodeling at every scope in Clark County — from new countertops and backsplash to full cabinet replacements and custom builds. Kitchens drive more home value than any other room. Our licensed team handles all permitted work including plumbing connections and electrical at existing boxes, giving you one contractor from demo to final install.",
+		process:
+			"We start with a detailed walkthrough and provide a flat-rate written quote before any work begins. Cabinets are installed level and plumb. Counters are templated on-site for a perfect fit. Backsplash tile is set to level and grouted with color-matched grout. We don't leave until the site is clean and you've walked through the finished work.",
+		features: [
+			"Cabinet Replacement & Refacing",
+			"Countertop Installation",
+			"Backsplash & Tile",
+			"Full Gut Remodels",
+		],
+		types: [
+			{
+				name: "Cosmetic Refresh",
+				description: "New hardware, faucet, lighting, backsplash, and paint. Same cabinets and layout — dramatically updated in 2–4 days.",
+				priceRange: "\,725–\,000",
+			},
+			{
+				name: "Mid-Range Remodel",
+				description: "New countertops, backsplash, sink, faucet, and appliances. Cabinet fronts replaced or refaced. Layout stays the same.",
+				priceRange: "\,250–\,000",
+			},
+			{
+				name: "Full Remodel",
+				description: "All cabinets and counters replaced, new tile, updated plumbing and lighting. Same layout, everything else rebuilt.",
+				priceRange: "\,500–\,000",
+			},
+			{
+				name: "Custom Build",
+				description: "Custom cabinetry, high-end stone counters, premium appliances, island addition, and layout reconfiguration.",
+				priceRange: "\,500–\,000+",
+			},
+		],
+		faqs: [
+			{
+				q: "How much does a kitchen remodel cost in Clark County WA?",
+				a: "Based on 2026 Clark County rates: cosmetic refreshes run \,725–\,000, mid-range remodels \,250–\,000, full cabinet-replacement remodels \,500–\,000, and custom builds \,500–\,000+. We provide a free written estimate before any work starts.",
+			},
+			{
+				q: "Do I need a permit for a kitchen remodel?",
+				a: "Cosmetic work — counters, backsplash, hardware, lighting swaps at existing boxes — typically doesn't require a permit. Permits are required for plumbing relocation, gas line work, and electrical panel changes. Norbilt (WA Lic. NORBI**741CS) pulls all required permits.",
+			},
+			{
+				q: "Should I reface or replace my kitchen cabinets?",
+				a: "Refacing makes sense when the cabinet boxes are solid and in good condition — typically under 20 years old. It costs \–\ per linear foot vs. \–\ for new semi-custom. If boxes are out of level, water-damaged, or over 25 years old, full replacement usually pencils out better.",
+			},
+			{
+				q: "How long does a kitchen remodel take?",
+				a: "A cosmetic refresh takes 2–4 days. A mid-range remodel takes 1–3 weeks. A full cabinet replacement takes 3–6 weeks. Custom builds take 6–12 weeks including cabinet lead times. We confirm timelines during your free estimate.",
+			},
+			{
+				q: "Is your kitchen remodel work covered by a warranty?",
+				a: "Yes. All Norbilt kitchen remodeling is backed by a 1-year workmanship warranty. If counters lift, tile cracks at grout lines, or any installed component has a workmanship issue within the warranty period, we return and fix it at no charge.",
+			},
+		],
+	},
+
+	"lighting": {
+		title: "Lighting & Fixtures",
+		description:
+			"Norbilt installs and upgrades lighting and fixtures throughout Clark County. New light fixtures, ceiling fans, recessed lighting, under-cabinet lighting, and fixture swaps — all done safely by a licensed contractor. We handle everything from a single fixture replacement to a full-room lighting redesign.",
+		process:
+			"We shut off power at the breaker, remove the existing fixture, and install the new one with proper wire connections and secure mounting. We check for fan-rated boxes before any ceiling fan install and upgrade the box when needed. Every job is tested before we leave.",
+		features: [
+			"Fixture Replacement",
+			"Ceiling Fan Installation",
+			"Recessed Lighting",
+			"Under-Cabinet Lighting",
+		],
+		types: [
+			{
+				name: "Single Fixture Swap",
+				description: "Replace any existing light fixture with a new one at the same location. Most common lighting upgrade — takes 30–90 minutes.",
+				priceRange: "\u2013",
+			},
+			{
+				name: "Ceiling Fan Installation",
+				description: "Install a ceiling fan where a light fixture exists. Includes fan-rated box upgrade when needed.",
+				priceRange: "\u2013",
+			},
+			{
+				name: "Recessed Lighting",
+				description: "Install IC-rated recessed cans in existing ceilings. Scope depends on attic access and distance from existing switch.",
+				priceRange: "\u2013\ per can",
+			},
+			{
+				name: "Under-Cabinet Lighting",
+				description: "LED strips or puck lights installed under kitchen cabinets. Hardwired or plug-in options available.",
+				priceRange: "\u2013",
+			},
+			{
+				name: "Full Room Upgrade",
+				description: "Replace all fixtures in a room — recessed, pendants, vanity bars, and accent lighting — in a single visit.",
+				priceRange: "\u2013\,200+",
+			},
+		],
+		faqs: [
+			{
+				q: "Do I need a licensed contractor to replace a light fixture?",
+				a: "For swapping a fixture at an existing box, a licensed general contractor like Norbilt handles it legally and safely. For new circuits or panel work, a licensed electrician is required. We tell you honestly which applies to your job.",
+			},
+			{
+				q: "How much does light fixture installation cost in Clark County WA?",
+				a: "Based on 2026 Clark County rates: single fixture swaps run \–\, ceiling fan installation \–\, recessed lighting \–\ per can, under-cabinet lighting \–\, and full room upgrades \–\,200+.",
+			},
+			{
+				q: "Can you install a ceiling fan where there is currently a light?",
+				a: "Yes, if the existing electrical box is fan-rated. Standard light boxes are not fan-rated and must be swapped before installation. We check the box rating and handle the upgrade and fan install in one visit.",
+			},
+			{
+				q: "Is your lighting work covered by a warranty?",
+				a: "Yes. All Norbilt lighting installations are backed by a 1-year workmanship warranty. If a fixture loosens or a connection fails within the warranty period, we return and fix it at no charge.",
+			},
+		],
+	},
 	"home-repair": {
 		title: "Home Repair",
 		description:

@@ -60,5 +60,34 @@ export default async function Page({ params }: any) {
 	const { city: citySlug } = await params;
 	const city = locationsData[citySlug];
 	if (!city) return notFound();
-	return <CityLandingClient city={city} citySlug={citySlug} />;
+
+	const cityName = city.name?.split(",")[0] || "Local";
+	const pageUrl = `https://norbilt.com/locations/${citySlug}`;
+	const schema = {
+		"@context": "https://schema.org",
+		"@type": "LocalBusiness",
+		"@id": pageUrl,
+		name: `Norbilt — General Contractor in ${cityName} WA`,
+		url: pageUrl,
+		telephone: "+13602169920",
+		email: "hello@norbilt.com",
+		description: `Licensed general contractor in ${cityName}, WA. Kitchen & bathroom remodeling, handyman, drywall, finish carpentry, flooring & more. Free same-week estimates.`,
+		address: {
+			"@type": "PostalAddress",
+			addressLocality: cityName,
+			addressRegion: "WA",
+			addressCountry: "US",
+		},
+		areaServed: { "@type": "City", name: cityName, containedInPlace: "Clark County, WA" },
+		priceRange: "$$",
+		openingHours: "Mo-Sa 08:00-18:00",
+		hasCredential: "WA General Contractor License NORBI**741CS",
+	};
+
+	return (
+		<>
+			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+			<CityLandingClient city={city} citySlug={citySlug} />
+		</>
+	);
 }
