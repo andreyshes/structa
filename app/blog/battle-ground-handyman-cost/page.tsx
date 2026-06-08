@@ -72,32 +72,20 @@ const faqs = [
 
 const schema = {
 	"@context": "https://schema.org",
-	"@graph": [
-		{
-			"@type": "Article",
-			headline: "Handyman Services in Battle Ground WA: 2026 Costs & What to Expect",
-			description:
-				"Real 2026 pricing for handyman services in Battle Ground WA. Hourly rates, job-by-job cost table, and what to know before hiring in north Clark County.",
-			url: "https://norbilt.com/blog/battle-ground-handyman-cost",
-			datePublished: "2026-05-26",
-			dateModified: "2026-05-26",
-			author: { "@type": "Organization", name: "Norbilt" },
-			publisher: {
-				"@type": "Organization",
-				name: "Norbilt",
-				url: "https://norbilt.com",
-			},
-			mainEntityOfPage: "https://norbilt.com/blog/battle-ground-handyman-cost",
+		"@type": "Article",
+		headline: "Handyman Services in Battle Ground WA: 2026 Costs & What to Expect",
+		description:
+			"Real 2026 pricing for handyman services in Battle Ground WA. Hourly rates, job-by-job cost table, and what to know before hiring in north Clark County.",
+		url: "https://norbilt.com/blog/battle-ground-handyman-cost",
+		datePublished: "2026-05-26",
+		dateModified: "2026-05-26",
+		author: { "@type": "Organization", name: "Norbilt" },
+		publisher: {
+			"@type": "Organization",
+			name: "Norbilt",
+			url: "https://norbilt.com",
 		},
-		{
-			"@type": "FAQPage",
-			mainEntity: faqs.map((f) => ({
-				"@type": "Question",
-				name: f.q,
-				acceptedAnswer: { "@type": "Answer", text: f.a },
-			})),
-		},
-	],
+		mainEntityOfPage: "https://norbilt.com/blog/battle-ground-handyman-cost",
 };
 
 export default function BattleGroundHandymanPage() {
@@ -106,6 +94,18 @@ export default function BattleGroundHandymanPage() {
 			<script
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+			/>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			itemListElement: [
+				{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+				{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+				{ "@type": "ListItem", position: 3, name: "Handyman Services in Battle Ground WA: 2026 Costs & What to Expect", item: "https://norbilt.com/blog/battle-ground-handyman-cost" },
+			],
+				}) }}
 			/>
 
 			{/* HERO */}

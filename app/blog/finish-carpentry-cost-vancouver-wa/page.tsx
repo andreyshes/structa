@@ -130,33 +130,34 @@ export default function FinishCarpentryBlogPost() {
 				dangerouslySetInnerHTML={{
 					__html: JSON.stringify({
 						"@context": "https://schema.org",
-						"@graph": [
-							{
-								"@type": "Article",
-								"headline": "Finish Carpentry Cost in Vancouver WA: 2026 Pricing Guide",
-								"description": "Real 2026 price ranges for finish carpentry in Vancouver WA and Clark County — baseboards, crown molding, wainscoting, door casing, and built-ins.",
-								"datePublished": "2026-05-26",
-								"dateModified": "2026-05-26",
-								"author": { "@type": "Organization", "name": "Norbilt" },
-								"publisher": {
-									"@type": "Organization",
-									"name": "Norbilt",
-									"url": "https://norbilt.com",
-								},
-								"mainEntityOfPage": "https://norbilt.com/blog/finish-carpentry-cost-vancouver-wa",
-							},
-							{
-								"@type": "FAQPage",
-								"mainEntity": faqs.map((f) => ({
-									"@type": "Question",
-									"name": f.q,
-									"acceptedAnswer": { "@type": "Answer", "text": f.a },
-								})),
-							},
-						],
+						"@type": "Article",
+						"headline": "Finish Carpentry Cost in Vancouver WA: 2026 Pricing Guide",
+						"description": "Real 2026 price ranges for finish carpentry in Vancouver WA and Clark County — baseboards, crown molding, wainscoting, door casing, and built-ins.",
+						"datePublished": "2026-05-26",
+						"dateModified": "2026-05-26",
+						"author": { "@type": "Organization", "name": "Norbilt" },
+						"publisher": {
+							"@type": "Organization",
+							"name": "Norbilt",
+							"url": "https://norbilt.com",
+						},
+						"mainEntityOfPage": "https://norbilt.com/blog/finish-carpentry-cost-vancouver-wa",
 					}),
 				}}
 			/>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "BreadcrumbList",
+					itemListElement: [
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Finish Carpentry Cost in Vancouver WA: 2026 Guide", item: "https://norbilt.com/blog/finish-carpentry-cost-vancouver-wa" },
+					],
+				}) }}
+			/>
+
 
 			{/* HERO */}
 			<section className="bg-[#1F2E2B] pt-32 pb-20 px-6">

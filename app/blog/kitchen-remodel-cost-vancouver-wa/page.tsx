@@ -147,34 +147,35 @@ export default function KitchenRemodelCostVancouverWA() {
 				dangerouslySetInnerHTML={{
 					__html: JSON.stringify({
 						"@context": "https://schema.org",
-						"@graph": [
-							{
-								"@type": "Article",
-								headline: "Kitchen Remodel Cost in Vancouver WA: 2026 Pricing Guide",
-								author: { "@type": "Person", name: "Andrey Norbilt" },
-								publisher: {
-									"@type": "Organization",
-									name: "Norbilt",
-									logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" },
-								},
-								datePublished: "2026-06-08",
-								dateModified: "2026-06-08",
-								description:
-									"Complete 2026 cost guide for kitchen remodels in Vancouver WA — real price ranges by scope, component-level costs, neighborhood breakdowns, and what drives the price up.",
-								mainEntityOfPage: "https://norbilt.com/blog/kitchen-remodel-cost-vancouver-wa",
-							},
-							{
-								"@type": "FAQPage",
-								mainEntity: faqs.map((f) => ({
-									"@type": "Question",
-									name: f.q,
-									acceptedAnswer: { "@type": "Answer", text: f.a },
-								})),
-							},
-						],
+						"@type": "Article",
+						headline: "Kitchen Remodel Cost in Vancouver WA: 2026 Pricing Guide",
+						author: { "@type": "Person", name: "Andrey Norbilt" },
+						publisher: {
+							"@type": "Organization",
+							name: "Norbilt",
+							logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" },
+						},
+						datePublished: "2026-06-08",
+						dateModified: "2026-06-08",
+						description:
+							"Complete 2026 cost guide for kitchen remodels in Vancouver WA — real price ranges by scope, component-level costs, neighborhood breakdowns, and what drives the price up.",
+						mainEntityOfPage: "https://norbilt.com/blog/kitchen-remodel-cost-vancouver-wa",
 					}),
 				}}
 			/>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "BreadcrumbList",
+					itemListElement: [
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Kitchen Remodel Cost in Vancouver WA: 2026 Pricing Guide", item: "https://norbilt.com/blog/kitchen-remodel-cost-vancouver-wa" },
+					],
+				}) }}
+			/>
+
 
 			<div className="overflow-hidden bg-[#FDFCFB]">
 				{/* HERO */}
@@ -187,11 +188,16 @@ export default function KitchenRemodelCostVancouverWA() {
 							<span className="text-[10px] font-black uppercase tracking-widest text-[#FFB800] bg-[#FFB800]/10 px-3 py-1 rounded-full border border-[#FFB800]/20">
 								Cost Guide
 							</span>
+							<span className="text-white/50 text-xs font-medium">Updated June 2026</span>
 						</div>
 						<h1 className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tighter uppercase">
 							Kitchen Remodel Cost in{" "}
 							<span className="text-[#FFB800]">Vancouver WA</span>
 						</h1>
+				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
+					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
+					<p className="text-gray-700 leading-relaxed text-sm">A kitchen remodel in Vancouver WA costs between $1,725 for a cosmetic refresh and $100,000+ for a full custom build. A cosmetic refresh — new hardware, paint, lighting, and minor fixes — runs $1,725–$5,000 and takes 1–3 days. A mid-range remodel with new countertops, cabinet fronts, sink, and appliances costs $17,250–$35,000 over 2–4 weeks. A full gut remodel — new layout, plumbing, electrical, and custom cabinets — runs $34,500–$60,000 over 4–8 weeks. Older Vancouver neighborhoods like Hazel Dell and Orchards (pre-1980 builds) often need electrical panel upgrades ($2,300–$5,750) and plumbing updates that add to the project cost. West Vancouver and Fisher's Landing new construction has modern infrastructure and more predictable budgets. All prices are 2026 rates from Norbilt (WA Lic. NORBI**741CS), a licensed general contractor serving Vancouver and all of Clark County.</p>
+				</div>
 						<p className="text-xl text-white/70 leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">
 							Real 2026 price ranges for every scope — from a quick cosmetic refresh to a full custom build — from a licensed contractor remodeling kitchens in Vancouver every week.
 						</p>

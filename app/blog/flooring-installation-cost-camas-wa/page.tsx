@@ -44,6 +44,18 @@ export default function FlooringCost() {
 					}),
 				}}
 			/>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "BreadcrumbList",
+					itemListElement: [
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Flooring Installation Cost in Camas WA", item: "https://norbilt.com/blog/flooring-installation-cost-camas-wa" },
+					],
+				}) }}
+			/>
 
 			<div className="overflow-hidden bg-[#FDFCFB]">
 				{/* HERO */}
@@ -59,11 +71,16 @@ export default function FlooringCost() {
 							<span className="text-[10px] font-black uppercase tracking-widest text-[#FFB800] bg-[#FFB800]/10 px-3 py-1 rounded-full border border-[#FFB800]/20">
 								Cost Guide
 							</span>
+							<span className="text-white/50 text-xs font-medium">Updated April 2026</span>
 						</div>
 						<h1 className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tighter uppercase">
 							Flooring Installation Cost in{" "}
 							<span className="text-[#FFB800]">Camas, WA</span>
 						</h1>
+				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
+					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
+					<p className="text-gray-700 leading-relaxed text-sm">Flooring installation in Camas WA costs $3.45–$6.90 per square foot for LVP, $8.05–$17.25 per square foot for engineered hardwood, and $11.50–$23.00 per square foot for tile — all installed. A 200 sq ft room with LVP runs $690–$1,380. Camas homes in Prune Hill and Grass Valley often upgrade to engineered hardwood or large-format porcelain tile, which is appropriate for the market and adds resale value. Most Camas homes were built post-1990 with clean subfloors, so subfloor repair costs ($460–$1,380) are less common here than in older parts of Vancouver. The exception is older homes near downtown Camas and Fern Prairie where subfloor inspection is worth doing before quoting. All prices include material, underlayment, labor, and basic disposal. Subfloor prep and demo of existing flooring are billed separately. All prices reflect 2026 Clark County rates.</p>
+				</div>
 						<p className="text-xl text-white/70 leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">
 							LVP, hardwood, and tile — real price ranges for Camas
 							homeowners, plus what drives the cost up or down in Clark County.

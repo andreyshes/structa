@@ -53,12 +53,28 @@ const faqs = [
 export default function BathroomRemodelCostBattleGroundWA() {
 	return (
 		<>
-			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@graph": [{ "@type": "Article", headline: "Bathroom Remodel Cost in Battle Ground WA: 2026 Guide", author: { "@type": "Person", name: "Andrey Norbilt" }, publisher: { "@type": "Organization", name: "Norbilt", logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" } }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://norbilt.com/blog/bathroom-remodel-cost-battle-ground-wa" }, { "@type": "FAQPage", mainEntity: faqs.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }] }) }} />
+			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Article", headline: "Bathroom Remodel Cost in Battle Ground WA: 2026 Guide", author: { "@type": "Person", name: "Andrey Norbilt" }, publisher: { "@type": "Organization", name: "Norbilt", logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" } }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://norbilt.com/blog/bathroom-remodel-cost-battle-ground-wa" }) }} />
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "BreadcrumbList",
+					itemListElement: [
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Bathroom Remodel Cost in Battle Ground WA: 2026 Pricing Guide", item: "https://norbilt.com/blog/bathroom-remodel-cost-battle-ground-wa" },
+					],
+				}) }}
+			/>
 			<div className="overflow-hidden bg-[#FDFCFB]">
 				<section className="relative pt-32 pb-16 lg:pt-48 lg:pb-24 bg-[#14201D]">
 					<div className="max-w-4xl mx-auto px-6 lg:px-8 space-y-6">
 						<div className="flex flex-wrap items-center gap-3"><Link href="/blog" className="text-[#A7C4B5] text-sm font-bold hover:text-[#FFB800] transition-colors">← Blog</Link><span className="text-[10px] font-black uppercase tracking-widest text-[#FFB800] bg-[#FFB800]/10 px-3 py-1 rounded-full border border-[#FFB800]/20">Cost Guide</span></div>
 						<h1 className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tighter uppercase">Bathroom Remodel Cost in <span className="text-[#FFB800]">Battle Ground WA</span></h1>
+				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
+					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
+					<p className="text-gray-700 leading-relaxed text-sm">A bathroom remodel in Battle Ground WA costs between $920 and $35,000+ depending on scope. A cosmetic refresh — new fixtures, toilet, recaulk, and paint — runs $920–$2,500 and takes 1–2 days. A mid-range remodel with new vanity, tile floor, shower surround, and all fixtures replaced costs $3,450–$7,500 and takes 3–5 days. A full gut remodel — everything to studs with new plumbing, cement board, tile, and vanity — runs $9,200–$18,000 over 1–2 weeks. Tub-to-shower conversions start at $1,725 for a prefab insert and go up to $8,000 for a custom tile walk-in. Battle Ground's mix of older ranch homes and newer construction like Daybreak affects cost: older homes frequently hide water damage and aging plumbing that adds $460–$1,380 to the final bill. All prices reflect 2026 Clark County rates.</p>
+				</div>
 						<p className="text-xl text-white/70 leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">Real 2026 price ranges for every scope — from a cosmetic refresh to a full primary suite gut — from a licensed contractor serving Battle Ground and north Clark County.</p>
 						<div className="flex items-center gap-2 text-[#A7C4B5] text-sm"><MapPin className="w-4 h-4" />Battle Ground, WA · Daybreak · Cherry Grove · Lewisville</div>
 					</div>

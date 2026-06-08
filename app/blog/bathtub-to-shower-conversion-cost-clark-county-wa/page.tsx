@@ -124,34 +124,35 @@ export default function TubToShowerConversion() {
 				dangerouslySetInnerHTML={{
 					__html: JSON.stringify({
 						"@context": "https://schema.org",
-						"@graph": [
-							{
-								"@type": "Article",
-								headline: "Bathtub to Shower Conversion Cost in Clark County WA (2026 Guide)",
-								author: { "@type": "Person", name: "Andrey Norbilt" },
-								publisher: {
-									"@type": "Organization",
-									name: "Norbilt",
-									logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" },
-								},
-								datePublished: "2026-04-20",
-								dateModified: "2026-04-20",
-								description:
-									"Real 2026 cost breakdown for bathtub to shower conversions in Clark County WA — scope tiers, component pricing, what drives costs up, and what to watch for in older homes.",
-								mainEntityOfPage: "https://norbilt.com/blog/bathtub-to-shower-conversion-cost-clark-county-wa",
-							},
-							{
-								"@type": "FAQPage",
-								mainEntity: faqs.map((f) => ({
-									"@type": "Question",
-									name: f.q,
-									acceptedAnswer: { "@type": "Answer", text: f.a },
-								})),
-							},
-						],
+						"@type": "Article",
+						headline: "Bathtub to Shower Conversion Cost in Clark County WA (2026 Guide)",
+						author: { "@type": "Person", name: "Andrey Norbilt" },
+						publisher: {
+							"@type": "Organization",
+							name: "Norbilt",
+							logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" },
+						},
+						datePublished: "2026-04-20",
+						dateModified: "2026-04-20",
+						description:
+							"Real 2026 cost breakdown for bathtub to shower conversions in Clark County WA — scope tiers, component pricing, what drives costs up, and what to watch for in older homes.",
+						mainEntityOfPage: "https://norbilt.com/blog/bathtub-to-shower-conversion-cost-clark-county-wa",
 					}),
 				}}
 			/>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "BreadcrumbList",
+					itemListElement: [
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Bathtub to Shower Conversion Cost in Clark County WA", item: "https://norbilt.com/blog/bathtub-to-shower-conversion-cost-clark-county-wa" },
+					],
+				}) }}
+			/>
+
 
 			<div className="overflow-hidden bg-[#FDFCFB]">
 				{/* HERO */}
@@ -167,11 +168,16 @@ export default function TubToShowerConversion() {
 							<span className="text-[10px] font-black uppercase tracking-widest text-[#FFB800] bg-[#FFB800]/10 px-3 py-1 rounded-full border border-[#FFB800]/20">
 								Cost Guide
 							</span>
+							<span className="text-white/50 text-xs font-medium">Updated April 2026</span>
 						</div>
 						<h1 className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tighter uppercase">
 							Bathtub to Shower Conversion Cost in{" "}
 							<span className="text-[#FFB800]">Clark County, WA</span>
 						</h1>
+				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
+					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
+					<p className="text-gray-700 leading-relaxed text-sm">A bathtub-to-shower conversion in Clark County WA costs between $1,500 for a basic prefab insert and $25,000 for a custom walk-in. A prefab acrylic insert — the fastest option — runs $1,500–$4,000 installed in 1–2 days. A custom tile shower with a standard layout costs $4,000–$10,000 and takes 3–7 days including mortar cure time. A full custom walk-in with large-format tile, frameless glass, linear drain, and niche shelves runs $10,000–$25,000 over 1–3 weeks. Older Clark County homes — common in Hazel Dell, Orchards, and parts of Camas near downtown — often have rotted subfloor or galvanized pipes behind the walls, adding $460–$2,300 to the project. Permits are required in Vancouver and Camas for plumbing relocation. Norbilt (WA Lic. NORBI**741CS) pulls all permits. All prices reflect 2026 Clark County installed rates.</p>
+				</div>
 						<p className="text-xl text-white/70 leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">
 							Real 2026 price ranges for tub-to-shower conversions in
 							Vancouver, Camas, Ridgefield, and surrounding areas — from a

@@ -130,32 +130,20 @@ const faqs = [
 
 const schema = {
 	"@context": "https://schema.org",
-	"@graph": [
-		{
-			"@type": "Article",
-			headline: "Kitchen Remodel Cost in Camas WA: 2026 Pricing Guide",
-			description:
-				"Real 2026 price ranges for kitchen remodels in Camas WA — from cosmetic refreshes to full custom builds. Camas-specific pricing, component costs, and what drives the price.",
-			url: "https://norbilt.com/blog/kitchen-remodel-cost-camas-wa",
-			datePublished: "2026-05-26",
-			dateModified: "2026-05-26",
-			author: { "@type": "Organization", name: "Norbilt" },
-			publisher: {
-				"@type": "Organization",
-				name: "Norbilt",
-				url: "https://norbilt.com",
-			},
-			mainEntityOfPage: "https://norbilt.com/blog/kitchen-remodel-cost-camas-wa",
+		"@type": "Article",
+		headline: "Kitchen Remodel Cost in Camas WA: 2026 Pricing Guide",
+		description:
+			"Real 2026 price ranges for kitchen remodels in Camas WA — from cosmetic refreshes to full custom builds. Camas-specific pricing, component costs, and what drives the price.",
+		url: "https://norbilt.com/blog/kitchen-remodel-cost-camas-wa",
+		datePublished: "2026-05-26",
+		dateModified: "2026-05-26",
+		author: { "@type": "Organization", name: "Norbilt" },
+		publisher: {
+			"@type": "Organization",
+			name: "Norbilt",
+			url: "https://norbilt.com",
 		},
-		{
-			"@type": "FAQPage",
-			mainEntity: faqs.map((f) => ({
-				"@type": "Question",
-				name: f.q,
-				acceptedAnswer: { "@type": "Answer", text: f.a },
-			})),
-		},
-	],
+		mainEntityOfPage: "https://norbilt.com/blog/kitchen-remodel-cost-camas-wa",
 };
 
 function fmt(n: number) {
@@ -168,6 +156,18 @@ export default function KitchenRemodeCostCamasPage() {
 			<script
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+			/>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			itemListElement: [
+				{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+				{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+				{ "@type": "ListItem", position: 3, name: "Kitchen Remodel Cost in Camas WA: 2026 Pricing Guide", item: "https://norbilt.com/blog/kitchen-remodel-cost-camas-wa" },
+			],
+				}) }}
 			/>
 
 			{/* HERO */}

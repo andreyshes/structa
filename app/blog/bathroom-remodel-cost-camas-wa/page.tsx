@@ -67,19 +67,34 @@ export default function BathroomRemodelCostCamasWA() {
 		<>
 			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
 				"@context": "https://schema.org",
-				"@graph": [
-					{ "@type": "Article", headline: "Bathroom Remodel Cost in Camas WA: 2026 Pricing Guide", author: { "@type": "Person", name: "Andrey Norbilt" }, publisher: { "@type": "Organization", name: "Norbilt", logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" } }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://norbilt.com/blog/bathroom-remodel-cost-camas-wa" },
-					{ "@type": "FAQPage", mainEntity: faqs.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
-				],
+				"@type": "Article",
+				headline: "Bathroom Remodel Cost in Camas WA: 2026 Pricing Guide", author: { "@type": "Person", name: "Andrey Norbilt" }, publisher: { "@type": "Organization", name: "Norbilt", logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" } }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://norbilt.com/blog/bathroom-remodel-cost-camas-wa"
 			})}} />
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "BreadcrumbList",
+					itemListElement: [
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Bathroom Remodel Cost in Camas WA: 2026 Pricing Guide", item: "https://norbilt.com/blog/bathroom-remodel-cost-camas-wa" },
+					],
+				}) }}
+			/>
 			<div className="overflow-hidden bg-[#FDFCFB]">
 				<section className="relative pt-32 pb-16 lg:pt-48 lg:pb-24 bg-[#14201D]">
 					<div className="max-w-4xl mx-auto px-6 lg:px-8 space-y-6">
 						<div className="flex flex-wrap items-center gap-3">
 							<Link href="/blog" className="text-[#A7C4B5] text-sm font-bold hover:text-[#FFB800] transition-colors">← Blog</Link>
 							<span className="text-[10px] font-black uppercase tracking-widest text-[#FFB800] bg-[#FFB800]/10 px-3 py-1 rounded-full border border-[#FFB800]/20">Cost Guide</span>
+					<span className="text-white/50 text-xs font-medium">Updated June 2026</span>
 						</div>
 						<h1 className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tighter uppercase">Bathroom Remodel Cost in <span className="text-[#FFB800]">Camas WA</span></h1>
+				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
+					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
+					<p className="text-gray-700 leading-relaxed text-sm">A bathroom remodel in Camas WA costs between $920 for a cosmetic refresh and $35,000+ for a high-end primary suite. A mid-range remodel with new vanity, tile floor, shower surround, and all fixtures runs $3,450–$7,500 and takes 3–5 days. A full gut remodel — everything to studs — costs $9,200–$18,000 over 1–2 weeks. Primary suite remodels with custom tile, heated floors, and layout changes run $20,750–$35,000+. Camas homeowners in Prune Hill and Deer Creek consistently choose higher-end materials — large-format tile, quartz accents, heated floors — which pushes budgets toward the top of each tier. The good news: most Camas homes were built post-1990, meaning fewer hidden surprises and more predictable project costs compared to older parts of Vancouver. All prices reflect 2026 Clark County rates with Camas material expectations factored in.</p>
+				</div>
 						<p className="text-xl text-white/70 leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">Real 2026 price ranges for every scope — from a cosmetic refresh to a full primary suite gut — from a licensed contractor remodeling bathrooms in Camas every week.</p>
 						<div className="flex items-center gap-2 text-[#A7C4B5] text-sm"><MapPin className="w-4 h-4" />Camas, WA · Prune Hill · Deer Creek · Grass Valley · Lacamas Lake</div>
 					</div>

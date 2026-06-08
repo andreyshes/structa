@@ -44,6 +44,18 @@ export default function DrywallRepairCost() {
 					}),
 				}}
 			/>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "BreadcrumbList",
+					itemListElement: [
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Drywall Repair Cost in Vancouver WA", item: "https://norbilt.com/blog/drywall-repair-cost-vancouver-wa" },
+					],
+				}) }}
+			/>
 
 			<div className="overflow-hidden bg-[#FDFCFB]">
 				{/* HERO */}
@@ -59,11 +71,16 @@ export default function DrywallRepairCost() {
 							<span className="text-[10px] font-black uppercase tracking-widest text-[#FFB800] bg-[#FFB800]/10 px-3 py-1 rounded-full border border-[#FFB800]/20">
 								Cost Guide
 							</span>
+							<span className="text-white/50 text-xs font-medium">Updated April 2026</span>
 						</div>
 						<h1 className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tighter uppercase">
 							How Much Does Drywall Repair Cost in{" "}
 							<span className="text-[#FFB800]">Vancouver, WA?</span>
 						</h1>
+				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
+					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
+					<p className="text-gray-700 leading-relaxed text-sm">Drywall repair in Vancouver WA costs $115–$250 for a small patch, $175–$500 for a medium section, and $500–$2,500+ for large water-damaged repairs. A nail hole or small crack costs $115–$175 including texture match and paint. A fist-sized hole or door handle damage runs $175–$400. Water damage repairs — replacing wet drywall, treating for mold, and fixing the source — start at $460 and go up to $2,300+ for larger affected areas. The hardest part of drywall work is texture matching: mismatched texture stands out more than the original damage. Texture styles in Clark County range from orange peel (most common in homes built after 1980) to knock-down, skip-trowel, and popcorn (pre-1980 homes). Matching requires experience and the right tools — this is where most DIY drywall repairs fail visually. Norbilt serves Vancouver and Clark County. All prices are 2026 rates.</p>
+				</div>
 						<p className="text-xl text-white/70 leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">
 							Real pricing for holes, cracks, water damage, and texture
 							matching — from a licensed Clark County contractor who does this

@@ -44,6 +44,18 @@ export default function BathroomRemodel() {
 					}),
 				}}
 			/>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "BreadcrumbList",
+					itemListElement: [
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "7 Signs You Need a Bathroom Remodel in Vancouver WA", item: "https://norbilt.com/blog/signs-you-need-bathroom-remodel-vancouver-wa" },
+					],
+				}) }}
+			/>
 
 			<div className="overflow-hidden bg-[#FDFCFB]">
 				{/* HERO */}
@@ -59,11 +71,16 @@ export default function BathroomRemodel() {
 							<span className="text-[10px] font-black uppercase tracking-widest text-[#FFB800] bg-[#FFB800]/10 px-3 py-1 rounded-full border border-[#FFB800]/20">
 								Home Tips
 							</span>
+							<span className="text-white/50 text-xs font-medium">Updated April 2026</span>
 						</div>
 						<h1 className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tighter uppercase">
 							7 Signs You Need a Bathroom Remodel in{" "}
 							<span className="text-[#FFB800]">Vancouver, WA</span>
 						</h1>
+				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
+					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
+					<p className="text-gray-700 leading-relaxed text-sm">Seven signs you need a bathroom remodel in Vancouver WA: persistent mold or mildew that returns after cleaning (means moisture is getting behind the tile), soft or spongy flooring near the toilet or shower (subfloor rot — act before it spreads to the joists), cracked or missing grout that lets water through (not a cosmetic issue — water intrusion damages the wall behind), a vanity over 20 years old with limited storage and dated hardware, a tub or shower that hasn't been updated since the original build, lighting that was installed before LED fixtures became standard, and a layout that wastes space or doesn't match how you actually use the room. In Vancouver, the most common hidden issue we find during gut remodels is water damage behind 1980s-era shower surrounds — often from failed grout that was never addressed. Catching it early costs $690–$1,380; catching it late costs $3,450–$9,200.</p>
+				</div>
 						<p className="text-xl text-white/70 leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">
 							Some of these are obvious. Others are easy to overlook until
 							they become expensive. A licensed Clark County contractor walks

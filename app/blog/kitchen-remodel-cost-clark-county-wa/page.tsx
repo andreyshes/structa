@@ -140,31 +140,19 @@ const faqs = [
 
 const schema = {
 	"@context": "https://schema.org",
-	"@graph": [
-		{
-			"@type": "Article",
-			headline: "Kitchen Remodel Cost in Clark County WA: 2026 Guide",
-			description:
-				"Real 2026 price ranges for kitchen remodels in Clark County WA — from cosmetic refreshes to full custom builds. Component pricing, city breakdowns, and cost drivers.",
-			url: "https://norbilt.com/blog/kitchen-remodel-cost-clark-county-wa",
-			datePublished: "2026-04-28",
-			dateModified: "2026-04-28",
-			author: { "@type": "Organization", name: "Norbilt" },
-			publisher: {
-				"@type": "Organization",
-				name: "Norbilt",
-				url: "https://norbilt.com",
-			},
-		},
-		{
-			"@type": "FAQPage",
-			mainEntity: faqs.map((f) => ({
-				"@type": "Question",
-				name: f.q,
-				acceptedAnswer: { "@type": "Answer", text: f.a },
-			})),
-		},
-	],
+	"@type": "Article",
+	headline: "Kitchen Remodel Cost in Clark County WA: 2026 Guide",
+	description:
+		"Real 2026 price ranges for kitchen remodels in Clark County WA — from cosmetic refreshes to full custom builds. Component pricing, city breakdowns, and cost drivers.",
+	url: "https://norbilt.com/blog/kitchen-remodel-cost-clark-county-wa",
+	datePublished: "2026-04-28",
+	dateModified: "2026-04-28",
+	author: { "@type": "Organization", name: "Norbilt" },
+	publisher: {
+		"@type": "Organization",
+		name: "Norbilt",
+		url: "https://norbilt.com",
+	},
 };
 
 function fmt(n: number) {
@@ -178,6 +166,18 @@ export default function KitchenRemodeCostPage() {
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
 			/>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "BreadcrumbList",
+					itemListElement: [
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Kitchen Remodel Cost in Clark County WA: 2026 Guide", item: "https://norbilt.com/blog/kitchen-remodel-cost-clark-county-wa" },
+					],
+				}) }}
+			/>
 
 			{/* HERO */}
 			<section className="pt-32 pb-20 bg-[#14201D] text-white relative overflow-hidden">
@@ -187,11 +187,16 @@ export default function KitchenRemodeCostPage() {
 						<span className="font-black uppercase tracking-widest text-xs">
 							Cost Guide · Clark County, WA · 2026
 						</span>
+						<span className="text-white/50 text-xs font-medium">Updated April 2026</span>
 					</div>
 					<h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-6 leading-[0.9]">
 						Kitchen Remodel Cost<br />
 						<span className="text-[#FFB800]">in Clark County WA</span>
 					</h1>
+				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
+					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
+					<p className="text-gray-700 leading-relaxed text-sm">A kitchen remodel in Clark County WA costs between $1,500 for a cosmetic refresh and $80,000+ for a custom build. A cosmetic refresh — new hardware, paint, and a faucet — runs $1,500–$4,000 and takes 1–3 days. A mid-range remodel with new countertops, cabinet fronts, sink, and appliances costs $15,000–$35,000 over 2–4 weeks. A full gut remodel with new layout, plumbing, electrical, and custom cabinets runs $30,000–$60,000+. Costs vary across Clark County: Camas homeowners typically spend at the top of each tier on materials. Vancouver's older Hazel Dell and Orchards homes often require electrical panel upgrades ($2,000–$5,000) and plumbing updates when doing full gut remodels. Ridgefield and Battle Ground new construction tends to have cleaner infrastructure. All prices reflect 2026 Clark County installed rates from licensed contractors.</p>
+				</div>
 					<p className="text-white/70 text-xl font-medium leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">
 						Real 2026 price ranges for kitchen remodels across Vancouver, Camas,
 						Ridgefield, and Clark County — from a $1,500 cosmetic refresh to a

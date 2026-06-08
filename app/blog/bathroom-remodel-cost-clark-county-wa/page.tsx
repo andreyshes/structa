@@ -133,34 +133,35 @@ export default function BathroomRemodeCostClarkCounty() {
 				dangerouslySetInnerHTML={{
 					__html: JSON.stringify({
 						"@context": "https://schema.org",
-						"@graph": [
-							{
-								"@type": "Article",
-								headline: "How Much Does a Bathroom Remodel Cost in Clark County WA? (2026 Guide)",
-								author: { "@type": "Person", name: "Andrey Norbilt" },
-								publisher: {
-									"@type": "Organization",
-									name: "Norbilt",
-									logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" },
-								},
-								datePublished: "2026-04-15",
-								dateModified: "2026-04-15",
-								description:
-									"Complete 2026 cost guide for bathroom remodels in Clark County WA — real price ranges by scope, component-level costs, and what drives the price up or down.",
-								mainEntityOfPage: "https://norbilt.com/blog/bathroom-remodel-cost-clark-county-wa",
-							},
-							{
-								"@type": "FAQPage",
-								mainEntity: faqs.map((f) => ({
-									"@type": "Question",
-									name: f.q,
-									acceptedAnswer: { "@type": "Answer", text: f.a },
-								})),
-							},
-						],
+						"@type": "Article",
+						headline: "How Much Does a Bathroom Remodel Cost in Clark County WA? (2026 Guide)",
+						author: { "@type": "Person", name: "Andrey Norbilt" },
+						publisher: {
+							"@type": "Organization",
+							name: "Norbilt",
+							logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" },
+						},
+						datePublished: "2026-04-15",
+						dateModified: "2026-04-15",
+						description:
+							"Complete 2026 cost guide for bathroom remodels in Clark County WA — real price ranges by scope, component-level costs, and what drives the price up or down.",
+						mainEntityOfPage: "https://norbilt.com/blog/bathroom-remodel-cost-clark-county-wa",
 					}),
 				}}
 			/>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "BreadcrumbList",
+					itemListElement: [
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Bathroom Remodel Cost in Clark County WA: 2026 Guide", item: "https://norbilt.com/blog/bathroom-remodel-cost-clark-county-wa" },
+					],
+				}) }}
+			/>
+
 
 			<div className="overflow-hidden bg-[#FDFCFB]">
 				{/* HERO */}
@@ -176,11 +177,16 @@ export default function BathroomRemodeCostClarkCounty() {
 							<span className="text-[10px] font-black uppercase tracking-widest text-[#FFB800] bg-[#FFB800]/10 px-3 py-1 rounded-full border border-[#FFB800]/20">
 								Cost Guide
 							</span>
+							<span className="text-white/50 text-xs font-medium">Updated April 2026</span>
 						</div>
 						<h1 className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tighter uppercase">
 							Bathroom Remodel Cost in{" "}
 							<span className="text-[#FFB800]">Clark County WA</span>
 						</h1>
+				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
+					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
+					<p className="text-gray-700 leading-relaxed text-sm">A bathroom remodel in Clark County WA costs between $800 for a cosmetic refresh and $35,000+ for a full gut remodel. A cosmetic refresh — new fixtures, toilet, recaulk, and paint — runs $800–$2,000 and takes 1–2 days. A mid-range remodel with new vanity, tile, shower surround, and all fixtures costs $3,000–$7,000 and takes 3–5 days. A full gut remodel runs $8,000–$18,000 over 1–2 weeks. Costs vary across Clark County: Camas homeowners typically choose higher-end finishes adding 10–20% to base prices, while Battle Ground ranch homes frequently have water damage or aging plumbing hidden behind walls. Vancouver offers the widest range — from budget cosmetic work to full luxury primary suite renovations up to $35,000. All prices reflect 2026 installed rates from a licensed Clark County contractor.</p>
+				</div>
 						<p className="text-xl text-white/70 leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">
 							Real 2026 price ranges for every scope — from a quick cosmetic
 							refresh to a full gut remodel — from a licensed contractor who

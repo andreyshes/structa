@@ -150,32 +150,20 @@ const faqs = [
 
 const schema = {
 	"@context": "https://schema.org",
-	"@graph": [
-		{
-			"@type": "Article",
-			headline: "Home Remodeling in Camas WA: 2026 Cost Guide & What to Expect",
-			description:
-				"Real 2026 costs for home remodeling in Camas WA. Kitchen, bathroom, flooring, finish carpentry, and whole-home project pricing from a licensed Clark County contractor.",
-			url: "https://norbilt.com/blog/home-remodeling-camas-wa",
-			datePublished: "2026-05-26",
-			dateModified: "2026-05-26",
-			author: { "@type": "Organization", name: "Norbilt" },
-			publisher: {
-				"@type": "Organization",
-				name: "Norbilt",
-				url: "https://norbilt.com",
-			},
-			mainEntityOfPage: "https://norbilt.com/blog/home-remodeling-camas-wa",
+		"@type": "Article",
+		headline: "Home Remodeling in Camas WA: 2026 Cost Guide & What to Expect",
+		description:
+			"Real 2026 costs for home remodeling in Camas WA. Kitchen, bathroom, flooring, finish carpentry, and whole-home project pricing from a licensed Clark County contractor.",
+		url: "https://norbilt.com/blog/home-remodeling-camas-wa",
+		datePublished: "2026-05-26",
+		dateModified: "2026-05-26",
+		author: { "@type": "Organization", name: "Norbilt" },
+		publisher: {
+			"@type": "Organization",
+			name: "Norbilt",
+			url: "https://norbilt.com",
 		},
-		{
-			"@type": "FAQPage",
-			mainEntity: faqs.map((f) => ({
-				"@type": "Question",
-				name: f.q,
-				acceptedAnswer: { "@type": "Answer", text: f.a },
-			})),
-		},
-	],
+		mainEntityOfPage: "https://norbilt.com/blog/home-remodeling-camas-wa",
 };
 
 export default function HomeRemodelingCamasPage() {
@@ -184,6 +172,18 @@ export default function HomeRemodelingCamasPage() {
 			<script
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+			/>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			itemListElement: [
+				{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+				{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+				{ "@type": "ListItem", position: 3, name: "Home Remodeling in Camas WA: 2026 Cost Guide & What to Expect", item: "https://norbilt.com/blog/home-remodeling-camas-wa" },
+			],
+				}) }}
 			/>
 
 			{/* HERO */}

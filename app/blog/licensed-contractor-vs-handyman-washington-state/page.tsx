@@ -44,6 +44,18 @@ export default function ContractorVsHandyman() {
 					}),
 				}}
 			/>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "BreadcrumbList",
+					itemListElement: [
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Licensed Contractor vs. Handyman in Washington State", item: "https://norbilt.com/blog/licensed-contractor-vs-handyman-washington-state" },
+					],
+				}) }}
+			/>
 
 			<div className="overflow-hidden bg-[#FDFCFB]">
 				{/* HERO */}
@@ -59,11 +71,16 @@ export default function ContractorVsHandyman() {
 							<span className="text-[10px] font-black uppercase tracking-widest text-[#FFB800] bg-[#FFB800]/10 px-3 py-1 rounded-full border border-[#FFB800]/20">
 								Hiring Guide
 							</span>
+							<span className="text-white/50 text-xs font-medium">Updated April 2026</span>
 						</div>
 						<h1 className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tighter uppercase">
 							Licensed Contractor vs. Handyman in{" "}
 							<span className="text-[#FFB800]">Washington State</span>
 						</h1>
+				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
+					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
+					<p className="text-gray-700 leading-relaxed text-sm">In Washington State, any remodeling or repair job priced at $500 or more must be performed by a licensed general contractor. An unlicensed handyman is legally limited to jobs under $500. Hiring unlicensed for larger work has real consequences: your homeowner's insurance may deny claims related to that work, and Washington real estate law requires disclosure of unpermitted work at resale — which can kill a deal or reduce your sale price. A licensed contractor in Washington must carry a WA General Contractor License (verify at contractors.lni.wa.gov), liability insurance ($500,000 minimum, $1M for larger projects), and be bonded. When to hire a handyman: minor repairs, small maintenance tasks under $500. When to hire a licensed contractor: any bathroom or kitchen work, structural changes, electrical, plumbing, or any project requiring a permit. Norbilt (WA Lic. NORBI**741CS) handles both categories across Clark County.</p>
+				</div>
 						<p className="text-xl text-white/70 leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">
 							What the law says, what each can legally do, and how to protect
 							yourself when hiring for home repairs in Clark County.

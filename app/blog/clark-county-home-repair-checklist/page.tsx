@@ -125,6 +125,18 @@ export default function ClarkCountyChecklist() {
 					}),
 				}}
 			/>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "BreadcrumbList",
+					itemListElement: [
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Clark County Home Repair Checklist: 10 Things to Fix", item: "https://norbilt.com/blog/clark-county-home-repair-checklist" },
+					],
+				}) }}
+			/>
 
 			<div className="overflow-hidden bg-[#FDFCFB]">
 				{/* HERO */}
@@ -140,11 +152,16 @@ export default function ClarkCountyChecklist() {
 							<span className="text-[10px] font-black uppercase tracking-widest text-[#FFB800] bg-[#FFB800]/10 px-3 py-1 rounded-full border border-[#FFB800]/20">
 								Maintenance
 							</span>
+							<span className="text-white/50 text-xs font-medium">Updated March 2026</span>
 						</div>
 						<h1 className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tighter uppercase">
 							Home Repair Checklist{" "}
 							<span className="text-[#FFB800]">Checklist</span>
 						</h1>
+				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
+					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
+					<p className="text-gray-700 leading-relaxed text-sm">The 10 most common home repair issues in Clark County WA that escalate if ignored: roof flashing leaks (re-flash $345–$920 vs. deck replacement $11,500+), failed bathroom caulk (recaulk $115–$250 vs. subfloor replacement $690–$2,300), cracked drywall around windows (seal + patch $230–$575 vs. water intrusion damage $1,150+), sticking doors (plane + rehang $115–$230 vs. structural fix $2,300+), running toilets (flapper/fill valve $115–$175 vs. water damage $1,150+), damaged gutters (reseal $115–$345 vs. foundation issues $4,600+), non-GFCI outlets in wet areas (upgrade $115–$230 each), aging water heater (flush $115 annually vs. emergency replacement $1,150–$2,300), wood rot on trim or sill (replace affected section $230–$690 vs. full window replacement $920–$2,300), and missing attic insulation (add insulation $920–$2,300 vs. HVAC overcosts annually).</p>
+				</div>
 						<p className="text-xl text-white/70 leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">
 							10 things to fix before small problems
 							turn into expensive ones. From a licensed local contractor who

@@ -52,12 +52,29 @@ const faqs = [
 export default function KitchenRemodelCostBattleGroundWA() {
 	return (
 		<>
-			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@graph": [{ "@type": "Article", headline: "Kitchen Remodel Cost in Battle Ground WA: 2026 Guide", author: { "@type": "Person", name: "Andrey Norbilt" }, publisher: { "@type": "Organization", name: "Norbilt", logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" } }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://norbilt.com/blog/kitchen-remodel-cost-battle-ground-wa" }, { "@type": "FAQPage", mainEntity: faqs.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }] }) }} />
+			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Article", headline: "Kitchen Remodel Cost in Battle Ground WA: 2026 Guide", author: { "@type": "Person", name: "Andrey Norbilt" }, publisher: { "@type": "Organization", name: "Norbilt", logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" } }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://norbilt.com/blog/kitchen-remodel-cost-battle-ground-wa" }) }} />
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "BreadcrumbList",
+					itemListElement: [
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Kitchen Remodel Cost in Battle Ground WA: 2026 Guide", item: "https://norbilt.com/blog/kitchen-remodel-cost-battle-ground-wa" },
+					],
+				}) }}
+			/>
 			<div className="overflow-hidden bg-[#FDFCFB]">
 				<section className="relative pt-32 pb-16 lg:pt-48 lg:pb-24 bg-[#14201D]">
 					<div className="max-w-4xl mx-auto px-6 lg:px-8 space-y-6">
-						<div className="flex flex-wrap items-center gap-3"><Link href="/blog" className="text-[#A7C4B5] text-sm font-bold hover:text-[#FFB800] transition-colors">← Blog</Link><span className="text-[10px] font-black uppercase tracking-widest text-[#FFB800] bg-[#FFB800]/10 px-3 py-1 rounded-full border border-[#FFB800]/20">Cost Guide</span></div>
+						<div className="flex flex-wrap items-center gap-3"><Link href="/blog" className="text-[#A7C4B5] text-sm font-bold hover:text-[#FFB800] transition-colors">← Blog</Link><span className="text-[10px] font-black uppercase tracking-widest text-[#FFB800] bg-[#FFB800]/10 px-3 py-1 rounded-full border border-[#FFB800]/20">Cost Guide</span>
+					<span className="text-white/50 text-xs font-medium">Updated May 2026</span></div>
 						<h1 className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tighter uppercase">Kitchen Remodel Cost in <span className="text-[#FFB800]">Battle Ground WA</span></h1>
+				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
+					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
+					<p className="text-gray-700 leading-relaxed text-sm">A kitchen remodel in Battle Ground WA costs between $1,725 for a cosmetic refresh and $100,000+ for a full custom build. A cosmetic refresh — new hardware, paint, and minor updates — runs $1,725–$5,000. A mid-range remodel with new countertops, cabinet fronts, and appliances costs $17,250–$35,000. A full gut remodel — new layout, plumbing, electrical, and custom cabinets — runs $34,500–$60,000. A high-end custom kitchen with imported materials starts at $57,500. Battle Ground's older ranch homes (common in Cherry Grove and central Battle Ground) often have outdated electrical panels and galvanized pipes that need upgrading, adding $2,300–$6,900 to the project. Newer developments like Daybreak have modern infrastructure and more predictable budgets. Permits are required for plumbing and electrical work. Norbilt (WA Lic. NORBI**741CS) serves Battle Ground and north Clark County. All prices reflect 2026 rates.</p>
+				</div>
 						<p className="text-xl text-white/70 leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">Real 2026 price ranges for every scope — from a cosmetic refresh to a full custom build — from a licensed contractor serving Battle Ground and north Clark County.</p>
 						<div className="flex items-center gap-2 text-[#A7C4B5] text-sm"><MapPin className="w-4 h-4" />Battle Ground, WA · Daybreak · Cherry Grove · Lewisville</div>
 					</div>

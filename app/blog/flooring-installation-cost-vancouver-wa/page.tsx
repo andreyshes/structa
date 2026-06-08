@@ -146,31 +146,19 @@ const faqs = [
 
 const schema = {
 	"@context": "https://schema.org",
-	"@graph": [
-		{
-			"@type": "Article",
-			headline: "Flooring Installation Cost in Vancouver WA & Clark County: 2026 Guide",
-			description:
-				"Real 2026 price ranges for flooring installation in Vancouver WA and Clark County — LVP, engineered hardwood, tile, and laminate. Subfloor costs, city breakdowns, and what to watch out for.",
-			url: "https://norbilt.com/blog/flooring-installation-cost-vancouver-wa",
-			datePublished: "2026-05-09",
-			dateModified: "2026-05-09",
-			author: { "@type": "Organization", name: "Norbilt" },
-			publisher: {
-				"@type": "Organization",
-				name: "Norbilt",
-				url: "https://norbilt.com",
-			},
+		"@type": "Article",
+		headline: "Flooring Installation Cost in Vancouver WA & Clark County: 2026 Guide",
+		description:
+			"Real 2026 price ranges for flooring installation in Vancouver WA and Clark County — LVP, engineered hardwood, tile, and laminate. Subfloor costs, city breakdowns, and what to watch out for.",
+		url: "https://norbilt.com/blog/flooring-installation-cost-vancouver-wa",
+		datePublished: "2026-05-09",
+		dateModified: "2026-05-09",
+		author: { "@type": "Organization", name: "Norbilt" },
+		publisher: {
+			"@type": "Organization",
+			name: "Norbilt",
+			url: "https://norbilt.com",
 		},
-		{
-			"@type": "FAQPage",
-			mainEntity: faqs.map((f) => ({
-				"@type": "Question",
-				name: f.q,
-				acceptedAnswer: { "@type": "Answer", text: f.a },
-			})),
-		},
-	],
 };
 
 export default function FlooringCostPage() {
@@ -179,6 +167,18 @@ export default function FlooringCostPage() {
 			<script
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+			/>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			itemListElement: [
+				{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+				{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+				{ "@type": "ListItem", position: 3, name: "Flooring Installation Cost in Vancouver WA & Clark County: 2026 Guide", item: "https://norbilt.com/blog/flooring-installation-cost-vancouver-wa" },
+			],
+				}) }}
 			/>
 
 			{/* HERO */}
@@ -189,11 +189,16 @@ export default function FlooringCostPage() {
 						<span className="font-black uppercase tracking-widest text-xs">
 							Cost Guide · Vancouver WA · Clark County · 2026
 						</span>
+						<span className="text-white/50 text-xs font-medium">Updated May 2026</span>
 					</div>
 					<h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-6 leading-[0.9]">
 						Flooring Installation Cost<br />
 						<span className="text-[#FFB800]">in Vancouver WA</span>
 					</h1>
+				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
+					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
+					<p className="text-gray-700 leading-relaxed text-sm">Flooring installation in Vancouver WA costs $3.45–$6.90 per square foot for LVP, $8.05–$17.25 per square foot for engineered hardwood, and $11.50–$23.00 per square foot for tile — all installed. A 200 sq ft room with LVP runs $690–$1,380. Older East Vancouver homes (Hazel Dell, Orchards, pre-1980 construction) frequently have subfloor issues that add $115–$1,380 to the project — budget for this before you finalize material choices. West Vancouver and Fisher's Landing new construction typically has clean subfloors and is ready for any material. LVP is the top choice for kitchens, bathrooms, and basements given Clark County's moisture levels. Engineered hardwood is appropriate for dry main-floor living areas. All prices include material, underlayment, labor, and basic disposal. Demo of existing flooring ($0.80–$2.30/sq ft) and stairs ($69–$138/step) are billed separately. Prices reflect 2026 Clark County installed rates.</p>
+				</div>
 					<p className="text-white/70 text-xl font-medium leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">
 						Real 2026 price ranges for LVP, engineered hardwood, tile, and
 						laminate across Vancouver and Clark County. What each floor type

@@ -66,19 +66,34 @@ export default function KitchenRemodelCostRidgefieldWA() {
 		<>
 			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
 				"@context": "https://schema.org",
-				"@graph": [
-					{ "@type": "Article", headline: "Kitchen Remodel Cost in Ridgefield WA: 2026 Pricing Guide", author: { "@type": "Person", name: "Andrey Norbilt" }, publisher: { "@type": "Organization", name: "Norbilt", logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" } }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://norbilt.com/blog/kitchen-remodel-cost-ridgefield-wa" },
-					{ "@type": "FAQPage", mainEntity: faqs.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
-				],
+				"@type": "Article",
+				headline: "Kitchen Remodel Cost in Ridgefield WA: 2026 Pricing Guide", author: { "@type": "Person", name: "Andrey Norbilt" }, publisher: { "@type": "Organization", name: "Norbilt", logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" } }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://norbilt.com/blog/kitchen-remodel-cost-ridgefield-wa"
 			})}} />
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "BreadcrumbList",
+					itemListElement: [
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Kitchen Remodel Cost in Ridgefield WA: 2026 Pricing Guide", item: "https://norbilt.com/blog/kitchen-remodel-cost-ridgefield-wa" },
+					],
+				}) }}
+			/>
 			<div className="overflow-hidden bg-[#FDFCFB]">
 				<section className="relative pt-32 pb-16 lg:pt-48 lg:pb-24 bg-[#14201D]">
 					<div className="max-w-4xl mx-auto px-6 lg:px-8 space-y-6">
 						<div className="flex flex-wrap items-center gap-3">
 							<Link href="/blog" className="text-[#A7C4B5] text-sm font-bold hover:text-[#FFB800] transition-colors">← Blog</Link>
 							<span className="text-[10px] font-black uppercase tracking-widest text-[#FFB800] bg-[#FFB800]/10 px-3 py-1 rounded-full border border-[#FFB800]/20">Cost Guide</span>
+					<span className="text-white/50 text-xs font-medium">Updated May 2026</span>
 						</div>
 						<h1 className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tighter uppercase">Kitchen Remodel Cost in <span className="text-[#FFB800]">Ridgefield WA</span></h1>
+				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
+					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
+					<p className="text-gray-700 leading-relaxed text-sm">A kitchen remodel in Ridgefield WA costs between $1,725 for a cosmetic refresh and $100,000+ for a full custom build. A cosmetic refresh — hardware, paint, and minor updates — runs $1,725–$5,000. A mid-range remodel with new countertops, cabinet fronts, and appliances costs $17,250–$35,000. A full gut remodel runs $34,500–$60,000. Ridgefield's fast-growing newer construction — Union Ridge, Bellwood, Bridgeport — has modern infrastructure (200-amp panels, PEX plumbing) so budget surprises are less common here than in older Clark County cities. Older downtown Ridgefield properties are the exception and may require electrical or plumbing upgrades during a full gut. Most Ridgefield homeowners choose mid-range finishes with strategic splurges on countertops and a single statement appliance. Permits are required for all plumbing and electrical work. Norbilt (WA Lic. NORBI**741CS) serves Ridgefield and all of Clark County. All prices reflect 2026 rates.</p>
+				</div>
 						<p className="text-xl text-white/70 leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">Real 2026 price ranges for every scope — from a cosmetic refresh to a full custom build — from a licensed contractor remodeling kitchens in Ridgefield every week.</p>
 						<div className="flex items-center gap-2 text-[#A7C4B5] text-sm"><MapPin className="w-4 h-4" />Ridgefield, WA · Union Ridge · Bellwood · Hillhurst</div>
 					</div>

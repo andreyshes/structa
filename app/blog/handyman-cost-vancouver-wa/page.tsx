@@ -79,33 +79,34 @@ export default function HandymanCostPage() {
 				dangerouslySetInnerHTML={{
 					__html: JSON.stringify({
 						"@context": "https://schema.org",
-						"@graph": [
-							{
-								"@type": "Article",
-								"headline": "How Much Does a Handyman Cost in Vancouver WA? (2026 Rates)",
-								"description": "Real 2026 handyman costs in Vancouver WA & Clark County. Hourly rates, per-job pricing for 20+ common tasks, and what separates a licensed contractor from an unlicensed handyman.",
-								"datePublished": "2026-05-17",
-								"dateModified": "2026-05-17",
-								"author": { "@type": "Organization", "name": "Norbilt" },
-								"publisher": {
-									"@type": "Organization",
-									"name": "Norbilt",
-									"url": "https://norbilt.com",
-								},
-								"mainEntityOfPage": "https://norbilt.com/blog/handyman-cost-vancouver-wa",
-							},
-							{
-								"@type": "FAQPage",
-								"mainEntity": faqs.map((f) => ({
-									"@type": "Question",
-									"name": f.q,
-									"acceptedAnswer": { "@type": "Answer", "text": f.a },
-								})),
-							},
-						],
+						"@type": "Article",
+						"headline": "How Much Does a Handyman Cost in Vancouver WA? (2026 Rates)",
+						"description": "Real 2026 handyman costs in Vancouver WA & Clark County. Hourly rates, per-job pricing for 20+ common tasks, and what separates a licensed contractor from an unlicensed handyman.",
+						"datePublished": "2026-05-17",
+						"dateModified": "2026-05-17",
+						"author": { "@type": "Organization", "name": "Norbilt" },
+						"publisher": {
+							"@type": "Organization",
+							"name": "Norbilt",
+							"url": "https://norbilt.com",
+						},
+						"mainEntityOfPage": "https://norbilt.com/blog/handyman-cost-vancouver-wa",
 					}),
 				}}
 			/>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "BreadcrumbList",
+					itemListElement: [
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "How Much Does a Handyman Cost in Vancouver WA?", item: "https://norbilt.com/blog/handyman-cost-vancouver-wa" },
+					],
+				}) }}
+			/>
+
 
 			{/* HERO */}
 			<section className="bg-[#1F2E2B] pt-32 pb-20 px-6">

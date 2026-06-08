@@ -48,12 +48,29 @@ const faqs = [
 export default function DrywallRepairCostClarkCountyWA() {
 	return (
 		<>
-			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@graph": [{ "@type": "Article", headline: "Drywall Repair Cost in Clark County WA: 2026 Guide", author: { "@type": "Person", name: "Andrey Norbilt" }, publisher: { "@type": "Organization", name: "Norbilt", logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" } }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://norbilt.com/blog/drywall-repair-cost-clark-county-wa" }, { "@type": "FAQPage", mainEntity: faqs.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }] }) }} />
+			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Article", headline: "Drywall Repair Cost in Clark County WA: 2026 Guide", author: { "@type": "Person", name: "Andrey Norbilt" }, publisher: { "@type": "Organization", name: "Norbilt", logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" } }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://norbilt.com/blog/drywall-repair-cost-clark-county-wa" }) }} />
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "BreadcrumbList",
+					itemListElement: [
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Drywall Repair Cost in Clark County WA: 2026 Guide", item: "https://norbilt.com/blog/drywall-repair-cost-clark-county-wa" },
+					],
+				}) }}
+			/>
 			<div className="overflow-hidden bg-[#FDFCFB]">
 				<section className="relative pt-32 pb-16 lg:pt-48 lg:pb-24 bg-[#14201D]">
 					<div className="max-w-4xl mx-auto px-6 lg:px-8 space-y-6">
-						<div className="flex flex-wrap items-center gap-3"><Link href="/blog" className="text-[#A7C4B5] text-sm font-bold hover:text-[#FFB800] transition-colors">← Blog</Link><span className="text-[10px] font-black uppercase tracking-widest text-[#FFB800] bg-[#FFB800]/10 px-3 py-1 rounded-full border border-[#FFB800]/20">Cost Guide</span></div>
+						<div className="flex flex-wrap items-center gap-3"><Link href="/blog" className="text-[#A7C4B5] text-sm font-bold hover:text-[#FFB800] transition-colors">← Blog</Link><span className="text-[10px] font-black uppercase tracking-widest text-[#FFB800] bg-[#FFB800]/10 px-3 py-1 rounded-full border border-[#FFB800]/20">Cost Guide</span>
+					<span className="text-white/50 text-xs font-medium">Updated May 2026</span></div>
 						<h1 className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tighter uppercase">Drywall Repair Cost in <span className="text-[#FFB800]">Clark County WA</span></h1>
+				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
+					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
+					<p className="text-gray-700 leading-relaxed text-sm">Drywall repair in Clark County WA costs $115–$250 for small patches, $345–$800 for medium repairs, and $800–$3,000+ for large water-damaged sections. A nail hole or small crack — the most common repair — runs $115–$175 including texture match and paint. A fist-sized patch or door handle hole costs $175–$400. Multiple repairs in one room or a larger section costs $345–$800. Water damage repairs — where you're replacing wet drywall, treating for mold, and repairing the source — start at $460 and can reach $2,300+ depending on the affected area. Popcorn ceiling removal runs $1.15–$2.30 per square foot. Texture matching is often the hardest part of drywall work — mismatched texture stands out more than the original hole. Norbilt (WA Lic. NORBI**741CS) serves all of Clark County. All prices reflect 2026 rates.</p>
+				</div>
 						<p className="text-xl text-white/70 leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">Real 2026 price ranges for every repair type — from a nail hole patch to full room replacement — from a licensed contractor doing drywall work across Clark County every week.</p>
 						<div className="flex items-center gap-2 text-[#A7C4B5] text-sm"><MapPin className="w-4 h-4" />Clark County, WA · Vancouver · Camas · Ridgefield · Battle Ground · Washougal</div>
 					</div>

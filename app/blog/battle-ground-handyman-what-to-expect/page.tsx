@@ -44,6 +44,18 @@ export default function BattleGroundHandyman() {
 					}),
 				}}
 			/>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "BreadcrumbList",
+					itemListElement: [
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Hiring a Handyman in Battle Ground WA: What to Expect", item: "https://norbilt.com/blog/battle-ground-handyman-what-to-expect" },
+					],
+				}) }}
+			/>
 
 			<div className="overflow-hidden bg-[#FDFCFB]">
 				{/* HERO */}
@@ -59,11 +71,16 @@ export default function BattleGroundHandyman() {
 							<span className="text-[10px] font-black uppercase tracking-widest text-[#FFB800] bg-[#FFB800]/10 px-3 py-1 rounded-full border border-[#FFB800]/20">
 								Hiring Guide
 							</span>
+							<span className="text-white/50 text-xs font-medium">Updated March 2026</span>
 						</div>
 						<h1 className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tighter uppercase">
 							Hiring a Handyman in{" "}
 							<span className="text-[#FFB800]">Battle Ground, WA</span>
 						</h1>
+				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
+					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
+					<p className="text-gray-700 leading-relaxed text-sm">Hiring a handyman in Battle Ground WA typically costs $95–$130 per hour or $175–$1,800+ for common flat-rate jobs. Small repairs like outlet replacements, door adjustments, and drywall patches run $175–$350. Larger projects like door replacements, deck repairs, or pre-sale punch lists run $460–$1,800+. Washington State law requires a licensed contractor for any job priced over $500 — hiring unlicensed for larger work voids your homeowner's insurance and creates disclosure problems at resale. When hiring in Battle Ground, ask for WA contractor license number, proof of liability insurance ($500,000 minimum), and a written estimate before any work starts. Red flags: no written estimate, price dramatically lower than competitors, won't provide license number. Norbilt (WA Lic. NORBI**741CS, $1M liability insurance, bonded) serves Battle Ground and all of north Clark County with same-week estimates. All prices are 2026 rates.</p>
+				</div>
 						<p className="text-xl text-white/70 leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">
 							What to expect, what it costs, and what to watch out for when
 							hiring handyman services in North Clark County.

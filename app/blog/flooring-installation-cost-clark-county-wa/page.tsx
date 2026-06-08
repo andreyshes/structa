@@ -35,58 +35,23 @@ const schema = {
 	mainEntityOfPage: { "@type": "WebPage", "@id": "https://norbilt.com/blog/flooring-installation-cost-clark-county-wa" },
 };
 
-const faqSchema = {
-	"@context": "https://schema.org",
-	"@type": "FAQPage",
-	mainEntity: [
-		{
-			"@type": "Question",
-			name: "How much does flooring installation cost in Clark County WA?",
-			acceptedAnswer: {
-				"@type": "Answer",
-				text: "Installed flooring in Clark County runs $3.45–$6.90/sq ft for LVP, $8.05–$17.25/sq ft for engineered hardwood, $11.50–$23.00/sq ft for tile, and $2.30–$5.75/sq ft for laminate. A 200 sq ft room typically costs $690–$2,300 depending on material.",
-			},
-		},
-		{
-			"@type": "Question",
-			name: "What is the cheapest flooring to install in Vancouver WA?",
-			acceptedAnswer: {
-				"@type": "Answer",
-				text: "Laminate is the lowest-cost option at $2.30–$5.75/sq ft installed. LVP (luxury vinyl plank) is slightly more at $3.45–$6.90/sq ft but is waterproof and more durable — making it the better value for most Clark County homes.",
-			},
-		},
-		{
-			"@type": "Question",
-			name: "Does subfloor condition affect flooring cost?",
-			acceptedAnswer: {
-				"@type": "Answer",
-				text: "Yes, significantly. Minor leveling adds $115–$345. Subfloor repairs (rotted or damaged boards) run $460–$1,380 depending on scope. Homes built before 1990 in Clark County frequently have subfloor issues that add $230–$690 to the project.",
-			},
-		},
-		{
-			"@type": "Question",
-			name: "What flooring is best for bathrooms and kitchens in Clark County?",
-			acceptedAnswer: {
-				"@type": "Answer",
-				text: "Porcelain tile is the most durable choice for wet areas at $11.50–$23.00/sq ft installed. LVP is a waterproof mid-range option at $3.45–$6.90/sq ft. Avoid laminate and hardwood in bathrooms — moisture will cause warping over time.",
-			},
-		},
-		{
-			"@type": "Question",
-			name: "How long does flooring installation take?",
-			acceptedAnswer: {
-				"@type": "Answer",
-				text: "A single room (150–300 sq ft) typically takes 1 day. A full main floor (800–1,200 sq ft) takes 2–3 days. Tile work takes longer due to mortar cure time — plan for 3–5 days. Subfloor repairs or demo of existing flooring add 1–2 days.",
-			},
-		},
-	],
-};
 
 export default function FlooringCostClarkCounty() {
 	return (
 		<>
 			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+	<script
+		type="application/ld+json"
+		dangerouslySetInnerHTML={{ __html: JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			itemListElement: [
+				{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
+				{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
+				{ "@type": "ListItem", position: 3, name: "Flooring Installation Cost in Clark County WA: 2026 Guide", item: "https://norbilt.com/blog/flooring-installation-cost-clark-county-wa" },
+			],
+		}) }}
+	/>
 
 			<div className="overflow-hidden bg-[#FDFCFB]">
 				{/* HERO */}
@@ -103,6 +68,10 @@ export default function FlooringCostClarkCounty() {
 							Flooring Installation Cost in Clark County WA
 							<span className="text-[#FFB800]"> — 2026 Guide</span>
 						</h1>
+				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
+					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
+					<p className="text-gray-700 leading-relaxed text-sm">Flooring installation in Clark County WA costs $3.45–$6.90 per square foot for LVP (luxury vinyl plank), $8.05–$17.25 per square foot for engineered hardwood, $11.50–$23.00 per square foot for porcelain tile, and $2.30–$5.75 per square foot for laminate — all installed. A 200 sq ft room with LVP runs $690–$1,380. A 200 sq ft room with tile runs $2,300–$4,600. LVP is the most popular choice in Clark County right now — it's waterproof, durable, and installs over most existing subfloors. Engineered hardwood adds the most resale value in higher-end neighborhoods like Camas, West Vancouver, and Ridgefield. Subfloor condition is the biggest budget variable: minor leveling adds $115–$345, while damaged boards (common in pre-1990 homes) add $460–$1,380. All prices include material, underlayment, labor, and basic disposal. Stairs, demo of existing flooring, and heated floor systems are billed separately.</p>
+				</div>
 						<p className="text-xl text-white/80 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6">
 							LVP, hardwood, tile, laminate — real installed prices for every material in Clark County, plus what the subfloor adds and which floor wins by room type.
 						</p>
