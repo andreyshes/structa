@@ -3,6 +3,14 @@ import { ArrowRight, Clock, MapPin } from "lucide-react";
 
 const posts = [
 	{
+		slug: "home-remodeling-clark-county-wa",
+		title: "Home Remodeling in Clark County WA: Complete 2026 Guide",
+		excerpt: "Kitchen remodels, bathroom renovations, flooring, carpentry, drywall — real 2026 cost ranges for every major home remodeling project in Clark County WA. City-by-city guides for Vancouver, Camas, Battle Ground, and Ridgefield.",
+		category: "Pillar Guide",
+		location: "Clark County, WA",
+		readTime: "10 min read",
+	},
+	{
 		slug: "flooring-installation-cost-clark-county-wa",
 		title: "Flooring Installation Cost in Clark County WA: 2026 Guide",
 		excerpt: "LVP, hardwood, tile, laminate — real 2026 installed prices for every material in Clark County WA. Cost tables, subfloor factors, and city breakdowns for Vancouver, Camas, Battle Ground & more.",

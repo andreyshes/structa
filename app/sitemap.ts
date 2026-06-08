@@ -124,6 +124,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			priority: 0.8,
 		},
 		{
+			url: `${baseUrl}/blog/home-remodeling-clark-county-wa`,
+			lastModified: new Date("2026-06-08"),
+			changeFrequency: "monthly",
+			priority: 0.9,
+		},
+		{
 			url: `${baseUrl}/blog/flooring-installation-cost-clark-county-wa`,
 			lastModified: new Date("2026-05-26"),
 			changeFrequency: "monthly",
