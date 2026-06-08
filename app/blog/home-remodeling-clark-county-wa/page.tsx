@@ -378,7 +378,26 @@ export default function HomeRemodelingClarkCounty() {
 					</div>
 				</section>
 
-				{/* RELATED GUIDES */}
+				{/* SOURCES */}
+			<div className="bg-[#F8F6F3] rounded-2xl p-6 border border-gray-100">
+				<p className="text-xs font-black text-gray-400 uppercase tracking-widest mb-3">Sources &amp; Official Resources</p>
+				<ul className="space-y-2 text-sm text-gray-600">
+					<li>
+						<a href="https://secure.lni.wa.gov/verify/" target="_blank" rel="noopener noreferrer" className="text-[#2D5A3D] font-bold hover:underline">WA Dept. of Labor &amp; Industries — Contractor Verification</a>
+						{" — verify any contractor's license, bond, and insurance before hiring."}
+					</li>
+					<li>
+						<a href="https://www.clark.wa.gov/community-development/permits" target="_blank" rel="noopener noreferrer" className="text-[#2D5A3D] font-bold hover:underline">Clark County Community Development — Building Permits</a>
+						{" — permit requirements and fee schedules for Clark County WA."}
+					</li>
+					<li>
+						<a href="https://www.remodeling.hw.net/cost-vs-value/2024/" target="_blank" rel="noopener noreferrer" className="text-[#2D5A3D] font-bold hover:underline">Remodeling Magazine — Cost vs. Value Report</a>
+						{" — national data on remodeling project ROI, used as a benchmark for return-on-investment estimates."}
+					</li>
+				</ul>
+			</div>
+
+			{/* RELATED GUIDES */}
 				<section className="py-16 bg-white">
 					<div className="max-w-4xl mx-auto px-6 lg:px-8">
 						<h2 className="text-3xl font-black text-[#1F2E2B] uppercase tracking-tighter mb-8">

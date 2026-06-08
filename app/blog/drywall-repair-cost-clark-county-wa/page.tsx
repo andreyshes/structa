@@ -84,6 +84,21 @@ export default function DrywallRepairCostClarkCountyWA() {
 						<section className="space-y-4"><h2 className="text-2xl font-black text-[#1F2E2B] uppercase tracking-tighter">Related Guides</h2><div className="grid sm:grid-cols-2 gap-4">{[{ title: "Drywall Repair Cost in Vancouver WA", href: "/blog/drywall-repair-cost-vancouver-wa" }, { title: "Clark County Home Repair Checklist", href: "/blog/clark-county-home-repair-checklist" }, { title: "Drywall Repair in Vancouver WA", href: "/locations/vancouver/drywall-repair" }, { title: "Drywall Repair in Camas WA", href: "/locations/camas/drywall-repair" }].map((link, i) => (<Link key={i} href={link.href} className="flex items-center gap-3 bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-[#FFB800]/40 hover:shadow-md transition-all group"><ArrowRight className="w-4 h-4 text-[#2D5A3D] group-hover:text-[#FFB800] shrink-0 transition-colors" /><span className="text-sm font-bold text-[#1F2E2B] group-hover:text-[#2D5A3D] transition-colors">{link.title}</span></Link>))}</div></section>
 						<section className="space-y-6"><h2 className="text-3xl font-black text-[#1F2E2B] uppercase tracking-tighter">Frequently Asked Questions</h2><div className="space-y-5">{faqs.map((faq, i) => (<div key={i} className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm"><h3 className="text-lg font-black text-[#1F2E2B] mb-3">{faq.q}</h3><p className="text-gray-600 leading-relaxed">{faq.a}</p></div>))}</div></section>
 					</div>
+
+					{/* SOURCES */}
+					<div className="bg-[#F8F6F3] rounded-2xl p-6 border border-gray-100">
+						<p className="text-xs font-black text-gray-400 uppercase tracking-widest mb-3">Sources &amp; Official Resources</p>
+						<ul className="space-y-2 text-sm text-gray-600">
+							<li>
+								<a href="https://secure.lni.wa.gov/verify/" target="_blank" rel="noopener noreferrer" className="text-[#2D5A3D] font-bold hover:underline">WA Dept. of Labor &amp; Industries — Contractor Verification</a>
+								{" — verify any contractor's license, bond, and insurance before hiring."}
+							</li>
+							<li>
+								<a href="https://www.clark.wa.gov/community-development/permits" target="_blank" rel="noopener noreferrer" className="text-[#2D5A3D] font-bold hover:underline">Clark County Community Development — Building Permits</a>
+								{" — permit requirements and fee schedules for Clark County WA."}
+							</li>
+						</ul>
+					</div>
 				</article>
 				<section className="py-20 bg-[#F8F6F3]"><div className="max-w-3xl mx-auto px-6 text-center space-y-6"><h2 className="text-3xl md:text-4xl font-black text-[#1F2E2B] uppercase tracking-tighter">Get a Free Drywall Repair Estimate</h2><p className="text-gray-600 text-lg">Licensed, bonded & insured. Same-week estimates across Clark County. 1-year warranty.</p><div className="flex flex-col sm:flex-row gap-4 justify-center"><Link href="/contact" className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl shadow-xl hover:scale-105 transition-all">Get Free Estimate <ArrowRight className="w-5 h-5" /></Link><a href="tel:+13602169920" className="inline-flex items-center justify-center gap-3 px-10 py-5 border-2 border-[#1F2E2B] text-[#1F2E2B] font-black uppercase tracking-widest rounded-xl hover:bg-[#1F2E2B] hover:text-white transition-all"><Phone className="w-5 h-5" /> (360) 216-9920</a></div></div></section>
 			</div>

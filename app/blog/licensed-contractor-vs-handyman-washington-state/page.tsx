@@ -303,6 +303,24 @@ export default function ContractorVsHandyman() {
 								))}
 							</div>
 						</div>
+						{/* SOURCES */}
+						<div className="bg-[#F8F6F3] rounded-2xl p-6 border border-gray-100">
+							<p className="text-xs font-black text-gray-400 uppercase tracking-widest mb-3">Sources &amp; Official Resources</p>
+							<ul className="space-y-2 text-sm text-gray-600">
+								<li>
+									<a href="https://secure.lni.wa.gov/verify/" target="_blank" rel="noopener noreferrer" className="text-[#2D5A3D] font-bold hover:underline">WA Dept. of Labor &amp; Industries — Contractor Verification</a>
+									{" — look up any contractor's license, bond, and insurance status before hiring."}
+								</li>
+								<li>
+									<a href="https://lni.wa.gov/licensing-permits/contractors/" target="_blank" rel="noopener noreferrer" className="text-[#2D5A3D] font-bold hover:underline">WA L&amp;I — General Contractor Licensing Requirements</a>
+									{" — official requirements for registration, bonding, and insurance in Washington State."}
+								</li>
+								<li>
+									<a href="https://www.clark.wa.gov/community-development/permits" target="_blank" rel="noopener noreferrer" className="text-[#2D5A3D] font-bold hover:underline">Clark County Community Development — Building Permits</a>
+									{" — permit requirements and fee schedules for projects in Clark County WA."}
+								</li>
+							</ul>
+						</div>
 					</div>
 				</article>
 
