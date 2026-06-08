@@ -80,6 +80,14 @@ const posts = [
 		readTime: "7 min read",
 	},
 	{
+		slug: "bathroom-remodel-cost-vancouver-wa",
+		title: "Bathroom Remodel Cost in Vancouver WA: 2026 Pricing Guide",
+		excerpt: "How much does a bathroom remodel cost in Vancouver WA? Real 2026 price ranges for every scope — from a $920 cosmetic refresh to a $35,000 primary suite gut — plus Vancouver neighborhood breakdowns.",
+		category: "Cost Guide",
+		location: "Vancouver, WA",
+		readTime: "8 min read",
+	},
+	{
 		slug: "bathroom-remodel-cost-clark-county-wa",
 		title: "Bathroom Remodel Cost in Clark County WA: The Complete 2026 Guide",
 		excerpt:
