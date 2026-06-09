@@ -111,6 +111,9 @@ export default function FinishCarpentryPage() {
 								<ArrowRight className="w-5 h-5" />
 							</Link>
 						</div>
+						<p className="text-white/60 text-sm font-bold mt-3">
+							Need it fixed this week? Call {" "}<a href="tel:+13602169920" className="text-[#FFB800] font-bold hover:underline">(360) 216-9920</a>
+						</p>
 					</div>
 				</div>
 			</section>
