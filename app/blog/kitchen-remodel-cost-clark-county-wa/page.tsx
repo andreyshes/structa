@@ -363,6 +363,37 @@ export default function KitchenRemodeCostPage() {
 					</div>
 				</section>
 
+				{/* MID-ARTICLE HIRE CTA */}
+				<div className="bg-[#FFB800] rounded-3xl p-8 md:p-10">
+					<div className="flex flex-col md:flex-row items-center justify-between gap-6">
+						<div className="space-y-2">
+							<p className="text-xs font-black uppercase tracking-widest text-black/60">
+								NORBILT · Licensed General Contractor · Clark County WA
+							</p>
+							<p className="text-2xl md:text-3xl font-black text-black uppercase tracking-tighter leading-tight">
+								Know Your Scope?<br />Get a Free Estimate.
+							</p>
+							<p className="text-black/70 font-medium max-w-sm">
+								We handle kitchen remodels across Vancouver, Camas, Battle Ground, and all of Clark County. 1-year labor warranty. Permit-ready.
+							</p>
+						</div>
+						<div className="flex flex-col sm:flex-row gap-3 shrink-0">
+							<Link
+								href="/services/kitchen-bath"
+								className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-[#1F2E2B] text-white font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all text-sm"
+							>
+								Kitchen & Bath Services <ArrowRight className="w-4 h-4" />
+							</Link>
+							<Link
+								href="/contact"
+								className="inline-flex items-center justify-center gap-2 px-7 py-4 border-2 border-black/20 text-black font-black uppercase tracking-widest rounded-xl hover:bg-black/10 transition-all text-sm"
+							>
+								<Phone className="w-4 h-4" /> Get Estimate
+							</Link>
+						</div>
+					</div>
+				</div>
+
 				{/* COST DRIVERS */}
 				<section className="space-y-6">
 					<h2 className="text-3xl font-black text-[#1F2E2B] uppercase tracking-tighter">

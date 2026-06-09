@@ -11,7 +11,6 @@ import {
 	Phone,
 	Waves,
 	BadgeCheck,
-	DollarSign,
 } from "lucide-react";
 
 import SectionHeader from "@/app/components/SectionHeader";
@@ -79,10 +78,6 @@ const faqs = [
 	{
 		q: "Can we do the kitchen and bathroom at the same time?",
 		a: "Yes, and it often saves money on mobilization costs. We schedule both together when possible. The kitchen typically stays usable throughout — bathroom access is limited only during tile cure days.",
-	},
-	{
-		q: "What does kitchen and bathroom work cost in Vancouver, WA?",
-		a: "Based on 2026 Clark County rates: cosmetic refreshes run $2,500–$6,000, mid-range bathroom updates $12,000–$28,000, full gut remodels $35,000–$75,000+, tub-to-shower conversions $6,500–$15,000, cabinet & countertop updates $5,000–$18,000, and backsplash installs $1,200–$3,500. All pricing depends on materials, scope, and site conditions.",
 	},
 	{
 		q: "Is your kitchen and bathroom work covered by a warranty?",
@@ -246,20 +241,6 @@ export default function KitchenBathPage() {
 				</div>
 			</section>
 
-			{/* CITATION CAPSULE — AI Overview target */}
-			<section className="py-10 bg-[#FFFBEA] border-y-2 border-[#FFB800]/40">
-				<div className="max-w-4xl mx-auto px-6">
-					<p className="text-base font-bold text-[#1F2E2B] leading-relaxed">
-						<span className="text-[#FFB800] font-black">Clark County 2026:</span>{" "}
-						Kitchen and bathroom remodeling in Vancouver WA ranges from{" "}
-						<strong>$2,500 for a cosmetic refresh</strong> to{" "}
-						<strong>$75,000+ for a full gut remodel</strong>. Licensed contractor
-						labor runs $65–$95/hr. Tub-to-shower conversions average $6,500–$15,000
-						depending on scope. Permits required for plumbing and electrical
-						changes — NORBILT pulls all permits included in project cost.
-					</p>
-				</div>
-			</section>
 
 			{/* VALUE PROPOSITION */}
 			<section className="py-24 lg:py-32 bg-white">
@@ -267,8 +248,8 @@ export default function KitchenBathPage() {
 					<div className="grid lg:grid-cols-2 gap-20 items-center">
 						<div className="space-y-8">
 							<h2 className="text-4xl lg:text-5xl font-black text-[#1F2E2B] uppercase tracking-tighter leading-none">
-								Kitchen & Bath Remodel Cost <br />
-								<span className="text-[#2D5A3D]">in Vancouver, WA</span>
+								Kitchen & Bath Remodeling <br />
+								<span className="text-[#2D5A3D]">by a Licensed Contractor in Vancouver, WA</span>
 							</h2>
 
 							<p className="text-gray-600 text-lg font-medium leading-relaxed">
@@ -342,16 +323,14 @@ export default function KitchenBathPage() {
 				</div>
 			</section>
 
-			{/* TYPES OF SERVICE */}
+			{/* SCOPE OF WORK */}
 			<section className="py-24 bg-[#1F2E2B] text-white">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
 					<h2 className="text-4xl font-black uppercase tracking-tighter mb-4">
-						Types of Kitchen & Bathroom Work
+						Project Scopes We Handle
 					</h2>
 					<p className="text-white/60 font-medium mb-12 max-w-2xl">
-						Every project is different. Here's how we scope and price the most
-						common types we handle across Clark County — all based on 2026 local
-						market rates.
+						From a single-day cosmetic update to a full gut remodel — every project gets a free written estimate before any work begins.
 					</p>
 					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 						{serviceTypes.map((type, i) => (
@@ -359,25 +338,20 @@ export default function KitchenBathPage() {
 								key={i}
 								className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-[#FFB800] transition-colors group"
 							>
-								<div className="flex items-start justify-between mb-4 gap-4">
-									<h3 className="text-lg font-black uppercase tracking-tight group-hover:text-[#FFB800] transition-colors">
-										{type.name}
-									</h3>
-									<span className="flex items-center gap-1 text-[#FFB800] font-black text-sm whitespace-nowrap shrink-0">
-										<DollarSign className="w-3 h-3" />
-										{type.priceRange}
-									</span>
-								</div>
+								<h3 className="text-lg font-black uppercase tracking-tight group-hover:text-[#FFB800] transition-colors mb-4">
+									{type.name}
+								</h3>
 								<p className="text-white/60 text-sm leading-relaxed">
 									{type.description}
 								</p>
 							</div>
 						))}
 					</div>
-					<p className="mt-10 text-white/40 text-sm">
-						All prices are estimates for Clark County, WA based on 2026 market
-						rates. Final pricing depends on site conditions and material
-						selections. Free written estimate before any work begins.
+					<p className="mt-10 text-[#FFB800]/70 text-sm font-bold">
+						Wondering what your project will cost?{" "}
+						<Link href="/blog/kitchen-remodel-cost-clark-county-wa" className="underline hover:text-[#FFB800] transition-colors">
+							See our 2026 Clark County cost guide →
+						</Link>
 					</p>
 				</div>
 			</section>
