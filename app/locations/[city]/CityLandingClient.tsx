@@ -43,8 +43,7 @@ export default function CityLandingClient({ city, citySlug }: any) {
 	const [openFaq, setOpenFaq] = useState<number | null>(null);
 	const cityNameShort = city.name.split(",")[0];
 
-	// Simplified FAQs for better readability scores
-	const faqs = [
+	const genericFaqs = [
 		{
 			q: `Do you provide home repairs in ${cityNameShort}?`,
 			a: `Yes. NORBILT serves all ${cityNameShort} homeowners. We handle small handyman tasks and full interior remodeling.`,
@@ -58,6 +57,7 @@ export default function CityLandingClient({ city, citySlug }: any) {
 			a: `We serve the whole region. This includes ${city.neighborhoods.slice(0, 3).join(", ")} and nearby Clark County towns.`,
 		},
 	];
+	const faqs = [...genericFaqs, ...(city.cityFAQs ?? [])];
 
 	return (
 		<div className="bg-[#FDFCFB] min-h-screen">
@@ -247,6 +247,60 @@ export default function CityLandingClient({ city, citySlug }: any) {
 				</div>
 			</section>
 
+
+			{/* CITY-SPECIFIC HOUSING SECTION */}
+			{city.housingNotes && (
+				<section className="py-24 bg-[#F8F6F3]">
+					<div className="max-w-7xl mx-auto px-6">
+						<div className="grid lg:grid-cols-2 gap-16 items-start">
+							<div>
+								<p className="text-[#FFB800] font-black uppercase tracking-[0.3em] text-[10px] mb-4">
+									Local Expertise
+								</p>
+								<h2 className="text-4xl font-black text-[#1F2E2B] uppercase tracking-tighter mb-6 leading-none">
+									What We Know About <br />
+									<span className="text-[#2D5A3D]">{cityNameShort} Homes</span>
+								</h2>
+								<p className="text-gray-600 font-medium leading-relaxed text-lg mb-8">
+									{city.housingNotes}
+								</p>
+								{city.permitNotes && (
+									<div className="bg-[#1F2E2B] text-white p-6 rounded-2xl">
+										<p className="text-[#FFB800] font-black uppercase tracking-widest text-[10px] mb-2">
+											Permit Info
+										</p>
+										<p className="text-[#A7C4B5] font-medium text-sm leading-relaxed">
+											{city.permitNotes}
+										</p>
+									</div>
+								)}
+							</div>
+							{city.commonProjects && city.commonProjects.length > 0 && (
+								<div>
+									<p className="text-[#FFB800] font-black uppercase tracking-[0.3em] text-[10px] mb-6">
+										Most Requested
+									</p>
+									<div className="grid grid-cols-2 gap-4">
+										{city.commonProjects.map((project: { name: string; desc: string }) => (
+											<div
+												key={project.name}
+												className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm"
+											>
+												<h3 className="font-black text-[#1F2E2B] uppercase tracking-tight text-sm mb-2">
+													{project.name}
+												</h3>
+												<p className="text-gray-500 text-sm font-medium leading-relaxed">
+													{project.desc}
+												</p>
+											</div>
+										))}
+									</div>
+								</div>
+							)}
+						</div>
+					</div>
+				</section>
+			)}
 
 			{/* MID-PAGE URGENCY CTA */}
 			<section className="py-10 bg-[#FFB800]">

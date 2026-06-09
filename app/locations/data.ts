@@ -1,7 +1,16 @@
+export interface CityFaq {
+	q: string;
+	a: string;
+}
+
 export interface CityData {
 	name: string;
 	description: string;
 	neighborhoods: string[];
+	housingNotes: string;
+	commonProjects: Array<{ name: string; desc: string }>;
+	permitNotes: string;
+	cityFAQs: CityFaq[];
 }
 
 export interface ServiceType {
@@ -29,79 +38,339 @@ export const locationsData: Record<string, CityData> = {
 		name: "Vancouver, WA",
 		description:
 			"We provide expert home repairs and precision carpentry across Vancouver, WA. Vancouver's housing stock ranges from mid-century craftsman homes near downtown to newer construction in Cascade Park and Fishers Landing — each with different repair and update needs. Our team knows local building styles and common issues, from settlement cracks in older drywall to trim gaps in newer builds. We serve all Vancouver neighborhoods with written estimates before any work begins.",
-		neighborhoods: ["Downtown", "Uptown", "Cascade Park", "Fishers Landing"],
+		neighborhoods: ["Downtown", "Uptown", "Cascade Park", "Fishers Landing", "Hazel Dell", "Salmon Creek", "Mill Plain", "Orchards"],
+		housingNotes:
+			"Vancouver is Clark County's largest and most diverse housing market. The city spans nearly a century of construction — 1940s and 1950s craftsman homes near downtown and Uptown, 1960s–70s ranches in Hazel Dell and Orchards, 1980s–90s suburbia in Salmon Creek and Felida, and newer construction in Cascade Park, Fishers Landing, and Mill Plain. Each era brings different repair realities. Older homes commonly have popcorn ceilings, original drywall with hairline settlement cracks, and outdated fixtures that are overdue for replacement. Homes from the 1980s and 90s often need trim refreshes and bathroom updates. Newer builds in east and north Vancouver tend to be in better structural condition but sometimes have builder-grade finishes that owners want upgraded — thicker trim profiles, custom tile, and higher-end fixture packages. Vancouver's wet winters accelerate caulk failure around windows, tubs, and exterior door frames, making re-caulking one of the most common single-visit repairs we do throughout the city. NORBILT works across all Vancouver zip codes with same-week estimates and flat-rate written quotes.",
+		commonProjects: [
+			{ name: "Drywall Repair & Texture Matching", desc: "Settlement cracks, water damage from older plumbing, and hole patches are constant in Vancouver's mid-century housing stock. We match orange peel, knockdown, and smooth textures precisely." },
+			{ name: "Bathroom Updates & Remodels", desc: "Older Vancouver bathrooms — especially in Hazel Dell and Orchards homes — have original 1970s tile and fixtures. Full gut remodels and cosmetic refreshes are among our most requested projects here." },
+			{ name: "Finish Carpentry & Trim", desc: "Many Vancouver homes have minimal or builder-grade trim. We install crown molding, wainscoting, and custom door and window casing throughout the city." },
+			{ name: "Kitchen Updates", desc: "Cabinet hardware upgrades, backsplash installs, and countertop replacements are frequent in Vancouver's 1980s–2000s homes where kitchens are dated but structurally sound." },
+		],
+		permitNotes:
+			"Permits for most residential remodel work in unincorporated Vancouver and Clark County are issued through Clark County Community Development (564-397-2375). Work within Vancouver city limits is permitted through the City of Vancouver's Permit Center. NORBILT handles permit applications as part of any permitted scope.",
+		cityFAQs: [
+			{
+				q: "What neighborhoods in Vancouver do you serve?",
+				a: "We serve all Vancouver neighborhoods including Downtown, Uptown, Hazel Dell, Salmon Creek, Cascade Park, Fishers Landing, Mill Plain, Orchards, Five Corners, Felida, and all surrounding unincorporated Clark County areas. There is no travel fee for any Vancouver location.",
+			},
+			{
+				q: "Do you work on older Vancouver homes from the 1950s–70s?",
+				a: "Yes — and we're experienced with the common issues in that era's construction. Settlement cracks in original drywall, popcorn ceilings, outdated fixtures, and tired trim are all things we handle routinely in Hazel Dell, Orchards, and north Vancouver. We price these jobs honestly based on what we actually find.",
+			},
+		],
 	},
 	camas: {
 		name: "Camas, WA",
 		description:
 			"NORBILT offers high-end interior updates and repairs for Camas homeowners. Camas homes tend to be well-kept and owner-occupied, with many featuring detailed finish carpentry, tile work, and fixtures that deserve a careful touch. Our team works on both established Prune Hill homes and newer builds near Grass Valley. We bring the same licensed, insured standard to every Camas project, regardless of size.",
-		neighborhoods: ["Prune Hill", "Deer Creek", "Grass Valley", "Fern Prairie"],
+		neighborhoods: ["Prune Hill", "Deer Creek", "Grass Valley", "Fern Prairie", "Crown Park", "Lacamas Shores"],
+		housingNotes:
+			"Camas has some of Clark County's most desirable residential real estate — and homeowners here expect a higher standard of workmanship. The city's housing stock skews newer and better-maintained than much of the county. Prune Hill and Lacamas Shores feature established 1990s and 2000s homes, many with custom finish carpentry, tile work, and high-end fixture packages. Grass Valley and Deer Creek have newer construction from the 2010s and 2020s where builders sometimes left finish work incomplete — no crown molding, minimal door casing, or builder-grade baseboards that owners want upgraded. Fern Prairie sits on the eastern rural fringe with larger lot properties and custom homes where quality expectations are high. One thing consistent across Camas: homeowners know what good work looks like and they're not looking for the cheapest option. They want it done right the first time. NORBILT has completed bathroom remodels, kitchen updates, finish carpentry, and flooring installations throughout Camas and brings the same licensed standard to every job. Material costs in Camas tend to run at the higher end of Clark County ranges — homeowners here typically choose quartz over laminate and custom tile over prefab.",
+		commonProjects: [
+			{ name: "Finish Carpentry Upgrades", desc: "Prune Hill and Lacamas Shores homes are ideal candidates for crown molding, wainscoting, and built-in shelving. Many owners want to upgrade from builder-grade trim to something more custom." },
+			{ name: "Bathroom Tile & Remodels", desc: "Camas homeowners frequently invest in full master bath upgrades — custom tile showers, freestanding tubs, and heated floors. We handle every stage from demo to final fixture." },
+			{ name: "Kitchen Updates", desc: "Backsplash installs, countertop upgrades to quartz or stone, and cabinet hardware refreshes are common in Camas kitchens from the 1990s–2000s build era." },
+			{ name: "Flooring Installation", desc: "Wide-plank hardwood and large-format tile installations are frequent in Camas. Homes here often have the square footage to make flooring a significant upgrade." },
+		],
+		permitNotes:
+			"Permits in Camas are issued through the City of Camas Community Development Department (360-817-8100). Most residential remodel work requires a permit review, and Camas has a reputation for thorough inspection. NORBILT is familiar with the Camas permit process and handles applications as part of any permitted project.",
+		cityFAQs: [
+			{
+				q: "Do you work on high-end Camas homes and custom builds?",
+				a: "Yes. Many of our Camas projects are in Prune Hill, Lacamas Shores, and Fern Prairie — homes where owners expect a trade-quality finish, not a contractor who rushes. We take time with cuts, fittings, and details. Our flat-rate pricing reflects the actual scope, not a lowball number that grows on the invoice.",
+			},
+			{
+				q: "What's the most common remodel request from Camas homeowners?",
+				a: "Bathroom upgrades are the most frequent — specifically tub-to-shower conversions with custom tile, and master bath remodels. Kitchen countertop and backsplash updates are close behind. Finish carpentry is also very common in Camas, where many 1990s–2000s homes were built without crown molding or detailed trim packages.",
+			},
+		],
 	},
 	ridgefield: {
 		name: "Ridgefield, WA",
 		description:
 			"We install expert trim work and modern interior updates in Ridgefield, WA. Ridgefield has grown rapidly over the past decade, with many newer homes in Union Ridge and Bellwood that need finish carpentry completed or updated. Our team also works on older properties in the original Ridgefield townsite where repairs and refreshes are common. We provide free estimates and complete every job with a clean site.",
-		neighborhoods: ["Union Ridge", "Bellwood", "Hillhurst"],
+		neighborhoods: ["Union Ridge", "Bellwood", "Hillhurst", "South Ridgefield", "Ridgefield Townsite"],
+		housingNotes:
+			"Ridgefield is one of Clark County's fastest-growing cities, and the construction profile reflects it. Union Ridge and Bellwood are filled with homes built between 2010 and the present — newer construction on larger lots with cleaner infrastructure but often builder-grade finishes. It's common in these neighborhoods to find homes where the builder skipped crown molding, installed the cheapest interior doors, or used minimal baseboard profiles. Owners who've been in these homes a few years often want to customize — upgrade the trim package, tile the master shower properly, or install hardwood where the builder put carpet. The Ridgefield townsite and Hillhurst areas have older homes in the 1940s–1970s range with more traditional repair needs: drywall cracks, outdated fixtures, weathered exterior trim, and bathrooms that haven't been touched since the 80s. Both sides of Ridgefield's housing spectrum are jobs we handle regularly. The city's rapid growth also means tradespeople are in high demand here, so scheduling a licensed contractor can take time — NORBILT aims for same-week estimates for all Ridgefield homeowners.",
+		commonProjects: [
+			{ name: "Finish Carpentry on New Builds", desc: "Union Ridge and Bellwood homes frequently need trim package upgrades — crown molding, thicker baseboard profiles, and custom door casing to replace builder-grade material." },
+			{ name: "Bathroom Remodels", desc: "Both older townsite homes and newer builds need bathroom work. Older homes get full gut remodels; newer homes get master suite upgrades with custom tile and fixtures." },
+			{ name: "Flooring Updates", desc: "Many newer Ridgefield homes have carpet in living areas where owners want LVP or hardwood. We handle the full install including transitions and baseboard renail." },
+			{ name: "Drywall Repair", desc: "Settlement cracks are common in Ridgefield's newer construction as homes are still adjusting. We repair and texture-match to restore walls to like-new condition." },
+		],
+		permitNotes:
+			"Permits in Ridgefield are issued through the City of Ridgefield Community Development Department. For properties in unincorporated areas outside city limits, permits come from Clark County Community Development. NORBILT confirms which jurisdiction applies during the estimate and handles permit applications for all permitted work.",
+		cityFAQs: [
+			{
+				q: "Do you work in newer Ridgefield subdivisions like Union Ridge and Bellwood?",
+				a: "Yes — these are some of our most active areas. Newer builds in Union Ridge and Bellwood are structurally sound but often need finish work completed or upgraded. Trim packages, bathroom tile, and flooring upgrades are the most common requests. We provide free on-site estimates and flat-rate written quotes for all Ridgefield homeowners.",
+			},
+			{
+				q: "How soon can you get to Ridgefield for an estimate?",
+				a: "We typically schedule Ridgefield estimates within the same week of contact. Ridgefield is within our core service area — there's no travel surcharge and no difference in our pricing vs. Vancouver jobs.",
+			},
+		],
 	},
 	"battle-ground": {
 		name: "Battle Ground, WA",
 		description:
 			"NORBILT provides reliable handyman services and licensed renovations in Battle Ground, WA. North Clark County homes in Daybreak and Cherry Grove vary widely in age and style, from acreage properties on larger lots to newer subdivision homes. Our team handles both small maintenance tasks and larger interior projects throughout Battle Ground. We are one of the most active licensed contractors in this area.",
-		neighborhoods: ["Daybreak", "Cherry Grove", "Lewisville"],
+		neighborhoods: ["Daybreak", "Cherry Grove", "Lewisville", "Tukes Valley", "Battle Ground Village"],
+		housingNotes:
+			"Battle Ground sits in north Clark County and has a distinctly different housing character than south county cities. The area mixes older established properties — some dating to the 1940s and 1950s in the original townsite — with large Daybreak subdivision homes from the 2000s and acreage properties throughout Lewisville and Tukes Valley. Older Battle Ground homes frequently have deferred maintenance: original drywall with hairline cracks, outdated bathroom tile from the 1970s and 80s, worn wood trim, and windows that haven't been resealed in years. Water intrusion is a recurring issue in older north county properties due to heavier rainfall and homes that haven't had regular maintenance. The Daybreak neighborhood skews newer, with 2000s–2010s construction that's holding up well but often needs cosmetic updates — tile replacements, trim upgrades, and kitchen refreshes. Battle Ground homeowners tend to be practical: they want the work done correctly and fairly priced, without a lot of back-and-forth. NORBILT has completed dozens of projects throughout Battle Ground and knows what licensed work looks like here.",
+		commonProjects: [
+			{ name: "Water Damage & Drywall Repair", desc: "Older Battle Ground homes frequently have hidden moisture damage behind walls and under floors. We assess the source, remove compromised material, and restore walls correctly with matched texture." },
+			{ name: "Bathroom Refreshes & Remodels", desc: "Many Battle Ground bathrooms in 1970s–1990s homes have original tile, fixtures, and vanities that are due for replacement. We handle everything from cosmetic refreshes to full gut remodels." },
+			{ name: "Handyman Punch Lists", desc: "North county homeowners often have a longer list of deferred tasks — sticking doors, worn caulking, dated hardware, loose railings. We clear the whole list in a single visit." },
+			{ name: "Flooring Installation", desc: "LVP flooring upgrades are popular in Battle Ground ranch homes where owners are replacing worn carpet or vinyl. We handle install, transitions, and baseboard work." },
+		],
+		permitNotes:
+			"Permits in Battle Ground are issued through the City of Battle Ground Building Department (360-342-5076). Properties outside city limits use Clark County Community Development. NORBILT handles permit applications as part of any permitted project and can advise which jurisdiction applies during the estimate.",
+		cityFAQs: [
+			{
+				q: "Do you work in rural Battle Ground areas like Lewisville and Tukes Valley?",
+				a: "Yes. We serve all of north Clark County including rural Battle Ground, Lewisville, and Tukes Valley. Acreage properties and older rural homes are jobs we're comfortable with — we know to budget extra time for deferred maintenance and hidden conditions that are common in this area.",
+			},
+			{
+				q: "Are there licensed contractors who actually come to Battle Ground?",
+				a: "Yes — NORBILT is one of the more active licensed contractors in north Clark County. We don't charge extra for the drive and we schedule Battle Ground estimates the same week. WA License #NORBIR**741CS, bonded and insured.",
+			},
+		],
 	},
 	washougal: {
 		name: "Washougal, WA",
 		description:
 			"NORBILT provides home maintenance and interior updates for Washougal homeowners. Washougal properties range from older river-area homes near downtown to newer construction along Lookout Ridge with mountain views. Many homes here have original fixtures and trim that benefit from updates or replacement. Our team works throughout Washougal and the surrounding Camas–Washougal corridor with the same licensed, insured standard.",
-		neighborhoods: ["Downtown Washougal", "River's Edge", "Lookout Ridge"],
+		neighborhoods: ["Downtown Washougal", "River's Edge", "Lookout Ridge", "Steigerwald", "Canyon Creek"],
+		housingNotes:
+			"Washougal sits at the eastern edge of Clark County along the Columbia River Gorge, and its housing stock reflects both its age and its setting. The downtown core and River's Edge area have homes from the 1940s through the 1970s — older construction with original fixtures, plaster or early drywall walls, and bathrooms that in many cases have never been updated. Lookout Ridge and Canyon Creek are much newer, with 1990s–2010s construction that has mountain and river views but increasingly needs cosmetic updates. The Gorge location means Washougal homes see higher humidity levels than inland Clark County, which accelerates caulk failure around windows, tubs, and exterior penetrations. Water intrusion issues in older downtown homes are more common than in dryer inland cities. Mold behind drywall after a slow leak is something we encounter with more frequency here. Washougal homeowners are often working with original finishes from decades past — original tile, wood-paneled walls, dropped ceilings — and want a contractor who can remove and update without damaging the surrounding structure. The Camas–Washougal corridor is a short drive for our crew, and we serve all Washougal addresses with the same pricing and same-week estimate availability.",
+		commonProjects: [
+			{ name: "Moisture & Water Damage Repair", desc: "Older Washougal homes near the river have higher humidity and a greater history of water intrusion. We assess, remove compromised material, and restore drywall and finishes correctly." },
+			{ name: "Bathroom Updates in Older Homes", desc: "Downtown Washougal homes from the 1950s–70s often have original bathrooms. Cosmetic refreshes and full remodels are both common depending on condition." },
+			{ name: "Window & Door Weatherization", desc: "Gorge weather accelerates seal failure on windows and exterior doors. Re-caulking, weatherstripping replacement, and door hardware updates are frequent Washougal jobs." },
+			{ name: "Finish Carpentry", desc: "Lookout Ridge and Canyon Creek homeowners frequently want trim upgrades on their newer builds — crown molding, wainscoting, and custom door casing." },
+		],
+		permitNotes:
+			"Permits in Washougal are issued through the City of Washougal Community Development (360-835-8501). Rural properties outside city limits fall under Clark County Community Development. NORBILT handles permit applications and can confirm which office applies during your estimate.",
+		cityFAQs: [
+			{
+				q: "Do older Washougal homes near downtown need special handling?",
+				a: "Yes — homes from the 1950s–70s in downtown Washougal and River's Edge sometimes have plaster walls, original fixture rough-ins, or moisture issues that require more careful approach than newer construction. We assess conditions honestly during the walkthrough and build that into the flat-rate quote before we start.",
+			},
+			{
+				q: "Is Washougal within your regular service area?",
+				a: "Yes. Washougal is a regular service area for NORBILT — no travel surcharge, same-week estimates, and the same licensed, insured standard as any Vancouver or Camas job. We work throughout the Camas–Washougal corridor regularly.",
+			},
+		],
 	},
 	"brush-prairie": {
 		name: "Brush Prairie, WA",
 		description:
 			"We offer custom carpentry and interior improvements in Brush Prairie, WA. Brush Prairie is home to a mix of acreage estates, Hockinson-area properties, and newer planned subdivisions — each requiring a different level of finish work and maintenance. Our team is comfortable working on large properties with high-end trim expectations as well as straightforward repairs on everyday homes. Free estimates for all Brush Prairie homeowners.",
-		neighborhoods: ["Hockinson", "Meadow Glade", "Curtin Creek"],
+		neighborhoods: ["Hockinson", "Meadow Glade", "Curtin Creek", "Harrington Hills", "Brush Prairie Estates"],
+		housingNotes:
+			"Brush Prairie is semi-rural north Clark County — Hockinson School District territory, known for larger lots, acreage properties, and a mix of custom homes and established ranches. The housing profile is distinct from the denser suburban cities. Custom homes in Harrington Hills and Brush Prairie Estates often have high-end finish expectations: detailed trim packages, custom tile work, hardwood floors, and built-in cabinetry. These are homes where the owners notice the difference between a good cut and a sloppy one. The Meadow Glade and Curtin Creek areas have more modest properties — 1970s–1990s ranches on rural lots where repair and maintenance work is the more common request. Deferred maintenance is common on these older properties: worn drywall, outdated fixtures, failing caulking on older tile, and doors that have shifted with the foundation over decades. Brush Prairie properties tend to be larger than suburban equivalents, which means flooring and carpentry jobs have more square footage and linear footage — both cost and timeline should be planned accordingly. NORBILT serves all Brush Prairie addresses and is comfortable with both the high-end custom work and the practical maintenance repairs this area generates.",
+		commonProjects: [
+			{ name: "Custom Finish Carpentry", desc: "Acreage estates in Harrington Hills and Brush Prairie Estates frequently request crown molding, built-in bookshelves, wainscoting, and custom trim packages that match the home's quality level." },
+			{ name: "Flooring on Large Properties", desc: "Larger Brush Prairie homes mean larger flooring jobs. LVP and hardwood installations on open-plan main floors and upper landings are common projects here." },
+			{ name: "Bathroom Remodels", desc: "Older ranches in Meadow Glade and Curtin Creek often have original 1970s–1980s bathrooms. Full remodels and tub-to-shower conversions are frequent in this area." },
+			{ name: "Home Repair Punch Lists", desc: "Acreage properties accumulate repair needs over time. Sticking doors, worn weatherstripping, drywall cracks, and fixture updates are typical items on Brush Prairie punch lists." },
+		],
+		permitNotes:
+			"Brush Prairie is unincorporated Clark County — all permits are issued through Clark County Community Development (564-397-2375). There is no separate city permit office for Brush Prairie or Hockinson addresses. NORBILT handles permit applications as part of any permitted project.",
+		cityFAQs: [
+			{
+				q: "Do you serve rural properties and acreage homes in Brush Prairie and Hockinson?",
+				a: "Yes. Acreage and rural properties are a normal part of our work in north Clark County. We're familiar with the finish expectations on custom Brush Prairie homes and the practical repair needs of older rural ranches. No travel surcharge for Brush Prairie or Hockinson addresses.",
+			},
+			{
+				q: "What's the most common project type in Brush Prairie?",
+				a: "It splits by neighborhood. Harrington Hills and estate properties most often request finish carpentry upgrades and flooring. Meadow Glade and Curtin Creek ranches more often need drywall repair, bathroom updates, and general maintenance punch lists.",
+			},
+		],
 	},
 	felida: {
 		name: "Felida, WA",
 		description:
 			"NORBILT delivers detail-oriented home improvements in Felida, WA. Felida is one of Clark County's more established residential communities, with many homes built in the 1980s and 1990s that are now due for fixture updates, trim refreshes, and interior repairs. Our team handles everything from caulking and hardware replacement to full room updates. We bring professional results to every Felida home we work in.",
-		neighborhoods: ["Felida Overlook", "Lakeshore Park", "Erickson Farms"],
+		neighborhoods: ["Felida Overlook", "Lakeshore Park", "Erickson Farms", "Felida Park", "Ridgecrest"],
+		housingNotes:
+			"Felida is an established residential community in northwest Clark County — one of the more desirable areas of unincorporated Vancouver. Most Felida homes were built between 1980 and 2000, with a concentration of well-kept properties on larger lots with mature landscaping. The housing is predominantly owner-occupied, single-family, and well-maintained — but at 30–40 years old, many of these homes are now hitting the age window where interior systems need attention. Bathrooms from the 1980s–90s have original tile, fixtures, and vanities that homeowners are ready to replace. Kitchen hardware and countertops from that same era often feel dated. Caulking around windows and in bathrooms has completed its lifespan and needs replacement to prevent water intrusion. Trim and baseboards from this era were often builder-grade and owners upgrading before a sale or for personal satisfaction frequently request crown molding and thicker profile trim. Felida sits between Salmon Creek and the Ridgefield corridor, giving it a quieter, more residential character. Homeowners here tend to be established families or empty nesters — buyers who invest in quality updates and expect the work to last. NORBILT has completed numerous projects in Felida and provides free estimates throughout the area.",
+		commonProjects: [
+			{ name: "Bathroom Updates", desc: "1980s–1990s Felida bathrooms are the most common remodel request — original tile, vanity, and fixtures updated to modern finishes. Cosmetic refreshes and mid-range remodels both common." },
+			{ name: "Trim & Carpentry Upgrades", desc: "Many Felida homes were built with minimal trim. Crown molding, updated door and window casing, and wainscoting are popular updates before sales or personal upgrades." },
+			{ name: "Kitchen Refreshes", desc: "Counter replacements, backsplash installs, and hardware upgrades in 1990s–2000s kitchens are frequent — layouts stay the same, but the finishes get a decade-appropriate update." },
+			{ name: "Window & Door Re-caulk", desc: "Homes at this age have caulking that's past its service life. Re-caulking around windows, doors, and in wet areas is a common single-visit repair throughout Felida." },
+		],
+		permitNotes:
+			"Felida is in unincorporated Clark County — permits are issued through Clark County Community Development (564-397-2375). NORBILT handles permit applications as part of any permitted project and can advise during the estimate whether the planned scope requires a permit.",
+		cityFAQs: [
+			{
+				q: "What kind of work do Felida homeowners typically request?",
+				a: "Bathroom updates are the most common — 1980s–90s fixtures, tile, and vanities are at the age where most owners want a refresh or full remodel. Trim upgrades and kitchen refreshes are close behind. Most Felida jobs are driven by either presale prep or personal quality-of-life improvements.",
+			},
+			{
+				q: "Is Felida within your standard service area?",
+				a: "Yes. Felida is a regular area for NORBILT. We serve all Felida neighborhoods — Felida Overlook, Lakeshore Park, Erickson Farms, Felida Park, and Ridgecrest — with no travel surcharge and same-week estimate availability.",
+			},
+		],
 	},
 	"hazel-dell": {
 		name: "Hazel Dell, WA",
 		description:
 			"We provide trusted home repairs and bathroom updates in Hazel Dell, WA. Hazel Dell's housing stock includes many mid-century homes and 1970s–80s builds where original fixtures, drywall, and carpentry are showing age. Our team handles these updates quickly and cleanly, restoring walls, replacing fixtures, and refreshing tired spaces. We serve all Hazel Dell neighborhoods and provide same-week estimates for most jobs.",
-		neighborhoods: ["Starcrest", "Northeast Hazel Dell", "West Hazel Dell"],
+		neighborhoods: ["Starcrest", "Northeast Hazel Dell", "West Hazel Dell", "Minnehaha", "Fircrest"],
+		housingNotes:
+			"Hazel Dell is one of Clark County's older suburban communities — a dense residential area in north Vancouver where much of the housing was built between the 1940s and the 1980s. This is some of the oldest housing stock in the county, and it shows. Homes in Starcrest and West Hazel Dell often have original drywall with decades of settlement cracks, outdated plaster in the oldest properties, and bathroom tile from the 1960s and 70s that's been grouted over and re-grouted multiple times. Popcorn ceilings are extremely common throughout Hazel Dell — many homeowners want them scraped and replaced with a clean knockdown or smooth finish. Original windows are past their seal life. Older plumbing rough-ins don't always align with modern fixture footprints without adapter work. What Hazel Dell homeowners share is a practical approach: they know these are older homes and they want honest pricing and work that holds up, not a quick patch that fails in two years. NORBILT has done extensive work in Hazel Dell, particularly on drywall, bathroom updates, and general repair punch lists. We know what to expect in this housing era and we price it honestly.",
+		commonProjects: [
+			{ name: "Drywall Repair & Popcorn Ceiling Removal", desc: "Settlement cracks, hole patches, and popcorn ceiling removal are among the most frequent Hazel Dell jobs. We match textures and restore walls to clean, paint-ready condition." },
+			{ name: "Bathroom Remodels", desc: "Original 1960s–1970s bathrooms are common in Hazel Dell. Full gut remodels — new tile, vanity, fixture, and all — are the most thorough solution and one of the best investments before a sale." },
+			{ name: "Fixture & Hardware Replacement", desc: "Outdated light fixtures, ceiling fans, faucets, and cabinet hardware throughout the home. Most can be updated in a single half-day visit." },
+			{ name: "Window Re-caulk & Weatherization", desc: "Older windows throughout Hazel Dell have failed seals and drafts. Re-caulking exterior frames and replacing weatherstripping is a high-value maintenance repair here." },
+		],
+		permitNotes:
+			"Hazel Dell is in unincorporated Clark County — all residential permits are issued through Clark County Community Development (564-397-2375). There is no separate permit office for Hazel Dell addresses. NORBILT handles permit applications as part of any permitted project.",
+		cityFAQs: [
+			{
+				q: "Can you work on older Hazel Dell homes from the 1950s and 60s?",
+				a: "Yes — this is exactly the kind of home we work in most often. Older construction means more careful assessment before quoting, and we build honest allowances for hidden conditions into our flat-rate price. We don't lowball the estimate and add surprises at the end.",
+			},
+			{
+				q: "How much does popcorn ceiling removal cost in Hazel Dell?",
+				a: "Popcorn ceiling scrape, skim, and retexture in Clark County runs $500–$1,500 depending on room size and whether there is asbestos (homes before 1978 require testing). We assess and quote at the walkthrough.",
+			},
+		],
 	},
 	"salmon-creek": {
 		name: "Salmon Creek, WA",
 		description:
 			"NORBILT offers drywall repair, interior finishing, and home updates in Salmon Creek, WA. Salmon Creek has a wide range of home ages and styles, from 1990s developments near Mount Vista to newer construction along the Salmon Creek corridor. Our team matches textures precisely, installs clean trim work, and keeps every project on schedule. We serve all Salmon Creek neighborhoods with free, no-obligation estimates.",
-		neighborhoods: ["Mount Vista", "Salmon Creek Estates", "Clineline"],
+		neighborhoods: ["Mount Vista", "Salmon Creek Estates", "Clineline", "Felida Ridge", "Queensborough"],
+		housingNotes:
+			"Salmon Creek is a broad north Vancouver corridor with one of the more consistent housing profiles in Clark County — primarily 1990s through early 2000s suburban construction on medium-sized lots. Mount Vista, Salmon Creek Estates, and Queensborough were developed largely during this era and represent the dominant housing type here: two-story suburban homes in generally good condition, now 20–30 years old and entering the age where cosmetic updates and maintenance repairs become priorities. These homes were well-built for their time but the original finishes are showing age. Bathroom tile from 1995 looks dated. Builder-grade trim profiles throughout the main floor are candidates for upgrade. Caulking in wet areas has completed its useful life. Kitchens that were standard-issue in 1998 benefit from backsplash installs, countertop replacements, and hardware updates. Clineline and the older parts of Felida Ridge have a slightly older housing profile — some 1980s construction with more wear. NORBILT works throughout the Salmon Creek area regularly, particularly on the cosmetic update and bathroom remodel requests that define this neighborhood age segment. Same-week estimates for all Salmon Creek addresses.",
+		commonProjects: [
+			{ name: "Bathroom Cosmetic Refreshes & Remodels", desc: "1990s–early 2000s bathrooms in Salmon Creek are prime candidates for updates — new tile, vanity, fixtures, and lighting without necessarily a full gut." },
+			{ name: "Kitchen Updates", desc: "Countertop replacement, backsplash installation, and hardware upgrades are common in Salmon Creek kitchens that are structurally sound but visually dated." },
+			{ name: "Finish Carpentry Upgrades", desc: "Builder-grade trim throughout these homes is commonly upgraded — crown molding in main living areas, door and window casing replacements, and wainscoting in dining rooms." },
+			{ name: "Flooring Updates", desc: "Original carpet replacements with LVP or hardwood are among the most impactful upgrades in Salmon Creek's 1990s–2000s homes." },
+		],
+		permitNotes:
+			"Salmon Creek is in unincorporated Clark County — all permits are issued through Clark County Community Development (564-397-2375). NORBILT handles permit applications as part of any permitted project.",
+		cityFAQs: [
+			{
+				q: "What's the typical project in a Salmon Creek home?",
+				a: "Most Salmon Creek requests are cosmetic updates on well-maintained 1990s–2000s homes: bathroom tile and fixture updates, kitchen backsplash and countertop installs, crown molding additions, and flooring upgrades. These homes don't typically have major structural issues — owners are updating for personal satisfaction or presale value.",
+			},
+			{
+				q: "Do you serve all Salmon Creek neighborhoods including Mount Vista and Clineline?",
+				a: "Yes — we serve all Salmon Creek addresses with no travel charge. Mount Vista, Salmon Creek Estates, Clineline, Felida Ridge, and Queensborough are all within our standard service area with same-week estimate availability.",
+			},
+		],
 	},
 	"five-corners": {
 		name: "Five Corners, WA",
 		description:
 			"We offer dependable carpentry and handyman solutions in Five Corners, WA. Five Corners sits at the center of several established Vancouver neighborhoods, with homes spanning multiple decades and a wide range of repair and update needs. Our team handles everything from small fixture swaps to multi-room interior projects. We work efficiently, price by the job, and leave every home cleaner than we found it.",
-		neighborhoods: ["Sunnyside", "Covington", "Orchards"],
+		neighborhoods: ["Sunnyside", "Covington", "Orchards West", "Ellsworth", "Burton"],
+		housingNotes:
+			"Five Corners is a central Vancouver hub surrounded by established residential neighborhoods. The intersection of 192nd Ave and SE 1st St anchors a community of diverse housing stock — Sunnyside and Covington have 1970s and 1980s homes with the typical deferred maintenance of that era, while newer construction exists on infill lots along the corridors. Orchards West and Ellsworth have a mix that spans from older ranch homes to 1990s two-stories. What Five Corners lacks in neighborhood character it makes up for in accessibility — it's centrally located within east-central Vancouver and one of the fastest areas for us to reach from anywhere in the city. Homes in this area skew toward working families who want practical, reliable repairs done at fair prices without a lengthy sales process. Common calls from Five Corners are drywall patches, fixture replacements, door and window adjustments, and bathroom updates. The housing age range means we see everything from popcorn ceiling removal in older homes to cosmetic bath refreshes in 1990s builds. NORBILT provides same-week estimates for all Five Corners addresses and handles jobs of any size in the area.",
+		commonProjects: [
+			{ name: "Drywall Repair & Patching", desc: "Settlement cracks and patch repairs are consistent throughout this area's 1970s–1990s housing stock. We match existing textures and deliver paint-ready results." },
+			{ name: "Bathroom Updates", desc: "Outdated bathrooms across multiple decades — from 1970s original tile to 1990s builder finishes — are common remodel targets in Five Corners homes." },
+			{ name: "Door & Window Repairs", desc: "Older homes throughout Five Corners have sticking doors, worn weatherstripping, and hardware that's failed. Most are resolved in a single visit." },
+			{ name: "Handyman Punch Lists", desc: "Multi-task handyman visits are common in Five Corners — homeowners want to clear a list efficiently rather than schedule multiple contractors." },
+		],
+		permitNotes:
+			"Five Corners is in unincorporated Clark County — permits are issued through Clark County Community Development (564-397-2375). NORBILT handles permit applications as part of any permitted project.",
+		cityFAQs: [
+			{
+				q: "Is Five Corners in your regular service area?",
+				a: "Yes — Five Corners is one of the most central locations in east Vancouver and a frequent area for NORBILT. No travel surcharge, same-week estimates, and the same licensed standard as any other Clark County address.",
+			},
+			{
+				q: "What's the most common repair call from Five Corners homeowners?",
+				a: "Drywall repair and general handyman punch lists are the most frequent — these homes tend to be older and have accumulated deferred maintenance. Bathroom updates are a close second.",
+			},
+		],
 	},
 	orchards: {
 		name: "Orchards, WA",
 		description:
 			"NORBILT provides efficient home maintenance and interior repairs in Orchards, WA. The Orchards area includes many 1970s and 1980s homes along Burnt Bridge Creek and Sifton where drywall, trim, doors, and fixtures are due for updates. Our team is familiar with these home styles and the most common issues they develop over time. We provide fast, licensed service for Orchards homeowners at honest flat-rate prices.",
-		neighborhoods: ["Burnt Bridge Creek", "Sifton", "Heritage"],
+		neighborhoods: ["Burnt Bridge Creek", "Sifton", "Heritage", "Orchards Park", "Hearthwood"],
+		housingNotes:
+			"Orchards is east Vancouver — a large residential area built primarily from the 1960s through the 1990s, with a housing profile that closely mirrors Hazel Dell and Five Corners in age and condition. Burnt Bridge Creek and Sifton have older homes in the 1960s–1970s range where maintenance repairs are the primary need: drywall settlement cracks, original bathroom tile well past its service life, doors that have shifted off plumb over the decades, and fixtures from a previous era. Heritage and Orchards Park have slightly newer stock from the 1980s and early 1990s where cosmetic updates are the more common ask — bathroom refreshes, kitchen hardware, and trim upgrades. Hearthwood has newer infill construction. Orchards is a practical, family-oriented community where homeowners aren't looking for luxury — they want dependable licensed work at honest prices. We handle everything from quick single-task repairs to full bathroom remodels throughout Orchards. The area is a short drive from our standard operating area and we serve it with the same scheduling priority as Vancouver proper.",
+		commonProjects: [
+			{ name: "Drywall Repair", desc: "Settlement cracks and patch repairs are consistent throughout Orchards' 1960s–1980s housing stock. Texture matching to orange peel and knockdown finishes is common." },
+			{ name: "Bathroom Remodels", desc: "Original 1960s–70s bathrooms in Burnt Bridge Creek and Sifton homes are common full remodel candidates. 1980s homes more often get cosmetic refreshes." },
+			{ name: "Door Adjustments & Hardware", desc: "Older homes in Orchards frequently have doors that stick or fail to latch properly due to foundation settling. Most are resolved in under two hours." },
+			{ name: "Fixture Replacement", desc: "Outdated lighting, ceiling fans, faucets, and cabinet hardware throughout Orchards homes. Most updates completed in a single half-day visit." },
+		],
+		permitNotes:
+			"Orchards is in unincorporated Clark County — all permits are issued through Clark County Community Development (564-397-2375). NORBILT handles permit applications for all permitted project scopes.",
+		cityFAQs: [
+			{
+				q: "Do you serve Orchards and east Vancouver?",
+				a: "Yes. Orchards is within our regular service area — Burnt Bridge Creek, Sifton, Heritage, Orchards Park, and Hearthwood are all standard coverage. No travel surcharge and same-week estimates available.",
+			},
+			{
+				q: "What do older Orchards homes from the 1960s–70s typically need?",
+				a: "Drywall repair and texture matching are the most common call. Bathroom remodels — replacing original 1960s tile, fixtures, and vanities — are close behind. Door adjustments and fixture replacements are frequent single-visit repairs throughout the area.",
+			},
+		],
 	},
 	"mill-plain": {
 		name: "Mill Plain, WA",
 		description:
 			"Modernize your Mill Plain home with custom trim, flooring updates, and interior repairs from NORBILT. Mill Plain is one of Vancouver's busiest residential corridors, with homes ranging from early 2000s builds to recent new construction in Cimarron and Landover. Whether you need a quick maintenance fix or a room-level interior update, our team delivers clean, professional results. Free estimates for all Mill Plain homeowners.",
-		neighborhoods: ["Cimarron", "Landover", "Bennington"],
+		neighborhoods: ["Cimarron", "Landover", "Bennington", "Sullivan Pines", "Fisher's Creek"],
+		housingNotes:
+			"Mill Plain is one of southeast Vancouver's primary residential corridors — SE Mill Plain Blvd anchors a stretch of suburban development that spans from older 1980s neighborhoods near 162nd Ave to newer construction in Cimarron and Sullivan Pines closer to 192nd. The housing skews newer than most Clark County neighborhoods, with a strong concentration of 2000s–2010s builds that are in generally good condition but beginning to show the expected wear of homes in that age range. Cimarron and Landover have newer homes where finish carpentry upgrades are the most common request — owners want crown molding, wainscoting, and updated trim packages to elevate the builder-grade interiors they moved into. Sullivan Pines and Fisher's Creek are slightly older, with 1990s–2000s construction where bathroom updates and kitchen refreshes are the dominant project type. Flooring upgrades are very common throughout Mill Plain — many homeowners are replacing original carpet with LVP or engineered hardwood. The SE Mill Plain corridor is easy for our crew to reach from anywhere in Clark County, and we serve all Mill Plain neighborhoods with same-week estimate availability.",
+		commonProjects: [
+			{ name: "Finish Carpentry Upgrades", desc: "Newer Mill Plain homes in Cimarron and Landover frequently get trim upgrades — crown molding, thicker baseboards, and custom door and window casing." },
+			{ name: "Flooring Installation", desc: "LVP and hardwood flooring replacements over original carpet are among the most common Mill Plain jobs. Main floor open-plan installs are typical." },
+			{ name: "Bathroom Refreshes", desc: "1990s–2000s bathrooms throughout Mill Plain benefit from tile updates, fixture replacements, and vanity swaps without necessarily a full gut remodel." },
+			{ name: "Kitchen Updates", desc: "Backsplash installation, countertop replacement, and hardware upgrades in kitchens from the same era are frequent requests from Mill Plain homeowners." },
+		],
+		permitNotes:
+			"Mill Plain is in unincorporated Clark County — permits are issued through Clark County Community Development (564-397-2375). Properties within Vancouver city limits along the Mill Plain corridor use the City of Vancouver Permit Center. NORBILT can confirm jurisdiction during the estimate and handles all permit applications.",
+		cityFAQs: [
+			{
+				q: "Do you serve all of Mill Plain including Cimarron and Sullivan Pines?",
+				a: "Yes. We cover all Mill Plain neighborhoods — Cimarron, Landover, Bennington, Sullivan Pines, and Fisher's Creek. Same-week estimates, no travel surcharge, same licensed standard as any Clark County address.",
+			},
+			{
+				q: "What's the most popular upgrade in Mill Plain homes?",
+				a: "Flooring replacements — specifically LVP over original carpet — and finish carpentry upgrades are the most frequent requests. Mill Plain's newer housing stock doesn't usually need major repairs; owners are upgrading for aesthetic and resale value.",
+			},
+		],
 	},
 	"lake-shore": {
 		name: "Lake Shore, WA",
 		description:
 			"We provide specialized interior repairs and finish carpentry in Lake Shore, WA. Homes near Vancouver Lake and Lakeshore Drive tend to be well-established, with older construction that benefits from trim updates, fixture replacements, and drywall repairs. Our team works carefully in these homes and respects the existing character of each property. We serve all Lake Shore neighborhoods with licensed, insured service and free written estimates.",
-		neighborhoods: ["Lakeview Heights", "Lakeshore Dr", "Northwest Lake Shore"],
+		neighborhoods: ["Lakeview Heights", "Lakeshore Dr", "Northwest Lake Shore", "Vancouver Lake", "Highland"],
+		housingNotes:
+			"Lake Shore is northwest Vancouver, anchored by Vancouver Lake and Lakeshore Drive — a quiet, established residential community that doesn't get as much attention as busier Vancouver corridors but has a loyal base of long-term homeowners. The housing stock in Lake Shore is predominantly older: Lakeview Heights and the Lakeshore Dr corridor have homes from the 1950s through the 1970s, with the character and maintenance challenges that come with properties of that age. Settlement cracks in original drywall are standard. Bathrooms in these homes are frequently still in their original 1960s or 1970s state — harvest gold fixtures, ceramic tile from a different decade, and vanities that haven't been touched since installation. Original wood trim and doors throughout are showing their age but also have a quality of construction that's worth preserving or restoring. Highland and the newer parts of Northwest Lake Shore have more recent construction — 1980s and 1990s homes — where the maintenance needs are similar but less acute. The proximity to Vancouver Lake means some properties have higher moisture levels than inland equivalents, which can accelerate caulk failure and cause drywall issues in basements and lower levels. NORBILT treats Lake Shore homes with care — these are often family properties that have been owned for decades, and repairs should respect the existing character.",
+		commonProjects: [
+			{ name: "Drywall Repair & Settlement Cracks", desc: "Original drywall throughout 1950s–70s Lake Shore homes develops long settlement cracks along seams and at corners. We repair and texture-match for a like-new result." },
+			{ name: "Bathroom Remodels", desc: "Original 1960s–70s bathrooms are a defining feature of Lake Shore's housing stock. Full remodels — new tile, vanity, fixtures — are a common investment for these homes." },
+			{ name: "Fixture Replacement", desc: "Outdated lighting, ceiling fans, faucets, and hardware throughout homes of this era. Most updates completed in a single visit with no structural work required." },
+			{ name: "Window & Door Maintenance", desc: "Older windows and exterior doors throughout Lake Shore properties need re-caulking, weatherstripping, and hardware replacement. Higher moisture near the lake accelerates wear." },
+		],
+		permitNotes:
+			"Lake Shore is in unincorporated Clark County — all permits are issued through Clark County Community Development (564-397-2375). NORBILT handles permit applications as part of any permitted project scope.",
+		cityFAQs: [
+			{
+				q: "Do you work in Lake Shore and northwest Vancouver?",
+				a: "Yes. Lake Shore, Lakeview Heights, Vancouver Lake, and the Highland area are all within our service area. Same-week estimates, no travel surcharge, and the same licensed standard as any Clark County job.",
+			},
+			{
+				q: "Are older Lake Shore homes harder to work on than newer construction?",
+				a: "They require more careful assessment during the walkthrough, and we budget honest allowances for conditions typical in that era — non-standard fixture rough-ins, older drywall that requires different finishing approaches, and occasionally materials like plaster or asbestos tile that affect scope. We price these honestly upfront.",
+			},
+		],
 	},
 };
 
