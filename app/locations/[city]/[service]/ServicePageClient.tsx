@@ -93,7 +93,7 @@ export default function ServicePageClient({
 								aggregateRating: {
 									"@type": "AggregateRating",
 									ratingValue: "5.0",
-									reviewCount: "27",
+									reviewCount: "13",
 									bestRating: "5",
 									worstRating: "1",
 								},
