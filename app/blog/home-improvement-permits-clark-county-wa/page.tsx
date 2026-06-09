@@ -175,7 +175,7 @@ export default function PermitsClarkCountyPage() {
 
 			{/* HERO */}
 			<section className="pt-32 pb-20 bg-[#14201D] text-white relative overflow-hidden">
-				<div className="absolute inset-0 opacity-5 bg-[radial-gradient(#FFB800_1px,transparent_1px)] bg-[size:40px_40px]" />
+				<div className="absolute inset-0 opacity-5 bg-[radial-gradient(#FFB800_1px,transparent_1px)] bg-size-[40px_40px]" />
 				<div className="max-w-4xl mx-auto px-6 relative z-10">
 					<div className="flex items-center gap-3 text-[#FFB800] mb-6">
 						<span className="font-black uppercase tracking-widest text-xs">

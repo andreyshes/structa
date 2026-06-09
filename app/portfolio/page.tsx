@@ -230,7 +230,7 @@ export default function PortfolioPage() {
 											sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
 											className="object-cover group-hover:scale-105 transition-transform duration-500"
 										/>
-										<div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+										<div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 										<div className="absolute bottom-0 left-0 right-0 p-5 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
 											<p className="text-white font-black text-sm uppercase tracking-wide">
 												{project.caption}

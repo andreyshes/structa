@@ -294,7 +294,7 @@ export default function HomeRemodelingClarkCounty() {
 										{posts.map((p, i) => (
 											<li key={i}>
 												<Link href={p.href} className="flex items-center gap-2 text-sm text-[#2D5A3D] font-bold hover:underline">
-													<ArrowRight className="w-3 h-3 flex-shrink-0" />
+													<ArrowRight className="w-3 h-3 shrink-0" />
 													{p.title} in {city}
 												</Link>
 											</li>
@@ -336,7 +336,7 @@ export default function HomeRemodelingClarkCounty() {
 								},
 							].map(({ title, body }, i) => (
 								<div key={i} className="flex gap-4 bg-[#F8F6F3] rounded-2xl p-6">
-									<CheckCircle className="w-5 h-5 text-[#2D5A3D] mt-1 flex-shrink-0" />
+									<CheckCircle className="w-5 h-5 text-[#2D5A3D] mt-1 shrink-0" />
 									<div>
 										<p className="font-black text-[#1F2E2B] mb-2">{title}</p>
 										<p className="text-gray-600 text-sm leading-relaxed">{body}</p>
@@ -367,7 +367,7 @@ export default function HomeRemodelingClarkCounty() {
 								"Be wary of quotes dramatically below market rate — materials cost what they cost",
 							].map((item, i) => (
 								<div key={i} className="flex gap-3 items-start">
-									<CheckCircle className="w-4 h-4 text-[#2D5A3D] mt-1 flex-shrink-0" />
+									<CheckCircle className="w-4 h-4 text-[#2D5A3D] mt-1 shrink-0" />
 									<p className="text-gray-700 text-sm leading-relaxed">{item}</p>
 								</div>
 							))}
@@ -415,7 +415,7 @@ export default function HomeRemodelingClarkCounty() {
 								{ title: "Handyman Services in Camas WA", href: "/blog/handyman-services-camas-wa" },
 							].map((l, i) => (
 								<Link key={i} href={l.href} className="flex items-center gap-3 bg-[#F8F6F3] rounded-xl p-4 hover:bg-[#2D5A3D]/10 transition-colors group">
-									<ArrowRight className="w-4 h-4 text-[#2D5A3D] flex-shrink-0" />
+									<ArrowRight className="w-4 h-4 text-[#2D5A3D] shrink-0" />
 									<span className="text-sm font-bold text-[#1F2E2B] group-hover:text-[#2D5A3D] transition-colors">{l.title}</span>
 								</Link>
 							))}

@@ -185,7 +185,7 @@ export default function DrywallRepairPage() {
 						sizes="100vw"
 						className="object-cover"
 					/>
-					<div className="absolute inset-0 bg-gradient-to-r from-[#14201D] via-[#14201D]/85 to-transparent" />
+					<div className="absolute inset-0 bg-linear-to-r from-[#14201D] via-[#14201D]/85 to-transparent" />
 				</div>
 
 				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32">
@@ -349,7 +349,7 @@ export default function DrywallRepairPage() {
 							].map((item, i) => (
 								<div
 									key={i}
-									className="bg-[#F8F6F3] p-8 rounded-[2rem] border-l-8 border-[#FFB800] shadow-sm"
+									className="bg-[#F8F6F3] p-8 rounded-4xl border-l-8 border-[#FFB800] shadow-sm"
 								>
 									<h3 className="font-black text-[#1F2E2B] uppercase tracking-tight text-xl mb-2">
 										{item.t}
@@ -524,7 +524,7 @@ export default function DrywallRepairPage() {
 			{/* FINAL CTA */}
 			<section className="py-24 lg:py-40">
 				<div className="max-w-7xl mx-auto px-6">
-					<div className="bg-[#1F2E2B] rounded-[3rem] p-12 lg:p-24 text-center relative overflow-hidden border-b-[12px] border-[#FFB800] shadow-2xl">
+					<div className="bg-[#1F2E2B] rounded-[3rem] p-12 lg:p-24 text-center relative overflow-hidden border-b-12 border-[#FFB800] shadow-2xl">
 						<div className="relative z-10 max-w-3xl mx-auto space-y-8">
 							<h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none">
 								Get Drywall Repair <br />

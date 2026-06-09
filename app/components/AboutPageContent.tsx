@@ -78,7 +78,7 @@ export default function AboutPageContent() {
 						sizes="100vw"
 						className="object-cover"
 					/>
-					<div className="absolute inset-0 bg-gradient-to-r from-[#14201D] via-[#14201D]/85 to-transparent" />
+					<div className="absolute inset-0 bg-linear-to-r from-[#14201D] via-[#14201D]/85 to-transparent" />
 				</div>
 
 				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-20">
@@ -136,7 +136,7 @@ export default function AboutPageContent() {
 				<div className="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-20 items-center">
 					{/* Headshot — replace /headshot-placeholder.jpg with your real photo */}
 					<div className="relative order-2 lg:order-1">
-						<div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-8 border-[#F8F6F3] bg-[#1F2E2B]">
+						<div className="relative aspect-4/5 rounded-3xl overflow-hidden shadow-2xl border-8 border-[#F8F6F3] bg-[#1F2E2B]">
 							<Image
 								src="/remodel-images/IMG_7646.jpg"
 								alt="Andrey, founder of NORBILT general contractor Vancouver WA"

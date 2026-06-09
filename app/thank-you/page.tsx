@@ -49,7 +49,7 @@ export default function ThankYouPage() {
 					animate={{ opacity: 1, scale: 1 }}
 					className="relative z-10 max-w-4xl w-full"
 				>
-					<div className="bg-white rounded-[3rem] shadow-2xl overflow-hidden border-b-[12px] border-[#FFB800]">
+					<div className="bg-white rounded-[3rem] shadow-2xl overflow-hidden border-b-12 border-[#FFB800]">
 						<div className="p-8 md:p-16 text-center border-b border-gray-100">
 							<div className="flex justify-center mb-8">
 								<div className="w-20 h-20 bg-[#FFB800]/10 rounded-full flex items-center justify-center">

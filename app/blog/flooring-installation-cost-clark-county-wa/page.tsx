@@ -358,7 +358,7 @@ export default function FlooringCostClarkCounty() {
 								},
 							].map(({ room, winner, why, cost }) => (
 								<div key={room} className="bg-white rounded-2xl p-6 flex gap-4">
-									<CheckCircle className="w-5 h-5 text-[#2D5A3D] mt-1 flex-shrink-0" />
+									<CheckCircle className="w-5 h-5 text-[#2D5A3D] mt-1 shrink-0" />
 									<div className="space-y-1">
 										<div className="flex flex-wrap items-center gap-3">
 											<span className="font-black text-[#1F2E2B]">{room}</span>

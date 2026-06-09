@@ -197,7 +197,7 @@ export default function ServicesPage() {
 						sizes="100vw"
 						className="object-cover"
 					/>
-					<div className="absolute inset-0 bg-gradient-to-r from-[#14201D] via-[#14201D]/85 to-transparent" />
+					<div className="absolute inset-0 bg-linear-to-r from-[#14201D] via-[#14201D]/85 to-transparent" />
 				</div>
 
 				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-20">
@@ -310,7 +310,7 @@ export default function ServicesPage() {
 									<div className="lg:col-span-5 flex flex-col justify-center">
 										<Link
 											href={service.href}
-											className="relative aspect-square rounded-[2rem] overflow-hidden shadow-2xl block"
+											className="relative aspect-square rounded-4xl overflow-hidden shadow-2xl block"
 										>
 											<Image
 												src={service.image}
@@ -394,7 +394,7 @@ export default function ServicesPage() {
 			{/* FINAL CTA */}
 			<section className="py-24 lg:py-40">
 				<div className="max-w-7xl mx-auto px-6">
-					<div className="bg-[#1F2E2B] rounded-[3rem] p-12 lg:p-24 text-center relative overflow-hidden border-b-[12px] border-[#FFB800] shadow-2xl">
+					<div className="bg-[#1F2E2B] rounded-[3rem] p-12 lg:p-24 text-center relative overflow-hidden border-b-12 border-[#FFB800] shadow-2xl">
 						<div className="relative z-10 max-w-3xl mx-auto space-y-8">
 							<h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none">
 								Start Your <span className="text-[#FFB800]">Home Update</span>

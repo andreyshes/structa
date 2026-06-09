@@ -257,7 +257,7 @@ export default function HomePageContent() {
 						priority
 						className="object-cover"
 					/>
-					<div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/60 to-transparent" />
+					<div className="absolute inset-0 bg-linear-to-r from-black/95 via-black/60 to-transparent" />
 				</div>
 
 				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-64 md:pb-40">
@@ -293,7 +293,7 @@ export default function HomePageContent() {
 						<div className="pt-8 flex flex-wrap items-center gap-4">
 							<Link
 								href="/estimate"
-								className="group relative inline-flex items-center justify-center gap-3 px-10 py-6 bg-gradient-to-b from-[#FFD700] to-[#CC9900] text-[#1F2E2B] rounded-xl font-black uppercase tracking-widest shadow-2xl hover:scale-105 transition-all"
+								className="group relative inline-flex items-center justify-center gap-3 px-10 py-6 bg-linear-to-b from-[#FFD700] to-[#CC9900] text-[#1F2E2B] rounded-xl font-black uppercase tracking-widest shadow-2xl hover:scale-105 transition-all"
 							>
 								Get Instant Estimate
 								<ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-2" />
@@ -580,7 +580,7 @@ export default function HomePageContent() {
 			<section className="py-32 bg-white">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-20 items-center">
 					<div className="relative">
-						<div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+						<div className="relative aspect-4/5 rounded-3xl overflow-hidden shadow-2xl">
 							<Image
 								src="/remodel-images/IMG_1897%202.jpg"
 								alt="Bathroom remodel by NORBILT in Vancouver WA"
@@ -681,7 +681,7 @@ export default function HomePageContent() {
 							beforeAlt="Bathroom before remodel — dated tile and dark wood vanity"
 							afterAlt="Bathroom after remodel by NORBILT — modern marble and freestanding tub"
 							label="Bathroom Remodel — Vancouver, WA"
-							aspectClass="aspect-[3/2]"
+							aspectClass="aspect-3/2"
 						/>
 					</div>
 

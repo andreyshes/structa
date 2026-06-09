@@ -421,7 +421,7 @@ export default function CityLandingClient({ city, citySlug }: any) {
 							referrerPolicy="no-referrer-when-downgrade"
 							className="grayscale group-hover:grayscale-0 transition-all duration-700"
 						></iframe>
-						<div className="absolute inset-0 pointer-events-none border-[1px] border-black/5 rounded-[3rem]"></div>
+						<div className="absolute inset-0 pointer-events-none border border-black/5 rounded-[3rem]"></div>
 					</div>
 				</div>
 			</section>
@@ -473,7 +473,7 @@ export default function CityLandingClient({ city, citySlug }: any) {
 			{/* BOTTOM BILLBOARD CTA */}
 			<section className="py-24 lg:py-32">
 				<div className="max-w-7xl mx-auto px-6">
-					<div className="bg-[#1F2E2B] rounded-[3rem] p-12 lg:p-20 text-center relative overflow-hidden border-b-[12px] border-[#FFB800] shadow-2xl">
+					<div className="bg-[#1F2E2B] rounded-[3rem] p-12 lg:p-20 text-center relative overflow-hidden border-b-12 border-[#FFB800] shadow-2xl">
 						<div className="relative z-10 max-w-3xl mx-auto space-y-6">
 							<span className="inline-block px-4 py-1 bg-[#FFB800]/20 text-[#FFB800] text-xs font-black uppercase tracking-widest rounded-full">
 								Serving {cityNameShort}, WA

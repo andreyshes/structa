@@ -95,7 +95,7 @@ export default function DoorWindowPage() {
 						sizes="100vw"
 						className="object-cover"
 					/>
-					<div className="absolute inset-0 bg-gradient-to-r from-[#14201D] via-[#14201D]/80 to-transparent" />
+					<div className="absolute inset-0 bg-linear-to-r from-[#14201D] via-[#14201D]/80 to-transparent" />
 				</div>
 
 				<div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32">
@@ -203,7 +203,7 @@ export default function DoorWindowPage() {
 
 						<div className="relative group">
 							<div className="absolute -inset-4 bg-[#F8F6F3] rounded-[3rem] -rotate-2 group-hover:rotate-0 transition-transform duration-500" />
-							<div className="relative bg-[#1F2E2B] p-10 lg:p-14 rounded-[2.5rem] shadow-2xl border-b-[8px] border-[#FFB800]">
+							<div className="relative bg-[#1F2E2B] p-10 lg:p-14 rounded-[2.5rem] shadow-2xl border-b-8 border-[#FFB800]">
 								<h3 className="text-2xl font-black text-white uppercase tracking-tighter mb-8">
 									Performance Checklist
 								</h3>
@@ -254,7 +254,7 @@ export default function DoorWindowPage() {
 						{services.map((service, i) => (
 							<div
 								key={i}
-								className="bg-white p-10 rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)] transition-all border-b-4 border-transparent hover:border-[#FFB800] group"
+								className="bg-white p-10 rounded-4xl shadow-[0_10px_40px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)] transition-all border-b-4 border-transparent hover:border-[#FFB800] group"
 							>
 								<div className="w-16 h-16 bg-[#F8F6F3] rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#1F2E2B] transition-colors">
 									<service.icon className="w-8 h-8 text-[#2D5A3D] group-hover:text-[#FFB800]" />
@@ -331,7 +331,7 @@ export default function DoorWindowPage() {
 			{/* FINAL CTA - BILLBOARD STYLE */}
 			<section className="py-24 lg:py-40">
 				<div className="max-w-7xl mx-auto px-6">
-					<div className="bg-[#1F2E2B] rounded-[3rem] p-12 lg:p-24 text-center relative overflow-hidden border-b-[12px] border-[#FFB800] shadow-2xl">
+					<div className="bg-[#1F2E2B] rounded-[3rem] p-12 lg:p-24 text-center relative overflow-hidden border-b-12 border-[#FFB800] shadow-2xl">
 						<div className="relative z-10 max-w-3xl mx-auto space-y-8">
 							<h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none">
 								Schedule Door & Window Repair <br />{" "}
