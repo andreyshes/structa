@@ -48,7 +48,7 @@ const faqs = [
 export default function DrywallRepairCostClarkCountyWA() {
 	return (
 		<>
-			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BlogPosting", headline: "Drywall Repair Cost in Clark County WA: 2026 Guide", author: { "@type": "Person", name: "Andrey" }, publisher: { "@type": "Organization", name: "NORBILT", logo: { "@type": "ImageObject", url: "https://www.norbilt.com/icon-v3.png" } }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://www.norbilt.com/blog/drywall-repair-cost-clark-county-wa" }) }} />
+			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BlogPosting", headline: "Drywall Repair Cost in Clark County WA: 2026 Guide", author: { "@id": "https://www.norbilt.com/#founder" }, publisher: { "@id": "https://www.norbilt.com/#organization" }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://www.norbilt.com/blog/drywall-repair-cost-clark-county-wa" }) }} />
 			<script
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify({

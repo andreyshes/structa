@@ -84,7 +84,7 @@ export default function HandymanCostPage() {
 						"description": "Real 2026 handyman costs in Vancouver WA & Clark County. Hourly rates, per-job pricing for 20+ common tasks, and what separates a licensed contractor from an unlicensed handyman.",
 						"datePublished": "2026-05-17",
 						"dateModified": "2026-05-17",
-						"author": { "@type": "Person", "name": "Andrey" },
+						"author": { "@id": "https://www.norbilt.com/#founder" },
 						"publisher": {
 							"@type": "Organization",
 							"name": "NORBILT",

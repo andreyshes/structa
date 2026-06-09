@@ -78,8 +78,8 @@ export default function CamasHandymanPost() {
 						"headline": "Handyman Services in Camas WA: 2026 Pricing & What to Expect",
 						"datePublished": "2026-05-26",
 						"dateModified": "2026-05-26",
-						"author": { "@type": "Person", "name": "Andrey" },
-						"publisher": { "@type": "Organization", "name": "NORBILT", "url": "https://www.norbilt.com" },
+						"author": { "@id": "https://www.norbilt.com/#founder" },
+						"publisher": { "@id": "https://www.norbilt.com/#organization" },
 						"mainEntityOfPage": "https://www.norbilt.com/blog/handyman-services-camas-wa",
 					}),
 				}}

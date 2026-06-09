@@ -30,11 +30,8 @@ export default function FlooringCost() {
 						"@context": "https://schema.org",
 						"@type": "BlogPosting",
 						headline: "How Much Does Flooring Installation Cost in Camas, WA?",
-						author: { "@type": "Person", name: "Andrey" },
-						publisher: {
-							"@type": "Organization",
-							name: "NORBILT",
-							logo: { "@type": "ImageObject", url: "https://www.norbilt.com/icon-v3.png" },
+						author: { "@id": "https://www.norbilt.com/#founder" },
+						publisher: { "@id": "https://www.norbilt.com/#organization" },
 						},
 						datePublished: "2026-04-06",
 						dateModified: "2026-04-06",

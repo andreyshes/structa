@@ -153,12 +153,8 @@ const schema = {
 		url: "https://www.norbilt.com/blog/flooring-installation-cost-vancouver-wa",
 		datePublished: "2026-05-09",
 		dateModified: "2026-05-09",
-		author: { "@type": "Person", name: "Andrey" },
-		publisher: {
-			"@type": "Organization",
-			name: "NORBILT",
-			url: "https://www.norbilt.com",
-		},
+		author: { "@id": "https://www.norbilt.com/#founder" },
+		publisher: { "@id": "https://www.norbilt.com/#organization" },
 };
 
 export default function FlooringCostPage() {

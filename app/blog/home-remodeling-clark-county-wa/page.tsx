@@ -26,11 +26,8 @@ const articleSchema = {
 	description: "Complete 2026 cost guide for home remodeling in Clark County WA covering kitchen, bathroom, flooring, carpentry, and drywall projects.",
 	datePublished: "2026-06-08",
 	dateModified: "2026-06-08",
-	author: { "@type": "Person", name: "Andrey" },
-	publisher: {
-		"@type": "Organization",
-		name: "NORBILT",
-		logo: { "@type": "ImageObject", url: "https://www.norbilt.com/icon-v3.png" },
+	author: { "@id": "https://www.norbilt.com/#founder" },
+	publisher: { "@id": "https://www.norbilt.com/#organization" },
 	},
 	mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.norbilt.com/blog/home-remodeling-clark-county-wa" },
 };

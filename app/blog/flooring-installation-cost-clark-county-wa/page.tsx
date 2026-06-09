@@ -26,11 +26,8 @@ const schema = {
 		"Real 2026 installed flooring prices for LVP, hardwood, tile, laminate, and carpet in Clark County WA.",
 	datePublished: "2026-05-26",
 	dateModified: "2026-05-26",
-	author: { "@type": "Person", name: "Andrey" },
-	publisher: {
-		"@type": "Organization",
-		name: "NORBILT",
-		logo: { "@type": "ImageObject", url: "https://www.norbilt.com/logo.png" },
+	author: { "@id": "https://www.norbilt.com/#founder" },
+	publisher: { "@id": "https://www.norbilt.com/#organization" },
 	},
 	mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.norbilt.com/blog/flooring-installation-cost-clark-county-wa" },
 };

@@ -135,7 +135,7 @@ export default function FinishCarpentryBlogPost() {
 						"description": "Real 2026 price ranges for finish carpentry in Vancouver WA and Clark County — baseboards, crown molding, wainscoting, door casing, and built-ins.",
 						"datePublished": "2026-05-26",
 						"dateModified": "2026-05-26",
-						"author": { "@type": "Person", "name": "Andrey" },
+						"author": { "@id": "https://www.norbilt.com/#founder" },
 						"publisher": {
 							"@type": "Organization",
 							"name": "NORBILT",

@@ -111,11 +111,8 @@ export default function ClarkCountyChecklist() {
 						"@context": "https://schema.org",
 						"@type": "BlogPosting",
 						headline: "Home Repair Checklist: 10 Things to Fix Before They Get Expensive",
-						author: { "@type": "Person", name: "Andrey" },
-						publisher: {
-							"@type": "Organization",
-							name: "NORBILT",
-							logo: { "@type": "ImageObject", url: "https://www.norbilt.com/icon-v3.png" },
+						author: { "@id": "https://www.norbilt.com/#founder" },
+						publisher: { "@id": "https://www.norbilt.com/#organization" },
 						},
 						datePublished: "2025-03-01",
 						dateModified: "2026-03-04",

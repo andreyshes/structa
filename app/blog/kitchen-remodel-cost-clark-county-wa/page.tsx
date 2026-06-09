@@ -147,12 +147,8 @@ const schema = {
 	url: "https://www.norbilt.com/blog/kitchen-remodel-cost-clark-county-wa",
 	datePublished: "2026-04-28",
 	dateModified: "2026-04-28",
-	author: { "@type": "Person", name: "Andrey" },
-	publisher: {
-		"@type": "Organization",
-		name: "NORBILT",
-		url: "https://www.norbilt.com",
-	},
+	author: { "@id": "https://www.norbilt.com/#founder" },
+	publisher: { "@id": "https://www.norbilt.com/#organization" },
 };
 
 function fmt(n: number) {
