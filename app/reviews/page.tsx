@@ -149,10 +149,43 @@ const serviceAreas = [
 	{ name: "Salmon Creek", slug: "salmon-creek" },
 ];
 
+const reviewSchema = {
+	"@context": "https://schema.org",
+	"@type": "ItemList",
+	"name": "Customer Reviews — NORBILT Home Repairs & Remodeling",
+	"url": "https://www.norbilt.com/reviews",
+	"numberOfItems": reviews.length,
+	"itemListElement": reviews.map((r, i) => ({
+		"@type": "ListItem",
+		"position": i + 1,
+		"item": {
+			"@type": "Review",
+			"reviewBody": r.quote,
+			"datePublished": "2025-01-01",
+			"author": {
+				"@type": "Person",
+				"name": r.name,
+			},
+			"reviewRating": {
+				"@type": "Rating",
+				"ratingValue": r.rating,
+				"bestRating": 5,
+				"worstRating": 1,
+			},
+			"itemReviewed": {
+				"@id": "https://www.norbilt.com/#business",
+			},
+		},
+	})),
+};
+
 export default function ReviewsPage() {
 	return (
 		<>
-
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+			/>
 			<div className="overflow-hidden bg-[#FDFCFB]">
 				{/* HERO */}
 				<section className="relative pt-32 pb-24 lg:pt-48 lg:pb-32 bg-[#14201D] overflow-hidden">
