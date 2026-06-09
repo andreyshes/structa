@@ -14,17 +14,18 @@ import {
 	Construction,
 	Star,
 	Quote,
+	Zap,
 } from "lucide-react";
 
 import SectionHeader from "@/app/components/SectionHeader";
 
 export const metadata = {
-	title: "Handyman Services Vancouver WA | Handyman Near Me | NORBILT",
-	description: "Licensed handyman near you in Vancouver WA & Clark County. Drywall, fixtures, doors, punch lists & more. 5-star Google rated. Free estimates. Call (360) 216-9920.",
+	title: "Small Repairs & Handyman Services Vancouver WA | Same-Day | NORBILT",
+	description: "Same-day small repairs and handyman services in Vancouver WA and Clark County. TV mounting, furniture assembly, caulking, grab bars, and minor task lists — by the task. Licensed & insured. Free estimates. (360) 216-9920.",
 	alternates: { canonical: "https://www.norbilt.com/services/handyman" },
 	openGraph: {
-		title: "Handyman Services Vancouver WA | NORBILT",
-		description: "Licensed handyman near you in Vancouver WA & Clark County.",
+		title: "Small Repairs & Handyman Services Vancouver WA | NORBILT",
+		description: "Same-day small repairs in Vancouver WA. TV mounting, furniture assembly, caulking, grab bars, minor fixes. No project too small.",
 		url: "https://www.norbilt.com/services/handyman",
 	},
 };
@@ -102,10 +103,10 @@ export default function HandymanPage() {
 							},
 							{
 								"@type": "Service",
-								"name": "Handyman Services Vancouver WA",
+								"name": "Small Repairs & Handyman Services Vancouver WA",
 								"provider": { "@id": "https://www.norbilt.com/#business" },
 								"areaServed": "Vancouver WA",
-								"description": "Licensed handyman services in Vancouver WA and Clark County including drywall repair, fixture installation, door repairs, TV mounting, and home maintenance punch lists.",
+								"description": "Same-day small repairs and handyman services in Vancouver WA and Clark County. TV mounting, furniture assembly, caulking, grab bar installation, door adjustments, and task lists. No minimum job size. Licensed and insured.",
 								"serviceType": "Handyman Service",
 								"url": "https://www.norbilt.com/services/handyman"
 							},
@@ -114,10 +115,10 @@ export default function HandymanPage() {
 								"mainEntity": [
 									{
 										"@type": "Question",
-										"name": "How do I find a reliable handyman near me in Vancouver WA?",
+										"name": "What small repairs can you do same day in Vancouver WA?",
 										"acceptedAnswer": {
 											"@type": "Answer",
-											"text": "NORBILT is a licensed WA General Contractor serving Vancouver, Camas, Ridgefield, Battle Ground, and all of Clark County. Unlike unlicensed handymen found on apps, we carry full liability insurance and a contractor's bond. Call (360) 216-9920 or submit a project request for a free same-week estimate."
+											"text": "NORBILT handles same-day or next-day small repairs including TV mounting, furniture assembly, shelf hanging, grab bar installation, smart lock installation, caulking, door adjustments, fixture swaps, and minor punch lists throughout Clark County."
 										}
 									},
 									{
@@ -125,7 +126,23 @@ export default function HandymanPage() {
 										"name": "What does a handyman cost in Vancouver WA?",
 										"acceptedAnswer": {
 											"@type": "Answer",
-											"text": "Licensed handyman labor in Vancouver WA runs $65\u2013$95/hour in 2026. Small jobs (TV mounting, shelf install, fixture swap) typically run $150\u2013$350. Half-day punch lists run $350\u2013$600. We provide free written estimates before any work begins."
+											"text": "Small jobs in Vancouver WA run $150–$350 per task in 2026 — TV mounting, shelf install, fixture swap. Half-day punch lists (multiple tasks) run $350–$600. We price every job flat before we start — no hourly surprises."
+										}
+									},
+									{
+										"@type": "Question",
+										"name": "Is there a minimum job size?",
+										"acceptedAnswer": {
+											"@type": "Answer",
+											"text": "No. NORBILT has no minimum job size. One TV mount, one grab bar, one fixture — we price it flat and show up. Most small jobs in Clark County are completed in a single visit."
+										}
+									},
+									{
+										"@type": "Question",
+										"name": "What is the difference between your handyman service and your home repair service?",
+										"acceptedAnswer": {
+											"@type": "Answer",
+											"text": "Handyman services cover small, no-permit tasks — TV mounting, assembly, caulking, grab bars, minor fixes. Home repair covers larger licensed work — drywall damage, door replacements, weatherization, and jobs that may require permits. Not sure which applies? Call us and we will tell you honestly."
 										}
 									},
 									{
@@ -133,23 +150,7 @@ export default function HandymanPage() {
 										"name": "Do you offer handyman services for seniors in Vancouver WA?",
 										"acceptedAnswer": {
 											"@type": "Answer",
-											"text": "Yes. We regularly help seniors with safety grab bar installation, non-slip modifications, door adjustment for easier use, smart lock installation, and general home maintenance. We are patient, communicative, and keep job sites clean and safe."
-										}
-									},
-									{
-										"@type": "Question",
-										"name": "What handyman services do you offer?",
-										"acceptedAnswer": {
-											"@type": "Answer",
-											"text": "We handle drywall patching, hole repair, texture matching, fixture installation, ceiling fans, smart locks, TV mounting, shelf installation, furniture assembly, caulking, weatherstripping, door adjustments, cabinet hardware, tile grout repair, and full home punch lists."
-										}
-									},
-									{
-										"@type": "Question",
-										"name": "Are you a licensed handyman in Washington State?",
-										"acceptedAnswer": {
-											"@type": "Answer",
-											"text": "Yes. NORBILT is a licensed and bonded WA General Contractor. In Washington, repair work above a set dollar amount legally requires a licensed contractor. Hiring unlicensed help can void your homeowner's insurance and cause issues at resale. Every NORBILT job is fully insured and code-compliant."
+											"text": "Yes. We regularly help seniors with grab bar installation, non-slip modifications, door adjustments, smart lock installation, and general home maintenance. We are patient, communicative, and keep job sites clean and safe."
 										}
 									}
 								]
@@ -183,15 +184,15 @@ export default function HandymanPage() {
 						</div>
 
 						<h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tighter uppercase animate-fade-in-left animate-delay-100">
-							Expert Handyman <br />
-							<span className="text-[#FFB800]">Services Vancouver WA</span>
+							Small Repairs & <br />
+							<span className="text-[#FFB800]">Handyman Services Vancouver WA</span>
 						</h1>
 
 						<p className="text-xl text-white/90 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6 animate-fade-in-up animate-delay-200">
-							Vancouver WA&apos;s trusted handyman for home repairs and
-							maintenance in Clark County. Our licensed handyman team handles
-							your entire to-do list with professional precision and full
-							accountability.
+							Fast, affordable small repairs for Clark County homeowners. TV
+							mounting, furniture assembly, caulking, grab bars, door fixes, and
+							task lists — completed same day or next. Licensed and insured. No
+							project too small.
 						</p>
 
 						<div className="flex items-center gap-2 animate-fade-in-up animate-delay-200">
@@ -245,13 +246,19 @@ export default function HandymanPage() {
 					<div className="flex items-center gap-3">
 						<ShieldCheck className="text-[#FFB800] w-5 h-5" />
 						<span className="text-[#A7C4B5] font-black text-xs uppercase tracking-[0.2em]">
-							Fully Licensed & Bonded
+							Licensed & Insured
 						</span>
 					</div>
 					<div className="flex items-center gap-3">
 						<Clock className="text-[#FFB800] w-5 h-5" />
 						<span className="text-[#A7C4B5] font-black text-xs uppercase tracking-[0.2em]">
-							Prompt & Reliable Service
+							Same-Day & Next-Day Available
+						</span>
+					</div>
+					<div className="flex items-center gap-3">
+						<Zap className="text-[#FFB800] w-5 h-5" />
+						<span className="text-[#A7C4B5] font-black text-xs uppercase tracking-[0.2em]">
+							No Minimum Job Size
 						</span>
 					</div>
 				</div>
@@ -263,22 +270,23 @@ export default function HandymanPage() {
 					<div className="grid lg:grid-cols-2 gap-20 items-center">
 						<div className="space-y-8">
 							<h2 className="text-4xl lg:text-5xl font-black text-[#1F2E2B] uppercase tracking-tighter leading-none">
-								Why Hire a Licensed <br />
-								<span className="text-[#2D5A3D]">Handyman in Vancouver, WA?</span>
+								Small Repairs Done Fast <br />
+								<span className="text-[#2D5A3D]">in Vancouver, WA</span>
 							</h2>
 
 							<p className="text-gray-600 text-lg font-medium leading-relaxed">
-								Finding a good handyman should not be a gamble. NORBILT
-								handles all the small and mid-size jobs your home needs. We
-								fill the gap between casual labor and a full remodel.
+								Got a task list that never gets done? NORBILT specializes in
+								the small, no-permit jobs Clark County homeowners put off —
+								TV mounting, assembly, caulking, grab bars, minor door fixes.
+								We show up prepared, work fast, and leave the site clean.
 							</p>
 
 							<div className="grid sm:grid-cols-2 gap-4">
 								{[
-									"Licensed Accountability",
-									"Detail-Oriented Finish",
-									"Clear, Fixed Pricing",
-									"Local PNW Expertise",
+									"No Minimum Job Size",
+									"Same-Day Availability",
+									"Flat Price Per Task",
+									"Clean Jobsite Guarantee",
 								].map((item) => (
 									<div key={item} className="flex items-center gap-2">
 										<CheckCircle2 className="text-[#FFB800] w-5 h-5" />
@@ -294,26 +302,27 @@ export default function HandymanPage() {
 							<div className="absolute -inset-4 bg-[#F8F6F3] rounded-[3rem] rotate-1 group-hover:rotate-0 transition-transform duration-500" />
 							<div className="relative bg-[#1F2E2B] p-10 lg:p-14 rounded-[2.5rem] shadow-2xl border-b-[8px] border-[#FFB800]">
 								<h3 className="text-2xl font-black text-white uppercase tracking-tighter mb-8 italic">
-									The NORBILT Advantage
+									Why Homeowners Call Us First
 								</h3>
 								<div className="space-y-8">
 									<div className="space-y-2 border-l-2 border-[#FFB800]/30 pl-6">
 										<span className="block font-black text-[#FFB800] text-xs uppercase tracking-widest">
-											General Contractor Status
+											No Job Too Small
 										</span>
 										<p className="text-[#A7C4B5] text-sm font-medium">
-											Unlike casual handymen, we are a licensed WA General
-											Contractor. Every job meets state code and safety
-											standards.
+											One TV mount or a 10-item task list — we price every
+											job flat before we start. No hourly surprises, no
+											minimums.
 										</p>
 									</div>
 									<div className="space-y-2 border-l-2 border-[#FFB800]/30 pl-6">
 										<span className="block font-black text-[#FFB800] text-xs uppercase tracking-widest">
-											Home Value Protection
+											Licensed Means Accountable
 										</span>
 										<p className="text-[#A7C4B5] text-sm font-medium">
-											Small fixes now stop big repair bills later. We tackle
-											the items that protect your home and its value.
+											Unlike app-based handymen, NORBILT is a licensed WA
+											contractor — insured, bonded, and accountable if
+											anything goes wrong.
 										</p>
 									</div>
 								</div>
@@ -484,28 +493,28 @@ export default function HandymanPage() {
 					<div className="mt-16 space-y-6">
 						{[
 							{
-								q: "What does a handyman service include?",
-								a: "We cover a wide range of home repairs. For example, we handle drywall patching, fixture installation, door repairs, caulking, TV mounting, and furniture assembly. Additionally, we help homeowners and property managers work through punch lists and routine maintenance.",
+								q: "What small repairs can you do same day in Vancouver WA?",
+								a: "Most small jobs are same-day or next-day: TV mounting, furniture assembly, shelf hanging, picture hanging, grab bar installation, smart lock install, caulking, weatherstripping, door adjustments, cabinet hardware, ceiling fan install, and minor fixture swaps. We come prepared with common hardware so most tasks are done in a single visit.",
 							},
 							{
-								q: "Do I need a licensed handyman in Vancouver WA?",
-								a: "In Washington State, repair work above a set dollar amount requires a licensed contractor. As a result, hiring a registered WA General Contractor like NORBILT protects you legally and ensures the work meets code. In fact, unlicensed repair work can affect your home insurance and future resale value.",
+								q: "Is there a minimum job size?",
+								a: "No minimum. One TV mount, one grab bar, one fixture swap — we price it flat and show up. Most single tasks in Clark County run $150–$350.",
 							},
 							{
 								q: "How much does handyman service cost in Vancouver WA?",
-								a: "Based on 2026 Clark County rates: small repairs and fixture swaps run $175–$350, door repairs $230–$450, TV mounting $115–$200, drywall patches $175–$400, weatherstripping and caulking $175–$300, and full punch lists $460–$1,200+ depending on item count. We provide a free written estimate before any work starts — no surprises.",
+								a: "Based on 2026 Clark County rates: TV mounting $150–$300, fixture swap $150–$350, shelf or picture hanging $100–$250, grab bar install $200–$400, smart lock $150–$300, caulking $150–$350, and half-day punch lists $350–$600. We price every job flat before we start — no hourly surprises.",
+							},
+							{
+								q: "What is the difference between handyman and home repair?",
+								a: "Handyman covers small, no-permit tasks — TV mounting, assembly, caulking, grab bars, minor fixes. Home repair covers larger licensed work that may require permits, like drywall damage, door replacement, or weatherization. Not sure which applies? Call us and we'll tell you honestly.",
 							},
 							{
 								q: "What areas do you serve?",
-								a: "We serve homeowners throughout Clark County WA. Therefore, whether you are in central Vancouver, Camas, Washougal, Battle Ground, or Ridgefield, our team is ready for your home repair and maintenance needs.",
-							},
-							{
-								q: "How do I find a handyman near me in Vancouver WA?",
-								a: "NORBILT is locally based in Vancouver WA and serves all of Clark County. We offer same-week estimates and straightforward pricing. You can call us at (360) 216-9920, submit a project request online, or use our instant estimator to get an idea of cost before we visit.",
+								a: "We serve all of Clark County WA — Vancouver, Camas, Washougal, Battle Ground, Ridgefield, Salmon Creek, Hazel Dell, and surrounding areas.",
 							},
 							{
 								q: "Do you offer senior-friendly handyman services?",
-								a: "Yes. We regularly assist seniors with safety modifications — including grab bars, slip-resistant thresholds, door adjustments, smart lock installation, and general home maintenance. We are licensed, insured, and take extra care to leave every job site clean and safe.",
+								a: "Yes. We regularly help seniors with grab bar installation, slip-resistant thresholds, door adjustments, smart lock installation, and general home maintenance. We are licensed, insured, and take extra care to leave every job site clean and safe.",
 							},
 						].map((item, i) => (
 							<div

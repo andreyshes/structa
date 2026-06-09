@@ -55,8 +55,8 @@ const services = [
 	},
 	{
 		icon: Shield,
-		title: "Punch List & Maintenance",
-		desc: "We work through your full to-do list — TV mounting, shelving, assembly, and more.",
+		title: "Damage & Rot Repair",
+		desc: "Wood rot, water-damaged framing, structural soft spots — we diagnose the cause and fix it properly.",
 	},
 ];
 
@@ -435,11 +435,11 @@ export default function HomeRepairPage() {
 							},
 							{
 								q: "How do I find home repair services near me in Vancouver WA?",
-								a: "NORBILT is based in Vancouver WA and serves all of Clark County. We offer same-week estimates and clear, fixed pricing. Call (360) 216-9920 or submit a project request. We handle everything from small fixes to full punch lists — no job is too minor.",
+								a: "NORBILT is based in Vancouver WA and serves all of Clark County. We handle licensed repair work — drywall damage, door replacement, weatherization, safety fixes, and projects that may require permits. For small no-permit tasks like TV mounting or assembly, see our Handyman Services page. Call (360) 216-9920 or submit a project request for a same-week estimate.",
 							},
 							{
 								q: "What home repairs can you do in one visit?",
-								a: "Most standard repairs are completed in a single visit — including drywall patching, fixture swaps, door adjustments, caulking, weatherstripping, TV mounting, shelf installation, and minor plumbing fixes like faucet or toilet flapper replacement. We come prepared with common materials.",
+								a: "Most standard repairs are completed in a single visit — including drywall patching, fixture swaps, door adjustments, caulking, weatherstripping, and minor plumbing fixes like faucet or toilet flapper replacement. For small tasks like TV mounting and furniture assembly, see our Handyman Services page.",
 							},
 						].map((item, i) => (
 							<div
@@ -459,6 +459,18 @@ export default function HomeRepairPage() {
 			</section>
 
 			
+			{/* HANDYMAN CROSS-LINK */}
+			<section className="py-8 bg-[#FFFBEA] border-y border-[#FFB800]/30">
+				<div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+					<p className="text-sm font-bold text-[#1F2E2B]">
+						Need TV mounting, furniture assembly, or other small tasks? That&apos;s our handyman service.
+					</p>
+					<Link href="/services/handyman" className="shrink-0 text-sm font-black text-[#2D5A3D] hover:text-[#FFB800] transition-colors uppercase tracking-widest flex items-center gap-1">
+						See Handyman Services →
+					</Link>
+				</div>
+			</section>
+
 			{/* RELATED GUIDES */}
 			<section className="py-10 bg-[#F8F6F3] border-t border-gray-100">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
