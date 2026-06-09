@@ -258,8 +258,7 @@ export default function CityLandingClient({ city, citySlug }: any) {
 									Local Expertise
 								</p>
 								<h2 className="text-4xl font-black text-[#1F2E2B] uppercase tracking-tighter mb-6 leading-none">
-									What We Know About <br />
-									<span className="text-[#2D5A3D]">{cityNameShort} Homes</span>
+									{city.housingH2 ?? `What We Know About ${cityNameShort} Homes`}
 								</h2>
 								<p className="text-gray-600 font-medium leading-relaxed text-lg mb-8">
 									{city.housingNotes}
