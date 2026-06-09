@@ -146,14 +146,14 @@ const faqs = [
 
 const schema = {
 	"@context": "https://schema.org",
-		"@type": "Article",
+		"@type": "BlogPosting",
 		headline: "Flooring Installation Cost in Vancouver WA & Clark County: 2026 Guide",
 		description:
 			"Real 2026 price ranges for flooring installation in Vancouver WA and Clark County — LVP, engineered hardwood, tile, and laminate. Subfloor costs, city breakdowns, and what to watch out for.",
 		url: "https://www.norbilt.com/blog/flooring-installation-cost-vancouver-wa",
 		datePublished: "2026-05-09",
 		dateModified: "2026-05-09",
-		author: { "@type": "Organization", name: "NORBILT" },
+		author: { "@type": "Person", name: "Andrey" },
 		publisher: {
 			"@type": "Organization",
 			name: "NORBILT",
@@ -207,6 +207,12 @@ export default function FlooringCostPage() {
 					</p>
 				</div>
 			</section>
+				<div className="bg-[#1F2E2B] border-b border-white/10 py-3 px-6">
+					<div className="max-w-4xl mx-auto flex flex-wrap items-center gap-2 text-sm text-[#A7C4B5]">
+						<Link href="/about" className="font-bold text-[#FFB800] hover:text-white transition-colors">By Andrey</Link>
+						<span>· WA Licensed General Contractor · NORBILT</span>
+					</div>
+				</div>
 
 			<article className="max-w-4xl mx-auto px-6 py-16 space-y-16">
 

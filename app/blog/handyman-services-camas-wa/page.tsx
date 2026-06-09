@@ -74,11 +74,11 @@ export default function CamasHandymanPost() {
 				dangerouslySetInnerHTML={{
 					__html: JSON.stringify({
 						"@context": "https://schema.org",
-						"@type": "Article",
+						"@type": "BlogPosting",
 						"headline": "Handyman Services in Camas WA: 2026 Pricing & What to Expect",
 						"datePublished": "2026-05-26",
 						"dateModified": "2026-05-26",
-						"author": { "@type": "Organization", "name": "NORBILT" },
+						"author": { "@type": "Person", "name": "Andrey" },
 						"publisher": { "@type": "Organization", "name": "NORBILT", "url": "https://www.norbilt.com" },
 						"mainEntityOfPage": "https://www.norbilt.com/blog/handyman-services-camas-wa",
 					}),
@@ -120,7 +120,7 @@ export default function CamasHandymanPost() {
 						<span>·</span>
 						<span>Camas, WA</span>
 						<span>·</span>
-						<span>By NORBILT</span>
+						<Link href="/about" className="text-[#FFB800] hover:text-white transition-colors font-bold">By Andrey</Link><span>· WA Licensed General Contractor</span>
 					</div>
 				</div>
 			</section>

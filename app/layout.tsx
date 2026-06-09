@@ -109,7 +109,7 @@ export default function RootLayout({
 									"founder": {
 										"@type": "Person",
 										"@id": "https://www.norbilt.com/#founder",
-										"name": "Andrey Shestopal",
+										"name": "Andrey",
 										"jobTitle": "Owner & Licensed General Contractor",
 										"worksFor": { "@id": "https://www.norbilt.com/#organization" },
 									},

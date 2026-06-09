@@ -130,14 +130,14 @@ const faqs = [
 
 const schema = {
 	"@context": "https://schema.org",
-		"@type": "Article",
+		"@type": "BlogPosting",
 		headline: "Kitchen Remodel Cost in Camas WA: 2026 Pricing Guide",
 		description:
 			"Real 2026 price ranges for kitchen remodels in Camas WA — from cosmetic refreshes to full custom builds. Camas-specific pricing, component costs, and what drives the price.",
 		url: "https://www.norbilt.com/blog/kitchen-remodel-cost-camas-wa",
 		datePublished: "2026-05-26",
 		dateModified: "2026-05-26",
-		author: { "@type": "Organization", name: "NORBILT" },
+		author: { "@type": "Person", name: "Andrey" },
 		publisher: {
 			"@type": "Organization",
 			name: "NORBILT",
@@ -197,7 +197,7 @@ export default function KitchenRemodeCostCamasPage() {
 						<span>·</span>
 						<span>Camas, WA · Clark County</span>
 						<span>·</span>
-						<span>By NORBILT</span>
+						<Link href="/about" className="text-[#FFB800] hover:text-white transition-colors font-bold">By Andrey</Link><span>· WA Licensed General Contractor</span>
 					</div>
 				</div>
 			</section>

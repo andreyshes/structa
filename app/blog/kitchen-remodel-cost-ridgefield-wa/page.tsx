@@ -66,8 +66,8 @@ export default function KitchenRemodelCostRidgefieldWA() {
 		<>
 			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
 				"@context": "https://schema.org",
-				"@type": "Article",
-				headline: "Kitchen Remodel Cost in Ridgefield WA: 2026 Pricing Guide", author: { "@type": "Person", name: "Andrey NORBILT" }, publisher: { "@type": "Organization", name: "NORBILT", logo: { "@type": "ImageObject", url: "https://www.norbilt.com/icon-v3.png" } }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://www.norbilt.com/blog/kitchen-remodel-cost-ridgefield-wa"
+				"@type": "BlogPosting",
+				headline: "Kitchen Remodel Cost in Ridgefield WA: 2026 Pricing Guide", author: { "@type": "Person", name: "Andrey" }, publisher: { "@type": "Organization", name: "NORBILT", logo: { "@type": "ImageObject", url: "https://www.norbilt.com/icon-v3.png" } }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://www.norbilt.com/blog/kitchen-remodel-cost-ridgefield-wa"
 			})}} />
 			<script
 				type="application/ld+json"
@@ -98,6 +98,12 @@ export default function KitchenRemodelCostRidgefieldWA() {
 						<div className="flex items-center gap-2 text-[#A7C4B5] text-sm"><MapPin className="w-4 h-4" />Ridgefield, WA · Union Ridge · Bellwood · Hillhurst</div>
 					</div>
 				</section>
+				<div className="bg-[#1F2E2B] border-b border-white/10 py-3 px-6">
+					<div className="max-w-4xl mx-auto flex flex-wrap items-center gap-2 text-sm text-[#A7C4B5]">
+						<Link href="/about" className="font-bold text-[#FFB800] hover:text-white transition-colors">By Andrey</Link>
+						<span>· WA Licensed General Contractor · NORBILT</span>
+					</div>
+				</div>
 				<article className="py-16 lg:py-24">
 					<div className="max-w-3xl mx-auto px-6 lg:px-8 space-y-16">
 						<section className="space-y-5 text-gray-700 leading-relaxed text-lg">

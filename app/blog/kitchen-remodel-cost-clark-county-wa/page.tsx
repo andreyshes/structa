@@ -140,14 +140,14 @@ const faqs = [
 
 const schema = {
 	"@context": "https://schema.org",
-	"@type": "Article",
+	"@type": "BlogPosting",
 	headline: "Kitchen Remodel Cost in Clark County WA: 2026 Guide",
 	description:
 		"Real 2026 price ranges for kitchen remodels in Clark County WA — from cosmetic refreshes to full custom builds. Component pricing, city breakdowns, and cost drivers.",
 	url: "https://www.norbilt.com/blog/kitchen-remodel-cost-clark-county-wa",
 	datePublished: "2026-04-28",
 	dateModified: "2026-04-28",
-	author: { "@type": "Organization", name: "NORBILT" },
+	author: { "@type": "Person", name: "Andrey" },
 	publisher: {
 		"@type": "Organization",
 		name: "NORBILT",
@@ -205,6 +205,12 @@ export default function KitchenRemodeCostPage() {
 					</p>
 				</div>
 			</section>
+				<div className="bg-[#1F2E2B] border-b border-white/10 py-3 px-6">
+					<div className="max-w-4xl mx-auto flex flex-wrap items-center gap-2 text-sm text-[#A7C4B5]">
+						<Link href="/about" className="font-bold text-[#FFB800] hover:text-white transition-colors">By Andrey</Link>
+						<span>· WA Licensed General Contractor · NORBILT</span>
+					</div>
+				</div>
 
 			{/* ARTICLE BODY */}
 			<article className="max-w-4xl mx-auto px-6 py-16 space-y-16">

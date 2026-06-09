@@ -53,7 +53,7 @@ const faqs = [
 export default function BathroomRemodelCostBattleGroundWA() {
 	return (
 		<>
-			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Article", headline: "Bathroom Remodel Cost in Battle Ground WA: 2026 Guide", author: { "@type": "Person", name: "Andrey NORBILT" }, publisher: { "@type": "Organization", name: "NORBILT", logo: { "@type": "ImageObject", url: "https://www.norbilt.com/icon-v3.png" } }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://www.norbilt.com/blog/bathroom-remodel-cost-battle-ground-wa" }) }} />
+			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BlogPosting", headline: "Bathroom Remodel Cost in Battle Ground WA: 2026 Guide", author: { "@type": "Person", name: "Andrey" }, publisher: { "@type": "Organization", name: "NORBILT", logo: { "@type": "ImageObject", url: "https://www.norbilt.com/icon-v3.png" } }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://www.norbilt.com/blog/bathroom-remodel-cost-battle-ground-wa" }) }} />
 			<script
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -79,6 +79,12 @@ export default function BathroomRemodelCostBattleGroundWA() {
 						<div className="flex items-center gap-2 text-[#A7C4B5] text-sm"><MapPin className="w-4 h-4" />Battle Ground, WA · Daybreak · Cherry Grove · Lewisville</div>
 					</div>
 				</section>
+				<div className="bg-[#1F2E2B] border-b border-white/10 py-3 px-6">
+					<div className="max-w-4xl mx-auto flex flex-wrap items-center gap-2 text-sm text-[#A7C4B5]">
+						<Link href="/about" className="font-bold text-[#FFB800] hover:text-white transition-colors">By Andrey</Link>
+						<span>· WA Licensed General Contractor · NORBILT</span>
+					</div>
+				</div>
 				<article className="py-16 lg:py-24">
 					<div className="max-w-3xl mx-auto px-6 lg:px-8 space-y-16">
 						<section className="space-y-5 text-gray-700 leading-relaxed text-lg"><p>A bathroom remodel in Battle Ground WA costs between <strong>$920 for a cosmetic refresh</strong> and <strong>$35,000+ for a high-end primary suite</strong>. Battle Ground&apos;s mix of older homes and newer subdivisions means the right scope varies — and older Cherry Grove homes often need more prep work than their price tags suggest.</p><p>NORBILT is a licensed general contractor (WA Lic. <strong>NORBI**741CS</strong>) — one of the most active licensed contractors in north Clark County. $1,000,000 liability insurance. 1-year warranty on all bathroom work.</p></section>

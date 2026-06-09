@@ -51,7 +51,22 @@ export default function FlooringPage() {
 	];
 
 	return (
-		<div className="overflow-hidden bg-[#FDFCFB]">
+		<>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "BreadcrumbList",
+						"itemListElement": [
+							{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.norbilt.com" },
+							{ "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.norbilt.com/services" },
+							{ "@type": "ListItem", "position": 3, "name": "Flooring Installation", "item": "https://www.norbilt.com/services/flooring" }
+						]
+					}),
+				}}
+			/>
+			<div className="overflow-hidden bg-[#FDFCFB]">
 			{/* HERO SECTION - BILLBOARD STYLE */}
 			<section className="relative min-h-[75vh] flex items-center overflow-hidden">
 				<div className="absolute inset-0 z-0">
@@ -310,5 +325,6 @@ export default function FlooringPage() {
 				</div>
 			</section>
 		</div>
+		</>
 	);
 }

@@ -150,14 +150,14 @@ const faqs = [
 
 const schema = {
 	"@context": "https://schema.org",
-		"@type": "Article",
+		"@type": "BlogPosting",
 		headline: "Home Remodeling in Camas WA: 2026 Cost Guide & What to Expect",
 		description:
 			"Real 2026 costs for home remodeling in Camas WA. Kitchen, bathroom, flooring, finish carpentry, and whole-home project pricing from a licensed Clark County contractor.",
 		url: "https://www.norbilt.com/blog/home-remodeling-camas-wa",
 		datePublished: "2026-05-26",
 		dateModified: "2026-05-26",
-		author: { "@type": "Organization", name: "NORBILT" },
+		author: { "@type": "Person", name: "Andrey" },
 		publisher: {
 			"@type": "Organization",
 			name: "NORBILT",
@@ -213,7 +213,7 @@ export default function HomeRemodelingCamasPage() {
 						<span>·</span>
 						<span>Camas, WA · Clark County</span>
 						<span>·</span>
-						<span>By NORBILT</span>
+						<Link href="/about" className="text-[#FFB800] hover:text-white transition-colors font-bold">By Andrey</Link><span>· WA Licensed General Contractor</span>
 					</div>
 				</div>
 			</section>

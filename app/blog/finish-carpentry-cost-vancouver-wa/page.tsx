@@ -130,12 +130,12 @@ export default function FinishCarpentryBlogPost() {
 				dangerouslySetInnerHTML={{
 					__html: JSON.stringify({
 						"@context": "https://schema.org",
-						"@type": "Article",
+						"@type": "BlogPosting",
 						"headline": "Finish Carpentry Cost in Vancouver WA: 2026 Pricing Guide",
 						"description": "Real 2026 price ranges for finish carpentry in Vancouver WA and Clark County — baseboards, crown molding, wainscoting, door casing, and built-ins.",
 						"datePublished": "2026-05-26",
 						"dateModified": "2026-05-26",
-						"author": { "@type": "Organization", "name": "NORBILT" },
+						"author": { "@type": "Person", "name": "Andrey" },
 						"publisher": {
 							"@type": "Organization",
 							"name": "NORBILT",
@@ -181,7 +181,7 @@ export default function FinishCarpentryBlogPost() {
 						<span>·</span>
 						<span>Clark County, WA</span>
 						<span>·</span>
-						<span>By NORBILT</span>
+						<Link href="/about" className="text-[#FFB800] hover:text-white transition-colors font-bold">By Andrey</Link><span>· WA Licensed General Contractor</span>
 					</div>
 				</div>
 			</section>

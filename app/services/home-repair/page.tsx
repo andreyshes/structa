@@ -62,7 +62,22 @@ const services = [
 
 export default function HomeRepairPage() {
 	return (
-		<div className="overflow-hidden bg-[#FDFCFB]">
+		<>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "BreadcrumbList",
+						"itemListElement": [
+							{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.norbilt.com" },
+							{ "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.norbilt.com/services" },
+							{ "@type": "ListItem", "position": 3, "name": "Home Repair", "item": "https://www.norbilt.com/services/home-repair" }
+						]
+					}),
+				}}
+			/>
+			<div className="overflow-hidden bg-[#FDFCFB]">
 			<script
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{
@@ -86,7 +101,7 @@ export default function HomeRepairPage() {
 								"aggregateRating": {
 									"@type": "AggregateRating",
 									"ratingValue": "5.0",
-									"reviewCount": "24",
+									"reviewCount": "13",
 									"bestRating": "5"
 								}
 							},
@@ -487,5 +502,6 @@ export default function HomeRepairPage() {
 				</div>
 			</section>
 		</div>
+		</>
 	);
 }

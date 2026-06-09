@@ -28,9 +28,9 @@ export default function ContractorVsHandyman() {
 				dangerouslySetInnerHTML={{
 					__html: JSON.stringify({
 						"@context": "https://schema.org",
-						"@type": "Article",
+						"@type": "BlogPosting",
 						headline: "Licensed Contractor vs. Handyman in Washington State: What You Need to Know",
-						author: { "@type": "Person", name: "Andrey NORBILT" },
+						author: { "@type": "Person", name: "Andrey" },
 						publisher: {
 							"@type": "Organization",
 							name: "NORBILT",
@@ -91,6 +91,12 @@ export default function ContractorVsHandyman() {
 						</div>
 					</div>
 				</section>
+				<div className="bg-[#1F2E2B] border-b border-white/10 py-3 px-6">
+					<div className="max-w-4xl mx-auto flex flex-wrap items-center gap-2 text-sm text-[#A7C4B5]">
+						<Link href="/about" className="font-bold text-[#FFB800] hover:text-white transition-colors">By Andrey</Link>
+						<span>· WA Licensed General Contractor · NORBILT</span>
+					</div>
+				</div>
 
 				{/* ARTICLE BODY */}
 				<article className="py-16 lg:py-24">

@@ -21,12 +21,12 @@ export const metadata: Metadata = {
 
 const articleSchema = {
 	"@context": "https://schema.org",
-	"@type": "Article",
+	"@type": "BlogPosting",
 	headline: "Home Remodeling in Clark County WA: Complete 2026 Cost Guide",
 	description: "Complete 2026 cost guide for home remodeling in Clark County WA covering kitchen, bathroom, flooring, carpentry, and drywall projects.",
 	datePublished: "2026-06-08",
 	dateModified: "2026-06-08",
-	author: { "@type": "Organization", name: "NORBILT", url: "https://www.norbilt.com" },
+	author: { "@type": "Person", name: "Andrey" },
 	publisher: {
 		"@type": "Organization",
 		name: "NORBILT",
@@ -122,6 +122,12 @@ export default function HomeRemodelingClarkCounty() {
 						</div>
 					</div>
 				</section>
+				<div className="bg-[#1F2E2B] border-b border-white/10 py-3 px-6">
+					<div className="max-w-4xl mx-auto flex flex-wrap items-center gap-2 text-sm text-[#A7C4B5]">
+						<Link href="/about" className="font-bold text-[#FFB800] hover:text-white transition-colors">By Andrey</Link>
+						<span>· WA Licensed General Contractor · NORBILT</span>
+					</div>
+				</div>
 
 				{/* QUICK ANSWER */}
 				<section className="py-12 bg-white">

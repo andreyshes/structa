@@ -54,7 +54,22 @@ export default function LightingFixturesPage() {
 	];
 
 	return (
-		<div className="overflow-hidden bg-[#FDFCFB]">
+		<>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "BreadcrumbList",
+						"itemListElement": [
+							{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.norbilt.com" },
+							{ "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.norbilt.com/services" },
+							{ "@type": "ListItem", "position": 3, "name": "Lighting Installation", "item": "https://www.norbilt.com/services/lighting" }
+						]
+					}),
+				}}
+			/>
+			<div className="overflow-hidden bg-[#FDFCFB]">
 			{/* HERO SECTION - AMBIANCE FOCUS */}
 			<section className="relative min-h-[80vh] flex items-center overflow-hidden">
 				<div className="absolute inset-0 z-0">
@@ -307,5 +322,6 @@ export default function LightingFixturesPage() {
 				</div>
 			</section>
 		</div>
+		</>
 	);
 }

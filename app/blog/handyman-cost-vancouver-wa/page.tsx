@@ -79,12 +79,12 @@ export default function HandymanCostPage() {
 				dangerouslySetInnerHTML={{
 					__html: JSON.stringify({
 						"@context": "https://schema.org",
-						"@type": "Article",
+						"@type": "BlogPosting",
 						"headline": "How Much Does a Handyman Cost in Vancouver WA? (2026 Rates)",
 						"description": "Real 2026 handyman costs in Vancouver WA & Clark County. Hourly rates, per-job pricing for 20+ common tasks, and what separates a licensed contractor from an unlicensed handyman.",
 						"datePublished": "2026-05-17",
 						"dateModified": "2026-05-17",
-						"author": { "@type": "Organization", "name": "NORBILT" },
+						"author": { "@type": "Person", "name": "Andrey" },
 						"publisher": {
 							"@type": "Organization",
 							"name": "NORBILT",
@@ -130,7 +130,7 @@ export default function HandymanCostPage() {
 						<span>·</span>
 						<span>Clark County, WA</span>
 						<span>·</span>
-						<span>By NORBILT</span>
+						<Link href="/about" className="text-[#FFB800] hover:text-white transition-colors font-bold">By Andrey</Link><span>· WA Licensed General Contractor</span>
 					</div>
 				</div>
 			</section>

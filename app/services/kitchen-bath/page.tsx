@@ -144,7 +144,22 @@ export const metadata = {
 
 export default function KitchenBathPage() {
 	return (
-		<div className="overflow-hidden bg-[#FDFCFB]">
+		<>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "BreadcrumbList",
+						"itemListElement": [
+							{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.norbilt.com" },
+							{ "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.norbilt.com/services" },
+							{ "@type": "ListItem", "position": 3, "name": "Kitchen & Bath Remodeling", "item": "https://www.norbilt.com/services/kitchen-bath" }
+						]
+					}),
+				}}
+			/>
+			<div className="overflow-hidden bg-[#FDFCFB]">
 			<script
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -507,5 +522,6 @@ export default function KitchenBathPage() {
 				</div>
 			</section>
 		</div>
+		</>
 	);
 }

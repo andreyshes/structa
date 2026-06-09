@@ -72,14 +72,14 @@ const faqs = [
 
 const schema = {
 	"@context": "https://schema.org",
-		"@type": "Article",
+		"@type": "BlogPosting",
 		headline: "Handyman Services in Battle Ground WA: 2026 Costs & What to Expect",
 		description:
 			"Real 2026 pricing for handyman services in Battle Ground WA. Hourly rates, job-by-job cost table, and what to know before hiring in north Clark County.",
 		url: "https://www.norbilt.com/blog/battle-ground-handyman-cost",
 		datePublished: "2026-05-26",
 		dateModified: "2026-05-26",
-		author: { "@type": "Organization", name: "NORBILT" },
+		author: { "@type": "Person", name: "Andrey" },
 		publisher: {
 			"@type": "Organization",
 			name: "NORBILT",
@@ -135,7 +135,7 @@ export default function BattleGroundHandymanPage() {
 						<span>·</span>
 						<span>Battle Ground, WA · North Clark County</span>
 						<span>·</span>
-						<span>By NORBILT</span>
+						<Link href="/about" className="text-[#FFB800] hover:text-white transition-colors font-bold">By Andrey</Link><span>· WA Licensed General Contractor</span>
 					</div>
 				</div>
 			</section>
