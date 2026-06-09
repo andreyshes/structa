@@ -77,14 +77,16 @@ export default function CityLandingClient({ city, citySlug }: any) {
 								],
 							},
 							{
-								"@type": "LocalBusiness",
-								"@id": "https://www.norbilt.com/#business",
+								"@type": "GeneralContractor",
+								"@id": `https://www.norbilt.com/locations/${citySlug}#contractor`,
 								name: "NORBILT",
 								telephone: "+13602169920",
-								areaServed: city.neighborhoods.map((n: string) => ({
-									"@type": "Place",
-									name: n,
-								})),
+								url: `https://www.norbilt.com/locations/${citySlug}`,
+								areaServed: {
+									"@type": "City",
+									name: city.name,
+								},
+								parentOrganization: { "@id": "https://www.norbilt.com/#business" },
 							},
 							{
 								"@type": "FAQPage",
