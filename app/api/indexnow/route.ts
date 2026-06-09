@@ -32,6 +32,7 @@ const ALL_URLS = [
 	`${BASE_URL}/locations/mill-plain`,
 	`${BASE_URL}/locations/lake-shore`,
 	`${BASE_URL}/pricing`,
+	`${BASE_URL}/estimate`,
 	`${BASE_URL}/calculator`,
 	`${BASE_URL}/faq`,
 	`${BASE_URL}/reviews`,
