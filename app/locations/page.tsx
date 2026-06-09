@@ -150,6 +150,19 @@ export default function LocationsIndexPage() {
 
 	return (
 		<div className="overflow-hidden bg-[#FDFCFB]">
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "BreadcrumbList",
+						itemListElement: [
+							{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+							{ "@type": "ListItem", position: 2, name: "Service Areas", item: "https://www.norbilt.com/locations" },
+						],
+					}),
+				}}
+			/>
 			{/* HERO SECTION */}
 			<section className="relative pt-32 pb-24 lg:pt-48 lg:pb-32 bg-[#14201D] overflow-hidden">
 				<div className="absolute top-0 right-0 w-1/3 h-full bg-[#1F2E2B] -skew-x-12 translate-x-1/4 z-0 opacity-50" />
@@ -211,7 +224,7 @@ export default function LocationsIndexPage() {
 								</div>
 
 								<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-									{region.cities.map((location, index) => (
+									{region.cities.map((location) => (
 										<div key={location.name}>
 											<Link
 												href={location.href}
