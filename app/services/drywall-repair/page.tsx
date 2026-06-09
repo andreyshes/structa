@@ -156,7 +156,23 @@ export default function DrywallRepairPage() {
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
 			/>
-			<div className="overflow-hidden bg-[#FDFCFB]">
+
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "Service",
+						"name": "Drywall Repair in Vancouver WA",
+						"provider": { "@id": "https://www.norbilt.com/#business" },
+						"areaServed": "Clark County, WA",
+						"description": "Hole patching, texture matching, stress crack repair, water damage restoration, and popcorn ceiling removal throughout Clark County WA. We match orange peel, knockdown, and smooth finishes seamlessly.",
+						"serviceType": "Drywall Repair",
+						"url": "https://www.norbilt.com/services/drywall-repair"
+					}),
+					}}
+				/>
+				<div className="overflow-hidden bg-[#FDFCFB]">
 
 			{/* HERO */}
 			<section className="relative min-h-[75vh] flex items-center overflow-hidden">

@@ -152,7 +152,23 @@ export default function KitchenBathPage() {
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
 			/>
-			<div className="overflow-hidden bg-[#FDFCFB]">
+
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "Service",
+						"name": "Kitchen & Bathroom Remodeling in Vancouver WA",
+						"provider": { "@id": "https://www.norbilt.com/#business" },
+						"areaServed": "Clark County, WA",
+						"description": "Full gut remodels, tub-to-shower conversions, vanity and tile replacements, backsplash installs, and cosmetic refreshes by a licensed WA contractor throughout Clark County. 1-year workmanship warranty.",
+						"serviceType": "Kitchen & Bathroom Remodeling",
+						"url": "https://www.norbilt.com/services/kitchen-bath"
+					}),
+					}}
+				/>
+				<div className="overflow-hidden bg-[#FDFCFB]">
 
 			{/* HERO */}
 			<section className="relative min-h-[80vh] flex items-center overflow-hidden">

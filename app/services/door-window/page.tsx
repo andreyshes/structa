@@ -67,7 +67,23 @@ export default function DoorWindowPage() {
 					}),
 				}}
 			/>
-			<div className="overflow-hidden bg-[#FDFCFB]">
+
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "Service",
+						"name": "Door & Window Repair in Vancouver WA",
+						"provider": { "@id": "https://www.norbilt.com/#business" },
+						"areaServed": "Clark County, WA",
+						"description": "Door realignment, weatherstripping replacement, hardware repair, and window screen fixes throughout Clark County WA. Most repairs completed in a single visit.",
+						"serviceType": "Door & Window Repair",
+						"url": "https://www.norbilt.com/services/door-window"
+					}),
+					}}
+				/>
+				<div className="overflow-hidden bg-[#FDFCFB]">
 			{/* HERO SECTION - BILLBOARD STYLE */}
 			<section className="relative min-h-[75vh] flex items-center overflow-hidden">
 				<div className="absolute inset-0 z-0">

@@ -68,7 +68,23 @@ export default function FinishCarpentryPage() {
 					}),
 				}}
 			/>
-			<div className="overflow-hidden bg-[#FDFCFB]">
+
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "Service",
+						"name": "Finish Carpentry in Vancouver WA",
+						"provider": { "@id": "https://www.norbilt.com/#business" },
+						"areaServed": "Clark County, WA",
+						"description": "Crown molding, baseboards, door and window casing, wainscoting, and built-in trim work installed by a licensed contractor in Clark County WA. Precision cuts, tight joints, and a clean site on every job.",
+						"serviceType": "Finish Carpentry",
+						"url": "https://www.norbilt.com/services/finish-carpentry"
+					}),
+					}}
+				/>
+				<div className="overflow-hidden bg-[#FDFCFB]">
 			{/* HERO SECTION - ARCHITECTURAL STYLE */}
 			<section className="relative min-h-[80vh] flex items-center overflow-hidden">
 				<div className="absolute inset-0 z-0">

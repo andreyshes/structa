@@ -66,7 +66,23 @@ export default function FlooringPage() {
 					}),
 				}}
 			/>
-			<div className="overflow-hidden bg-[#FDFCFB]">
+
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "Service",
+						"name": "Flooring Installation in Vancouver WA",
+						"provider": { "@id": "https://www.norbilt.com/#business" },
+						"areaServed": "Clark County, WA",
+						"description": "LVP, hardwood, and tile flooring installation, transitions, baseboard renail, and minor repairs throughout Clark County WA. Single-room updates to full main-floor installs.",
+						"serviceType": "Flooring Installation",
+						"url": "https://www.norbilt.com/services/flooring"
+					}),
+					}}
+				/>
+				<div className="overflow-hidden bg-[#FDFCFB]">
 			{/* HERO SECTION - BILLBOARD STYLE */}
 			<section className="relative min-h-[75vh] flex items-center overflow-hidden">
 				<div className="absolute inset-0 z-0">

@@ -69,7 +69,23 @@ export default function LightingFixturesPage() {
 					}),
 				}}
 			/>
-			<div className="overflow-hidden bg-[#FDFCFB]">
+
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "Service",
+						"name": "Lighting & Fixture Installation in Vancouver WA",
+						"provider": { "@id": "https://www.norbilt.com/#business" },
+						"areaServed": "Clark County, WA",
+						"description": "Light fixture replacement, ceiling fan installation, recessed lighting, and under-cabinet lighting installed safely by a licensed contractor throughout Clark County WA.",
+						"serviceType": "Lighting Installation",
+						"url": "https://www.norbilt.com/services/lighting"
+					}),
+					}}
+				/>
+				<div className="overflow-hidden bg-[#FDFCFB]">
 			{/* HERO SECTION - AMBIANCE FOCUS */}
 			<section className="relative min-h-[80vh] flex items-center overflow-hidden">
 				<div className="absolute inset-0 z-0">
