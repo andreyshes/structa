@@ -87,7 +87,6 @@ export default function Navigation() {
 									alt="NORBILT Home Repairs Logo"
 									sizes="160px"
 									fill
-									priority
 									className={`object-contain transition-all duration-500 ${
 										isScrolled
 											? "brightness-100"
