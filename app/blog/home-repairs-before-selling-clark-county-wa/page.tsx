@@ -32,7 +32,6 @@ export default function RepairsBeforeSelling() {
 						headline: "Home Repairs Before Selling in Clark County, WA: What's Worth It",
 						author: { "@id": "https://www.norbilt.com/#founder" },
 						publisher: { "@id": "https://www.norbilt.com/#organization" },
-						},
 						datePublished: "2026-04-06",
 						dateModified: "2026-04-06",
 						description:

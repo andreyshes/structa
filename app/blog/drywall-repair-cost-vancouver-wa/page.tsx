@@ -32,7 +32,6 @@ export default function DrywallRepairCost() {
 						headline: "How Much Does Drywall Repair Cost in Vancouver, WA?",
 						author: { "@id": "https://www.norbilt.com/#founder" },
 						publisher: { "@id": "https://www.norbilt.com/#organization" },
-						},
 						datePublished: "2026-04-06",
 						dateModified: "2026-04-06",
 						description:

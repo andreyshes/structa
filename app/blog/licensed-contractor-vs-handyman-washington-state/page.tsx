@@ -32,7 +32,6 @@ export default function ContractorVsHandyman() {
 						headline: "Licensed Contractor vs. Handyman in Washington State: What You Need to Know",
 						author: { "@id": "https://www.norbilt.com/#founder" },
 						publisher: { "@id": "https://www.norbilt.com/#organization" },
-						},
 						datePublished: "2026-04-06",
 						dateModified: "2026-04-06",
 						description:

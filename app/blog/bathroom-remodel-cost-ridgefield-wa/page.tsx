@@ -32,7 +32,6 @@ export default function BathroomRemodel() {
 						headline: "How Much Does a Bathroom Remodel Cost in Ridgefield, WA?",
 						author: { "@id": "https://www.norbilt.com/#founder" },
 						publisher: { "@id": "https://www.norbilt.com/#organization" },
-						},
 						datePublished: "2025-03-01",
 						dateModified: "2026-03-04",
 						description:

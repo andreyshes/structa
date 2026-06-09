@@ -151,7 +151,6 @@ export default function KitchenRemodelCostVancouverWA() {
 						headline: "Kitchen Remodel Cost in Vancouver WA: 2026 Pricing Guide",
 						author: { "@id": "https://www.norbilt.com/#founder" },
 						publisher: { "@id": "https://www.norbilt.com/#organization" },
-						},
 						datePublished: "2026-06-08",
 						dateModified: "2026-06-08",
 						description:

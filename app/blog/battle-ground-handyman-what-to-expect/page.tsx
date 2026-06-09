@@ -32,7 +32,6 @@ export default function BattleGroundHandyman() {
 						headline: "Hiring a Handyman in Battle Ground, WA: What to Expect & What It Costs",
 						author: { "@id": "https://www.norbilt.com/#founder" },
 						publisher: { "@id": "https://www.norbilt.com/#organization" },
-						},
 						datePublished: "2025-03-01",
 						dateModified: "2026-03-04",
 						description:

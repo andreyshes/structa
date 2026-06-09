@@ -28,7 +28,6 @@ const articleSchema = {
 	dateModified: "2026-06-08",
 	author: { "@id": "https://www.norbilt.com/#founder" },
 	publisher: { "@id": "https://www.norbilt.com/#organization" },
-	},
 	mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.norbilt.com/blog/home-remodeling-clark-county-wa" },
 };
 

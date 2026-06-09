@@ -137,7 +137,6 @@ export default function BathroomRemodeCostClarkCounty() {
 						headline: "How Much Does a Bathroom Remodel Cost in Clark County WA? (2026 Guide)",
 						author: { "@id": "https://www.norbilt.com/#founder" },
 						publisher: { "@id": "https://www.norbilt.com/#organization" },
-						},
 						datePublished: "2026-04-15",
 						dateModified: "2026-04-15",
 						description:

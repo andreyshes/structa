@@ -32,7 +32,6 @@ export default function BathroomRemodel() {
 						headline: "7 Signs You Need a Bathroom Remodel in Vancouver, WA",
 						author: { "@id": "https://www.norbilt.com/#founder" },
 						publisher: { "@id": "https://www.norbilt.com/#organization" },
-						},
 						datePublished: "2026-04-06",
 						dateModified: "2026-04-06",
 						description:

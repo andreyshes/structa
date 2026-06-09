@@ -128,7 +128,6 @@ export default function TubToShowerConversion() {
 						headline: "Bathtub to Shower Conversion Cost in Clark County WA (2026 Guide)",
 						author: { "@id": "https://www.norbilt.com/#founder" },
 						publisher: { "@id": "https://www.norbilt.com/#organization" },
-						},
 						datePublished: "2026-04-20",
 						dateModified: "2026-04-20",
 						description:
