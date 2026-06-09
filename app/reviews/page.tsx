@@ -152,35 +152,6 @@ const serviceAreas = [
 export default function ReviewsPage() {
 	return (
 		<>
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify({
-						"@context": "https://schema.org",
-						"@type": "LocalBusiness",
-						"@id": "https://www.norbilt.com",
-						name: "NORBILT Homes",
-						aggregateRating: {
-							"@type": "AggregateRating",
-							ratingValue: "5.0",
-							bestRating: "5",
-							worstRating: "1",
-							ratingCount: reviews.length,
-						},
-						review: reviews.map((r) => ({
-							"@type": "Review",
-							author: { "@type": "Person", name: r.name },
-							reviewRating: {
-								"@type": "Rating",
-								ratingValue: r.rating,
-								bestRating: "5",
-							},
-							reviewBody: r.quote,
-							
-						})),
-					}),
-				}}
-			/>
 
 			<div className="overflow-hidden bg-[#FDFCFB]">
 				{/* HERO */}
