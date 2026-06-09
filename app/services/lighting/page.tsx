@@ -124,6 +124,13 @@ export default function LightingFixturesPage() {
 					</Link>
 				</div>
 			</div>
+			{/* AUTHOR & DATE BAR */}
+			<div className="bg-[#1F2E2B] border-b border-white/10 py-3 px-6">
+				<div className="max-w-7xl mx-auto flex flex-wrap items-center gap-2 text-sm text-[#A7C4B5]">
+					<a href="/about" className="font-bold text-[#FFB800] hover:text-white transition-colors">By Andrey</a>
+					<span>· WA Licensed General Contractor · NORBILT · Updated June 2026</span>
+				</div>
+			</div>
 
 			{/* TRUST STRIP */}
 			<section className="py-8 bg-[#1F2E2B] border-y-4 border-[#FFB800]/20 text-white">
@@ -149,8 +156,8 @@ export default function LightingFixturesPage() {
 					<div className="grid lg:grid-cols-2 gap-20 items-center">
 						<div className="space-y-8">
 							<h2 className="text-4xl lg:text-5xl font-black text-[#1F2E2B] uppercase tracking-tighter leading-none">
-								Modern Lighting <br />
-								<span className="text-[#2D5A3D]">Done The Right Way</span>
+								What Does Lighting Installation Cost <br />
+								<span className="text-[#2D5A3D]">in Vancouver, WA?</span>
 							</h2>
 
 							<p className="text-gray-600 text-lg font-medium leading-relaxed">
@@ -295,8 +302,8 @@ export default function LightingFixturesPage() {
 					<div className="bg-[#1F2E2B] rounded-[3rem] p-12 lg:p-24 text-center relative overflow-hidden border-b-[12px] border-[#FFB800] shadow-2xl">
 						<div className="relative z-10 max-w-3xl mx-auto space-y-8">
 							<h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none">
-								Ready for a <br />{" "}
-								<span className="text-[#FFB800]">Brighter Home?</span>
+								Schedule Lighting Installation <br />{" "}
+								<span className="text-[#FFB800]">in Clark County, WA</span>
 							</h2>
 							<p className="text-[#A7C4B5] text-xl font-medium max-w-xl mx-auto">
 								Get your new fixtures installed safely and professionally.

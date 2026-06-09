@@ -109,6 +109,14 @@ const schema = {
 	"@context": "https://schema.org",
 	"@graph": [
 		{
+			"@type": "BreadcrumbList",
+			itemListElement: [
+				{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+				{ "@type": "ListItem", position: 2, name: "Services", item: "https://www.norbilt.com/services" },
+				{ "@type": "ListItem", position: 3, name: "Drywall Repair", item: "https://www.norbilt.com/services/drywall-repair" },
+			],
+		},
+		{
 			"@type": "LocalBusiness",
 			name: "NORBILT",
 			url: "https://www.norbilt.com/services/drywall-repair",
@@ -146,23 +154,9 @@ export default function DrywallRepairPage() {
 		<>
 			<script
 				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify({
-						"@context": "https://schema.org",
-						"@type": "BreadcrumbList",
-						"itemListElement": [
-							{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.norbilt.com" },
-							{ "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.norbilt.com/services" },
-							{ "@type": "ListItem", "position": 3, "name": "Drywall Repair", "item": "https://www.norbilt.com/services/drywall-repair" }
-						]
-					}),
-				}}
-			/>
-			<div className="overflow-hidden bg-[#FDFCFB]">
-			<script
-				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
 			/>
+			<div className="overflow-hidden bg-[#FDFCFB]">
 
 			{/* HERO */}
 			<section className="relative min-h-[75vh] flex items-center overflow-hidden">
@@ -221,6 +215,13 @@ export default function DrywallRepairPage() {
 					</Link>
 				</div>
 			</div>
+			{/* AUTHOR & DATE BAR */}
+			<div className="bg-[#1F2E2B] border-b border-white/10 py-3 px-6">
+				<div className="max-w-7xl mx-auto flex flex-wrap items-center gap-2 text-sm text-[#A7C4B5]">
+					<a href="/about" className="font-bold text-[#FFB800] hover:text-white transition-colors">By Andrey</a>
+					<span>· WA Licensed General Contractor · NORBILT · Updated June 2026</span>
+				</div>
+			</div>
 
 			{/* TRUST STRIP */}
 			<section className="py-8 bg-[#1F2E2B] text-white">
@@ -266,8 +267,8 @@ export default function DrywallRepairPage() {
 					<div className="grid lg:grid-cols-2 gap-20 items-center">
 						<div className="space-y-8">
 							<h2 className="text-4xl lg:text-5xl font-black text-[#1F2E2B] uppercase tracking-tighter leading-none">
-								Wall Restoration <br />
-								<span className="text-[#2D5A3D]">Done The Right Way</span>
+								What Does Drywall Repair Cost <br />
+								<span className="text-[#2D5A3D]">in Vancouver, WA?</span>
 							</h2>
 
 							<p className="text-gray-600 text-lg font-medium leading-relaxed">
@@ -507,8 +508,8 @@ export default function DrywallRepairPage() {
 					<div className="bg-[#1F2E2B] rounded-[3rem] p-12 lg:p-24 text-center relative overflow-hidden border-b-[12px] border-[#FFB800] shadow-2xl">
 						<div className="relative z-10 max-w-3xl mx-auto space-y-8">
 							<h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none">
-								Flawless Walls <br />
-								<span className="text-[#FFB800]">Start Here</span>
+								Get Drywall Repair <br />
+								<span className="text-[#FFB800]">in Clark County, WA</span>
 							</h2>
 							<p className="text-[#A7C4B5] text-xl font-medium max-w-xl mx-auto">
 								Stop looking at that hole in the wall. Free estimate, honest

@@ -148,6 +148,14 @@ export default function FAQPage() {
 					</div>
 				</section>
 
+				{/* AUTHOR & DATE BAR */}
+				<div className="bg-[#1F2E2B] border-b border-white/10 py-3 px-6">
+					<div className="max-w-7xl mx-auto flex flex-wrap items-center gap-2 text-sm text-[#A7C4B5]">
+						<a href="/about" className="font-bold text-[#FFB800] hover:text-white transition-colors">By Andrey</a>
+						<span>· WA Licensed General Contractor · NORBILT · Updated June 2026</span>
+					</div>
+				</div>
+
 				{/* NARRATIVE FACTS BAR */}
 				<section className="py-8 bg-[#FFB800]">
 					<div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-wrap justify-center gap-8 md:gap-16 text-center">

@@ -110,6 +110,14 @@ const schema = {
 	"@context": "https://schema.org",
 	"@graph": [
 		{
+			"@type": "BreadcrumbList",
+			itemListElement: [
+				{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+				{ "@type": "ListItem", position: 2, name: "Services", item: "https://www.norbilt.com/services" },
+				{ "@type": "ListItem", position: 3, name: "Kitchen & Bath Remodeling", item: "https://www.norbilt.com/services/kitchen-bath" },
+			],
+		},
+		{
 			"@type": "LocalBusiness",
 			name: "NORBILT",
 			url: "https://www.norbilt.com/services/kitchen-bath",
@@ -147,23 +155,9 @@ export default function KitchenBathPage() {
 		<>
 			<script
 				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify({
-						"@context": "https://schema.org",
-						"@type": "BreadcrumbList",
-						"itemListElement": [
-							{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.norbilt.com" },
-							{ "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.norbilt.com/services" },
-							{ "@type": "ListItem", "position": 3, "name": "Kitchen & Bath Remodeling", "item": "https://www.norbilt.com/services/kitchen-bath" }
-						]
-					}),
-				}}
-			/>
-			<div className="overflow-hidden bg-[#FDFCFB]">
-			<script
-				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
 			/>
+			<div className="overflow-hidden bg-[#FDFCFB]">
 
 			{/* HERO */}
 			<section className="relative min-h-[80vh] flex items-center overflow-hidden">
@@ -220,6 +214,13 @@ export default function KitchenBathPage() {
 					</Link>
 				</div>
 			</div>
+			{/* AUTHOR & DATE BAR */}
+			<div className="bg-[#1F2E2B] border-b border-white/10 py-3 px-6">
+				<div className="max-w-7xl mx-auto flex flex-wrap items-center gap-2 text-sm text-[#A7C4B5]">
+					<a href="/about" className="font-bold text-[#FFB800] hover:text-white transition-colors">By Andrey</a>
+					<span>· WA Licensed General Contractor · NORBILT · Updated June 2026</span>
+				</div>
+			</div>
 
 			{/* TRUST STRIP */}
 			<section className="py-8 bg-[#1F2E2B] text-white">
@@ -266,8 +267,8 @@ export default function KitchenBathPage() {
 					<div className="grid lg:grid-cols-2 gap-20 items-center">
 						<div className="space-y-8">
 							<h2 className="text-4xl lg:text-5xl font-black text-[#1F2E2B] uppercase tracking-tighter leading-none">
-								Remodeling That <br />
-								<span className="text-[#2D5A3D]">Drives Home Value</span>
+								Kitchen & Bath Remodel Cost <br />
+								<span className="text-[#2D5A3D]">in Vancouver, WA</span>
 							</h2>
 
 							<p className="text-gray-600 text-lg font-medium leading-relaxed">

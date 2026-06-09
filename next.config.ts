@@ -16,6 +16,13 @@ const nextConfig = {
 	},
 	async redirects() {
 		return [
+			// Non-www → www canonical redirect
+			{
+				source: "/:path*",
+				has: [{ type: "host", value: "norbilt.com" }],
+				destination: "https://www.norbilt.com/:path*",
+				permanent: true,
+			},
 			// /locations/[city]/[service] → /services/[service] (consolidate thin pages)
 			// Specific overrides for slugs that map to /services/kitchen-bath
 			{
