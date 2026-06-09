@@ -281,6 +281,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			changeFrequency: "monthly",
 			priority: 0.7,
 		},
+		{
+			url: `${baseUrl}/blog/home-improvement-permits-clark-county-wa`,
+			lastModified: new Date("2026-06-09"),
+			changeFrequency: "monthly",
+			priority: 0.8,
+		},
 	);
 
 	return routes;

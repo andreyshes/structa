@@ -62,6 +62,7 @@ const ALL_URLS = [
 	`${BASE_URL}/blog/bathroom-remodel-cost-ridgefield-wa`,
 	`${BASE_URL}/blog/kitchen-remodel-cost-ridgefield-wa`,
 	`${BASE_URL}/blog/home-repairs-before-selling-clark-county-wa`,
+	`${BASE_URL}/blog/home-improvement-permits-clark-county-wa`,
 	`${BASE_URL}/blog/signs-you-need-bathroom-remodel-vancouver-wa`,
 	`${BASE_URL}/blog/licensed-contractor-vs-handyman-washington-state`,
 	`${BASE_URL}/blog/clark-county-home-repair-checklist`,

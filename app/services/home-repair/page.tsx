@@ -345,6 +345,54 @@ export default function HomeRepairPage() {
 				</div>
 			</section>
 
+			{/* TIMELINE TABLE */}
+			<section className="py-24 bg-white">
+				<div className="max-w-5xl mx-auto px-6 lg:px-8">
+					<div className="text-center mb-12">
+						<span className="text-[#FFB800] font-black uppercase tracking-[0.3em] text-sm">Project Timelines</span>
+						<h2 className="mt-3 text-3xl md:text-4xl font-black text-[#1F2E2B] uppercase tracking-tighter">
+							How Long Do Home Repairs Take?
+						</h2>
+						<p className="mt-4 text-gray-600 max-w-xl mx-auto font-medium">
+							Most Clark County home repairs are same-day or next-day. Here's what to expect for common scopes.
+						</p>
+					</div>
+					<div className="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm">
+						<table className="w-full text-sm">
+							<thead className="bg-[#1F2E2B] text-white">
+								<tr>
+									<th className="text-left px-6 py-4 font-black uppercase tracking-wider">Repair Type</th>
+									<th className="text-left px-6 py-4 font-black uppercase tracking-wider">Typical Timeline</th>
+									<th className="text-left px-6 py-4 font-black uppercase tracking-wider hidden md:table-cell">Notes</th>
+								</tr>
+							</thead>
+							<tbody>
+								{[
+									{ type: "Fixture or hardware swap", time: "1–3 hours", note: "Single visit, no materials lead time" },
+									{ type: "Door adjustment or realignment", time: "1–2 hours", note: "Per door; most resolved same visit" },
+									{ type: "Window re-caulk or weatherstripping", time: "2–4 hours", note: "Per door or window; full perimeter same day" },
+									{ type: "Small drywall patch (under 6\")", time: "1 day", note: "Compound dry time; paint-ready next morning" },
+									{ type: "Medium drywall patch (6\"–12\")", time: "1–2 days", note: "Multiple mud coats; 24–48 hr dry time before paint" },
+									{ type: "Water damage drywall repair", time: "2–5 days", note: "Depends on drying time and moisture source confirmation" },
+									{ type: "Grab bar or safety install", time: "1–2 hours", note: "Per bar; blocking required if walls are open" },
+									{ type: "Half-day punch list (multiple tasks)", time: "4–6 hours", note: "Most common visit type — clear multiple items in one trip" },
+									{ type: "Full-day punch list", time: "6–8 hours", note: "Larger lists or jobs requiring multiple trades" },
+								].map((row, i) => (
+									<tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#F8F6F3]"}>
+										<td className="px-6 py-4 font-black text-[#1F2E2B]">{row.type}</td>
+										<td className="px-6 py-4 font-black text-[#2D5A3D] whitespace-nowrap">{row.time}</td>
+										<td className="px-6 py-4 text-gray-500 text-xs hidden md:table-cell">{row.note}</td>
+									</tr>
+								))}
+							</tbody>
+						</table>
+					</div>
+					<p className="text-sm text-gray-400 italic mt-4">
+						Same-week scheduling available for most Clark County addresses. Emergency repairs given priority scheduling.
+					</p>
+				</div>
+			</section>
+
 			{/* PRICING + NEAR ME SECTION */}
 			<section className="py-24 bg-[#1F2E2B] text-white">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -406,6 +454,30 @@ export default function HomeRepairPage() {
 								{city.name}
 							</Link>
 						))}
+					</div>
+				</div>
+			</section>
+
+			{/* PROPERTY MANAGER SECTION */}
+			<section className="py-16 bg-[#FFFBEA] border-y border-[#FFB800]/30">
+				<div className="max-w-5xl mx-auto px-6 lg:px-8">
+					<div className="flex flex-col md:flex-row gap-8 items-start">
+						<div className="shrink-0">
+							<span className="inline-block px-4 py-1 bg-[#FFB800] text-black text-xs font-black uppercase tracking-widest rounded">
+								Property Managers
+							</span>
+						</div>
+						<div className="space-y-3">
+							<h2 className="text-xl font-black text-[#1F2E2B] uppercase tracking-tight">
+								Recurring Home Repair Services for Clark County Landlords &amp; Property Managers
+							</h2>
+							<p className="text-gray-700 font-medium leading-relaxed">
+								Own rental properties or manage a portfolio in Clark County? NORBILT works with landlords and property managers on an ongoing basis — unit turnover repairs, tenant damage fixes, between-lease punch lists, and preventive maintenance. We're a licensed general contractor, which means we can legally handle everything from drywall and fixtures to permitted plumbing repairs. One reliable contact for all your properties, consistent quality, and no surprise invoices.
+							</p>
+							<p className="text-gray-600 font-medium leading-relaxed">
+								Call <a href="tel:+13602169920" className="text-[#2D5A3D] font-black hover:underline">(360) 216-9920</a> to discuss a recurring service arrangement for your properties.
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>

@@ -482,6 +482,30 @@ export default function HandymanPage() {
 				</div>
 			</section>
 
+			{/* PROPERTY MANAGER SECTION */}
+			<section className="py-16 bg-[#FFFBEA] border-y border-[#FFB800]/30">
+				<div className="max-w-5xl mx-auto px-6 lg:px-8">
+					<div className="flex flex-col md:flex-row gap-8 items-start">
+						<div className="shrink-0">
+							<span className="inline-block px-4 py-1 bg-[#FFB800] text-black text-xs font-black uppercase tracking-widest rounded">
+								Property Managers
+							</span>
+						</div>
+						<div className="space-y-3">
+							<h2 className="text-xl font-black text-[#1F2E2B] uppercase tracking-tight">
+								Recurring Handyman Services for Clark County Landlords &amp; Property Managers
+							</h2>
+							<p className="text-gray-700 font-medium leading-relaxed">
+								Managing rental units, vacation properties, or a multi-property portfolio in Clark County? NORBILT works with landlords and property managers on a recurring basis — unit turnover repairs, between-tenant punch lists, maintenance calls, and scheduled seasonal tasks. One licensed contact, consistent quality across all your properties, no job-minimum hassle. We prioritize repeat clients and can hold scheduled maintenance slots for properties that need regular attention.
+							</p>
+							<p className="text-gray-600 font-medium leading-relaxed">
+								Call <a href="tel:+13602169920" className="text-[#2D5A3D] font-black hover:underline">(360) 216-9920</a> to discuss a recurring service arrangement for your properties.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			{/* FAQ SECTION */}
 			<section className="py-24 bg-white">
 				<div className="max-w-4xl mx-auto px-6 lg:px-8">

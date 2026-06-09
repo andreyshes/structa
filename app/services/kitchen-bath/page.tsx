@@ -375,6 +375,54 @@ export default function KitchenBathPage() {
 				</div>
 			</section>
 
+			{/* TIMELINE TABLE */}
+			<section className="py-24 bg-white">
+				<div className="max-w-5xl mx-auto px-6 lg:px-8">
+					<div className="text-center mb-12">
+						<span className="text-[#FFB800] font-black uppercase tracking-[0.3em] text-sm">Project Timelines</span>
+						<h2 className="mt-3 text-3xl md:text-4xl font-black text-[#1F2E2B] uppercase tracking-tighter">
+							How Long Does a Kitchen or Bathroom Remodel Take?
+						</h2>
+						<p className="mt-4 text-gray-600 max-w-xl mx-auto font-medium">
+							Timeline depends on scope, permit requirements, and material lead times. Here's what to expect for each project type in Clark County.
+						</p>
+					</div>
+					<div className="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm">
+						<table className="w-full text-sm">
+							<thead className="bg-[#1F2E2B] text-white">
+								<tr>
+									<th className="text-left px-6 py-4 font-black uppercase tracking-wider">Scope</th>
+									<th className="text-left px-6 py-4 font-black uppercase tracking-wider">Timeline</th>
+									<th className="text-left px-6 py-4 font-black uppercase tracking-wider hidden md:table-cell">Biggest Variable</th>
+								</tr>
+							</thead>
+							<tbody>
+								{[
+									{ scope: "Cosmetic Refresh", timeline: "1–2 days", variable: "None — no permit, no materials lead time" },
+									{ scope: "Backsplash Installation", timeline: "1–2 days", variable: "Tile availability; most in stock at local suppliers" },
+									{ scope: "Cabinet & Countertop Update", timeline: "3–7 days", variable: "Countertop template + fabrication (typically 5–10 days after measure)" },
+									{ scope: "Tub-to-Shower Conversion (prefab insert)", timeline: "1–2 days", variable: "Insert availability; common sizes usually ship within a week" },
+									{ scope: "Tub-to-Shower Conversion (custom tile)", timeline: "4–6 days", variable: "Tile cure time (24–48 hrs before grouting, 48 hrs before use)" },
+									{ scope: "Mid-Range Bathroom Update", timeline: "1–2 weeks", variable: "Vanity and tile lead time; permit if plumbing moves" },
+									{ scope: "Full Gut Bathroom Remodel", timeline: "2–4 weeks", variable: "Permit (1–3 weeks), tile and fixture lead time" },
+									{ scope: "Kitchen Mid-Range Remodel", timeline: "2–4 weeks", variable: "Cabinet lead time (2–6 weeks from order); countertop template" },
+									{ scope: "Full Kitchen Gut Remodel", timeline: "4–8 weeks", variable: "Cabinet lead time is the critical path; permits if plumbing or electrical moves" },
+								].map((row, i) => (
+									<tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#F8F6F3]"}>
+										<td className="px-6 py-4 font-black text-[#1F2E2B]">{row.scope}</td>
+										<td className="px-6 py-4 font-black text-[#2D5A3D] whitespace-nowrap">{row.timeline}</td>
+										<td className="px-6 py-4 text-gray-500 text-xs hidden md:table-cell">{row.variable}</td>
+									</tr>
+								))}
+							</tbody>
+						</table>
+					</div>
+					<p className="text-sm text-gray-400 italic mt-4">
+						Timelines start from project kickoff, not from when you first reach out. Cabinet lead time is the most common schedule driver — NORBILT orders materials as soon as the scope is confirmed.
+					</p>
+				</div>
+			</section>
+
 			{/* CAPABILITIES SECTION */}
 			<section className="py-24 lg:py-32 bg-[#F8F6F3]">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
