@@ -284,6 +284,18 @@ export default function FinishCarpentryPage() {
 				</div>
 			</section>
 
+			
+			{/* RELATED GUIDES */}
+			<section className="py-10 bg-[#F8F6F3] border-t border-gray-100">
+				<div className="max-w-7xl mx-auto px-6 lg:px-8">
+					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-4">Related Cost Guides</p>
+					<div className="flex flex-wrap gap-x-8 gap-y-3">
+						<Link href="/blog/finish-carpentry-cost-vancouver-wa" className="text-sm font-bold text-[#2D5A3D] hover:text-[#FFB800] transition-colors flex items-center gap-1">Finish Carpentry Cost in Vancouver WA: 2026 Guide <span aria-hidden>→</span></Link>
+					<Link href="/blog/home-remodeling-clark-county-wa" className="text-sm font-bold text-[#2D5A3D] hover:text-[#FFB800] transition-colors flex items-center gap-1">Home Remodeling in Clark County WA: Complete 2026 Guide <span aria-hidden>→</span></Link>
+					</div>
+				</div>
+			</section>
+
 			{/* FINAL CTA - BILLBOARD STYLE */}
 			<section className="py-24 lg:py-40">
 				<div className="max-w-7xl mx-auto px-6">

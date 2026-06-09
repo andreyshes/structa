@@ -155,9 +155,12 @@ export default function ContactPage() {
 							<span className="text-[#FFB800]">Free Estimate</span>
 						</motion.h1>
 						<p className="text-xl text-white/80 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6">
-							Precision carpentry and flawless repairs start with a
-							conversation. Submit your project details below for a professional
-							proposal.
+							Tell us about your project and we'll walk your home, assess the
+							scope, and give you a written price — free, no obligation.
+						</p>
+						<p className="text-[#A7C4B5] text-sm font-medium flex items-center gap-2">
+							<span className="w-2 h-2 rounded-full bg-green-400 inline-block"></span>
+							Usually responds within 2 hours · Mon–Sat 8am–6pm
 						</p>
 					</div>
 				</div>

@@ -418,8 +418,8 @@ export default function HomePageContent() {
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
 					<SectionHeader
 						eyebrow="Our Work"
-						title="General Contractor Jobs"
-						description="We offer home repairs and updates for your local property."
+						title="Our Services"
+						description="Licensed home repairs and remodeling across Clark County, WA — from quick handyman fixes to full kitchen and bath remodels."
 					/>
 					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
 						{services.map((s, i) => (
@@ -813,6 +813,10 @@ export default function HomePageContent() {
 							<Phone className="w-4 h-4" /> 360.216.9920
 						</Link>
 					</div>
+					<p className="text-gray-400 text-sm flex items-center justify-center gap-2">
+						<span className="w-2 h-2 rounded-full bg-green-400 inline-block"></span>
+						Usually responds within 2 hours · Mon–Sat 8am–6pm
+					</p>
 				</div>
 			</section>
 
