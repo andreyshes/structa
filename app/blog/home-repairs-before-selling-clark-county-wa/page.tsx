@@ -3,20 +3,20 @@ import { ArrowRight, CheckCircle2, MapPin, Phone, XCircle } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Home Repairs Before Selling in Clark County WA | Norbilt",
+	title: "Home Repairs Before Selling in Clark County WA | NORBILT",
 	description:
 		"Planning to sell your home in Vancouver, Camas, or Clark County WA? Here are the repairs that actually increase your sale price and the ones you can skip.",
 	alternates: {
-		canonical: "https://norbilt.com/blog/home-repairs-before-selling-clark-county-wa",
+		canonical: "https://www.norbilt.com/blog/home-repairs-before-selling-clark-county-wa",
 	},
 	openGraph: {
-		title: "Home Repairs Before Selling in Clark County WA | Norbilt",
+		title: "Home Repairs Before Selling in Clark County WA | NORBILT",
 		description:
 			"Which repairs add value before a home sale in Clark County? A licensed contractor breaks down what to fix and what to skip.",
-		url: "https://norbilt.com/blog/home-repairs-before-selling-clark-county-wa",
-		siteName: "Norbilt",
+		url: "https://www.norbilt.com/blog/home-repairs-before-selling-clark-county-wa",
+		siteName: "NORBILT",
 		type: "article",
-		images: [{ url: "https://norbilt.com/og-image.jpg", width: 1200, height: 630 }],
+		images: [{ url: "https://www.norbilt.com/og-image.jpg", width: 1200, height: 630 }],
 	},
 };
 
@@ -30,17 +30,17 @@ export default function RepairsBeforeSelling() {
 						"@context": "https://schema.org",
 						"@type": "Article",
 						headline: "Home Repairs Before Selling in Clark County, WA: What's Worth It",
-						author: { "@type": "Person", name: "Andrey Norbilt" },
+						author: { "@type": "Person", name: "Andrey NORBILT" },
 						publisher: {
 							"@type": "Organization",
-							name: "Norbilt",
-							logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" },
+							name: "NORBILT",
+							logo: { "@type": "ImageObject", url: "https://www.norbilt.com/icon-v3.png" },
 						},
 						datePublished: "2026-04-06",
 						dateModified: "2026-04-06",
 						description:
 							"Which repairs add value before selling a home in Clark County WA — and which ones to skip.",
-						mainEntityOfPage: "https://norbilt.com/blog/home-repairs-before-selling-clark-county-wa",
+						mainEntityOfPage: "https://www.norbilt.com/blog/home-repairs-before-selling-clark-county-wa",
 					}),
 				}}
 			/>
@@ -50,9 +50,9 @@ export default function RepairsBeforeSelling() {
 					"@context": "https://schema.org",
 					"@type": "BreadcrumbList",
 					itemListElement: [
-						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
-						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
-						{ "@type": "ListItem", position: 3, name: "Home Repairs Before Selling in Clark County WA", item: "https://norbilt.com/blog/home-repairs-before-selling-clark-county-wa" },
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://www.norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Home Repairs Before Selling in Clark County WA", item: "https://www.norbilt.com/blog/home-repairs-before-selling-clark-county-wa" },
 					],
 				}) }}
 			/>
@@ -79,7 +79,7 @@ export default function RepairsBeforeSelling() {
 						</h1>
 				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
 					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
-					<p className="text-gray-700 leading-relaxed text-sm">Before selling a home in Clark County WA, the repairs with the highest ROI are: fresh paint throughout ($1,150–$3,450), drywall repairs ($115–$800), door and hardware fixes ($115–$460 per door), fixture replacements in kitchens and bathrooms ($230–$690), and flooring touch-ups or replacement in high-traffic areas ($345–$2,300). Repairs that rarely pay off: full kitchen or bathroom remodels (you won't recover the cost in the sale), HVAC replacements (buyers expect working HVAC, not new), and specialty upgrades buyers can't see. The single most important repair is fixing any water damage — staining, soft subfloor, or visible rot — because buyers' agents flag it and inspectors cite it. Budget $2,300–$6,900 total for pre-sale repairs on a typical Clark County home. Norbilt (WA Lic. NORBI**741CS) offers pre-sale punch list services across Clark County.</p>
+					<p className="text-gray-700 leading-relaxed text-sm">Before selling a home in Clark County WA, the repairs with the highest ROI are: fresh paint throughout ($1,150–$3,450), drywall repairs ($115–$800), door and hardware fixes ($115–$460 per door), fixture replacements in kitchens and bathrooms ($230–$690), and flooring touch-ups or replacement in high-traffic areas ($345–$2,300). Repairs that rarely pay off: full kitchen or bathroom remodels (you won't recover the cost in the sale), HVAC replacements (buyers expect working HVAC, not new), and specialty upgrades buyers can't see. The single most important repair is fixing any water damage — staining, soft subfloor, or visible rot — because buyers' agents flag it and inspectors cite it. Budget $2,300–$6,900 total for pre-sale repairs on a typical Clark County home. NORBILT (WA Lic. NORBI**741CS) offers pre-sale punch list services across Clark County.</p>
 				</div>
 						<p className="text-xl text-white/70 leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">
 							Not every repair is worth doing before a sale. Here's what

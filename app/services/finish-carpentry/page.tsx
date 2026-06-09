@@ -138,7 +138,7 @@ export default function FinishCarpentryPage() {
 							</h2>
 
 							<p className="text-gray-600 text-lg font-medium leading-relaxed">
-								Finish carpentry is where construction meets art. At Norbilt, we
+								Finish carpentry is where construction meets art. At NORBILT, we
 								believe the difference is found in the tight miters, seamless
 								joints, and perfect reveals. We don't just install trim—we
 								increase your property's value through skilled craftsmanship.
@@ -166,7 +166,7 @@ export default function FinishCarpentryPage() {
 							<div className="relative bg-[#1F2E2B] p-10 lg:p-14 rounded-[2.5rem] shadow-2xl border-b-[8px] border-[#FFB800]">
 								<Star className="absolute right-8 top-8 w-12 h-12 text-[#FFB800]/20" />
 								<h3 className="text-2xl font-black text-white uppercase tracking-tighter mb-8 italic">
-									The Norbilt Standard
+									The NORBILT Standard
 								</h3>
 								<div className="space-y-8">
 									<div className="space-y-2 border-l-2 border-[#FFB800]/30 pl-6">
@@ -257,7 +257,7 @@ export default function FinishCarpentryPage() {
 							},
 							{
 								q: "Is your carpentry work covered by a warranty?",
-								a: "Yes. All Norbilt finish carpentry is backed by a 1-year workmanship warranty. If joints open, caulk fails at seams, or any installed trim shifts within the warranty period, we return and fix it at no charge.",
+								a: "Yes. All NORBILT finish carpentry is backed by a 1-year workmanship warranty. If joints open, caulk fails at seams, or any installed trim shifts within the warranty period, we return and fix it at no charge.",
 							},
 						].map((item, i) => (
 							<div key={i} className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
@@ -279,7 +279,7 @@ export default function FinishCarpentryPage() {
 								<span className="text-[#FFB800]">Interior Details</span>
 							</h2>
 							<p className="text-[#A7C4B5] text-xl font-medium max-w-xl mx-auto">
-								Ready for high-end millwork? Contact Norbilt today for a
+								Ready for high-end millwork? Contact NORBILT today for a
 								professional carpentry consultation. Let’s give your home the
 								finish it deserves.
 							</p>

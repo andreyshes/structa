@@ -3,20 +3,20 @@ import { ArrowRight, AlertTriangle, CheckCircle2, MapPin, Phone } from "lucide-r
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Home Repair Checklist | Clark County WA | Norbilt",
+	title: "Home Repair Checklist | Clark County WA | NORBILT",
 	description:
 		"The 10 most common home repair problems in Clark County WA — and when to call a licensed contractor before small issues become big bills.",
 	alternates: {
-		canonical: "https://norbilt.com/blog/clark-county-home-repair-checklist",
+		canonical: "https://www.norbilt.com/blog/clark-county-home-repair-checklist",
 	},
 	openGraph: {
-		title: "Home Repair Checklist | Clark County | Norbilt",
+		title: "Home Repair Checklist | Clark County | NORBILT",
 		description:
 			"10 home repair issues Clark County homeowners should fix before they become expensive. From a licensed local contractor.",
-		url: "https://norbilt.com/blog/clark-county-home-repair-checklist",
-		siteName: "Norbilt",
+		url: "https://www.norbilt.com/blog/clark-county-home-repair-checklist",
+		siteName: "NORBILT",
 		type: "article",
-		images: [{ url: "https://norbilt.com/og-image.jpg", width: 1200, height: 630 }],
+		images: [{ url: "https://www.norbilt.com/og-image.jpg", width: 1200, height: 630 }],
 	},
 };
 
@@ -111,17 +111,17 @@ export default function ClarkCountyChecklist() {
 						"@context": "https://schema.org",
 						"@type": "Article",
 						headline: "Home Repair Checklist: 10 Things to Fix Before They Get Expensive",
-						author: { "@type": "Person", name: "Andrey Norbilt" },
+						author: { "@type": "Person", name: "Andrey NORBILT" },
 						publisher: {
 							"@type": "Organization",
-							name: "Norbilt",
-							logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" },
+							name: "NORBILT",
+							logo: { "@type": "ImageObject", url: "https://www.norbilt.com/icon-v3.png" },
 						},
 						datePublished: "2025-03-01",
 						dateModified: "2026-03-04",
 						description:
 							"The 10 most common home repair issues Clark County WA homeowners face, and when to call a contractor before they become expensive.",
-						mainEntityOfPage: "https://norbilt.com/blog/clark-county-home-repair-checklist",
+						mainEntityOfPage: "https://www.norbilt.com/blog/clark-county-home-repair-checklist",
 					}),
 				}}
 			/>
@@ -131,9 +131,9 @@ export default function ClarkCountyChecklist() {
 					"@context": "https://schema.org",
 					"@type": "BreadcrumbList",
 					itemListElement: [
-						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
-						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
-						{ "@type": "ListItem", position: 3, name: "Clark County Home Repair Checklist: 10 Things to Fix", item: "https://norbilt.com/blog/clark-county-home-repair-checklist" },
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://www.norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Clark County Home Repair Checklist: 10 Things to Fix", item: "https://www.norbilt.com/blog/clark-county-home-repair-checklist" },
 					],
 				}) }}
 			/>
@@ -253,7 +253,7 @@ export default function ClarkCountyChecklist() {
 						<div className="bg-[#2D5A3D]/5 border border-[#2D5A3D]/20 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
 							<div>
 								<p className="font-black text-[#1F2E2B] mb-1">Ready to knock out your repair list?</p>
-								<p className="text-gray-600 text-sm">Norbilt handles all the repairs on this checklist — licensed, insured, free estimates across Clark County.</p>
+								<p className="text-gray-600 text-sm">NORBILT handles all the repairs on this checklist — licensed, insured, free estimates across Clark County.</p>
 							</div>
 							<Link
 								href="/services/home-repair"
@@ -298,7 +298,7 @@ export default function ClarkCountyChecklist() {
 							Found Something on This List?
 						</h2>
 						<p className="text-black/70 text-lg font-medium">
-							Don't wait. Contact Norbilt for a free estimate on any home
+							Don't wait. Contact NORBILT for a free estimate on any home
 							— we'll tell you exactly what it needs
 							and what it costs.
 						</p>

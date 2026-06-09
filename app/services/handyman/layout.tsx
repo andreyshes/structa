@@ -1,35 +1,35 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Handyman Services Vancouver & Battle Ground WA | Norbilt",
+	title: "Handyman Services Vancouver & Battle Ground WA | NORBILT",
 	description:
 		"Licensed handyman in Vancouver, Battle Ground & Clark County WA. Drywall, TV mounting, repairs & more. Bonded & insured. Free estimate today!",
 	alternates: {
-		canonical: "https://norbilt.com/services/handyman",
+		canonical: "https://www.norbilt.com/services/handyman",
 	},
 	openGraph: {
-		title: "Handyman Services Vancouver & Battle Ground WA | Norbilt",
+		title: "Handyman Services Vancouver & Battle Ground WA | NORBILT",
 		description:
 			"Licensed handyman services across Clark County WA. Home repairs, drywall, fixtures & more.",
-		url: "https://norbilt.com/services/handyman",
+		url: "https://www.norbilt.com/services/handyman",
 		type: "website",
-		siteName: "Norbilt",
+		siteName: "NORBILT",
 		locale: "en_US",
 		images: [
 			{
-				url: "https://norbilt.com/og-image.jpg",
+				url: "https://www.norbilt.com/og-image.jpg",
 				width: 1200,
 				height: 630,
-				alt: "Handyman Services Vancouver WA | Norbilt",
+				alt: "Handyman Services Vancouver WA | NORBILT",
 			},
 		],
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Handyman Services Vancouver & Battle Ground WA | Norbilt",
+		title: "Handyman Services Vancouver & Battle Ground WA | NORBILT",
 		description:
 			"Licensed handyman services across Clark County WA. Home repairs, drywall, fixtures & more.",
-		images: ["https://norbilt.com/og-image.jpg"],
+		images: ["https://www.norbilt.com/og-image.jpg"],
 	},
 };
 
@@ -51,7 +51,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 				"name": "Do I need a licensed handyman in Vancouver WA?",
 				"acceptedAnswer": {
 					"@type": "Answer",
-					"text": "In Washington State, repair work above a set dollar amount requires a licensed contractor. As a result, hiring a registered WA General Contractor like Norbilt protects you legally and ensures the work meets code. In fact, unlicensed repair work can affect your home insurance and future resale value.",
+					"text": "In Washington State, repair work above a set dollar amount requires a licensed contractor. As a result, hiring a registered WA General Contractor like NORBILT protects you legally and ensures the work meets code. In fact, unlicensed repair work can affect your home insurance and future resale value.",
 				},
 			},
 			{

@@ -142,7 +142,7 @@ export default function PricingPage() {
 								name: "How much does a handyman cost in Vancouver WA?",
 								acceptedAnswer: {
 									"@type": "Answer",
-									text: "Handyman services in Vancouver WA typically run $150–$350 for a single task under 2 hours, $300–$600 for a half day, and $550–$1,000 for a full day of work. Norbilt provides free estimates before any work begins.",
+									text: "Handyman services in Vancouver WA typically run $150–$350 for a single task under 2 hours, $300–$600 for a half day, and $550–$1,000 for a full day of work. NORBILT provides free estimates before any work begins.",
 								},
 							},
 							{
@@ -163,10 +163,10 @@ export default function PricingPage() {
 							},
 							{
 								"@type": "Question",
-								name: "Does Norbilt offer free estimates?",
+								name: "Does NORBILT offer free estimates?",
 								acceptedAnswer: {
 									"@type": "Answer",
-									text: "Yes. Norbilt provides free, no-obligation estimates for all projects across Clark County WA. We visit your home, assess the scope, and provide a clear written quote before any work begins.",
+									text: "Yes. NORBILT provides free, no-obligation estimates for all projects across Clark County WA. We visit your home, assess the scope, and provide a clear written quote before any work begins.",
 								},
 							},
 						],

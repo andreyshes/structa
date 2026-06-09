@@ -23,7 +23,7 @@ export default function DynamicFaq({
 		},
 		{
 			q: `Are you licensed to perform ${serviceTitle} in ${cityName}, WA?`,
-			a: `Yes. Norbilt is a fully licensed, bonded, and insured general contractor (WA License #NORBI**) authorized to perform ${serviceTitle.toLowerCase()} and home improvements throughout ${cityName} and Clark County.`,
+			a: `Yes. NORBILT is a fully licensed, bonded, and insured general contractor (WA License #NORBI**) authorized to perform ${serviceTitle.toLowerCase()} and home improvements throughout ${cityName} and Clark County.`,
 		},
 		{
 			q: `Can I get a free estimate for ${serviceTitle} in the ${cityName} area?`,

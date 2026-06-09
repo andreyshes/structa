@@ -3,20 +3,20 @@ import { ArrowRight, CheckCircle2, MapPin, Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Flooring Installation Cost in Vancouver WA & Clark County: 2026 Guide | Norbilt",
+	title: "Flooring Installation Cost in Vancouver WA & Clark County: 2026 Guide | NORBILT",
 	description:
 		"How much does flooring installation cost in Vancouver WA? Real 2026 price ranges for LVP, hardwood, and tile across Clark County — plus what drives the cost and what older homes hide.",
 	alternates: {
-		canonical: "https://norbilt.com/blog/flooring-installation-cost-vancouver-wa",
+		canonical: "https://www.norbilt.com/blog/flooring-installation-cost-vancouver-wa",
 	},
 	openGraph: {
-		title: "Flooring Installation Cost in Vancouver WA & Clark County: 2026 Guide | Norbilt",
+		title: "Flooring Installation Cost in Vancouver WA & Clark County: 2026 Guide | NORBILT",
 		description:
 			"Real 2026 cost breakdown for flooring installation in Vancouver WA and Clark County. LVP, hardwood, tile pricing, subfloor costs, and city breakdowns.",
-		url: "https://norbilt.com/blog/flooring-installation-cost-vancouver-wa",
-		siteName: "Norbilt",
+		url: "https://www.norbilt.com/blog/flooring-installation-cost-vancouver-wa",
+		siteName: "NORBILT",
 		type: "article",
-		images: [{ url: "https://norbilt.com/og-image.jpg", width: 1200, height: 630 }],
+		images: [{ url: "https://www.norbilt.com/og-image.jpg", width: 1200, height: 630 }],
 	},
 };
 
@@ -75,7 +75,7 @@ const additionalCosts = [
 	{ item: "Stair nosing (per step)", cost: "$30 – $80", note: "Needed when flooring transitions to stairs" },
 	{ item: "Transition strips (per piece)", cost: "$20 – $60 installed", note: "Between rooms or at doorways" },
 	{ item: "Baseboard removal & reinstall", cost: "$1 – $2 / lin ft", note: "Or new baseboard install at $3–$6 / lin ft" },
-	{ item: "Furniture moving", cost: "$0 – $200", note: "Norbilt moves standard furniture; appliances extra" },
+	{ item: "Furniture moving", cost: "$0 – $200", note: "NORBILT moves standard furniture; appliances extra" },
 ];
 
 const cityPricing = [
@@ -140,7 +140,7 @@ const faqs = [
 	},
 	{
 		q: "Is flooring installation covered by a warranty?",
-		a: "Yes. All Norbilt flooring installation work is backed by a 1-year workmanship warranty. If a plank lifts, a transition strip comes loose, or a grout line cracks within the first year due to installation, we come back and fix it at no charge. Material warranties are separate and provided by the manufacturer.",
+		a: "Yes. All NORBILT flooring installation work is backed by a 1-year workmanship warranty. If a plank lifts, a transition strip comes loose, or a grout line cracks within the first year due to installation, we come back and fix it at no charge. Material warranties are separate and provided by the manufacturer.",
 	},
 ];
 
@@ -150,14 +150,14 @@ const schema = {
 		headline: "Flooring Installation Cost in Vancouver WA & Clark County: 2026 Guide",
 		description:
 			"Real 2026 price ranges for flooring installation in Vancouver WA and Clark County — LVP, engineered hardwood, tile, and laminate. Subfloor costs, city breakdowns, and what to watch out for.",
-		url: "https://norbilt.com/blog/flooring-installation-cost-vancouver-wa",
+		url: "https://www.norbilt.com/blog/flooring-installation-cost-vancouver-wa",
 		datePublished: "2026-05-09",
 		dateModified: "2026-05-09",
-		author: { "@type": "Organization", name: "Norbilt" },
+		author: { "@type": "Organization", name: "NORBILT" },
 		publisher: {
 			"@type": "Organization",
-			name: "Norbilt",
-			url: "https://norbilt.com",
+			name: "NORBILT",
+			url: "https://www.norbilt.com",
 		},
 };
 
@@ -174,9 +174,9 @@ export default function FlooringCostPage() {
 			"@context": "https://schema.org",
 			"@type": "BreadcrumbList",
 			itemListElement: [
-				{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
-				{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
-				{ "@type": "ListItem", position: 3, name: "Flooring Installation Cost in Vancouver WA & Clark County: 2026 Guide", item: "https://norbilt.com/blog/flooring-installation-cost-vancouver-wa" },
+				{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+				{ "@type": "ListItem", position: 2, name: "Blog", item: "https://www.norbilt.com/blog" },
+				{ "@type": "ListItem", position: 3, name: "Flooring Installation Cost in Vancouver WA & Clark County: 2026 Guide", item: "https://www.norbilt.com/blog/flooring-installation-cost-vancouver-wa" },
 			],
 				}) }}
 			/>
@@ -360,7 +360,7 @@ export default function FlooringCostPage() {
 						))}
 					</div>
 					<div className="bg-[#1F2E2B] text-white rounded-2xl p-6">
-						<p className="font-black uppercase tracking-tight text-[#FFB800] text-sm mb-2">Norbilt's Approach</p>
+						<p className="font-black uppercase tracking-tight text-[#FFB800] text-sm mb-2">NORBILT's Approach</p>
 						<p className="text-white/80 leading-relaxed">
 							We inspect the subfloor before finalizing any flooring quote. If we
 							find issues, we tell you before we start — with a written cost to
@@ -495,7 +495,7 @@ export default function FlooringCostPage() {
 							Ready to Get Started?
 						</p>
 						<p className="font-black text-xl uppercase tracking-tight">
-							Norbilt installs flooring across Clark County — free estimate, 1-year warranty.
+							NORBILT installs flooring across Clark County — free estimate, 1-year warranty.
 						</p>
 					</div>
 					<div className="flex flex-col sm:flex-row gap-4 shrink-0">

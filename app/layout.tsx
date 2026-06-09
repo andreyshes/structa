@@ -7,14 +7,14 @@ import StickyMobileCTA from "@/app/components/StickyMobileCTA";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://norbilt.com"),
-	title: "Licensed General Contractor Vancouver WA | Norbilt",
-	description: "Norbilt is a licensed, bonded, and insured general contractor serving Vancouver WA and Clark County. Home repairs, carpentry, drywall, and remodeling. Free estimates.",
+	metadataBase: new URL("https://www.norbilt.com"),
+	title: "Licensed General Contractor Vancouver WA | NORBILT",
+	description: "NORBILT is a licensed, bonded, and insured general contractor serving Vancouver WA and Clark County. Home repairs, carpentry, drywall, and remodeling. Free estimates.",
 	icons: {
 		icon: "/icon-v3.png",
 	},
 	alternates: {
-		canonical: "https://norbilt.com",
+		canonical: "https://www.norbilt.com",
 	},
 };
 
@@ -49,18 +49,18 @@ export default function RootLayout({
 							"@graph": [
 								{
 									"@type": "Organization",
-									"@id": "https://norbilt.com/#organization",
-									"name": "Norbilt",
-									"alternateName": "Norbilt General Contracting",
-									"url": "https://norbilt.com",
+									"@id": "https://www.norbilt.com/#organization",
+									"name": "NORBILT",
+									"alternateName": "NORBILT General Contracting",
+									"url": "https://www.norbilt.com",
 									"logo": {
 										"@type": "ImageObject",
-										"url": "https://norbilt.com/icon-v3.png",
+										"url": "https://www.norbilt.com/icon-v3.png",
 										"width": 512,
 										"height": 512,
 									},
-									"image": "https://norbilt.com/og-image.jpg",
-									"description": "Norbilt is a licensed, bonded, and insured general contractor based in Vancouver WA, serving all of Clark County. Specializing in kitchen remodeling, bathroom remodeling, drywall repair, finish carpentry, flooring installation, and handyman services. WA General Contractor License NORBI**741CS. $1,000,000 liability insurance.",
+									"image": "https://www.norbilt.com/og-image.jpg",
+									"description": "NORBILT is a licensed, bonded, and insured general contractor based in Vancouver WA, serving all of Clark County. Specializing in kitchen remodeling, bathroom remodeling, drywall repair, finish carpentry, flooring installation, and handyman services. WA General Contractor License NORBI**741CS. $1,000,000 liability insurance.",
 									"telephone": "+13602169920",
 									"email": "hello@norbilt.com",
 									"address": {
@@ -81,6 +81,9 @@ export default function RootLayout({
 										{ "@type": "City", "name": "Brush Prairie", "containedInPlace": { "@type": "AdministrativeArea", "name": "Clark County, WA" } },
 										{ "@type": "City", "name": "Orchards", "containedInPlace": { "@type": "AdministrativeArea", "name": "Clark County, WA" } },
 										{ "@type": "City", "name": "Felida", "containedInPlace": { "@type": "AdministrativeArea", "name": "Clark County, WA" } },
+										{ "@type": "City", "name": "Mill Plain", "containedInPlace": { "@type": "AdministrativeArea", "name": "Clark County, WA" } },
+										{ "@type": "City", "name": "Lake Shore", "containedInPlace": { "@type": "AdministrativeArea", "name": "Clark County, WA" } },
+										{ "@type": "City", "name": "Five Corners", "containedInPlace": { "@type": "AdministrativeArea", "name": "Clark County, WA" } },
 									],
 									"hasCredential": {
 										"@type": "EducationalOccupationalCredential",
@@ -105,10 +108,10 @@ export default function RootLayout({
 									],
 									"founder": {
 										"@type": "Person",
-										"@id": "https://norbilt.com/#founder",
+										"@id": "https://www.norbilt.com/#founder",
 										"name": "Andrey Shestopal",
 										"jobTitle": "Owner & Licensed General Contractor",
-										"worksFor": { "@id": "https://norbilt.com/#organization" },
+										"worksFor": { "@id": "https://www.norbilt.com/#organization" },
 									},
 									"numberOfEmployees": { "@type": "QuantitativeValue", "value": "1-10" },
 									"foundingDate": "2022",
@@ -121,12 +124,12 @@ export default function RootLayout({
 								},
 								{
 									"@type": "GeneralContractor",
-									"@id": "https://norbilt.com/#business",
-									"name": "Norbilt",
-									"url": "https://norbilt.com",
+									"@id": "https://www.norbilt.com/#business",
+									"name": "NORBILT",
+									"url": "https://www.norbilt.com",
 									"telephone": "+13602169920",
 									"email": "hello@norbilt.com",
-									"image": "https://norbilt.com/og-image.jpg",
+									"image": "https://www.norbilt.com/og-image.jpg",
 									"description": "Licensed general contractor in Vancouver WA specializing in kitchen remodeling, bathroom remodeling, handyman services, drywall repair, finish carpentry, and flooring installation across Clark County WA.",
 									"address": {
 										"@type": "PostalAddress",
@@ -151,14 +154,14 @@ export default function RootLayout({
 										"@type": "OfferCatalog",
 										"name": "Home Remodeling & Repair Services — Clark County WA",
 										"itemListElement": [
-											{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kitchen Remodeling", "description": "Full kitchen remodels, cabinet updates, countertop replacement, and cosmetic refreshes in Vancouver WA and Clark County.", "url": "https://norbilt.com/services/kitchen-bath" } },
-											{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bathroom Remodeling", "description": "Full gut remodels, tub-to-shower conversions, vanity replacement, and tile work in Vancouver WA and Clark County.", "url": "https://norbilt.com/services/kitchen-bath" } },
-											{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Handyman Services", "description": "Small repairs, fixture replacement, drywall patches, door repairs, and punch lists across Clark County WA.", "url": "https://norbilt.com/services/handyman" } },
-											{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drywall Repair", "description": "Patching, texture matching, and water damage repair for drywall in Vancouver WA and Clark County.", "url": "https://norbilt.com/services/drywall-repair" } },
-											{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Finish Carpentry", "description": "Baseboards, crown molding, door casing, wainscoting, and built-ins in Vancouver WA and Clark County.", "url": "https://norbilt.com/services/finish-carpentry" } },
-											{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Flooring Installation", "description": "LVP, engineered hardwood, tile, and laminate flooring installation across Clark County WA.", "url": "https://norbilt.com/services/flooring" } },
-											{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Door & Window Installation", "description": "Interior and exterior door installation, window replacement, and trim work in Clark County WA.", "url": "https://norbilt.com/services/door-window" } },
-											{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lighting & Fixture Installation", "description": "Ceiling fans, recessed lighting, vanity fixtures, and fixture replacement in Vancouver WA and Clark County.", "url": "https://norbilt.com/services/lighting" } },
+											{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kitchen Remodeling", "description": "Full kitchen remodels, cabinet updates, countertop replacement, and cosmetic refreshes in Vancouver WA and Clark County.", "url": "https://www.norbilt.com/services/kitchen-bath" } },
+											{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bathroom Remodeling", "description": "Full gut remodels, tub-to-shower conversions, vanity replacement, and tile work in Vancouver WA and Clark County.", "url": "https://www.norbilt.com/services/kitchen-bath" } },
+											{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Handyman Services", "description": "Small repairs, fixture replacement, drywall patches, door repairs, and punch lists across Clark County WA.", "url": "https://www.norbilt.com/services/handyman" } },
+											{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drywall Repair", "description": "Patching, texture matching, and water damage repair for drywall in Vancouver WA and Clark County.", "url": "https://www.norbilt.com/services/drywall-repair" } },
+											{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Finish Carpentry", "description": "Baseboards, crown molding, door casing, wainscoting, and built-ins in Vancouver WA and Clark County.", "url": "https://www.norbilt.com/services/finish-carpentry" } },
+											{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Flooring Installation", "description": "LVP, engineered hardwood, tile, and laminate flooring installation across Clark County WA.", "url": "https://www.norbilt.com/services/flooring" } },
+											{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Door & Window Installation", "description": "Interior and exterior door installation, window replacement, and trim work in Clark County WA.", "url": "https://www.norbilt.com/services/door-window" } },
+											{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lighting & Fixture Installation", "description": "Ceiling fans, recessed lighting, vanity fixtures, and fixture replacement in Vancouver WA and Clark County.", "url": "https://www.norbilt.com/services/lighting" } },
 										],
 									},
 									"aggregateRating": {
@@ -166,22 +169,22 @@ export default function RootLayout({
 										"ratingValue": "5",
 										"bestRating": "5",
 										"worstRating": "1",
-										"ratingCount": "47",
+										"ratingCount": "13",
 									},
 								},
 								{
 									"@type": "WebSite",
-									"@id": "https://norbilt.com/#website",
-									"url": "https://norbilt.com",
-									"name": "Norbilt — Licensed General Contractor in Vancouver WA",
-									"description": "Norbilt provides kitchen remodeling, bathroom remodeling, handyman services, drywall repair, finish carpentry, and flooring installation across Vancouver WA and Clark County.",
-									"publisher": { "@id": "https://norbilt.com/#organization" },
+									"@id": "https://www.norbilt.com/#website",
+									"url": "https://www.norbilt.com",
+									"name": "NORBILT — Licensed General Contractor in Vancouver WA",
+									"description": "NORBILT provides kitchen remodeling, bathroom remodeling, handyman services, drywall repair, finish carpentry, and flooring installation across Vancouver WA and Clark County.",
+									"publisher": { "@id": "https://www.norbilt.com/#organization" },
 									"inLanguage": "en-US",
 									"potentialAction": {
 										"@type": "SearchAction",
 										"target": {
 											"@type": "EntryPoint",
-											"urlTemplate": "https://norbilt.com/blog?s={search_term_string}",
+											"urlTemplate": "https://www.norbilt.com/blog?s={search_term_string}",
 										},
 										"query-input": "required name=search_term_string",
 									},

@@ -3,10 +3,10 @@ import { ArrowRight, CheckCircle2, MapPin, Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Drywall Repair Cost in Clark County WA: 2026 Guide | Norbilt",
+	title: "Drywall Repair Cost in Clark County WA: 2026 Guide | NORBILT",
 	description: "How much does drywall repair cost in Clark County WA? Real 2026 price ranges — from a $175 nail hole patch to a $4,000 full room replacement — from a licensed Vancouver contractor.",
-	alternates: { canonical: "https://norbilt.com/blog/drywall-repair-cost-clark-county-wa" },
-	openGraph: { title: "Drywall Repair Cost in Clark County WA: 2026 Guide | Norbilt", description: "Complete 2026 cost guide for drywall repair in Clark County WA.", url: "https://norbilt.com/blog/drywall-repair-cost-clark-county-wa", siteName: "Norbilt", type: "article", images: [{ url: "https://norbilt.com/og-image.jpg", width: 1200, height: 630 }] },
+	alternates: { canonical: "https://www.norbilt.com/blog/drywall-repair-cost-clark-county-wa" },
+	openGraph: { title: "Drywall Repair Cost in Clark County WA: 2026 Guide | NORBILT", description: "Complete 2026 cost guide for drywall repair in Clark County WA.", url: "https://www.norbilt.com/blog/drywall-repair-cost-clark-county-wa", siteName: "NORBILT", type: "article", images: [{ url: "https://www.norbilt.com/og-image.jpg", width: 1200, height: 630 }] },
 };
 
 const repairTypes = [
@@ -42,22 +42,22 @@ const faqs = [
 	{ q: "Do I need to repaint the whole wall after a drywall patch?", a: "Not always. We prime the repair to minimize flash. Whether a spot touch-up blends depends on your existing paint sheen and age. We'll tell you honestly — if the paint is more than 5 years old or a satin/semi-gloss finish, painting the full wall usually looks better." },
 	{ q: "How do I know if my drywall has water damage?", a: "Signs include soft or spongy spots, brown staining, bubbling paint, and visible mold at the base of walls. In Clark County homes, bathroom and exterior walls are the most common locations. If you have any of these, the moisture source must be resolved before we repair — we assess this during the free walkthrough." },
 	{ q: "Do you remove popcorn ceilings in Clark County?", a: "Yes. We scrape, skim, and retexture to a smooth or light knockdown finish. Pre-1978 Clark County homes may contain asbestos in the texture — we test before scraping and follow safe removal protocols. Testing adds 1–2 days to the timeline." },
-	{ q: "Is drywall repair work covered by a warranty?", a: "Yes. All Norbilt drywall work is backed by a 1-year workmanship warranty. If a patch cracks, lifts, or the texture mismatches after settling, we come back and fix it at no charge within the warranty period." },
+	{ q: "Is drywall repair work covered by a warranty?", a: "Yes. All NORBILT drywall work is backed by a 1-year workmanship warranty. If a patch cracks, lifts, or the texture mismatches after settling, we come back and fix it at no charge within the warranty period." },
 ];
 
 export default function DrywallRepairCostClarkCountyWA() {
 	return (
 		<>
-			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Article", headline: "Drywall Repair Cost in Clark County WA: 2026 Guide", author: { "@type": "Person", name: "Andrey Norbilt" }, publisher: { "@type": "Organization", name: "Norbilt", logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" } }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://norbilt.com/blog/drywall-repair-cost-clark-county-wa" }) }} />
+			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Article", headline: "Drywall Repair Cost in Clark County WA: 2026 Guide", author: { "@type": "Person", name: "Andrey NORBILT" }, publisher: { "@type": "Organization", name: "NORBILT", logo: { "@type": "ImageObject", url: "https://www.norbilt.com/icon-v3.png" } }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://www.norbilt.com/blog/drywall-repair-cost-clark-county-wa" }) }} />
 			<script
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify({
 					"@context": "https://schema.org",
 					"@type": "BreadcrumbList",
 					itemListElement: [
-						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
-						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
-						{ "@type": "ListItem", position: 3, name: "Drywall Repair Cost in Clark County WA: 2026 Guide", item: "https://norbilt.com/blog/drywall-repair-cost-clark-county-wa" },
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://www.norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Drywall Repair Cost in Clark County WA: 2026 Guide", item: "https://www.norbilt.com/blog/drywall-repair-cost-clark-county-wa" },
 					],
 				}) }}
 			/>
@@ -69,7 +69,7 @@ export default function DrywallRepairCostClarkCountyWA() {
 						<h1 className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tighter uppercase">Drywall Repair Cost in <span className="text-[#FFB800]">Clark County WA</span></h1>
 				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
 					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
-					<p className="text-gray-700 leading-relaxed text-sm">Drywall repair in Clark County WA costs $115–$250 for small patches, $345–$800 for medium repairs, and $800–$3,000+ for large water-damaged sections. A nail hole or small crack — the most common repair — runs $115–$175 including texture match and paint. A fist-sized patch or door handle hole costs $175–$400. Multiple repairs in one room or a larger section costs $345–$800. Water damage repairs — where you're replacing wet drywall, treating for mold, and repairing the source — start at $460 and can reach $2,300+ depending on the affected area. Popcorn ceiling removal runs $1.15–$2.30 per square foot. Texture matching is often the hardest part of drywall work — mismatched texture stands out more than the original hole. Norbilt (WA Lic. NORBI**741CS) serves all of Clark County. All prices reflect 2026 rates.</p>
+					<p className="text-gray-700 leading-relaxed text-sm">Drywall repair in Clark County WA costs $115–$250 for small patches, $345–$800 for medium repairs, and $800–$3,000+ for large water-damaged sections. A nail hole or small crack — the most common repair — runs $115–$175 including texture match and paint. A fist-sized patch or door handle hole costs $175–$400. Multiple repairs in one room or a larger section costs $345–$800. Water damage repairs — where you're replacing wet drywall, treating for mold, and repairing the source — start at $460 and can reach $2,300+ depending on the affected area. Popcorn ceiling removal runs $1.15–$2.30 per square foot. Texture matching is often the hardest part of drywall work — mismatched texture stands out more than the original hole. NORBILT (WA Lic. NORBI**741CS) serves all of Clark County. All prices reflect 2026 rates.</p>
 				</div>
 						<p className="text-xl text-white/70 leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">Real 2026 price ranges for every repair type — from a nail hole patch to full room replacement — from a licensed contractor doing drywall work across Clark County every week.</p>
 						<div className="flex items-center gap-2 text-[#A7C4B5] text-sm"><MapPin className="w-4 h-4" />Clark County, WA · Vancouver · Camas · Ridgefield · Battle Ground · Washougal</div>
@@ -77,7 +77,7 @@ export default function DrywallRepairCostClarkCountyWA() {
 				</section>
 				<article className="py-16 lg:py-24">
 					<div className="max-w-3xl mx-auto px-6 lg:px-8 space-y-16">
-						<section className="space-y-5 text-gray-700 leading-relaxed text-lg"><p>Drywall repair in Clark County WA costs between <strong>$175 for a small nail hole patch</strong> and <strong>$4,000+ for full room replacement</strong>. The range is wide because texture matching, moisture damage, and room access all significantly affect the scope.</p><p>Norbilt is a licensed general contractor (WA Lic. <strong>NORBI**741CS</strong>) serving all of Clark County. We back all drywall work with a 1-year workmanship warranty. $1,000,000 liability insurance.</p></section>
+						<section className="space-y-5 text-gray-700 leading-relaxed text-lg"><p>Drywall repair in Clark County WA costs between <strong>$175 for a small nail hole patch</strong> and <strong>$4,000+ for full room replacement</strong>. The range is wide because texture matching, moisture damage, and room access all significantly affect the scope.</p><p>NORBILT is a licensed general contractor (WA Lic. <strong>NORBI**741CS</strong>) serving all of Clark County. We back all drywall work with a 1-year workmanship warranty. $1,000,000 liability insurance.</p></section>
 						<section className="space-y-6"><h2 className="text-3xl font-black text-[#1F2E2B] uppercase tracking-tighter">Drywall Repair Cost by Type — Clark County WA 2026</h2><div className="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm"><table className="w-full text-sm"><thead className="bg-[#1F2E2B] text-white"><tr><th className="text-left p-4 font-black uppercase tracking-wider">Repair Type</th><th className="text-left p-4 font-black uppercase tracking-wider">Cost Range</th><th className="text-left p-4 font-black uppercase tracking-wider">Timeline</th><th className="text-left p-4 font-black uppercase tracking-wider">Notes</th></tr></thead><tbody>{repairTypes.map((r, i) => (<tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}><td className="p-4 font-medium text-[#1F2E2B]">{r.type}</td><td className="p-4 font-bold text-[#2D5A3D] whitespace-nowrap">{r.cost}</td><td className="p-4 text-gray-500 whitespace-nowrap">{r.timeline}</td><td className="p-4 text-gray-600 text-xs">{r.notes}</td></tr>))}</tbody></table></div></section>
 						<section className="space-y-6"><h2 className="text-3xl font-black text-[#1F2E2B] uppercase tracking-tighter">Clark County City Breakdown</h2><div className="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm"><table className="w-full text-sm"><thead className="bg-[#1F2E2B] text-white"><tr><th className="text-left p-4 font-black uppercase tracking-wider">City</th><th className="text-left p-4 font-black uppercase tracking-wider">Notes</th><th className="text-left p-4 font-black uppercase tracking-wider">Typical Range</th></tr></thead><tbody>{cityNotes.map((r, i) => (<tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}><td className="p-4 font-black text-[#1F2E2B] whitespace-nowrap">{r.city}</td><td className="p-4 text-gray-600 text-sm">{r.note}</td><td className="p-4 font-bold text-[#2D5A3D] whitespace-nowrap">{r.low}–{r.high}</td></tr>))}</tbody></table></div></section>
 						<section className="space-y-6"><h2 className="text-3xl font-black text-[#1F2E2B] uppercase tracking-tighter">What Drives Drywall Repair Costs</h2><div className="space-y-5">{drivers.map((d, i) => (<div key={i} className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm"><h3 className="text-lg font-black text-[#1F2E2B] mb-3">{d.title}</h3><p className="text-gray-600 leading-relaxed">{d.body}</p></div>))}</div></section>

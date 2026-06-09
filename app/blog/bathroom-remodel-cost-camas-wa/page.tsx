@@ -3,15 +3,15 @@ import { ArrowRight, CheckCircle2, MapPin, Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Bathroom Remodel Cost in Camas WA: 2026 Pricing Guide | Norbilt",
+	title: "Bathroom Remodel Cost in Camas WA: 2026 Pricing Guide | NORBILT",
 	description: "How much does a bathroom remodel cost in Camas WA? Real 2026 price ranges — from a $920 cosmetic refresh to a $35,000 primary suite — from a licensed contractor working in Camas every week.",
-	alternates: { canonical: "https://norbilt.com/blog/bathroom-remodel-cost-camas-wa" },
+	alternates: { canonical: "https://www.norbilt.com/blog/bathroom-remodel-cost-camas-wa" },
 	openGraph: {
-		title: "Bathroom Remodel Cost in Camas WA: 2026 Pricing Guide | Norbilt",
+		title: "Bathroom Remodel Cost in Camas WA: 2026 Pricing Guide | NORBILT",
 		description: "Complete 2026 cost guide for bathroom remodels in Camas WA — real price ranges, component costs, neighborhood breakdowns.",
-		url: "https://norbilt.com/blog/bathroom-remodel-cost-camas-wa",
-		siteName: "Norbilt", type: "article",
-		images: [{ url: "https://norbilt.com/og-image.jpg", width: 1200, height: 630 }],
+		url: "https://www.norbilt.com/blog/bathroom-remodel-cost-camas-wa",
+		siteName: "NORBILT", type: "article",
+		images: [{ url: "https://www.norbilt.com/og-image.jpg", width: 1200, height: 630 }],
 	},
 };
 
@@ -43,7 +43,7 @@ const drivers = [
 	{ title: "Newer Construction = Fewer Hidden Surprises", body: "Unlike older parts of Vancouver (Hazel Dell, Orchards), most Camas homes were built post-1990 with modern plumbing and solid subfloors. Surprises are less common, which means budgets are more predictable. The exception is older homes near downtown Camas and Fern Prairie." },
 	{ title: "Tile Selection Is the Biggest Variable", body: "Basic ceramic tile runs $2–5 per sq ft. Large-format porcelain or natural stone runs $15–30+ per sq ft and takes longer to install. In Camas, tile upgrades commonly add $2,000–$8,000 to a project compared to standard spec." },
 	{ title: "Heated Floors Are Popular in Camas", body: "Heated tile floors are one of the most requested upgrades in Camas primary baths. Adding in-floor radiant heat runs $14–$25 per sq ft installed. For a typical 50 sq ft bathroom floor, that's $700–$1,250 added to the project — and one of the highest satisfaction upgrades we install." },
-	{ title: "Permits in Camas", body: "The City of Camas requires permits for plumbing relocation, structural changes, and electrical panel work. Cosmetic remodels — vanity, tile, fixtures, paint — typically don't require a permit. Norbilt (WA Lic. NORBI**741CS) pulls all required permits." },
+	{ title: "Permits in Camas", body: "The City of Camas requires permits for plumbing relocation, structural changes, and electrical panel work. Cosmetic remodels — vanity, tile, fixtures, paint — typically don't require a permit. NORBILT (WA Lic. NORBI**741CS) pulls all required permits." },
 ];
 
 const neighborhoods = [
@@ -55,7 +55,7 @@ const neighborhoods = [
 
 const faqs = [
 	{ q: "How much does a bathroom remodel cost in Camas WA?", a: "In Camas WA, a bathroom remodel costs between $920 for a cosmetic refresh and $35,000+ for a high-end primary suite. A mid-range remodel (new vanity, tile, all fixtures) runs $3,450–$7,500. A full gut remodel runs $9,200–$18,000. Prices reflect 2026 Clark County rates with Camas material expectations factored in." },
-	{ q: "Do I need a permit for a bathroom remodel in Camas WA?", a: "The City of Camas requires permits for plumbing relocation, structural changes, and electrical panel work. Cosmetic remodels — new vanity, tile, fixtures, and paint within the existing layout — typically don't require a permit. Norbilt (WA Lic. NORBI**741CS) handles all permit applications when required." },
+	{ q: "Do I need a permit for a bathroom remodel in Camas WA?", a: "The City of Camas requires permits for plumbing relocation, structural changes, and electrical panel work. Cosmetic remodels — new vanity, tile, fixtures, and paint within the existing layout — typically don't require a permit. NORBILT (WA Lic. NORBI**741CS) handles all permit applications when required." },
 	{ q: "Why do Camas bathroom remodels cost more than other Clark County cities?", a: "Camas homeowners consistently choose higher-end materials — large-format tile, premium fixtures, quartz accents, and heated floors. These are the right choices for the market and for resale, but they push budgets toward the top of each tier. The homes themselves (newer, well-maintained) tend to have fewer hidden surprises, which helps predictability." },
 	{ q: "How long does a bathroom remodel take in Camas?", a: "A cosmetic refresh takes 1–2 days. A mid-range remodel takes 3–5 days. A full gut remodel takes 1–2 weeks. Primary suite remodels with custom tile take 2–4 weeks. We confirm exact timelines during the free estimate." },
 	{ q: "What adds the most value to a Camas bathroom before selling?", a: "In Camas's real estate market, updated tile, a new vanity, modern fixtures, and a clean grout/caulk job have the highest visible ROI. Buyers in Camas expect quality — a tired bathroom stands out more here than in other Clark County markets. A mid-range update ($3,450–$7,500) typically recovers 70–80% at sale." },
@@ -68,7 +68,7 @@ export default function BathroomRemodelCostCamasWA() {
 			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
 				"@context": "https://schema.org",
 				"@type": "Article",
-				headline: "Bathroom Remodel Cost in Camas WA: 2026 Pricing Guide", author: { "@type": "Person", name: "Andrey Norbilt" }, publisher: { "@type": "Organization", name: "Norbilt", logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" } }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://norbilt.com/blog/bathroom-remodel-cost-camas-wa"
+				headline: "Bathroom Remodel Cost in Camas WA: 2026 Pricing Guide", author: { "@type": "Person", name: "Andrey NORBILT" }, publisher: { "@type": "Organization", name: "NORBILT", logo: { "@type": "ImageObject", url: "https://www.norbilt.com/icon-v3.png" } }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://www.norbilt.com/blog/bathroom-remodel-cost-camas-wa"
 			})}} />
 			<script
 				type="application/ld+json"
@@ -76,9 +76,9 @@ export default function BathroomRemodelCostCamasWA() {
 					"@context": "https://schema.org",
 					"@type": "BreadcrumbList",
 					itemListElement: [
-						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
-						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
-						{ "@type": "ListItem", position: 3, name: "Bathroom Remodel Cost in Camas WA: 2026 Pricing Guide", item: "https://norbilt.com/blog/bathroom-remodel-cost-camas-wa" },
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://www.norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Bathroom Remodel Cost in Camas WA: 2026 Pricing Guide", item: "https://www.norbilt.com/blog/bathroom-remodel-cost-camas-wa" },
 					],
 				}) }}
 			/>
@@ -103,7 +103,7 @@ export default function BathroomRemodelCostCamasWA() {
 					<div className="max-w-3xl mx-auto px-6 lg:px-8 space-y-16">
 						<section className="space-y-5 text-gray-700 leading-relaxed text-lg">
 							<p>A bathroom remodel in Camas WA costs anywhere from <strong>$920 for a cosmetic refresh</strong> to <strong>$35,000+ for a high-end primary suite gut</strong>. Camas homeowners typically invest more in materials than other Clark County cities — and the homes here are newer, which means fewer hidden surprises and more predictable budgets.</p>
-							<p>Norbilt is a licensed general contractor (WA Lic. <strong>NORBI**741CS</strong>) serving Camas and all of Clark County. We carry $1,000,000 liability insurance and back all bathroom work with a 1-year workmanship warranty.</p>
+							<p>NORBILT is a licensed general contractor (WA Lic. <strong>NORBI**741CS</strong>) serving Camas and all of Clark County. We carry $1,000,000 liability insurance and back all bathroom work with a 1-year workmanship warranty.</p>
 						</section>
 						<section className="space-y-6">
 							<h2 className="text-3xl font-black text-[#1F2E2B] uppercase tracking-tighter">Bathroom Remodel Cost by Scope — Camas WA</h2>

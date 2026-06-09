@@ -1,35 +1,35 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Project Portfolio | Home Remodeling Photos | Norbilt Vancouver WA",
+	title: "Project Portfolio | Home Remodeling Photos | NORBILT Vancouver WA",
 	description:
-		"Browse real completed projects by Norbilt — bathroom remodels, kitchen updates, fence installation, and more across Clark County WA.",
+		"Browse real completed projects by NORBILT — bathroom remodels, kitchen updates, fence installation, and more across Clark County WA.",
 	alternates: {
-		canonical: "https://norbilt.com/portfolio",
+		canonical: "https://www.norbilt.com/portfolio",
 	},
 	openGraph: {
-		title: "Project Portfolio | Norbilt Vancouver WA",
+		title: "Project Portfolio | NORBILT Vancouver WA",
 		description:
-			"Real completed projects by Norbilt. Bathroom remodels, kitchen updates, fencing, and more across Clark County WA.",
-		url: "https://norbilt.com/portfolio",
-		siteName: "Norbilt",
+			"Real completed projects by NORBILT. Bathroom remodels, kitchen updates, fencing, and more across Clark County WA.",
+		url: "https://www.norbilt.com/portfolio",
+		siteName: "NORBILT",
 		locale: "en_US",
 		type: "website",
 		images: [
 			{
-				url: "https://norbilt.com/og-image.jpg",
+				url: "https://www.norbilt.com/og-image.jpg",
 				width: 1200,
 				height: 630,
-				alt: "Norbilt Project Portfolio Clark County WA",
+				alt: "NORBILT Project Portfolio Clark County WA",
 			},
 		],
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Project Portfolio | Norbilt Vancouver WA",
+		title: "Project Portfolio | NORBILT Vancouver WA",
 		description:
-			"Real completed projects by Norbilt across Clark County WA.",
-		images: ["https://norbilt.com/og-image.jpg"],
+			"Real completed projects by NORBILT across Clark County WA.",
+		images: ["https://www.norbilt.com/og-image.jpg"],
 	},
 	keywords: [
 		"home remodeling portfolio Vancouver WA",

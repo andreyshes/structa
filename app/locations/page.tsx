@@ -171,7 +171,7 @@ export default function LocationsIndexPage() {
 						</h1>
 
 						<p className="text-xl text-white/80 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6">
-							Norbilt is a licensed general contractor serving Vancouver and
+							NORBILT is a licensed general contractor serving Vancouver and
 							all of Clark County, WA. We provide home repairs, interior
 							remodeling, and quality contractor work you can trust.
 						</p>

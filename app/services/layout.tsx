@@ -1,35 +1,35 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Home Repair Services Vancouver WA | Norbilt Contractor",
+	title: "Home Repair Services Vancouver WA | NORBILT Contractor",
 	description:
-		"Explore Norbilt's home repair services in Vancouver WA. From finish carpentry and drywall to handyman work, we handle all interior repairs. Free estimate!",
+		"Explore NORBILT's home repair services in Vancouver WA. From finish carpentry and drywall to handyman work, we handle all interior repairs. Free estimate!",
 	alternates: {
-		canonical: "https://norbilt.com/services",
+		canonical: "https://www.norbilt.com/services",
 	},
 	openGraph: {
-		title: "Home Repair Services | Norbilt Vancouver WA",
+		title: "Home Repair Services | NORBILT Vancouver WA",
 		description:
 			"Licensed contractor offering carpentry, drywall, flooring, kitchen and bath updates, and handyman services in Clark County.",
-		url: "https://norbilt.com/services",
-		siteName: "Norbilt",
+		url: "https://www.norbilt.com/services",
+		siteName: "NORBILT",
 		locale: "en_US",
 		type: "website",
 		images: [
 			{
-				url: "https://norbilt.com/og-image.jpg",
+				url: "https://www.norbilt.com/og-image.jpg",
 				width: 1200,
 				height: 630,
-				alt: "Norbilt Home Repair Services Vancouver WA",
+				alt: "NORBILT Home Repair Services Vancouver WA",
 			},
 		],
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Home Repair Services | Norbilt Vancouver WA",
+		title: "Home Repair Services | NORBILT Vancouver WA",
 		description:
 			"Licensed contractor offering carpentry, drywall, flooring, kitchen and bath updates, and handyman services in Clark County.",
-		images: ["https://norbilt.com/og-image.jpg"],
+		images: ["https://www.norbilt.com/og-image.jpg"],
 	},
 };
 

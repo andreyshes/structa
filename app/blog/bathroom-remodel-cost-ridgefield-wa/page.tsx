@@ -3,20 +3,20 @@ import { ArrowRight, CheckCircle2, MapPin, Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Bathroom Remodel Cost Ridgefield WA | Norbilt",
+	title: "Bathroom Remodel Cost Ridgefield WA | NORBILT",
 	description:
 		"How much does a bathroom remodel cost in Ridgefield, WA? Real price ranges for tile, vanity, fixtures & more from a licensed Clark County contractor.",
 	alternates: {
-		canonical: "https://norbilt.com/blog/bathroom-remodel-cost-ridgefield-wa",
+		canonical: "https://www.norbilt.com/blog/bathroom-remodel-cost-ridgefield-wa",
 	},
 	openGraph: {
-		title: "Bathroom Remodel Cost in Ridgefield WA | Norbilt",
+		title: "Bathroom Remodel Cost in Ridgefield WA | NORBILT",
 		description:
 			"Real price ranges for bathroom remodels in Ridgefield and Clark County WA. From a licensed local contractor.",
-		url: "https://norbilt.com/blog/bathroom-remodel-cost-ridgefield-wa",
-		siteName: "Norbilt",
+		url: "https://www.norbilt.com/blog/bathroom-remodel-cost-ridgefield-wa",
+		siteName: "NORBILT",
 		type: "article",
-		images: [{ url: "https://norbilt.com/og-image.jpg", width: 1200, height: 630 }],
+		images: [{ url: "https://www.norbilt.com/og-image.jpg", width: 1200, height: 630 }],
 	},
 };
 
@@ -30,17 +30,17 @@ export default function BathroomRemodel() {
 						"@context": "https://schema.org",
 						"@type": "Article",
 						headline: "How Much Does a Bathroom Remodel Cost in Ridgefield, WA?",
-						author: { "@type": "Person", name: "Andrey Norbilt" },
+						author: { "@type": "Person", name: "Andrey NORBILT" },
 						publisher: {
 							"@type": "Organization",
-							name: "Norbilt",
-							logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" },
+							name: "NORBILT",
+							logo: { "@type": "ImageObject", url: "https://www.norbilt.com/icon-v3.png" },
 						},
 						datePublished: "2025-03-01",
 						dateModified: "2026-03-04",
 						description:
 							"A real cost breakdown for bathroom remodels in Ridgefield and Clark County WA.",
-						mainEntityOfPage: "https://norbilt.com/blog/bathroom-remodel-cost-ridgefield-wa",
+						mainEntityOfPage: "https://www.norbilt.com/blog/bathroom-remodel-cost-ridgefield-wa",
 					}),
 				}}
 			/>
@@ -50,9 +50,9 @@ export default function BathroomRemodel() {
 					"@context": "https://schema.org",
 					"@type": "BreadcrumbList",
 					itemListElement: [
-						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
-						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
-						{ "@type": "ListItem", position: 3, name: "Bathroom Remodel Cost in Ridgefield WA", item: "https://norbilt.com/blog/bathroom-remodel-cost-ridgefield-wa" },
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://www.norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Bathroom Remodel Cost in Ridgefield WA", item: "https://www.norbilt.com/blog/bathroom-remodel-cost-ridgefield-wa" },
 					],
 				}) }}
 			/>
@@ -79,7 +79,7 @@ export default function BathroomRemodel() {
 						</h1>
 				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
 					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
-					<p className="text-gray-700 leading-relaxed text-sm">A bathroom remodel in Ridgefield WA costs between $800 for a basic cosmetic refresh and $30,000+ for a full primary suite gut. A mid-range remodel — new vanity, tile floor, shower surround, all fixtures replaced — runs $3,000–$7,000 and takes 3–5 days. A full gut remodel costs $8,000–$16,000 over 1–2 weeks. Ridgefield's newer construction (Union Ridge, Bridgeport, Belmont) means cleaner subfloors and modern plumbing — fewer hidden surprises compared to older Clark County cities. Most Ridgefield homes were built after 2000, which makes budgets more predictable. The exception is older properties near downtown Ridgefield where original tile and aging pipes are more common. Washington State requires a licensed contractor for bathroom work above $500. Norbilt carries WA Lic. NORBI**741CS and $1,000,000 liability insurance. All prices reflect 2026 Clark County rates.</p>
+					<p className="text-gray-700 leading-relaxed text-sm">A bathroom remodel in Ridgefield WA costs between $800 for a basic cosmetic refresh and $30,000+ for a full primary suite gut. A mid-range remodel — new vanity, tile floor, shower surround, all fixtures replaced — runs $3,000–$7,000 and takes 3–5 days. A full gut remodel costs $8,000–$16,000 over 1–2 weeks. Ridgefield's newer construction (Union Ridge, Bridgeport, Belmont) means cleaner subfloors and modern plumbing — fewer hidden surprises compared to older Clark County cities. Most Ridgefield homes were built after 2000, which makes budgets more predictable. The exception is older properties near downtown Ridgefield where original tile and aging pipes are more common. Washington State requires a licensed contractor for bathroom work above $500. NORBILT carries WA Lic. NORBI**741CS and $1,000,000 liability insurance. All prices reflect 2026 Clark County rates.</p>
 				</div>
 						<p className="text-xl text-white/70 leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">
 							A realistic price breakdown from a licensed Clark County

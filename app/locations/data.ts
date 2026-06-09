@@ -34,7 +34,7 @@ export const locationsData: Record<string, CityData> = {
 	camas: {
 		name: "Camas, WA",
 		description:
-			"Norbilt offers high-end interior updates and repairs for Camas homeowners. Camas homes tend to be well-kept and owner-occupied, with many featuring detailed finish carpentry, tile work, and fixtures that deserve a careful touch. Our team works on both established Prune Hill homes and newer builds near Grass Valley. We bring the same licensed, insured standard to every Camas project, regardless of size.",
+			"NORBILT offers high-end interior updates and repairs for Camas homeowners. Camas homes tend to be well-kept and owner-occupied, with many featuring detailed finish carpentry, tile work, and fixtures that deserve a careful touch. Our team works on both established Prune Hill homes and newer builds near Grass Valley. We bring the same licensed, insured standard to every Camas project, regardless of size.",
 		neighborhoods: ["Prune Hill", "Deer Creek", "Grass Valley", "Fern Prairie"],
 	},
 	ridgefield: {
@@ -46,13 +46,13 @@ export const locationsData: Record<string, CityData> = {
 	"battle-ground": {
 		name: "Battle Ground, WA",
 		description:
-			"Norbilt provides reliable handyman services and licensed renovations in Battle Ground, WA. North Clark County homes in Daybreak and Cherry Grove vary widely in age and style, from acreage properties on larger lots to newer subdivision homes. Our team handles both small maintenance tasks and larger interior projects throughout Battle Ground. We are one of the most active licensed contractors in this area.",
+			"NORBILT provides reliable handyman services and licensed renovations in Battle Ground, WA. North Clark County homes in Daybreak and Cherry Grove vary widely in age and style, from acreage properties on larger lots to newer subdivision homes. Our team handles both small maintenance tasks and larger interior projects throughout Battle Ground. We are one of the most active licensed contractors in this area.",
 		neighborhoods: ["Daybreak", "Cherry Grove", "Lewisville"],
 	},
 	washougal: {
 		name: "Washougal, WA",
 		description:
-			"Norbilt provides home maintenance and interior updates for Washougal homeowners. Washougal properties range from older river-area homes near downtown to newer construction along Lookout Ridge with mountain views. Many homes here have original fixtures and trim that benefit from updates or replacement. Our team works throughout Washougal and the surrounding Camas–Washougal corridor with the same licensed, insured standard.",
+			"NORBILT provides home maintenance and interior updates for Washougal homeowners. Washougal properties range from older river-area homes near downtown to newer construction along Lookout Ridge with mountain views. Many homes here have original fixtures and trim that benefit from updates or replacement. Our team works throughout Washougal and the surrounding Camas–Washougal corridor with the same licensed, insured standard.",
 		neighborhoods: ["Downtown Washougal", "River's Edge", "Lookout Ridge"],
 	},
 	"brush-prairie": {
@@ -64,7 +64,7 @@ export const locationsData: Record<string, CityData> = {
 	felida: {
 		name: "Felida, WA",
 		description:
-			"Norbilt delivers detail-oriented home improvements in Felida, WA. Felida is one of Clark County's more established residential communities, with many homes built in the 1980s and 1990s that are now due for fixture updates, trim refreshes, and interior repairs. Our team handles everything from caulking and hardware replacement to full room updates. We bring professional results to every Felida home we work in.",
+			"NORBILT delivers detail-oriented home improvements in Felida, WA. Felida is one of Clark County's more established residential communities, with many homes built in the 1980s and 1990s that are now due for fixture updates, trim refreshes, and interior repairs. Our team handles everything from caulking and hardware replacement to full room updates. We bring professional results to every Felida home we work in.",
 		neighborhoods: ["Felida Overlook", "Lakeshore Park", "Erickson Farms"],
 	},
 	"hazel-dell": {
@@ -76,7 +76,7 @@ export const locationsData: Record<string, CityData> = {
 	"salmon-creek": {
 		name: "Salmon Creek, WA",
 		description:
-			"Norbilt offers drywall repair, interior finishing, and home updates in Salmon Creek, WA. Salmon Creek has a wide range of home ages and styles, from 1990s developments near Mount Vista to newer construction along the Salmon Creek corridor. Our team matches textures precisely, installs clean trim work, and keeps every project on schedule. We serve all Salmon Creek neighborhoods with free, no-obligation estimates.",
+			"NORBILT offers drywall repair, interior finishing, and home updates in Salmon Creek, WA. Salmon Creek has a wide range of home ages and styles, from 1990s developments near Mount Vista to newer construction along the Salmon Creek corridor. Our team matches textures precisely, installs clean trim work, and keeps every project on schedule. We serve all Salmon Creek neighborhoods with free, no-obligation estimates.",
 		neighborhoods: ["Mount Vista", "Salmon Creek Estates", "Clineline"],
 	},
 	"five-corners": {
@@ -88,13 +88,13 @@ export const locationsData: Record<string, CityData> = {
 	orchards: {
 		name: "Orchards, WA",
 		description:
-			"Norbilt provides efficient home maintenance and interior repairs in Orchards, WA. The Orchards area includes many 1970s and 1980s homes along Burnt Bridge Creek and Sifton where drywall, trim, doors, and fixtures are due for updates. Our team is familiar with these home styles and the most common issues they develop over time. We provide fast, licensed service for Orchards homeowners at honest flat-rate prices.",
+			"NORBILT provides efficient home maintenance and interior repairs in Orchards, WA. The Orchards area includes many 1970s and 1980s homes along Burnt Bridge Creek and Sifton where drywall, trim, doors, and fixtures are due for updates. Our team is familiar with these home styles and the most common issues they develop over time. We provide fast, licensed service for Orchards homeowners at honest flat-rate prices.",
 		neighborhoods: ["Burnt Bridge Creek", "Sifton", "Heritage"],
 	},
 	"mill-plain": {
 		name: "Mill Plain, WA",
 		description:
-			"Modernize your Mill Plain home with custom trim, flooring updates, and interior repairs from Norbilt. Mill Plain is one of Vancouver's busiest residential corridors, with homes ranging from early 2000s builds to recent new construction in Cimarron and Landover. Whether you need a quick maintenance fix or a room-level interior update, our team delivers clean, professional results. Free estimates for all Mill Plain homeowners.",
+			"Modernize your Mill Plain home with custom trim, flooring updates, and interior repairs from NORBILT. Mill Plain is one of Vancouver's busiest residential corridors, with homes ranging from early 2000s builds to recent new construction in Cimarron and Landover. Whether you need a quick maintenance fix or a room-level interior update, our team delivers clean, professional results. Free estimates for all Mill Plain homeowners.",
 		neighborhoods: ["Cimarron", "Landover", "Bennington"],
 	},
 	"lake-shore": {
@@ -182,7 +182,7 @@ export const servicesData: Record<string, ServiceData> = {
 			},
 			{
 				q: "Is drywall repair covered under your warranty?",
-				a: "Yes. All Norbilt drywall work is covered by our 1-year workmanship warranty. If a patch cracks, lifts, or the texture mismatches after settling, we come back and fix it at no charge.",
+				a: "Yes. All NORBILT drywall work is covered by our 1-year workmanship warranty. If a patch cracks, lifts, or the texture mismatches after settling, we come back and fix it at no charge.",
 			},
 		],
 	},
@@ -228,7 +228,7 @@ export const servicesData: Record<string, ServiceData> = {
 	"kitchen-bath": {
 		title: "Kitchen & Bathroom Remodeling",
 		description:
-			"Kitchens and bathrooms are the two rooms that drive home value the most — and the two rooms Clark County homeowners remodel most often. Norbilt handles the full range of kitchen and bathroom remodeling: full gut remodels, tub-to-shower conversions, vanity and tile replacements, backsplash installs, and targeted cosmetic refreshes. Every scope, every budget, licensed and backed by a 1-year warranty.",
+			"Kitchens and bathrooms are the two rooms that drive home value the most — and the two rooms Clark County homeowners remodel most often. NORBILT handles the full range of kitchen and bathroom remodeling: full gut remodels, tub-to-shower conversions, vanity and tile replacements, backsplash installs, and targeted cosmetic refreshes. Every scope, every budget, licensed and backed by a 1-year warranty.",
 		process:
 			"We shut off water or power as needed, remove the old fixture or hardware, and install the new one with proper sealing and alignment. Caulking is applied in a single clean bead and tooled smooth. Grout repairs are color-matched to existing tile before we start. Most kitchen and bathroom update visits are completed in a few hours with no overnight disruption to your daily routine.",
 		features: [
@@ -292,7 +292,7 @@ export const servicesData: Record<string, ServiceData> = {
 			},
 			{
 				q: "Is your kitchen and bathroom work covered by a warranty?",
-				a: "Yes. All Norbilt kitchen and bathroom work is backed by our 1-year workmanship warranty. If caulk fails, tile lifts, or any installed fixture has a workmanship issue, we return and fix it at no charge within the warranty period.",
+				a: "Yes. All NORBILT kitchen and bathroom work is backed by our 1-year workmanship warranty. If caulk fails, tile lifts, or any installed fixture has a workmanship issue, we return and fix it at no charge within the warranty period.",
 			},
 		],
 	},
@@ -301,7 +301,7 @@ export const servicesData: Record<string, ServiceData> = {
 	"bathroom-remodel": {
 		title: "Bathroom Remodeling",
 		description:
-			"Norbilt handles the full range of bathroom remodeling in Clark County — from a quick cosmetic refresh to a full gut remodel. We demo, waterproof, tile, and finish bathrooms that last. Whether you want a tub-to-shower conversion, a new vanity and tile floor, or a complete primary suite gut, our licensed team handles every detail including permits when required.",
+			"NORBILT handles the full range of bathroom remodeling in Clark County — from a quick cosmetic refresh to a full gut remodel. We demo, waterproof, tile, and finish bathrooms that last. Whether you want a tub-to-shower conversion, a new vanity and tile floor, or a complete primary suite gut, our licensed team handles every detail including permits when required.",
 		process:
 			"We start with a detailed walkthrough and give you a flat-rate written quote before any work begins. Demo is clean and contained. We install cement board or equivalent backer on all wet areas, set tile to level, grout, caulk all seams, and install fixtures. We don't cut corners on waterproofing — that's where bathroom remodels fail long-term.",
 		features: [
@@ -344,7 +344,7 @@ export const servicesData: Record<string, ServiceData> = {
 			},
 			{
 				q: "Do I need a permit for a bathroom remodel?",
-				a: "Cosmetic work — fixture swaps, vanity, tile, paint — typically doesn't require a permit in Clark County. Permits are required for plumbing relocation, structural changes, and electrical panel work. Norbilt (WA Lic. NORBI**741CS) pulls all required permits.",
+				a: "Cosmetic work — fixture swaps, vanity, tile, paint — typically doesn't require a permit in Clark County. Permits are required for plumbing relocation, structural changes, and electrical panel work. NORBILT (WA Lic. NORBI**741CS) pulls all required permits.",
 			},
 			{
 				q: "How long does a bathroom remodel take?",
@@ -352,7 +352,7 @@ export const servicesData: Record<string, ServiceData> = {
 			},
 			{
 				q: "Is your bathroom remodel work covered by a warranty?",
-				a: "Yes. All Norbilt bathroom remodeling is backed by a 1-year workmanship warranty. If tile lifts, caulk fails, or any installed fixture has a workmanship issue within the warranty period, we return and fix it at no charge.",
+				a: "Yes. All NORBILT bathroom remodeling is backed by a 1-year workmanship warranty. If tile lifts, caulk fails, or any installed fixture has a workmanship issue within the warranty period, we return and fix it at no charge.",
 			},
 		],
 	},
@@ -360,7 +360,7 @@ export const servicesData: Record<string, ServiceData> = {
 	"kitchen-remodel": {
 		title: "Kitchen Remodeling",
 		description:
-			"Norbilt handles kitchen remodeling at every scope in Clark County — from new countertops and backsplash to full cabinet replacements and custom builds. Kitchens drive more home value than any other room. Our licensed team handles all permitted work including plumbing connections and electrical at existing boxes, giving you one contractor from demo to final install.",
+			"NORBILT handles kitchen remodeling at every scope in Clark County — from new countertops and backsplash to full cabinet replacements and custom builds. Kitchens drive more home value than any other room. Our licensed team handles all permitted work including plumbing connections and electrical at existing boxes, giving you one contractor from demo to final install.",
 		process:
 			"We start with a detailed walkthrough and provide a flat-rate written quote before any work begins. Cabinets are installed level and plumb. Counters are templated on-site for a perfect fit. Backsplash tile is set to level and grouted with color-matched grout. We don't leave until the site is clean and you've walked through the finished work.",
 		features: [
@@ -398,7 +398,7 @@ export const servicesData: Record<string, ServiceData> = {
 			},
 			{
 				q: "Do I need a permit for a kitchen remodel?",
-				a: "Cosmetic work — counters, backsplash, hardware, lighting swaps at existing boxes — typically doesn't require a permit. Permits are required for plumbing relocation, gas line work, and electrical panel changes. Norbilt (WA Lic. NORBI**741CS) pulls all required permits.",
+				a: "Cosmetic work — counters, backsplash, hardware, lighting swaps at existing boxes — typically doesn't require a permit. Permits are required for plumbing relocation, gas line work, and electrical panel changes. NORBILT (WA Lic. NORBI**741CS) pulls all required permits.",
 			},
 			{
 				q: "Should I reface or replace my kitchen cabinets?",
@@ -410,7 +410,7 @@ export const servicesData: Record<string, ServiceData> = {
 			},
 			{
 				q: "Is your kitchen remodel work covered by a warranty?",
-				a: "Yes. All Norbilt kitchen remodeling is backed by a 1-year workmanship warranty. If counters lift, tile cracks at grout lines, or any installed component has a workmanship issue within the warranty period, we return and fix it at no charge.",
+				a: "Yes. All NORBILT kitchen remodeling is backed by a 1-year workmanship warranty. If counters lift, tile cracks at grout lines, or any installed component has a workmanship issue within the warranty period, we return and fix it at no charge.",
 			},
 		],
 	},
@@ -418,7 +418,7 @@ export const servicesData: Record<string, ServiceData> = {
 	"lighting": {
 		title: "Lighting & Fixtures",
 		description:
-			"Norbilt installs and upgrades lighting and fixtures throughout Clark County. New light fixtures, ceiling fans, recessed lighting, under-cabinet lighting, and fixture swaps — all done safely by a licensed contractor. We handle everything from a single fixture replacement to a full-room lighting redesign.",
+			"NORBILT installs and upgrades lighting and fixtures throughout Clark County. New light fixtures, ceiling fans, recessed lighting, under-cabinet lighting, and fixture swaps — all done safely by a licensed contractor. We handle everything from a single fixture replacement to a full-room lighting redesign.",
 		process:
 			"We shut off power at the breaker, remove the existing fixture, and install the new one with proper wire connections and secure mounting. We check for fan-rated boxes before any ceiling fan install and upgrade the box when needed. Every job is tested before we leave.",
 		features: [
@@ -457,7 +457,7 @@ export const servicesData: Record<string, ServiceData> = {
 		faqs: [
 			{
 				q: "Do I need a licensed contractor to replace a light fixture?",
-				a: "For swapping a fixture at an existing box, a licensed general contractor like Norbilt handles it legally and safely. For new circuits or panel work, a licensed electrician is required. We tell you honestly which applies to your job.",
+				a: "For swapping a fixture at an existing box, a licensed general contractor like NORBILT handles it legally and safely. For new circuits or panel work, a licensed electrician is required. We tell you honestly which applies to your job.",
 			},
 			{
 				q: "How much does light fixture installation cost in Clark County WA?",
@@ -469,14 +469,14 @@ export const servicesData: Record<string, ServiceData> = {
 			},
 			{
 				q: "Is your lighting work covered by a warranty?",
-				a: "Yes. All Norbilt lighting installations are backed by a 1-year workmanship warranty. If a fixture loosens or a connection fails within the warranty period, we return and fix it at no charge.",
+				a: "Yes. All NORBILT lighting installations are backed by a 1-year workmanship warranty. If a fixture loosens or a connection fails within the warranty period, we return and fix it at no charge.",
 			},
 		],
 	},
 	"home-repair": {
 		title: "Home Repair",
 		description:
-			"When something breaks or wears out in your home, Norbilt handles it fast and correctly. We cover the full range of interior home repairs — drywall patching, door and window fixes, fixture swaps, caulking, weatherstripping, safety upgrades, and general maintenance. As a licensed WA General Contractor, every repair meets state code, and our work is backed by a 1-year workmanship warranty. No job is too small.",
+			"When something breaks or wears out in your home, NORBILT handles it fast and correctly. We cover the full range of interior home repairs — drywall patching, door and window fixes, fixture swaps, caulking, weatherstripping, safety upgrades, and general maintenance. As a licensed WA General Contractor, every repair meets state code, and our work is backed by a 1-year workmanship warranty. No job is too small.",
 		process:
 			"We start with a quick walkthrough of what needs fixing, give you a flat-rate price before any work begins, and complete most repairs in a single visit. We bring the tools and common materials so there's no waiting. When we're done, we clean up completely and walk you through everything that was done.",
 		features: [
@@ -524,7 +524,7 @@ export const servicesData: Record<string, ServiceData> = {
 			},
 			{
 				q: "Do I need a licensed contractor for home repairs in Washington State?",
-				a: "Washington State requires a licensed contractor for repair work above a set dollar threshold. Hiring an unlicensed handyman above that limit is illegal and can void your homeowner's insurance. As a licensed WA General Contractor, every Norbilt repair is legal, insured, and code-compliant.",
+				a: "Washington State requires a licensed contractor for repair work above a set dollar threshold. Hiring an unlicensed handyman above that limit is illegal and can void your homeowner's insurance. As a licensed WA General Contractor, every NORBILT repair is legal, insured, and code-compliant.",
 			},
 			{
 				q: "How much do home repairs cost near me in Clark County?",
@@ -536,7 +536,7 @@ export const servicesData: Record<string, ServiceData> = {
 			},
 			{
 				q: "Is your home repair work guaranteed?",
-				a: "Yes. All Norbilt home repair work is backed by our 1-year workmanship warranty. If anything we repaired fails due to workmanship, we return and fix it at no charge.",
+				a: "Yes. All NORBILT home repair work is backed by our 1-year workmanship warranty. If anything we repaired fails due to workmanship, we return and fix it at no charge.",
 			},
 		],
 	},

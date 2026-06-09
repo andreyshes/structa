@@ -3,20 +3,20 @@ import { ArrowRight, CheckCircle2, Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Handyman Services in Battle Ground WA: 2026 Costs & What to Expect | Norbilt",
+	title: "Handyman Services in Battle Ground WA: 2026 Costs & What to Expect | NORBILT",
 	description:
 		"Looking for a handyman in Battle Ground WA? Real 2026 pricing for home repairs, drywall, fixtures, doors, and punch lists in Battle Ground and north Clark County.",
 	alternates: {
-		canonical: "https://norbilt.com/blog/battle-ground-handyman-cost",
+		canonical: "https://www.norbilt.com/blog/battle-ground-handyman-cost",
 	},
 	openGraph: {
-		title: "Handyman Services in Battle Ground WA: 2026 Costs & What to Expect | Norbilt",
+		title: "Handyman Services in Battle Ground WA: 2026 Costs & What to Expect | NORBILT",
 		description:
 			"Real 2026 handyman costs in Battle Ground WA. Hourly rates, job-by-job pricing for common repairs, and what to know before hiring in north Clark County.",
-		url: "https://norbilt.com/blog/battle-ground-handyman-cost",
-		siteName: "Norbilt",
+		url: "https://www.norbilt.com/blog/battle-ground-handyman-cost",
+		siteName: "NORBILT",
 		type: "article",
-		images: [{ url: "https://norbilt.com/og-image.jpg", width: 1200, height: 630 }],
+		images: [{ url: "https://www.norbilt.com/og-image.jpg", width: 1200, height: 630 }],
 	},
 };
 
@@ -50,11 +50,11 @@ const faqs = [
 	},
 	{
 		q: "Do you serve Battle Ground WA?",
-		a: "Yes. Norbilt serves Battle Ground and north Clark County regularly — no travel surcharge, no minimum order above our standard rate. We schedule Battle Ground estimates and jobs at the same rates as Vancouver and the rest of Clark County. Most estimates are scheduled within the same week.",
+		a: "Yes. NORBILT serves Battle Ground and north Clark County regularly — no travel surcharge, no minimum order above our standard rate. We schedule Battle Ground estimates and jobs at the same rates as Vancouver and the rest of Clark County. Most estimates are scheduled within the same week.",
 	},
 	{
 		q: "What handyman services do you offer in Battle Ground?",
-		a: "Norbilt handles the full range of handyman and home repair work in Battle Ground: drywall patching and repair, fixture swaps (ceiling fans, light fixtures, faucets, toilets), door realignment and weatherstripping, TV and shelf mounting, cabinet hardware, caulking, grout repair, safety grab bars, smart lock installation, window screen repair, furniture assembly, and multi-task punch lists. For larger remodels (kitchen, bathroom, flooring), we handle those as well.",
+		a: "NORBILT handles the full range of handyman and home repair work in Battle Ground: drywall patching and repair, fixture swaps (ceiling fans, light fixtures, faucets, toilets), door realignment and weatherstripping, TV and shelf mounting, cabinet hardware, caulking, grout repair, safety grab bars, smart lock installation, window screen repair, furniture assembly, and multi-task punch lists. For larger remodels (kitchen, bathroom, flooring), we handle those as well.",
 	},
 	{
 		q: "How quickly can you schedule in Battle Ground WA?",
@@ -66,7 +66,7 @@ const faqs = [
 	},
 	{
 		q: "Is your Battle Ground handyman work guaranteed?",
-		a: "Yes. All Norbilt handyman and repair work in Battle Ground and Clark County is backed by a 1-year workmanship warranty. If anything we installed or repaired develops a defect within the first year, we fix it at no charge. We're a licensed Washington State General Contractor — fully insured, bonded, and local to Clark County.",
+		a: "Yes. All NORBILT handyman and repair work in Battle Ground and Clark County is backed by a 1-year workmanship warranty. If anything we installed or repaired develops a defect within the first year, we fix it at no charge. We're a licensed Washington State General Contractor — fully insured, bonded, and local to Clark County.",
 	},
 ];
 
@@ -76,16 +76,16 @@ const schema = {
 		headline: "Handyman Services in Battle Ground WA: 2026 Costs & What to Expect",
 		description:
 			"Real 2026 pricing for handyman services in Battle Ground WA. Hourly rates, job-by-job cost table, and what to know before hiring in north Clark County.",
-		url: "https://norbilt.com/blog/battle-ground-handyman-cost",
+		url: "https://www.norbilt.com/blog/battle-ground-handyman-cost",
 		datePublished: "2026-05-26",
 		dateModified: "2026-05-26",
-		author: { "@type": "Organization", name: "Norbilt" },
+		author: { "@type": "Organization", name: "NORBILT" },
 		publisher: {
 			"@type": "Organization",
-			name: "Norbilt",
-			url: "https://norbilt.com",
+			name: "NORBILT",
+			url: "https://www.norbilt.com",
 		},
-		mainEntityOfPage: "https://norbilt.com/blog/battle-ground-handyman-cost",
+		mainEntityOfPage: "https://www.norbilt.com/blog/battle-ground-handyman-cost",
 };
 
 export default function BattleGroundHandymanPage() {
@@ -101,9 +101,9 @@ export default function BattleGroundHandymanPage() {
 			"@context": "https://schema.org",
 			"@type": "BreadcrumbList",
 			itemListElement: [
-				{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
-				{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
-				{ "@type": "ListItem", position: 3, name: "Handyman Services in Battle Ground WA: 2026 Costs & What to Expect", item: "https://norbilt.com/blog/battle-ground-handyman-cost" },
+				{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+				{ "@type": "ListItem", position: 2, name: "Blog", item: "https://www.norbilt.com/blog" },
+				{ "@type": "ListItem", position: 3, name: "Handyman Services in Battle Ground WA: 2026 Costs & What to Expect", item: "https://www.norbilt.com/blog/battle-ground-handyman-cost" },
 			],
 				}) }}
 			/>
@@ -135,7 +135,7 @@ export default function BattleGroundHandymanPage() {
 						<span>·</span>
 						<span>Battle Ground, WA · North Clark County</span>
 						<span>·</span>
-						<span>By Norbilt</span>
+						<span>By NORBILT</span>
 					</div>
 				</div>
 			</section>
@@ -148,7 +148,7 @@ export default function BattleGroundHandymanPage() {
 						A licensed handyman in Battle Ground WA charges <strong>$65–$95/hour</strong> in 2026. Most
 						common jobs run <strong>$150–$500</strong>. A half-day punch list runs{" "}
 						<strong>$350–$600</strong>. Battle Ground is in north Clark County — some contractors add a small
-						travel surcharge, but Norbilt serves Battle Ground regularly with <strong>no extra fees</strong>.
+						travel surcharge, but NORBILT serves Battle Ground regularly with <strong>no extra fees</strong>.
 					</p>
 				</div>
 			</section>
@@ -172,7 +172,7 @@ export default function BattleGroundHandymanPage() {
 					</p>
 					<p>
 						The short answer: <strong>$65–$95/hour</strong> for licensed work, or flat rates starting at{" "}
-						<strong>$150</strong> for most common single jobs. Norbilt serves Battle Ground at the same rates
+						<strong>$150</strong> for most common single jobs. NORBILT serves Battle Ground at the same rates
 						as Vancouver — no travel fees, same-week estimates.
 					</p>
 				</section>
@@ -212,7 +212,7 @@ export default function BattleGroundHandymanPage() {
 					</div>
 					<p className="text-sm text-gray-500 font-medium">
 						Source: 2026 Clark County contractor market rates. Licensed rates in Battle Ground match
-						Vancouver rates — Norbilt does not add a north county travel surcharge.
+						Vancouver rates — NORBILT does not add a north county travel surcharge.
 					</p>
 				</section>
 
@@ -273,7 +273,7 @@ export default function BattleGroundHandymanPage() {
 							},
 							{
 								title: "Drive Time from Vancouver",
-								body: "Battle Ground is 15–20 minutes north of Vancouver via I-5 or SR-503. Some contractors charge a travel surcharge for north Clark County jobs. Norbilt does not — we serve Battle Ground at the same rates as Vancouver and schedule it regularly as part of our weekly service area.",
+								body: "Battle Ground is 15–20 minutes north of Vancouver via I-5 or SR-503. Some contractors charge a travel surcharge for north Clark County jobs. NORBILT does not — we serve Battle Ground at the same rates as Vancouver and schedule it regularly as part of our weekly service area.",
 							},
 							{
 								title: "Older Homes Near Downtown Battle Ground",
@@ -330,7 +330,7 @@ export default function BattleGroundHandymanPage() {
 				{/* WHAT TO EXPECT */}
 				<section className="space-y-6">
 					<h2 className="text-3xl font-black text-[#1F2E2B] uppercase tracking-tighter">
-						What to Expect When Booking Norbilt in Battle Ground
+						What to Expect When Booking NORBILT in Battle Ground
 					</h2>
 					<div className="space-y-5">
 						{[
@@ -348,7 +348,7 @@ export default function BattleGroundHandymanPage() {
 							},
 							{
 								title: "1-Year Workmanship Warranty",
-								body: "Everything Norbilt installs, repairs, or builds in Battle Ground is backed by a 1-year workmanship warranty. If something we did develops a defect within the first year, we fix it at no charge.",
+								body: "Everything NORBILT installs, repairs, or builds in Battle Ground is backed by a 1-year workmanship warranty. If something we did develops a defect within the first year, we fix it at no charge.",
 							},
 						].map((item, i) => (
 							<div key={i} className="flex gap-6 items-start">
@@ -442,7 +442,7 @@ export default function BattleGroundHandymanPage() {
 							Serving Battle Ground WA
 						</p>
 						<p className="font-black text-xl uppercase tracking-tight">
-							Norbilt handles handyman work throughout Battle Ground and Clark County — same-week estimates, no travel fees, 1-year warranty.
+							NORBILT handles handyman work throughout Battle Ground and Clark County — same-week estimates, no travel fees, 1-year warranty.
 						</p>
 					</div>
 					<div className="flex flex-col sm:flex-row gap-4 shrink-0">

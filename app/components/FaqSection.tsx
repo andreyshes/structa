@@ -9,7 +9,7 @@ const faqs = [
 	{
 		question: "Are you licensed and insured in Washington State?",
 		answer:
-			"Yes, Norbilt is fully licensed, bonded, and insured in Washington State. We carry general liability insurance and workers' compensation coverage to protect our clients and our team.",
+			"Yes, NORBILT is fully licensed, bonded, and insured in Washington State. We carry general liability insurance and workers' compensation coverage to protect our clients and our team.",
 	},
 	{
 		question: "What areas do you serve?",

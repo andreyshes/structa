@@ -61,7 +61,7 @@ export default function ThankYouPage() {
 								Request <span className="text-[#2D5A3D]">Confirmed</span>
 							</h1>
 							<p className="text-xl text-gray-600 font-medium max-w-xl mx-auto">
-								Thank you for choosing Norbilt. We've received your project
+								Thank you for choosing NORBILT. We've received your project
 								details and we're ready to get to work.
 							</p>
 						</div>

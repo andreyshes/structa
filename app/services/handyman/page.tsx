@@ -19,13 +19,13 @@ import {
 import SectionHeader from "@/app/components/SectionHeader";
 
 export const metadata = {
-	title: "Handyman Services Vancouver WA | Handyman Near Me | Norbilt",
+	title: "Handyman Services Vancouver WA | Handyman Near Me | NORBILT",
 	description: "Licensed handyman near you in Vancouver WA & Clark County. Drywall, fixtures, doors, punch lists & more. 5-star Google rated. Free estimates. Call (360) 216-9920.",
-	alternates: { canonical: "https://norbilt.com/services/handyman" },
+	alternates: { canonical: "https://www.norbilt.com/services/handyman" },
 	openGraph: {
-		title: "Handyman Services Vancouver WA | Norbilt",
+		title: "Handyman Services Vancouver WA | NORBILT",
 		description: "Licensed handyman near you in Vancouver WA & Clark County.",
-		url: "https://norbilt.com/services/handyman",
+		url: "https://www.norbilt.com/services/handyman",
 	},
 };
 
@@ -73,9 +73,9 @@ export default function HandymanPage() {
 						"@graph": [
 							{
 								"@type": "LocalBusiness",
-								"@id": "https://norbilt.com/#business",
-								"name": "Norbilt",
-								"url": "https://norbilt.com",
+								"@id": "https://www.norbilt.com/#business",
+								"name": "NORBILT",
+								"url": "https://www.norbilt.com",
 								"telephone": "+13602169920",
 								"address": {
 									"@type": "PostalAddress",
@@ -95,11 +95,11 @@ export default function HandymanPage() {
 							{
 								"@type": "Service",
 								"name": "Handyman Services Vancouver WA",
-								"provider": { "@id": "https://norbilt.com/#business" },
+								"provider": { "@id": "https://www.norbilt.com/#business" },
 								"areaServed": "Vancouver WA",
 								"description": "Licensed handyman services in Vancouver WA and Clark County including drywall repair, fixture installation, door repairs, TV mounting, and home maintenance punch lists.",
 								"serviceType": "Handyman Service",
-								"url": "https://norbilt.com/services/handyman"
+								"url": "https://www.norbilt.com/services/handyman"
 							},
 							{
 								"@type": "FAQPage",
@@ -109,7 +109,7 @@ export default function HandymanPage() {
 										"name": "How do I find a reliable handyman near me in Vancouver WA?",
 										"acceptedAnswer": {
 											"@type": "Answer",
-											"text": "Norbilt is a licensed WA General Contractor serving Vancouver, Camas, Ridgefield, Battle Ground, and all of Clark County. Unlike unlicensed handymen found on apps, we carry full liability insurance and a contractor's bond. Call (360) 216-9920 or submit a project request for a free same-week estimate."
+											"text": "NORBILT is a licensed WA General Contractor serving Vancouver, Camas, Ridgefield, Battle Ground, and all of Clark County. Unlike unlicensed handymen found on apps, we carry full liability insurance and a contractor's bond. Call (360) 216-9920 or submit a project request for a free same-week estimate."
 										}
 									},
 									{
@@ -141,7 +141,7 @@ export default function HandymanPage() {
 										"name": "Are you a licensed handyman in Washington State?",
 										"acceptedAnswer": {
 											"@type": "Answer",
-											"text": "Yes. Norbilt is a licensed and bonded WA General Contractor. In Washington, repair work above a set dollar amount legally requires a licensed contractor. Hiring unlicensed help can void your homeowner's insurance and cause issues at resale. Every Norbilt job is fully insured and code-compliant."
+											"text": "Yes. NORBILT is a licensed and bonded WA General Contractor. In Washington, repair work above a set dollar amount legally requires a licensed contractor. Hiring unlicensed help can void your homeowner's insurance and cause issues at resale. Every NORBILT job is fully insured and code-compliant."
 										}
 									}
 								]
@@ -251,7 +251,7 @@ export default function HandymanPage() {
 							</h2>
 
 							<p className="text-gray-600 text-lg font-medium leading-relaxed">
-								Finding a good handyman should not be a gamble. Norbilt
+								Finding a good handyman should not be a gamble. NORBILT
 								handles all the small and mid-size jobs your home needs. We
 								fill the gap between casual labor and a full remodel.
 							</p>
@@ -277,7 +277,7 @@ export default function HandymanPage() {
 							<div className="absolute -inset-4 bg-[#F8F6F3] rounded-[3rem] rotate-1 group-hover:rotate-0 transition-transform duration-500" />
 							<div className="relative bg-[#1F2E2B] p-10 lg:p-14 rounded-[2.5rem] shadow-2xl border-b-[8px] border-[#FFB800]">
 								<h3 className="text-2xl font-black text-white uppercase tracking-tighter mb-8 italic">
-									The Norbilt Advantage
+									The NORBILT Advantage
 								</h3>
 								<div className="space-y-8">
 									<div className="space-y-2 border-l-2 border-[#FFB800]/30 pl-6">
@@ -472,7 +472,7 @@ export default function HandymanPage() {
 							},
 							{
 								q: "Do I need a licensed handyman in Vancouver WA?",
-								a: "In Washington State, repair work above a set dollar amount requires a licensed contractor. As a result, hiring a registered WA General Contractor like Norbilt protects you legally and ensures the work meets code. In fact, unlicensed repair work can affect your home insurance and future resale value.",
+								a: "In Washington State, repair work above a set dollar amount requires a licensed contractor. As a result, hiring a registered WA General Contractor like NORBILT protects you legally and ensures the work meets code. In fact, unlicensed repair work can affect your home insurance and future resale value.",
 							},
 							{
 								q: "How much does handyman service cost in Vancouver WA?",
@@ -484,7 +484,7 @@ export default function HandymanPage() {
 							},
 							{
 								q: "How do I find a handyman near me in Vancouver WA?",
-								a: "Norbilt is locally based in Vancouver WA and serves all of Clark County. We offer same-week estimates and straightforward pricing. You can call us at (360) 216-9920, submit a project request online, or use our instant estimator to get an idea of cost before we visit.",
+								a: "NORBILT is locally based in Vancouver WA and serves all of Clark County. We offer same-week estimates and straightforward pricing. You can call us at (360) 216-9920, submit a project request online, or use our instant estimator to get an idea of cost before we visit.",
 							},
 							{
 								q: "Do you offer senior-friendly handyman services?",
@@ -527,7 +527,7 @@ export default function HandymanPage() {
 					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 						{[
 							{
-								quote: "We had a positive experience with Norbilt here in Vancouver, WA. I worked with Andrey, who was courteous, professional, efficient, and delivered high-quality work in a timely manner. It's hard to find reliable help these days, and I truly appreciated his attention to detail and expertise.",
+								quote: "We had a positive experience with NORBILT here in Vancouver, WA. I worked with Andrey, who was courteous, professional, efficient, and delivered high-quality work in a timely manner. It's hard to find reliable help these days, and I truly appreciated his attention to detail and expertise.",
 								name: "M. Taylor",
 								location: "Vancouver, WA",
 							},
@@ -537,7 +537,7 @@ export default function HandymanPage() {
 								location: "Vancouver, WA",
 							},
 							{
-								quote: "Great experience with Norbilt. Andrey and his team were professional, easy to work with, and delivered high-quality work. Everything was smooth from start to finish. Highly recommend!",
+								quote: "Great experience with NORBILT. Andrey and his team were professional, easy to work with, and delivered high-quality work. Everything was smooth from start to finish. Highly recommend!",
 								name: "Sam Y.",
 								location: "Vancouver, WA",
 							},
@@ -547,7 +547,7 @@ export default function HandymanPage() {
 								location: "Vancouver, WA",
 							},
 							{
-								quote: "I had a great experience working with Norbilt on my remodeling project. From start to finish, their team was professional, detail-oriented, and easy to communicate with. Andrey was especially helpful — he made sure everything stayed on track and met my expectations.",
+								quote: "I had a great experience working with NORBILT on my remodeling project. From start to finish, their team was professional, detail-oriented, and easy to communicate with. Andrey was especially helpful — he made sure everything stayed on track and met my expectations.",
 								name: "Taylor K.",
 								location: "Vancouver, WA",
 							},

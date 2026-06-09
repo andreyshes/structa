@@ -3,20 +3,20 @@ import { ArrowRight, CheckCircle2, MapPin, Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "7 Signs You Need a Bathroom Remodel | Vancouver WA | Norbilt",
+	title: "7 Signs You Need a Bathroom Remodel | Vancouver WA | NORBILT",
 	description:
 		"Is your bathroom due for an update? Here are 7 signs Vancouver WA homeowners shouldn't ignore — from mold and water damage to outdated fixtures that hurt home value.",
 	alternates: {
-		canonical: "https://norbilt.com/blog/signs-you-need-bathroom-remodel-vancouver-wa",
+		canonical: "https://www.norbilt.com/blog/signs-you-need-bathroom-remodel-vancouver-wa",
 	},
 	openGraph: {
-		title: "7 Signs You Need a Bathroom Remodel in Vancouver WA | Norbilt",
+		title: "7 Signs You Need a Bathroom Remodel in Vancouver WA | NORBILT",
 		description:
 			"Don't ignore these warning signs. A Clark County contractor explains when it's time to remodel your bathroom.",
-		url: "https://norbilt.com/blog/signs-you-need-bathroom-remodel-vancouver-wa",
-		siteName: "Norbilt",
+		url: "https://www.norbilt.com/blog/signs-you-need-bathroom-remodel-vancouver-wa",
+		siteName: "NORBILT",
 		type: "article",
-		images: [{ url: "https://norbilt.com/og-image.jpg", width: 1200, height: 630 }],
+		images: [{ url: "https://www.norbilt.com/og-image.jpg", width: 1200, height: 630 }],
 	},
 };
 
@@ -30,17 +30,17 @@ export default function BathroomRemodel() {
 						"@context": "https://schema.org",
 						"@type": "Article",
 						headline: "7 Signs You Need a Bathroom Remodel in Vancouver, WA",
-						author: { "@type": "Person", name: "Andrey Norbilt" },
+						author: { "@type": "Person", name: "Andrey NORBILT" },
 						publisher: {
 							"@type": "Organization",
-							name: "Norbilt",
-							logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" },
+							name: "NORBILT",
+							logo: { "@type": "ImageObject", url: "https://www.norbilt.com/icon-v3.png" },
 						},
 						datePublished: "2026-04-06",
 						dateModified: "2026-04-06",
 						description:
 							"Seven signs Vancouver WA homeowners should watch for that signal it's time for a bathroom remodel.",
-						mainEntityOfPage: "https://norbilt.com/blog/signs-you-need-bathroom-remodel-vancouver-wa",
+						mainEntityOfPage: "https://www.norbilt.com/blog/signs-you-need-bathroom-remodel-vancouver-wa",
 					}),
 				}}
 			/>
@@ -50,9 +50,9 @@ export default function BathroomRemodel() {
 					"@context": "https://schema.org",
 					"@type": "BreadcrumbList",
 					itemListElement: [
-						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
-						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
-						{ "@type": "ListItem", position: 3, name: "7 Signs You Need a Bathroom Remodel in Vancouver WA", item: "https://norbilt.com/blog/signs-you-need-bathroom-remodel-vancouver-wa" },
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://www.norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "7 Signs You Need a Bathroom Remodel in Vancouver WA", item: "https://www.norbilt.com/blog/signs-you-need-bathroom-remodel-vancouver-wa" },
 					],
 				}) }}
 			/>

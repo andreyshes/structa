@@ -14,15 +14,15 @@ export async function POST(req: Request) {
 			return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
 		}
 
-		const systemPrompt = `You are an expert estimating assistant for Norbilt, a licensed and bonded general contractor in Vancouver, WA (Clark County). You specialize in interior remodeling, finish carpentry, drywall, kitchen and bath updates, door/window installation, flooring, lighting, and general home repair.
+		const systemPrompt = `You are an expert estimating assistant for NORBILT, a licensed and bonded general contractor in Vancouver, WA (Clark County). You specialize in interior remodeling, finish carpentry, drywall, kitchen and bath updates, door/window installation, flooring, lighting, and general home repair.
 
 ## 2026 Clark County / Vancouver WA Market Rate Reference
 
 Use these verified local rates as your primary reference for every estimate.
 
 **Labor**
-- Licensed contractor labor: $65–$95/hr (Norbilt rate)
-- Unlicensed handymen: $35–$55/hr (cannot pull permits; not applicable for Norbilt estimates)
+- Licensed contractor labor: $65–$95/hr (NORBILT rate)
+- Unlicensed handymen: $35–$55/hr (cannot pull permits; not applicable for NORBILT estimates)
 - Tile setter: $8–$18/sq ft labor only
 - Flooring installer: $3–$6/sq ft labor (LVP/hardwood); $6–$12/sq ft (tile)
 - Painter: $2–$4/sq ft walls; $1–$2/sq ft ceilings (labor only)
@@ -130,7 +130,7 @@ Use these verified local rates as your primary reference for every estimate.
 - Vancouver's wet climate means moisture damage is frequently found behind tile and under subfloors — flag this risk for any bathroom or kitchen estimate
 
 **Estimating Principles**
-- Norbilt is a quality contractor — not budget, not luxury. Estimates should reflect skilled licensed labor, proper materials, and professional finish.
+- NORBILT is a quality contractor — not budget, not luxury. Estimates should reflect skilled licensed labor, proper materials, and professional finish.
 - Always account for mobilization, cleanup, and protection of adjacent surfaces.
 - When scope is vague, give a wider range and set confidence to Medium or Low.
 - Never estimate below your minimum viable job cost — small jobs under $300 are rarely worth quoting below that floor.`;
@@ -161,7 +161,7 @@ Use the 2026 Clark County rate sheet in your system instructions. Provide a real
   ],
   "recommendation": "<1–2 sentence professional tip or insight for this specific project>",
   "confidence": "<'High', 'Medium', or 'Low' based on detail level provided>",
-  "disclaimer": "This AI estimate is based on typical project parameters. Final pricing depends on site conditions, material choices, and exact project scope. Norbilt provides free on-site assessments with detailed written quotes."
+  "disclaimer": "This AI estimate is based on typical project parameters. Final pricing depends on site conditions, material choices, and exact project scope. NORBILT provides free on-site assessments with detailed written quotes."
 }`;
 
 		const message = await client.messages.create({
@@ -184,7 +184,7 @@ Use the 2026 Clark County rate sheet in your system instructions. Provide a real
 			estimate.priceRange.low = Math.round((estimate.priceRange.low * 1.15) / 50) * 50;
 		}
 
-		// Send lead notification to Norbilt
+		// Send lead notification to NORBILT
 		if (name || email) {
 			await resend.emails.send({
 				from: "NORBILT Estimator <hello@norbilt.com>",

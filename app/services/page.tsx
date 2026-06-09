@@ -215,7 +215,7 @@ export default function ServicesPage() {
 						</h1>
 
 						<p className="text-xl text-white/80 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6">
-							Norbilt is a licensed general contractor serving Vancouver and all of Clark County. We handle interior repairs, finish carpentry, drywall, flooring, kitchen and bath updates, and full handyman punch lists — all under one roof, with written estimates before any work begins.
+							NORBILT is a licensed general contractor serving Vancouver and all of Clark County. We handle interior repairs, finish carpentry, drywall, flooring, kitchen and bath updates, and full handyman punch lists — all under one roof, with written estimates before any work begins.
 						</p>
 						<div className="flex flex-wrap gap-4 pt-2">
 							<Link
@@ -354,7 +354,7 @@ export default function ServicesPage() {
 					<div className="mt-16 space-y-6">
 						{[
 							{
-								q: "What home repair services does Norbilt offer?",
+								q: "What home repair services does NORBILT offer?",
 								a: "We offer finish carpentry, drywall repair, kitchen and bath updates, flooring repair, door and window services, lighting and fixture installation, and general handyman services. All work is performed by a licensed Washington State general contractor.",
 							},
 							{

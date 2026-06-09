@@ -3,20 +3,20 @@ import { ArrowRight, CheckCircle2, MapPin, Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Kitchen Remodel Cost in Clark County WA: 2026 Guide | Norbilt",
+	title: "Kitchen Remodel Cost in Clark County WA: 2026 Guide | NORBILT",
 	description:
 		"How much does a kitchen remodel cost in Clark County WA? Real 2026 price ranges for Vancouver, Camas, and Ridgefield — from a $1,500 cosmetic refresh to a $80,000 custom build.",
 	alternates: {
-		canonical: "https://norbilt.com/blog/kitchen-remodel-cost-clark-county-wa",
+		canonical: "https://www.norbilt.com/blog/kitchen-remodel-cost-clark-county-wa",
 	},
 	openGraph: {
-		title: "Kitchen Remodel Cost in Clark County WA: 2026 Guide | Norbilt",
+		title: "Kitchen Remodel Cost in Clark County WA: 2026 Guide | NORBILT",
 		description:
 			"Real 2026 cost breakdown for kitchen remodels in Clark County WA. Scope tiers, component pricing, city breakdowns, and what drives the price up.",
-		url: "https://norbilt.com/blog/kitchen-remodel-cost-clark-county-wa",
-		siteName: "Norbilt",
+		url: "https://www.norbilt.com/blog/kitchen-remodel-cost-clark-county-wa",
+		siteName: "NORBILT",
 		type: "article",
-		images: [{ url: "https://norbilt.com/og-image.jpg", width: 1200, height: 630 }],
+		images: [{ url: "https://www.norbilt.com/og-image.jpg", width: 1200, height: 630 }],
 	},
 };
 
@@ -118,7 +118,7 @@ const faqs = [
 	},
 	{
 		q: "Do I need a permit for a kitchen remodel in Clark County?",
-		a: "Cosmetic work — hardware, paint, backsplash, faucet swaps — does not require a permit. Permits are required when moving or adding plumbing, electrical, or structural walls. Clark County permits typically cost $150–$800 depending on project scope. Norbilt pulls all required permits as part of the project.",
+		a: "Cosmetic work — hardware, paint, backsplash, faucet swaps — does not require a permit. Permits are required when moving or adding plumbing, electrical, or structural walls. Clark County permits typically cost $150–$800 depending on project scope. NORBILT pulls all required permits as part of the project.",
 	},
 	{
 		q: "How long does a kitchen remodel take?",
@@ -144,14 +144,14 @@ const schema = {
 	headline: "Kitchen Remodel Cost in Clark County WA: 2026 Guide",
 	description:
 		"Real 2026 price ranges for kitchen remodels in Clark County WA — from cosmetic refreshes to full custom builds. Component pricing, city breakdowns, and cost drivers.",
-	url: "https://norbilt.com/blog/kitchen-remodel-cost-clark-county-wa",
+	url: "https://www.norbilt.com/blog/kitchen-remodel-cost-clark-county-wa",
 	datePublished: "2026-04-28",
 	dateModified: "2026-04-28",
-	author: { "@type": "Organization", name: "Norbilt" },
+	author: { "@type": "Organization", name: "NORBILT" },
 	publisher: {
 		"@type": "Organization",
-		name: "Norbilt",
-		url: "https://norbilt.com",
+		name: "NORBILT",
+		url: "https://www.norbilt.com",
 	},
 };
 
@@ -172,9 +172,9 @@ export default function KitchenRemodeCostPage() {
 					"@context": "https://schema.org",
 					"@type": "BreadcrumbList",
 					itemListElement: [
-						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
-						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
-						{ "@type": "ListItem", position: 3, name: "Kitchen Remodel Cost in Clark County WA: 2026 Guide", item: "https://norbilt.com/blog/kitchen-remodel-cost-clark-county-wa" },
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://www.norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Kitchen Remodel Cost in Clark County WA: 2026 Guide", item: "https://www.norbilt.com/blog/kitchen-remodel-cost-clark-county-wa" },
 					],
 				}) }}
 			/>
@@ -491,7 +491,7 @@ export default function KitchenRemodeCostPage() {
 							Ready to Get Started?
 						</p>
 						<p className="font-black text-xl uppercase tracking-tight">
-							Norbilt handles kitchen updates across Clark County — free estimate, 1-year warranty.
+							NORBILT handles kitchen updates across Clark County — free estimate, 1-year warranty.
 						</p>
 					</div>
 					<div className="flex flex-col sm:flex-row gap-4 shrink-0">

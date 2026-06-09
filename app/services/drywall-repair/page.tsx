@@ -85,7 +85,7 @@ const faqs = [
 	},
 	{
 		q: "Is your drywall work covered by a warranty?",
-		a: "Yes. All Norbilt drywall work is covered by a 1-year workmanship warranty. If a patch cracks, lifts, or the texture mismatches after settling, we come back and fix it at no charge within the warranty period.",
+		a: "Yes. All NORBILT drywall work is covered by a 1-year workmanship warranty. If a patch cracks, lifts, or the texture mismatches after settling, we come back and fix it at no charge within the warranty period.",
 	},
 ];
 
@@ -110,8 +110,8 @@ const schema = {
 	"@graph": [
 		{
 			"@type": "LocalBusiness",
-			name: "Norbilt",
-			url: "https://norbilt.com/services/drywall-repair",
+			name: "NORBILT",
+			url: "https://www.norbilt.com/services/drywall-repair",
 			telephone: "+1-3602169920",
 			areaServed: "Clark County, WA",
 			description:
@@ -136,7 +136,7 @@ const schema = {
 };
 
 export const metadata = {
-	title: "Drywall Repair | Vancouver WA | Norbilt",
+	title: "Drywall Repair | Vancouver WA | NORBILT",
 	description:
 		"Licensed drywall repair in Vancouver WA and Clark County. Hole patching, texture matching, water damage repair, popcorn ceiling removal. Free estimates. 1-year warranty.",
 };

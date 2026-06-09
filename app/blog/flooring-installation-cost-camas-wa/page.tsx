@@ -3,20 +3,20 @@ import { ArrowRight, CheckCircle2, MapPin, Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Flooring Installation Cost Camas WA | LVP, Tile & Hardwood | Norbilt",
+	title: "Flooring Installation Cost Camas WA | LVP, Tile & Hardwood | NORBILT",
 	description:
 		"How much does flooring installation cost in Camas, WA? Real price ranges for LVP, hardwood, and tile from a licensed Clark County contractor. Free estimates.",
 	alternates: {
-		canonical: "https://norbilt.com/blog/flooring-installation-cost-camas-wa",
+		canonical: "https://www.norbilt.com/blog/flooring-installation-cost-camas-wa",
 	},
 	openGraph: {
-		title: "Flooring Installation Cost in Camas WA | Norbilt",
+		title: "Flooring Installation Cost in Camas WA | NORBILT",
 		description:
 			"LVP, hardwood, and tile flooring costs in Camas and Clark County WA. Real numbers from a local licensed contractor.",
-		url: "https://norbilt.com/blog/flooring-installation-cost-camas-wa",
-		siteName: "Norbilt",
+		url: "https://www.norbilt.com/blog/flooring-installation-cost-camas-wa",
+		siteName: "NORBILT",
 		type: "article",
-		images: [{ url: "https://norbilt.com/og-image.jpg", width: 1200, height: 630 }],
+		images: [{ url: "https://www.norbilt.com/og-image.jpg", width: 1200, height: 630 }],
 	},
 };
 
@@ -30,17 +30,17 @@ export default function FlooringCost() {
 						"@context": "https://schema.org",
 						"@type": "Article",
 						headline: "How Much Does Flooring Installation Cost in Camas, WA?",
-						author: { "@type": "Person", name: "Andrey Norbilt" },
+						author: { "@type": "Person", name: "Andrey NORBILT" },
 						publisher: {
 							"@type": "Organization",
-							name: "Norbilt",
-							logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" },
+							name: "NORBILT",
+							logo: { "@type": "ImageObject", url: "https://www.norbilt.com/icon-v3.png" },
 						},
 						datePublished: "2026-04-06",
 						dateModified: "2026-04-06",
 						description:
 							"Real flooring installation costs for LVP, hardwood, and tile in Camas and Clark County WA.",
-						mainEntityOfPage: "https://norbilt.com/blog/flooring-installation-cost-camas-wa",
+						mainEntityOfPage: "https://www.norbilt.com/blog/flooring-installation-cost-camas-wa",
 					}),
 				}}
 			/>
@@ -50,9 +50,9 @@ export default function FlooringCost() {
 					"@context": "https://schema.org",
 					"@type": "BreadcrumbList",
 					itemListElement: [
-						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
-						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
-						{ "@type": "ListItem", position: 3, name: "Flooring Installation Cost in Camas WA", item: "https://norbilt.com/blog/flooring-installation-cost-camas-wa" },
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://www.norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Flooring Installation Cost in Camas WA", item: "https://www.norbilt.com/blog/flooring-installation-cost-camas-wa" },
 					],
 				}) }}
 			/>

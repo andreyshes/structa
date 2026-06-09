@@ -254,7 +254,7 @@ export default function FlooringPage() {
 							},
 							{
 								q: "Is your flooring work covered by a warranty?",
-								a: "Yes. All Norbilt flooring installs are backed by a 1-year workmanship warranty. If planks lift, tiles crack at grout lines, or any installation issue arises, we return and fix it at no charge within the warranty period.",
+								a: "Yes. All NORBILT flooring installs are backed by a 1-year workmanship warranty. If planks lift, tiles crack at grout lines, or any installation issue arises, we return and fix it at no charge within the warranty period.",
 							},
 						].map((item, i) => (
 							<div key={i} className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">

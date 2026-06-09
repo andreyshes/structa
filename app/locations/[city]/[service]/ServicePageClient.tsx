@@ -51,7 +51,7 @@ export default function ServicePageClient({
 		},
 		{
 			q: `Are you a licensed general contractor in ${cityNameShort}?`,
-			a: `Yes. Norbilt is a licensed, bonded, and insured general contractor. We serve homeowners in ${cityNameShort} and Clark County.`,
+			a: `Yes. NORBILT is a licensed, bonded, and insured general contractor. We serve homeowners in ${cityNameShort} and Clark County.`,
 		},
 		{
 			q: `Do you provide free estimates for ${service.title} in ${cityNameShort}?`,
@@ -71,10 +71,10 @@ export default function ServicePageClient({
 							{
 								"@type": "BreadcrumbList",
 								itemListElement: [
-									{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
-									{ "@type": "ListItem", position: 2, name: "Locations", item: "https://norbilt.com/locations" },
-									{ "@type": "ListItem", position: 3, name: city.name, item: `https://norbilt.com/locations/${citySlug}` },
-									{ "@type": "ListItem", position: 4, name: service.title, item: `https://norbilt.com/locations/${citySlug}/${serviceSlug}` },
+									{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+									{ "@type": "ListItem", position: 2, name: "Locations", item: "https://www.norbilt.com/locations" },
+									{ "@type": "ListItem", position: 3, name: city.name, item: `https://www.norbilt.com/locations/${citySlug}` },
+									{ "@type": "ListItem", position: 4, name: service.title, item: `https://www.norbilt.com/locations/${citySlug}/${serviceSlug}` },
 								],
 							},
 							{
@@ -87,8 +87,8 @@ export default function ServicePageClient({
 							},
 							{
 								"@type": "LocalBusiness",
-								name: "Norbilt",
-								url: `https://norbilt.com/locations/${citySlug}/${serviceSlug}`,
+								name: "NORBILT",
+								url: `https://www.norbilt.com/locations/${citySlug}/${serviceSlug}`,
 								telephone: "+1-3602169920",
 								aggregateRating: {
 									"@type": "AggregateRating",
@@ -134,7 +134,7 @@ export default function ServicePageClient({
 						</h1>
 
 						<p className="max-w-2xl text-xl text-white/70 border-l-4 border-[#FFB800] pl-6 mb-10 font-medium leading-relaxed">
-							Norbilt provides expert {service.title.toLowerCase()} for local
+							NORBILT provides expert {service.title.toLowerCase()} for local
 							homeowners. Our team delivers high-quality results on every
 							project. We are the trusted choice for home repairs in{" "}
 							{cityNameShort}.
@@ -225,7 +225,7 @@ export default function ServicePageClient({
 					<div className="bg-[#1F2E2B] p-12 rounded-[3rem] border-b-8 border-[#FFB800] text-white">
 						<Shield className="w-12 h-12 text-[#FFB800] mb-6" />
 						<h3 className="text-2xl font-black uppercase mb-4 tracking-tighter">
-							The Norbilt Promise
+							The NORBILT Promise
 						</h3>
 						<p className="text-[#A7C4B5] mb-8 font-medium italic">
 							"We provide craftsmanship you can trust for a home you can be

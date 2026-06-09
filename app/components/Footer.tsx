@@ -16,7 +16,7 @@ export default function Footer() {
 							<div className="relative w-32 h-32 -ml-4">
 								<Image
 									src="/NORBILT.png"
-									alt="Norbilt Logo"
+									alt="NORBILT Logo"
 									fill
 									sizes="128px"
 									className="object-contain brightness-0 invert opacity-90"
@@ -186,7 +186,7 @@ export default function Footer() {
 				<div className="max-w-7xl mx-auto px-6 lg:px-8 py-6 text-center md:text-left">
 					<div className="flex flex-col md:flex-row justify-between items-center gap-4">
 						<p className="text-sm text-[#F8F6F3]/50">
-							© {currentYear} Norbilt.
+							© {currentYear} NORBILT.
 						</p>
 						<p className="text-sm text-[#F8F6F3]/50">
 							General Contractor in Vancouver, WA · WA Lic. NORBI**741CS

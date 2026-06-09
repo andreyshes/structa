@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 	const serviceData = servicesData[resolvedParams.service];
 
 	if (!cityData || !serviceData || !cityData.name) {
-		return { title: "Home Repair Services | Norbilt" };
+		return { title: "Home Repair Services | NORBILT" };
 	}
 
 	const cityName = cityData.name?.split(",")[0] || "Local";
@@ -25,16 +25,16 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 
 	// Service-specific title and description patterns for higher CTR
 	const titleMap: Record<string, string> = {
-		"handyman": `Handyman in ${cityName} WA | 5-Star Licensed | Same-Week | Norbilt`,
-		"home-repair": `Home Repair in ${cityName} WA | Licensed & 5-Star Rated | Norbilt`,
-		"drywall-repair": `Drywall Repair in ${cityName} WA | Seamless Patches | Free Estimate | Norbilt`,
-		"finish-carpentry": `Finish Carpentry in ${cityName} WA | Crown Molding & Trim | Norbilt`,
-		"kitchen-bath": `Kitchen & Bathroom Remodeling in ${cityName} WA | Licensed Contractor | Norbilt`,
-		"flooring": `Flooring Repair in ${cityName} WA | LVP & Tile | Free Estimate | Norbilt`,
-		"door-window": `Door & Window Repair in ${cityName} WA | Licensed | Free Estimate | Norbilt`,
-		"bathroom-remodel": `Bathroom Remodeling in ${cityName} WA | Licensed Contractor | Norbilt`,
-		"kitchen-remodel": `Kitchen Remodeling in ${cityName} WA | Licensed Contractor | Norbilt`,
-		"lighting": `Lighting & Fixtures in ${cityName} WA | Licensed Installation | Norbilt`,
+		"handyman": `Handyman in ${cityName} WA | 5-Star Licensed | Same-Week | NORBILT`,
+		"home-repair": `Home Repair in ${cityName} WA | Licensed & 5-Star Rated | NORBILT`,
+		"drywall-repair": `Drywall Repair in ${cityName} WA | Seamless Patches | Free Estimate | NORBILT`,
+		"finish-carpentry": `Finish Carpentry in ${cityName} WA | Crown Molding & Trim | NORBILT`,
+		"kitchen-bath": `Kitchen & Bathroom Remodeling in ${cityName} WA | Licensed Contractor | NORBILT`,
+		"flooring": `Flooring Repair in ${cityName} WA | LVP & Tile | Free Estimate | NORBILT`,
+		"door-window": `Door & Window Repair in ${cityName} WA | Licensed | Free Estimate | NORBILT`,
+		"bathroom-remodel": `Bathroom Remodeling in ${cityName} WA | Licensed Contractor | NORBILT`,
+		"kitchen-remodel": `Kitchen Remodeling in ${cityName} WA | Licensed Contractor | NORBILT`,
+		"lighting": `Lighting & Fixtures in ${cityName} WA | Licensed Installation | NORBILT`,
 	};
 
 	const descMap: Record<string, string> = {
@@ -50,9 +50,9 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 		"lighting": `Licensed lighting & fixture installation in ${cityName}, WA. Ceiling fans, recessed lighting, fixture swaps & upgrades. Free estimates. Call (360) 216-9920.`,
 	};
 
-	const shortTitle = titleMap[serviceSlug] ?? `${serviceData.title} in ${cityName} WA | Licensed & 5-Star Rated | Norbilt`;
+	const shortTitle = titleMap[serviceSlug] ?? `${serviceData.title} in ${cityName} WA | Licensed & 5-Star Rated | NORBILT`;
 	const fullDesc = descMap[serviceSlug] ?? `5-star rated ${serviceData.title.toLowerCase()} in ${cityName}, WA. Licensed, bonded & insured. Free same-week estimates. Call (360) 216-9920.`;
-	const pageUrl = `https://norbilt.com/locations/${resolvedParams.city}/${resolvedParams.service}`;
+	const pageUrl = `https://www.norbilt.com/locations/${resolvedParams.city}/${resolvedParams.service}`;
 
 	return {
 		title: shortTitle,
@@ -62,12 +62,12 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 			title: shortTitle,
 			description: fullDesc,
 			url: pageUrl,
-			siteName: "Norbilt",
+			siteName: "NORBILT",
 			locale: "en_US",
 			type: "website",
 			images: [
 				{
-					url: "https://norbilt.com/og-image.jpg",
+					url: "https://www.norbilt.com/og-image.jpg",
 					width: 1200,
 					height: 630,
 					alt: `${serviceData.title} in ${cityName} WA`,
@@ -78,7 +78,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 			card: "summary_large_image",
 			title: shortTitle,
 			description: fullDesc,
-			images: ["https://norbilt.com/og-image.jpg"],
+			images: ["https://www.norbilt.com/og-image.jpg"],
 		},
 	};
 }

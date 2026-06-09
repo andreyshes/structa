@@ -17,13 +17,13 @@ import {
 import SectionHeader from "@/app/components/SectionHeader";
 
 export const metadata = {
-	title: "Home Repairs Near Me Vancouver WA | Licensed Home Repair | Norbilt",
+	title: "Home Repairs Near Me Vancouver WA | Licensed Home Repair | NORBILT",
 	description: "Home repairs near you in Vancouver WA & Clark County. Licensed contractor for drywall, fixtures, doors, weatherization & more. Free written estimates. (360) 216-9920.",
-	alternates: { canonical: "https://norbilt.com/services/home-repair" },
+	alternates: { canonical: "https://www.norbilt.com/services/home-repair" },
 	openGraph: {
-		title: "Home Repairs Near Me Vancouver WA | Norbilt",
+		title: "Home Repairs Near Me Vancouver WA | NORBILT",
 		description: "Licensed home repair services near you in Vancouver WA & Clark County.",
-		url: "https://norbilt.com/services/home-repair",
+		url: "https://www.norbilt.com/services/home-repair",
 	},
 };
 
@@ -71,9 +71,9 @@ export default function HomeRepairPage() {
 						"@graph": [
 							{
 								"@type": "LocalBusiness",
-								"@id": "https://norbilt.com/#business",
-								"name": "Norbilt",
-								"url": "https://norbilt.com",
+								"@id": "https://www.norbilt.com/#business",
+								"name": "NORBILT",
+								"url": "https://www.norbilt.com",
 								"telephone": "+13602169920",
 								"address": {
 									"@type": "PostalAddress",
@@ -93,11 +93,11 @@ export default function HomeRepairPage() {
 							{
 								"@type": "Service",
 								"name": "Home Repair Services Vancouver WA",
-								"provider": { "@id": "https://norbilt.com/#business" },
+								"provider": { "@id": "https://www.norbilt.com/#business" },
 								"areaServed": "Vancouver WA",
 								"description": "Licensed home repair services near you in Vancouver WA and Clark County including drywall repair, fixture installation, door repairs, caulking, weatherization, and full home punch lists.",
 								"serviceType": "Home Repair Service",
-								"url": "https://norbilt.com/services/home-repair"
+								"url": "https://www.norbilt.com/services/home-repair"
 							},
 							{
 								"@type": "FAQPage",
@@ -107,7 +107,7 @@ export default function HomeRepairPage() {
 										"name": "How do I find home repair services near me in Vancouver WA?",
 										"acceptedAnswer": {
 											"@type": "Answer",
-											"text": "Norbilt is based in Vancouver WA and serves all of Clark County. We offer same-week estimates and clear, fixed pricing. Call (360) 216-9920 or submit a project request. We handle everything from small fixes to full punch lists — no job is too minor."
+											"text": "NORBILT is based in Vancouver WA and serves all of Clark County. We offer same-week estimates and clear, fixed pricing. Call (360) 216-9920 or submit a project request. We handle everything from small fixes to full punch lists — no job is too minor."
 										}
 									},
 									{
@@ -123,7 +123,7 @@ export default function HomeRepairPage() {
 										"name": "Do I need a licensed contractor for home repairs in Washington?",
 										"acceptedAnswer": {
 											"@type": "Answer",
-											"text": "In Washington State, repair work above a set dollar threshold requires a licensed contractor. Hiring a registered WA General Contractor like Norbilt protects you legally, ensures work meets code, and keeps your homeowner's insurance intact. Unlicensed repair work can affect both your coverage and future resale value."
+											"text": "In Washington State, repair work above a set dollar threshold requires a licensed contractor. Hiring a registered WA General Contractor like NORBILT protects you legally, ensures work meets code, and keeps your homeowner's insurance intact. Unlicensed repair work can affect both your coverage and future resale value."
 										}
 									},
 									{
@@ -154,7 +154,7 @@ export default function HomeRepairPage() {
 				<div className="absolute inset-0 z-0">
 					<Image
 						src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2000"
-						alt="Home repair services in Vancouver WA by Norbilt"
+						alt="Home repair services in Vancouver WA by NORBILT"
 						fill
 						priority
 						sizes="100vw"
@@ -240,7 +240,7 @@ export default function HomeRepairPage() {
 
 							<p className="text-gray-600 text-lg font-medium leading-relaxed">
 								When something breaks in your home, a temporary fix isn&apos;t
-								enough. Norbilt handles interior and exterior repairs with
+								enough. NORBILT handles interior and exterior repairs with
 								construction-grade standards &mdash; protecting your property, safety,
 								and long-term value.
 							</p>
@@ -266,7 +266,7 @@ export default function HomeRepairPage() {
 							<div className="absolute -inset-4 bg-[#F8F6F3] rounded-[3rem] rotate-1 group-hover:rotate-0 transition-transform duration-500" />
 							<div className="relative bg-[#1F2E2B] p-10 lg:p-14 rounded-[2.5rem] shadow-2xl border-b-8 border-[#FFB800]">
 								<h3 className="text-2xl font-black text-white uppercase tracking-tighter mb-8 italic">
-									Why Norbilt for Home Repair
+									Why NORBILT for Home Repair
 								</h3>
 								<div className="space-y-8">
 									<div className="space-y-2 border-l-2 border-[#FFB800]/30 pl-6">
@@ -406,7 +406,7 @@ export default function HomeRepairPage() {
 							},
 							{
 								q: "Do I need a licensed contractor for home repairs in Washington?",
-								a: "In Washington State, repair work above a set dollar threshold requires a licensed contractor. Hiring a registered WA General Contractor like Norbilt protects you legally, ensures work meets code, and keeps your homeowner's insurance intact. Unlicensed repair work can affect both your coverage and future resale value.",
+								a: "In Washington State, repair work above a set dollar threshold requires a licensed contractor. Hiring a registered WA General Contractor like NORBILT protects you legally, ensures work meets code, and keeps your homeowner's insurance intact. Unlicensed repair work can affect both your coverage and future resale value.",
 							},
 							{
 								q: "How much do home repairs cost in Vancouver WA?",
@@ -418,7 +418,7 @@ export default function HomeRepairPage() {
 							},
 							{
 								q: "How do I find home repair services near me in Vancouver WA?",
-								a: "Norbilt is based in Vancouver WA and serves all of Clark County. We offer same-week estimates and clear, fixed pricing. Call (360) 216-9920 or submit a project request. We handle everything from small fixes to full punch lists — no job is too minor.",
+								a: "NORBILT is based in Vancouver WA and serves all of Clark County. We offer same-week estimates and clear, fixed pricing. Call (360) 216-9920 or submit a project request. We handle everything from small fixes to full punch lists — no job is too minor.",
 							},
 							{
 								q: "What home repairs can you do in one visit?",

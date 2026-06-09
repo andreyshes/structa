@@ -3,20 +3,20 @@ import { ArrowRight, CheckCircle2, MapPin, Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Bathroom Remodel Cost in Clark County WA | 2026 Guide | Norbilt",
+	title: "Bathroom Remodel Cost in Clark County WA | 2026 Guide | NORBILT",
 	description:
 		"How much does a bathroom remodel cost in Clark County WA? Real 2026 price ranges for every scope — from a $800 refresh to a $35,000 full gut — from a licensed Vancouver contractor.",
 	alternates: {
-		canonical: "https://norbilt.com/blog/bathroom-remodel-cost-clark-county-wa",
+		canonical: "https://www.norbilt.com/blog/bathroom-remodel-cost-clark-county-wa",
 	},
 	openGraph: {
-		title: "Bathroom Remodel Cost in Clark County WA | 2026 Guide | Norbilt",
+		title: "Bathroom Remodel Cost in Clark County WA | 2026 Guide | NORBILT",
 		description:
 			"Complete 2026 cost guide for bathroom remodels in Clark County WA. Real price ranges, cost-by-scope tables, and what drives the price up or down.",
-		url: "https://norbilt.com/blog/bathroom-remodel-cost-clark-county-wa",
-		siteName: "Norbilt",
+		url: "https://www.norbilt.com/blog/bathroom-remodel-cost-clark-county-wa",
+		siteName: "NORBILT",
 		type: "article",
-		images: [{ url: "https://norbilt.com/og-image.jpg", width: 1200, height: 630 }],
+		images: [{ url: "https://www.norbilt.com/og-image.jpg", width: 1200, height: 630 }],
 	},
 };
 
@@ -109,7 +109,7 @@ const faqs = [
 	},
 	{
 		q: "Do I need a permit for a bathroom remodel in Clark County?",
-		a: "Cosmetic work — replacing fixtures, vanity, tile, and paint — typically does not require a permit in Clark County. Structural changes, plumbing relocation, and electrical panel work do require permits. As a licensed general contractor, Norbilt pulls permits when required.",
+		a: "Cosmetic work — replacing fixtures, vanity, tile, and paint — typically does not require a permit in Clark County. Structural changes, plumbing relocation, and electrical panel work do require permits. As a licensed general contractor, NORBILT pulls permits when required.",
 	},
 	{
 		q: "How long does a bathroom remodel take in Vancouver WA?",
@@ -135,17 +135,17 @@ export default function BathroomRemodeCostClarkCounty() {
 						"@context": "https://schema.org",
 						"@type": "Article",
 						headline: "How Much Does a Bathroom Remodel Cost in Clark County WA? (2026 Guide)",
-						author: { "@type": "Person", name: "Andrey Norbilt" },
+						author: { "@type": "Person", name: "Andrey NORBILT" },
 						publisher: {
 							"@type": "Organization",
-							name: "Norbilt",
-							logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" },
+							name: "NORBILT",
+							logo: { "@type": "ImageObject", url: "https://www.norbilt.com/icon-v3.png" },
 						},
 						datePublished: "2026-04-15",
 						dateModified: "2026-04-15",
 						description:
 							"Complete 2026 cost guide for bathroom remodels in Clark County WA — real price ranges by scope, component-level costs, and what drives the price up or down.",
-						mainEntityOfPage: "https://norbilt.com/blog/bathroom-remodel-cost-clark-county-wa",
+						mainEntityOfPage: "https://www.norbilt.com/blog/bathroom-remodel-cost-clark-county-wa",
 					}),
 				}}
 			/>
@@ -155,9 +155,9 @@ export default function BathroomRemodeCostClarkCounty() {
 					"@context": "https://schema.org",
 					"@type": "BreadcrumbList",
 					itemListElement: [
-						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
-						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
-						{ "@type": "ListItem", position: 3, name: "Bathroom Remodel Cost in Clark County WA: 2026 Guide", item: "https://norbilt.com/blog/bathroom-remodel-cost-clark-county-wa" },
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://www.norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Bathroom Remodel Cost in Clark County WA: 2026 Guide", item: "https://www.norbilt.com/blog/bathroom-remodel-cost-clark-county-wa" },
 					],
 				}) }}
 			/>

@@ -3,20 +3,20 @@ import { ArrowRight, CheckCircle2, Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Finish Carpentry Cost in Vancouver WA: 2026 Pricing Guide | Norbilt",
+	title: "Finish Carpentry Cost in Vancouver WA: 2026 Pricing Guide | NORBILT",
 	description:
 		"How much does finish carpentry cost in Vancouver WA? Real 2026 price ranges for baseboards, crown molding, wainscoting, door casing, and built-ins across Clark County.",
 	alternates: {
-		canonical: "https://norbilt.com/blog/finish-carpentry-cost-vancouver-wa",
+		canonical: "https://www.norbilt.com/blog/finish-carpentry-cost-vancouver-wa",
 	},
 	openGraph: {
-		title: "Finish Carpentry Cost in Vancouver WA: 2026 Pricing Guide | Norbilt",
+		title: "Finish Carpentry Cost in Vancouver WA: 2026 Pricing Guide | NORBILT",
 		description:
 			"Real 2026 cost breakdown for finish carpentry in Vancouver WA and Clark County. Baseboard, crown molding, wainscoting, built-ins, and what drives the price.",
-		url: "https://norbilt.com/blog/finish-carpentry-cost-vancouver-wa",
-		siteName: "Norbilt",
+		url: "https://www.norbilt.com/blog/finish-carpentry-cost-vancouver-wa",
+		siteName: "NORBILT",
 		type: "article",
-		images: [{ url: "https://norbilt.com/og-image.jpg", width: 1200, height: 630 }],
+		images: [{ url: "https://www.norbilt.com/og-image.jpg", width: 1200, height: 630 }],
 	},
 };
 
@@ -135,13 +135,13 @@ export default function FinishCarpentryBlogPost() {
 						"description": "Real 2026 price ranges for finish carpentry in Vancouver WA and Clark County — baseboards, crown molding, wainscoting, door casing, and built-ins.",
 						"datePublished": "2026-05-26",
 						"dateModified": "2026-05-26",
-						"author": { "@type": "Organization", "name": "Norbilt" },
+						"author": { "@type": "Organization", "name": "NORBILT" },
 						"publisher": {
 							"@type": "Organization",
-							"name": "Norbilt",
-							"url": "https://norbilt.com",
+							"name": "NORBILT",
+							"url": "https://www.norbilt.com",
 						},
-						"mainEntityOfPage": "https://norbilt.com/blog/finish-carpentry-cost-vancouver-wa",
+						"mainEntityOfPage": "https://www.norbilt.com/blog/finish-carpentry-cost-vancouver-wa",
 					}),
 				}}
 			/>
@@ -151,9 +151,9 @@ export default function FinishCarpentryBlogPost() {
 					"@context": "https://schema.org",
 					"@type": "BreadcrumbList",
 					itemListElement: [
-						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
-						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
-						{ "@type": "ListItem", position: 3, name: "Finish Carpentry Cost in Vancouver WA: 2026 Guide", item: "https://norbilt.com/blog/finish-carpentry-cost-vancouver-wa" },
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://www.norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Finish Carpentry Cost in Vancouver WA: 2026 Guide", item: "https://www.norbilt.com/blog/finish-carpentry-cost-vancouver-wa" },
 					],
 				}) }}
 			/>
@@ -181,7 +181,7 @@ export default function FinishCarpentryBlogPost() {
 						<span>·</span>
 						<span>Clark County, WA</span>
 						<span>·</span>
-						<span>By Norbilt</span>
+						<span>By NORBILT</span>
 					</div>
 				</div>
 			</section>
@@ -451,7 +451,7 @@ export default function FinishCarpentryBlogPost() {
 						Get a Free Trim Estimate in Vancouver WA
 					</h2>
 					<p className="text-[#A7C4B5] font-medium mb-8 max-w-lg mx-auto">
-						Norbilt installs baseboards, crown molding, wainscoting, and custom trim throughout Clark County. Licensed, 5-star rated, and backed by a 1-year workmanship warranty.
+						NORBILT installs baseboards, crown molding, wainscoting, and custom trim throughout Clark County. Licensed, 5-star rated, and backed by a 1-year workmanship warranty.
 					</p>
 					<div className="flex flex-col sm:flex-row gap-4 justify-center">
 						<Link

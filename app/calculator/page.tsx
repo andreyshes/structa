@@ -103,11 +103,11 @@ export default function CalculatorPage() {
 								"@type": "WebPage",
 								name: "Bathroom & Kitchen Remodel Cost Calculator | Clark County WA",
 								description: "Free instant cost calculator for bathroom and kitchen remodels in Clark County WA. No signup required.",
-								url: "https://norbilt.com/calculator",
+								url: "https://www.norbilt.com/calculator",
 								provider: {
 									"@type": "LocalBusiness",
-									name: "Norbilt",
-									url: "https://norbilt.com",
+									name: "NORBILT",
+									url: "https://www.norbilt.com",
 									telephone: "+1-3602169920",
 									address: {
 										"@type": "PostalAddress",
@@ -149,7 +149,7 @@ export default function CalculatorPage() {
 										name: "Is this estimate accurate for my specific project?",
 										acceptedAnswer: {
 											"@type": "Answer",
-											text: "This calculator provides a general range based on typical Clark County projects. For an accurate quote, request a free on-site estimate — Norbilt walks your home and provides written pricing before any work begins.",
+											text: "This calculator provides a general range based on typical Clark County projects. For an accurate quote, request a free on-site estimate — NORBILT walks your home and provides written pricing before any work begins.",
 										},
 									},
 								],
@@ -371,10 +371,10 @@ export default function CalculatorPage() {
 								},
 								{
 									q: "How do I get an exact price?",
-									a: "The most accurate way is a free on-site walkthrough. Norbilt walks your home, assesses the specific conditions, and provides a written estimate before any work begins. No obligation, no pressure.",
+									a: "The most accurate way is a free on-site walkthrough. NORBILT walks your home, assesses the specific conditions, and provides a written estimate before any work begins. No obligation, no pressure.",
 								},
 								{
-									q: "Does Norbilt do full bathroom and kitchen remodels?",
+									q: "Does NORBILT do full bathroom and kitchen remodels?",
 									a: "Yes — we handle everything from a quick cosmetic refresh to a full gut remodel, including tile, vanity, fixtures, drywall, and finish carpentry. We serve all of Clark County: Vancouver, Camas, Ridgefield, Battle Ground, Washougal, and surrounding areas.",
 								},
 							].map((item) => (

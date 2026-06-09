@@ -3,20 +3,20 @@ import { ArrowRight, CheckCircle2, MapPin, Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Bathroom Remodel Cost in Vancouver WA: 2026 Pricing Guide | Norbilt",
+	title: "Bathroom Remodel Cost in Vancouver WA: 2026 Pricing Guide | NORBILT",
 	description:
 		"How much does a bathroom remodel cost in Vancouver WA? Real 2026 price ranges for every scope — from a $920 cosmetic refresh to a $35,000 primary suite gut — from a licensed Vancouver contractor.",
 	alternates: {
-		canonical: "https://norbilt.com/blog/bathroom-remodel-cost-vancouver-wa",
+		canonical: "https://www.norbilt.com/blog/bathroom-remodel-cost-vancouver-wa",
 	},
 	openGraph: {
-		title: "Bathroom Remodel Cost in Vancouver WA: 2026 Pricing Guide | Norbilt",
+		title: "Bathroom Remodel Cost in Vancouver WA: 2026 Pricing Guide | NORBILT",
 		description:
 			"Complete 2026 cost guide for bathroom remodels in Vancouver WA. Real price ranges, component-level costs, neighborhood breakdowns, and what drives the price up.",
-		url: "https://norbilt.com/blog/bathroom-remodel-cost-vancouver-wa",
-		siteName: "Norbilt",
+		url: "https://www.norbilt.com/blog/bathroom-remodel-cost-vancouver-wa",
+		siteName: "NORBILT",
 		type: "article",
-		images: [{ url: "https://norbilt.com/og-image.jpg", width: 1200, height: 630 }],
+		images: [{ url: "https://www.norbilt.com/og-image.jpg", width: 1200, height: 630 }],
 	},
 };
 
@@ -81,7 +81,7 @@ const costDrivers = [
 	},
 	{
 		title: "Permit Requirements in Vancouver",
-		body: "The City of Vancouver requires permits for structural changes, plumbing relocation, and electrical work. Cosmetic remodels — vanity swaps, tile resurfacing, fixture replacements — typically don't require a permit. Norbilt pulls permits when required. Unpermitted work creates problems at resale and can void homeowner's insurance claims.",
+		body: "The City of Vancouver requires permits for structural changes, plumbing relocation, and electrical work. Cosmetic remodels — vanity swaps, tile resurfacing, fixture replacements — typically don't require a permit. NORBILT pulls permits when required. Unpermitted work creates problems at resale and can void homeowner's insurance claims.",
 	},
 	{
 		title: "Labor Rates in Vancouver WA",
@@ -123,7 +123,7 @@ const faqs = [
 	},
 	{
 		q: "Do I need a permit for a bathroom remodel in Vancouver WA?",
-		a: "The City of Vancouver requires permits for structural work, plumbing relocation, and electrical panel changes. Cosmetic remodels — replacing fixtures, vanity, tile, and paint within the existing layout — typically don't require a permit. Norbilt is a licensed WA general contractor (Lic. NORBI**741CS) and pulls permits when required.",
+		a: "The City of Vancouver requires permits for structural work, plumbing relocation, and electrical panel changes. Cosmetic remodels — replacing fixtures, vanity, tile, and paint within the existing layout — typically don't require a permit. NORBILT is a licensed WA general contractor (Lic. NORBI**741CS) and pulls permits when required.",
 	},
 	{
 		q: "How long does a bathroom remodel take in Vancouver WA?",
@@ -149,17 +149,17 @@ export default function BathroomRemodelCostVancouverWA() {
 						"@context": "https://schema.org",
 						"@type": "Article",
 						headline: "Bathroom Remodel Cost in Vancouver WA: 2026 Pricing Guide",
-						author: { "@type": "Person", name: "Andrey Norbilt" },
+						author: { "@type": "Person", name: "Andrey NORBILT" },
 						publisher: {
 							"@type": "Organization",
-							name: "Norbilt",
-							logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" },
+							name: "NORBILT",
+							logo: { "@type": "ImageObject", url: "https://www.norbilt.com/icon-v3.png" },
 						},
 						datePublished: "2026-06-08",
 						dateModified: "2026-06-08",
 						description:
 							"Complete 2026 cost guide for bathroom remodels in Vancouver WA — real price ranges by scope, component-level costs, neighborhood breakdowns, and what drives the price up or down.",
-						mainEntityOfPage: "https://norbilt.com/blog/bathroom-remodel-cost-vancouver-wa",
+						mainEntityOfPage: "https://www.norbilt.com/blog/bathroom-remodel-cost-vancouver-wa",
 					}),
 				}}
 			/>
@@ -169,9 +169,9 @@ export default function BathroomRemodelCostVancouverWA() {
 					"@context": "https://schema.org",
 					"@type": "BreadcrumbList",
 					itemListElement: [
-						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
-						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
-						{ "@type": "ListItem", position: 3, name: "Bathroom Remodel Cost in Vancouver WA: 2026 Pricing Guide", item: "https://norbilt.com/blog/bathroom-remodel-cost-vancouver-wa" },
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://www.norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Bathroom Remodel Cost in Vancouver WA: 2026 Pricing Guide", item: "https://www.norbilt.com/blog/bathroom-remodel-cost-vancouver-wa" },
 					],
 				}) }}
 			/>
@@ -199,7 +199,7 @@ export default function BathroomRemodelCostVancouverWA() {
 						</h1>
 				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
 					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
-					<p className="text-gray-700 leading-relaxed text-sm">A bathroom remodel in Vancouver WA costs between $920 for a cosmetic refresh and $35,000+ for a full primary suite gut. A cosmetic refresh — new toilet, faucet, mirror, recaulk, and paint — runs $920–$2,500 and takes 1–2 days. A mid-range remodel with new vanity, tile floor, shower surround, and all fixtures costs $3,450–$7,500 over 3–5 days. A full gut remodel — everything to studs — runs $9,200–$18,000 in 1–2 weeks. Vancouver neighborhood matters: Hazel Dell and Orchards homes (1960s–1980s builds) frequently have water damage and outdated plumbing that adds $460–$1,380 to the budget. West Vancouver new construction and Fisher's Landing have cleaner subfloors and fewer surprises. All prices are 2026 rates from Norbilt, a licensed Clark County general contractor (WA Lic. NORBI**741CS).</p>
+					<p className="text-gray-700 leading-relaxed text-sm">A bathroom remodel in Vancouver WA costs between $920 for a cosmetic refresh and $35,000+ for a full primary suite gut. A cosmetic refresh — new toilet, faucet, mirror, recaulk, and paint — runs $920–$2,500 and takes 1–2 days. A mid-range remodel with new vanity, tile floor, shower surround, and all fixtures costs $3,450–$7,500 over 3–5 days. A full gut remodel — everything to studs — runs $9,200–$18,000 in 1–2 weeks. Vancouver neighborhood matters: Hazel Dell and Orchards homes (1960s–1980s builds) frequently have water damage and outdated plumbing that adds $460–$1,380 to the budget. West Vancouver new construction and Fisher's Landing have cleaner subfloors and fewer surprises. All prices are 2026 rates from NORBILT, a licensed Clark County general contractor (WA Lic. NORBI**741CS).</p>
 				</div>
 						<p className="text-xl text-white/70 leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">
 							Real 2026 price ranges for every scope — from a quick cosmetic
@@ -236,7 +236,7 @@ export default function BathroomRemodelCostVancouverWA() {
 								notes from jobs we do every week.
 							</p>
 							<p>
-								Norbilt is a licensed general contractor (WA Lic.{" "}
+								NORBILT is a licensed general contractor (WA Lic.{" "}
 								<strong>NORBI**741CS</strong>) serving Vancouver and all of Clark
 								County. We carry $1,000,000 liability insurance and back all
 								bathroom work with a 1-year workmanship warranty.
@@ -367,7 +367,7 @@ export default function BathroomRemodelCostVancouverWA() {
 							</p>
 							<ul className="space-y-3">
 								{[
-									"Norbilt holds WA General Contractor License NORBI**741CS",
+									"NORBILT holds WA General Contractor License NORBI**741CS",
 									"$1,000,000 liability insurance on every job",
 									"Bonded — protects you if work is incomplete or defective",
 									"We pull permits when required — no shortcuts that hurt resale",

@@ -15,17 +15,17 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 
 	if (!cityData || !cityData.name) {
 		return {
-			title: "Local Home Repair Contractor | Norbilt",
+			title: "Local Home Repair Contractor | NORBILT",
 			description:
-				"Norbilt provides expert home repairs and general contracting services. Contact our licensed team for professional remodeling and maintenance today.",
+				"NORBILT provides expert home repairs and general contracting services. Contact our licensed team for professional remodeling and maintenance today.",
 		};
 	}
 
 	const cityName = cityData.name?.split(",")[0] || "Local";
-	const shortTitle = `#1 Contractor in ${cityName} WA | 5-Star Rated & Licensed | Norbilt`;
+	const shortTitle = `#1 Contractor in ${cityName} WA | 5-Star Rated & Licensed | NORBILT`;
 
 	const fullDesc = `5-star rated licensed contractor in ${cityName}, WA. Handyman, drywall, finish carpentry, kitchen & bath updates, flooring & more. Free same-week estimates. Call (360) 216-9920.`;
-	const pageUrl = `https://norbilt.com/locations/${city}`;
+	const pageUrl = `https://www.norbilt.com/locations/${city}`;
 
 	return {
 		title: shortTitle,
@@ -35,15 +35,15 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 			title: shortTitle,
 			description: fullDesc,
 			url: pageUrl,
-			siteName: "Norbilt",
+			siteName: "NORBILT",
 			locale: "en_US",
 			type: "website",
 			images: [
 				{
-					url: "https://norbilt.com/og-image.jpg",
+					url: "https://www.norbilt.com/og-image.jpg",
 					width: 1200,
 					height: 630,
-					alt: `Norbilt Services in ${cityName} WA`,
+					alt: `NORBILT Services in ${cityName} WA`,
 				},
 			],
 		},
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 			card: "summary_large_image",
 			title: shortTitle,
 			description: fullDesc,
-			images: ["https://norbilt.com/og-image.jpg"],
+			images: ["https://www.norbilt.com/og-image.jpg"],
 		},
 	};
 }
@@ -62,12 +62,12 @@ export default async function Page({ params }: any) {
 	if (!city) return notFound();
 
 	const cityName = city.name?.split(",")[0] || "Local";
-	const pageUrl = `https://norbilt.com/locations/${citySlug}`;
+	const pageUrl = `https://www.norbilt.com/locations/${citySlug}`;
 	const schema = {
 		"@context": "https://schema.org",
 		"@type": "LocalBusiness",
 		"@id": pageUrl,
-		name: `Norbilt — General Contractor in ${cityName} WA`,
+		name: `NORBILT — General Contractor in ${cityName} WA`,
 		url: pageUrl,
 		telephone: "+13602169920",
 		email: "hello@norbilt.com",

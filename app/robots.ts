@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/thank-you', '/api/'],
     },
-    sitemap: 'https://norbilt.com/sitemap.xml',
+    sitemap: 'https://www.norbilt.com/sitemap.xml',
   }
 }

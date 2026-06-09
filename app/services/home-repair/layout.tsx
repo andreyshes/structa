@@ -1,35 +1,35 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Home Repair Vancouver WA | Norbilt General Contractor",
+	title: "Home Repair Vancouver WA | NORBILT General Contractor",
 	description:
-		"Professional home repair services in Vancouver WA. Norbilt is your licensed general contractor for interior fixes and updates in Clark County.",
+		"Professional home repair services in Vancouver WA. NORBILT is your licensed general contractor for interior fixes and updates in Clark County.",
 	alternates: {
-		canonical: "https://norbilt.com/services/home-repair",
+		canonical: "https://www.norbilt.com/services/home-repair",
 	},
 	openGraph: {
-		title: "Home Repair Vancouver WA | Norbilt",
+		title: "Home Repair Vancouver WA | NORBILT",
 		description:
 			"Licensed home repair and interior updates for homeowners in Vancouver and Clark County WA.",
-		url: "https://norbilt.com/services/home-repair",
+		url: "https://www.norbilt.com/services/home-repair",
 		type: "website",
-		siteName: "Norbilt",
+		siteName: "NORBILT",
 		locale: "en_US",
 		images: [
 			{
-				url: "https://norbilt.com/og-image.jpg",
+				url: "https://www.norbilt.com/og-image.jpg",
 				width: 1200,
 				height: 630,
-				alt: "Home Repair Vancouver WA | Norbilt",
+				alt: "Home Repair Vancouver WA | NORBILT",
 			},
 		],
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Home Repair Vancouver WA | Norbilt",
+		title: "Home Repair Vancouver WA | NORBILT",
 		description:
 			"Licensed home repair and interior updates for homeowners in Vancouver and Clark County WA.",
-		images: ["https://norbilt.com/og-image.jpg"],
+		images: ["https://www.norbilt.com/og-image.jpg"],
 	},
 };
 

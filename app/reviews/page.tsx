@@ -11,7 +11,7 @@ import {
 const reviews = [
 	{
 		quote:
-			"We had a positive experience with Norbilt here in Vancouver, WA. I worked with Andrey, who was courteous, professional, efficient, and delivered high-quality work in a timely manner. It's hard to find reliable help these days, and I truly appreciated his attention to detail and expertise.",
+			"We had a positive experience with NORBILT here in Vancouver, WA. I worked with Andrey, who was courteous, professional, efficient, and delivered high-quality work in a timely manner. It's hard to find reliable help these days, and I truly appreciated his attention to detail and expertise.",
 		name: "M. Taylor",
 		location: "Vancouver, WA",
 		service: "Home Repairs",
@@ -19,7 +19,7 @@ const reviews = [
 	},
 	{
 		quote:
-			"I hired Norbilt to stain my fence at my home in Vancouver, WA and they did an excellent job. Communication was clear, they showed up on time, and the quality of the work really shows. The stain came out even, clean, and professional — it completely refreshed the look of our yard.",
+			"I hired NORBILT to stain my fence at my home in Vancouver, WA and they did an excellent job. Communication was clear, they showed up on time, and the quality of the work really shows. The stain came out even, clean, and professional — it completely refreshed the look of our yard.",
 		name: "Angelo",
 		location: "Vancouver, WA",
 		service: "Fence Staining",
@@ -27,7 +27,7 @@ const reviews = [
 	},
 	{
 		quote:
-			"Norbilt was awesome to work with. They transformed my outdated bathroom to something modern and I love it! Great company to work with and I am in love with my bathroom once again.",
+			"NORBILT was awesome to work with. They transformed my outdated bathroom to something modern and I love it! Great company to work with and I am in love with my bathroom once again.",
 		name: "David",
 		location: "Vancouver, WA",
 		service: "Bathroom Remodel",
@@ -67,7 +67,7 @@ const reviews = [
 	},
 	{
 		quote:
-			"Norbilt did a great job on flooring project. Andrey was professional, efficient, and made sure everything was installed perfectly. The floors look amazing and completely transformed the space. Very happy with the quality of work and would definitely recommend them.",
+			"NORBILT did a great job on flooring project. Andrey was professional, efficient, and made sure everything was installed perfectly. The floors look amazing and completely transformed the space. Very happy with the quality of work and would definitely recommend them.",
 		name: "Roman K.",
 		location: "Vancouver, WA",
 		service: "Flooring Installation",
@@ -91,7 +91,7 @@ const reviews = [
 	},
 	{
 		quote:
-			"Great experience with Norbilt. Andrey and his team were professional, easy to work with, and delivered high-quality work. Everything was smooth from start to finish. Highly recommend!",
+			"Great experience with NORBILT. Andrey and his team were professional, easy to work with, and delivered high-quality work. Everything was smooth from start to finish. Highly recommend!",
 		name: "Sam Y.",
 		location: "Vancouver, WA",
 		service: "Home Repairs",
@@ -99,7 +99,7 @@ const reviews = [
 	},
 	{
 		quote:
-			"Norbilt has built me my dream bathroom. Andrey was quick to respond to me whenever I had any questions and was very respectful and pleasant to work with. Couldn't have been more happy with the experience!",
+			"NORBILT has built me my dream bathroom. Andrey was quick to respond to me whenever I had any questions and was very respectful and pleasant to work with. Couldn't have been more happy with the experience!",
 		name: "Ruvim C.",
 		location: "Vancouver, WA",
 		service: "Bathroom Remodel",
@@ -115,7 +115,7 @@ const reviews = [
 	},
 	{
 		quote:
-			"I had a great experience working with Norbilt on my remodeling project. From start to finish, their team was professional, detail-oriented, and easy to communicate with. Andrey was especially helpful throughout the process — he made sure everything stayed on track and met my expectations. The quality of work really shows, and the final result turned out even better than I imagined.",
+			"I had a great experience working with NORBILT on my remodeling project. From start to finish, their team was professional, detail-oriented, and easy to communicate with. Andrey was especially helpful throughout the process — he made sure everything stayed on track and met my expectations. The quality of work really shows, and the final result turned out even better than I imagined.",
 		name: "Taylor K.",
 		location: "Vancouver, WA",
 		service: "Remodeling",
@@ -158,8 +158,8 @@ export default function ReviewsPage() {
 					__html: JSON.stringify({
 						"@context": "https://schema.org",
 						"@type": "LocalBusiness",
-						"@id": "https://norbilt.com",
-						name: "Norbilt Homes",
+						"@id": "https://www.norbilt.com",
+						name: "NORBILT Homes",
 						aggregateRating: {
 							"@type": "AggregateRating",
 							ratingValue: "5.0",
@@ -292,7 +292,7 @@ export default function ReviewsPage() {
 								Leave Us a Review
 							</h2>
 							<p className="text-[#A7C4B5] text-lg max-w-2xl mx-auto mb-10">
-								If Norbilt worked on your home in Vancouver, Battle Ground,
+								If NORBILT worked on your home in Vancouver, Battle Ground,
 								Camas, Felida, Ridgefield, or anywhere in Clark County — we'd
 								love to hear about it. Your review helps other local homeowners
 								find trusted help.
@@ -346,7 +346,7 @@ export default function ReviewsPage() {
 							Ready to Get Started?
 						</h2>
 						<p className="text-black/70 text-xl font-medium max-w-xl mx-auto">
-							Join dozens of Clark County homeowners who trust Norbilt for
+							Join dozens of Clark County homeowners who trust NORBILT for
 							quality repairs and remodeling.
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">

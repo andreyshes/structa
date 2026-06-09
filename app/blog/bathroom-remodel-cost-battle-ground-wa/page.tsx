@@ -3,10 +3,10 @@ import { ArrowRight, CheckCircle2, MapPin, Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Bathroom Remodel Cost in Battle Ground WA: 2026 Guide | Norbilt",
+	title: "Bathroom Remodel Cost in Battle Ground WA: 2026 Guide | NORBILT",
 	description: "How much does a bathroom remodel cost in Battle Ground WA? Real 2026 price ranges — from a $920 cosmetic refresh to a $35,000 primary suite — from a licensed north Clark County contractor.",
-	alternates: { canonical: "https://norbilt.com/blog/bathroom-remodel-cost-battle-ground-wa" },
-	openGraph: { title: "Bathroom Remodel Cost in Battle Ground WA: 2026 Guide | Norbilt", description: "Complete 2026 cost guide for bathroom remodels in Battle Ground WA.", url: "https://norbilt.com/blog/bathroom-remodel-cost-battle-ground-wa", siteName: "Norbilt", type: "article", images: [{ url: "https://norbilt.com/og-image.jpg", width: 1200, height: 630 }] },
+	alternates: { canonical: "https://www.norbilt.com/blog/bathroom-remodel-cost-battle-ground-wa" },
+	openGraph: { title: "Bathroom Remodel Cost in Battle Ground WA: 2026 Guide | NORBILT", description: "Complete 2026 cost guide for bathroom remodels in Battle Ground WA.", url: "https://www.norbilt.com/blog/bathroom-remodel-cost-battle-ground-wa", siteName: "NORBILT", type: "article", images: [{ url: "https://www.norbilt.com/og-image.jpg", width: 1200, height: 630 }] },
 };
 
 const costTiers = [
@@ -32,8 +32,8 @@ const drivers = [
 	{ title: "Older Homes Hide Costly Surprises", body: "Cherry Grove and central Battle Ground have a significant stock of 1970s–1990s homes. Original tile surrounds were often installed directly over drywall (not cement board), galvanized pipe is common, and decades of slow leaks frequently left soft subfloors. We always do a walkthrough before quoting — this is where the surprises live." },
 	{ title: "Tub-to-Shower Conversions Are Popular", body: "Battle Ground has a large aging-in-place demographic. Tub-to-shower conversions — removing the tub and installing a barrier-free or low-threshold shower — are one of the most requested remodels. These run $1,725–$8,000 depending on whether you choose a prefab insert or custom tile." },
 	{ title: "Acreage Homes Warrant Premium Investment", body: "Homes on larger lots in the Lewisville area often have larger bathrooms suited to custom tile and heated floors. These homeowners typically invest in the $12,000–$35,000 range and prioritize quality over speed." },
-	{ title: "Fewer Licensed Contractors Serve Battle Ground", body: "Most Clark County contractors are concentrated in Vancouver. Norbilt is one of the most active licensed contractors in north Clark County, which means faster scheduling and no subcontracting." },
-	{ title: "Permits Follow Clark County Requirements", body: "Cosmetic remodels — vanity, tile, fixtures, paint — typically don't require a permit. Plumbing relocation, structural changes, and electrical panel work do. Norbilt (WA Lic. NORBI**741CS) handles all permits." },
+	{ title: "Fewer Licensed Contractors Serve Battle Ground", body: "Most Clark County contractors are concentrated in Vancouver. NORBILT is one of the most active licensed contractors in north Clark County, which means faster scheduling and no subcontracting." },
+	{ title: "Permits Follow Clark County Requirements", body: "Cosmetic remodels — vanity, tile, fixtures, paint — typically don't require a permit. Plumbing relocation, structural changes, and electrical panel work do. NORBILT (WA Lic. NORBI**741CS) handles all permits." },
 ];
 const neighborhoods = [
 	{ area: "Daybreak", note: "2000s builds with solid subfloors and standard plumbing. Mid-range remodels dominate — new vanity, tile, and fixtures for a modern update." },
@@ -45,7 +45,7 @@ const faqs = [
 	{ q: "How much does a bathroom remodel cost in Battle Ground WA?", a: "In Battle Ground WA, a bathroom remodel costs between $920 for a cosmetic refresh and $35,000+ for a high-end primary suite. A mid-range remodel runs $3,450–$7,500. A full gut remodel runs $9,200–$18,000. Prices reflect 2026 Clark County rates." },
 	{ q: "What hidden costs should Battle Ground homeowners expect?", a: "Older Battle Ground homes (pre-1995) frequently have soft subfloors from slow leaks, original tile installed over drywall instead of cement board, and galvanized pipe under the sink. These conditions require correction before new tile goes in. We assess all of this during the free walkthrough." },
 	{ q: "Is a tub-to-shower conversion worth it in Battle Ground?", a: "Yes — especially for aging-in-place homeowners and those maximizing a smaller bathroom. A prefab tub-to-shower conversion runs $1,725–$3,500. A custom tile walk-in shower runs $3,500–$8,000. Both add function and buyer appeal." },
-	{ q: "Do I need a permit for a bathroom remodel in Battle Ground?", a: "Cosmetic remodels — new vanity, tile, fixtures, and paint — typically don't require a permit. Plumbing relocation, structural changes, and electrical panel work do. Norbilt (WA Lic. NORBI**741CS) handles all required permits." },
+	{ q: "Do I need a permit for a bathroom remodel in Battle Ground?", a: "Cosmetic remodels — new vanity, tile, fixtures, and paint — typically don't require a permit. Plumbing relocation, structural changes, and electrical panel work do. NORBILT (WA Lic. NORBI**741CS) handles all required permits." },
 	{ q: "How long does a bathroom remodel take in Battle Ground?", a: "A cosmetic refresh takes 1–2 days. A mid-range remodel takes 3–5 days. A full gut remodel takes 1–2 weeks. Primary suite remodels with custom tile take 2–4 weeks. We confirm timelines during the free estimate." },
 	{ q: "What adds the most bathroom value before selling in Battle Ground?", a: "Updated fixtures, a new vanity, and a clean recaulk/regrout job have the highest visible ROI in Battle Ground's market. Fixing any water damage or failing caulk is non-negotiable — buyers' agents flag these. A mid-range update ($3,450–$7,500) typically recovers 70–80% at sale." },
 ];
@@ -53,16 +53,16 @@ const faqs = [
 export default function BathroomRemodelCostBattleGroundWA() {
 	return (
 		<>
-			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Article", headline: "Bathroom Remodel Cost in Battle Ground WA: 2026 Guide", author: { "@type": "Person", name: "Andrey Norbilt" }, publisher: { "@type": "Organization", name: "Norbilt", logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" } }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://norbilt.com/blog/bathroom-remodel-cost-battle-ground-wa" }) }} />
+			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Article", headline: "Bathroom Remodel Cost in Battle Ground WA: 2026 Guide", author: { "@type": "Person", name: "Andrey NORBILT" }, publisher: { "@type": "Organization", name: "NORBILT", logo: { "@type": "ImageObject", url: "https://www.norbilt.com/icon-v3.png" } }, datePublished: "2026-06-08", dateModified: "2026-06-08", mainEntityOfPage: "https://www.norbilt.com/blog/bathroom-remodel-cost-battle-ground-wa" }) }} />
 			<script
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify({
 					"@context": "https://schema.org",
 					"@type": "BreadcrumbList",
 					itemListElement: [
-						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
-						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
-						{ "@type": "ListItem", position: 3, name: "Bathroom Remodel Cost in Battle Ground WA: 2026 Pricing Guide", item: "https://norbilt.com/blog/bathroom-remodel-cost-battle-ground-wa" },
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://www.norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Bathroom Remodel Cost in Battle Ground WA: 2026 Pricing Guide", item: "https://www.norbilt.com/blog/bathroom-remodel-cost-battle-ground-wa" },
 					],
 				}) }}
 			/>
@@ -81,7 +81,7 @@ export default function BathroomRemodelCostBattleGroundWA() {
 				</section>
 				<article className="py-16 lg:py-24">
 					<div className="max-w-3xl mx-auto px-6 lg:px-8 space-y-16">
-						<section className="space-y-5 text-gray-700 leading-relaxed text-lg"><p>A bathroom remodel in Battle Ground WA costs between <strong>$920 for a cosmetic refresh</strong> and <strong>$35,000+ for a high-end primary suite</strong>. Battle Ground&apos;s mix of older homes and newer subdivisions means the right scope varies — and older Cherry Grove homes often need more prep work than their price tags suggest.</p><p>Norbilt is a licensed general contractor (WA Lic. <strong>NORBI**741CS</strong>) — one of the most active licensed contractors in north Clark County. $1,000,000 liability insurance. 1-year warranty on all bathroom work.</p></section>
+						<section className="space-y-5 text-gray-700 leading-relaxed text-lg"><p>A bathroom remodel in Battle Ground WA costs between <strong>$920 for a cosmetic refresh</strong> and <strong>$35,000+ for a high-end primary suite</strong>. Battle Ground&apos;s mix of older homes and newer subdivisions means the right scope varies — and older Cherry Grove homes often need more prep work than their price tags suggest.</p><p>NORBILT is a licensed general contractor (WA Lic. <strong>NORBI**741CS</strong>) — one of the most active licensed contractors in north Clark County. $1,000,000 liability insurance. 1-year warranty on all bathroom work.</p></section>
 						<section className="space-y-6"><h2 className="text-3xl font-black text-[#1F2E2B] uppercase tracking-tighter">Bathroom Remodel Cost by Scope</h2><div className="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm"><table className="w-full text-sm"><thead className="bg-[#1F2E2B] text-white"><tr><th className="text-left p-4 font-black uppercase tracking-wider">Scope</th><th className="text-left p-4 font-black uppercase tracking-wider">What&apos;s Included</th><th className="text-left p-4 font-black uppercase tracking-wider">Cost Range</th><th className="text-left p-4 font-black uppercase tracking-wider">Timeline</th><th className="text-left p-4 font-black uppercase tracking-wider">Best For</th></tr></thead><tbody>{costTiers.map((r, i) => (<tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}><td className="p-4 font-black text-[#1F2E2B]">{r.scope}</td><td className="p-4 text-gray-600">{r.desc}</td><td className="p-4 font-bold text-[#2D5A3D] whitespace-nowrap">{r.range}</td><td className="p-4 text-gray-500 whitespace-nowrap">{r.timeline}</td><td className="p-4 text-gray-600">{r.best}</td></tr>))}</tbody></table></div></section>
 						<section className="space-y-6"><h2 className="text-3xl font-black text-[#1F2E2B] uppercase tracking-tighter">Cost by Component</h2><div className="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm"><table className="w-full text-sm"><thead className="bg-[#1F2E2B] text-white"><tr><th className="text-left p-4 font-black uppercase tracking-wider">Component</th><th className="text-left p-4 font-black uppercase tracking-wider">Installed Cost (Battle Ground WA, 2026)</th></tr></thead><tbody>{components.map((r, i) => (<tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}><td className="p-4 text-gray-700 font-medium">{r.item}</td><td className="p-4 font-bold text-[#2D5A3D]">{r.range}</td></tr>))}</tbody></table></div></section>
 						<section className="space-y-6"><h2 className="text-3xl font-black text-[#1F2E2B] uppercase tracking-tighter">What Drives Costs in Battle Ground</h2><div className="space-y-5">{drivers.map((d, i) => (<div key={i} className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm"><h3 className="text-lg font-black text-[#1F2E2B] mb-3">{d.title}</h3><p className="text-gray-600 leading-relaxed">{d.body}</p></div>))}</div></section>

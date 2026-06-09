@@ -1,35 +1,35 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Finish Carpentry Vancouver WA | Norbilt Contractor",
+	title: "Finish Carpentry Vancouver WA | NORBILT Contractor",
 	description:
-		"Quality finish carpentry in Vancouver WA. Norbilt installs crown molding, baseboards, window trim, and built-in shelves. Licensed general contractor.",
+		"Quality finish carpentry in Vancouver WA. NORBILT installs crown molding, baseboards, window trim, and built-in shelves. Licensed general contractor.",
 	alternates: {
-		canonical: "https://norbilt.com/services/finish-carpentry",
+		canonical: "https://www.norbilt.com/services/finish-carpentry",
 	},
 	openGraph: {
-		title: "Finish Carpentry Vancouver WA | Norbilt",
+		title: "Finish Carpentry Vancouver WA | NORBILT",
 		description:
 			"Expert trim work, crown molding, and custom carpentry for homes in Vancouver and Clark County WA.",
-		url: "https://norbilt.com/services/finish-carpentry",
+		url: "https://www.norbilt.com/services/finish-carpentry",
 		type: "website",
-		siteName: "Norbilt",
+		siteName: "NORBILT",
 		locale: "en_US",
 		images: [
 			{
-				url: "https://norbilt.com/og-image.jpg",
+				url: "https://www.norbilt.com/og-image.jpg",
 				width: 1200,
 				height: 630,
-				alt: "Finish Carpentry Vancouver WA | Norbilt",
+				alt: "Finish Carpentry Vancouver WA | NORBILT",
 			},
 		],
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Finish Carpentry Vancouver WA | Norbilt",
+		title: "Finish Carpentry Vancouver WA | NORBILT",
 		description:
 			"Expert trim work, crown molding, and custom carpentry for homes in Vancouver and Clark County WA.",
-		images: ["https://norbilt.com/og-image.jpg"],
+		images: ["https://www.norbilt.com/og-image.jpg"],
 	},
 };
 

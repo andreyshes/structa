@@ -3,20 +3,20 @@ import { ArrowRight, CheckCircle2, Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Kitchen Remodel Cost in Camas WA: 2026 Pricing Guide | Norbilt",
+	title: "Kitchen Remodel Cost in Camas WA: 2026 Pricing Guide | NORBILT",
 	description:
 		"How much does a kitchen remodel cost in Camas WA? Real 2026 price ranges for every scope — from a cosmetic refresh to a full custom build. Camas-specific pricing, cabinet options, and what to expect.",
 	alternates: {
-		canonical: "https://norbilt.com/blog/kitchen-remodel-cost-camas-wa",
+		canonical: "https://www.norbilt.com/blog/kitchen-remodel-cost-camas-wa",
 	},
 	openGraph: {
-		title: "Kitchen Remodel Cost in Camas WA: 2026 Pricing Guide | Norbilt",
+		title: "Kitchen Remodel Cost in Camas WA: 2026 Pricing Guide | NORBILT",
 		description:
 			"Real 2026 price ranges for kitchen remodels in Camas WA — from a $1,500 cosmetic refresh to a $80,000+ custom build. Camas-specific pricing, cabinet options, and what to expect.",
-		url: "https://norbilt.com/blog/kitchen-remodel-cost-camas-wa",
-		siteName: "Norbilt",
+		url: "https://www.norbilt.com/blog/kitchen-remodel-cost-camas-wa",
+		siteName: "NORBILT",
 		type: "article",
-		images: [{ url: "https://norbilt.com/og-image.jpg", width: 1200, height: 630 }],
+		images: [{ url: "https://www.norbilt.com/og-image.jpg", width: 1200, height: 630 }],
 	},
 };
 
@@ -89,7 +89,7 @@ const factors = [
 	},
 	{
 		title: "Permit Requirements",
-		body: "Cosmetic work (paint, hardware, backsplash, faucet swaps) needs no permit. Any electrical, plumbing, or structural work requires a Clark County permit — $150–$800 depending on scope. Norbilt pulls all required permits.",
+		body: "Cosmetic work (paint, hardware, backsplash, faucet swaps) needs no permit. Any electrical, plumbing, or structural work requires a Clark County permit — $150–$800 depending on scope. NORBILT pulls all required permits.",
 	},
 	{
 		title: "2026 Material Tariffs",
@@ -108,7 +108,7 @@ const faqs = [
 	},
 	{
 		q: "Do kitchen remodels require a permit in Camas WA?",
-		a: "Cosmetic work — hardware, paint, backsplash tile, faucet swaps — does not require a permit. Permits are required when work involves plumbing modifications, electrical (new circuits, relocated outlets), or structural changes. Clark County permits typically cost $150–$800. Norbilt pulls all required permits as part of the project.",
+		a: "Cosmetic work — hardware, paint, backsplash tile, faucet swaps — does not require a permit. Permits are required when work involves plumbing modifications, electrical (new circuits, relocated outlets), or structural changes. Clark County permits typically cost $150–$800. NORBILT pulls all required permits as part of the project.",
 	},
 	{
 		q: "How long does a kitchen remodel take in Camas?",
@@ -124,7 +124,7 @@ const faqs = [
 	},
 	{
 		q: "Is your kitchen remodel work covered by a warranty in Camas WA?",
-		a: "Yes. All Norbilt kitchen remodel work in Camas and Clark County is backed by a 1-year workmanship warranty. If anything we installed or built has a defect within the first year, we fix it at no charge. We're a licensed Washington State General Contractor — fully insured, bonded, and local to Clark County.",
+		a: "Yes. All NORBILT kitchen remodel work in Camas and Clark County is backed by a 1-year workmanship warranty. If anything we installed or built has a defect within the first year, we fix it at no charge. We're a licensed Washington State General Contractor — fully insured, bonded, and local to Clark County.",
 	},
 ];
 
@@ -134,16 +134,16 @@ const schema = {
 		headline: "Kitchen Remodel Cost in Camas WA: 2026 Pricing Guide",
 		description:
 			"Real 2026 price ranges for kitchen remodels in Camas WA — from cosmetic refreshes to full custom builds. Camas-specific pricing, component costs, and what drives the price.",
-		url: "https://norbilt.com/blog/kitchen-remodel-cost-camas-wa",
+		url: "https://www.norbilt.com/blog/kitchen-remodel-cost-camas-wa",
 		datePublished: "2026-05-26",
 		dateModified: "2026-05-26",
-		author: { "@type": "Organization", name: "Norbilt" },
+		author: { "@type": "Organization", name: "NORBILT" },
 		publisher: {
 			"@type": "Organization",
-			name: "Norbilt",
-			url: "https://norbilt.com",
+			name: "NORBILT",
+			url: "https://www.norbilt.com",
 		},
-		mainEntityOfPage: "https://norbilt.com/blog/kitchen-remodel-cost-camas-wa",
+		mainEntityOfPage: "https://www.norbilt.com/blog/kitchen-remodel-cost-camas-wa",
 };
 
 function fmt(n: number) {
@@ -163,9 +163,9 @@ export default function KitchenRemodeCostCamasPage() {
 			"@context": "https://schema.org",
 			"@type": "BreadcrumbList",
 			itemListElement: [
-				{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
-				{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
-				{ "@type": "ListItem", position: 3, name: "Kitchen Remodel Cost in Camas WA: 2026 Pricing Guide", item: "https://norbilt.com/blog/kitchen-remodel-cost-camas-wa" },
+				{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+				{ "@type": "ListItem", position: 2, name: "Blog", item: "https://www.norbilt.com/blog" },
+				{ "@type": "ListItem", position: 3, name: "Kitchen Remodel Cost in Camas WA: 2026 Pricing Guide", item: "https://www.norbilt.com/blog/kitchen-remodel-cost-camas-wa" },
 			],
 				}) }}
 			/>
@@ -197,7 +197,7 @@ export default function KitchenRemodeCostCamasPage() {
 						<span>·</span>
 						<span>Camas, WA · Clark County</span>
 						<span>·</span>
-						<span>By Norbilt</span>
+						<span>By NORBILT</span>
 					</div>
 				</div>
 			</section>
@@ -339,7 +339,7 @@ export default function KitchenRemodeCostCamasPage() {
 							},
 							{
 								title: "Permit Requirements",
-								body: "Any project involving plumbing, electrical, or structural work requires a Clark County permit — $150–$800 depending on scope. Camas kitchens doing full gut remodels or layout changes almost always trigger permits. Norbilt handles all permit filings as part of your project.",
+								body: "Any project involving plumbing, electrical, or structural work requires a Clark County permit — $150–$800 depending on scope. Camas kitchens doing full gut remodels or layout changes almost always trigger permits. NORBILT handles all permit filings as part of your project.",
 							},
 						].map((item, i) => (
 							<div key={i} className="flex gap-6 items-start">
@@ -466,7 +466,7 @@ export default function KitchenRemodeCostCamasPage() {
 							Ready to Get Started?
 						</p>
 						<p className="font-black text-xl uppercase tracking-tight">
-							Norbilt handles kitchen remodels throughout Camas and Clark County — free estimate, 1-year warranty.
+							NORBILT handles kitchen remodels throughout Camas and Clark County — free estimate, 1-year warranty.
 						</p>
 					</div>
 					<div className="flex flex-col sm:flex-row gap-4 shrink-0">

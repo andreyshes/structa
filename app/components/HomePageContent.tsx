@@ -115,21 +115,21 @@ export default function HomePageContent() {
 	const reviews = [
 		{
 			quote:
-				"We had a positive experience with Norbilt here in Vancouver, WA. I worked with Andrey, who was courteous, professional, efficient, and delivered high-quality work in a timely manner. It's hard to find reliable help these days, and I truly appreciated his attention to detail and expertise.",
+				"We had a positive experience with NORBILT here in Vancouver, WA. I worked with Andrey, who was courteous, professional, efficient, and delivered high-quality work in a timely manner. It's hard to find reliable help these days, and I truly appreciated his attention to detail and expertise.",
 			name: "M. Taylor",
 			location: "Vancouver, WA",
 			service: "Home Repairs",
 		},
 		{
 			quote:
-				"I hired Norbilt to stain my fence at my home in Vancouver, WA and they did an excellent job. Communication was clear, they showed up on time, and the quality of the work really shows. The stain came out even, clean, and professional — it completely refreshed the look of our yard.",
+				"I hired NORBILT to stain my fence at my home in Vancouver, WA and they did an excellent job. Communication was clear, they showed up on time, and the quality of the work really shows. The stain came out even, clean, and professional — it completely refreshed the look of our yard.",
 			name: "Angelo",
 			location: "Vancouver, WA",
 			service: "Fence Staining",
 		},
 		{
 			quote:
-				"Norbilt was awesome to work with. They transformed my outdated bathroom to something modern and I love it! Great company to work with and I am in love with my bathroom once again.",
+				"NORBILT was awesome to work with. They transformed my outdated bathroom to something modern and I love it! Great company to work with and I am in love with my bathroom once again.",
 			name: "David",
 			location: "Vancouver, WA",
 			service: "Bathroom Remodel",
@@ -164,14 +164,14 @@ export default function HomePageContent() {
 		},
 		{
 			quote:
-				"Norbilt did a great job on flooring project. Andrey was professional, efficient, and made sure everything was installed perfectly. The floors look amazing and completely transformed the space. Very happy with the quality of work and would definitely recommend them.",
+				"NORBILT did a great job on flooring project. Andrey was professional, efficient, and made sure everything was installed perfectly. The floors look amazing and completely transformed the space. Very happy with the quality of work and would definitely recommend them.",
 			name: "Roman K.",
 			location: "Vancouver, WA",
 			service: "Flooring Installation",
 		},
 		{
 			quote:
-				"Norbilt did a great job installing doors and windows in my Camas home. Andrey was professional, detail-oriented, and made sure everything was done right. The quality of work really shows — highly recommend!",
+				"NORBILT did a great job installing doors and windows in my Camas home. Andrey was professional, detail-oriented, and made sure everything was done right. The quality of work really shows — highly recommend!",
 			name: "Joey D.",
 			location: "Camas, WA",
 			service: "Doors & Windows",
@@ -185,14 +185,14 @@ export default function HomePageContent() {
 		},
 		{
 			quote:
-				"Great experience with Norbilt. Andrey and his team were professional, easy to work with, and delivered high-quality work. Everything was smooth from start to finish. Highly recommend!",
+				"Great experience with NORBILT. Andrey and his team were professional, easy to work with, and delivered high-quality work. Everything was smooth from start to finish. Highly recommend!",
 			name: "Sam Y.",
 			location: "Vancouver, WA",
 			service: "Home Repairs",
 		},
 		{
 			quote:
-				"Norbilt has built me my dream bathroom. Andrey was quick to respond to me whenever I had any questions and was very respectful and pleasant to work with. Couldn't have been more happy with the experience!",
+				"NORBILT has built me my dream bathroom. Andrey was quick to respond to me whenever I had any questions and was very respectful and pleasant to work with. Couldn't have been more happy with the experience!",
 			name: "Ruvim C.",
 			location: "Vancouver, WA",
 			service: "Bathroom Remodel",
@@ -206,7 +206,7 @@ export default function HomePageContent() {
 		},
 		{
 			quote:
-				"I had a great experience working with Norbilt on my remodeling project. From start to finish, their team was professional, detail-oriented, and easy to communicate with. Andrey was especially helpful throughout the process — he made sure everything stayed on track and met my expectations. The quality of work really shows, and the final result turned out even better than I imagined.",
+				"I had a great experience working with NORBILT on my remodeling project. From start to finish, their team was professional, detail-oriented, and easy to communicate with. Andrey was especially helpful throughout the process — he made sure everything stayed on track and met my expectations. The quality of work really shows, and the final result turned out even better than I imagined.",
 			name: "Taylor K.",
 			location: "Vancouver, WA",
 			service: "Remodeling",
@@ -322,12 +322,12 @@ export default function HomePageContent() {
 								First, are you looking for a{" "}
 								<strong>general contractor in Vancouver, WA</strong>? Local
 								owners need a pro who can fix and protect their homes. Next,
-								Norbilt handles <strong>kitchen & bathroom remodeling</strong> and{" "}
+								NORBILT handles <strong>kitchen & bathroom remodeling</strong> and{" "}
 								<strong>home repairs</strong>. We fix drywall, update sinks, and
 								install new trim. Our team is licensed, bonded, and insured.
 							</p>
 							<p className="text-lg text-gray-700 leading-relaxed">
-								Also, we focus on quality work and fair pricing. Norbilt handles
+								Also, we focus on quality work and fair pricing. NORBILT handles
 								everything from <strong>window repair</strong> to{" "}
 								<strong>bathroom remodeling</strong>. We serve all people in Clark
 								County with care. Trust our team for your next home project.
@@ -479,13 +479,13 @@ export default function HomePageContent() {
 						<div className="lg:w-1/2 relative h-96 lg:h-auto">
 							<Image
 								src="https://images.unsplash.com/photo-1682888818696-906287d759f5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1vZGVybiUyMGJhdGhyb29tfGVufDB8fDB8fHww"
-								alt="Modern bathroom remodel by Norbilt in Vancouver WA"
+								alt="Modern bathroom remodel by NORBILT in Vancouver WA"
 								fill
 								sizes="(max-width: 1024px) 100vw, 50vw"
 								className="object-cover"
 							/>
 							<div className="absolute top-6 left-6 bg-[#FFB800] text-black font-black px-4 py-2 rounded-lg text-xs uppercase tracking-widest shadow-xl">
-								The Norbilt Standard
+								The NORBILT Standard
 							</div>
 						</div>
 						<div className="lg:w-1/2 p-12 md:p-20 flex flex-col justify-center">
@@ -534,7 +534,7 @@ export default function HomePageContent() {
 							Serving All of Clark County, WA
 						</h2>
 						<p className="max-w-2xl mx-auto text-gray-600 text-lg">
-							Norbilt is a licensed, bonded general contractor serving Vancouver
+							NORBILT is a licensed, bonded general contractor serving Vancouver
 							and all Clark County communities. Therefore, select your city
 							below for local rates and service info.
 						</p>
@@ -583,7 +583,7 @@ export default function HomePageContent() {
 						<div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
 							<Image
 								src="/remodel-images/IMG_1897%202.jpg"
-								alt="Bathroom remodel by Norbilt in Vancouver WA"
+								alt="Bathroom remodel by NORBILT in Vancouver WA"
 								fill
 								sizes="(max-width: 1024px) 100vw, 50vw"
 								className="object-cover object-top"
@@ -679,7 +679,7 @@ export default function HomePageContent() {
 							beforeSrc="/before-after-bath/4B7B4C72-3203-41BA-9B51-E623563332FF_1_201_a.jpeg"
 							afterSrc="/before-after-bath/bathroom.jpg.png"
 							beforeAlt="Bathroom before remodel — dated tile and dark wood vanity"
-							afterAlt="Bathroom after remodel by Norbilt — modern marble and freestanding tub"
+							afterAlt="Bathroom after remodel by NORBILT — modern marble and freestanding tub"
 							label="Bathroom Remodel — Vancouver, WA"
 							aspectClass="aspect-[3/2]"
 						/>
@@ -695,7 +695,7 @@ export default function HomePageContent() {
 							},
 							{
 								src: "/remodel-images/IMG_1897%202.jpg",
-								alt: "Marble tile shower remodel by Norbilt Clark County WA",
+								alt: "Marble tile shower remodel by NORBILT Clark County WA",
 								label: "Bathroom Tile & Shower",
 							},
 							{

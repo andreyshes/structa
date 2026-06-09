@@ -58,7 +58,7 @@ const serviceTypes = [
 const faqs = [
 	{
 		q: "Do I need a permit for a kitchen or bathroom update in Clark County?",
-		a: "Minor cosmetic updates — hardware, fixtures, caulk, tile — do not require a permit. Permits are required when moving plumbing, electrical, or walls. Norbilt pulls permits when needed and knows Clark County's requirements.",
+		a: "Minor cosmetic updates — hardware, fixtures, caulk, tile — do not require a permit. Permits are required when moving plumbing, electrical, or walls. NORBILT pulls permits when needed and knows Clark County's requirements.",
 	},
 	{
 		q: "What is the difference between a cosmetic update and a full remodel?",
@@ -86,7 +86,7 @@ const faqs = [
 	},
 	{
 		q: "Is your kitchen and bathroom work covered by a warranty?",
-		a: "Yes. All Norbilt kitchen and bathroom work is backed by a 1-year workmanship warranty. If caulk fails, tile lifts, or any installed fixture has a workmanship issue, we return and fix it at no charge within the warranty period.",
+		a: "Yes. All NORBILT kitchen and bathroom work is backed by a 1-year workmanship warranty. If caulk fails, tile lifts, or any installed fixture has a workmanship issue, we return and fix it at no charge within the warranty period.",
 	},
 ];
 
@@ -111,8 +111,8 @@ const schema = {
 	"@graph": [
 		{
 			"@type": "LocalBusiness",
-			name: "Norbilt",
-			url: "https://norbilt.com/services/kitchen-bath",
+			name: "NORBILT",
+			url: "https://www.norbilt.com/services/kitchen-bath",
 			telephone: "+1-3602169920",
 			areaServed: "Clark County, WA",
 			description:
@@ -137,7 +137,7 @@ const schema = {
 };
 
 export const metadata = {
-	title: "Kitchen & Bathroom Remodeling in Vancouver WA | Licensed Contractor | Norbilt",
+	title: "Kitchen & Bathroom Remodeling in Vancouver WA | Licensed Contractor | NORBILT",
 	description:
 		"Licensed kitchen and bathroom remodeling contractor in Vancouver WA and Clark County. Full remodels, tub-to-shower conversions, tile, vanity, backsplash & more. Free same-week estimates. 1-year warranty.",
 };
@@ -178,7 +178,7 @@ export default function KitchenBathPage() {
 						</h1>
 
 						<p className="text-xl text-white/90 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6">
-							From a Full gut remodels, tub-to-shower conversions, vanity and tile replacements, kitchen updates, and cosmetic refreshes — Norbilt handles every level of kitchen and bathroom remodeling in Clark County. Licensed WA contractor, backed by a 1-year workmanship warranty.
+							From a Full gut remodels, tub-to-shower conversions, vanity and tile replacements, kitchen updates, and cosmetic refreshes — NORBILT handles every level of kitchen and bathroom remodeling in Clark County. Licensed WA contractor, backed by a 1-year workmanship warranty.
 						</p>
 
 						<div className="pt-4">
@@ -240,7 +240,7 @@ export default function KitchenBathPage() {
 						<strong>$28,000+ for a full gut remodel</strong>. Licensed contractor
 						labor runs $65–$95/hr. Tub-to-shower conversions average $1,500–$8,000
 						depending on scope. Permits required for plumbing and electrical
-						changes — Norbilt pulls all permits included in project cost.
+						changes — NORBILT pulls all permits included in project cost.
 					</p>
 				</div>
 			</section>
@@ -256,7 +256,7 @@ export default function KitchenBathPage() {
 							</h2>
 
 							<p className="text-gray-600 text-lg font-medium leading-relaxed">
-								Kitchens and bathrooms drive more home value than any other room — and they're the first places buyers look. Norbilt specializes in <strong>kitchen and bathroom remodeling</strong> at every scope in Clark County: full gut remodels, tub-to-shower conversions, vanity and tile upgrades, and targeted cosmetic refreshes. We focus on what actually moves the needle on home value.
+								Kitchens and bathrooms drive more home value than any other room — and they're the first places buyers look. NORBILT specializes in <strong>kitchen and bathroom remodeling</strong> at every scope in Clark County: full gut remodels, tub-to-shower conversions, vanity and tile upgrades, and targeted cosmetic refreshes. We focus on what actually moves the needle on home value.
 							</p>
 
 							<p className="text-gray-600 font-medium leading-relaxed">

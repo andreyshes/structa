@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { locationsData, servicesData } from "./locations/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-	const baseUrl = "https://norbilt.com";
+	const baseUrl = "https://www.norbilt.com";
 
 	// 1. Define your Core Routes
 	const routes: MetadataRoute.Sitemap = [

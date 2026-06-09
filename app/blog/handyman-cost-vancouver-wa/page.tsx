@@ -3,20 +3,20 @@ import { ArrowRight, CheckCircle2, Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "How Much Does a Handyman Cost in Vancouver WA? (2026 Rates) | Norbilt",
+	title: "How Much Does a Handyman Cost in Vancouver WA? (2026 Rates) | NORBILT",
 	description:
 		"Real 2026 handyman costs in Vancouver WA & Clark County. Hourly rates, per-job pricing for 20+ common tasks, and what separates a licensed contractor from an unlicensed handyman.",
 	alternates: {
-		canonical: "https://norbilt.com/blog/handyman-cost-vancouver-wa",
+		canonical: "https://www.norbilt.com/blog/handyman-cost-vancouver-wa",
 	},
 	openGraph: {
-		title: "How Much Does a Handyman Cost in Vancouver WA? (2026 Rates) | Norbilt",
+		title: "How Much Does a Handyman Cost in Vancouver WA? (2026 Rates) | NORBILT",
 		description:
 			"Real 2026 handyman pricing in Vancouver WA and Clark County. Hourly rates, job-by-job cost table, and what to watch for when hiring.",
-		url: "https://norbilt.com/blog/handyman-cost-vancouver-wa",
-		siteName: "Norbilt",
+		url: "https://www.norbilt.com/blog/handyman-cost-vancouver-wa",
+		siteName: "NORBILT",
 		type: "article",
-		images: [{ url: "https://norbilt.com/og-image.jpg", width: 1200, height: 630 }],
+		images: [{ url: "https://www.norbilt.com/og-image.jpg", width: 1200, height: 630 }],
 	},
 };
 
@@ -67,7 +67,7 @@ const faqs = [
 	},
 	{
 		q: "How do I get a handyman estimate in Vancouver WA?",
-		a: "Norbilt offers free on-site estimates for handyman and home repair projects throughout Clark County. You can call (360) 216-9920, use our online contact form, or try our instant estimator for a ballpark range before booking. We typically schedule estimates within the same week.",
+		a: "NORBILT offers free on-site estimates for handyman and home repair projects throughout Clark County. You can call (360) 216-9920, use our online contact form, or try our instant estimator for a ballpark range before booking. We typically schedule estimates within the same week.",
 	},
 ];
 
@@ -84,13 +84,13 @@ export default function HandymanCostPage() {
 						"description": "Real 2026 handyman costs in Vancouver WA & Clark County. Hourly rates, per-job pricing for 20+ common tasks, and what separates a licensed contractor from an unlicensed handyman.",
 						"datePublished": "2026-05-17",
 						"dateModified": "2026-05-17",
-						"author": { "@type": "Organization", "name": "Norbilt" },
+						"author": { "@type": "Organization", "name": "NORBILT" },
 						"publisher": {
 							"@type": "Organization",
-							"name": "Norbilt",
-							"url": "https://norbilt.com",
+							"name": "NORBILT",
+							"url": "https://www.norbilt.com",
 						},
-						"mainEntityOfPage": "https://norbilt.com/blog/handyman-cost-vancouver-wa",
+						"mainEntityOfPage": "https://www.norbilt.com/blog/handyman-cost-vancouver-wa",
 					}),
 				}}
 			/>
@@ -100,9 +100,9 @@ export default function HandymanCostPage() {
 					"@context": "https://schema.org",
 					"@type": "BreadcrumbList",
 					itemListElement: [
-						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
-						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
-						{ "@type": "ListItem", position: 3, name: "How Much Does a Handyman Cost in Vancouver WA?", item: "https://norbilt.com/blog/handyman-cost-vancouver-wa" },
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://www.norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "How Much Does a Handyman Cost in Vancouver WA?", item: "https://www.norbilt.com/blog/handyman-cost-vancouver-wa" },
 					],
 				}) }}
 			/>
@@ -130,7 +130,7 @@ export default function HandymanCostPage() {
 						<span>·</span>
 						<span>Clark County, WA</span>
 						<span>·</span>
-						<span>By Norbilt</span>
+						<span>By NORBILT</span>
 					</div>
 				</div>
 			</section>
@@ -389,7 +389,7 @@ export default function HandymanCostPage() {
 						Get a Free Handyman Estimate in Vancouver WA
 					</h2>
 					<p className="text-[#A7C4B5] font-medium mb-8 max-w-lg mx-auto">
-						Norbilt is a licensed WA General Contractor serving Vancouver, Camas, Ridgefield, Battle Ground, and all of Clark County. Free written estimates. Same-week availability.
+						NORBILT is a licensed WA General Contractor serving Vancouver, Camas, Ridgefield, Battle Ground, and all of Clark County. Free written estimates. Same-week availability.
 					</p>
 					<div className="flex flex-col sm:flex-row gap-4 justify-center">
 						<Link

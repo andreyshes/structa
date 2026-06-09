@@ -8,7 +8,7 @@ const faqs = [
 		questions: [
 			{
 				q: "How much does a handyman cost in Clark County, WA?",
-				a: "For single tasks, most handyman jobs in Clark County run $150–$350. A half-day (4 hours, multiple tasks) is typically $300–$600, and a full day runs $550–$1,000. Norbilt gives you a flat price before we start — no hourly surprises.",
+				a: "For single tasks, most handyman jobs in Clark County run $150–$350. A half-day (4 hours, multiple tasks) is typically $300–$600, and a full day runs $550–$1,000. NORBILT gives you a flat price before we start — no hourly surprises.",
 			},
 			{
 				q: "How much does drywall repair cost in Vancouver, WA?",
@@ -24,7 +24,7 @@ const faqs = [
 			},
 			{
 				q: "Do you charge for estimates?",
-				a: "No. Norbilt provides free on-site estimates for all Clark County homeowners. We walk the job, assess what's needed, and give you a clear written price before any work starts. You know the cost before we touch anything.",
+				a: "No. NORBILT provides free on-site estimates for all Clark County homeowners. We walk the job, assess what's needed, and give you a clear written price before any work starts. You know the cost before we touch anything.",
 			},
 			{
 				q: "Do you give a price upfront or charge by the hour?",
@@ -37,22 +37,22 @@ const faqs = [
 		icon: ShieldCheck,
 		questions: [
 			{
-				q: "Is Norbilt a licensed contractor in Washington State?",
-				a: "Yes. Norbilt is a licensed, bonded, and insured general contractor in Washington State. Our WA contractor license number is NORBIR**741CS. We carry general liability insurance on every job.",
+				q: "Is NORBILT a licensed contractor in Washington State?",
+				a: "Yes. NORBILT is a licensed, bonded, and insured general contractor in Washington State. Our WA contractor license number is NORBIR**741CS. We carry general liability insurance on every job.",
 				verifyLink: "https://secure.lni.wa.gov/verify/",
 				verifyText: "Verify our license at Washington State L&I →",
 			},
 			{
 				q: "Why does licensing matter for home repair in WA?",
-				a: "Washington State requires a contractor's license for repair work above $500. An unlicensed person doing electrical-adjacent, plumbing-adjacent, or structural work puts your home insurance at risk — if something goes wrong, your insurer can deny the claim. Norbilt is licensed for every job we take.",
+				a: "Washington State requires a contractor's license for repair work above $500. An unlicensed person doing electrical-adjacent, plumbing-adjacent, or structural work puts your home insurance at risk — if something goes wrong, your insurer can deny the claim. NORBILT is licensed for every job we take.",
 			},
 			{
 				q: "What's the difference between a handyman and a licensed general contractor?",
-				a: "In Washington, an unlicensed handyman is legally limited to jobs under $500. A licensed general contractor like Norbilt can legally handle larger repairs, remodels, and any work that requires permits. We do jobs that unlicensed handymen legally can't.",
+				a: "In Washington, an unlicensed handyman is legally limited to jobs under $500. A licensed general contractor like NORBILT can legally handle larger repairs, remodels, and any work that requires permits. We do jobs that unlicensed handymen legally can't.",
 			},
 			{
 				q: "Are you insured if something gets damaged during the job?",
-				a: "Yes. Norbilt carries general liability insurance. If we damage your home during a project, you're covered. We can provide a certificate of insurance upon request before any work begins.",
+				a: "Yes. NORBILT carries general liability insurance. If we damage your home during a project, you're covered. We can provide a certificate of insurance upon request before any work begins.",
 			},
 		],
 	},
@@ -70,7 +70,7 @@ const faqs = [
 			},
 			{
 				q: "Do you work in Camas, WA?",
-				a: "Yes. Norbilt serves Camas homeowners with the same licensed, bonded service as our Vancouver clients. We handle kitchen updates, tile work, trim carpentry, and general repairs across Camas and Washougal.",
+				a: "Yes. NORBILT serves Camas homeowners with the same licensed, bonded service as our Vancouver clients. We handle kitchen updates, tile work, trim carpentry, and general repairs across Camas and Washougal.",
 			},
 			{
 				q: "Do you work in Brush Prairie or Ridgefield?",

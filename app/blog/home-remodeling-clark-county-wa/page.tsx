@@ -3,19 +3,19 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-	title: "Home Remodeling in Clark County WA: Complete 2026 Cost Guide | Norbilt",
+	title: "Home Remodeling in Clark County WA: Complete 2026 Cost Guide | NORBILT",
 	description:
 		"Complete 2026 cost guide for home remodeling in Clark County WA. Real price ranges for kitchen remodels, bathroom remodels, flooring, carpentry, and drywall across Vancouver, Camas, Battle Ground, and Ridgefield.",
-	alternates: { canonical: "https://norbilt.com/blog/home-remodeling-clark-county-wa" },
+	alternates: { canonical: "https://www.norbilt.com/blog/home-remodeling-clark-county-wa" },
 	openGraph: {
 		title: "Home Remodeling in Clark County WA: Complete 2026 Cost Guide",
 		description:
 			"Real 2026 cost ranges for every home remodeling project in Clark County WA — kitchen, bathroom, flooring, carpentry, drywall, and more.",
-		url: "https://norbilt.com/blog/home-remodeling-clark-county-wa",
-		siteName: "Norbilt",
+		url: "https://www.norbilt.com/blog/home-remodeling-clark-county-wa",
+		siteName: "NORBILT",
 		locale: "en_US",
 		type: "article",
-		images: [{ url: "https://norbilt.com/og-image.jpg", width: 1200, height: 630 }],
+		images: [{ url: "https://www.norbilt.com/og-image.jpg", width: 1200, height: 630 }],
 	},
 };
 
@@ -26,22 +26,22 @@ const articleSchema = {
 	description: "Complete 2026 cost guide for home remodeling in Clark County WA covering kitchen, bathroom, flooring, carpentry, and drywall projects.",
 	datePublished: "2026-06-08",
 	dateModified: "2026-06-08",
-	author: { "@type": "Organization", name: "Norbilt", url: "https://norbilt.com" },
+	author: { "@type": "Organization", name: "NORBILT", url: "https://www.norbilt.com" },
 	publisher: {
 		"@type": "Organization",
-		name: "Norbilt",
-		logo: { "@type": "ImageObject", url: "https://norbilt.com/icon-v3.png" },
+		name: "NORBILT",
+		logo: { "@type": "ImageObject", url: "https://www.norbilt.com/icon-v3.png" },
 	},
-	mainEntityOfPage: { "@type": "WebPage", "@id": "https://norbilt.com/blog/home-remodeling-clark-county-wa" },
+	mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.norbilt.com/blog/home-remodeling-clark-county-wa" },
 };
 
 const breadcrumbSchema = {
 	"@context": "https://schema.org",
 	"@type": "BreadcrumbList",
 	itemListElement: [
-		{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
-		{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
-		{ "@type": "ListItem", position: 3, name: "Home Remodeling in Clark County WA", item: "https://norbilt.com/blog/home-remodeling-clark-county-wa" },
+		{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+		{ "@type": "ListItem", position: 2, name: "Blog", item: "https://www.norbilt.com/blog" },
+		{ "@type": "ListItem", position: 3, name: "Home Remodeling in Clark County WA", item: "https://www.norbilt.com/blog/home-remodeling-clark-county-wa" },
 	],
 };
 
@@ -129,7 +129,7 @@ export default function HomeRemodelingClarkCounty() {
 						<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6">
 							<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
 							<p className="text-gray-700 leading-relaxed text-sm">
-								Home remodeling in Clark County WA spans a wide range: kitchen remodels run $1,725–$100,000+, bathroom remodels $920–$35,000+, flooring installation $2.30–$23.00 per square foot, finish carpentry $460–$11,500+, and drywall repair $115–$2,300+. Mid-range projects — the most common scope in Vancouver, Camas, Battle Ground, and Ridgefield — typically run $3,450–$35,000 depending on the service. Camas homeowners generally spend more on materials than other Clark County cities due to market expectations. Older Vancouver homes (Hazel Dell, Orchards, pre-1980) frequently have hidden water damage or outdated electrical that adds $460–$2,300 to any remodel scope. Ridgefield and newer Battle Ground subdivisions have cleaner infrastructure and more predictable budgets. Washington State requires a licensed contractor for all work over $500. Norbilt (WA Lic. NORBI**741CS) serves all of Clark County with free same-week estimates.
+								Home remodeling in Clark County WA spans a wide range: kitchen remodels run $1,725–$100,000+, bathroom remodels $920–$35,000+, flooring installation $2.30–$23.00 per square foot, finish carpentry $460–$11,500+, and drywall repair $115–$2,300+. Mid-range projects — the most common scope in Vancouver, Camas, Battle Ground, and Ridgefield — typically run $3,450–$35,000 depending on the service. Camas homeowners generally spend more on materials than other Clark County cities due to market expectations. Older Vancouver homes (Hazel Dell, Orchards, pre-1980) frequently have hidden water damage or outdated electrical that adds $460–$2,300 to any remodel scope. Ridgefield and newer Battle Ground subdivisions have cleaner infrastructure and more predictable budgets. Washington State requires a licensed contractor for all work over $500. NORBILT (WA Lic. NORBI**741CS) serves all of Clark County with free same-week estimates.
 							</p>
 						</div>
 					</div>
@@ -326,7 +326,7 @@ export default function HomeRemodelingClarkCounty() {
 								},
 								{
 									title: "Permit Requirements",
-									body: "Clark County and its cities require permits for plumbing relocation, electrical panel work, structural changes, and some mechanical work. Permits run $150–$800 depending on scope and jurisdiction (Vancouver, Camas, and Ridgefield each have their own permit office). Cosmetic work — paint, hardware, fixtures in existing locations, and most flooring — doesn't require a permit. Norbilt (WA Lic. NORBI**741CS) pulls all required permits.",
+									body: "Clark County and its cities require permits for plumbing relocation, electrical panel work, structural changes, and some mechanical work. Permits run $150–$800 depending on scope and jurisdiction (Vancouver, Camas, and Ridgefield each have their own permit office). Cosmetic work — paint, hardware, fixtures in existing locations, and most flooring — doesn't require a permit. NORBILT (WA Lic. NORBI**741CS) pulls all required permits.",
 								},
 								{
 									title: "Market & Timing",
@@ -372,7 +372,7 @@ export default function HomeRemodelingClarkCounty() {
 						</div>
 						<div className="bg-[#1F2E2B] rounded-2xl p-6 mt-4">
 							<p className="text-white/70 text-sm leading-relaxed">
-								Norbilt carries <strong className="text-white">WA General Contractor License NORBI**741CS</strong>, $1,000,000 liability insurance, and a surety bond. We pull all required permits and back every project with a 1-year workmanship warranty. <Link href="/contact" className="text-[#FFB800] font-bold hover:underline">Get a free estimate →</Link>
+								NORBILT carries <strong className="text-white">WA General Contractor License NORBI**741CS</strong>, $1,000,000 liability insurance, and a surety bond. We pull all required permits and back every project with a 1-year workmanship warranty. <Link href="/contact" className="text-[#FFB800] font-bold hover:underline">Get a free estimate →</Link>
 							</p>
 						</div>
 					</div>
@@ -428,7 +428,7 @@ export default function HomeRemodelingClarkCounty() {
 							Ready to Start Your Remodel?
 						</h2>
 						<p className="text-white/70 text-lg">
-							Norbilt is a licensed, bonded, and insured general contractor serving all of Clark County. Free same-week estimates on kitchen remodels, bathroom remodels, flooring, and more.
+							NORBILT is a licensed, bonded, and insured general contractor serving all of Clark County. Free same-week estimates on kitchen remodels, bathroom remodels, flooring, and more.
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
 							<Link href="/contact" className="inline-flex items-center gap-3 px-10 py-5 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl shadow-xl hover:scale-105 transition-all">

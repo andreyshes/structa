@@ -25,7 +25,7 @@ export default function AboutPageContent() {
 			icon: Shield,
 			title: "Licensed Contractor",
 			description:
-				"Norbilt is a registered Washington contractor. Furthermore, we provide full insurance and direct management for every project.",
+				"NORBILT is a registered Washington contractor. Furthermore, we provide full insurance and direct management for every project.",
 		},
 		{
 			icon: Sparkles,
@@ -37,7 +37,7 @@ export default function AboutPageContent() {
 			icon: Heart,
 			title: "Local Vancouver Focus",
 			description:
-				"Norbilt is a local family business. Also, we are dedicated to improving homes across Vancouver and Clark County.",
+				"NORBILT is a local family business. Also, we are dedicated to improving homes across Vancouver and Clark County.",
 		},
 	];
 
@@ -55,7 +55,7 @@ export default function AboutPageContent() {
 				<div className="absolute inset-0">
 					<Image
 						src="/remodel-images/IMG_6433.jpg"
-						alt="Outdoor project by Norbilt general contractor Vancouver WA"
+						alt="Outdoor project by NORBILT general contractor Vancouver WA"
 						fill
 						priority
 						sizes="100vw"
@@ -71,7 +71,7 @@ export default function AboutPageContent() {
 							animate={{ opacity: 1, y: 0 }}
 						>
 							<span className="px-4 py-1 bg-[#FFB800] text-black text-xs font-black uppercase tracking-widest rounded">
-								About Norbilt
+								About NORBILT
 							</span>
 						</motion.div>
 
@@ -85,7 +85,7 @@ export default function AboutPageContent() {
 						</motion.h1>
 
 						<p className="text-xl text-white/80 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6">
-							Norbilt offers professional remodeling and home repair. Also, we are the
+							NORBILT offers professional remodeling and home repair. Also, we are the
 							trusted choice for quality work in Vancouver, WA. Our team focuses
 							Furthermore, our team focuses on honest service and great results.
 						</p>
@@ -118,7 +118,7 @@ export default function AboutPageContent() {
 						<div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl border-8 border-[#F8F6F3]">
 							<Image
 								src="/remodel-images/IMG_7646.jpg"
-								alt="Kitchen remodel by Norbilt in Vancouver WA"
+								alt="Kitchen remodel by NORBILT in Vancouver WA"
 								fill
 								sizes="(max-width: 1024px) 100vw, 50vw"
 								className="object-cover"
@@ -143,7 +143,7 @@ export default function AboutPageContent() {
 
 						<div className="space-y-6 text-gray-600 font-medium leading-relaxed text-lg">
 							<p>
-								Norbilt was started in <strong>Vancouver, WA</strong> to help
+								NORBILT was started in <strong>Vancouver, WA</strong> to help
 								homeowners. We knew people needed a{" "}
 								<strong>general contractor</strong> who was honest and skilled.
 								We handle <strong>interior remodeling</strong> and{" "}
@@ -158,7 +158,7 @@ export default function AboutPageContent() {
 								every time.
 							</p>
 							<p>
-								Your home is a big investment. Therefore, Norbilt is a{" "}
+								Your home is a big investment. Therefore, NORBILT is a{" "}
 								<strong>licensed and insured contractor</strong>. In addition, we offer clear
 								pricing and honest care for every local client.
 							</p>
@@ -279,7 +279,7 @@ export default function AboutPageContent() {
 					</h2>
 					<p className="text-xl text-gray-600 mb-12 font-medium max-w-2xl mx-auto">
 						Ready to start your <strong>home repair</strong> or{" "}
-						<strong>interior remodel</strong>? Contact Norbilt today for an
+						<strong>interior remodel</strong>? Contact NORBILT today for an
 						estimate. We are your local <strong>general contractor</strong>.
 					</p>
 					<Link

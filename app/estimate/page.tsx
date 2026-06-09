@@ -120,7 +120,7 @@ function ServiceDetails({ service, details, onChange }: { service: ServiceKey; d
 		<div className="space-y-5">
 			{sel("type", "What type of work?", ["Interior door installation", "Exterior door installation", "Window repair / reglazing", "Window replacement", "Door frame repair", "Hardware replacement only"])}
 			{sel("count", "How many doors / windows?", ["1", "2–3", "4–5", "6+"])}
-			{sel("supply", "Material supply", ["Install only – I have the materials", "Supply and install (Norbilt sources materials)", "Not sure yet"])}
+			{sel("supply", "Material supply", ["Install only – I have the materials", "Supply and install (NORBILT sources materials)", "Not sure yet"])}
 		</div>
 	);
 

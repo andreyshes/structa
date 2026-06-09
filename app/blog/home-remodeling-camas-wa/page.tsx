@@ -3,20 +3,20 @@ import { ArrowRight, CheckCircle2, Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Home Remodeling in Camas WA: 2026 Cost Guide & What to Expect | Norbilt",
+	title: "Home Remodeling in Camas WA: 2026 Cost Guide & What to Expect | NORBILT",
 	description:
 		"Planning a home remodel in Camas WA? Real 2026 costs for kitchen, bathroom, flooring, finish carpentry, and whole-home updates. What Camas homeowners actually spend.",
 	alternates: {
-		canonical: "https://norbilt.com/blog/home-remodeling-camas-wa",
+		canonical: "https://www.norbilt.com/blog/home-remodeling-camas-wa",
 	},
 	openGraph: {
-		title: "Home Remodeling in Camas WA: 2026 Cost Guide & What to Expect | Norbilt",
+		title: "Home Remodeling in Camas WA: 2026 Cost Guide & What to Expect | NORBILT",
 		description:
 			"Real 2026 costs for home remodeling in Camas WA. Kitchen, bathroom, flooring, finish carpentry, and whole-home project pricing from a licensed Clark County contractor.",
-		url: "https://norbilt.com/blog/home-remodeling-camas-wa",
-		siteName: "Norbilt",
+		url: "https://www.norbilt.com/blog/home-remodeling-camas-wa",
+		siteName: "NORBILT",
 		type: "article",
-		images: [{ url: "https://norbilt.com/og-image.jpg", width: 1200, height: 630 }],
+		images: [{ url: "https://www.norbilt.com/og-image.jpg", width: 1200, height: 630 }],
 	},
 };
 
@@ -76,7 +76,7 @@ const popularRemodels = [
 	},
 	{
 		title: "New Flooring Throughout",
-		desc: "LVP throughout a main floor or whole home is one of Norbilt's highest-volume Camas projects. Homeowners often do all hard surfaces in a single visit to reduce disruption and keep transitions consistent.",
+		desc: "LVP throughout a main floor or whole home is one of NORBILT's highest-volume Camas projects. Homeowners often do all hard surfaces in a single visit to reduce disruption and keep transitions consistent.",
 	},
 	{
 		title: "Finish Carpentry Additions",
@@ -128,7 +128,7 @@ const faqs = [
 	},
 	{
 		q: "Do I need a permit to remodel my home in Camas WA?",
-		a: "Cosmetic work — paint, flooring, hardware, fixture swaps — generally does not require a permit. Permits are required when work involves electrical (new circuits, panel changes), plumbing (relocating fixtures, adding lines), or structural changes (wall removal, beam work). Clark County permits typically run $150–$800 depending on scope. Norbilt pulls all required permits as part of every project.",
+		a: "Cosmetic work — paint, flooring, hardware, fixture swaps — generally does not require a permit. Permits are required when work involves electrical (new circuits, panel changes), plumbing (relocating fixtures, adding lines), or structural changes (wall removal, beam work). Clark County permits typically run $150–$800 depending on scope. NORBILT pulls all required permits as part of every project.",
 	},
 	{
 		q: "What remodels add the most value in Camas WA?",
@@ -140,7 +140,7 @@ const faqs = [
 	},
 	{
 		q: "Are you a licensed contractor for home remodeling in Camas WA?",
-		a: "Yes. Norbilt is a licensed Washington State General Contractor, fully insured and bonded. We serve Camas and all of Clark County. All work comes with a 1-year workmanship warranty. We pull all required permits, coordinate inspections, and handle the full scope — you don't manage subcontractors.",
+		a: "Yes. NORBILT is a licensed Washington State General Contractor, fully insured and bonded. We serve Camas and all of Clark County. All work comes with a 1-year workmanship warranty. We pull all required permits, coordinate inspections, and handle the full scope — you don't manage subcontractors.",
 	},
 	{
 		q: "What's the most popular remodel in Camas WA right now?",
@@ -154,16 +154,16 @@ const schema = {
 		headline: "Home Remodeling in Camas WA: 2026 Cost Guide & What to Expect",
 		description:
 			"Real 2026 costs for home remodeling in Camas WA. Kitchen, bathroom, flooring, finish carpentry, and whole-home project pricing from a licensed Clark County contractor.",
-		url: "https://norbilt.com/blog/home-remodeling-camas-wa",
+		url: "https://www.norbilt.com/blog/home-remodeling-camas-wa",
 		datePublished: "2026-05-26",
 		dateModified: "2026-05-26",
-		author: { "@type": "Organization", name: "Norbilt" },
+		author: { "@type": "Organization", name: "NORBILT" },
 		publisher: {
 			"@type": "Organization",
-			name: "Norbilt",
-			url: "https://norbilt.com",
+			name: "NORBILT",
+			url: "https://www.norbilt.com",
 		},
-		mainEntityOfPage: "https://norbilt.com/blog/home-remodeling-camas-wa",
+		mainEntityOfPage: "https://www.norbilt.com/blog/home-remodeling-camas-wa",
 };
 
 export default function HomeRemodelingCamasPage() {
@@ -179,9 +179,9 @@ export default function HomeRemodelingCamasPage() {
 			"@context": "https://schema.org",
 			"@type": "BreadcrumbList",
 			itemListElement: [
-				{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
-				{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
-				{ "@type": "ListItem", position: 3, name: "Home Remodeling in Camas WA: 2026 Cost Guide & What to Expect", item: "https://norbilt.com/blog/home-remodeling-camas-wa" },
+				{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+				{ "@type": "ListItem", position: 2, name: "Blog", item: "https://www.norbilt.com/blog" },
+				{ "@type": "ListItem", position: 3, name: "Home Remodeling in Camas WA: 2026 Cost Guide & What to Expect", item: "https://www.norbilt.com/blog/home-remodeling-camas-wa" },
 			],
 				}) }}
 			/>
@@ -213,7 +213,7 @@ export default function HomeRemodelingCamasPage() {
 						<span>·</span>
 						<span>Camas, WA · Clark County</span>
 						<span>·</span>
-						<span>By Norbilt</span>
+						<span>By NORBILT</span>
 					</div>
 				</div>
 			</section>
@@ -307,7 +307,7 @@ export default function HomeRemodelingCamasPage() {
 							},
 							{
 								title: "Permit Requirements",
-								body: "Any project involving electrical, plumbing, or structural work requires a Clark County permit — $150–$800 depending on scope. Camas remodels tend to trigger permits more often because they're doing substantive work (layout changes, full gut remodels) rather than cosmetic updates. Norbilt handles all permit applications and inspections.",
+								body: "Any project involving electrical, plumbing, or structural work requires a Clark County permit — $150–$800 depending on scope. Camas remodels tend to trigger permits more often because they're doing substantive work (layout changes, full gut remodels) rather than cosmetic updates. NORBILT handles all permit applications and inspections.",
 							},
 							{
 								title: "2026 Tariff Impacts",
@@ -334,7 +334,7 @@ export default function HomeRemodelingCamasPage() {
 				{/* MOST POPULAR REMODELS */}
 				<section className="space-y-6">
 					<h2 className="text-3xl font-black text-[#1F2E2B] uppercase tracking-tighter">
-						Most Popular Remodels in Camas — What Norbilt Sees
+						Most Popular Remodels in Camas — What NORBILT Sees
 					</h2>
 					<p className="text-gray-600 font-medium">
 						Based on projects completed in Camas and the surrounding Camas/Washougal corridor, here are the
@@ -450,7 +450,7 @@ export default function HomeRemodelingCamasPage() {
 							Ready to Get Started?
 						</p>
 						<p className="font-black text-xl uppercase tracking-tight">
-							Norbilt handles home remodeling throughout Camas and Clark County — free estimate, 1-year warranty.
+							NORBILT handles home remodeling throughout Camas and Clark County — free estimate, 1-year warranty.
 						</p>
 					</div>
 					<div className="flex flex-col sm:flex-row gap-4 shrink-0">
@@ -497,7 +497,7 @@ export default function HomeRemodelingCamasPage() {
 							href="/locations/camas"
 							className="inline-flex items-center gap-2 px-5 py-3 bg-white rounded-xl text-sm font-bold text-gray-700 border border-gray-200 hover:border-[#1F2E2B] hover:text-[#1F2E2B] transition-colors shadow-sm"
 						>
-							Norbilt in Camas, WA <ArrowRight className="w-3 h-3" />
+							NORBILT in Camas, WA <ArrowRight className="w-3 h-3" />
 						</Link>
 					</div>
 				</section>

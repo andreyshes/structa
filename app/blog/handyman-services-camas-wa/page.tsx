@@ -3,20 +3,20 @@ import { ArrowRight, CheckCircle2, Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Handyman Services in Camas WA: 2026 Pricing & What to Expect | Norbilt",
+	title: "Handyman Services in Camas WA: 2026 Pricing & What to Expect | NORBILT",
 	description:
 		"Looking for a handyman in Camas WA? Real 2026 pricing for home repairs, drywall, fixtures, doors, and punch lists. Licensed, 5-star rated, free same-week estimates.",
 	alternates: {
-		canonical: "https://norbilt.com/blog/handyman-services-camas-wa",
+		canonical: "https://www.norbilt.com/blog/handyman-services-camas-wa",
 	},
 	openGraph: {
-		title: "Handyman Services in Camas WA: 2026 Pricing & What to Expect | Norbilt",
+		title: "Handyman Services in Camas WA: 2026 Pricing & What to Expect | NORBILT",
 		description:
 			"Real 2026 handyman pricing in Camas WA. Licensed contractor for drywall, fixtures, doors, mounting, punch lists & more. Free same-week estimates.",
-		url: "https://norbilt.com/blog/handyman-services-camas-wa",
-		siteName: "Norbilt",
+		url: "https://www.norbilt.com/blog/handyman-services-camas-wa",
+		siteName: "NORBILT",
 		type: "article",
-		images: [{ url: "https://norbilt.com/og-image.jpg", width: 1200, height: 630 }],
+		images: [{ url: "https://www.norbilt.com/og-image.jpg", width: 1200, height: 630 }],
 	},
 };
 
@@ -42,11 +42,11 @@ const jobCosts = [
 const faqs = [
 	{
 		q: "How much does a handyman cost in Camas WA?",
-		a: "A licensed handyman in Camas WA charges $65–$95 per hour in 2026. Most individual jobs run $150–$500. A half-day punch list covering multiple tasks runs $350–$600. Camas rates are consistent with the rest of Clark County — no travel surcharge from Norbilt.",
+		a: "A licensed handyman in Camas WA charges $65–$95 per hour in 2026. Most individual jobs run $150–$500. A half-day punch list covering multiple tasks runs $350–$600. Camas rates are consistent with the rest of Clark County — no travel surcharge from NORBILT.",
 	},
 	{
 		q: "Do you serve Camas WA for handyman work?",
-		a: "Yes. Norbilt serves Camas regularly — including Prune Hill, Deer Creek, Grass Valley, and Fern Prairie. We offer same-week estimates and charge the same rates as Vancouver with no extra travel fees.",
+		a: "Yes. NORBILT serves Camas regularly — including Prune Hill, Deer Creek, Grass Valley, and Fern Prairie. We offer same-week estimates and charge the same rates as Vancouver with no extra travel fees.",
 	},
 	{
 		q: "What handyman services do you offer in Camas?",
@@ -58,11 +58,11 @@ const faqs = [
 	},
 	{
 		q: "Do you need a licensed handyman in Camas WA?",
-		a: "Washington State requires a licensed contractor for repair work above a set dollar threshold. Hiring an unlicensed handyman above that limit can void your homeowner's insurance and create problems at resale. Norbilt is a fully licensed WA General Contractor — every job is code-compliant and insured.",
+		a: "Washington State requires a licensed contractor for repair work above a set dollar threshold. Hiring an unlicensed handyman above that limit can void your homeowner's insurance and create problems at resale. NORBILT is a fully licensed WA General Contractor — every job is code-compliant and insured.",
 	},
 	{
 		q: "Is your handyman work in Camas guaranteed?",
-		a: "Yes. All Norbilt work in Camas is backed by our 1-year workmanship warranty. If anything we repaired fails due to workmanship within a year, we return and fix it at no charge.",
+		a: "Yes. All NORBILT work in Camas is backed by our 1-year workmanship warranty. If anything we repaired fails due to workmanship within a year, we return and fix it at no charge.",
 	},
 ];
 
@@ -78,9 +78,9 @@ export default function CamasHandymanPost() {
 						"headline": "Handyman Services in Camas WA: 2026 Pricing & What to Expect",
 						"datePublished": "2026-05-26",
 						"dateModified": "2026-05-26",
-						"author": { "@type": "Organization", "name": "Norbilt" },
-						"publisher": { "@type": "Organization", "name": "Norbilt", "url": "https://norbilt.com" },
-						"mainEntityOfPage": "https://norbilt.com/blog/handyman-services-camas-wa",
+						"author": { "@type": "Organization", "name": "NORBILT" },
+						"publisher": { "@type": "Organization", "name": "NORBILT", "url": "https://www.norbilt.com" },
+						"mainEntityOfPage": "https://www.norbilt.com/blog/handyman-services-camas-wa",
 					}),
 				}}
 			/>
@@ -90,9 +90,9 @@ export default function CamasHandymanPost() {
 					"@context": "https://schema.org",
 					"@type": "BreadcrumbList",
 					itemListElement: [
-						{ "@type": "ListItem", position: 1, name: "Home", item: "https://norbilt.com" },
-						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://norbilt.com/blog" },
-						{ "@type": "ListItem", position: 3, name: "Handyman Services in Camas WA: 2026 Costs", item: "https://norbilt.com/blog/handyman-services-camas-wa" },
+						{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.norbilt.com" },
+						{ "@type": "ListItem", position: 2, name: "Blog", item: "https://www.norbilt.com/blog" },
+						{ "@type": "ListItem", position: 3, name: "Handyman Services in Camas WA: 2026 Costs", item: "https://www.norbilt.com/blog/handyman-services-camas-wa" },
 					],
 				}) }}
 			/>
@@ -120,7 +120,7 @@ export default function CamasHandymanPost() {
 						<span>·</span>
 						<span>Camas, WA</span>
 						<span>·</span>
-						<span>By Norbilt</span>
+						<span>By NORBILT</span>
 					</div>
 				</div>
 			</section>
@@ -132,7 +132,7 @@ export default function CamasHandymanPost() {
 					<p className="text-[#1F2E2B] font-medium">
 						A licensed handyman in Camas WA charges <strong>$65–$95/hour</strong> in 2026.
 						Most individual jobs run <strong>$150–$500</strong>. A half-day punch list (4 hours, multiple tasks) runs <strong>$350–$600</strong>.
-						Norbilt serves Camas with no travel surcharge and same-week availability.
+						NORBILT serves Camas with no travel surcharge and same-week availability.
 					</p>
 				</div>
 			</section>
@@ -145,7 +145,7 @@ export default function CamasHandymanPost() {
 						Camas homeowners expect a higher standard — and finding a handyman who actually shows up, does clean work, and stands behind it can be harder than it sounds. Whether you have a growing punch list, a fixture that's finally given out, or a wall that needs a proper patch, this guide covers what handyman work actually costs in Camas in 2026 and what to look for when hiring.
 					</p>
 					<p>
-						Norbilt is a licensed WA General Contractor serving Camas, Prune Hill, Grass Valley, Deer Creek, and all of east Clark County. We don't charge extra for Camas jobs and offer the same same-week scheduling as our Vancouver clients.
+						NORBILT is a licensed WA General Contractor serving Camas, Prune Hill, Grass Valley, Deer Creek, and all of east Clark County. We don't charge extra for Camas jobs and offer the same same-week scheduling as our Vancouver clients.
 					</p>
 				</section>
 
@@ -191,7 +191,7 @@ export default function CamasHandymanPost() {
 						{[
 							{
 								title: "1990s–2000s Fixture Age",
-								body: "A large portion of Camas homes were built between 1990 and 2010. Original light fixtures, faucets, cabinet hardware, and door hardware in these homes are now 15–30 years old and due for replacement. Norbilt handles full hardware refresh days — swap everything in one visit.",
+								body: "A large portion of Camas homes were built between 1990 and 2010. Original light fixtures, faucets, cabinet hardware, and door hardware in these homes are now 15–30 years old and due for replacement. NORBILT handles full hardware refresh days — swap everything in one visit.",
 							},
 							{
 								title: "Prune Hill Settling",
@@ -226,7 +226,7 @@ export default function CamasHandymanPost() {
 						{[
 							{ label: "Liability Insurance", detail: "If an unlicensed handyman damages your home or is injured on your property, you may be liable. Licensed contractors carry their own policy." },
 							{ label: "Surety Bond", detail: "Washington requires licensed contractors to carry a surety bond. If work is defective or abandoned, the bond provides a financial remedy. Unlicensed handymen have no bond." },
-							{ label: "1-Year Workmanship Warranty", detail: "Norbilt backs every job with a 1-year warranty. If anything we repaired fails due to workmanship, we return and fix it at no charge." },
+							{ label: "1-Year Workmanship Warranty", detail: "NORBILT backs every job with a 1-year warranty. If anything we repaired fails due to workmanship, we return and fix it at no charge." },
 							{ label: "Permit Authority", detail: "Only licensed contractors can pull permits in Clark County. Electrical, plumbing, and structural work requires permits — an unlicensed handyman cannot legally do this work." },
 						].map((item) => (
 							<div key={item.label} className="flex gap-4">
@@ -283,7 +283,7 @@ export default function CamasHandymanPost() {
 						Book a Handyman in Camas WA
 					</h2>
 					<p className="text-[#A7C4B5] font-medium mb-8 max-w-lg mx-auto">
-						Norbilt is a licensed WA General Contractor serving Camas and all of Clark County. 5-star rated, fully insured, 1-year workmanship warranty. Free same-week estimates.
+						NORBILT is a licensed WA General Contractor serving Camas and all of Clark County. 5-star rated, fully insured, 1-year workmanship warranty. Free same-week estimates.
 					</p>
 					<div className="flex flex-col sm:flex-row gap-4 justify-center">
 						<Link
