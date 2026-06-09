@@ -21,37 +21,37 @@ const serviceTypes = [
 		name: "Cosmetic Refresh",
 		description:
 			"New hardware, faucets, light fixtures, mirror, and fresh caulk. Same layout, dramatically updated look. Minimal disruption — most done in a single day.",
-		priceRange: "$800–$2,500",
+		priceRange: "$2,500–$6,000",
 	},
 	{
 		name: "Mid-Range Update",
 		description:
 			"New vanity, toilet, tub surround, tile flooring, and fixtures. Keeps the existing layout but replaces all visible surfaces for a near-new result.",
-		priceRange: "$5,000–$12,000",
+		priceRange: "$12,000–$28,000",
 	},
 	{
 		name: "Full Gut Remodel",
 		description:
 			"Everything stripped to the studs and rebuilt — new tile, plumbing fixtures, vanity, lighting, exhaust, and flooring. Layout stays the same; everything else is new.",
-		priceRange: "$15,000–$28,000",
+		priceRange: "$35,000–$75,000+",
 	},
 	{
 		name: "Tub-to-Shower Conversion",
 		description:
 			"Remove the existing tub and install a walk-in shower — prefab insert or custom tile. Popular with Clark County homeowners aging in place or maximizing space.",
-		priceRange: "$1,500–$8,000",
+		priceRange: "$6,500–$15,000",
 	},
 	{
 		name: "Cabinet & Countertop Update",
 		description:
 			"New hardware, cabinet doors, or countertops without replacing the whole kitchen. Quartz, laminate, or butcher block — we measure, order, and install.",
-		priceRange: "$1,200–$7,000",
+		priceRange: "$5,000–$18,000",
 	},
 	{
 		name: "Backsplash Installation",
 		description:
 			"Tile, subway, peel-and-stick, or natural stone backsplash installed cleanly behind your range or sink. One of the highest visual-impact updates per dollar spent.",
-		priceRange: "$400–$1,800",
+		priceRange: "$1,200–$3,500",
 	},
 ];
 
@@ -62,7 +62,7 @@ const faqs = [
 	},
 	{
 		q: "What is the difference between a cosmetic update and a full remodel?",
-		a: "A cosmetic update refreshes surfaces and fixtures within the existing layout — typically $800–$5,000. A full remodel strips to the studs and rebuilds everything, typically $15,000–$28,000+. We help you identify which scope makes sense for your goals and budget.",
+		a: "A cosmetic update refreshes surfaces and fixtures within the existing layout — typically $2,500–$6,000. A full remodel strips to the studs and rebuilds everything, typically $35,000–$75,000+. We help you identify which scope makes sense for your goals and budget.",
 	},
 	{
 		q: "How long does a bathroom remodel take?",
@@ -82,7 +82,7 @@ const faqs = [
 	},
 	{
 		q: "What does kitchen and bathroom work cost in Vancouver, WA?",
-		a: "Based on 2026 Clark County rates: cosmetic refreshes run $800–$2,500, mid-range bathroom updates $5,000–$12,000, full gut remodels $15,000–$28,000+, tub-to-shower conversions $1,500–$8,000, and backsplash installs $400–$1,800. All pricing depends on materials, scope, and site conditions.",
+		a: "Based on 2026 Clark County rates: cosmetic refreshes run $2,500–$6,000, mid-range bathroom updates $12,000–$28,000, full gut remodels $35,000–$75,000+, tub-to-shower conversions $6,500–$15,000, cabinet & countertop updates $5,000–$18,000, and backsplash installs $1,200–$3,500. All pricing depends on materials, scope, and site conditions.",
 	},
 	{
 		q: "Is your kitchen and bathroom work covered by a warranty?",
@@ -251,9 +251,9 @@ export default function KitchenBathPage() {
 					<p className="text-base font-bold text-[#1F2E2B] leading-relaxed">
 						<span className="text-[#FFB800] font-black">Clark County 2026:</span>{" "}
 						Kitchen and bathroom remodeling in Vancouver WA ranges from{" "}
-						<strong>$800 for a cosmetic refresh</strong> to{" "}
-						<strong>$28,000+ for a full gut remodel</strong>. Licensed contractor
-						labor runs $65–$95/hr. Tub-to-shower conversions average $1,500–$8,000
+						<strong>$2,500 for a cosmetic refresh</strong> to{" "}
+						<strong>$75,000+ for a full gut remodel</strong>. Licensed contractor
+						labor runs $65–$95/hr. Tub-to-shower conversions average $6,500–$15,000
 						depending on scope. Permits required for plumbing and electrical
 						changes — NORBILT pulls all permits included in project cost.
 					</p>
