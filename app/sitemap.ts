@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-import { locationsData, servicesData } from "./locations/data";
+import { locationsData } from "./locations/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
 	const baseUrl = "https://www.norbilt.com";
@@ -40,7 +40,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
 	// 2. Add Dynamic Location Landing Pages (e.g., /locations/vancouver)
 	const locationKeys = Object.keys(locationsData);
-	const serviceKeys = Object.keys(servicesData);
 
 	locationKeys.forEach((location) => {
 		routes.push({
@@ -49,16 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			changeFrequency: "monthly",
 			priority: 0.8,
 		});
-
-		// 3. Add Dynamic City + Service Pages (e.g., /locations/vancouver/drywall-repair)
-		serviceKeys.forEach((service) => {
-			routes.push({
-				url: `${baseUrl}/locations/${location}/${service}`,
-				lastModified: new Date("2026-03-04"),
-				changeFrequency: "monthly",
-				priority: 0.7,
-			});
-		});
+		// /locations/[city]/[service] pages removed — 301s in next.config.ts point to /services/[service]
 	});
 
 	// 4. Add Main Service Pages — only slugs that have a real /services/[slug]/page.tsx

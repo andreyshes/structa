@@ -1,7 +1,39 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	trailingSlash: false,
+	async headers() {
+		return [
+			{
+				source: "/(.*)",
+				headers: [
+					{
+						key: "Cache-Control",
+						value: "public, max-age=0, stale-while-revalidate=300",
+					},
+				],
+			},
+		];
+	},
 	async redirects() {
 		return [
+			// /locations/[city]/[service] → /services/[service] (consolidate thin pages)
+			// Specific overrides for slugs that map to /services/kitchen-bath
+			{
+				source: "/locations/:city/bathroom-remodel",
+				destination: "/services/kitchen-bath",
+				permanent: true,
+			},
+			{
+				source: "/locations/:city/kitchen-remodel",
+				destination: "/services/kitchen-bath",
+				permanent: true,
+			},
+			// Generic catch-all for all other city+service combos
+			{
+				source: "/locations/:city/:service",
+				destination: "/services/:service",
+				permanent: true,
+			},
 			// Old service slugs → new slugs (permanent 301)
 			{
 				source: "/services/handyman-services",

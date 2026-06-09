@@ -11,6 +11,9 @@ import {
 	Construction,
 	ShieldCheck,
 	Info,
+	MapPin,
+	DollarSign,
+	FileText,
 } from "lucide-react";
 
 const services = [
@@ -169,6 +172,46 @@ export default function PricingPage() {
 									text: "Yes. NORBILT provides free, no-obligation estimates for all projects across Clark County WA. We visit your home, assess the scope, and provide a clear written quote before any work begins.",
 								},
 							},
+							{
+								"@type": "Question",
+								name: "Do I need a permit for a bathroom remodel in Clark County WA?",
+								acceptedAnswer: {
+									"@type": "Answer",
+									text: "Cosmetic bathroom work — new fixtures, paint, hardware, caulking — does not require a permit. Permits are required when moving plumbing supply or drain lines, making structural changes, or adding electrical circuits. Clark County permits run $200–$450 for a standard bathroom remodel. NORBILT handles permit pulling as part of any permitted project.",
+								},
+							},
+							{
+								"@type": "Question",
+								name: "Are Clark County contractor rates lower than Portland metro rates?",
+								acceptedAnswer: {
+									"@type": "Answer",
+									text: "Generally yes. Clark County homeowners typically pay 10–20% less for the same licensed work compared to Portland-side contractors. WA-based contractors don't carry Oregon income tax overhead, Clark County permit fees are lower, and material costs run slightly less on the WA side of the metro.",
+								},
+							},
+							{
+								"@type": "Question",
+								name: "Does NORBILT charge by the hour or by the job?",
+								acceptedAnswer: {
+									"@type": "Answer",
+									text: "NORBILT prices by the job, not by the hour. You receive a flat written quote before any work begins. The price you approve is the price on the invoice — no hourly surprises or open-ended billing.",
+								},
+							},
+							{
+								"@type": "Question",
+								name: "How much does flooring installation cost in Clark County WA?",
+								acceptedAnswer: {
+									"@type": "Answer",
+									text: "LVP (luxury vinyl plank) flooring installation in Clark County runs $4–$8 per square foot installed. Tile flooring runs $6–$12 per square foot installed. Hardwood flooring runs $6–$12 per square foot installed depending on species and pattern. Most living rooms run $1,500–$4,500 total installed.",
+								},
+							},
+							{
+								"@type": "Question",
+								name: "How much does finish carpentry cost in Vancouver WA?",
+								acceptedAnswer: {
+									"@type": "Answer",
+									text: "Baseboard installation runs $4–$8 per linear foot installed. Crown molding runs $6–$12 per linear foot. A full room trim package (baseboards, door casing, window casing) typically runs $800–$2,500 depending on linear footage and profile complexity.",
+								},
+							},
 						],
 					}),
 				}}
@@ -191,6 +234,9 @@ export default function PricingPage() {
 								Real price ranges for every service we offer across Clark
 								County, WA. No runaround, no mystery — just honest numbers so
 								you can plan your project with confidence.
+							</p>
+							<p className="text-[#A7C4B5] text-sm font-medium">
+								Updated June 2026 · Clark County, WA installed rates
 							</p>
 						</div>
 					</div>
@@ -275,6 +321,155 @@ export default function PricingPage() {
 								</div>
 							</div>
 						))}
+					</div>
+				</section>
+
+				{/* MID-PAGE CTA */}
+				<section className="py-12 bg-[#FFB800]">
+					<div className="max-w-4xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+						<div>
+							<p className="font-black text-black text-xl uppercase tracking-tight">Ready to get a real number?</p>
+							<p className="text-black/70 text-sm mt-1">Free on-site estimate · Written quote · No obligation</p>
+						</div>
+						<Link
+							href="/contact"
+							className="shrink-0 inline-flex items-center gap-3 px-8 py-4 bg-[#1F2E2B] text-white font-black uppercase tracking-widest rounded-xl hover:scale-105 transition-all"
+						>
+							Get Free Estimate <ArrowRight className="w-4 h-4" />
+						</Link>
+					</div>
+				</section>
+
+				{/* CLARK COUNTY VS PORTLAND CONTEXT */}
+				<section className="py-24 bg-white">
+					<div className="max-w-4xl mx-auto px-6 lg:px-8 space-y-10">
+						<div className="space-y-4">
+							<span className="text-[#FFB800] font-black uppercase tracking-[0.3em] text-sm">Local Context</span>
+							<h2 className="text-4xl font-black text-[#1F2E2B] uppercase tracking-tighter">
+								Clark County vs. Portland Metro: Why Prices Differ
+							</h2>
+						</div>
+						<div className="grid md:grid-cols-2 gap-8">
+							<div className="bg-[#F8F6F3] rounded-3xl p-8 border border-gray-100">
+								<div className="flex items-center gap-3 mb-4">
+									<MapPin className="w-6 h-6 text-[#FFB800]" />
+									<h3 className="font-black text-[#1F2E2B] uppercase tracking-tight">Clark County, WA</h3>
+								</div>
+								<ul className="space-y-3 text-gray-600 leading-relaxed">
+									<li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-[#2D5A3D] shrink-0 mt-1" /><span>No Oregon income tax burden on labor — WA-based contractors operate with lower overhead than OR-licensed crews</span></li>
+									<li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-[#2D5A3D] shrink-0 mt-1" /><span>Clark County permit fees typically run $150–$800 for residential remodel work — substantially less than Portland metro equivalents</span></li>
+									<li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-[#2D5A3D] shrink-0 mt-1" /><span>Material costs 5–10% lower on average due to WA sales tax structure and local supplier competition</span></li>
+									<li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-[#2D5A3D] shrink-0 mt-1" /><span>Shorter drive times and no bridge congestion keeps crew costs lower on all Clark County jobs</span></li>
+								</ul>
+							</div>
+							<div className="bg-[#F8F6F3] rounded-3xl p-8 border border-gray-100">
+								<div className="flex items-center gap-3 mb-4">
+									<MapPin className="w-6 h-6 text-gray-400" />
+									<h3 className="font-black text-[#1F2E2B] uppercase tracking-tight">Portland Metro, OR</h3>
+								</div>
+								<ul className="space-y-3 text-gray-600 leading-relaxed">
+									<li className="flex gap-2"><Info className="w-4 h-4 text-gray-400 shrink-0 mt-1" /><span>OR-licensed contractors carry Oregon income tax overhead, which factors into labor rates</span></li>
+									<li className="flex gap-2"><Info className="w-4 h-4 text-gray-400 shrink-0 mt-1" /><span>Portland metro permit fees and system development charges (SDCs) are significantly higher</span></li>
+									<li className="flex gap-2"><Info className="w-4 h-4 text-gray-400 shrink-0 mt-1" /><span>Material and disposal costs higher due to urban density and longer supply chains</span></li>
+									<li className="flex gap-2"><Info className="w-4 h-4 text-gray-400 shrink-0 mt-1" /><span>Crew travel time across metro adds to per-job overhead on most projects</span></li>
+								</ul>
+							</div>
+						</div>
+						<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6">
+							<p className="text-[#1F2E2B] leading-relaxed">
+								<strong>Bottom line:</strong> Clark County homeowners typically pay <strong>10–20% less</strong> for the same licensed, quality work compared to Portland-side contractors — without sacrificing WA licensing standards or insurance coverage. NORBILT is based in Vancouver and works exclusively in Clark County, which keeps overhead low and scheduling fast.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				{/* PERMIT FEES */}
+				<section className="py-24 bg-[#F8F6F3]">
+					<div className="max-w-4xl mx-auto px-6 lg:px-8 space-y-10">
+						<div className="space-y-4">
+							<span className="text-[#FFB800] font-black uppercase tracking-[0.3em] text-sm">Clark County Permits</span>
+							<h2 className="text-4xl font-black text-[#1F2E2B] uppercase tracking-tighter">
+								When You Need a Permit — and What It Costs
+							</h2>
+							<p className="text-gray-600 text-lg leading-relaxed max-w-3xl">
+								Clark County permits are issued through <strong>Clark County Community Development</strong>. Not every remodel requires one — but some do, and skipping a required permit creates liability at resale and can void your homeowner's insurance on that work.
+							</p>
+						</div>
+						<div className="grid md:grid-cols-2 gap-6">
+							{[
+								{
+									title: "No Permit Needed",
+									items: [
+										"Cosmetic work: paint, hardware, caulking",
+										"Like-for-like fixture replacements (faucet, toilet, light fixture)",
+										"Flooring over existing subfloor (non-structural)",
+										"Drywall patch repairs",
+										"Baseboard, trim, and finish carpentry",
+										"Cabinet refacing (no structural changes)",
+									],
+									bg: "bg-white",
+									icon: CheckCircle2,
+									iconColor: "text-[#2D5A3D]",
+								},
+								{
+									title: "Permit Required",
+									items: [
+										"Electrical work beyond fixture swaps (new circuits, panel changes)",
+										"Plumbing relocation or new supply/drain lines",
+										"Structural wall removal or addition",
+										"Additions or changes to heated square footage",
+										"Water heater replacement",
+										"HVAC modifications",
+									],
+									bg: "bg-[#1F2E2B]",
+									icon: FileText,
+									iconColor: "text-[#FFB800]",
+									textColor: "text-white/80",
+									titleColor: "text-white",
+								},
+							].map((col) => {
+								const Icon = col.icon;
+								return (
+									<div key={col.title} className={`${col.bg} rounded-3xl p-8 border border-gray-100`}>
+										<div className="flex items-center gap-3 mb-5">
+											<Icon className={`w-6 h-6 ${col.iconColor}`} />
+											<h3 className={`font-black uppercase tracking-tight text-lg ${col.titleColor ?? "text-[#1F2E2B]"}`}>{col.title}</h3>
+										</div>
+										<ul className="space-y-2">
+											{col.items.map((item) => (
+												<li key={item} className={`text-sm leading-relaxed ${col.textColor ?? "text-gray-600"}`}>
+													· {item}
+												</li>
+											))}
+										</ul>
+									</div>
+								);
+							})}
+						</div>
+						<div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+							<div className="flex items-start gap-4">
+								<DollarSign className="w-6 h-6 text-[#FFB800] shrink-0 mt-1" />
+								<div>
+									<h3 className="font-black text-[#1F2E2B] uppercase tracking-tight mb-2">Clark County Permit Fee Ranges (2026)</h3>
+									<div className="grid sm:grid-cols-2 gap-x-8 gap-y-2 text-sm text-gray-600">
+										{[
+											{ type: "Minor alterations / repair", range: "$150 – $300" },
+											{ type: "Bathroom remodel (no structural)", range: "$200 – $450" },
+											{ type: "Kitchen remodel (no structural)", range: "$250 – $550" },
+											{ type: "Structural wall change", range: "$350 – $800" },
+											{ type: "Electrical permit (new circuits)", range: "$150 – $400" },
+											{ type: "Plumbing permit (relocation)", range: "$150 – $400" },
+										].map((row) => (
+											<div key={row.type} className="flex justify-between gap-4 py-1 border-b border-gray-50">
+												<span>{row.type}</span>
+												<span className="font-bold text-[#1F2E2B] whitespace-nowrap">{row.range}</span>
+											</div>
+										))}
+									</div>
+									<p className="text-xs text-gray-400 mt-3">Source: Clark County Community Development fee schedule. Fees vary by project valuation. NORBILT handles permit pulling as part of any permitted project.</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</section>
 
@@ -368,6 +563,65 @@ export default function PricingPage() {
 									))}
 								</div>
 							</div>
+						</div>
+					</div>
+				</section>
+
+				{/* FAQ */}
+				<section className="py-24 bg-white">
+					<div className="max-w-4xl mx-auto px-6 lg:px-8 space-y-10">
+						<div className="space-y-4">
+							<span className="text-[#FFB800] font-black uppercase tracking-[0.3em] text-sm">Pricing FAQ</span>
+							<h2 className="text-4xl font-black text-[#1F2E2B] uppercase tracking-tighter">
+								Common Pricing Questions
+							</h2>
+						</div>
+						<div className="space-y-4">
+							{[
+								{
+									q: "Do you charge by the hour or by the job?",
+									a: "By the job. You get a flat written quote before we start. The number you approve is the number on your invoice — no open invoices, no hourly overruns.",
+								},
+								{
+									q: "Does NORBILT offer free estimates?",
+									a: "Yes. We provide free on-site estimates for all projects across Clark County. We visit your home, assess the actual scope, and send a written quote — usually within 24 hours of the walkthrough.",
+								},
+								{
+									q: "Are Clark County rates lower than Portland metro?",
+									a: "Generally yes. WA-based contractors don't carry Oregon income tax overhead, Clark County permit fees are lower, and material costs tend to run 5–10% less on the WA side. Clark County homeowners typically pay 10–20% less for the same licensed work vs. Portland-side quotes.",
+								},
+								{
+									q: "Do I need a permit for a bathroom remodel in Clark County?",
+									a: "Cosmetic work — fixtures, paint, hardware, caulking — does not require a permit. Moving plumbing supply or drain lines, making structural changes, or adding electrical circuits does require one. Clark County bathroom remodel permits typically run $200–$450. NORBILT handles permit pulling as part of any permitted scope.",
+								},
+								{
+									q: "What if unexpected conditions are found during the job?",
+									a: "We stop, show you what we found, and get your written approval before doing any additional work. No line items added to your invoice without a conversation first.",
+								},
+								{
+									q: "How long does it take to get an estimate?",
+									a: "We typically schedule walkthroughs within the same week. Written quotes follow within 24 hours of the visit. No deposit is required until you accept the quote.",
+								},
+							].map((faq) => (
+								<div key={faq.q} className="bg-[#F8F6F3] rounded-2xl p-8 border border-gray-100">
+									<h3 className="font-black text-[#1F2E2B] mb-3 leading-snug">{faq.q}</h3>
+									<p className="text-gray-600 leading-relaxed">{faq.a}</p>
+								</div>
+							))}
+						</div>
+						<div className="flex flex-wrap gap-4 pt-4 text-sm font-bold">
+							<Link href="/faq" className="text-[#2D5A3D] hover:text-[#FFB800] transition-colors">
+								See all FAQs →
+							</Link>
+							<Link href="/blog/handyman-cost-vancouver-wa" className="text-[#2D5A3D] hover:text-[#FFB800] transition-colors">
+								Handyman cost guide →
+							</Link>
+							<Link href="/blog/bathroom-remodel-cost-clark-county-wa" className="text-[#2D5A3D] hover:text-[#FFB800] transition-colors">
+								Bathroom remodel cost guide →
+							</Link>
+							<Link href="/calculator" className="text-[#2D5A3D] hover:text-[#FFB800] transition-colors">
+								Try the cost calculator →
+							</Link>
 						</div>
 					</div>
 				</section>

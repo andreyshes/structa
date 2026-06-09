@@ -40,6 +40,41 @@ export const metadata = {
 export default function AboutPage() {
 	return (
 		<>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						"@context": "https://schema.org",
+						"@graph": [
+							{
+								"@type": "Person",
+								"@id": "https://www.norbilt.com/about#founder",
+								name: "Andrey",
+								jobTitle: "Licensed General Contractor",
+								worksFor: { "@id": "https://www.norbilt.com/#business" },
+								knowsAbout: [
+									"Home Remodeling",
+									"Drywall Repair",
+									"Finish Carpentry",
+									"Kitchen Remodeling",
+									"Bathroom Remodeling",
+									"Flooring Installation",
+								],
+								areaServed: "Clark County, WA",
+								url: "https://www.norbilt.com/about",
+							},
+							{
+								"@type": "AboutPage",
+								url: "https://www.norbilt.com/about",
+								name: "About NORBILT — Licensed General Contractor Vancouver WA",
+								description:
+									"Learn about Andrey, the licensed general contractor behind NORBILT. 5+ years in the trade, 250+ Clark County projects, WA license #NORBIR**741CS.",
+								mainEntity: { "@id": "https://www.norbilt.com/about#founder" },
+							},
+						],
+					}),
+				}}
+			/>
 			<AboutPageContent />
 		</>
 	);

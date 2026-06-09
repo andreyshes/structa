@@ -4,11 +4,8 @@ import ServicePageClient from "./ServicePageClient";
 import { Metadata } from "next";
 
 export async function generateStaticParams() {
-	const cities = Object.keys(locationsData);
-	const services = Object.keys(servicesData);
-	return cities.flatMap((city) =>
-		services.map((service) => ({ city, service })),
-	);
+	// Pages consolidated — redirects in next.config.ts send all traffic to /services/[service]
+	return [];
 }
 
 export async function generateMetadata({ params }: any): Promise<Metadata> {

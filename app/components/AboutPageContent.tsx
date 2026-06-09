@@ -4,58 +4,75 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import {
-	Heart,
 	Shield,
 	Hammer,
-	Sparkles,
 	MapPin,
 	CheckCircle2,
 	ShieldCheck,
+	Clock,
+	Star,
+	Wrench,
 } from "lucide-react";
 
 export default function AboutPageContent() {
-	const values = [
+	const credentials = [
 		{
-			icon: Hammer,
-			title: "Quality Finish",
-			description:
-				"We handle every repair with expert care. Also, from drywall patches to trim corners, we treat your home like our own.",
+			icon: ShieldCheck,
+			label: "WA Licensed General Contractor",
+			sub: "License #NORBIR**741CS — verify at L&I",
 		},
 		{
 			icon: Shield,
-			title: "Licensed Contractor",
-			description:
-				"NORBILT is a registered Washington contractor. Furthermore, we provide full insurance and direct management for every project.",
+			label: "Bonded & Insured",
+			sub: "General liability on every job",
 		},
 		{
-			icon: Sparkles,
-			title: "Clean Job Sites",
-			description:
-				"We respect your space. Therefore, our team cleans up daily so your home stays usable during the project.",
+			icon: Clock,
+			label: "5+ Years in the Trade",
+			sub: "250+ completed Clark County projects",
 		},
 		{
-			icon: Heart,
-			title: "Local Vancouver Focus",
-			description:
-				"NORBILT is a local family business. Also, we are dedicated to improving homes across Vancouver and Clark County.",
+			icon: Star,
+			label: "5-Star Rated",
+			sub: "13 Google reviews, all five stars",
 		},
 	];
 
-	const stats = [
-		{ value: "5+", label: "Years Experience" },
-		{ value: "250+", label: "Projects Done" },
-		{ value: "5.0", label: "Customer Rating" },
-		{ value: "100%", label: "Licensed & Bonded" },
+	const values = [
+		{
+			icon: Hammer,
+			title: "Flat-Rate Pricing",
+			description:
+				"You get a written price before we touch anything. No hourly billing, no open invoices, no surprises at the end of the job.",
+		},
+		{
+			icon: Shield,
+			title: "Licensed for Every Job",
+			description:
+				"Washington State requires a contractor's license for repair work above $500. NORBILT is licensed, bonded, and insured — protecting you legally and keeping your homeowner's insurance intact.",
+		},
+		{
+			icon: Wrench,
+			title: "Trade-Quality Finish",
+			description:
+				"From drywall texture matching to trim corners, the final 10% is what separates a good job from a great one. We don't cut it short.",
+		},
+		{
+			icon: MapPin,
+			title: "Clark County Only",
+			description:
+				"We don't chase volume across the metro. Staying in Clark County means faster scheduling, local material sourcing, and a crew that knows your neighborhood's construction.",
+		},
 	];
 
 	return (
 		<div className="overflow-hidden bg-[#FDFCFB]">
-			{/* HERO SECTION */}
-			<section className="relative min-h-[75vh] flex items-center overflow-hidden">
+			{/* HERO */}
+			<section className="relative min-h-[70vh] flex items-center overflow-hidden">
 				<div className="absolute inset-0">
 					<Image
 						src="/remodel-images/IMG_6433.jpg"
-						alt="Outdoor project by NORBILT general contractor Vancouver WA"
+						alt="Home remodel project by NORBILT general contractor Vancouver WA"
 						fill
 						priority
 						sizes="100vw"
@@ -80,29 +97,32 @@ export default function AboutPageContent() {
 							animate={{ opacity: 1, x: 0 }}
 							className="text-5xl md:text-7xl font-black text-white leading-[0.95] tracking-tighter uppercase"
 						>
-							Vancouver's Expert <br />
-							<span className="text-[#FFB800]">Home Contractor</span>
+							Licensed. Local. <br />
+							<span className="text-[#FFB800]">Done Right.</span>
 						</motion.h1>
 
 						<p className="text-xl text-white/80 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6">
-							NORBILT offers professional remodeling and home repair. Also, we are the
-							trusted choice for quality work in Vancouver, WA. Our team focuses
-							Furthermore, our team focuses on honest service and great results.
+							NORBILT is a licensed general contractor based in Vancouver, WA —
+							serving Clark County homeowners with flat-rate pricing, licensed
+							work, and a trade-quality finish on every job.
 						</p>
 					</div>
 				</div>
 			</section>
 
 			{/* STATS STRIP */}
-			<section className="py-12 bg-[#1F2E2B] border-y-4 border-[#FFB800]/20">
+			<section className="py-10 bg-[#FFB800]">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
-					<div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-						{stats.map((stat) => (
-							<div key={stat.label} className="text-center">
-								<p className="text-4xl font-black text-[#FFB800] mb-1">
-									{stat.value}
-								</p>
-								<p className="text-[#A7C4B5] text-xs font-bold uppercase tracking-widest">
+					<div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+						{[
+							{ value: "5+", label: "Years in the Trade" },
+							{ value: "250+", label: "Clark County Projects" },
+							{ value: "5.0 ★", label: "Google Rating" },
+							{ value: "$0", label: "Cost for Your Estimate" },
+						].map((stat) => (
+							<div key={stat.label}>
+								<p className="text-3xl font-black text-black">{stat.value}</p>
+								<p className="text-black/70 text-xs font-black uppercase tracking-widest mt-1">
 									{stat.label}
 								</p>
 							</div>
@@ -111,86 +131,123 @@ export default function AboutPageContent() {
 				</div>
 			</section>
 
-			{/* BRAND STORY */}
+			{/* FOUNDER BIO */}
 			<section className="py-24 lg:py-32 bg-white">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-20 items-center">
+					{/* Headshot — replace /headshot-placeholder.jpg with your real photo */}
 					<div className="relative order-2 lg:order-1">
-						<div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl border-8 border-[#F8F6F3]">
+						<div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-8 border-[#F8F6F3] bg-[#1F2E2B]">
 							<Image
 								src="/remodel-images/IMG_7646.jpg"
-								alt="Kitchen remodel by NORBILT in Vancouver WA"
+								alt="Andrey, founder of NORBILT general contractor Vancouver WA"
 								fill
 								sizes="(max-width: 1024px) 100vw, 50vw"
 								className="object-cover"
 							/>
 						</div>
-						<div className="absolute -top-6 -right-6 bg-[#FFB800] p-8 rounded-2xl shadow-xl border-b-4 border-[#CC9900] hidden md:block">
-							<p className="text-black font-black text-center text-xl leading-tight">
-								VOTED #1 <br /> LOCAL PRO
+						<div className="absolute -bottom-6 -right-6 bg-[#FFB800] px-8 py-6 rounded-2xl shadow-xl border-b-4 border-[#CC9900] hidden md:block">
+							<p className="text-black font-black text-center text-sm leading-tight uppercase tracking-wide">
+								WA License <br />
+								<span className="text-lg">#NORBIR**741CS</span>
 							</p>
 						</div>
 					</div>
 
 					<div className="order-1 lg:order-2 space-y-8">
-						<div className="space-y-4">
+						<div className="space-y-3">
 							<span className="text-[#2D5A3D] font-black uppercase tracking-[0.3em] text-sm">
-								Our Story
+								The Person Behind the Work
 							</span>
 							<h2 className="text-4xl md:text-5xl font-black text-[#1F2E2B] leading-tight uppercase tracking-tighter">
-								The Preferred General <br /> Contractor for <br /> Clark County
+								Hi, I'm Andrey — <br />
+								<span className="text-[#2D5A3D]">Founder of NORBILT</span>
 							</h2>
 						</div>
 
-						<div className="space-y-6 text-gray-600 font-medium leading-relaxed text-lg">
+						<div className="space-y-5 text-gray-600 leading-relaxed text-lg">
 							<p>
-								NORBILT was started in <strong>Vancouver, WA</strong> to help
-								homeowners. We knew people needed a{" "}
-								<strong>general contractor</strong> who was honest and skilled.
-								We handle <strong>interior remodeling</strong> and{" "}
-								<strong>home repairs</strong>. Therefore, our team makes sure every project
-								is built to last.
+								I started NORBILT in <strong>Vancouver, WA</strong> because I saw a gap:
+								homeowners were either hiring unlicensed handymen who couldn't
+								legally do the work, or paying general contractor markups for
+								simple jobs that didn't need that overhead. NORBILT sits in
+								between — licensed, insured, and priced fairly.
 							</p>
 							<p>
-								We focus on the final details of your home. However, many companies rush,
-								so we take our time with <strong>trim and cabinets</strong>.
-								Whether you need a <strong>kitchen update</strong> or{" "}
-								<strong>drywall repair</strong>, we deliver a perfect finish
-								every time.
+								I've spent <strong>5+ years doing this work</strong> in Clark County,
+								across every type of home — 1950s ranches in Hazel Dell, new builds
+								in Ridgefield, older colonials in Camas, and everything in between.
+								That repetition means I know what's likely behind your walls before
+								we open them, and I know how to price a job honestly the first time.
 							</p>
 							<p>
-								Your home is a big investment. Therefore, NORBILT is a{" "}
-								<strong>licensed and insured contractor</strong>. In addition, we offer clear
-								pricing and honest care for every local client.
+								Every estimate I give is based on what I've actually seen on
+								similar jobs in this area — not a national pricing guide. When I
+								quote you a number, I stand behind it. <strong>Flat rate, written,
+								before we start.</strong>
 							</p>
 						</div>
 
-						<div className="flex flex-wrap gap-4 pt-4">
+						<div className="flex flex-wrap gap-3 pt-2">
 							<div className="flex items-center gap-2 px-4 py-2 bg-[#F8F6F3] rounded-lg border border-gray-100">
-								<CheckCircle2 className="w-5 h-5 text-[#FFB800]" />
+								<CheckCircle2 className="w-5 h-5 text-[#FFB800] shrink-0" />
 								<span className="font-bold text-[#1F2E2B] text-sm uppercase">
-									WA LIC #NORBIL**741CS
+									WA GC License #NORBIR**741CS
 								</span>
 							</div>
 							<div className="flex items-center gap-2 px-4 py-2 bg-[#F8F6F3] rounded-lg border border-gray-100">
-								<ShieldCheck className="w-5 h-5 text-[#FFB800]" />
+								<ShieldCheck className="w-5 h-5 text-[#FFB800] shrink-0" />
 								<span className="font-bold text-[#1F2E2B] text-sm uppercase">
 									Bonded & Insured
 								</span>
 							</div>
+							<a
+								href="https://secure.lni.wa.gov/verify/"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="flex items-center gap-2 px-4 py-2 bg-[#2D5A3D]/5 rounded-lg border border-[#2D5A3D]/20 hover:bg-[#2D5A3D]/10 transition-colors"
+							>
+								<span className="font-bold text-[#2D5A3D] text-sm">
+									Verify license at WA L&I →
+								</span>
+							</a>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			{/* CORE VALUES */}
+			{/* CREDENTIALS */}
+			<section className="py-16 bg-[#1F2E2B]">
+				<div className="max-w-7xl mx-auto px-6 lg:px-8">
+					<div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+						{credentials.map((c) => {
+							const Icon = c.icon;
+							return (
+								<div key={c.label} className="flex items-start gap-4">
+									<div className="w-12 h-12 bg-[#FFB800] rounded-xl flex items-center justify-center shrink-0">
+										<Icon className="w-6 h-6 text-black" />
+									</div>
+									<div>
+										<p className="font-black text-white text-sm uppercase tracking-tight leading-snug">
+											{c.label}
+										</p>
+										<p className="text-[#A7C4B5] text-xs mt-1">{c.sub}</p>
+									</div>
+								</div>
+							);
+						})}
+					</div>
+				</div>
+			</section>
+
+			{/* HOW WE WORK */}
 			<section className="py-24 lg:py-32 bg-[#F8F6F3]">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
-					<div className="text-center mb-20 space-y-4">
+					<div className="text-center mb-16 space-y-4">
 						<span className="text-[#FFB800] font-black uppercase tracking-[0.3em] text-sm">
-							Standards
+							How We Work
 						</span>
-						<h2 className="text-4xl md:text-6xl font-black text-[#1F2E2B] uppercase tracking-tighter">
-							A Higher Level of Service
+						<h2 className="text-4xl md:text-5xl font-black text-[#1F2E2B] uppercase tracking-tighter">
+							What Sets NORBILT Apart
 						</h2>
 					</div>
 
@@ -207,61 +264,64 @@ export default function AboutPageContent() {
 								<div className="w-16 h-16 bg-[#1F2E2B] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#FFB800] transition-colors">
 									<value.icon className="w-8 h-8 text-[#FFB800] group-hover:text-black transition-colors" />
 								</div>
-								<h3 className="text-2xl font-black text-[#1F2E2B] mb-4 uppercase tracking-tight">
+								<h3 className="text-xl font-black text-[#1F2E2B] mb-3 uppercase tracking-tight">
 									{value.title}
 								</h3>
-								<p className="text-gray-600 font-medium leading-relaxed">
-									{value.description}
-								</p>
+								<p className="text-gray-600 leading-relaxed">{value.description}</p>
 							</motion.div>
 						))}
 					</div>
 				</div>
 			</section>
 
-			{/* GEOGRAPHIC AREA */}
+			{/* SERVICE AREA */}
 			<section className="py-24 bg-[#14201D] text-white">
 				<div className="max-w-7xl mx-auto px-6 lg:px-8">
-					<div className="grid lg:grid-cols-2 gap-16 items-center">
+					<div className="grid lg:grid-cols-2 gap-16 items-start">
 						<div>
 							<div className="flex items-center gap-2 mb-6 text-[#FFB800]">
 								<MapPin className="w-6 h-6" />
-								<h3 className="text-xl font-black uppercase tracking-widest">
+								<span className="text-xl font-black uppercase tracking-widest">
 									Service Area
-								</h3>
+								</span>
 							</div>
 							<h2 className="text-4xl font-black text-white uppercase tracking-tighter mb-6">
-								Serving Southwest Washington
+								All of Clark County, WA
 							</h2>
-							<p className="text-[#A7C4B5] text-lg leading-relaxed mb-8">
-								Furthermore, we provide <strong>interior remodeling</strong> and{" "}
-								<strong>handyman repairs</strong> in Clark County. Whether you
-								are in Vancouver or Camas, our team understands local home
-								styles.
+							<p className="text-[#A7C4B5] text-lg leading-relaxed mb-6">
+								NORBILT serves every corner of Clark County — from the older
+								neighborhoods in north Vancouver to the newer builds in Ridgefield
+								and Camas. If you're in Clark County, we come to you. Free
+								on-site estimates for all areas.
 							</p>
-							<div className="grid grid-cols-2 gap-4 text-sm font-bold uppercase tracking-widest text-[#FFB800]">
-								<span>• Cascade Park</span>
-								<span>• Felida</span>
-								<span>• Salmon Creek</span>
-								<span>• Fisher's Landing</span>
-							</div>
+							<p className="text-[#A7C4B5] leading-relaxed">
+								We know the permit process at Clark County Community Development,
+								the common construction styles across each city, and the local
+								material suppliers — which keeps lead times short and pricing
+								accurate.
+							</p>
 						</div>
-						<div className="grid grid-cols-2 gap-4">
+						<div className="grid grid-cols-2 gap-3">
 							{[
 								"Vancouver",
 								"Camas",
-								"Washougal",
 								"Ridgefield",
 								"Battle Ground",
+								"Washougal",
 								"Brush Prairie",
-								"Hockinson",
-								"La Center",
+								"Hazel Dell",
+								"Salmon Creek",
+								"Felida",
+								"Five Corners",
+								"Orchards",
+								"Mill Plain",
+								"Lake Shore",
 							].map((city) => (
 								<div
 									key={city}
-									className="p-6 bg-white/5 border border-white/10 rounded-2xl text-center font-black uppercase text-xs tracking-tighter"
+									className="px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-center font-bold text-sm text-white/80"
 								>
-									{city}, WA
+									{city}
 								</div>
 							))}
 						</div>
@@ -270,24 +330,29 @@ export default function AboutPageContent() {
 			</section>
 
 			{/* CTA */}
-			<section className="py-24 lg:py-40 bg-white text-center relative overflow-hidden">
-				<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-32 bg-[#F8F6F3] -rotate-3 z-0" />
-				<div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-8">
-					<h2 className="text-4xl md:text-6xl font-black text-[#1F2E2B] mb-8 uppercase tracking-tighter">
-						Hire a Professional <br />
-						<span className="text-[#2D5A3D]">Vancouver Contractor</span>
+			<section className="py-24 bg-white text-center">
+				<div className="max-w-3xl mx-auto px-6 lg:px-8 space-y-6">
+					<h2 className="text-4xl md:text-5xl font-black text-[#1F2E2B] uppercase tracking-tighter">
+						Get a Free Estimate
 					</h2>
-					<p className="text-xl text-gray-600 mb-12 font-medium max-w-2xl mx-auto">
-						Ready to start your <strong>home repair</strong> or{" "}
-						<strong>interior remodel</strong>? Contact NORBILT today for an
-						estimate. We are your local <strong>general contractor</strong>.
+					<p className="text-gray-600 text-lg leading-relaxed">
+						I'll walk your home, assess the scope, and give you a written price —
+						no charge, no obligation. Most estimates are same-week.
 					</p>
-					<Link
-						href="/contact"
-						className="inline-block px-12 py-6 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl shadow-2xl hover:scale-105 transition-all"
-					>
-						Get Free Estimate
-					</Link>
+					<div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
+						<Link
+							href="/contact"
+							className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-xl shadow-xl hover:scale-105 transition-all"
+						>
+							Request Free Estimate
+						</Link>
+						<Link
+							href="/services"
+							className="inline-flex items-center justify-center gap-3 px-10 py-5 border border-gray-200 text-[#1F2E2B] font-black uppercase tracking-widest rounded-xl hover:bg-gray-50 transition-all"
+						>
+							Browse Services
+						</Link>
+					</div>
 				</div>
 			</section>
 		</div>
