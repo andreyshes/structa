@@ -66,6 +66,7 @@ const ALL_URLS = [
 	`${BASE_URL}/blog/signs-you-need-bathroom-remodel-vancouver-wa`,
 	`${BASE_URL}/blog/licensed-contractor-vs-handyman-washington-state`,
 	`${BASE_URL}/blog/clark-county-home-repair-checklist`,
+	`${BASE_URL}/blog/home-remodeling-vancouver-wa`,
 ];
 
 // GET /api/indexnow — submit all URLs to Bing IndexNow
