@@ -131,7 +131,7 @@ export default function HomeRemodelingClarkCounty() {
 						<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6">
 							<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
 							<p className="text-gray-700 leading-relaxed text-sm">
-								Home remodeling in Clark County WA spans a wide range: kitchen remodels run $1,725–$100,000+, bathroom remodels $920–$35,000+, flooring installation $2.30–$23.00 per square foot, finish carpentry $460–$11,500+, and drywall repair $115–$2,300+. Mid-range projects — the most common scope in Vancouver, Camas, Battle Ground, and Ridgefield — typically run $3,450–$35,000 depending on the service. Camas homeowners generally spend more on materials than other Clark County cities due to market expectations. Older Vancouver homes (Hazel Dell, Orchards, pre-1980) frequently have hidden water damage or outdated electrical that adds $460–$2,300 to any remodel scope. Ridgefield and newer Battle Ground subdivisions have cleaner infrastructure and more predictable budgets. Washington State requires a licensed contractor for all work over $500. NORBILT (WA Lic. NORBIHH849QC) serves all of Clark County with free same-week estimates.
+								Home remodeling in Clark County WA spans a wide range: kitchen remodels run $1,725–$100,000+, bathroom remodels $920–$35,000+, flooring installation $2.30–$23.00 per square foot, finish carpentry $460–$11,500+, and drywall repair $115–$2,300+. Mid-range projects — the most common scope in Vancouver, Camas, Battle Ground, and Ridgefield — typically run $3,450–$35,000 depending on the service. Camas homeowners generally spend more on materials than other Clark County cities due to market expectations. Older Vancouver homes (Hazel Dell, Orchards, pre-1980) frequently have hidden water damage or outdated electrical that adds $460–$2,300 to any remodel scope. Ridgefield and newer Battle Ground subdivisions have cleaner infrastructure and more predictable budgets. Washington State requires a licensed contractor for all work over $500. NORBILT (WA Lic. NORBI**741CS) serves all of Clark County with free same-week estimates.
 							</p>
 						</div>
 					</div>
@@ -328,7 +328,7 @@ export default function HomeRemodelingClarkCounty() {
 								},
 								{
 									title: "Permit Requirements",
-									body: "Clark County and its cities require permits for plumbing relocation, electrical panel work, structural changes, and some mechanical work. Permits run $150–$800 depending on scope and jurisdiction (Vancouver, Camas, and Ridgefield each have their own permit office). Cosmetic work — paint, hardware, fixtures in existing locations, and most flooring — doesn't require a permit. NORBILT (WA Lic. NORBIHH849QC) pulls all required permits.",
+									body: "Clark County and its cities require permits for plumbing relocation, electrical panel work, structural changes, and some mechanical work. Permits run $150–$800 depending on scope and jurisdiction (Vancouver, Camas, and Ridgefield each have their own permit office). Cosmetic work — paint, hardware, fixtures in existing locations, and most flooring — doesn't require a permit. NORBILT (WA Lic. NORBI**741CS) pulls all required permits.",
 								},
 								{
 									title: "Market & Timing",
@@ -374,7 +374,7 @@ export default function HomeRemodelingClarkCounty() {
 						</div>
 						<div className="bg-[#1F2E2B] rounded-2xl p-6 mt-4">
 							<p className="text-white/70 text-sm leading-relaxed">
-								NORBILT carries <strong className="text-white">WA General Contractor License NORBIHH849QC</strong>, $1,000,000 liability insurance, and a surety bond. We pull all required permits and back every project with a 1-year workmanship warranty. <Link href="/contact" className="text-[#FFB800] font-bold hover:underline">Get a free estimate →</Link>
+								NORBILT carries <strong className="text-white">WA General Contractor License NORBI**741CS</strong>, $1,000,000 liability insurance, and a surety bond. We pull all required permits and back every project with a 1-year workmanship warranty. <Link href="/contact" className="text-[#FFB800] font-bold hover:underline">Get a free estimate →</Link>
 							</p>
 						</div>
 					</div>
@@ -441,7 +441,7 @@ export default function HomeRemodelingClarkCounty() {
 								Use Cost Estimator
 							</Link>
 						</div>
-						<p className="text-white/40 text-sm">WA Lic. NORBIHH849QC · $1M Liability Insurance · Bonded · 1-Year Warranty</p>
+						<p className="text-white/40 text-sm">WA Lic. NORBI**741CS · $1M Liability Insurance · Bonded · 1-Year Warranty</p>
 					</div>
 				</section>
 			</div>

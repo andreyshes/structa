@@ -75,7 +75,7 @@ export default function BattleGroundHandyman() {
 						</h1>
 				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
 					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
-					<p className="text-gray-700 leading-relaxed text-sm">Hiring a handyman in Battle Ground WA typically costs $95–$130 per hour or $175–$1,800+ for common flat-rate jobs. Small repairs like outlet replacements, door adjustments, and drywall patches run $175–$350. Larger projects like door replacements, deck repairs, or pre-sale punch lists run $460–$1,800+. Washington State law requires a licensed contractor for any job priced over $500 — hiring unlicensed for larger work voids your homeowner's insurance and creates disclosure problems at resale. When hiring in Battle Ground, ask for WA contractor license number, proof of liability insurance ($500,000 minimum), and a written estimate before any work starts. Red flags: no written estimate, price dramatically lower than competitors, won't provide license number. NORBILT (WA Lic. NORBIHH849QC, $1M liability insurance, bonded) serves Battle Ground and all of north Clark County with same-week estimates. All prices are 2026 rates.</p>
+					<p className="text-gray-700 leading-relaxed text-sm">Hiring a handyman in Battle Ground WA typically costs $95–$130 per hour or $175–$1,800+ for common flat-rate jobs. Small repairs like outlet replacements, door adjustments, and drywall patches run $175–$350. Larger projects like door replacements, deck repairs, or pre-sale punch lists run $460–$1,800+. Washington State law requires a licensed contractor for any job priced over $500 — hiring unlicensed for larger work voids your homeowner's insurance and creates disclosure problems at resale. When hiring in Battle Ground, ask for WA contractor license number, proof of liability insurance ($500,000 minimum), and a written estimate before any work starts. Red flags: no written estimate, price dramatically lower than competitors, won't provide license number. NORBILT (WA Lic. NORBI**741CS, $1M liability insurance, bonded) serves Battle Ground and all of north Clark County with same-week estimates. All prices are 2026 rates.</p>
 				</div>
 						<p className="text-xl text-white/70 leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">
 							What to expect, what it costs, and what to watch out for when
@@ -132,7 +132,7 @@ export default function BattleGroundHandyman() {
 							<p className="text-[#A7C4B5] leading-relaxed">
 								Always ask for a WA contractor license number and verify it at
 								<strong className="text-white"> verify.contractors.wa.gov</strong>.
-								NORBILT's license is <strong className="text-[#FFB800]">NORBIHH849QC</strong>.
+								NORBILT's license is <strong className="text-[#FFB800]">NORBI**741CS</strong>.
 							</p>
 						</div>
 

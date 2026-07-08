@@ -450,7 +450,7 @@ export default function FlooringCostClarkCounty() {
 								See Flooring Services
 							</Link>
 						</div>
-						<p className="text-white/40 text-sm">WA Lic. NORBIHH849QC · $1M Liability Insurance · Bonded</p>
+						<p className="text-white/40 text-sm">WA Lic. NORBI**741CS · $1M Liability Insurance · Bonded</p>
 					</div>
 				</section>
 			</div>

@@ -606,7 +606,7 @@ export default function EstimatePage() {
 					<div className="max-w-3xl mx-auto px-6">
 						<div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
 							{[
-								{ label: "Licensed & Bonded", sub: "WA Lic #NORBIHH849QC" },
+								{ label: "Licensed & Bonded", sub: "WA Lic #NORBI**741CS" },
 								{ label: "Free On-Site Quote", sub: "No obligation, ever" },
 								{ label: "100% Satisfaction", sub: "Guaranteed results" },
 								{ label: "Clark County", sub: "Local since 2018" },

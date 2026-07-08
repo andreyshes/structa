@@ -38,7 +38,7 @@ const faqs = [
 		questions: [
 			{
 				q: "Is NORBILT a licensed contractor in Washington State?",
-				a: "Yes. NORBILT is a licensed, bonded, and insured general contractor in Washington State. Our WA contractor license number is NORBIHH849QC. We carry general liability insurance on every job.",
+				a: "Yes. NORBILT is a licensed, bonded, and insured general contractor in Washington State. Our WA contractor license number is NORBI**741CS. We carry general liability insurance on every job.",
 				verifyLink: "https://secure.lni.wa.gov/verify/",
 				verifyText: "Verify our license at Washington State L&I →",
 			},
@@ -169,7 +169,7 @@ export default function FAQPage() {
 						</div>
 						<div>
 							<p className="text-2xl font-black text-black">Licensed</p>
-							<p className="text-xs font-black uppercase tracking-widest text-black/70">WA Contractor #NORBIHH849QC</p>
+							<p className="text-xs font-black uppercase tracking-widest text-black/70">WA Contractor #NORBI**741CS</p>
 						</div>
 						<div>
 							<p className="text-2xl font-black text-black">Flat Rate</p>

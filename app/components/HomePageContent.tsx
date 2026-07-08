@@ -890,7 +890,7 @@ export default function HomePageContent() {
 			</section>
 
 			<section className="py-12 bg-[#14201D] text-center text-xs md:text-sm font-black text-[#A7C4B5] uppercase tracking-[0.4em] px-4">
-				WA General Contractor #NORBIHH849QC • Serving Vancouver & Camas
+				WA General Contractor #NORBI**741CS • Serving Vancouver & Camas
 			</section>
 		</div>
 	);

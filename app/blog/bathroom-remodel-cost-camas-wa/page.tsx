@@ -43,7 +43,7 @@ const drivers = [
 	{ title: "Newer Construction = Fewer Hidden Surprises", body: "Unlike older parts of Vancouver (Hazel Dell, Orchards), most Camas homes were built post-1990 with modern plumbing and solid subfloors. Surprises are less common, which means budgets are more predictable. The exception is older homes near downtown Camas and Fern Prairie." },
 	{ title: "Tile Selection Is the Biggest Variable", body: "Basic ceramic tile runs $2–5 per sq ft. Large-format porcelain or natural stone runs $15–30+ per sq ft and takes longer to install. In Camas, tile upgrades commonly add $2,000–$8,000 to a project compared to standard spec." },
 	{ title: "Heated Floors Are Popular in Camas", body: "Heated tile floors are one of the most requested upgrades in Camas primary baths. Adding in-floor radiant heat runs $14–$25 per sq ft installed. For a typical 50 sq ft bathroom floor, that's $700–$1,250 added to the project — and one of the highest satisfaction upgrades we install." },
-	{ title: "Permits in Camas", body: "The City of Camas requires permits for plumbing relocation, structural changes, and electrical panel work. Cosmetic remodels — vanity, tile, fixtures, paint — typically don't require a permit. NORBILT (WA Lic. NORBIHH849QC) pulls all required permits." },
+	{ title: "Permits in Camas", body: "The City of Camas requires permits for plumbing relocation, structural changes, and electrical panel work. Cosmetic remodels — vanity, tile, fixtures, paint — typically don't require a permit. NORBILT (WA Lic. NORBI**741CS) pulls all required permits." },
 ];
 
 const neighborhoods = [
@@ -55,7 +55,7 @@ const neighborhoods = [
 
 const faqs = [
 	{ q: "How much does a bathroom remodel cost in Camas WA?", a: "In Camas WA, a bathroom remodel costs between $920 for a cosmetic refresh and $35,000+ for a high-end primary suite. A mid-range remodel (new vanity, tile, all fixtures) runs $3,450–$7,500. A full gut remodel runs $9,200–$18,000. Prices reflect 2026 Clark County rates with Camas material expectations factored in." },
-	{ q: "Do I need a permit for a bathroom remodel in Camas WA?", a: "The City of Camas requires permits for plumbing relocation, structural changes, and electrical panel work. Cosmetic remodels — new vanity, tile, fixtures, and paint within the existing layout — typically don't require a permit. NORBILT (WA Lic. NORBIHH849QC) handles all permit applications when required." },
+	{ q: "Do I need a permit for a bathroom remodel in Camas WA?", a: "The City of Camas requires permits for plumbing relocation, structural changes, and electrical panel work. Cosmetic remodels — new vanity, tile, fixtures, and paint within the existing layout — typically don't require a permit. NORBILT (WA Lic. NORBI**741CS) handles all permit applications when required." },
 	{ q: "Why do Camas bathroom remodels cost more than other Clark County cities?", a: "Camas homeowners consistently choose higher-end materials — large-format tile, premium fixtures, quartz accents, and heated floors. These are the right choices for the market and for resale, but they push budgets toward the top of each tier. The homes themselves (newer, well-maintained) tend to have fewer hidden surprises, which helps predictability." },
 	{ q: "How long does a bathroom remodel take in Camas?", a: "A cosmetic refresh takes 1–2 days. A mid-range remodel takes 3–5 days. A full gut remodel takes 1–2 weeks. Primary suite remodels with custom tile take 2–4 weeks. We confirm exact timelines during the free estimate." },
 	{ q: "What adds the most value to a Camas bathroom before selling?", a: "In Camas's real estate market, updated tile, a new vanity, modern fixtures, and a clean grout/caulk job have the highest visible ROI. Buyers in Camas expect quality — a tired bathroom stands out more here than in other Clark County markets. A mid-range update ($3,450–$7,500) typically recovers 70–80% at sale." },
@@ -109,7 +109,7 @@ export default function BathroomRemodelCostCamasWA() {
 					<div className="max-w-3xl mx-auto px-6 lg:px-8 space-y-16">
 						<section className="space-y-5 text-gray-700 leading-relaxed text-lg">
 							<p>A bathroom remodel in Camas WA costs anywhere from <strong>$920 for a cosmetic refresh</strong> to <strong>$35,000+ for a high-end primary suite gut</strong>. Camas homeowners typically invest more in materials than other Clark County cities — and the homes here are newer, which means fewer hidden surprises and more predictable budgets.</p>
-							<p>NORBILT is a licensed general contractor (WA Lic. <strong>NORBIHH849QC</strong>) serving Camas and all of Clark County. We carry $1,000,000 liability insurance and back all bathroom work with a 1-year workmanship warranty.</p>
+							<p>NORBILT is a licensed general contractor (WA Lic. <strong>NORBI**741CS</strong>) serving Camas and all of Clark County. We carry $1,000,000 liability insurance and back all bathroom work with a 1-year workmanship warranty.</p>
 						</section>
 						<section className="space-y-6">
 							<h2 className="text-3xl font-black text-[#1F2E2B] uppercase tracking-tighter">Bathroom Remodel Cost by Scope — Camas WA</h2>
@@ -140,7 +140,7 @@ export default function BathroomRemodelCostCamasWA() {
 						<section className="bg-[#1F2E2B] rounded-3xl p-10 space-y-5">
 							<h2 className="text-2xl font-black text-white uppercase tracking-tighter">Why Licensed Matters in Camas</h2>
 							<p className="text-[#A7C4B5] leading-relaxed">Washington State requires a licensed contractor for bathroom remodel work above $500. Unlicensed work voids homeowner&apos;s insurance and creates disclosure issues at resale — which matters even more in Camas&apos;s high-value market.</p>
-							<ul className="space-y-3">{["WA General Contractor License NORBIHH849QC", "$1,000,000 liability insurance on every job", "Bonded — protects you if work is incomplete", "We pull all required permits", "1-year workmanship warranty on all bathroom work"].map((item, i) => (<li key={i} className="flex items-start gap-3 text-white/80 text-sm"><CheckCircle2 className="w-4 h-4 text-[#FFB800] mt-0.5 shrink-0" />{item}</li>))}</ul>
+							<ul className="space-y-3">{["WA General Contractor License NORBI**741CS", "$1,000,000 liability insurance on every job", "Bonded — protects you if work is incomplete", "We pull all required permits", "1-year workmanship warranty on all bathroom work"].map((item, i) => (<li key={i} className="flex items-start gap-3 text-white/80 text-sm"><CheckCircle2 className="w-4 h-4 text-[#FFB800] mt-0.5 shrink-0" />{item}</li>))}</ul>
 						</section>
 						<section className="space-y-4">
 							<h2 className="text-2xl font-black text-[#1F2E2B] uppercase tracking-tighter">Related Guides</h2>

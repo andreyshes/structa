@@ -81,7 +81,7 @@ export default async function Page({ params }: any) {
 		areaServed: { "@type": "City", name: cityName, containedInPlace: "Clark County, WA" },
 		priceRange: "$$",
 		openingHours: "Mo-Sa 08:00-18:00",
-		hasCredential: "WA General Contractor License NORBIHH849QC",
+		hasCredential: "WA General Contractor License NORBI**741CS",
 	};
 
 	return (

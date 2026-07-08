@@ -123,7 +123,7 @@ const faqs = [
 	},
 	{
 		q: "Do I need a permit for a bathroom remodel in Vancouver WA?",
-		a: "The City of Vancouver requires permits for structural work, plumbing relocation, and electrical panel changes. Cosmetic remodels — replacing fixtures, vanity, tile, and paint within the existing layout — typically don't require a permit. NORBILT is a licensed WA general contractor (Lic. NORBIHH849QC) and pulls permits when required.",
+		a: "The City of Vancouver requires permits for structural work, plumbing relocation, and electrical panel changes. Cosmetic remodels — replacing fixtures, vanity, tile, and paint within the existing layout — typically don't require a permit. NORBILT is a licensed WA general contractor (Lic. NORBI**741CS) and pulls permits when required.",
 	},
 	{
 		q: "How long does a bathroom remodel take in Vancouver WA?",
@@ -195,7 +195,7 @@ export default function BathroomRemodelCostVancouverWA() {
 						</h1>
 				<div className="bg-[#2D5A3D]/10 border-l-4 border-[#2D5A3D] rounded-r-2xl p-6 my-6">
 					<p className="text-[10px] font-black uppercase tracking-widest text-[#2D5A3D] mb-2">Quick Answer</p>
-					<p className="text-gray-700 leading-relaxed text-sm">A bathroom remodel in Vancouver WA costs between $920 for a cosmetic refresh and $35,000+ for a full primary suite gut. A cosmetic refresh — new toilet, faucet, mirror, recaulk, and paint — runs $920–$2,500 and takes 1–2 days. A mid-range remodel with new vanity, tile floor, shower surround, and all fixtures costs $3,450–$7,500 over 3–5 days. A full gut remodel — everything to studs — runs $9,200–$18,000 in 1–2 weeks. Vancouver neighborhood matters: Hazel Dell and Orchards homes (1960s–1980s builds) frequently have water damage and outdated plumbing that adds $460–$1,380 to the budget. West Vancouver new construction and Fisher's Landing have cleaner subfloors and fewer surprises. All prices are 2026 rates from NORBILT, a licensed Clark County general contractor (WA Lic. NORBIHH849QC).</p>
+					<p className="text-gray-700 leading-relaxed text-sm">A bathroom remodel in Vancouver WA costs between $920 for a cosmetic refresh and $35,000+ for a full primary suite gut. A cosmetic refresh — new toilet, faucet, mirror, recaulk, and paint — runs $920–$2,500 and takes 1–2 days. A mid-range remodel with new vanity, tile floor, shower surround, and all fixtures costs $3,450–$7,500 over 3–5 days. A full gut remodel — everything to studs — runs $9,200–$18,000 in 1–2 weeks. Vancouver neighborhood matters: Hazel Dell and Orchards homes (1960s–1980s builds) frequently have water damage and outdated plumbing that adds $460–$1,380 to the budget. West Vancouver new construction and Fisher's Landing have cleaner subfloors and fewer surprises. All prices are 2026 rates from NORBILT, a licensed Clark County general contractor (WA Lic. NORBI**741CS).</p>
 				</div>
 						<p className="text-xl text-white/70 leading-relaxed max-w-2xl border-l-4 border-[#FFB800] pl-6">
 							Real 2026 price ranges for every scope — from a quick cosmetic
@@ -239,7 +239,7 @@ export default function BathroomRemodelCostVancouverWA() {
 							</p>
 							<p>
 								NORBILT is a licensed general contractor (WA Lic.{" "}
-								<strong>NORBIHH849QC</strong>) serving Vancouver and all of Clark
+								<strong>NORBI**741CS</strong>) serving Vancouver and all of Clark
 								County. We carry $1,000,000 liability insurance and back all
 								bathroom work with a 1-year workmanship warranty.
 							</p>
@@ -369,7 +369,7 @@ export default function BathroomRemodelCostVancouverWA() {
 							</p>
 							<ul className="space-y-3">
 								{[
-									"NORBILT holds WA General Contractor License NORBIHH849QC",
+									"NORBILT holds WA General Contractor License NORBI**741CS",
 									"$1,000,000 liability insurance on every job",
 									"Bonded — protects you if work is incomplete or defective",
 									"We pull permits when required — no shortcuts that hurt resale",
