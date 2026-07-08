@@ -19,6 +19,7 @@ export default function ChatWidget() {
 	const [loading, setLoading] = useState(false);
 	const [unread, setUnread] = useState(false);
 	const [hasOpened, setHasOpened] = useState(false);
+	const [leadCaptured, setLeadCaptured] = useState(false);
 	const bottomRef = useRef<HTMLDivElement>(null);
 	const inputRef = useRef<HTMLTextAreaElement>(null);
 
@@ -78,6 +79,22 @@ export default function ChatWidget() {
 					updated[updated.length - 1] = { role: "assistant", content: finalAccumulated };
 					return updated;
 				});
+			}
+
+			// After each response, check if user shared contact info — fire email if so
+			if (!leadCaptured) {
+				const fullConversation = [
+					...newMessages,
+					{ role: "assistant", content: accumulated },
+				];
+				fetch("/api/chat-lead", {
+					method: "POST",
+					headers: { "Content-Type": "application/json" },
+					body: JSON.stringify({ messages: fullConversation }),
+				})
+					.then((r) => r.json())
+					.then((d) => { if (d.captured) setLeadCaptured(true); })
+					.catch(() => {});
 			}
 		} catch {
 			setMessages((prev) => {
