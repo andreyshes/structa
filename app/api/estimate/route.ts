@@ -184,36 +184,80 @@ Use the 2026 Clark County rate sheet in your system instructions. Provide a real
 			estimate.priceRange.low = Math.round((estimate.priceRange.low * 1.15) / 50) * 50;
 		}
 
-		// Send lead notification to NORBILT
+		// Fire lead notification + auto-reply in parallel (non-blocking)
 		if (name || email) {
-			await resend.emails.send({
-				from: "NORBILT Estimator <hello@norbilt.com>",
-				to: ["hello@norbilt.com"],
-				replyTo: email || "no-reply@norbilt.com",
-				subject: `New AI Estimate Lead — ${service} — ${city || "Clark County"}`,
-				html: `
-          <h2 style="color:#1F2E2B">New AI Estimator Lead</h2>
-          <p><strong>Name:</strong> ${name || "Not provided"}</p>
-          <p><strong>Email:</strong> ${email || "Not provided"}</p>
-          <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
-          <p><strong>City:</strong> ${city || "Not provided"}</p>
-          <p><strong>Service:</strong> ${service}</p>
-          <p><strong>Timeline:</strong> ${timeline || "Flexible"}</p>
-          <p><strong>Project Details:</strong><br/>${JSON.stringify(details, null, 2).replace(/\n/g, "<br/>")}</p>
-          ${notes ? `<p><strong>Notes:</strong> ${notes}</p>` : ""}
-          <hr/>
-          <h3 style="color:#2D5A3D">AI Estimate Generated</h3>
-          <p><strong>Price Range:</strong> $${estimate.priceRange.low.toLocaleString()} – $${estimate.priceRange.high.toLocaleString()}</p>
-          <p><strong>Timeline:</strong> ${estimate.timeline}</p>
-          <p><strong>Confidence:</strong> ${estimate.confidence}</p>
-          <p><strong>Included:</strong></p>
-          <ul>${estimate.included.map((i: string) => `<li>${i}</li>`).join("")}</ul>
-          <p><strong>Factors:</strong></p>
-          <ul>${estimate.factors.map((f: string) => `<li>${f}</li>`).join("")}</ul>
-          <p><strong>Recommendation:</strong> ${estimate.recommendation}</p>
-        `,
-			}).catch(() => {
-				// Non-blocking — estimate still returns even if email fails
+			Promise.all([
+				// Notification to NORBILT
+				resend.emails.send({
+					from: "NORBILT Estimator <hello@norbilt.com>",
+					to: ["hello@norbilt.com"],
+					replyTo: email || "no-reply@norbilt.com",
+					subject: `New AI Estimate Lead — ${service} — ${city || "Clark County"}`,
+					html: `
+		          <h2 style="color:#1F2E2B">New AI Estimator Lead</h2>
+		          <p><strong>Name:</strong> ${name || "Not provided"}</p>
+		          <p><strong>Email:</strong> ${email || "Not provided"}</p>
+		          <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
+		          <p><strong>City:</strong> ${city || "Not provided"}</p>
+		          <p><strong>Service:</strong> ${service}</p>
+		          <p><strong>Timeline:</strong> ${timeline || "Flexible"}</p>
+		          <p><strong>Project Details:</strong><br/>${JSON.stringify(details, null, 2).replace(/\n/g, "<br/>")}</p>
+		          ${notes ? `<p><strong>Notes:</strong> ${notes}</p>` : ""}
+		          <hr/>
+		          <h3 style="color:#2D5A3D">AI Estimate Generated</h3>
+		          <p><strong>Price Range:</strong> $${estimate.priceRange.low.toLocaleString()} – $${estimate.priceRange.high.toLocaleString()}</p>
+		          <p><strong>Timeline:</strong> ${estimate.timeline}</p>
+		          <p><strong>Confidence:</strong> ${estimate.confidence}</p>
+		          <p><strong>Included:</strong></p>
+		          <ul>${estimate.included.map((i: string) => `<li>${i}</li>`).join("")}</ul>
+		          <p><strong>Factors:</strong></p>
+		          <ul>${estimate.factors.map((f: string) => `<li>${f}</li>`).join("")}</ul>
+		          <p><strong>Recommendation:</strong> ${estimate.recommendation}</p>
+		        `,
+				}),
+
+				// Auto-reply to homeowner with their estimate summary
+				email ? resend.emails.send({
+					from: "Andrey at NORBILT <hello@norbilt.com>",
+					to: [email],
+					subject: `Your ${service} estimate — NORBILT`,
+					html: `
+						<div style="font-family:sans-serif;max-width:560px;margin:0 auto;color:#1F2E2B">
+							<div style="background:#1F2E2B;padding:24px 32px;border-radius:12px 12px 0 0">
+								<p style="color:#FFB800;font-weight:900;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;margin:0">NORBILT · Licensed General Contractor</p>
+							</div>
+							<div style="background:#ffffff;padding:32px;border:1px solid #E8E4DE;border-top:none;border-radius:0 0 12px 12px">
+								<h2 style="font-size:22px;font-weight:900;text-transform:uppercase;letter-spacing:-0.02em;margin:0 0 8px">
+									${name ? `Hey ${name} —` : "Hey —"} here's your estimate.
+								</h2>
+								<p style="color:#4B5563;line-height:1.6;margin:0 0 24px">
+									Based on what you shared about your <strong>${service}</strong> project in ${city || "Clark County"}, here's the AI-generated range:
+								</p>
+								<div style="background:#F8F6F3;border-radius:12px;padding:20px 24px;margin:0 0 24px">
+									<p style="color:#6B7280;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin:0 0 6px">Estimated Cost</p>
+									<p style="font-size:28px;font-weight:900;color:#1F2E2B;margin:0">
+										$${estimate.priceRange.low.toLocaleString()} – $${estimate.priceRange.high.toLocaleString()}
+									</p>
+									<p style="color:#6B7280;font-size:12px;margin:6px 0 0">Timeline: ${estimate.timeline} · Confidence: ${estimate.confidence}</p>
+								</div>
+								<p style="color:#4B5563;line-height:1.6;margin:0 0 8px">
+									<strong>This is an AI estimate</strong> — actual pricing depends on site conditions and final scope. I'll follow up personally to confirm or refine it.
+								</p>
+								<p style="color:#4B5563;line-height:1.6;margin:0 0 24px">
+									Need me sooner? Call or text directly:
+								</p>
+								<a href="tel:+13602169920" style="display:inline-block;background:#FFB800;color:#000000;font-weight:900;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;padding:14px 28px;border-radius:10px;text-decoration:none">
+									(360) 216-9920
+								</a>
+								<p style="color:#9CA3AF;font-size:12px;margin:24px 0 0">
+									Andrey · NORBILT · Licensed WA General Contractor · Clark County
+								</p>
+							</div>
+						</div>
+					`,
+				}) : Promise.resolve(),
+			]).catch(() => {
+				// Non-blocking — estimate still returns even if emails fail
 			});
 		}
 
