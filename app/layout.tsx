@@ -4,6 +4,7 @@ import Navigation from "@/app/components/Navigation";
 import Footer from "@/app/components/Footer";
 import ScrollTracker from "@/app/components/ScrollTracker";
 import StickyMobileCTA from "@/app/components/StickyMobileCTA";
+import ChatWidget from "@/app/components/ChatWidget";
 import Script from "next/script";
 
 export const metadata: Metadata = {
@@ -203,6 +204,7 @@ export default function RootLayout({
 					<Footer />
 				</div>
 				<StickyMobileCTA />
+				<ChatWidget />
 			</body>
 		</html>
 	);
