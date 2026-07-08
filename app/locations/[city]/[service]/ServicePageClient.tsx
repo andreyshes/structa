@@ -34,6 +34,37 @@ const iconMap: Record<string, any> = {
 	"home-repair": Home,
 };
 
+function getHeroIntro(city: any, cityNameShort: string, serviceSlug: string, serviceTitle: string): string {
+	const neighborhoods = city.neighborhoods?.slice(0, 2).join(" and ") || cityNameShort;
+	const housingNote = city.housingNotes?.split(".")[0] || "";
+	const matchedProject = city.commonProjects?.find((p: any) =>
+		p.name.toLowerCase().includes(serviceSlug.replace("-", " ")) ||
+		serviceSlug.includes(p.name.toLowerCase().split(" ")[0])
+	);
+
+	if (matchedProject) {
+		return matchedProject.desc + ` NORBILT handles ${serviceTitle.toLowerCase()} in ${cityNameShort} with the same licensed crew and written estimate on every job.`;
+	}
+	if (housingNote) {
+		return `${housingNote}. We tailor every ${serviceTitle.toLowerCase()} job to the specific conditions we find — from the neighborhoods of ${neighborhoods} to the rest of ${cityNameShort}. Licensed, bonded, free written estimate before any work starts.`;
+	}
+	return `NORBILT handles ${serviceTitle.toLowerCase()} for homeowners in ${cityNameShort} — ${neighborhoods} and beyond. Licensed general contractor, written estimate, 1-year workmanship warranty on every job.`;
+}
+
+function getTimelineFaq(serviceSlug: string, cityNameShort: string): string {
+	const timelines: Record<string, string> = {
+		"handyman": `Handyman jobs in ${cityNameShort} typically run a few hours to a full day depending on the punch list. We batch small repairs efficiently so you're not paying a trip charge for each item.`,
+		"drywall-repair": `Most drywall patches in ${cityNameShort} take one day — a morning to patch and prime, return visit once dry to texture-match and paint. Larger sections may need two days.`,
+		"finish-carpentry": `Trim and carpentry work in ${cityNameShort} typically runs 1–3 days depending on linear footage and complexity. Crown molding in a single room usually wraps in a day.`,
+		"kitchen-bath": `A cosmetic kitchen or bath update in ${cityNameShort} runs 2–5 days. Full gut remodels are typically 2–4 weeks. We give you a timeline in writing before work starts.`,
+		"flooring": `Flooring installation in ${cityNameShort} averages 1–2 days for a typical room. Larger floor plans or tile work may run 3–4 days including curing time.`,
+		"door-window": `Door and window installs in ${cityNameShort} usually take a few hours per unit. A full door replacement including trim typically wraps in half a day.`,
+		"home-repair": `Home repair timelines in ${cityNameShort} vary by scope. Most single-item repairs finish in a few hours; multi-item punch lists are typically done in one visit.`,
+		"lighting": `Lighting and fixture swaps in ${cityNameShort} usually run 1–3 hours per fixture. Recessed lighting installations take a half-day to full day depending on the number of cans.`,
+	};
+	return timelines[serviceSlug] || `Most projects in ${cityNameShort} finish in 1–2 days. We give you a written timeline before any work begins.`;
+}
+
 export default function ServicePageClient({
 	city,
 	service,
@@ -43,19 +74,20 @@ export default function ServicePageClient({
 	const [openFaq, setOpenFaq] = useState<number | null>(null);
 	const Icon = iconMap[serviceSlug] || Hammer;
 	const cityNameShort = city.name.split(",")[0];
+	const heroIntro = getHeroIntro(city, cityNameShort, serviceSlug, service.title);
 
 	const genericFaqs = [
 		{
 			q: `How long does ${service.title} take in ${cityNameShort}?`,
-			a: `Most ${cityNameShort} projects finish in 1 to 2 days. We work fast and keep our workspace clean to minimize home disruption.`,
+			a: getTimelineFaq(serviceSlug, cityNameShort),
 		},
 		{
-			q: `Are you a licensed general contractor in ${cityNameShort}?`,
-			a: `Yes. NORBILT is a licensed, bonded, and insured general contractor. We serve homeowners in ${cityNameShort} and Clark County.`,
+			q: `Is NORBILT licensed to work in ${cityNameShort}, WA?`,
+			a: `Yes — NORBILT holds WA General Contractor License NORBI**741CS, is bonded, and carries $1M liability insurance. We pull all required permits for ${cityNameShort} projects and are familiar with Clark County inspection requirements.`,
 		},
 		{
-			q: `Do you provide free estimates for ${service.title} in ${cityNameShort}?`,
-			a: `Yes. Contact us for a walkthrough. We provide clear, honest pricing for all ${cityNameShort} residents.`,
+			q: `How do I get a ${service.title.toLowerCase()} estimate in ${cityNameShort}?`,
+			a: `Call or text (360) 216-9920, or submit the online form. Andrey schedules ${cityNameShort} walkthroughs the same week and provides a written estimate before any work starts — no obligation.`,
 		},
 	];
 	const faqs = service.faqs ? [...service.faqs, ...genericFaqs] : genericFaqs;
@@ -134,10 +166,7 @@ export default function ServicePageClient({
 						</h1>
 
 						<p className="max-w-2xl text-xl text-white/70 border-l-4 border-[#FFB800] pl-6 mb-10 font-medium leading-relaxed">
-							NORBILT provides expert {service.title.toLowerCase()} for local
-							homeowners. Our team delivers high-quality results on every
-							project. We are the trusted choice for home repairs in{" "}
-							{cityNameShort}.
+							{heroIntro}
 						</p>
 
 						<div className="flex flex-col sm:flex-row gap-4 pt-2">
