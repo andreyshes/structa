@@ -138,15 +138,15 @@ export default function PhotoEstimatePage() {
 									</div>
 								</div>
 							) : (
-								<div className="py-16 text-center space-y-4">
-									<div className="w-14 h-14 bg-[#F8F6F3] rounded-2xl flex items-center justify-center mx-auto">
-										<Upload className="w-7 h-7 text-[#1F2E2B]" />
+								<div className="py-10 px-6 text-center space-y-3">
+									<div className="w-12 h-12 bg-[#F8F6F3] rounded-2xl flex items-center justify-center mx-auto">
+										<Upload className="w-6 h-6 text-[#1F2E2B]" />
 									</div>
 									<div>
-										<p className="font-black text-[#1F2E2B] text-lg uppercase tracking-tight">Drop a photo here</p>
-										<p className="text-gray-500 font-medium text-sm mt-1">or tap to choose from your camera roll</p>
+										<p className="font-black text-[#1F2E2B] text-base uppercase tracking-tight">Drop a photo here</p>
+										<p className="text-gray-500 font-medium text-sm mt-0.5">or tap to choose from your camera roll</p>
 									</div>
-									<p className="text-gray-400 text-xs">JPG, PNG, HEIC • Any room, any damage, any project</p>
+									<p className="text-gray-400 text-xs">JPG, PNG, HEIC · Any room, any damage, any project</p>
 								</div>
 							)}
 						</div>
