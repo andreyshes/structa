@@ -23,24 +23,6 @@ const nextConfig = {
 				destination: "https://www.norbilt.com/:path*",
 				permanent: true,
 			},
-			// /locations/[city]/[service] → /services/[service] (consolidate thin pages)
-			// Specific overrides for slugs that map to /services/kitchen-bath
-			{
-				source: "/locations/:city/bathroom-remodel",
-				destination: "/services/kitchen-bath",
-				permanent: true,
-			},
-			{
-				source: "/locations/:city/kitchen-remodel",
-				destination: "/services/kitchen-bath",
-				permanent: true,
-			},
-			// Generic catch-all for all other city+service combos
-			{
-				source: "/locations/:city/:service",
-				destination: "/services/:service",
-				permanent: true,
-			},
 			// Old service slugs → new slugs (permanent 301)
 			{
 				source: "/services/handyman-services",
