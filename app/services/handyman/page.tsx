@@ -461,14 +461,14 @@ export default function HandymanPage() {
 					</p>
 					<div className="flex flex-wrap justify-center gap-3">
 						{[
-							{ name: "Vancouver", href: "/locations/vancouver/handyman-services" },
-							{ name: "Camas", href: "/locations/camas/handyman-services" },
-							{ name: "Ridgefield", href: "/locations/ridgefield/handyman-services" },
-							{ name: "Battle Ground", href: "/locations/battle-ground/handyman-services" },
-							{ name: "Washougal", href: "/locations/washougal/handyman-services" },
-							{ name: "Salmon Creek", href: "/locations/salmon-creek/handyman-services" },
-							{ name: "Hazel Dell", href: "/locations/hazel-dell/handyman-services" },
-							{ name: "Orchards", href: "/locations/orchards/handyman-services" },
+							{ name: "Vancouver", href: "/locations/vancouver/handyman" },
+							{ name: "Camas", href: "/locations/camas/handyman" },
+							{ name: "Ridgefield", href: "/locations/ridgefield/handyman" },
+							{ name: "Battle Ground", href: "/locations/battle-ground/handyman" },
+							{ name: "Washougal", href: "/locations/washougal/handyman" },
+							{ name: "Salmon Creek", href: "/locations/salmon-creek/handyman" },
+							{ name: "Hazel Dell", href: "/locations/hazel-dell/handyman" },
+							{ name: "Orchards", href: "/locations/orchards/handyman" },
 						].map((city) => (
 							<Link
 								key={city.name}

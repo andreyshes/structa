@@ -19,7 +19,7 @@ export default function AboutPageContent() {
 		{
 			icon: ShieldCheck,
 			label: "WA Licensed General Contractor",
-			sub: "License #NORBIR**741CS — verify at L&I",
+			sub: "License #NORBIHH849QC — verify at L&I",
 		},
 		{
 			icon: Shield,
@@ -148,7 +148,7 @@ export default function AboutPageContent() {
 						<div className="absolute -bottom-6 -right-6 bg-[#FFB800] px-8 py-6 rounded-2xl shadow-xl border-b-4 border-[#CC9900] hidden md:block">
 							<p className="text-black font-black text-center text-sm leading-tight uppercase tracking-wide">
 								WA License <br />
-								<span className="text-lg">#NORBIR**741CS</span>
+								<span className="text-lg">#NORBIHH849QC</span>
 							</p>
 						</div>
 					</div>
@@ -191,7 +191,7 @@ export default function AboutPageContent() {
 							<div className="flex items-center gap-2 px-4 py-2 bg-[#F8F6F3] rounded-lg border border-gray-100">
 								<CheckCircle2 className="w-5 h-5 text-[#FFB800] shrink-0" />
 								<span className="font-bold text-[#1F2E2B] text-sm uppercase">
-									WA GC License #NORBIR**741CS
+									WA GC License #NORBIHH849QC
 								</span>
 							</div>
 							<div className="flex items-center gap-2 px-4 py-2 bg-[#F8F6F3] rounded-lg border border-gray-100">

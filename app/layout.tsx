@@ -61,7 +61,7 @@ export default function RootLayout({
 										"height": 512,
 									},
 									"image": "https://www.norbilt.com/og-image.jpg",
-									"description": "NORBILT is a licensed, bonded, and insured general contractor based in Vancouver WA, serving all of Clark County. Specializing in kitchen remodeling, bathroom remodeling, drywall repair, finish carpentry, flooring installation, and handyman services. WA General Contractor License NORBI**741CS. $1,000,000 liability insurance.",
+									"description": "NORBILT is a licensed, bonded, and insured general contractor based in Vancouver WA, serving all of Clark County. Specializing in kitchen remodeling, bathroom remodeling, drywall repair, finish carpentry, flooring installation, and handyman services. WA General Contractor License NORBIHH849QC. $1,000,000 liability insurance.",
 									"telephone": "+13602169920",
 									"email": "hello@norbilt.com",
 									"address": {
@@ -90,7 +90,7 @@ export default function RootLayout({
 										"@type": "EducationalOccupationalCredential",
 										"credentialCategory": "license",
 										"name": "Washington State General Contractor License",
-										"identifier": "NORBI**741CS",
+										"identifier": "NORBIHH849QC",
 										"recognizedBy": { "@type": "GovernmentOrganization", "name": "Washington State Department of Labor & Industries" },
 									},
 									"knowsAbout": [

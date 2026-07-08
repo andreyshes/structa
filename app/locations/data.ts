@@ -140,7 +140,7 @@ export const locationsData: Record<string, CityData> = {
 			},
 			{
 				q: "Are there licensed contractors who actually come to Battle Ground?",
-				a: "Yes — NORBILT is one of the more active licensed contractors in north Clark County. We don't charge extra for the drive and we schedule Battle Ground estimates the same week. WA License #NORBIR**741CS, bonded and insured.",
+				a: "Yes — NORBILT is one of the more active licensed contractors in north Clark County. We don't charge extra for the drive and we schedule Battle Ground estimates the same week. WA License #NORBIHH849QC, bonded and insured.",
 			},
 		],
 	},
@@ -634,7 +634,7 @@ export const servicesData: Record<string, ServiceData> = {
 			},
 			{
 				q: "Do I need a permit for a bathroom remodel?",
-				a: "Cosmetic work — fixture swaps, vanity, tile, paint — typically doesn't require a permit in Clark County. Permits are required for plumbing relocation, structural changes, and electrical panel work. NORBILT (WA Lic. NORBI**741CS) pulls all required permits.",
+				a: "Cosmetic work — fixture swaps, vanity, tile, paint — typically doesn't require a permit in Clark County. Permits are required for plumbing relocation, structural changes, and electrical panel work. NORBILT (WA Lic. NORBIHH849QC) pulls all required permits.",
 			},
 			{
 				q: "How long does a bathroom remodel take?",
@@ -688,7 +688,7 @@ export const servicesData: Record<string, ServiceData> = {
 			},
 			{
 				q: "Do I need a permit for a kitchen remodel?",
-				a: "Cosmetic work — counters, backsplash, hardware, lighting swaps at existing boxes — typically doesn't require a permit. Permits are required for plumbing relocation, gas line work, and electrical panel changes. NORBILT (WA Lic. NORBI**741CS) pulls all required permits.",
+				a: "Cosmetic work — counters, backsplash, hardware, lighting swaps at existing boxes — typically doesn't require a permit. Permits are required for plumbing relocation, gas line work, and electrical panel changes. NORBILT (WA Lic. NORBIHH849QC) pulls all required permits.",
 			},
 			{
 				q: "Should I reface or replace my kitchen cabinets?",

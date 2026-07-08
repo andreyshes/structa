@@ -41,7 +41,7 @@ export default function Footer() {
 							</span>
 						</div>
 						<div className="mt-4 space-y-1">
-							<p className="text-[#F8F6F3]/50 text-[11px]">WA Lic. <span className="text-[#F8F6F3]/80 font-bold">NORBI**741CS</span></p>
+							<p className="text-[#F8F6F3]/50 text-[11px]">WA Lic. <span className="text-[#F8F6F3]/80 font-bold">NORBIHH849QC</span></p>
 							<p className="text-[#F8F6F3]/50 text-[11px]">$1,000,000 Liability Insurance</p>
 						</div>
 					</div>
@@ -188,7 +188,7 @@ export default function Footer() {
 							© {currentYear} NORBILT.
 						</p>
 						<p className="text-sm text-[#F8F6F3]/50">
-							General Contractor in Vancouver, WA · WA Lic. NORBI**741CS
+							General Contractor in Vancouver, WA · WA Lic. NORBIHH849QC
 						</p>
 					</div>
 				</div>

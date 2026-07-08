@@ -319,18 +319,12 @@ export default function HomePageContent() {
 								Vancouver's Choice for Home Repair
 							</h2>
 							<p className="text-lg text-gray-700 leading-relaxed">
-								First, are you looking for a{" "}
-								<strong>general contractor in Vancouver, WA</strong>? Local
-								owners need a pro who can fix and protect their homes. Next,
-								NORBILT handles <strong>kitchen & bathroom remodeling</strong> and{" "}
-								<strong>home repairs</strong>. We fix drywall, update sinks, and
-								install new trim. Our team is licensed, bonded, and insured.
+								Looking for a <strong>general contractor in Vancouver, WA</strong>? NORBILT handles{" "}
+								<strong>kitchen & bathroom remodeling</strong> and <strong>home repairs</strong> — drywall patching, sink updates, trim installation, and more. Licensed, bonded, and insured in Washington State.
 							</p>
 							<p className="text-lg text-gray-700 leading-relaxed">
-								Also, we focus on quality work and fair pricing. NORBILT handles
-								everything from <strong>window repair</strong> to{" "}
-								<strong>bathroom remodeling</strong>. We serve all people in Clark
-								County with care. Trust our team for your next home project.
+								We price work fairly and finish it right. From <strong>window repair</strong> to full{" "}
+								<strong>bathroom remodels</strong>, we serve homeowners across Clark County with the same attention to detail every time.
 							</p>
 						</div>
 						<div className="bg-[#F8F6F3] p-8 rounded-3xl border-2 border-[#FFB800]/20">
@@ -494,10 +488,7 @@ export default function HomePageContent() {
 								<span className="text-[#FFB800]">Setup</span>
 							</h2>
 							<p className="text-[#A7C4B5] text-lg leading-relaxed mb-6">
-								Good home care makes your house better. As a{" "}
-								<strong>Vancouver general contractor</strong>, we fix home
-								damage fast. In addition, we provide lasting fixes for every
-								owner.
+								As a licensed <strong>Vancouver general contractor</strong>, we diagnose and fix home damage correctly — not just quickly. Every repair is done to last.
 							</p>
 							<div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 border-t border-white/10">
 								<div className="space-y-2">
@@ -534,9 +525,7 @@ export default function HomePageContent() {
 							Serving All of Clark County, WA
 						</h2>
 						<p className="max-w-2xl mx-auto text-gray-600 text-lg">
-							NORBILT is a licensed, bonded general contractor serving Vancouver
-							and all Clark County communities. Therefore, select your city
-							below for local rates and service info.
+							NORBILT is a licensed, bonded general contractor serving Vancouver and all Clark County communities. Select your city below for local rates and service info.
 						</p>
 					</div>
 					<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
@@ -621,12 +610,12 @@ export default function HomePageContent() {
 								{
 									icon: Award,
 									title: "Quality",
-									desc: "Also, we focus on the small details that others miss.",
+									desc: "We sweat the small stuff — cuts, gaps, and finish quality that separate good work from great.",
 								},
 								{
 									icon: Clock,
 									title: "Reliable",
-									desc: "Furthermore, we finish every job on time and respect your home.",
+									desc: "We show up when we say we will, finish on schedule, and leave the space cleaner than we found it.",
 								},
 							].map((item, i) => (
 								<div key={item.title} className="flex gap-6 group">
@@ -901,7 +890,7 @@ export default function HomePageContent() {
 			</section>
 
 			<section className="py-12 bg-[#14201D] text-center text-xs md:text-sm font-black text-[#A7C4B5] uppercase tracking-[0.4em] px-4">
-				WA General Contractor #NORBIR**741CS • Serving Vancouver & Camas
+				WA General Contractor #NORBIHH849QC • Serving Vancouver & Camas
 			</section>
 		</div>
 	);

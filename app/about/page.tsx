@@ -68,7 +68,7 @@ export default function AboutPage() {
 								url: "https://www.norbilt.com/about",
 								name: "About NORBILT — Licensed General Contractor Vancouver WA",
 								description:
-									"Learn about Andrey, the licensed general contractor behind NORBILT. 5+ years in the trade, 250+ Clark County projects, WA license #NORBIR**741CS.",
+									"Learn about Andrey, the licensed general contractor behind NORBILT. 5+ years in the trade, 250+ Clark County projects, WA license #NORBIHH849QC.",
 								mainEntity: { "@id": "https://www.norbilt.com/about#founder" },
 							},
 						],
