@@ -42,12 +42,45 @@ export default function PhotoEstimatePage() {
 			setError("Please upload an image file (JPG, PNG, HEIC, etc.)");
 			return;
 		}
-		setFile(f);
 		setAssessment(null);
 		setError(null);
-		const reader = new FileReader();
-		reader.onload = (e) => setPreview(e.target?.result as string);
-		reader.readAsDataURL(f);
+
+		// Convert any format (including HEIC on Safari) to JPEG via canvas
+		// This normalizes format, resizes large images, and ensures Claude compatibility
+		const url = URL.createObjectURL(f);
+		const img = new window.Image();
+
+		img.onload = () => {
+			const MAX = 1600;
+			let w = img.naturalWidth;
+			let h = img.naturalHeight;
+			if (w > MAX || h > MAX) {
+				const ratio = Math.min(MAX / w, MAX / h);
+				w = Math.round(w * ratio);
+				h = Math.round(h * ratio);
+			}
+			const canvas = document.createElement("canvas");
+			canvas.width = w;
+			canvas.height = h;
+			canvas.getContext("2d")!.drawImage(img, 0, 0, w, h);
+			URL.revokeObjectURL(url);
+
+			canvas.toBlob((blob) => {
+				if (!blob) { setError("Couldn't process that image — try a JPG or PNG."); return; }
+				const converted = new File([blob], "photo.jpg", { type: "image/jpeg" });
+				setFile(converted);
+				const reader = new FileReader();
+				reader.onload = (e) => setPreview(e.target?.result as string);
+				reader.readAsDataURL(converted);
+			}, "image/jpeg", 0.85);
+		};
+
+		img.onerror = () => {
+			URL.revokeObjectURL(url);
+			setError("Couldn't read that photo. Try saving it as a JPG or PNG first.");
+		};
+
+		img.src = url;
 	}
 
 	const onDrop = useCallback((e: React.DragEvent) => {
@@ -163,7 +196,7 @@ export default function PhotoEstimatePage() {
 								<p className="text-xs font-black text-gray-400 uppercase tracking-widest">Works great for</p>
 								<div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
 									{["Drywall cracks & holes", "Old bathrooms", "Damaged flooring", "Dated kitchens"].map((label) => (
-										<div key={label} className="bg-white border border-[#E8E4DE] rounded-xl p-3 text-center">
+										<div key={label} className="bg-white border border-[#E8E4DE] rounded-xl px-3 py-2 text-center">
 											<p className="text-xs font-bold text-gray-600">{label}</p>
 										</div>
 									))}
