@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, ChevronDown, Phone, Sparkles, MessageSquare } from "lucide-react";
+import { Menu, X, ChevronDown, Phone, Sparkles, MessageSquare, Camera, Lightbulb } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const serviceLinks = [
@@ -45,8 +45,8 @@ const moreLinks = [
 export default function Navigation() {
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-	const [hoveredDropdown, setHoveredDropdown] = useState<"services" | "locations" | "more" | null>(null);
-	const [mobileExpanded, setMobileExpanded] = useState<"services" | "locations" | "more" | null>(null);
+	const [hoveredDropdown, setHoveredDropdown] = useState<"services" | "locations" | "more" | "tools" | null>(null);
+	const [mobileExpanded, setMobileExpanded] = useState<"services" | "locations" | "more" | "tools" | null>(null);
 
 	useEffect(() => {
 		const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -197,6 +197,70 @@ export default function Navigation() {
 														{link.name}
 													</Link>
 												))}
+											</div>
+										</motion.div>
+									)}
+								</AnimatePresence>
+							</div>
+
+							{/* Free Tools Dropdown */}
+							<div
+								className="relative"
+								onMouseEnter={() => setHoveredDropdown("tools")}
+								onMouseLeave={() => setHoveredDropdown(null)}
+							>
+								<button className={`${linkClass} text-[#FFB800]`}>
+									<Sparkles className="w-3.5 h-3.5" />
+									Free Tools
+									<ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${hoveredDropdown === "tools" ? "rotate-180" : ""}`} />
+								</button>
+								<AnimatePresence>
+									{hoveredDropdown === "tools" && (
+										<motion.div
+											initial={{ opacity: 0, y: 6 }}
+											animate={{ opacity: 1, y: 0 }}
+											exit={{ opacity: 0, y: 6 }}
+											transition={{ duration: 0.15 }}
+											className="absolute top-full right-0 pt-2"
+										>
+											<div className="bg-[#1F2E2B] rounded-xl shadow-xl border border-white/10 py-3 w-64">
+												<p className="px-4 pb-2 text-xs font-black text-white/40 uppercase tracking-widest">AI-Powered Tools</p>
+												<Link
+													href="/estimate"
+													className="flex items-start gap-3 px-4 py-3 hover:bg-white/5 transition-colors group"
+												>
+													<div className="w-7 h-7 rounded-lg bg-[#FFB800] flex items-center justify-center shrink-0 mt-0.5">
+														<Sparkles className="w-3.5 h-3.5 text-black" />
+													</div>
+													<div>
+														<p className="text-white font-black text-sm">Instant Estimator</p>
+														<p className="text-white/50 text-xs font-medium mt-0.5">AI cost estimate in 30 seconds</p>
+													</div>
+												</Link>
+												<Link
+													href="/photo-estimate"
+													className="flex items-start gap-3 px-4 py-3 hover:bg-white/5 transition-colors group"
+												>
+													<div className="w-7 h-7 rounded-lg bg-[#FFB800] flex items-center justify-center shrink-0 mt-0.5">
+														<Camera className="w-3.5 h-3.5 text-black" />
+													</div>
+													<div>
+														<p className="text-white font-black text-sm">Photo Assessment</p>
+														<p className="text-white/50 text-xs font-medium mt-0.5">Upload a photo, get a cost range</p>
+													</div>
+												</Link>
+												<Link
+													href="/renovation-advisor"
+													className="flex items-start gap-3 px-4 py-3 hover:bg-white/5 transition-colors group"
+												>
+													<div className="w-7 h-7 rounded-lg bg-[#FFB800] flex items-center justify-center shrink-0 mt-0.5">
+														<Lightbulb className="w-3.5 h-3.5 text-black" />
+													</div>
+													<div>
+														<p className="text-white font-black text-sm">Renovation Advisor</p>
+														<p className="text-white/50 text-xs font-medium mt-0.5">What should you renovate first?</p>
+													</div>
+												</Link>
 											</div>
 										</motion.div>
 									)}
@@ -397,6 +461,37 @@ export default function Navigation() {
 											</motion.div>
 										)}
 									</AnimatePresence>
+								</div>
+
+								{/* Mobile AI Tools */}
+								<div className="bg-[#1F2E2B] rounded-2xl p-4 space-y-1">
+									<p className="px-2 pb-1 text-xs font-black text-white/40 uppercase tracking-widest">Free AI Tools</p>
+									<Link
+										href="/photo-estimate"
+										onClick={() => setIsMobileMenuOpen(false)}
+										className="flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-white/5 transition-colors"
+									>
+										<div className="w-7 h-7 rounded-lg bg-[#FFB800] flex items-center justify-center shrink-0">
+											<Camera className="w-3.5 h-3.5 text-black" />
+										</div>
+										<div>
+											<p className="text-white font-black text-sm">Photo Assessment</p>
+											<p className="text-white/50 text-xs">Upload a photo, get a cost range</p>
+										</div>
+									</Link>
+									<Link
+										href="/renovation-advisor"
+										onClick={() => setIsMobileMenuOpen(false)}
+										className="flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-white/5 transition-colors"
+									>
+										<div className="w-7 h-7 rounded-lg bg-[#FFB800] flex items-center justify-center shrink-0">
+											<Lightbulb className="w-3.5 h-3.5 text-black" />
+										</div>
+										<div>
+											<p className="text-white font-black text-sm">Renovation Advisor</p>
+											<p className="text-white/50 text-xs">What should you renovate first?</p>
+										</div>
+									</Link>
 								</div>
 
 								<div className="pt-2 space-y-3">
