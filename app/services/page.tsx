@@ -268,14 +268,14 @@ export default function ServicesPage() {
 						description="Licensed home repair and interior renovation services for Clark County homeowners. Every job comes with a written estimate and a clean finish."
 					/>
 
-					<div className="grid gap-16 mt-20">
+					<div className="grid gap-8 mt-12">
 						{serviceCategories.map((service) => (
 							<div
 								key={service.id}
-								className="group bg-white rounded-[2.5rem] p-8 lg:p-16 shadow-xl border-b-8 border-transparent hover:border-[#FFB800] transition-all duration-500"
+								className="group bg-white rounded-4xl p-6 lg:p-10 shadow-xl border-b-8 border-transparent hover:border-[#FFB800] transition-all duration-500"
 							>
-								<div className="grid lg:grid-cols-12 gap-12">
-									<div className="lg:col-span-7 space-y-8">
+								<div className="grid lg:grid-cols-12 gap-8">
+									<div className="lg:col-span-7 space-y-5">
 										<div className="flex items-center gap-6">
 											<div className="w-20 h-20 bg-[#1F2E2B] rounded-2xl flex items-center justify-center">
 												<service.icon className="w-10 h-10 text-[#FFB800]" />
@@ -310,7 +310,7 @@ export default function ServicesPage() {
 									<div className="lg:col-span-5 flex flex-col justify-center">
 										<Link
 											href={service.href}
-											className="relative aspect-square rounded-4xl overflow-hidden shadow-2xl block"
+											className="relative aspect-[4/3] rounded-4xl overflow-hidden shadow-2xl block"
 										>
 											<Image
 												src={service.image}
@@ -321,16 +321,16 @@ export default function ServicesPage() {
 											/>
 										</Link>
 
-										<div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+										<div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
 											<Link
 												href={service.href}
-												className="inline-flex items-center justify-center gap-2 py-6 border-2 border-[#1F2E2B] text-[#1F2E2B] font-black uppercase tracking-widest rounded-2xl hover:bg-[#F8F6F3] transition-all"
+												className="inline-flex items-center justify-center gap-2 py-4 border-2 border-[#1F2E2B] text-[#1F2E2B] font-black uppercase tracking-widest rounded-2xl hover:bg-[#F8F6F3] transition-all"
 											>
 												Learn More <ChevronRight className="w-4 h-4" />
 											</Link>
 											<Link
 												href="/contact"
-												className="inline-flex items-center justify-center gap-4 py-6 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-2xl hover:bg-[#1F2E2B] hover:text-white transition-all"
+												className="inline-flex items-center justify-center gap-4 py-4 bg-[#FFB800] text-black font-black uppercase tracking-widest rounded-2xl hover:bg-[#1F2E2B] hover:text-white transition-all"
 											>
 												{service.cta} <ArrowRight className="w-5 h-5" />
 											</Link>
