@@ -44,8 +44,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		},
 	];
 
-	// 2. Add Dynamic Location Landing Pages (e.g., /locations/vancouver)
+	// 2. Add Dynamic Location Landing Pages + all city+service combos
 	const locationKeys = Object.keys(locationsData);
+	const cityServiceSlugs = [
+		"handyman", "drywall-repair", "finish-carpentry", "door-window",
+		"flooring", "kitchen-bath", "bathroom-remodel", "kitchen-remodel",
+		"lighting", "home-repair",
+	];
 
 	locationKeys.forEach((location) => {
 		routes.push({
@@ -54,7 +59,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			changeFrequency: "monthly",
 			priority: 0.8,
 		});
-		// /locations/[city]/[service] pages removed — 301s in next.config.ts point to /services/[service]
+		cityServiceSlugs.forEach((service) => {
+			routes.push({
+				url: `${baseUrl}/locations/${location}/${service}`,
+				lastModified: new Date("2026-07-09"),
+				changeFrequency: "monthly",
+				priority: 0.7,
+			});
+		});
 	});
 
 	// 4. Add Main Service Pages — only slugs that have a real /services/[slug]/page.tsx
@@ -77,7 +89,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		});
 	});
 
-	// 6. Reviews, Pricing, Portfolio, FAQ pages
+	// 6. Reviews, Pricing, Portfolio, FAQ, AI tools
+	routes.push(
+		{
+			url: `${baseUrl}/photo-estimate`,
+			lastModified: new Date("2026-07-09"),
+			changeFrequency: "monthly",
+			priority: 0.8,
+		},
+		{
+			url: `${baseUrl}/renovation-advisor`,
+			lastModified: new Date("2026-07-09"),
+			changeFrequency: "monthly",
+			priority: 0.8,
+		},
+	);
 	routes.push(
 		{
 			url: `${baseUrl}/calculator`,
