@@ -319,6 +319,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			changeFrequency: "monthly",
 			priority: 0.9,
 		},
+		{
+			url: `${baseUrl}/blog/handyman-services-washougal-wa`,
+			lastModified: new Date("2026-08-05"),
+			changeFrequency: "monthly",
+			priority: 0.8,
+		},
 	);
 
 	return routes;
