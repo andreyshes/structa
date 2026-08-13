@@ -102,9 +102,9 @@ export default function AboutPageContent() {
 						</motion.h1>
 
 						<p className="text-xl text-white/80 leading-relaxed max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6">
-							NORBILT is a licensed general contractor based in Vancouver, WA —
-							serving Clark County homeowners with flat-rate pricing, licensed
-							work, and a trade-quality finish on every job.
+							NORBILT is a licensed home remodeling contractor based in Vancouver, WA —
+							specializing in kitchen & bath remodels, finish carpentry, and full home
+							renovations across Clark County. Flat-rate pricing, trade-quality finish on every job.
 						</p>
 					</div>
 				</div>

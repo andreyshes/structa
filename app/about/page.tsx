@@ -2,19 +2,19 @@ import AboutPageContent from "@/app/components/AboutPageContent";
 
 export const metadata = {
 	// 54 Characters: Hits the 50-60 target perfectly
-	title: "About NORBILT | General Contractor in Vancouver WA",
+	title: "About NORBILT | Home Remodeling Contractor Vancouver WA",
 
 	// 156 Characters: Hits the 150-160 target perfectly
 	description:
-		"Learn about NORBILT, your local general contractor in Vancouver WA. We provide licensed home repairs and remodeling for Clark County. Get a free estimate!",
+		"Licensed home remodeling contractor in Vancouver WA. NORBILT handles kitchen & bath remodels, finish carpentry, flooring & full home renovations in Clark County. Get a free estimate!",
 
 	alternates: {
 		canonical: "https://www.norbilt.com/about",
 	},
 	openGraph: {
-		title: "About NORBILT | Vancouver WA General Contractor",
+		title: "About NORBILT | Home Remodeling Contractor Vancouver WA",
 		description:
-			"Licensed home repair and remodeling experts serving Vancouver and Clark County.",
+			"Licensed home remodeling contractor serving Vancouver and Clark County. Kitchen & bath, carpentry, flooring & full renovations.",
 		url: "https://www.norbilt.com/about",
 		siteName: "NORBILT",
 		locale: "en_US",
@@ -30,9 +30,9 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "About NORBILT | Vancouver WA General Contractor",
+		title: "About NORBILT | Home Remodeling Contractor Vancouver WA",
 		description:
-			"Licensed home repair and remodeling experts serving Vancouver and Clark County.",
+			"Licensed home remodeling contractor serving Vancouver and Clark County. Kitchen & bath, carpentry, flooring & full renovations.",
 		images: ["https://www.norbilt.com/og-image.jpg"],
 	},
 };

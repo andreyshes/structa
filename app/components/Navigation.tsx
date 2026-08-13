@@ -6,6 +6,7 @@ import { Menu, X, ChevronDown, Phone, Sparkles, MessageSquare, Camera, Lightbulb
 import { motion, AnimatePresence } from "framer-motion";
 
 const serviceLinks = [
+	{ name: "Home Remodeling", href: "/remodeling" },
 	{ name: "Kitchen & Bath Remodeling", href: "/services/kitchen-bath" },
 	{ name: "Finish Carpentry", href: "/services/finish-carpentry" },
 	{ name: "Flooring", href: "/services/flooring" },

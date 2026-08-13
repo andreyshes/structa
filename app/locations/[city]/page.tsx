@@ -22,9 +22,9 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 	}
 
 	const cityName = cityData.name?.split(",")[0] || "Local";
-	const shortTitle = `#1 Contractor in ${cityName} WA | 5-Star Rated & Licensed | NORBILT`;
+	const shortTitle = `Home Remodeling Contractor in ${cityName} WA | Licensed | NORBILT`;
 
-	const fullDesc = `5-star rated licensed contractor in ${cityName}, WA. Handyman, drywall, finish carpentry, kitchen & bath updates, flooring & more. Free same-week estimates. Call (360) 216-9920.`;
+	const fullDesc = `Licensed home remodeling contractor in ${cityName}, WA. Kitchen & bath remodels, finish carpentry, flooring, drywall & more. 5-star rated. Free same-week estimates. Call (360) 216-9920.`;
 	const pageUrl = `https://www.norbilt.com/locations/${city}`;
 
 	return {

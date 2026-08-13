@@ -42,6 +42,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			changeFrequency: "weekly",
 			priority: 0.9,
 		},
+		{
+			url: `${baseUrl}/remodeling`,
+			lastModified: new Date("2026-08-13"),
+			changeFrequency: "monthly",
+			priority: 1.0,
+		},
 	];
 
 	// 2. Add Dynamic Location Landing Pages + all city+service combos
@@ -324,6 +330,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			lastModified: new Date("2026-08-05"),
 			changeFrequency: "monthly",
 			priority: 0.8,
+		},
+		{
+			url: `${baseUrl}/blog/home-remodeling-battle-ground-wa`,
+			lastModified: new Date("2026-08-13"),
+			changeFrequency: "monthly",
+			priority: 0.9,
 		},
 	);
 

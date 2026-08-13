@@ -1,16 +1,16 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Home Repair Services Vancouver WA | NORBILT Contractor",
+	title: "Home Remodeling Services Vancouver WA | Licensed Contractor | NORBILT",
 	description:
-		"Explore NORBILT's home repair services in Vancouver WA. From finish carpentry and drywall to handyman work, we handle all interior repairs. Free estimate!",
+		"Home remodeling services in Vancouver WA and Clark County. Kitchen & bath remodels, finish carpentry, flooring, drywall, and more. Licensed contractor. Free estimate!",
 	alternates: {
 		canonical: "https://www.norbilt.com/services",
 	},
 	openGraph: {
-		title: "Home Repair Services | NORBILT Vancouver WA",
+		title: "Home Remodeling Services | NORBILT Vancouver WA",
 		description:
-			"Licensed contractor offering carpentry, drywall, flooring, kitchen and bath updates, and handyman services in Clark County.",
+			"Licensed home remodeling contractor in Clark County — kitchen & bath, finish carpentry, flooring, drywall, and more.",
 		url: "https://www.norbilt.com/services",
 		siteName: "NORBILT",
 		locale: "en_US",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Home Repair Services | NORBILT Vancouver WA",
+		title: "Home Remodeling Services | NORBILT Vancouver WA",
 		description:
-			"Licensed contractor offering carpentry, drywall, flooring, kitchen and bath updates, and handyman services in Clark County.",
+			"Licensed home remodeling contractor in Clark County — kitchen & bath, finish carpentry, flooring, drywall, and more.",
 		images: ["https://www.norbilt.com/og-image.jpg"],
 	},
 };

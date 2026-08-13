@@ -116,32 +116,26 @@ export default function CityLandingClient({ city, citySlug }: any) {
 							</span>
 						</div>
 						<h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter mb-6 leading-[0.85]">
-							Home Repair <br />
+							Home Remodeling <br />
 							<span className="text-[#FFB800]">in {cityNameShort}, WA</span>
 						</h1>
 						<p className="text-xl text-white/70 max-w-2xl font-medium border-l-4 border-[#FFB800] pl-6 leading-relaxed mb-10">
-							NORBILT offers expert home remodeling and repair. As a leading{" "}
+							NORBILT is a licensed home remodeling contractor serving {cityNameShort} homeowners. We
+							specialize in{" "}
 							<Link
-								href={`/locations/${citySlug}`}
-								className="text-[#FFB800] hover:underline underline-offset-8"
-							>
-								General Contractor in {cityNameShort}
-							</Link>
-							, we specialize in{" "}
-							<Link
-								href={`/locations/${citySlug}/drywall-repair`}
+								href={`/locations/${citySlug}/kitchen-bath`}
 								className="hover:text-white transition-colors underline decoration-[#FFB800]/30"
 							>
-								Drywall Repair
-							</Link>{" "}
-							and{" "}
+								kitchen & bath remodels
+							</Link>
+							,{" "}
 							<Link
 								href={`/locations/${citySlug}/finish-carpentry`}
 								className="hover:text-white transition-colors underline decoration-[#FFB800]/30"
 							>
-								Finish Carpentry
+								finish carpentry
 							</Link>
-							. We deliver quality work for every homeowner.
+							, flooring, and full home renovations — plus handyman work for smaller jobs.
 						</p>
 						<div className="flex flex-wrap gap-4">
 							<Link
