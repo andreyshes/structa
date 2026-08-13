@@ -1,16 +1,16 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Home Repair Tips Clark County WA | NORBILT Blog",
+	title: "Home Remodeling Tips & Cost Guides Clark County WA | NORBILT Blog",
 	description:
-		"Expert home repair and remodeling advice for Clark County homeowners. Costs, tips, and guides for Vancouver, Battle Ground, Camas, Ridgefield & more.",
+		"Home remodeling cost guides and tips for Clark County homeowners. Kitchen remodels, bathroom renovations, flooring, and more for Vancouver, Battle Ground, Camas & Ridgefield.",
 	alternates: {
 		canonical: "https://www.norbilt.com/blog",
 	},
 	openGraph: {
-		title: "Home Repair & Remodeling Tips | NORBILT Blog",
+		title: "Home Remodeling Tips & Cost Guides | NORBILT Blog",
 		description:
-			"Practical home repair and remodeling guides for Clark County WA homeowners.",
+			"Practical home remodeling guides and cost breakdowns for Clark County WA homeowners.",
 		url: "https://www.norbilt.com/blog",
 		siteName: "NORBILT",
 		locale: "en_US",

@@ -1,16 +1,16 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "General Contractor Service Areas | Vancouver WA | NORBILT",
+	title: "Home Remodeling Contractor Service Areas | Clark County WA | NORBILT",
 	description:
-		"NORBILT is a licensed general contractor serving Vancouver, Camas, Washougal, Battle Ground, and Ridgefield WA. We handle home repairs across Clark County.",
+		"NORBILT is a licensed home remodeling contractor serving Vancouver, Camas, Washougal, Battle Ground, and Ridgefield WA. Kitchen & bath remodels across Clark County.",
 	alternates: {
 		canonical: "https://www.norbilt.com/locations",
 	},
 	openGraph: {
-		title: "General Contractor Service Areas | NORBILT Vancouver WA",
+		title: "Home Remodeling Contractor Service Areas | NORBILT Vancouver WA",
 		description:
-			"Licensed general contractor for home repairs and remodeling across Clark County WA. Serving Vancouver, Camas, Washougal, and more.",
+			"Licensed home remodeling contractor serving Vancouver, Camas, Washougal, and all of Clark County WA.",
 		url: "https://www.norbilt.com/locations",
 		siteName: "NORBILT",
 		locale: "en_US",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "General Contractor Service Areas | NORBILT Vancouver WA",
+		title: "Home Remodeling Contractor Service Areas | NORBILT Vancouver WA",
 		description:
-			"Licensed general contractor for home repairs and remodeling across Clark County WA. Serving Vancouver, Camas, Washougal, and more.",
+			"Licensed home remodeling contractor serving Vancouver, Camas, Washougal, and all of Clark County WA.",
 		images: ["https://www.norbilt.com/og-image.jpg"],
 	},
 	keywords: [

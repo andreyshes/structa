@@ -15,9 +15,9 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 
 	if (!cityData || !cityData.name) {
 		return {
-			title: "Local Home Repair Contractor | NORBILT",
+			title: "Local Home Remodeling Contractor | NORBILT",
 			description:
-				"NORBILT provides expert home repairs and general contracting services. Contact our licensed team for professional remodeling and maintenance today.",
+				"NORBILT is a licensed home remodeling contractor in Clark County WA. Kitchen & bath remodels, finish carpentry, flooring & more. Free estimates.",
 		};
 	}
 

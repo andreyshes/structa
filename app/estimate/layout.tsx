@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Get a Free Estimate | Home Repair & Remodeling Clark County WA | NORBILT",
+	title: "Get a Free Estimate | Home Remodeling Contractor Clark County WA | NORBILT",
 	description:
-		"Get a free, no-obligation estimate for home repair and remodeling in Vancouver WA and Clark County. Licensed contractor, same-week response.",
+		"Get a free, no-obligation estimate for home remodeling in Vancouver WA and Clark County. Kitchen & bath, finish carpentry, flooring & more. Licensed contractor, same-week response.",
 	alternates: { canonical: "https://www.norbilt.com/estimate" },
 };
 

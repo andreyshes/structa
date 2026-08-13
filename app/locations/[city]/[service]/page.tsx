@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 	const serviceData = servicesData[resolvedParams.service];
 
 	if (!cityData || !serviceData || !cityData.name) {
-		return { title: "Home Repair Services | NORBILT" };
+		return { title: "Home Remodeling Services | NORBILT" };
 	}
 
 	const cityName = cityData.name?.split(",")[0] || "Local";
