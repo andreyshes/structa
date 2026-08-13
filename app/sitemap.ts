@@ -345,6 +345,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			changeFrequency: "monthly",
 			priority: 0.9,
 		},
+		{
+			url: `${baseUrl}/blog/home-remodeling-ridgefield-wa`,
+			lastModified: new Date("2026-08-13"),
+			changeFrequency: "monthly",
+			priority: 0.9,
+		},
+		{
+			url: `${baseUrl}/blog/home-remodeling-washougal-wa`,
+			lastModified: new Date("2026-08-13"),
+			changeFrequency: "monthly",
+			priority: 0.9,
+		},
+		{
+			url: `${baseUrl}/blog/home-remodeling-salmon-creek-wa`,
+			lastModified: new Date("2026-08-13"),
+			changeFrequency: "monthly",
+			priority: 0.9,
+		},
+		{
+			url: `${baseUrl}/blog/home-remodeling-felida-wa`,
+			lastModified: new Date("2026-08-13"),
+			changeFrequency: "monthly",
+			priority: 0.9,
+		},
 	);
 
 	return routes;
