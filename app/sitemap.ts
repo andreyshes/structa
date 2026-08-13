@@ -48,6 +48,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			changeFrequency: "monthly",
 			priority: 1.0,
 		},
+		{
+			url: `${baseUrl}/remodeling-process`,
+			lastModified: new Date("2026-08-13"),
+			changeFrequency: "monthly",
+			priority: 0.8,
+		},
 	];
 
 	// 2. Add Dynamic Location Landing Pages + all city+service combos
@@ -82,6 +88,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		"drywall-repair",
 		"finish-carpentry",
 		"kitchen-bath",
+		"bathroom-remodel",
+		"kitchen-remodel",
 		"flooring",
 		"door-window",
 		"lighting",

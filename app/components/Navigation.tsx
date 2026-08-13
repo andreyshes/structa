@@ -7,7 +7,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const serviceLinks = [
 	{ name: "Home Remodeling", href: "/remodeling" },
-	{ name: "Kitchen & Bath Remodeling", href: "/services/kitchen-bath" },
+	{ name: "Kitchen Remodeling", href: "/services/kitchen-remodel" },
+	{ name: "Bathroom Remodeling", href: "/services/bathroom-remodel" },
 	{ name: "Finish Carpentry", href: "/services/finish-carpentry" },
 	{ name: "Flooring", href: "/services/flooring" },
 	{ name: "Drywall Repair", href: "/services/drywall-repair" },
