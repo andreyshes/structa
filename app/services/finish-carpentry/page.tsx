@@ -17,6 +17,17 @@ import {
 } from "lucide-react";
 
 import SectionHeader from "@/app/components/SectionHeader";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Finish Carpentry Contractor Vancouver WA | Crown Molding, Trim & Baseboards | NORBILT",
+	description:
+		"Licensed finish carpentry contractor in Vancouver WA — crown molding, baseboards, door & window casing, wainscoting & built-ins. All Clark County. Free estimate. (360) 216-9920.",
+	openGraph: {
+		title: "Finish Carpentry Contractor Vancouver WA | NORBILT",
+		description: "Licensed finish carpentry contractor in Vancouver WA — crown molding, baseboards, door & window casing, wainscoting & built-ins. All Clark County. Free estimate.",
+	},
+};
 
 export default function FinishCarpentryPage() {
 	const services = [

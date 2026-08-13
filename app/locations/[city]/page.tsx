@@ -24,7 +24,15 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 	const cityName = cityData.name?.split(",")[0] || "Local";
 	const shortTitle = `Home Remodeling Contractor in ${cityName} WA | Licensed | NORBILT`;
 
-	const fullDesc = `Licensed home remodeling contractor in ${cityName}, WA. Kitchen & bath remodels, finish carpentry, flooring, drywall & more. 5-star rated. Free same-week estimates. Call (360) 216-9920.`;
+	const cityDescriptions: Record<string, string> = {
+		camas: "Camas home remodeling contractor — kitchen & bath remodels, finish carpentry & flooring on Prune Hill, Lacamas Shores & all Camas neighborhoods. Licensed, 5-star rated. Free estimate. (360) 216-9920.",
+		vancouver: "Vancouver WA remodeling & repair contractor — kitchen & bath remodels, finish carpentry, drywall & ceiling repair. All neighborhoods including Hazel Dell. Free estimate. (360) 216-9920.",
+		"battle-ground": "Battle Ground home remodeling contractor — kitchen & bath remodels, finish carpentry, drywall & flooring. Licensed & local. Free estimate this week. (360) 216-9920.",
+		ridgefield: "Ridgefield WA home remodeling contractor — kitchen & bath remodels, finish carpentry & flooring in Union Ridge, Bellwood & all Ridgefield neighborhoods. Free estimate. (360) 216-9920.",
+		washougal: "Washougal WA home remodeling contractor — kitchen & bath remodels, finish carpentry & moisture-resistant upgrades. Licensed, local. Free estimate. (360) 216-9920.",
+	};
+
+	const fullDesc = cityDescriptions[city] ?? `Licensed home remodeling contractor in ${cityName}, WA. Kitchen & bath remodels, finish carpentry, flooring, drywall & more. 5-star rated. Free same-week estimates. Call (360) 216-9920.`;
 	const pageUrl = `https://www.norbilt.com/locations/${city}`;
 
 	return {

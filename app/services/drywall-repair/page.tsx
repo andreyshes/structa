@@ -144,9 +144,9 @@ const schema = {
 };
 
 export const metadata = {
-	title: "Drywall Repair | Vancouver WA | NORBILT",
+	title: "Drywall Repair Vancouver WA | Patches, Texture Match & Ceiling Repair | NORBILT",
 	description:
-		"Licensed drywall repair in Vancouver WA and Clark County. Hole patching, texture matching, water damage repair, popcorn ceiling removal. Free estimates. 1-year warranty.",
+		"Licensed drywall & ceiling repair near you in Vancouver WA. Hole patches, texture matching, water damage & popcorn removal. Hazel Dell, Orchards & all Clark County. Free estimates.",
 };
 
 export default function DrywallRepairPage() {
