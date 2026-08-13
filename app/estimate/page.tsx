@@ -27,7 +27,7 @@ import {
 
 type ServiceKey =
 	| "Home Remodel"
-	| "Kitchen & Bath"
+	| "Kitchen or Bathroom Update"
 	| "Finish Carpentry"
 	| "Flooring"
 	| "Drywall Repair"
@@ -49,7 +49,7 @@ interface Estimate {
 
 const services = [
 	{ key: "Home Remodel" as ServiceKey, icon: HardHat, desc: "Full kitchen, bath & whole-home remodels" },
-	{ key: "Kitchen & Bath" as ServiceKey, icon: ChefHat, desc: "Updates, tile, cabinets, fixtures" },
+	{ key: "Kitchen or Bathroom Update" as ServiceKey, icon: ChefHat, desc: "Cosmetic updates, tile, fixtures, vanities" },
 	{ key: "Finish Carpentry" as ServiceKey, icon: Scissors, desc: "Trim, crown molding, baseboards" },
 	{ key: "Flooring" as ServiceKey, icon: Grid3x3, desc: "LVP, tile, hardwood, removal" },
 	{ key: "Drywall Repair" as ServiceKey, icon: Layers, desc: "Patches, texturing, water damage" },
@@ -107,7 +107,7 @@ function ServiceDetails({ service, details, onChange }: { service: ServiceKey; d
 		</div>
 	);
 
-	if (service === "Kitchen & Bath") return (
+	if (service === "Kitchen or Bathroom Update") return (
 		<div className="space-y-5">
 			{sel("space", "Kitchen or bathroom?", ["Kitchen", "Bathroom", "Both"])}
 			{sel("scope", "What's the project scope?", ["Cabinet painting / refresh", "Tile backsplash installation", "Countertop replacement", "Fixture replacement (faucets, hardware)", "Full kitchen/bath refresh (multiple items)", "Vanity installation", "Shower tile / tub surround"])}
@@ -135,9 +135,10 @@ function ServiceDetails({ service, details, onChange }: { service: ServiceKey; d
 
 	if (service === "Home Remodel") return (
 		<div className="space-y-5">
-			{sel("remodelType", "What type of remodel?", ["Full kitchen remodel", "Full bathroom remodel", "Both kitchen & bathroom", "Whole-home renovation", "Basement finishing", "Room addition / ADU", "Multiple rooms / not sure"])}
+			{sel("remodelType", "What type of remodel?", ["Full kitchen remodel", "Full bathroom remodel", "Both kitchen & bathroom", "Basement finishing", "Multiple rooms / not sure"])}
 			{sel("scope", "Project scope", ["Cosmetic refresh (surfaces, fixtures, paint)", "Mid-range (new cabinets, tile, layout changes)", "Full gut remodel (down to studs)", "Not sure – need assessment"])}
 			{sel("sqft", "Approximate square footage of remodel area", ["Under 100 sq ft", "100–300 sq ft", "300–600 sq ft", "600–1,000 sq ft", "1,000+ sq ft"])}
+			{sel("homeAge", "Age of your home", ["Built after 2000", "1980–2000", "1960–1979", "Before 1960", "Not sure"])}
 			{sel("finishLevel", "Finish / material level", ["Budget-friendly (builder grade)", "Mid-range (standard quality)", "Premium / high-end", "Not sure yet"])}
 			{sel("timeline", "Desired start timeline", ["ASAP – ready to start", "Within 1–2 months", "3–6 months out", "Just planning / getting quotes"])}
 		</div>
@@ -167,7 +168,7 @@ export default function EstimatePage() {
 	const [step, setStep] = useState(1);
 	const [selectedService, setSelectedService] = useState<ServiceKey | null>(null);
 	const [details, setDetails] = useState<Record<string, string>>({});
-	const [contactInfo, setContactInfo] = useState({ name: "", email: "", phone: "", city: "", timeline: "", notes: "" });
+	const [contactInfo, setContactInfo] = useState({ name: "", email: "", phone: "", city: "", timeline: "", budget: "", notes: "" });
 	const [estimate, setEstimate] = useState<Estimate | null>(null);
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState("");
@@ -399,6 +400,23 @@ export default function EstimatePage() {
 								</div>
 
 								<div className="space-y-2">
+									<label className="block text-sm font-bold text-[#1F2E2B]">Rough Budget Range</label>
+									<select
+										value={contactInfo.budget}
+										onChange={(e) => updateContact("budget", e.target.value)}
+										className="w-full px-4 py-3 rounded-xl border border-[#2C3E3A]/20 bg-[#FDFCFB] text-[#1F2E2B] font-medium focus:outline-none focus:ring-2 focus:ring-[#2D5A3D] text-sm"
+									>
+										<option value="">Select budget…</option>
+										<option>Under $5,000</option>
+										<option>$5,000–$15,000</option>
+										<option>$15,000–$30,000</option>
+										<option>$30,000–$60,000</option>
+										<option>$60,000+</option>
+										<option>Not sure yet</option>
+									</select>
+								</div>
+
+								<div className="space-y-2">
 									<label className="block text-sm font-bold text-[#1F2E2B]">Anything else we should know? <span className="text-[#2C3E3A]/40 font-medium">(optional)</span></label>
 									<textarea
 										value={contactInfo.notes}
@@ -590,7 +608,7 @@ export default function EstimatePage() {
 
 							<div className="mt-6 text-center">
 								<button
-									onClick={() => { setStep(1); setSelectedService(null); setDetails({}); setContactInfo({ name: "", email: "", phone: "", city: "", timeline: "", notes: "" }); setEstimate(null); }}
+									onClick={() => { setStep(1); setSelectedService(null); setDetails({}); setContactInfo({ name: "", email: "", phone: "", city: "", timeline: "", budget: "", notes: "" }); setEstimate(null); }}
 									className="text-sm text-[#2C3E3A]/50 hover:text-[#2D5A3D] font-medium transition-colors"
 								>
 									Start a new estimate →

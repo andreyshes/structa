@@ -8,11 +8,18 @@ const resend = new Resend(process.env.RESEND_API_KEY!);
 export async function POST(req: Request) {
 	try {
 		const body = await req.json();
-		const { service, details, name, email, phone, city, timeline, notes } = body;
+		const { service, details, name, email, phone, city, timeline, budget, notes } = body;
 
 		if (!service || !details) {
 			return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
 		}
+
+		const timelineStr = [timeline, details?.timeline].filter(Boolean).join(" ").toLowerCase();
+		const leadTemp = timelineStr.includes("asap") || timelineStr.includes("ready") || timelineStr.includes("1–2 months")
+			? "🔥 HOT"
+			: timelineStr.includes("month") || timelineStr.includes("2–3 weeks")
+			? "🟡 WARM"
+			: timelineStr.length > 0 ? "❄️ COLD" : "❓ UNKNOWN";
 
 		const systemPrompt = `You are an expert estimating assistant for NORBILT, a licensed and bonded general contractor in Vancouver, WA (Clark County). You specialize in interior remodeling, finish carpentry, drywall, kitchen and bath updates, door/window installation, flooring, lighting, and general home repair.
 
@@ -140,6 +147,7 @@ Use these verified local rates as your primary reference for every estimate.
 SERVICE: ${service}
 PROJECT DETAILS: ${JSON.stringify(details, null, 2)}
 DESIRED TIMELINE: ${timeline || "Flexible"}
+ROUGH BUDGET: ${budget || "Not specified"}
 ADDITIONAL NOTES: ${notes || "None"}
 
 Use the 2026 Clark County rate sheet in your system instructions. Provide a realistic, professional estimate and respond with ONLY valid JSON in this exact format, no extra text:
@@ -179,7 +187,7 @@ Use the 2026 Clark County rate sheet in your system instructions. Provide a real
 		const rawText = content.text.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/i, "").trim();
 		const estimate = JSON.parse(rawText);
 
-		// Apply 12% markup to low end, rounded to nearest $50
+		// Apply 15% markup to low end, rounded to nearest $50
 		if (estimate.priceRange?.low) {
 			estimate.priceRange.low = Math.round((estimate.priceRange.low * 1.15) / 50) * 50;
 		}
@@ -192,13 +200,15 @@ Use the 2026 Clark County rate sheet in your system instructions. Provide a real
 					from: "NORBILT Estimator <hello@norbilt.com>",
 					to: ["hello@norbilt.com"],
 					replyTo: email || "no-reply@norbilt.com",
-					subject: `New AI Estimate Lead — ${service} — ${city || "Clark County"}`,
+					subject: `[${leadTemp}] New AI Estimate Lead — ${service} — ${city || "Clark County"}`,
 					html: `
 		          <h2 style="color:#1F2E2B">New AI Estimator Lead</h2>
+		          <p style="font-size:18px;font-weight:bold;margin:0 0 12px">Priority: ${leadTemp}</p>
 		          <p><strong>Name:</strong> ${name || "Not provided"}</p>
 		          <p><strong>Email:</strong> ${email || "Not provided"}</p>
 		          <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
 		          <p><strong>City:</strong> ${city || "Not provided"}</p>
+		          <p><strong>Budget:</strong> ${budget || "Not provided"}</p>
 		          <p><strong>Service:</strong> ${service}</p>
 		          <p><strong>Timeline:</strong> ${timeline || "Flexible"}</p>
 		          <p><strong>Project Details:</strong><br/>${JSON.stringify(details, null, 2).replace(/\n/g, "<br/>")}</p>
