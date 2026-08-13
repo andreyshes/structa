@@ -36,6 +36,27 @@ type ServiceCategory = {
 export default function ServicesPage() {
 	const serviceCategories: ServiceCategory[] = [
 		{
+			id: "kitchen-bath",
+			icon: Paintbrush,
+			title: "Kitchen & Bath Remodeling",
+			cta: "Start My Remodel",
+			href: "/services/kitchen-bath",
+			image:
+				"https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2000",
+			description:
+				"Tile, fixtures, and full remodel work that transforms your kitchen or bathroom.",
+			longDesc:
+				"Kitchens and bathrooms drive more home value than any other room — and they're the first places buyers look. NORBILT handles every scope in Clark County: full gut remodels, tub-to-shower conversions, vanity and tile upgrades, backsplash installs, and targeted cosmetic refreshes. Licensed WA contractor, 1-year workmanship warranty.",
+			items: [
+				"Full Gut Remodels",
+				"Tub-to-Shower Conversion",
+				"Tile & Backsplash",
+				"Vanity & Mirror Install",
+				"Cabinet Hardware & Doors",
+				"Countertop Replacement",
+			],
+		},
+		{
 			id: "finish-carpentry",
 			icon: Hammer,
 			title: "Finish Carpentry",
@@ -54,27 +75,6 @@ export default function ServicesPage() {
 				"Built-in Shelves",
 				"Fireplace Mantels",
 				"Small Wood Repairs",
-			],
-		},
-		{
-			id: "kitchen-bath",
-			icon: Paintbrush,
-			title: "Kitchen & Bath Updates",
-			cta: "Update Kitchen/Bath",
-			href: "/services/kitchen-bath",
-			image:
-				"https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2000",
-			description:
-				"Tile, fixtures, and hardware upgrades that refresh your kitchen or bathroom without a full remodel.",
-			longDesc:
-				"You don't need a full gut renovation to see a major improvement. We handle the updates that make the biggest visual difference — new backsplash, vanity installs, hardware swaps, and fixture replacements. Fast turnaround, clean work, and results that hold up.",
-			items: [
-				"Kitchen Backsplash",
-				"New Cabinet Handles",
-				"Sink Installation",
-				"Light & Bath Fixtures",
-				"Shower Hardware",
-				"Toilet & Faucet Setup",
 			],
 		},
 		{

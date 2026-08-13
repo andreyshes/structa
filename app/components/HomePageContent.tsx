@@ -63,12 +63,12 @@ export default function HomePageContent() {
 
 	const services = [
 		{
-			icon: Wrench,
-			title: "Handyman Services",
-			href: "/services/handyman",
-			cta: "Book a Handyman",
+			icon: Paintbrush,
+			title: "Kitchen & Bath Remodeling",
+			href: "/services/kitchen-bath",
+			cta: "Start My Remodel",
 			description:
-				"Drywall patching, door adjustments, TV mounting, and general home repairs. We handle the fixes that keep your home in good shape.",
+				"Full kitchen and bathroom remodels, tub-to-shower conversions, tile, vanity installs, and backsplash work — every scope from cosmetic refresh to full gut remodel.",
 		},
 		{
 			icon: Hammer,
@@ -76,15 +76,15 @@ export default function HomePageContent() {
 			href: "/services/finish-carpentry",
 			cta: "Get Trim Quote",
 			description:
-				"Custom baseboards, crown molding, and interior trim installation. Clean, precise woodwork that adds real value to every room.",
+				"Custom baseboards, crown molding, wainscoting, and interior trim. Clean, precise woodwork that adds lasting value to any room.",
 		},
 		{
-			icon: Paintbrush,
-			title: "Kitchen & Bath Remodeling",
-			href: "/services/kitchen-bath",
-			cta: "Remodel Kitchen/Bath",
+			icon: Construction,
+			title: "Flooring",
+			href: "/services/flooring",
+			cta: "Upgrade My Floors",
 			description:
-				"Full bathroom remodels, tub-to-shower conversions, kitchen updates, tile, backsplash, and vanity installs — every scope from cosmetic refresh to full gut.",
+				"LVP, tile, and hardwood installation and repair. We also handle subfloor fixes and wood rot — the work other contractors skip.",
 		},
 		{
 			icon: Home,
@@ -103,12 +103,12 @@ export default function HomePageContent() {
 				"Ceiling fans, recessed lighting, and fixture swaps. We upgrade your home lighting safely and leave the space clean.",
 		},
 		{
-			icon: Construction,
-			title: "Flooring Repair",
-			href: "/services/flooring",
-			cta: "Fix My Floors",
+			icon: Wrench,
+			title: "Handyman & Home Repair",
+			href: "/services/handyman",
+			cta: "Book a Handyman",
 			description:
-				"Wood rot repair, subfloor fixes, and flooring updates. We protect and restore your floors for the long term.",
+				"Drywall patching, door adjustments, TV mounting, and general repairs. We handle the punch list so you can focus on the bigger picture.",
 		},
 	];
 
@@ -281,13 +281,13 @@ export default function HomePageContent() {
 							animate={{ opacity: 1, x: 0 }}
 							className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tighter uppercase drop-shadow-2xl"
 						>
-							Your Local <br />
-							<span className="text-[#FFB800]">General Contractor</span> <br />
-							in Vancouver, WA
+							Kitchen & Bath Remodeling <br />
+							<span className="text-[#FFB800]">& Home Renovation</span> <br />
+							Vancouver, WA
 						</motion.h1>
 
 						<p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl font-medium drop-shadow-md border-l-8 border-[#FFB800] pl-6">
-							5-star rated on Google. Licensed, bonded & insured in Washington State. We show up on time, do the work right, and back it with a 1-year warranty — serving Vancouver, Camas, Ridgefield & all of Clark County.
+							Licensed general contractor in Vancouver, WA specializing in kitchen & bathroom remodeling, finish carpentry, and full home renovations. 5-star rated, bonded & insured. Free written estimates — serving all of Clark County.
 						</p>
 
 						<div className="pt-8 flex flex-wrap items-center gap-4">
@@ -316,38 +316,32 @@ export default function HomePageContent() {
 					<div className="grid lg:grid-cols-3 gap-12 items-start">
 						<div className="lg:col-span-2 space-y-6">
 							<h2 className="text-4xl font-black text-[#1F2E2B] uppercase tracking-tighter">
-								Vancouver's Choice for Home Repair
+								Clark County's Remodeling Contractor
 							</h2>
 							<p className="text-lg text-gray-700 leading-relaxed">
-								Looking for a <strong>general contractor in Vancouver, WA</strong>? NORBILT handles{" "}
-								<strong>kitchen & bathroom remodeling</strong> and <strong>home repairs</strong> — drywall patching, sink updates, trim installation, and more. Licensed, bonded, and insured in Washington State.
+								NORBILT is a licensed general contractor in Vancouver, WA specializing in <strong>kitchen and bathroom remodeling</strong>, finish carpentry, and interior renovations. From a tile backsplash to a full gut remodel — every scope handled by the same licensed crew, with a written estimate before any work starts.
 							</p>
 							<p className="text-lg text-gray-700 leading-relaxed">
-								We price work fairly and finish it right. From <strong>window repair</strong> to full{" "}
-								<strong>bathroom remodels</strong>, we serve homeowners across Clark County with the same attention to detail every time.
+								We also handle the smaller stuff — drywall, doors, flooring, lighting — so you have one contractor for everything. Licensed, bonded, and insured. Serving Vancouver, Camas, Ridgefield, Battle Ground, and all of Clark County.
 							</p>
 						</div>
 						<div className="bg-[#F8F6F3] p-8 rounded-3xl border-2 border-[#FFB800]/20">
-							<h3 className="text-xl font-black mb-4 uppercase">Expert Jobs</h3>
+							<h3 className="text-xl font-black mb-4 uppercase">We Specialize In</h3>
 							<ul className="space-y-3 font-bold text-gray-600">
 								<li className="flex items-center gap-2">
-									<CheckCircle2 className="w-5 h-5 text-[#FFB800]" /> Kitchen
-									Updates
+									<CheckCircle2 className="w-5 h-5 text-[#FFB800]" /> Kitchen Remodeling
 								</li>
 								<li className="flex items-center gap-2">
-									<CheckCircle2 className="w-5 h-5 text-[#FFB800]" /> Bathroom
-									Fixes
+									<CheckCircle2 className="w-5 h-5 text-[#FFB800]" /> Bathroom Remodeling
 								</li>
 								<li className="flex items-center gap-2">
-									<CheckCircle2 className="w-5 h-5 text-[#FFB800]" /> Wood Trim
+									<CheckCircle2 className="w-5 h-5 text-[#FFB800]" /> Tub-to-Shower Conversions
 								</li>
 								<li className="flex items-center gap-2">
-									<CheckCircle2 className="w-5 h-5 text-[#FFB800]" /> Drywall
-									Repair
+									<CheckCircle2 className="w-5 h-5 text-[#FFB800]" /> Finish Carpentry & Trim
 								</li>
 								<li className="flex items-center gap-2">
-									<CheckCircle2 className="w-5 h-5 text-[#FFB800]" /> Door &
-									Window Install
+									<CheckCircle2 className="w-5 h-5 text-[#FFB800]" /> Full Home Renovations
 								</li>
 							</ul>
 						</div>

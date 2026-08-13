@@ -6,14 +6,14 @@ import { Menu, X, ChevronDown, Phone, Sparkles, MessageSquare, Camera, Lightbulb
 import { motion, AnimatePresence } from "framer-motion";
 
 const serviceLinks = [
-	{ name: "Handyman Services", href: "/services/handyman" },
-	{ name: "Drywall Repair", href: "/services/drywall-repair" },
-	{ name: "Finish Carpentry", href: "/services/finish-carpentry" },
-	{ name: "Door & Window Repair", href: "/services/door-window" },
-	{ name: "Flooring", href: "/services/flooring" },
 	{ name: "Kitchen & Bath Remodeling", href: "/services/kitchen-bath" },
-	{ name: "Home Repair", href: "/services/home-repair" },
+	{ name: "Finish Carpentry", href: "/services/finish-carpentry" },
+	{ name: "Flooring", href: "/services/flooring" },
+	{ name: "Drywall Repair", href: "/services/drywall-repair" },
+	{ name: "Door & Window Repair", href: "/services/door-window" },
 	{ name: "Lighting & Fixtures", href: "/services/lighting" },
+	{ name: "Home Repair", href: "/services/home-repair" },
+	{ name: "Handyman Services", href: "/services/handyman" },
 ];
 
 const locationLinks = [
