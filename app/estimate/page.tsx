@@ -10,8 +10,8 @@ import {
 	ChefHat,
 	DoorOpen,
 	Grid3x3,
-	Lightbulb,
 	Home,
+	HardHat,
 	ArrowRight,
 	ArrowLeft,
 	Sparkles,
@@ -26,13 +26,13 @@ import {
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 type ServiceKey =
-	| "Handyman Services"
-	| "Finish Carpentry"
-	| "Drywall Repair"
+	| "Home Remodel"
 	| "Kitchen & Bath"
-	| "Door & Window"
+	| "Finish Carpentry"
 	| "Flooring"
-	| "Lighting & Fixtures"
+	| "Drywall Repair"
+	| "Door & Window"
+	| "Handyman Services"
 	| "Home Repair / Other";
 
 interface Estimate {
@@ -48,13 +48,13 @@ interface Estimate {
 // ─── Service Definitions ──────────────────────────────────────────────────────
 
 const services = [
-	{ key: "Handyman Services" as ServiceKey, icon: Wrench, desc: "Punch lists, repairs, misc tasks" },
-	{ key: "Finish Carpentry" as ServiceKey, icon: Scissors, desc: "Trim, crown molding, baseboards" },
-	{ key: "Drywall Repair" as ServiceKey, icon: Layers, desc: "Patches, texturing, water damage" },
+	{ key: "Home Remodel" as ServiceKey, icon: HardHat, desc: "Full kitchen, bath & whole-home remodels" },
 	{ key: "Kitchen & Bath" as ServiceKey, icon: ChefHat, desc: "Updates, tile, cabinets, fixtures" },
-	{ key: "Door & Window" as ServiceKey, icon: DoorOpen, desc: "Installation and repair" },
+	{ key: "Finish Carpentry" as ServiceKey, icon: Scissors, desc: "Trim, crown molding, baseboards" },
 	{ key: "Flooring" as ServiceKey, icon: Grid3x3, desc: "LVP, tile, hardwood, removal" },
-	{ key: "Lighting & Fixtures" as ServiceKey, icon: Lightbulb, desc: "Recessed lights, fans, fixtures" },
+	{ key: "Drywall Repair" as ServiceKey, icon: Layers, desc: "Patches, texturing, water damage" },
+	{ key: "Door & Window" as ServiceKey, icon: DoorOpen, desc: "Installation and repair" },
+	{ key: "Handyman Services" as ServiceKey, icon: Wrench, desc: "Punch lists, repairs, misc tasks" },
 	{ key: "Home Repair / Other" as ServiceKey, icon: Home, desc: "General repairs and maintenance" },
 ];
 
@@ -133,12 +133,13 @@ function ServiceDetails({ service, details, onChange }: { service: ServiceKey; d
 		</div>
 	);
 
-	if (service === "Lighting & Fixtures") return (
+	if (service === "Home Remodel") return (
 		<div className="space-y-5">
-			{sel("lightType", "Type of lighting work", ["Recessed can lights (new)", "Ceiling fan installation / replacement", "Light fixture replacement", "Dimmer switch installation", "Under-cabinet lighting", "Multiple / combination"])}
-			{sel("count", "How many fixtures?", ["1–2", "3–5", "6–10", "10+"])}
-			{sel("atticAccess", "Attic access available?", ["Yes", "No", "Not sure"])}
-			{sel("supply", "Fixtures", ["Install only – I have fixtures", "Supply and install", "Not sure yet"])}
+			{sel("remodelType", "What type of remodel?", ["Full kitchen remodel", "Full bathroom remodel", "Both kitchen & bathroom", "Whole-home renovation", "Basement finishing", "Room addition / ADU", "Multiple rooms / not sure"])}
+			{sel("scope", "Project scope", ["Cosmetic refresh (surfaces, fixtures, paint)", "Mid-range (new cabinets, tile, layout changes)", "Full gut remodel (down to studs)", "Not sure – need assessment"])}
+			{sel("sqft", "Approximate square footage of remodel area", ["Under 100 sq ft", "100–300 sq ft", "300–600 sq ft", "600–1,000 sq ft", "1,000+ sq ft"])}
+			{sel("finishLevel", "Finish / material level", ["Budget-friendly (builder grade)", "Mid-range (standard quality)", "Premium / high-end", "Not sure yet"])}
+			{sel("timeline", "Desired start timeline", ["ASAP – ready to start", "Within 1–2 months", "3–6 months out", "Just planning / getting quotes"])}
 		</div>
 	);
 
