@@ -173,9 +173,15 @@ Use the 2026 Clark County rate sheet in your system instructions. Provide a real
 }`;
 
 		const message = await client.messages.create({
-			model: "claude-sonnet-4-6",
-			max_tokens: 1024,
-			system: systemPrompt,
+			model: "claude-haiku-4-5-20251001",
+			max_tokens: 700,
+			system: [
+				{
+					type: "text",
+					text: systemPrompt,
+					cache_control: { type: "ephemeral" },
+				},
+			],
 			messages: [{ role: "user", content: prompt }],
 		});
 
