@@ -272,6 +272,17 @@ export default function RepairsBeforeSelling() {
 					</div>
 				</article>
 
+				{/* REMODELING INTERNAL LINK */}
+				<div className="bg-[#1F2E2B] rounded-2xl p-8 text-center my-8">
+					<p className="text-[#FFB800] text-xs font-black uppercase tracking-widest mb-3">NORBILT · Home Remodeling Contractor</p>
+					<h3 className="text-xl font-black text-white mb-3">Planning a Remodel Before Selling?</h3>
+					<p className="text-white/60 text-sm mb-5 max-w-md mx-auto">We help Clark County homeowners prioritize the right updates before listing. Free on-site estimate, written pricing, licensed contractor.</p>
+					<div className="flex flex-wrap justify-center gap-3">
+						<Link href="/remodeling" className="inline-flex items-center gap-2 bg-[#FFB800] text-black px-6 py-3 rounded-xl font-black uppercase tracking-widest text-sm hover:scale-105 transition-all">See Our Remodeling Services</Link>
+						<Link href="/estimate" className="inline-flex items-center gap-2 border border-white/20 text-white px-6 py-3 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/10 transition-colors">Get Free Estimate</Link>
+					</div>
+				</div>
+
 				{/* CTA */}
 				<section className="py-16 bg-[#FFB800]">
 					<div className="max-w-3xl mx-auto px-6 text-center space-y-6">

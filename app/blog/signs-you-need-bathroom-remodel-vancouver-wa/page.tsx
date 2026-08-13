@@ -262,6 +262,19 @@ export default function BathroomRemodel() {
 					</div>
 				</article>
 
+				{/* REMODELING INTERNAL LINK */}
+				<div className="max-w-3xl mx-auto px-6 pb-8">
+					<div className="bg-[#1F2E2B] rounded-2xl p-8 text-center">
+						<p className="text-[#FFB800] text-xs font-black uppercase tracking-widest mb-3">NORBILT · Home Remodeling Contractor</p>
+						<h3 className="text-xl font-black text-white mb-3">Ready to Remodel Your Bathroom?</h3>
+						<p className="text-white/60 text-sm mb-5 max-w-md mx-auto">Licensed home remodeling contractor in Vancouver WA. Full gut remodels, tub-to-shower conversions, tile work. Free written estimate.</p>
+						<div className="flex flex-wrap justify-center gap-3">
+							<Link href="/remodeling" className="inline-flex items-center gap-2 bg-[#FFB800] text-black px-6 py-3 rounded-xl font-black uppercase tracking-widest text-sm hover:scale-105 transition-all">See Our Remodeling Services</Link>
+							<Link href="/services/bathroom-remodel" className="inline-flex items-center gap-2 border border-white/20 text-white px-6 py-3 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/10 transition-colors">Bathroom Remodel Page</Link>
+						</div>
+					</div>
+				</div>
+
 				{/* CTA */}
 				<section className="py-16 bg-[#FFB800]">
 					<div className="max-w-3xl mx-auto px-6 text-center space-y-6">

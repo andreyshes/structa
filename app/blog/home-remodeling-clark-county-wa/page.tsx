@@ -380,6 +380,17 @@ export default function HomeRemodelingClarkCounty() {
 					</div>
 				</section>
 
+				{/* REMODELING INTERNAL LINK */}
+				<div className="bg-[#1F2E2B] rounded-2xl p-8 text-center">
+					<p className="text-[#FFB800] text-xs font-black uppercase tracking-widest mb-3">NORBILT · Home Remodeling Contractor</p>
+					<h3 className="text-xl font-black text-white mb-3">Ready to Start Your Home Remodel?</h3>
+					<p className="text-white/60 text-sm mb-5 max-w-md mx-auto">Licensed home remodeling contractor in Vancouver WA and Clark County. Free written estimates, flat-rate pricing, 1-year workmanship warranty.</p>
+					<div className="flex flex-wrap justify-center gap-3">
+						<Link href="/remodeling" className="inline-flex items-center gap-2 bg-[#FFB800] text-black px-6 py-3 rounded-xl font-black uppercase tracking-widest text-sm hover:scale-105 transition-all">See Our Remodeling Services</Link>
+						<Link href="/estimate" className="inline-flex items-center gap-2 border border-white/20 text-white px-6 py-3 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/10 transition-colors">Get Free Estimate</Link>
+					</div>
+				</div>
+
 				{/* SOURCES */}
 			<div className="bg-[#F8F6F3] rounded-2xl p-6 border border-gray-100">
 				<p className="text-xs font-black text-gray-400 uppercase tracking-widest mb-3">Sources &amp; Official Resources</p>
