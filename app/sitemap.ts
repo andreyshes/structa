@@ -375,6 +375,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			changeFrequency: "monthly",
 			priority: 0.9,
 		},
+		{
+			url: `${baseUrl}/blog/finish-carpentry-cost-camas-wa`,
+			lastModified: new Date("2026-08-17"),
+			changeFrequency: "monthly",
+			priority: 0.9,
+		},
+		{
+			url: `${baseUrl}/blog/door-window-replacement-cost-vancouver-wa`,
+			lastModified: new Date("2026-08-17"),
+			changeFrequency: "monthly",
+			priority: 0.9,
+		},
 	);
 
 	return routes;
