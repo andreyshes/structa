@@ -300,6 +300,19 @@ export default function BattleGroundHandyman() {
 					</div>
 				</article>
 
+				{/* REMODELING CALLOUT */}
+				<div className="max-w-3xl mx-auto px-6 mb-8">
+					<section className="bg-[#2D5A3D]/5 border border-[#2D5A3D]/20 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+						<div>
+							<p className="font-black text-[#1F2E2B] mb-1">Ready for something bigger in Battle Ground?</p>
+							<p className="text-gray-600 text-sm">NORBILT handles full kitchen & bath remodels, finish carpentry, and flooring throughout Battle Ground and Clark County.</p>
+						</div>
+						<Link href="/remodeling" className="inline-flex items-center gap-2 bg-[#2D5A3D] text-white px-6 py-3 rounded-xl font-black text-sm uppercase tracking-widest whitespace-nowrap hover:bg-[#1F2E2B] transition-colors">
+							Home Remodeling →
+						</Link>
+					</section>
+				</div>
+
 				{/* CTA */}
 				<section className="py-16 bg-[#FFB800]">
 					<div className="max-w-3xl mx-auto px-6 text-center space-y-6">

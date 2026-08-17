@@ -405,6 +405,17 @@ export default function HandymanWashougalPage() {
 					</div>
 				</section>
 
+				{/* REMODELING CALLOUT */}
+				<section className="bg-[#2D5A3D]/5 border border-[#2D5A3D]/20 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+					<div>
+						<p className="font-black text-[#1F2E2B] mb-1">Need more than a repair in Washougal?</p>
+						<p className="text-gray-600 text-sm">NORBILT does full kitchen & bath remodels, finish carpentry, and flooring throughout Washougal and the Gorge corridor.</p>
+					</div>
+					<Link href="/remodeling" className="inline-flex items-center gap-2 bg-[#2D5A3D] text-white px-6 py-3 rounded-xl font-black text-sm uppercase tracking-widest whitespace-nowrap hover:bg-[#1F2E2B] transition-colors">
+						Home Remodeling →
+					</Link>
+				</section>
+
 				{/* CTA */}
 				<section className="bg-[#1F2E2B] rounded-3xl p-10 md:p-14 text-center border-b-8 border-[#FFB800]">
 					<h2 className="text-3xl md:text-4xl font-black text-white uppercase tracking-tighter mb-4">
