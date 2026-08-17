@@ -1,5 +1,3 @@
-"use server";
-
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, MapPin, Phone } from "lucide-react";
 import { Metadata } from "next";
