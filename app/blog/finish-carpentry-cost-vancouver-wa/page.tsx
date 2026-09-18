@@ -3,9 +3,9 @@ import { ArrowRight, CheckCircle2, Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Finish Carpentry Cost in Vancouver WA: 2026 Pricing Guide | NORBILT",
+	title: "Baseboard Installation & Finish Carpentry Vancouver WA | 2026 Costs | NORBILT",
 	description:
-		"How much does finish carpentry cost in Vancouver WA? Real 2026 price ranges for baseboards, crown molding, wainscoting, door casing, and built-ins across Clark County.",
+		"Licensed baseboard installation & finish carpentry contractor in Vancouver WA — baseboards, crown molding, door casing, wainscoting & built-ins. All Clark County. Free estimate. (360) 216-9920.",
 	alternates: {
 		canonical: "https://www.norbilt.com/blog/finish-carpentry-cost-vancouver-wa",
 	},

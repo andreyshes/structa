@@ -3,8 +3,8 @@ import { ArrowRight, CheckCircle2, MapPin, Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Bathroom Remodel Cost in Camas WA: 2026 Pricing Guide | NORBILT",
-	description: "How much does a bathroom remodel cost in Camas WA? Real 2026 price ranges — from a $920 cosmetic refresh to a $35,000 primary suite — from a licensed contractor working in Camas every week.",
+	title: "Bathroom Remodel Camas WA | Licensed Contractor & 2026 Costs | NORBILT",
+	description: "Licensed bathroom remodel contractor in Camas WA — Prune Hill, Lacamas Shores & all neighborhoods. Real 2026 costs from $920 to $35,000+. Free estimate this week. (360) 216-9920.",
 	alternates: { canonical: "https://www.norbilt.com/blog/bathroom-remodel-cost-camas-wa" },
 	openGraph: {
 		title: "Bathroom Remodel Cost in Camas WA: 2026 Pricing Guide | NORBILT",

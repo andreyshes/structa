@@ -15,7 +15,7 @@ import {
 export const metadata: Metadata = {
 	title: "Home Remodeling Contractor Vancouver WA | Kitchen, Bath & Full Renovations | NORBILT",
 	description:
-		"Licensed home remodeling contractor in Vancouver WA and Clark County. Kitchen remodels, bathroom renovations, finish carpentry, flooring, and full home renovations. Free same-week estimates. Call (360) 216-9920.",
+		"5-star rated home remodeling contractor in Vancouver WA — kitchen remodels, bathroom renovations, finish carpentry & flooring. Licensed, local, same-week estimates. (360) 216-9920.",
 	alternates: {
 		canonical: "https://www.norbilt.com/remodeling",
 	},

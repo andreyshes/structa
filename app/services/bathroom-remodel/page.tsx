@@ -137,9 +137,9 @@ const schema = {
 };
 
 export const metadata = {
-	title: "Bathroom Remodel Contractor Vancouver WA | NORBILT",
+	title: "Bathroom Remodel Contractor Clark County WA | Vancouver, Camas & Beyond | NORBILT",
 	description:
-		"Licensed bathroom remodel contractor in Vancouver WA and Clark County. Tub-to-shower conversions, full gut remodels, tile, vanity installs & more. Free written estimates. WA Lic #NORBI741CS.",
+		"Licensed bathroom remodel contractor in Clark County WA — Vancouver, Camas, Battle Ground & Ridgefield. Full gut remodels, tub-to-shower, tile & vanity. Free estimate. (360) 216-9920.",
 };
 
 export default function BathroomRemodelPage() {

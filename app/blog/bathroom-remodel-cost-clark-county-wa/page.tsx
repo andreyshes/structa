@@ -3,9 +3,9 @@ import { ArrowRight, CheckCircle2, MapPin, Phone } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Bathroom Remodel Cost in Clark County WA | 2026 Guide | NORBILT",
+	title: "Bathroom Remodel Clark County WA | Licensed Contractor & 2026 Costs | NORBILT",
 	description:
-		"How much does a bathroom remodel cost in Clark County WA? Real 2026 price ranges for every scope — from a $800 refresh to a $35,000 full gut — from a licensed Vancouver contractor.",
+		"Licensed bathroom remodel contractor serving all of Clark County WA — Vancouver, Camas, Battle Ground & beyond. Real 2026 costs from $800 to $35,000. Free estimate this week. (360) 216-9920.",
 	alternates: {
 		canonical: "https://www.norbilt.com/blog/bathroom-remodel-cost-clark-county-wa",
 	},
